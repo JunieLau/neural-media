@@ -4,8 +4,8 @@
   "zh": "Daniel Felstead 与 Jenn Leung：影片、峰会、论文与演讲逐条整理"
  },
  "lead": {
-  "en": "Daniel Felstead and Jenn Leung both teach at London College of Fashion (UAL). Together they make the DIS.art film series “I'm So Janky”, narrated by AI celebrity avatars, and run the MA Fashion Media & Communication summits, one of which was titled for neural media and featured K Allado-McDowell. Separately, Felstead writes and talks on fashion, AI and the metaverse, and Leung builds game-engine interfaces for living neurons. This page lists everything we could find by them, together and separately, newest first, with entries on neural media, K, or the future of AI, BCI and neurotech marked.",
-  "zh": "Daniel Felstead 和 Jenn Leung 都在伦敦时装学院（伦敦艺术大学）任教。两人合作做了 DIS.art 上的影片系列「I'm So Janky」，由 AI 生成的名人化身当叙述者；也一起办 MA 时尚媒体与传播课程的系列峰会，其中一场直接以「神经媒体」命名，K Allado-McDowell 到场演讲。各自的工作里，Felstead 写作和演讲，谈时尚、AI 和元宇宙；Leung 用游戏引擎为活体神经元做接口。这一页把我们能找到的两人合作和各自的作品、演讲、论文、访谈、展览逐条整理，从新到旧排列；凡是谈到神经媒体、K，或 AI、脑机接口、神经技术未来的条目，都加了醒目标注，并写了「他们在这里说了什么」。"
+  "en": "Daniel Felstead and Jenn Leung both teach at London College of Fashion (UAL). Together they make the DIS.art film series “I'm So Janky”, narrated by AI celebrity avatars, and run the MA Fashion Media & Communication summits, one of which was titled for neural media and featured K Allado-McDowell. Separately, Felstead writes and talks on fashion, AI and the metaverse, and Leung builds game-engine interfaces for living neurons. Their four DIS.art video essays in the “I'm So Janky” series are featured near the top of this page. Below that, everything else we could find by them, together and separately, is listed newest first, with entries on neural media, K, or the future of AI, BCI and neurotech marked.",
+  "zh": "Daniel Felstead 和 Jenn Leung 都在伦敦时装学院（伦敦艺术大学）任教。两人合作做了 DIS.art 上的影片系列「I'm So Janky」，由 AI 生成的名人化身当叙述者；也一起办 MA 时尚媒体与传播课程的系列峰会，其中一场直接以「神经媒体」命名，K Allado-McDowell 到场演讲。各自的工作里，Felstead 写作和演讲，谈时尚、AI 和元宇宙；Leung 用游戏引擎为活体神经元做接口。两人在 DIS.art 上的四部「I'm So Janky」影像随笔是本页最重要的内容，放在靠前的精选区。其下是我们能找到的两人合作和各自的其他作品、演讲、论文、访谈、展览，从新到旧排列；凡是谈到神经媒体、K，或 AI、脑机接口、神经技术未来的条目，都加了醒目标注，并写了「他们在这里说了什么」。"
  },
  "note": {
   "en": "Sources: DIS.art film pages; Jenn Leung's site (jennleung.xyz: CV, project and talks pages); event pages (Medialab Matadero, Lisbon Human Entities, Shedhalle, Aksioma, Foto Colectania, NCM, NYU Shanghai, Schirn); journal and conference records (Antikythera/MIT Press, NeurIPS, UAL Research Online); press (Dazed, COEVAL, Le Random, Holloway Express, UAL); podcast notes (Disintegrator, New Models); and YouTube auto-captions where available (OPTMZ, EXCESSS, NM91 preview). ‘Full text’ means we read the whole page or article; ‘Transcript’ means auto-captions of the recording; ‘Abstract’ means a paper abstract or thesis summary; ‘Description’ means an event or project description only; ‘Listing only’ means a title in a CV or list. Several dates are inferred and say so. Instagram and X posts could not be read. Quotes are short and translated; nothing is invented.",
@@ -375,6 +375,143 @@
      "zh": "基调的差异：K 偏乐观和生态（《Pharmako-AI》、萨满研究）；Felstead 和 Leung 讽刺、怪诞，关注 Ozempic、looksmaxxing 和外卖骑手。他们借 K 的框架去诊断平台资本主义，而不是想象与 AI 的亲缘关系（这是我们的解读）。"
     },
     "url": "https://www.dis.art/welcome-to-jankspace"
+   }
+  ]
+ },
+ "series": {
+  "id": "im-so-janky",
+  "title": {
+   "en": "I'm So Janky · video essays",
+   "zh": "《I'm So Janky》影像随笔系列"
+  },
+  "url": "https://www.dis.art/series/im-so-janky",
+  "cover": "assets/janky/im-so-janky-series.jpg",
+  "kicker": {
+   "en": "The primary work · four films on DIS.art",
+   "zh": "最重要的作品 · DIS.art 上的四部影片"
+  },
+  "intro": {
+   "en": "Tech preaches a world that is seamlessly efficient. Daniel Felstead and Jenn Leung look at the cracks in that plan — what they call “jankspace”: the gap between the promise of tech and its reality, where organic, inconvenient bodies meet platform systems. The DIS.art series “I'm So Janky” (commissioned by DIS; producer Lauren Boyle) is four video essays narrated by AI celebrity avatars — an “irresistibly blasé” Julia Fox and a “seductively imperative” Nicki Minaj — built from internet slop, 3D and generative tools. Philosopher Maya B. Kronic's essay “Cute and/or Janky” discusses their term. The series refuses both AI utopia and AI doom. Always On My Mind is the episode that goes straight at Neuralink and “consensual telepathy”, the most literal neural-media piece in the set. Watch each film on DIS (they are not on YouTube).",
+   "zh": "科技宣扬一个无缝高效的世界。Daniel Felstead 和 Jenn Leung 看的是那份蓝图里的裂缝——他们称之为「jankspace」：技术承诺与现实之间的缝隙，有机、不方便的身体撞上平台系统的地方。DIS.art 系列「I'm So Janky」（DIS 委托，制片 Lauren Boyle）是四部影像随笔，由 AI 名人化身叙述——一个「无法抗拒的漫不经心」的 Julia Fox，和一个「充满诱惑的命令式」Nicki Minaj——用网络垃圾内容、3D 和生成工具做成。哲学家 Maya B. Kronic 的文章〈Cute and/or Janky〉讨论过他们的「jank」概念。系列拒绝 AI 乌托邦和 AI 末日两边。其中《Always On My Mind》直接谈 Neuralink 和「共识心灵感应」，是四部里最字面意义上的「神经媒体」作品。每部都在 DIS 上观看（没有完整的 YouTube 镜像）。"
+  },
+  "films": [
+   {
+    "entry": "welcome-to-jankspace-film",
+    "ep": {
+     "en": "Ep. 4 · autumn 2025",
+     "zh": "第 4 集 · 2025 年秋"
+    },
+    "title": {
+     "en": "Welcome to Jankspace, Babes",
+     "zh": "《欢迎来到 Jankspace，宝贝们》"
+    },
+    "url": "https://www.dis.art/welcome-to-jankspace",
+    "cover": "assets/janky/welcome-to-jankspace.jpg",
+    "mins": 29,
+    "credits": {
+     "en": "Written & directed by Daniel Felstead with Jenn Leung · 3D Red Liu & Qianyu Wang · score Isama Zing & DJ GÄP · producer Lauren Boyle · special thanks Maya B. Kronic; thanks K. Allado-McDowell",
+     "zh": "编剧导演 Daniel Felstead，合作 Jenn Leung · 3D Red Liu、Qianyu Wang · 配乐 Isama Zing、DJ GÄP · 制片 Lauren Boyle · 特别鸣谢 Maya B. Kronic；致谢 K. Allado-McDowell"
+    },
+    "summary": {
+     "en": "An AI Julia Fox gives a house tour of where we now live — an environment “inadvertently designed” by the sloppy processes of 2020s technocapitalism. The title reworks Rem Koolhaas's 2001 “Junkspace”: jankspace is the empty space in the digital network that we fill with our bodies. The film connects Ozempic, AI slop, Bryan Johnson, Uber drivers, algorithms and Luigi Mangione, arguing that the body stays organic and decaying no matter how hard we filter, drug or surgically edit it. It is the fullest statement of the jankspace concept, and thanks K in the credits.",
+     "zh": "AI Julia Fox 像带看房一样，带观众走过「我们现在住的地方」——被 2020 年代技术资本主义草率流程意外建成的环境。题目改写库哈斯 2001 年的〈Junkspace〉：jankspace 是数字网络里我们用身体填进去的空隙。片子把 Ozempic、AI 垃圾内容、Bryan Johnson、Uber 司机、算法和 Luigi Mangione 串在一起，论点是：无论怎样滤镜、吃药或动手术，身体仍是有机的、会腐烂的。这是 jankspace 概念最完整的一次表述，片尾致谢 K。"
+    },
+    "nm": {
+     "en": "Credits thank K Allado-McDowell. The film itself is neural-media-era content: an AI avatar narrator, feed-speed montage, the body as the gap between platforms.",
+     "zh": "片尾致谢 K Allado-McDowell。片子本身就是神经媒体时代的内容样本：AI 化身叙述者、信息流速度的蒙太奇、把身体当作平台之间的缝隙。"
+    },
+    "watch": {
+     "en": "Watch on DIS ↗",
+     "zh": "在 DIS 观看 ↗"
+    }
+   },
+   {
+    "entry": "always-on-my-mind",
+    "ep": {
+     "en": "Bonus · 2024",
+     "zh": "番外 · 2024"
+    },
+    "title": {
+     "en": "Always On My Mind",
+     "zh": "《Always On My Mind》"
+    },
+    "url": "https://dis.art/always-on-my-mind",
+    "cover": "assets/janky/always-on-my-mind.jpg",
+    "credits": {
+     "en": "By Daniel Felstead with Jenn Leung · narrated by an AI Nicki Minaj · producer Lauren Boyle · DIS commission",
+     "zh": "Daniel Felstead 与 Jenn Leung · AI Nicki Minaj 叙述 · 制片 Lauren Boyle · DIS 委托"
+    },
+    "summary": {
+     "en": "The series' Neuralink episode. An AI Nicki Minaj — “master linguist and lyrical genius” — considers the first successful Neuralink implant (Noland Arbaugh, Jan 2024) and Musk's “consensual telepathy”: a future in which language is devalued as surplus once brains can link directly. The film critiques a “retro broey techno-monism” that reduces mind to readable data, and notes how the US frames brain–computer interfaces as a national-security matter. Of the four, this is the one that sits squarely on this site's BCI × neural media theme.",
+     "zh": "系列里谈 Neuralink 的一集。AI Nicki Minaj——「语言大师与歌词天才」——从 2024 年 1 月第一位植入者 Noland Arbaugh 讲起，讨论 Musk 的「共识心灵感应」：一旦大脑可以直接相连，语言就会被贬成多余的东西。片子批评一种「复古的兄弟式技术一元论」，把心智简化成可读写的数据；也谈到美国把脑机接口当作国家安全问题。四部里，这一部最直接落在本站「脑机接口 × 神经媒体」的主题上。"
+    },
+    "nm": {
+     "en": "Entirely about BCI: Neuralink, post-linguistic “telepathy”, mind-as-data. Overlaps directly with this site's BCI page.",
+     "zh": "整部关于脑机接口：Neuralink、后语言的「心灵感应」、心智即数据。与本站 BCI 页面直接重合。"
+    },
+    "watch": {
+     "en": "Watch on DIS ↗",
+     "zh": "在 DIS 观看 ↗"
+    }
+   },
+   {
+    "entry": "literally-no-place",
+    "ep": {
+     "en": "Ep. 2 · Oct 2023",
+     "zh": "第 2 集 · 2023 年 10 月"
+    },
+    "title": {
+     "en": "Literally No Place",
+     "zh": "《Literally No Place》"
+    },
+    "url": "https://jennleung.xyz/literallynoplace",
+    "alt_url": "https://dis.art/series/im-so-janky",
+    "cover": "assets/janky/literally-no-place.jpg",
+    "credits": {
+     "en": "Film by Daniel Felstead and Jenn Leung · written & directed by Felstead · 3D animation by Leung · producer Lauren Boyle · about text Ada O'Higgins · tools: Stable Diffusion, D-ID, Runway, Descript, UE5",
+     "zh": "影片 Daniel Felstead 与 Jenn Leung · 编剧导演 Felstead · 3D 动画 Leung · 制片 Lauren Boyle · 介绍文字 Ada O'Higgins · 工具：Stable Diffusion、D-ID、Runway、Descript、UE5"
+    },
+    "summary": {
+     "en": "AI Julia Fox — “the final boss of vocal fry” — walks the AI-utopia versus AI-doomer “cyberwarfare bedlam”. Will AI bring Marx's post-scarcity labour-less luxury, or extinguish the species? The film refuses that Manichean binary and shows an uncanny array of futures projected by “AI simps and manic tech overlords” (Sam Altman, Sundar Pichai). It closes on an image of K's Pharmako-AI. Screened at Berlin Critics Week (T.J. Demos), PAF Olomouc, Foto Colectania, PhotoVogue; covered by Dazed. A short COEVAL YouTube clip exists; the full film is on DIS / jennleung.xyz.",
+     "zh": "AI Julia Fox——「气泡音的最终 Boss」——走进 AI 乌托邦与 AI 末日派的「网络战乱局」。AI 会带来马克思设想的后稀缺、无劳动奢华，还是灭绝人类？片子拒绝这种善恶二元，展示「AI 舔狗和狂热科技霸主」（Sam Altman、Sundar Pichai）投射出的各种怪异未来。片尾是一张 K《Pharmako-AI》的图片。放映于柏林影评人周（T.J. Demos）、PAF Olomouc、Foto Colectania、PhotoVogue；Dazed 报道。YouTube 上有 COEVAL 短片断，完整版在 DIS / jennleung.xyz。"
+    },
+    "nm": {
+     "en": "Ends on Pharmako-AI. The utopia/doomer frame is the public face of the same media shift K calls neural media.",
+     "zh": "片尾出现《Pharmako-AI》。乌托邦 / 末日的公共争论，正是 K 所说的神经媒体转向的公众面。"
+    },
+    "watch": {
+     "en": "Watch on DIS / jennleung.xyz ↗",
+     "zh": "在 DIS / jennleung.xyz 观看 ↗"
+    }
+   },
+   {
+    "entry": "metaverse-in-janky-capitalism",
+    "ep": {
+     "en": "Ep. 1 · Apr 2023",
+     "zh": "第 1 集 · 2023 年 4 月"
+    },
+    "title": {
+     "en": "The Metaverse in Janky Capitalism",
+     "zh": "《Janky 资本主义中的元宇宙》"
+    },
+    "url": "https://www.dis.art/the-metaverse-in-janky-capitalism",
+    "cover": "assets/janky/metaverse-janky-capitalism.jpg",
+    "credits": {
+     "en": "Written & produced by Daniel Felstead · 3D animation by Jenn Leung · producer Lauren Boyle · about text Ada O'Higgins · Julia as Convai NPC, voice via Descript",
+     "zh": "编剧制作 Daniel Felstead · 3D 动画 Jenn Leung · 制片 Lauren Boyle · 介绍文字 Ada O'Higgins · Julia 原为 Convai 游戏 NPC，声音经 Descript 训练"
+    },
+    "summary": {
+     "en": "The series opener. AI Julia Fox muses on how internet dynamics shape ideological trends. Facebook's metaverse is sanitised and “uncannily smooth”; real capitalism is janky — “the jacked-up Uber Eats delivery bike: a clumsy, inefficient, and crude collection of parts that barely functions, will probably kill you, but is cool as fuck, kind of.” The argument: the sloppy friction between online and offline life is the real texture of the next internet, not the polished sales pitch. Shown on Joshua Citarella's Monday Night Memes and at NYU ITP Camp Cinema Club alongside Hito Steyerl.",
+     "zh": "系列第一部。AI Julia Fox 琢磨网络动态怎样塑造意识形态潮流。扎克伯格版元宇宙被消毒得「诡异地光滑」；真实的资本主义是 janky 的——「改装过的 Uber Eats 外卖电动车：笨拙、低效、拼凑，勉强能用，可能会要你的命，但有点酷」。论点是：线上线下之间草率、令人沮丧的摩擦，才是「下一代互联网」的真实质地，而不是打磨过的销售话术。在 Joshua Citarella 的 Monday Night Memes 和纽约大学 ITP Camp 电影俱乐部（与 Hito Steyerl 同场）放映。"
+    },
+    "nm": {
+     "en": "An AI celebrity avatar as narrator is itself an experiment in future media; the target is the metaverse as ‘next internet’ narrative.",
+     "zh": "用 AI 名人化身当叙述者，本身就是对未来媒介形态的实验；批评对象是元宇宙这一「下一代互联网」叙事。"
+    },
+    "watch": {
+     "en": "Watch on DIS ↗",
+     "zh": "在 DIS 观看 ↗"
+    }
    }
   ]
  },
@@ -1200,7 +1337,18 @@
    "date_display": {
     "en": "autumn 2025 (undated on DIS; New Models: ‘this fall’)",
     "zh": "2025 年秋（DIS 未注明日期；New Models 称「今年秋天」）"
-   }
+   },
+   "internal": [
+    {
+     "href": "#fl-janky",
+     "label": {
+      "en": "Featured: I'm So Janky series ↑",
+      "zh": "精选：《I'm So Janky》系列 ↑"
+     }
+    }
+   ],
+   "cover": "assets/janky/welcome-to-jankspace.jpg",
+   "featured": "#fl-janky"
   },
   {
    "id": "hervisions-living-neural-cultures",
@@ -1832,13 +1980,22 @@
    },
    "internal": [
     {
+     "href": "#fl-janky",
+     "label": {
+      "en": "Featured: I'm So Janky series ↑",
+      "zh": "精选：《I'm So Janky》系列 ↑"
+     }
+    },
+    {
      "href": "bci.html",
      "label": {
       "en": "BCI × Neural Media page",
       "zh": "本站「脑机接口 × 神经媒体」页面"
      }
     }
-   ]
+   ],
+   "cover": "assets/janky/always-on-my-mind.jpg",
+   "featured": "#fl-janky"
   },
   {
    "id": "per-speculum-verona",
@@ -2152,7 +2309,18 @@
    "date_display": {
     "en": "late Oct 2023 (inferred from Dazed)",
     "zh": "2023 年 10 月下旬（据 Dazed 报道推断）"
-   }
+   },
+   "internal": [
+    {
+     "href": "#fl-janky",
+     "label": {
+      "en": "Featured: I'm So Janky series ↑",
+      "zh": "精选：《I'm So Janky》系列 ↑"
+     }
+    }
+   ],
+   "cover": "assets/janky/literally-no-place.jpg",
+   "featured": "#fl-janky"
   },
   {
    "id": "bodystack-summit",
@@ -2231,7 +2399,18 @@
    "date_display": {
     "en": "c. 25 Apr 2023 (inferred from Instagram)",
     "zh": "约 2023 年 4 月 25 日（据 Instagram 推断）"
-   }
+   },
+   "internal": [
+    {
+     "href": "#fl-janky",
+     "label": {
+      "en": "Featured: I'm So Janky series ↑",
+      "zh": "精选：《I'm So Janky》系列 ↑"
+     }
+    }
+   ],
+   "cover": "assets/janky/metaverse-janky-capitalism.jpg",
+   "featured": "#fl-janky"
   },
   {
    "id": "vtuber-studio",

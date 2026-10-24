@@ -196,6 +196,33 @@ def validate_nm(N, name="new-models"):
         zl = len(e.get("summary", {}).get("zh", ""))
         if zl < 40:
             errs.append(f"{name} {w}: Chinese summary too short ({zl} chars) - write what the episode discusses")
+        if e.get("cover") and not str(e["cover"]).startswith("assets/"):
+            errs.append(f"{name} {w}: cover must be under assets/")
+        if e.get("featured") and not str(e["featured"]).startswith("#"):
+            errs.append(f"{name} {w}: featured must be an in-page #anchor")
+    # Optional featured series (Felstead & Leung "I'm So Janky")
+    S = N.get("series")
+    if S:
+        bil(S.get("title"), "series.title"); bil(S.get("intro"), "series.intro")
+        https(S.get("url"), "series.url")
+        if S.get("kicker"): bil(S["kicker"], "series.kicker")
+        if S.get("cover") and not str(S["cover"]).startswith("assets/"):
+            errs.append(f"{name} series.cover must be under assets/")
+        for n, f in enumerate(S.get("films", [])):
+            w = f"series film {n}"
+            if f.get("entry") not in ids:
+                errs.append(f"{name} {w}: entry '{f.get('entry')}' not in archive")
+            bil(f.get("title"), f"{w} title"); bil(f.get("summary"), f"{w} summary")
+            bil(f.get("ep"), f"{w} ep"); bil(f.get("credits"), f"{w} credits")
+            bil(f.get("watch"), f"{w} watch"); https(f.get("url"), w)
+            if f.get("nm") is not None: bil(f["nm"], f"{w} nm")
+            if f.get("alt_url"): https(f["alt_url"], f"{w} alt_url")
+            if f.get("youtube"): https(f["youtube"], f"{w} youtube")
+            if f.get("cover") and not str(f["cover"]).startswith("assets/"):
+                errs.append(f"{name} {w}: cover must be under assets/")
+            zl = len(f.get("summary", {}).get("zh", ""))
+            if zl < 40:
+                errs.append(f"{name} {w}: Chinese summary too short ({zl})")
     if errs:
         sys.exit("Data errors:\n  " + "\n  ".join(errs))
 
@@ -249,6 +276,7 @@ def validate_pages(d):
         anchor = href.split("#")[1] if "#" in href else ""
         known = ({a for v in SUBNAV.values() for a, _, _ in v} | {"landscape", "bci", "top", "newmodels", "felsteadleung"}
                  | {"e-" + e["id"] for k in ("newmodels", "felsteadleung") for e in d.get(k, {}).get("entries", [])}
+                 | {"janky-" + f["entry"] for f in d.get("felsteadleung", {}).get("series", {}).get("films", [])}
                  | {"i-" + it["id"] for it in d["items"]})
         if anchor and anchor not in known:
             errs.append(f"{where}: unknown anchor '#{anchor}'")
@@ -351,6 +379,7 @@ def main():
                              ("nm-archive", "Archive", "全部节目")]
                             + [(f"y{y}", y, y) for y in nm_years(d["newmodels"])])
     SUBNAV["felstead-leung"] = ([("fl-about", "Who", "是谁"), ("fl-ideas", "Ideas", "核心观点"), ("fl-k", "K & neural media", "与 K 的关系"),
+                                 ("fl-janky", "I'm So Janky", "影像随笔"),
                                  ("fl-archive", "Archive", "全部作品")]
                                 + [(f"y{y}", y, y) for y in nm_years(d["felsteadleung"])])
     validate_pages(d)
@@ -364,6 +393,17 @@ def main():
     for it in d["items"]:
         if it.get("thumbnail"):
             it["thumbnail"] = data_uri(it["thumbnail"])
+    # Felstead & Leung film / series covers (DIS posters)
+    FL = d["felsteadleung"]
+    for e in FL.get("entries", []):
+        if e.get("cover"):
+            e["cover"] = data_uri(e["cover"])
+    if FL.get("series"):
+        if FL["series"].get("cover"):
+            FL["series"]["cover"] = data_uri(FL["series"]["cover"])
+        for f in FL["series"].get("films", []):
+            if f.get("cover"):
+                f["cover"] = data_uri(f["cover"])
     tpl = (HERE / "src" / "template.html").read_text(encoding="utf-8")
     css = (HERE / "src" / "styles.css").read_text(encoding="utf-8")
     js = (HERE / "src" / "app.js").read_text(encoding="utf-8")

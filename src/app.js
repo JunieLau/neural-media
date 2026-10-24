@@ -51,6 +51,14 @@
     return '<div class="yt-row' + (list.length > 1 ? " multi" : "") + (cls ? " " + cls : "") + '">' +
       list.map(function (v) { return yt(v.url, list.length > 1 || v.force ? v.label : null); }).join("") + '</div>';
   }
+  // Non-YouTube film cover (DIS etc.): poster + watch button. Never pretends to be a YouTube embed.
+  function filmCover(url, cover, watchLabel, cls) {
+    if (!cover) return "";
+    return '<a class="film-cover' + (cls ? " " + cls : "") + '" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' +
+      '<img loading="lazy" decoding="async" alt="" src="' + esc(cover) + '">' +
+      '<span class="film-play" aria-hidden="true"></span>' +
+      (watchLabel ? '<span class="film-watch">' + bi(watchLabel) + '</span>' : "") + '</a>';
+  }
   document.addEventListener("click", function (ev) {
     var b = ev.target.closest && ev.target.closest(".yt-cover"); if (!b) return;
     var box = b.parentNode, id = box.getAttribute("data-yt"), st = box.getAttribute("data-start");
@@ -346,13 +354,16 @@
           lastY = y;
         }
         var dd = e.date_display || fmtStamp(e.date);
+        var featBadge = e.featured ? '<a class="nm-feat-badge" href="' + esc(e.featured) + '" data-internal="">' + bi({ en: "See featured series ↑", zh: "见精选系列 ↑" }) + '</a>' : "";
         var meta = (W && e.who ? nmTag("w-" + esc(e.who), W[e.who]) : "") + nmTag("f-" + esc(e.fmt), N.formats[e.fmt]) + nmTag("a-" + esc(e.access), N.access[e.access]) + nmTag("b-" + esc(e.basis), N.basis[e.basis]) +
-          (e.mins ? '<span class="ntag mins">' + esc(e.mins) + ' min</span>' : "") + (e.nm ? badge : "");
-        return yr + '<li class="nitem nm-entry' + (e.nm ? " flag" : "") + '" id="e-' + esc(e.id) + '" data-year="' + y + '" data-fmt="' + esc(e.fmt) + '" data-who="' + esc(e.who || "") + '" data-nm="' + (e.nm ? "1" : "0") + '">' +
+          (e.mins ? '<span class="ntag mins">' + esc(e.mins) + ' min</span>' : "") + (e.nm ? badge : "") + featBadge;
+        var coverBlock = e.cover ? filmCover(e.url, e.cover, e.fmt === "film" ? { en: "Watch ↗", zh: "观看 ↗" } : null, "in-archive") : "";
+        return yr + '<li class="nitem nm-entry' + (e.nm ? " flag" : "") + (e.cover ? " has-cover" : "") + '" id="e-' + esc(e.id) + '" data-year="' + y + '" data-fmt="' + esc(e.fmt) + '" data-who="' + esc(e.who || "") + '" data-nm="' + (e.nm ? "1" : "0") + '">' +
           '<div class="ndate"><time datetime="' + esc(e.date) + '">' + bi(dd) + '</time></div>' +
           '<div class="nbody"><div class="who-marks">' + meta + '</div>' +
           '<h4>' + ext(e.url, bi(e.title)) + '</h4>' +
           (e.people ? '<div class="nm-people">' + (/; hosts$/.test(e.people) ? bi({ en: e.people.replace(/; hosts$/, " · with the hosts"), zh: e.people.replace(/; hosts$/, " · 与主持人") }) : esc(e.people)) + '</div>' : "") +
+          coverBlock +
           '<div class="who-line nm-sum">' + bi(e.summary, "p") + '</div>' +
           (e.nm ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "On neural / future media", zh: "关于神经媒体 / 未来新媒体" }) + '</span>' + bi(e.nm, "p") + '</div>' : "") +
           ytRow(ytList(e.url, e.title, e.links)) +
@@ -362,6 +373,37 @@
           '</div></li>';
       }).join("");
       var R = N.relation;
+      var S = N.series || null;
+      var seriesHtml = "";
+      if (S) {
+        var films = (S.films || []).map(function (f, fi) {
+          var watch = f.watch || { en: "Watch ↗", zh: "观看 ↗" };
+          var ytMir = f.youtube ? yt(f.youtube, { en: "YouTube mirror", zh: "YouTube 镜像" }, { cls: "in-series" }) : "";
+          return '<article class="janky-film" id="janky-' + esc(f.entry) + '">' +
+            filmCover(f.url, f.cover, watch, "hero") +
+            '<div class="janky-body">' +
+              '<div class="janky-ep">' + bi(f.ep) + (f.mins ? '<span class="ntag mins">' + esc(f.mins) + ' min</span>' : "") +
+                (f.nm ? badge : "") + '</div>' +
+              '<h4>' + ext(f.url, bi(f.title)) + '</h4>' +
+              (f.credits ? '<div class="janky-credits">' + bi(f.credits) + '</div>' : "") +
+              '<div class="who-line">' + bi(f.summary, "p") + '</div>' +
+              (f.nm ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "On neural / future media", zh: "关于神经媒体 / 未来新媒体" }) + '</span>' + bi(f.nm, "p") + '</div>' : "") +
+              ytMir +
+              '<div class="links">' + ext(f.url, bi(watch)) +
+                (f.alt_url ? ext(f.alt_url, bi({ en: "Series page on DIS ↗", zh: "DIS 系列页 ↗" })) : "") +
+                intl("#e-" + f.entry, bi({ en: "Archive entry ↓", zh: "档案条目 ↓" }), "internal") +
+              '</div></div></article>';
+        }).join("");
+        seriesHtml =
+          '<div class="land-group janky-series" id="' + P + '-janky"><div class="land-head"><span class="roman">IV</span><h3>' + bi(S.title) + '</h3></div>' +
+            (S.kicker ? '<p class="janky-kicker">' + bi(S.kicker) + '</p>' : "") +
+            '<div class="janky-intro">' +
+              (S.cover ? '<a class="janky-series-cover" href="' + esc(S.url) + '" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" alt="" src="' + esc(S.cover) + '"></a>' : "") +
+              '<div class="janky-intro-text">' + bi(S.intro, "p") +
+                '<div class="links">' + ext(S.url, bi({ en: "I'm So Janky on DIS ↗", zh: "DIS 上的「I'm So Janky」↗" })) + '</div></div></div>' +
+            '<div class="janky-films">' + films + '</div></div>';
+      }
+      var archRoman = S ? "V" : "IV";
       var host = document.getElementById(hostId);
       host.innerHTML =
         '<div class="sec-head"><span class="num">' + o.num + '</span><h2>' + bi(N.title) + '</h2></div>' +
@@ -375,7 +417,8 @@
           '<div class="nm-relsum">' + bi(R.summary, "p") + '</div>' +
           '<div class="nm-rel"><section><h5 class="nm-sub">' + bi({ en: "Direct links (sourced)", zh: "直接联系（有出处）" }) + '</h5><ul class="nm-rlist">' + rel(R.direct) + '</ul></section>' +
           '<section><h5 class="nm-sub">' + bi({ en: "Thematic overlap & differences", zh: "主题重叠与差异" }) + '</h5><ul class="nm-rlist">' + rel(R.thematic) + '</ul></section></div></div>' +
-        '<div class="land-group" id="' + P + '-archive"><div class="land-head"><span class="roman">IV</span><h3>' + bi(o.all) + '</h3></div>' +
+        seriesHtml +
+        '<div class="land-group" id="' + P + '-archive"><div class="land-head"><span class="roman">' + archRoman + '</span><h3>' + bi(o.all) + '</h3></div>' +
           '<div class="feed-note">' + bi(N.note, "p") + '</div>' +
           '<div class="legend nm-legend">' + Object.keys(N.basis).map(function (k) { return nmTag("b-" + k, N.basis[k]); }).join("") + '</div>' +
           '<div class="filters nm-filters" role="group" aria-label="Filter · 筛选">' + chips + '</div>' +

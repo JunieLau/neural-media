@@ -510,3 +510,34 @@ body.lang-both .nm-note p.t.zh{color:var(--text)}
 .chip-who{border-style:dashed}
 .yt-row .yt-cap .t{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 body.lang-both .yt-row .yt-cap .t{-webkit-line-clamp:1}
+
+/* I'm So Janky featured series (Felstead & Leung) */
+.janky-kicker{margin:0 0 14px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#b6ff3b)}
+.janky-intro{display:grid;grid-template-columns:minmax(0,280px) 1fr;gap:22px;align-items:start;margin:0 0 28px}
+.janky-series-cover{display:block;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.08);aspect-ratio:16/11;background:#111}
+.janky-series-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.janky-intro-text .who-line{margin:0}
+.janky-films{display:flex;flex-direction:column;gap:28px}
+.janky-film{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:22px;align-items:start;padding:18px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:rgba(255,255,255,.02)}
+.janky-ep{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 8px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#9a9}
+.janky-film h4{margin:0 0 8px;font-size:1.35rem;line-height:1.25}
+.janky-credits{margin:0 0 10px;font-size:12.5px;line-height:1.45;color:#8a8a8a}
+.film-cover{position:relative;display:block;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.1);background:#0a0a0a;aspect-ratio:16/9}
+.film-cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.film-cover:hover img{transform:scale(1.03)}
+.film-cover .film-play{position:absolute;left:50%;top:50%;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;background:rgba(0,0,0,.55);border:2px solid #fff;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+.film-cover .film-play::before{content:"";position:absolute;left:22px;top:17px;border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent #fff}
+.film-cover .film-watch{position:absolute;left:0;right:0;bottom:0;padding:28px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:13px;font-weight:600;color:#fff}
+.film-cover.in-archive{max-width:360px;margin:10px 0 12px;aspect-ratio:16/9}
+.film-cover.in-archive .film-play{width:40px;height:40px;margin:-20px 0 0 -20px}
+.film-cover.in-archive .film-play::before{left:15px;top:12px;border-width:8px 0 8px 13px}
+.film-cover.in-archive .film-watch{font-size:12px;padding:18px 10px 8px}
+.nm-feat-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:.02em;background:rgba(182,255,59,.12);color:var(--accent,#b6ff3b);border:1px solid rgba(182,255,59,.35);text-decoration:none}
+.nm-feat-badge:hover{background:rgba(182,255,59,.22)}
+@media (max-width:720px){
+  .janky-intro{grid-template-columns:1fr}
+  .janky-film{grid-template-columns:1fr;gap:14px;padding:14px}
+  .janky-series-cover{max-width:100%}
+  .film-cover.hero .film-play{width:48px;height:48px;margin:-24px 0 0 -24px}
+  .film-cover.hero .film-play::before{left:18px;top:14px;border-width:10px 0 10px 16px}
+}
