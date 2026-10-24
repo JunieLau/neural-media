@@ -4,13 +4,14 @@
 **Neural Media**, the concept by writer and artist K Allado-McDowell: media built on neural
 networks (AI, and later brain–computer interfaces), the fourth media era after broadcast, immersive
 and network media. It collects K's essays, talks, videos, podcasts, posts and exhibitions, papers by
-others that cite them, and a map of the other scholars, artists and institutions working with the
-idea, newest first, with a source link for every item.
+others that cite them, a map of the other scholars, artists and institutions working with the
+idea, and a section on how brain–computer interfaces (BCI) connect to neural media, newest first,
+with a source link for every item.
 
 **中文** — 这是一个中英双语的资料库与追踪站，收录有关作家、艺术家 K Allado-McDowell 提出的
 「神经媒体」（Neural Media）概念的全部公开资料。神经媒体指建立在神经网络之上的媒介（AI，以及
 未来的脑机接口），是继广播媒体、沉浸式媒体和网络媒体之后的第四个媒介时代。网站收录 K 的文章、演讲、
-视频、播客、帖子和展览，引用这些文章的他人论文，以及其他从事相关研究的学者、艺术家与机构，
+视频、播客、帖子和展览，引用这些文章的他人论文、其他从事相关研究的学者、艺术家与机构，以及脑机接口（BCI）与神经媒体之间关系的专题，
 按时间由新到旧排列，每条均附原始来源链接。
 
 **Live site / 在线网站:** GitHub Pages serves `index.html` at the repository root.
@@ -30,11 +31,11 @@ first, filterable by type.
 |---|---|
 | `index.html` | **The live site** (served by GitHub Pages). Identical to `Neural-Media.html`. |
 | `Neural-Media.html` | **The site, as a shareable file.** Generated and self-contained (CSS, JS, data and thumbnails inlined). Open it straight from disk, no server or network needed. Google Fonts load if online; otherwise system fonts are used. Don't edit it by hand. |
-| `data/neural-media.json` | **The only data file.** Timeline items, the media-eras table, the featured video, the reading list and `landscape` (the “Who else works on neural media / 其他研究者与机构” section). |
+| `data/neural-media.json` | **The only data file.** Timeline items, the media-eras table, the featured video, the reading list, `landscape` (section 05, “Who else works on neural media / 其他研究者与机构”) and `bci` (section 06, “BCI × Neural Media / 脑机接口与神经媒体”). |
 | `build.py` | Builds `Neural-Media.html` (and an identical `index.html` copy) from the data file and `src/` (python3, stdlib only). It also validates the data. |
 | `src/template.html`, `src/styles.css`, `src/app.js` | Page shell, styles and renderer. |
 | `assets/*.jpg` | YouTube thumbnails, downloaded locally and inlined at build time. |
-| `screenshots/` | Full-page screenshots: `desktop-1280.png` and `mobile-390.png`, plus EN-only and 中文-only top-of-page views. |
+| `screenshots/` | Top-of-page views at 1280 px: `desktop-1280-en-top.png` (EN only) and `desktop-1280-zh-top.png` (中文 only). |
 
 ## Add a daily update
 1. Open `data/neural-media.json` and add an object anywhere in `items`. Order
@@ -56,7 +57,7 @@ first, filterable by type.
    ```
    - `id`: unique slug.
    - `date`: `YYYY-MM-DD` in China time (UTC+8). This sets the order. If only the month is known, use day `01` and put the real precision in `date_display`.
-   - `types`: one or more of `video`, `post`, `essay` (Essay/Paper), `interview`, `podcast`, `talk`, `exhibition`, `book`, `course`, `context` (Wider context / 相关背景: K's activity not about neural media, or others' related work that doesn't engage K's framework). The labels live in the top-level `types` map.
+   - `types`: one or more of `video`, `post`, `essay` (Essay/Paper), `interview`, `podcast`, `talk`, `exhibition`, `book`, `course`, `performance`, `context` (Wider context / 相关背景: K's activity not about neural media, or others' related work that doesn't engage K's framework). The labels live in the top-level `types` map.
    - `added`: the day you added the item. An item gets a **NEW** badge when `added` equals `meta.last_updated`.
    - `links` and `thumbnail` are optional. For a YouTube thumbnail, save `https://img.youtube.com/vi/<ID>/hqdefault.jpg` into `assets/`.
    - Every text field needs both `en` and `zh`. Only add verified facts that have a real source URL.
@@ -68,3 +69,13 @@ first, filterable by type.
 3. Optional: refresh the screenshots with Playwright, or just open `index.html`.
 
 Other sections in the same file: `hero`, `concept.eras` (the four media types), `featured` (the Long Now video and its takeaways), `reading` (a list of item ids shown as key essays and sources) and `landscape`. In `landscape`, `groups[]` each have `key`, a bilingual `title`, an optional `note` and `entries[]`. Each entry has `name`, `line` (both `{en, zh}`), an https `url` and `marks`, chosen from `landscape.markers`: `term` (uses the term), `citesK`, `adjacent` or `different` (different meaning).
+
+`bci` (section 06, BCI × Neural Media / 脑机接口与神经媒体) has bilingual `title`, `lead` and `note`, and `markers`
+(`k` = K's framework, `theory`, `research`, `industry`, `law` = law & ethics). It has three parts:
+- `primer.cards[]`: plain-language explainer cards, each with `term`, `text` (both `{en, zh}`) and an optional https `url`.
+- `theory.entries[]`: ideas and thinkers, each with `name`, `source`, `line` (all `{en, zh}`), an https `url`, `marks`,
+  and optional `links[]` (`url` plus a bilingual `label`). Only entries marked `k` are K's own statements.
+- `news.entries[]`: dated BCI × AI news, each with `date` (`YYYY-MM-DD`), `date_display`, `title`, `line` (all `{en, zh}`),
+  an https `url` and `marks`. Sorted newest first at render time.
+
+The build validates all of this (both languages, https links, known markers, valid dates), the same way it checks `landscape`.

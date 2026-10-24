@@ -1,0 +1,14 @@
+# Old / rejected outputs
+Neural-Media-Updates.pdf
+*.pdf
+# Stale or scratch build artefacts
+dist/
+preview.png
+updates.json
+# OS / editor / Python cruft
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.vscode/
+.idea/

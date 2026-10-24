@@ -48,12 +48,16 @@
     "course": {
       "en": "Course",
       "zh": "课程"
+    },
+    "performance": {
+      "en": "Performance",
+      "zh": "演出"
     }
   },
   "hero": {
     "kicker": {
-      "en": "Daily tracker · EN / 中文",
-      "zh": "每日追踪 · 中英双语"
+      "en": "Weekly tracker · EN / 中文",
+      "zh": "每周追踪 · 中英双语"
     },
     "title": {
       "en": "Neural Media",
@@ -321,14 +325,30 @@
         "zh": "K 在 X 上发帖：「脑机接口 × AI = 神经媒体」"
       },
       "summary": {
-        "en": "Quoting a thread on neuroAI (AI scaling laws applied to brain-computer interfaces), K restates that BCIs combined with AI fall under neural media.",
-        "zh": "K 转引了一条关于 neuroAI（把 AI 的规模定律应用于脑机接口）的帖子，并重申：脑机接口与 AI 的结合属于神经媒体。"
+        "en": "K’s whole post reads “BCI x AI = neural media”. It quotes a thread by Trent McConaghy that defines neuroAI as “AI scaling laws x BCI” (decoding thought-to-text and thought-to-image with lots of data) and recommends Saturnin Pugnet’s manifesto Phase Lock. The clearest statement so far that K counts AI-decoded brain–computer interfaces as neural media. See section 06.",
+        "zh": "K 的帖子全文就是「BCI x AI = neural media」（脑机接口 × AI = 神经媒体）。它转引了 Trent McConaghy 的一条长帖：McConaghy 把 neuroAI 定义为「AI 规模定律 × 脑机接口」，即依靠海量数据把思维解码成文字和图像，并推荐了 Saturnin Pugnet 的宣言《Phase Lock》。这是 K 迄今最明确的表态：由 AI 解码的脑机接口属于神经媒体。详见第 06 部分。"
       },
       "url": "https://x.com/kalladomcdowell/status/2107760105198690608",
       "source": {
         "en": "X (@kalladomcdowell)",
         "zh": "X（@kalladomcdowell）"
-      }
+      },
+      "links": [
+        {
+          "url": "https://x.com/trentmc0/status/2107494584813011295",
+          "label": {
+            "en": "The quoted thread (Trent McConaghy)",
+            "zh": "被转引的帖子（Trent McConaghy）"
+          }
+        },
+        {
+          "url": "https://phaselock.satpugnet.com/",
+          "label": {
+            "en": "Phase Lock",
+            "zh": "《Phase Lock》"
+          }
+        }
+      ]
     },
     {
       "id": "2026-10-06-neuralese",
@@ -364,22 +384,52 @@
       ],
       "added": "2026-10-22",
       "date_display": {
-        "en": "2 Oct 2026 (updated 16 Oct)",
-        "zh": "2026 年 10 月 2 日（10 月 16 日更新）"
+        "en": "2 Oct 2026 (v1.3, 23 Oct)",
+        "zh": "2026 年 10 月 2 日（10 月 23 日更新至 v1.3）"
       },
       "title": {
         "en": "Saturnin Pugnet, “Phase Lock”: a manifesto on brain-computer interfaces and human agency in the age of AI",
         "zh": "Saturnin Pugnet《Phase Lock》：关于脑机接口与 AI 时代人类能动性的宣言"
       },
       "summary": {
-        "en": "A long-form manifesto arguing that AI is outpacing humans' ability to steer it through keyboards and screens, and that brain-computer interfaces offer “alignment-by-integration”: BCI as a training signal for AI, a new interface, and a way to widen mind–machine bandwidth. It bets that AI-style scaling (hardware, data, models) applies to brain decoding, led by consumer non-invasive devices. First published 2 Oct 2026; v1.2 on 16 Oct. Wider context: it does not mention K or the term neural media, but it covers the BCI × AI convergence that K counts as part of neural media (see K's 7 Oct post “BCI x AI = neural media”).",
-        "zh": "这是一篇长篇宣言，认为 AI 的发展已经超出人类用键盘和屏幕去引导它的能力，主张通过脑机接口实现“融合式对齐”：用脑机接口为 AI 提供训练信号、作为新的交互界面，并扩大大脑与机器之间的带宽。作者认为 AI 那套“更好硬件、更多数据、更大模型”的扩展规律同样适用于大脑解码，而消费级非侵入式设备会是最快的路线。2026 年 10 月 2 日首发，10 月 16 日更新至 v1.2。（相关背景：文中没有提到 K 或“神经媒体”一词，但讨论的正是 K 归入神经媒体的“脑机接口 × AI”融合，参见 K 10 月 7 日的推文“BCI x AI = neural media”。）"
+        "en": "A roughly 40,000-word manifesto by Saturnin Pugnet (a founding member of World, formerly Worldcoin, and founder of the AI-safety nonprofit Factor Omega). It argues that AI is outpacing our ability to steer it through keyboards and screens (“the bandwidth problem”) and that brain–computer interfaces offer “alignment-by-integration”: the brain as a blueprint for aligned intelligence, neural data as a training signal for AI, and a wider channel between mind and machine. Its bet is that AI-style scaling (hardware, data, models) will work for brain decoding, led by consumer non-invasive devices; it also covers neurorights and cognitive liberty. Four parts and appendices. Version history on the site: v1.0 first published 2 Oct 2026, v1.1 14 Oct, v1.2 16 Oct, v1.3 23 Oct. Pugnet announced it on X and Substack on 6 Oct. Wider context: it never mentions K or the term neural media, but K’s 7 Oct post “BCI x AI = neural media” quotes Trent McConaghy’s thread recommending it.",
+        "zh": "Saturnin Pugnet 撰写的长篇宣言，约 4 万词。作者是 World（原 Worldcoin）的创始成员，也是 AI 安全非营利组织 Factor Omega 的创始人。文章认为，AI 的发展速度已经超出人类用键盘和屏幕去引导它的能力（作者称之为「带宽问题」），而脑机接口提供了一条「融合式对齐」的路径：大脑是对齐智能的蓝本，神经数据是训练 AI 的信号，脑机接口还能拓宽大脑与机器之间的通道。作者押注 AI 那套「更好的硬件、更多的数据、更大的模型」的扩展规律同样适用于大脑解码，而消费级非侵入式设备会是最快的路线；文中也讨论了神经权利和认知自由。全文分四部分，另有附录。网站上的版本记录：2026 年 10 月 2 日首发 v1.0，10 月 14 日 v1.1，10 月 16 日 v1.2，10 月 23 日 v1.3。作者于 10 月 6 日在 X 和 Substack 上正式发布。（相关背景：文中没有提到 K，也没有使用「神经媒体」一词；但 K 在 10 月 7 日发帖「BCI x AI = neural media」，转引的正是 Trent McConaghy 推荐这篇宣言的帖子。）"
       },
       "url": "https://phaselock.satpugnet.com/",
       "source": {
         "en": "phaselock.satpugnet.com",
         "zh": "phaselock.satpugnet.com"
-      }
+      },
+      "links": [
+        {
+          "url": "https://x.com/satpugnet/status/2107485695795220596",
+          "label": {
+            "en": "Pugnet’s launch post on X (6 Oct)",
+            "zh": "作者在 X 上的发布帖（10 月 6 日）"
+          }
+        },
+        {
+          "url": "https://blog.satpugnet.com/p/phase-lock",
+          "label": {
+            "en": "Substack edition (6 Oct)",
+            "zh": "Substack 版本（10 月 6 日）"
+          }
+        },
+        {
+          "url": "https://x.com/trentmc0/status/2107494584813011295",
+          "label": {
+            "en": "Trent McConaghy: “neuroAI = AI scaling laws x BCI”",
+            "zh": "Trent McConaghy：「neuroAI = AI 规模定律 × 脑机接口」"
+          }
+        },
+        {
+          "url": "https://phaselock.satpugnet.com/about",
+          "label": {
+            "en": "About the author",
+            "zh": "作者简介"
+          }
+        }
+      ]
     },
     {
       "id": "2026-10-interspecies-future",
@@ -2083,6 +2133,271 @@
           }
         }
       ]
+    },
+    {
+      "id": "2026-09-14-ucsf-speech-gesture",
+      "date": "2026-09-14",
+      "types": [
+        "essay",
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "14 Sep 2026",
+        "zh": "2026 年 9 月 14 日"
+      },
+      "title": {
+        "en": "Brain implant decodes speech and gestures at once to drive a full-body avatar (UCSF, Nature Neuroscience)",
+        "zh": "脑植入设备同时解码语言和手势，驱动全身虚拟化身（加州大学旧金山分校，《自然·神经科学》）"
+      },
+      "summary": {
+        "en": "Edward Chang’s team at UCSF used machine-learning decoders on electrocorticography (ECoG) arrays over the motor cortex of people with paralysis. Two participants could speak and gesture (a wave, a thumbs-up) at the same time through a virtual avatar. Decoders worked better when trained on combined speech-and-gesture data, not on each separately. Wider context: BCI × AI research, not about K; see section 06.",
+        "zh": "加州大学旧金山分校 Edward Chang 团队在瘫痪患者运动皮层表面放置皮层电极阵列（ECoG），用机器学习解码器读取信号。两名参与者能通过虚拟化身同时「说话」和做手势（挥手、竖大拇指）。研究发现，用「说话加手势」的混合数据训练的解码器，比分别训练的效果更好。（相关背景：属于脑机接口 × AI 研究，与 K 无直接关系，详见第 06 部分。）"
+      },
+      "url": "https://www.nature.com/articles/s41593-026-02446-2",
+      "source": {
+        "en": "Nature Neuroscience · NIH",
+        "zh": "《自然·神经科学》· 美国国立卫生研究院"
+      },
+      "links": [
+        {
+          "url": "https://www.nih.gov/news-events/news-releases/neuroprosthesis-paralysis-enables-simultaneous-speech-body-language",
+          "label": {
+            "en": "NIH news release",
+            "zh": "NIH 新闻稿"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-06-29-brain2qwerty",
+      "date": "2026-06-29",
+      "types": [
+        "essay",
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "29 Jun 2026",
+        "zh": "2026 年 6 月 29 日"
+      },
+      "title": {
+        "en": "Meta AI’s Brain2Qwerty: decoding typed sentences from non-invasive brain recordings (Nature Neuroscience)",
+        "zh": "Meta AI 的 Brain2Qwerty：从非侵入式脑信号中解码打字内容（《自然·神经科学》）"
+      },
+      "summary": {
+        "en": "Peer-reviewed version of a February 2025 preprint. 35 healthy volunteers typed memorised sentences while EEG or MEG recorded their brains; a deep network plus a language model decoded the text. With MEG the average character error rate was 29% (18% for the best participants), versus 65% with EEG. No surgery, but not yet real time. Wider context: BCI × AI research, not about K.",
+        "zh": "这是 2025 年 2 月预印本的同行评审正式版。35 名健康志愿者在打出背诵的句子时，用脑电（EEG）或脑磁（MEG）记录大脑活动，再由深度神经网络加语言模型解码出文字。使用脑磁图时平均字符错误率为 29%（表现最好的参与者为 18%），脑电图则为 65%。无需手术，但尚不能实时解码。（相关背景：属于脑机接口 × AI 研究，与 K 无直接关系。）"
+      },
+      "url": "https://www.nature.com/articles/s41593-026-02303-2",
+      "source": {
+        "en": "Nature Neuroscience (Meta AI)",
+        "zh": "《自然·神经科学》（Meta AI）"
+      },
+      "links": [
+        {
+          "url": "https://arxiv.org/abs/2502.17480",
+          "label": {
+            "en": "Feb 2025 preprint",
+            "zh": "2025 年 2 月预印本"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-01-15-merge-labs",
+      "date": "2026-01-15",
+      "types": [
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "15 Jan 2026",
+        "zh": "2026 年 1 月 15 日"
+      },
+      "title": {
+        "en": "Merge Labs launches with a $252M seed round led by OpenAI",
+        "zh": "Merge Labs 成立，完成 OpenAI 领投的 2.52 亿美元种子轮融资"
+      },
+      "summary": {
+        "en": "Merge Labs, a BCI research lab co-founded by Sam Altman (in a personal capacity), Alex Blania, Sandro Herbig and researchers Mikhail Shapiro, Tyson Aflalo and Sumner Norman, says it will connect with neurons “using molecules instead of electrodes” and ultrasound rather than brain implants. OpenAI wrote the largest check and will collaborate on scientific foundation models; its post says BCIs “will create a natural, human-centered way for anyone to seamlessly interact with AI.” Wider context: not about K.",
+        "zh": "Merge Labs 是一家脑机接口研究机构，联合创始人包括以个人身份参与的 Sam Altman、Alex Blania、Sandro Herbig，以及研究者 Mikhail Shapiro、Tyson Aflalo 和 Sumner Norman。公司表示将「用分子而非电极」与神经元连接，并用超声波等方式传递信息，避免在脑组织中植入设备。OpenAI 是最大的单笔投资方，并将合作开发科学基础模型；OpenAI 的博文写道，脑机接口将为任何人提供「自然、以人为本的方式，与 AI 无缝互动」。（相关背景：与 K 无直接关系。）"
+      },
+      "url": "https://techcrunch.com/2026/01/15/openai-invests-in-sam-altmans-brain-computer-interface-startup-merge-labs/",
+      "source": {
+        "en": "TechCrunch · OpenAI",
+        "zh": "TechCrunch · OpenAI"
+      },
+      "links": [
+        {
+          "url": "https://openai.com/index/investing-in-merge-labs/",
+          "label": {
+            "en": "OpenAI: Investing in Merge Labs",
+            "zh": "OpenAI：投资 Merge Labs"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2025-11-05-mind-captioning",
+      "date": "2025-11-05",
+      "types": [
+        "essay",
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "5 Nov 2025",
+        "zh": "2025 年 11 月 5 日"
+      },
+      "title": {
+        "en": "“Mind captioning”: turning brain activity into descriptive text (Horikawa, Science Advances)",
+        "zh": "「心智字幕」：把大脑活动转换成描述性文字（堀川友慈，《科学进展》）"
+      },
+      "summary": {
+        "en": "Tomoyasu Horikawa (NTT Communication Science Laboratories) decoded semantic features from fMRI while people watched or recalled short videos, then used a language model to evolve sentences that match them, producing coherent descriptions of what people saw or remembered. Wider context: AI language models reading the brain; not about K.",
+        "zh": "日本 NTT 通信科学基础研究所的堀川友慈在受试者观看或回忆短视频时，用功能性磁共振成像（fMRI）解码大脑中的语义特征，再借助语言模型逐步生成与之匹配的句子，得到对所见或所忆内容的连贯描述。（相关背景：AI 语言模型「读取」大脑的研究，与 K 无直接关系。）"
+      },
+      "url": "https://www.nature.com/articles/d41586-025-03624-1",
+      "source": {
+        "en": "Nature (news) · Science Advances",
+        "zh": "《自然》新闻 ·《科学进展》"
+      },
+      "links": [
+        {
+          "url": "https://www.science.org/doi/10.1126/sciadv.adw1464",
+          "label": {
+            "en": "The paper",
+            "zh": "论文原文"
+          }
+        },
+        {
+          "url": "https://horikawa-t.github.io/MindCaptioningProject/",
+          "label": {
+            "en": "Project page",
+            "zh": "项目页面"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2025-08-14-inner-speech",
+      "date": "2025-08-14",
+      "types": [
+        "essay",
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "14 Aug 2025",
+        "zh": "2025 年 8 月 14 日"
+      },
+      "title": {
+        "en": "Stanford team decodes “inner speech” from the motor cortex (Cell)",
+        "zh": "斯坦福团队从运动皮层解码「内心语言」（《细胞》）"
+      },
+      "summary": {
+        "en": "Erin Kunz and colleagues showed that implanted arrays in four people with paralysis pick up imagined, unspoken sentences, decoded in real time from a vocabulary of up to 125,000 words, with error rates of roughly 26–54%. They also tested a mental “password” that stops the device decoding private inner speech unless the user unlocks it. Wider context: not about K, but it raises the mental-privacy questions in section 06.",
+        "zh": "Erin Kunz 等研究者发现，四名瘫痪患者脑中植入的电极阵列能捕捉到想象中、未说出口的句子，并在最多 12.5 万词的词汇范围内实时解码，错误率约为 26% 至 54%。团队还测试了一种「意念密码」：用户不解锁，设备就不会解码其私密的内心语言。（相关背景：与 K 无直接关系，但涉及第 06 部分讨论的精神隐私问题。）"
+      },
+      "url": "https://doi.org/10.1016/j.cell.2025.06.015",
+      "source": {
+        "en": "Cell · Stanford",
+        "zh": "《细胞》· 斯坦福大学"
+      },
+      "links": [
+        {
+          "url": "https://news.stanford.edu/stories/2025/08/study-inner-speech-decoding-device-patients-paralysis",
+          "label": {
+            "en": "Stanford Report",
+            "zh": "斯坦福大学报道"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2025-03-19-synchron-chiral",
+      "date": "2025-03-19",
+      "types": [
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "19 Mar 2025",
+        "zh": "2025 年 3 月 19 日"
+      },
+      "title": {
+        "en": "Synchron unveils Chiral, a planned “cognitive AI” foundation model trained on brain data (with NVIDIA)",
+        "zh": "Synchron 发布 Chiral 路线图：与英伟达合作、用大脑数据训练的「认知 AI」基础模型"
+      },
+      "summary": {
+        "en": "At NVIDIA GTC, the stent-electrode BCI company described a brain foundation model “using generative pre-training techniques that learn directly from neural data” (CEO Tom Oxley), trained on de-identified data from its users. Wider context: a literal neural network trained on biological neural signals; not about K.",
+        "zh": "在英伟达 GTC 大会上，这家以血管支架电极为技术路线的脑机接口公司介绍了一个大脑基础模型：CEO Tom Oxley 称它「采用生成式预训练技术，直接从神经数据中学习」，训练数据是用户经过去标识化处理的神经数据。（相关背景：这是名副其实用生物神经信号训练的人工神经网络，与 K 无直接关系。）"
+      },
+      "url": "https://www.massdevice.com/synchron-cognitive-ai-model-bci-nvidia/",
+      "source": {
+        "en": "MassDevice",
+        "zh": "MassDevice"
+      }
+    },
+    {
+      "id": "2024-07-11-synchron-openai",
+      "date": "2024-07-11",
+      "types": [
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "11 Jul 2024",
+        "zh": "2024 年 7 月 11 日"
+      },
+      "title": {
+        "en": "Synchron adds an OpenAI-powered chat feature to its brain implant",
+        "zh": "Synchron 在脑植入系统中加入由 OpenAI 驱动的聊天功能"
+      },
+      "summary": {
+        "en": "People using Synchron’s Stentrode, which is placed through a blood vessel, can pick AI-suggested replies with brain signals instead of spelling each word. Patient Mark, who has ALS, told CNBC it saves him time and energy; Synchron said it shares no brain data with OpenAI. An early case of a large language model sitting directly in a BCI loop. Wider context: not about K.",
+        "zh": "Synchron 的 Stentrode 电极经血管植入。使用者可以用脑信号直接选择 AI 生成的回复建议，而不必逐字拼写。患有渐冻症（ALS）的患者 Mark 告诉 CNBC，这为他节省了时间和体力；Synchron 表示不会与 OpenAI 共享任何大脑数据。这是大语言模型直接进入脑机接口回路的早期案例。（相关背景：与 K 无直接关系。）"
+      },
+      "url": "https://www.cnbc.com/2024/07/16/neuralink-rival-synchron-is-using-openai-models-to-power-chat-feature.html",
+      "source": {
+        "en": "CNBC",
+        "zh": "CNBC"
+      }
+    },
+    {
+      "id": "2022-10-25-song-of-the-ambassadors",
+      "date": "2022-10-25",
+      "types": [
+        "performance"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "25 Oct 2022",
+        "zh": "2022 年 10 月 25 日"
+      },
+      "title": {
+        "en": "K Allado-McDowell, Song of the Ambassadors: an AI opera and neuroscience study, Lincoln Center",
+        "zh": "K Allado-McDowell《大使之歌》：一部 AI 歌剧，也是一项神经科学实验（纽约林肯中心）"
+      },
+      "summary": {
+        "en": "Work-in-progress preview at Alice Tully Hall. Libretto written by K with GPT-3, music by Derrick Skye. An EEG cap worn by Lincoln Center’s Shanta Thake fed her brainwaves into Refik Anadol’s AI-generated projections, while UCSD scientists recorded audience brainwaves and heart rate. At the start of the 2025 Long Now talk on neural media, K recalls an opera that was also a neuroscience study, “using brain waves to control AI-generated visuals”; the description matches this project.",
+        "zh": "在爱丽丝·塔利音乐厅进行的创作中预演。剧本由 K 与 GPT-3 合写，音乐由 Derrick Skye 创作。林肯中心首席艺术官 Shanta Thake 佩戴脑电帽，她的脑电波实时输入 Refik Anadol 的 AI 生成影像；加州大学圣地亚哥分校的科学家同时记录观众的脑电波和心率。K 在 2025 年 Long Now 神经媒体演讲的开头，回忆起一部同时也是神经科学实验、「用脑电波控制 AI 生成影像」的歌剧，描述与这个项目一致。"
+      },
+      "url": "https://www.kalladomcdowell.com/songoftheambassadors",
+      "source": {
+        "en": "kalladomcdowell.com · BOMB",
+        "zh": "kalladomcdowell.com · BOMB 杂志"
+      },
+      "links": [
+        {
+          "url": "https://bombmagazine.org/articles/2022/10/25/k-allado-mcdowell-derrick-skye-and-refik-anadol-in-conversation/",
+          "label": {
+            "en": "BOMB: K, Derrick Skye & Refik Anadol in conversation",
+            "zh": "BOMB 杂志：K、Derrick Skye 与 Refik Anadol 对谈"
+          }
+        }
+      ]
     }
   ],
   "reading": [
@@ -2491,5 +2806,596 @@
         ]
       }
     ]
+  },
+  "bci": {
+    "title": {
+      "en": "BCI × Neural Media",
+      "zh": "脑机接口与神经媒体"
+    },
+    "lead": {
+      "en": "K counts brain–computer interfaces as part of neural media: the word “neural” names both the networks in our heads and the networks in our machines. This section explains the link in plain language, gathers the ideas behind it and tracks real BCI news from 2024 to 2026, especially where AI models now read the brain.",
+      "zh": "K 把脑机接口也算作神经媒体的一部分：「神经」一词既指我们头脑中的神经网络，也指机器里的神经网络。本节用通俗的语言解释两者的联系，整理背后的思想资源，并追踪 2024 至 2026 年间真实的脑机接口进展，尤其是 AI 模型开始「读取」大脑的研究。"
+    },
+    "note": {
+      "en": "Only entries labelled “K’s framework” are K’s own statements. The other thinkers do not cite K; their placement here is our reading of how they connect.",
+      "zh": "只有标为「K 的框架」的条目是 K 本人的观点。其他思想家并未引用 K，把他们放在这里，是本站对二者关联的解读。"
+    },
+    "markers": {
+      "k": {
+        "en": "K’s framework",
+        "zh": "K 的框架"
+      },
+      "theory": {
+        "en": "Theory",
+        "zh": "理论"
+      },
+      "research": {
+        "en": "Research",
+        "zh": "科研"
+      },
+      "industry": {
+        "en": "Industry",
+        "zh": "产业"
+      },
+      "law": {
+        "en": "Law & ethics",
+        "zh": "法律与伦理"
+      }
+    },
+    "primer": {
+      "title": {
+        "en": "A two-minute primer",
+        "zh": "两分钟读懂脑机接口"
+      },
+      "cards": [
+        {
+          "term": {
+            "en": "What a BCI is",
+            "zh": "什么是脑机接口"
+          },
+          "text": {
+            "en": "A brain–computer interface reads signals from the nervous system and turns them into commands, text or speech, so a person can use a computer without hands or voice. Some devices can also stimulate the brain, writing signals back in.",
+            "zh": "脑机接口读取神经系统发出的信号，把它们转换成指令、文字或语音，让人不用手、不用开口就能操作电脑。有些设备还能刺激大脑，把信号「写」回去。"
+          },
+          "url": "https://phaselock.satpugnet.com/part-1"
+        },
+        {
+          "term": {
+            "en": "Inside or outside the skull",
+            "zh": "植入式与非侵入式"
+          },
+          "text": {
+            "en": "Implants (Neuralink, Paradromics, Precision; Synchron’s Stentrode goes in through a blood vessel) get clear signals but need surgery. Non-invasive tools such as EEG caps, MEG and fMRI scanners, and the ultrasound methods Merge Labs is pursuing, need no surgery but read blurrier signals.",
+            "zh": "植入式设备（Neuralink、Paradromics、Precision；Synchron 的 Stentrode 则经血管植入）信号清晰，但需要手术。非侵入式方法，如脑电帽、脑磁图和功能性磁共振扫描仪，以及 Merge Labs 正在研究的超声波方法，不用手术，但读到的信号更模糊。"
+          },
+          "url": "https://www.nature.com/articles/s41593-026-02303-2"
+        },
+        {
+          "term": {
+            "en": "Where AI comes in",
+            "zh": "AI 在其中的作用"
+          },
+          "text": {
+            "en": "Brain signals are noisy. Machine-learning decoders map patterns of activity to words, images or movements, and they increasingly borrow the models behind chatbots and image generators: language models fill in likely words, and diffusion models turn decoded features into pictures.",
+            "zh": "大脑信号充满噪声。机器学习解码器把大脑活动的模式对应到文字、图像或动作上，而且越来越多地借用聊天机器人和图像生成器背后的模型：语言模型补全最可能的词语，扩散模型把解码出的特征还原成图像。"
+          },
+          "url": "https://www.nature.com/articles/d41586-025-03624-1"
+        },
+        {
+          "term": {
+            "en": "Why neural data is sensitive",
+            "zh": "神经数据为何敏感"
+          },
+          "text": {
+            "en": "Brain recordings can reveal health, attention and emotional states. Chile, several US states and UNESCO have begun to protect “neural data” and “mental privacy” in law.",
+            "zh": "大脑记录可能透露一个人的健康、注意力和情绪状态。智利、美国多个州以及联合国教科文组织已开始在法律和规范中保护「神经数据」和「精神隐私」。"
+          },
+          "url": "https://www.unesco.org/en/articles/ethics-neurotechnology-unesco-adopts-first-global-standard-cutting-edge-technology"
+        }
+      ]
+    },
+    "theory": {
+      "title": {
+        "en": "Theory: from neural nets to brains",
+        "zh": "理论：从神经网络到大脑"
+      },
+      "entries": [
+        {
+          "name": {
+            "en": "“Our brains, too, are neural media”",
+            "zh": "「我们的大脑，也是神经媒体」"
+          },
+          "marks": [
+            "k"
+          ],
+          "source": {
+            "en": "K at Long Now, 25 Feb 2025",
+            "zh": "K 在 Long Now 的演讲，2025 年 2 月 25 日"
+          },
+          "line": {
+            "en": "K defines neural media as all media built on networks of neurons, biological or mathematical. Long Now’s summary of the talk puts it plainly: our brains are neural media, “the first of their kind, but not the last”. In the talk K lists EEG brain–computer interfaces beside the Oura Ring as biometric tools that make “a mathematical image of you” for machine learning.",
+            "zh": "K 把神经媒体定义为一切建立在神经元网络之上的媒介，无论是生物的还是数学的。Long Now 对这场演讲的介绍说得很直白：我们的大脑就是神经媒体，「第一种，但不是最后一种」。K 在演讲中把脑电脑机接口和 Oura 智能戒指并列，称它们都是生物识别工具，会为机器学习生成「一个关于你的数学图像」。"
+          },
+          "url": "https://longnow.org/talks/02025-allado-mcdowell/"
+        },
+        {
+          "name": {
+            "en": "Brainwaves driving AI images",
+            "zh": "用脑电波驱动 AI 影像"
+          },
+          "marks": [
+            "k"
+          ],
+          "source": {
+            "en": "Song of the Ambassadors, 2022",
+            "zh": "《大使之歌》，2022"
+          },
+          "line": {
+            "en": "K’s opera was also a neuroscience study: an EEG cap fed a performer’s brainwaves into AI-generated projections, while scientists recorded the audience. K recalls this kind of work at the start of the Long Now talk. K’s question at the time: “could you actually compose with states of consciousness?”",
+            "zh": "K 的这部歌剧同时也是一项神经科学实验：脑电帽把一位表演者的脑电波输入 AI 生成的影像，科学家同时记录观众的数据。K 在 Long Now 演讲开头回忆的正是这类创作。K 当时的提问是：「能不能直接用意识状态来作曲？」"
+          },
+          "url": "https://www.digitalstorytellinglab.io/projects/song-of-the-ambassadors"
+        },
+        {
+          "name": {
+            "en": "Self-as-model, model-as-self",
+            "zh": "「自我即模型」与「模型即自我」"
+          },
+          "marks": [
+            "k",
+            "theory"
+          ],
+          "source": {
+            "en": "K, “Designing Neural Media”, Gropius Bau, 2023",
+            "zh": "K，《设计神经媒体》，柏林 Gropius Bau，2023"
+          },
+          "line": {
+            "en": "K traces how McCulloch, Pitts and Turing treated the brain as a computer in order to build brain-like computers. K names two responses: seeing models as selves, or seeing selves as models (citing Adam Safron’s world-modelling theory of consciousness, which draws on the free-energy principle and active inference). K proposes instead that selves and models are both relational structures in a wider ecology of meaning.",
+            "zh": "K 回溯了麦卡洛克、皮茨和图灵如何把大脑当作计算机，进而造出类脑计算机。K 指出人们的两种反应：把模型看作自我，或把自我看作模型（文中引用了 Adam Safron 的「整合世界建模」意识理论，该理论借鉴了自由能原理和主动推理）。K 则主张：自我和模型都是更大的意义生态中的关系结构。"
+          },
+          "url": "https://www.berlinerfestspiele.de/en/gropius-bau/programm/journal/2023/k-allado-mcdowell-designing-neural-media"
+        },
+        {
+          "name": {
+            "en": "“BCI x AI = neural media”",
+            "zh": "「脑机接口 × AI = 神经媒体」"
+          },
+          "marks": [
+            "k"
+          ],
+          "source": {
+            "en": "K on X, 7 Oct 2026",
+            "zh": "K 在 X 上发帖，2026 年 10 月 7 日"
+          },
+          "line": {
+            "en": "K’s whole comment on Trent McConaghy’s thread “neuroAI = AI scaling laws x BCI”, which itself recommends Saturnin Pugnet’s Phase Lock.",
+            "zh": "这是 K 对 Trent McConaghy 长帖「neuroAI = AI 规模定律 × 脑机接口」的全部评论，而那条长帖推荐的正是 Saturnin Pugnet 的《Phase Lock》。"
+          },
+          "url": "https://x.com/kalladomcdowell/status/2107760105198690608"
+        },
+        {
+          "name": {
+            "en": "Alignment-by-integration",
+            "zh": "融合式对齐"
+          },
+          "marks": [
+            "theory"
+          ],
+          "source": {
+            "en": "Saturnin Pugnet, Phase Lock, 2026",
+            "zh": "Saturnin Pugnet，《Phase Lock》，2026"
+          },
+          "line": {
+            "en": "Keyboards and screens are too narrow a channel to steer advanced AI (“the bandwidth problem”). BCI could couple human intent to AI directly, as a blueprint, a training signal and a wider pipe. The bet is that AI’s scaling laws carry over to brain decoding. It does not cite K.",
+            "zh": "键盘和屏幕这条通道太窄，不足以引导越来越强大的 AI（作者称之为「带宽问题」）。脑机接口可以把人的意图直接接入 AI，同时充当蓝本、训练信号和更宽的通道。作者押注 AI 的扩展规律同样适用于大脑解码。文中没有引用 K。"
+          },
+          "url": "https://phaselock.satpugnet.com/"
+        },
+        {
+          "name": {
+            "en": "Generative models that read brains",
+            "zh": "能「读脑」的生成模型"
+          },
+          "marks": [
+            "research"
+          ],
+          "source": {
+            "en": "Takagi & Nishimoto, CVPR 2023 · Tang et al., Nature Neuroscience, 1 May 2023",
+            "zh": "高木优、西本伸志，CVPR 2023 · Tang 等，《自然·神经科学》，2023 年 5 月 1 日"
+          },
+          "line": {
+            "en": "Two 2023 studies used fMRI with generative AI: Stable Diffusion to reconstruct images people saw, and a GPT-based decoder to recover the gist of stories people heard or imagined. Artificial neural nets reading biological ones, the two meanings of “neural” meeting.",
+            "zh": "2023 年的两项研究把功能性磁共振成像与生成式 AI 结合起来：一项用 Stable Diffusion 重建受试者看到的图像，另一项用基于 GPT 的解码器还原受试者听到或想象的故事大意。人工神经网络开始读取生物神经网络，「神经」的两层含义在这里交汇。"
+          },
+          "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Takagi_High-Resolution_Image_Reconstruction_With_Latent_Diffusion_Models_From_Human_Brain_CVPR_2023_paper.html",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41593-023-01304-9",
+              "label": {
+                "en": "Tang et al. 2023",
+                "zh": "Tang 等 2023"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Neurorights",
+            "zh": "神经权利"
+          },
+          "marks": [
+            "theory",
+            "law"
+          ],
+          "source": {
+            "en": "Rafael Yuste, Sara Goering et al., Nature, 9 Nov 2017",
+            "zh": "Rafael Yuste、Sara Goering 等，《自然》，2017 年 11 月 9 日"
+          },
+          "line": {
+            "en": "“Four ethical priorities for neurotechnologies and AI”: privacy and consent, agency and identity, augmentation, and bias. The paper behind the neurorights movement and Chile’s 2021 constitutional amendment.",
+            "zh": "《神经技术与 AI 的四项伦理优先事项》：隐私与知情同意、能动性与身份认同、能力增强，以及偏见。这篇文章是神经权利运动的起点，也推动了智利 2021 年的修宪。"
+          },
+          "url": "https://www.nature.com/articles/551159a",
+          "links": [
+            {
+              "url": "https://neurorightsfoundation.org/",
+              "label": {
+                "en": "Neurorights Foundation",
+                "zh": "神经权利基金会"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Cognitive liberty",
+            "zh": "认知自由"
+          },
+          "marks": [
+            "theory",
+            "law"
+          ],
+          "source": {
+            "en": "Nita Farahany, The Battle for Your Brain, 2023",
+            "zh": "Nita Farahany，《大脑之争》，2023"
+          },
+          "line": {
+            "en": "Argues for a right to mental privacy, freedom of thought and self-determination as neurotech becomes the “universal controller” for our devices. Farahany later co-chaired the expert group that drafted UNESCO’s 2025 neurotechnology standard.",
+            "zh": "随着神经技术成为我们操控各种设备的「通用控制器」，作者主张确立精神隐私、思想自由和自我决定的权利。Farahany 后来担任联合国教科文组织专家组联合主席，主持起草了 2025 年的神经技术伦理标准。"
+          },
+          "url": "https://us.macmillan.com/books/9781250272959/thebattleforyourbrain"
+        },
+        {
+          "name": {
+            "en": "The extended mind",
+            "zh": "延展心智"
+          },
+          "marks": [
+            "theory"
+          ],
+          "source": {
+            "en": "Andy Clark & David Chalmers, Analysis, 1998",
+            "zh": "Andy Clark 与 David Chalmers，《分析》期刊，1998"
+          },
+          "line": {
+            "en": "The classic argument that a tool reliably coupled to a person, such as a notebook, can count as part of their mind. BCIs and AI models make the question of where a mind ends far less hypothetical.",
+            "zh": "这是一个经典论证：一件与人稳定耦合的工具，比如笔记本，可以算作心智的一部分。脑机接口和 AI 模型让「心智的边界在哪里」不再只是思想实验。"
+          },
+          "url": "https://doi.org/10.1093/analys/58.1.7"
+        }
+      ]
+    },
+    "news": {
+      "title": {
+        "en": "News: BCI meets AI, 2024–2026",
+        "zh": "新闻：脑机接口与 AI 的交汇（2024–2026）"
+      },
+      "entries": [
+        {
+          "date": "2026-10-02",
+          "date_display": {
+            "en": "2 Oct 2026",
+            "zh": "2026 年 10 月 2 日"
+          },
+          "marks": [
+            "theory"
+          ],
+          "title": {
+            "en": "Saturnin Pugnet publishes Phase Lock",
+            "zh": "Saturnin Pugnet 发表《Phase Lock》"
+          },
+          "line": {
+            "en": "Manifesto on BCI and AI alignment; public launch on X on 6 Oct; K responds “BCI x AI = neural media” on 7 Oct; latest revision v1.3 on 23 Oct.",
+            "zh": "关于脑机接口与 AI 对齐的宣言；10 月 6 日在 X 上正式发布；K 于 10 月 7 日回应「BCI x AI = neural media」；最新修订版 v1.3 发布于 10 月 23 日。"
+          },
+          "url": "https://phaselock.satpugnet.com/"
+        },
+        {
+          "date": "2026-09-14",
+          "date_display": {
+            "en": "14 Sep 2026",
+            "zh": "2026 年 9 月 14 日"
+          },
+          "marks": [
+            "research"
+          ],
+          "title": {
+            "en": "UCSF decodes speech and gesture together",
+            "zh": "加州大学旧金山分校同时解码语言与手势"
+          },
+          "line": {
+            "en": "ECoG implants and machine-learning decoders let people with paralysis talk and gesture at once through a full-body avatar (Nature Neuroscience).",
+            "zh": "皮层电极与机器学习解码器让瘫痪患者通过全身虚拟化身同时说话和做手势（《自然·神经科学》）。"
+          },
+          "url": "https://www.nature.com/articles/s41593-026-02446-2"
+        },
+        {
+          "date": "2026-06-29",
+          "date_display": {
+            "en": "29 Jun 2026",
+            "zh": "2026 年 6 月 29 日"
+          },
+          "marks": [
+            "research"
+          ],
+          "title": {
+            "en": "Brain2Qwerty peer-reviewed",
+            "zh": "Brain2Qwerty 通过同行评审"
+          },
+          "line": {
+            "en": "Meta AI decodes typed sentences from MEG with a 29% average character error rate, no surgery (Nature Neuroscience).",
+            "zh": "Meta AI 从脑磁图信号中解码打字内容，平均字符错误率 29%，无需手术（《自然·神经科学》）。"
+          },
+          "url": "https://www.nature.com/articles/s41593-026-02303-2"
+        },
+        {
+          "date": "2026-01-15",
+          "date_display": {
+            "en": "15 Jan 2026",
+            "zh": "2026 年 1 月 15 日"
+          },
+          "marks": [
+            "industry"
+          ],
+          "title": {
+            "en": "Merge Labs raises $252M, led by OpenAI",
+            "zh": "Merge Labs 获 OpenAI 领投 2.52 亿美元"
+          },
+          "line": {
+            "en": "Non-invasive, ultrasound- and molecule-based BCI; OpenAI to collaborate on scientific foundation models.",
+            "zh": "主攻基于超声波和分子的非侵入式脑机接口；OpenAI 将合作开发科学基础模型。"
+          },
+          "url": "https://techcrunch.com/2026/01/15/openai-invests-in-sam-altmans-brain-computer-interface-startup-merge-labs/"
+        },
+        {
+          "date": "2025-11-05",
+          "date_display": {
+            "en": "5 Nov 2025",
+            "zh": "2025 年 11 月 5 日"
+          },
+          "marks": [
+            "law"
+          ],
+          "title": {
+            "en": "UNESCO adopts the first global neurotech ethics standard",
+            "zh": "联合国教科文组织通过首个全球神经技术伦理标准"
+          },
+          "line": {
+            "en": "Recommendation on the Ethics of Neurotechnology; mental privacy, consent and limits on workplace monitoring; in force 12 Nov.",
+            "zh": "《神经技术伦理建议书》，涵盖精神隐私、知情同意和对职场监控的限制；11 月 12 日生效。"
+          },
+          "url": "https://www.unesco.org/en/articles/ethics-neurotechnology-unesco-adopts-first-global-standard-cutting-edge-technology"
+        },
+        {
+          "date": "2025-11-05",
+          "date_display": {
+            "en": "5 Nov 2025",
+            "zh": "2025 年 11 月 5 日"
+          },
+          "marks": [
+            "research"
+          ],
+          "title": {
+            "en": "“Mind captioning” turns fMRI into sentences",
+            "zh": "「心智字幕」把脑成像转换成句子"
+          },
+          "line": {
+            "en": "NTT’s Tomoyasu Horikawa uses a language model to describe what people saw or recalled (Science Advances).",
+            "zh": "NTT 的堀川友慈用语言模型描述受试者看到或回忆起的画面（《科学进展》）。"
+          },
+          "url": "https://www.nature.com/articles/d41586-025-03624-1"
+        },
+        {
+          "date": "2025-08-14",
+          "date_display": {
+            "en": "14 Aug 2025",
+            "zh": "2025 年 8 月 14 日"
+          },
+          "marks": [
+            "research"
+          ],
+          "title": {
+            "en": "Inner speech decoded, with a mental password",
+            "zh": "内心语言被解码，并配有「意念密码」"
+          },
+          "line": {
+            "en": "Stanford study in four people with paralysis; raises new mental-privacy questions (Cell).",
+            "zh": "斯坦福大学针对四名瘫痪患者的研究，引出新的精神隐私问题（《细胞》）。"
+          },
+          "url": "https://doi.org/10.1016/j.cell.2025.06.015"
+        },
+        {
+          "date": "2025-06-02",
+          "date_display": {
+            "en": "2 Jun 2025",
+            "zh": "2025 年 6 月 2 日"
+          },
+          "marks": [
+            "industry"
+          ],
+          "title": {
+            "en": "Paradromics’ first in-human recording",
+            "zh": "Paradromics 完成首次人体记录"
+          },
+          "line": {
+            "en": "Connexus implanted, recorded and removed intact in under 20 minutes during epilepsy surgery at University of Michigan Health (procedure on 14 May).",
+            "zh": "在密歇根大学医疗中心的一台癫痫手术中，Connexus 被植入、完成记录并完整取出，全程不到 20 分钟（手术于 5 月 14 日进行）。"
+          },
+          "url": "https://paradromics.com/news/paradromics-completes-first-in-human-recording-with-the-connexus-brain-computer-interface/"
+        },
+        {
+          "date": "2025-04-17",
+          "date_display": {
+            "en": "17 Apr 2025",
+            "zh": "2025 年 4 月 17 日"
+          },
+          "marks": [
+            "industry"
+          ],
+          "title": {
+            "en": "Precision Neuroscience gets FDA clearance",
+            "zh": "Precision Neuroscience 获美国 FDA 许可"
+          },
+          "line": {
+            "en": "Layer 7 cortical interface, 1,024 electrodes, cleared for up to 30 days. “Neural decoding algorithms, like all AI-driven products, rely on vast amounts of data.”",
+            "zh": "Layer 7 皮层接口有 1,024 个电极，获准植入最长 30 天。公司联合创始人称：「神经解码算法和所有 AI 产品一样，依赖海量数据。」"
+          },
+          "url": "https://www.precisionneuro.io/articles/company-news/precision-neuroscience-receives-fda-clearance-for-high-resolution-cortical-electrode-array"
+        },
+        {
+          "date": "2025-03-19",
+          "date_display": {
+            "en": "19 Mar 2025",
+            "zh": "2025 年 3 月 19 日"
+          },
+          "marks": [
+            "industry"
+          ],
+          "title": {
+            "en": "Synchron’s Chiral brain foundation model",
+            "zh": "Synchron 的 Chiral 大脑基础模型"
+          },
+          "line": {
+            "en": "With NVIDIA: generative pre-training directly on de-identified neural data.",
+            "zh": "与英伟达合作：直接在去标识化的神经数据上进行生成式预训练。"
+          },
+          "url": "https://www.massdevice.com/synchron-cognitive-ai-model-bci-nvidia/"
+        },
+        {
+          "date": "2024-09-28",
+          "date_display": {
+            "en": "28 Sep 2024",
+            "zh": "2024 年 9 月 28 日"
+          },
+          "marks": [
+            "law"
+          ],
+          "title": {
+            "en": "California protects neural data",
+            "zh": "加州立法保护神经数据"
+          },
+          "line": {
+            "en": "SB 1223 signed: neural data becomes “sensitive personal information” under the state privacy law, from 1 Jan 2025.",
+            "zh": "州长签署 SB 1223 法案：自 2025 年 1 月 1 日起，神经数据被纳入州隐私法中的「敏感个人信息」。"
+          },
+          "url": "https://www.gov.ca.gov/2024/09/28/governor-newsom-issues-legislative-update-9-28-24/"
+        },
+        {
+          "date": "2024-08-14",
+          "date_display": {
+            "en": "14 Aug 2024",
+            "zh": "2024 年 8 月 14 日"
+          },
+          "marks": [
+            "research"
+          ],
+          "title": {
+            "en": "A man with ALS “speaks” again",
+            "zh": "一位渐冻症患者重新「开口说话」"
+          },
+          "line": {
+            "en": "UC Davis speech implant for Casey Harrell reached 97.5% accuracy over months of daily use (NEJM).",
+            "zh": "加州大学戴维斯分校为 Casey Harrell 植入的语音脑机接口，在数月的日常使用中准确率达到 97.5%（《新英格兰医学杂志》）。"
+          },
+          "url": "https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08"
+        },
+        {
+          "date": "2024-07-11",
+          "date_display": {
+            "en": "11 Jul 2024",
+            "zh": "2024 年 7 月 11 日"
+          },
+          "marks": [
+            "industry"
+          ],
+          "title": {
+            "en": "Synchron × OpenAI chat",
+            "zh": "Synchron 接入 OpenAI 聊天功能"
+          },
+          "line": {
+            "en": "A large language model suggests replies that implant users select with brain signals.",
+            "zh": "大语言模型生成回复建议，植入者用脑信号选择。"
+          },
+          "url": "https://www.cnbc.com/2024/07/16/neuralink-rival-synchron-is-using-openai-models-to-power-chat-feature.html"
+        },
+        {
+          "date": "2024-04-17",
+          "date_display": {
+            "en": "17 Apr 2024",
+            "zh": "2024 年 4 月 17 日"
+          },
+          "marks": [
+            "law"
+          ],
+          "title": {
+            "en": "Colorado’s first-in-the-US neural data law",
+            "zh": "科罗拉多州通过全美首部神经数据法"
+          },
+          "line": {
+            "en": "HB24-1058 adds neural data to “sensitive data” in the Colorado Privacy Act; effective 7 Aug 2024.",
+            "zh": "HB24-1058 法案把神经数据纳入《科罗拉多隐私法》中的「敏感数据」，2024 年 8 月 7 日生效。"
+          },
+          "url": "https://leg.colorado.gov/bills/hb24-1058"
+        },
+        {
+          "date": "2024-01-29",
+          "date_display": {
+            "en": "29 Jan 2024",
+            "zh": "2024 年 1 月 29 日"
+          },
+          "marks": [
+            "industry"
+          ],
+          "title": {
+            "en": "Neuralink’s first human implant",
+            "zh": "Neuralink 完成首例人体植入"
+          },
+          "line": {
+            "en": "Elon Musk announces the first patient; he is later identified as Noland Arbaugh.",
+            "zh": "马斯克宣布首位患者接受植入，该患者后来公开身份为 Noland Arbaugh。"
+          },
+          "url": "https://www.npr.org/2024/01/30/1227850900/elon-musk-neuralink-implant-clinical-trial"
+        },
+        {
+          "date": "2023-08-09",
+          "date_display": {
+            "en": "9 Aug 2023",
+            "zh": "2023 年 8 月 9 日"
+          },
+          "marks": [
+            "law"
+          ],
+          "title": {
+            "en": "Earlier: Chile’s neurorights in court",
+            "zh": "更早的背景：智利神经权利进入司法"
+          },
+          "line": {
+            "en": "Chile’s Supreme Court orders Emotiv to delete a user’s brain data, applying the 2021 constitutional amendment (Law 21.383) that protects brain activity.",
+            "zh": "智利最高法院依据 2021 年保护大脑活动的修宪条款（第 21.383 号法律），责令 Emotiv 公司删除一名用户的大脑数据。"
+          },
+          "url": "https://derechocienciaytecnologia.uc.cl/sentencia/girardi-emotiv-inc-rol-105065-2023-corte-suprema/"
+        }
+      ]
+    }
   }
 }

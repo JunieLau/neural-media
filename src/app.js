@@ -139,6 +139,49 @@
         '<div class="legend">' + legend + '</div>' + groups;
     }
 
+    // BCI x Neural Media
+    var B = D.bci;
+    if (B) {
+      var bm = function (m) { return '<span class="mark b-' + esc(m) + '">' + bi(B.markers[m]) + '</span>'; };
+      var more = function (ls) { return (ls || []).map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join(""); };
+      var roman = ["i", "ii", "iii", "iv", "v", "vi"];
+      var primer = B.primer.cards.map(function (c, ci) {
+        return '<article class="pcard"><span class="pnum">' + roman[ci] + '</span>' +
+          '<h4>' + bi(c.term) + '</h4><div class="ptext">' + bi(c.text, "p") + '</div>' +
+          (c.url ? '<div class="links">' + ext(c.url, bi({ en: "Source ↗", zh: "来源 ↗" })) + '</div>' : "") + '</article>';
+      }).join("");
+      var theory = B.theory.entries.map(function (e) {
+        return '<li class="idea">' +
+          '<div class="who-marks">' + e.marks.map(bm).join("") + '</div>' +
+          '<h4>' + ext(e.url, bi(e.name)) + '</h4>' +
+          '<div class="idea-src">' + bi(e.source) + '</div>' +
+          '<div class="who-line">' + bi(e.line, "p") + '</div>' +
+          '<div class="links">' + ext(e.url, bi({ en: "Read ↗", zh: "阅读 ↗" })) + more(e.links) + '</div></li>';
+      }).join("");
+      var news = B.news.entries.slice().sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+      var lastY = "";
+      var newsHtml = news.map(function (n) {
+        var y = n.date.slice(0, 4), yr = "";
+        if (y !== lastY) { yr = '<li class="nyear" aria-hidden="true"><span>' + y + '</span></li>'; lastY = y; }
+        return yr + '<li class="nitem">' +
+          '<div class="ndate"><time datetime="' + esc(n.date) + '">' + bi(n.date_display) + '</time></div>' +
+          '<div class="nbody"><div class="who-marks">' + n.marks.map(bm).join("") + '</div>' +
+          '<h4>' + ext(n.url, bi(n.title)) + '</h4>' + '<div class="who-line">' + bi(n.line, "p") + '</div></div></li>';
+      }).join("");
+      document.getElementById("bci").innerHTML =
+        '<div class="sec-head"><span class="num">06</span><h2>' + bi(B.title) + '</h2></div>' +
+        '<div class="bci-strap" aria-hidden="true"><span class="s-brain">BRAIN · 大脑</span><span class="s-wave"></span><span class="s-net">NET · 网络</span></div>' +
+        '<div class="lead bci-lead">' + bi(B.lead, "p") + '</div>' +
+        '<div class="legend">' + Object.keys(B.markers).map(bm).join("") + '</div>' +
+        '<div class="land-group"><div class="land-head"><span class="roman">I</span><h3>' + bi(B.primer.title) + '</h3></div>' +
+          '<div class="primer">' + primer + '</div></div>' +
+        '<div class="land-group"><div class="land-head"><span class="roman">II</span><h3>' + bi(B.theory.title) + '</h3></div>' +
+          '<ul class="who-list ideas">' + theory + '</ul>' +
+          (B.note ? '<div class="land-note">' + bi(B.note, "p") + '</div>' : "") + '</div>' +
+        '<div class="land-group"><div class="land-head"><span class="roman">III</span><h3>' + bi(B.news.title) + '</h3></div>' +
+          '<ol class="bnews">' + newsHtml + '</ol></div>';
+    }
+
     document.getElementById("foot").innerHTML =
       bi({ en: "An independent bilingual tracker of public sources on Neural Media, a concept by K Allado-McDowell. Every item links to its original source. Dates are China time (UTC+8).",
            zh: "这是一个独立的双语追踪站，收录有关 K Allado-McDowell「神经媒体」概念的公开资料。每一条目都附有原始来源链接。日期均为北京时间（UTC+8）。" }, "p");

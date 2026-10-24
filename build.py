@@ -66,6 +66,51 @@ def validate(d):
                 for m in e.get("marks", []):
                     if m not in L.get("markers", {}):
                         errs.append(f"landscape entry {nm}: unknown marker '{m}'")
+    B = d.get("bci")
+    if B:
+        def bil(o, where):
+            if not (isinstance(o, dict) and o.get("en") and o.get("zh")):
+                errs.append(f"bci {where}: needs both en and zh")
+        def https(u, where):
+            if not str(u or "").startswith("https://"):
+                errs.append(f"bci {where}: url must be https")
+        def marks(ms, where):
+            for m in ms or []:
+                if m not in B.get("markers", {}):
+                    errs.append(f"bci {where}: unknown marker '{m}'")
+        for k in ("title", "lead") + (("note",) if "note" in B else ()):
+            bil(B.get(k), k)
+        for mk, mv in B.get("markers", {}).items():
+            bil(mv, f"marker {mk}")
+        for part in ("primer", "theory", "news"):
+            if part not in B:
+                errs.append(f"bci: missing '{part}'")
+            else:
+                bil(B[part].get("title"), f"{part}.title")
+        for n, c in enumerate(B.get("primer", {}).get("cards", [])):
+            bil(c.get("term"), f"primer card {n} term"); bil(c.get("text"), f"primer card {n} text")
+            if "url" in c:
+                https(c["url"], f"primer card {n}")
+        for e in B.get("theory", {}).get("entries", []):
+            nm = (e.get("name") or {}).get("en")
+            for k in ("name", "source", "line"):
+                bil(e.get(k), f"theory '{nm}' {k}")
+            https(e.get("url"), f"theory '{nm}'"); marks(e.get("marks"), f"theory '{nm}'")
+            for l in e.get("links", []):
+                https(l.get("url"), f"theory '{nm}' link"); bil(l.get("label"), f"theory '{nm}' link label")
+        for e in B.get("news", {}).get("entries", []):
+            nm = (e.get("title") or {}).get("en")
+            for k in ("date_display", "title", "line"):
+                bil(e.get(k), f"news '{nm}' {k}")
+            try:
+                datetime.date.fromisoformat(e.get("date", ""))
+            except Exception:
+                errs.append(f"bci news '{nm}': date must be YYYY-MM-DD")
+            https(e.get("url"), f"news '{nm}'"); marks(e.get("marks"), f"news '{nm}'")
+    for it in d["items"]:
+        for l in it.get("links", []):
+            if not str(l.get("url", "")).startswith("https://"):
+                errs.append(f"item {it.get('id')}: link url must be https")
     if errs:
         sys.exit("Data errors:\n  " + "\n  ".join(errs))
 

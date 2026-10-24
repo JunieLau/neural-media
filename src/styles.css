@@ -212,3 +212,57 @@ body.lang-zh .who h4 .t.zh{font:400 20px/1.35 var(--serif);color:var(--text)}
 .who h4 .one{display:block}
 body.lang-both .who h4 .t.zh .arr{display:none}
 .who h4 .arr{white-space:nowrap}
+
+/* BCI x neural media */
+.tag.performance{color:#ffb38a}
+.bci-strap{display:flex;align-items:center;gap:16px;margin:-6px 0 26px;font:600 11px/1 var(--sans);letter-spacing:.24em;color:var(--dim)}
+.bci-strap .s-brain{color:var(--violet)}.bci-strap .s-net{color:var(--accent)}
+.bci-strap .s-wave{flex:1;max-width:420px;height:18px;background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='18' viewBox='0 0 60 18'%3E%3Cpath d='M0 9 Q7.5 0 15 9 T30 9 T45 9 T60 9' fill='none' stroke='%23a58bff' stroke-width='1.2'/%3E%3C/svg%3E") repeat-x left center;
+  -webkit-mask:linear-gradient(90deg,#000 10%,rgba(0,0,0,.25));mask:linear-gradient(90deg,#000 10%,rgba(0,0,0,.25))}
+.bci-lead p{max-width:900px}
+.mark.b-k{color:var(--violet);border-color:rgba(165,139,255,.55)}
+.mark.b-theory{color:var(--accent);border-color:rgba(200,255,77,.45)}
+.mark.b-research{color:#8fffd0;border-color:rgba(143,255,208,.4)}
+.mark.b-industry{color:#ffc46b;border-color:rgba(255,196,107,.4)}
+.mark.b-law{color:#ff9fb0;border-color:rgba(255,159,176,.4)}
+.primer{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.pcard{position:relative;background:linear-gradient(180deg,rgba(165,139,255,.07),var(--panel) 55%);border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px 18px;display:flex;flex-direction:column;gap:10px;overflow:hidden}
+.pcard .pnum{position:absolute;right:16px;top:8px;font:italic 400 46px/1 var(--serif);color:var(--violet);opacity:.22}
+.pcard h4{margin:0;font:400 22px/1.2 var(--serif);padding-right:36px}
+.pcard h4 .t.zh{font:500 15px/1.5 var(--sans);color:var(--muted)}
+body.lang-zh .pcard h4 .t.zh{font:400 20px/1.35 var(--serif);color:var(--text)}
+.ptext p{margin:0;font-size:14.5px;line-height:1.6}
+.pcard .links{margin-top:auto}
+.ideas .idea{padding:22px 0;border-bottom:1px solid var(--line);display:grid;gap:8px;align-content:start}
+.idea h4{margin:0;font:400 22px/1.25 var(--serif)}
+.idea h4 a{text-decoration:none}.idea h4 a:hover{color:var(--accent)}
+.idea h4 .t.zh{font:500 15px/1.5 var(--sans);color:var(--muted)}
+body.lang-zh .idea h4 .t.zh{font:400 20px/1.35 var(--serif);color:var(--text)}
+.idea-src{font:500 12px/1.5 var(--sans);letter-spacing:.04em;color:var(--dim)}
+.idea-src .t{display:inline}body.lang-both .idea-src .t.zh::before{content:" / "}
+.bnews{list-style:none;margin:10px 0 0;padding:0;position:relative}
+.bnews::before{content:"";position:absolute;left:131px;top:0;bottom:0;width:1px;background:linear-gradient(var(--violet),var(--line2) 30%,var(--line2) 80%,transparent)}
+.nyear{display:grid;grid-template-columns:120px 1fr;gap:0 32px;margin:26px 0 8px}
+.nyear span{grid-column:1;text-align:right;font:400 30px/1 var(--serif);color:var(--violet);opacity:.85}
+.nyear:first-child{margin-top:8px}
+.nitem{display:grid;grid-template-columns:120px 1fr;gap:0 32px;padding:12px 0;position:relative}
+.nitem::before{content:"";position:absolute;left:128px;top:19px;width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px rgba(200,255,77,.6)}
+.ndate{font:500 13px/1.4 var(--sans);color:var(--muted);text-align:right;padding-top:2px}
+.ndate .t.zh{font-size:12px;color:var(--dim)}
+.nbody{display:grid;gap:6px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.nbody h4{margin:0;font:600 17px/1.35 var(--sans)}
+.nbody h4 a{text-decoration:none}.nbody h4 a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+.nbody h4 .t.zh{font-weight:500;font-size:15.5px;color:#d4d6df}
+@media (max-width:960px){.primer{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){
+  .primer{grid-template-columns:1fr}
+  .bnews::before{left:5px}
+  .nyear,.nitem{grid-template-columns:1fr;padding-left:24px;gap:6px}
+  .nyear span{text-align:left;font-size:24px}
+  .nitem::before{left:2px;top:17px}
+  .ndate{text-align:left;display:flex;gap:8px;flex-wrap:wrap}.ndate .t{display:inline}
+  body.lang-both .ndate .t.zh::before{content:"· "}
+  .bci-strap .s-wave{max-width:none}
+}
+body.lang-zh .land-head h3 .t.zh{font:400 28px/1.2 var(--serif);color:var(--text);letter-spacing:.02em}
