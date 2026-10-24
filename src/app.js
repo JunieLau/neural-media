@@ -177,7 +177,7 @@
             '<h4>' + ext(en.url, nameHtml(en.name)) + '</h4>' +
             '<div class="who-line">' + bi(en.line, "p") + '</div></li>';
         }).join("");
-        return '<div class="land-group g-' + esc(g.key) + '">' +
+        return '<div class="land-group g-' + esc(g.key) + '" id="g-' + esc(g.key) + '">' +
           '<div class="land-head"><span class="roman">' + ["I", "II", "III"][gi] + '</span><h3>' + bi(g.title) + '</h3></div>' +
           '<ul class="who-list">' + rows + '</ul>' +
           (g.note ? '<div class="land-note">' + bi(g.note, "p") + '</div>' : "") + '</div>';
@@ -224,12 +224,12 @@
         '<div class="lead bci-lead">' + bi(B.lead, "p") + '</div>' +
         (B.feature ? feature(B.feature) : "") +
         '<div class="legend">' + Object.keys(B.markers).map(bm).join("") + '</div>' +
-        '<div class="land-group"><div class="land-head"><span class="roman">I</span><h3>' + bi(B.primer.title) + '</h3></div>' +
+        '<div class="land-group" id="primer"><div class="land-head"><span class="roman">I</span><h3>' + bi(B.primer.title) + '</h3></div>' +
           '<div class="primer">' + primer + '</div></div>' +
-        '<div class="land-group"><div class="land-head"><span class="roman">II</span><h3>' + bi(B.theory.title) + '</h3></div>' +
+        '<div class="land-group" id="theory"><div class="land-head"><span class="roman">II</span><h3>' + bi(B.theory.title) + '</h3></div>' +
           '<ul class="who-list ideas">' + theory + '</ul>' +
           (B.note ? '<div class="land-note">' + bi(B.note, "p") + '</div>' : "") + '</div>' +
-        '<div class="land-group"><div class="land-head"><span class="roman">III</span><h3>' + bi(B.news.title) + '</h3></div>' +
+        '<div class="land-group" id="news"><div class="land-head"><span class="roman">III</span><h3>' + bi(B.news.title) + '</h3></div>' +
           '<ol class="bnews">' + newsHtml + '</ol></div>';
     }
 
@@ -261,5 +261,39 @@
   var q = (location.search.match(/[?&]lang=(en|zh|both)/) || [])[1];
   setLang(q || saved || "both");
 
-  if (location.hash) { var tgt = document.getElementById(location.hash.slice(1)); if (tgt) setTimeout(function () { tgt.scrollIntoView(); }, 0); }
+  // Sticky header height -> scroll offset, so headings are never hidden under the header + section bar.
+  var topbar = document.querySelector(".topbar");
+  function syncOffset() {
+    var hgt = topbar ? Math.ceil(topbar.getBoundingClientRect().height) : 60;
+    document.documentElement.style.setProperty("--hdr", hgt + "px");
+    return hgt;
+  }
+  syncOffset();
+  window.addEventListener("resize", syncOffset);
+
+  // Scroll-spy: highlight the section currently in view in the in-page bar.
+  var spyLinks = Array.prototype.slice.call(document.querySelectorAll(".subnav a[data-spy]"));
+  var spyTargets = spyLinks.map(function (a) { return document.getElementById(a.getAttribute("data-spy")); });
+  var current = null;
+  function spy() {
+    if (!spyLinks.length) return;
+    var line = syncOffset() + 24, idx = -1;
+    spyTargets.forEach(function (el, i) { if (el && el.getBoundingClientRect().top <= line) idx = i; });
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) idx = spyTargets.length - 1;
+    var a = idx > -1 ? spyLinks[idx] : null;
+    if (a === current) return;
+    current = a;
+    spyLinks.forEach(function (l) { if (l === a) l.setAttribute("aria-current", "true"); else l.removeAttribute("aria-current"); });
+    if (a) {  // keep the active link visible in the horizontally scrolling bar on small screens
+      var bar = a.parentNode, r = a.getBoundingClientRect(), br = bar.getBoundingClientRect();
+      if (r.left < br.left || r.right > br.right) bar.scrollLeft += (r.left - br.left) - (br.width - r.width) / 2;
+    }
+  }
+  var ticking = false;
+  window.addEventListener("scroll", function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; spy(); }); }
+  }, { passive: true });
+  spy();
+
+  if (location.hash) { var tgt = document.getElementById(location.hash.slice(1)); if (tgt) setTimeout(function () { tgt.scrollIntoView(); spy(); }, 0); }
 })();

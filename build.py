@@ -118,7 +118,13 @@ def validate(d):
         sys.exit("Data errors:\n  " + "\n  ".join(errs))
 
 
-SUBNAV = [("concept", "Concept", "概念"), ("updates", "Timeline", "时间线"), ("video", "Video", "视频"), ("reading", "Reading", "阅读")]
+SUBNAV = {  # in-page section bar (sticky under the header) for each page
+    "home": [("concept", "Concept", "概念"), ("updates", "Timeline", "时间线"), ("video", "Video", "视频"), ("reading", "Reading", "阅读")],
+    "who-else": [("g-people", "Scholars & artists", "学者与艺术家"), ("g-institutions", "Institutions", "机构与项目"),
+                 ("g-meanings", "Different meanings", "同名异义")],
+    "bci": [("phase-lock", "Phase Lock", "《Phase Lock》专题"), ("primer", "Primer", "入门"), ("theory", "Theory", "理论"),
+            ("news", "News", "新闻")],
+}
 PAGES = {  # key -> (output files, sections in <main>, data keys kept, title)
     "home": (["Neural-Media.html", "index.html"],
              '  <section class="hero wrap" id="hero"></section>\n' + "".join(
@@ -148,7 +154,8 @@ def validate_pages(d):
         if f and f not in files:
             errs.append(f"{where}: internal link to unknown page '{href}'")
         anchor = href.split("#")[1] if "#" in href else ""
-        if anchor and anchor not in ("phase-lock", "concept", "updates", "video", "reading", "landscape", "bci", "top"):
+        known = {a for v in SUBNAV.values() for a, _, _ in v} | {"landscape", "bci", "top"}
+        if anchor and anchor not in known:
             errs.append(f"{where}: unknown anchor '#{anchor}'")
     for it in d["items"]:
         if "internal" in it:
@@ -214,8 +221,9 @@ def nav_html(d, key):
     return "".join(out)
 
 
-def subnav_html():
-    links = "".join(f'<a href="#{a}"><span class="t en">{en}</span><span class="t zh">{zh}</span></a>' for a, en, zh in SUBNAV)
+def subnav_html(key):
+    links = "".join(f'<a href="#{a}" data-spy="{a}"><span class="t en">{en}</span><span class="t zh">{zh}</span></a>'
+                    for a, en, zh in SUBNAV[key])
     return ('<nav class="subnav" aria-label="On this page · 本页导航"><div class="wrap subnav-in">'
             '<span class="sublabel"><span class="t en">On this page</span><span class="t zh">本页</span></span>' + links + '</div></nav>')
 
@@ -227,6 +235,10 @@ def main():
         DATA.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     validate(d)
     validate_pages(d)
+    keys = [g["key"] for g in d.get("landscape", {}).get("groups", [])]
+    for a, _, _ in SUBNAV["who-else"]:
+        if a[2:] not in keys:
+            sys.exit(f"Data errors:\n  who-else in-page bar points to missing landscape group '{a[2:]}'")
     d["items"].sort(key=lambda i: i["date"], reverse=True)
     # inline images
     d["featured"]["thumbnail"] = data_uri(d["featured"]["thumbnail"])
@@ -245,7 +257,7 @@ def main():
                    .replace("<!--__PAGE__-->", key)
                    .replace("<!--__HOME__-->", "#top" if key == "home" else "index.html")
                    .replace("<!--__NAV__-->", nav_html(d, key))
-                   .replace("<!--__SUBNAV__-->", subnav_html() if key == "home" else "")
+                   .replace("<!--__SUBNAV__-->", subnav_html(key) if SUBNAV.get(key) else "")
                    .replace("<!--__MAIN__-->", main_html.rstrip("\n"))
                    .replace("/*__CSS__*/", css)
                    .replace("/*__DATA__*/null", blob)

@@ -18,7 +18,7 @@
   --radius:14px;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:
   radial-gradient(900px 500px at 85% -5%,rgba(165,139,255,.16),transparent 60%),
   radial-gradient(700px 400px at -10% 10%,rgba(200,255,77,.07),transparent 60%),var(--bg);
@@ -282,16 +282,17 @@ body.lang-zh .land-head h3 .t.zh{font:400 28px/1.2 var(--serif);color:var(--text
 .nav a{position:relative;padding:8px 12px;border-radius:999px;white-space:nowrap;transition:color .2s,background .2s}
 .nav a[aria-current="page"]{color:var(--text);background:rgba(255,255,255,.06)}
 .nav a[aria-current="page"]::after{content:"";position:absolute;left:14px;right:14px;bottom:-11px;height:2px;border-radius:2px;background:var(--accent);box-shadow:0 0 10px rgba(200,255,77,.6)}
-.subnav{border-bottom:1px solid var(--line);background:rgba(10,11,15,.4)}
+.subnav{border-top:1px solid var(--line)}
 .subnav-in{display:flex;align-items:center;gap:22px;height:44px;font-size:13px;color:var(--muted);overflow-x:auto;scrollbar-width:none}
 .subnav-in::-webkit-scrollbar{display:none}
-.subnav a{text-decoration:none;white-space:nowrap}.subnav a:hover{color:var(--accent)}
+.subnav a{position:relative;text-decoration:none;white-space:nowrap;padding:6px 0;transition:color .2s}.subnav a:hover{color:var(--text)}
+.subnav a[aria-current="true"]{color:var(--accent)}
+.subnav a[aria-current="true"]::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--accent);box-shadow:0 0 8px rgba(200,255,77,.55)}
 .subnav .t{display:inline}body.lang-both .subnav a .t.zh,body.lang-both .subnav .sublabel .t.zh{display:none}
 .sublabel{font:600 10.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
 .block.page-first{border-top:0;padding-top:72px}
 .links a.internal{color:var(--violet)}
 @media (max-width:960px){
-  html{scroll-padding-top:112px}
   .bar{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:0;gap:10px 16px}
   .nav{order:3;width:100%;margin:0 -6px;overflow-x:auto;scrollbar-width:none;padding-bottom:8px}
   .nav::-webkit-scrollbar{display:none}
@@ -395,6 +396,10 @@ body.lang-both .fsecs .t.en + .t.zh{margin-top:0}
   .btn{padding:10px 14px;font-size:13px}
   .block.page-first{padding-top:44px}
 }
+
+/* sticky in-page bar: section anchors land below header + bar */
+[id]{scroll-margin-top:calc(var(--hdr,72px) + 12px)}
+@media (max-width:960px){.subnav-in{height:40px;gap:18px}}
 </style>
 </head>
 <body class="lang-both page-home">
@@ -409,8 +414,8 @@ body.lang-both .fsecs .t.en + .t.zh{margin-top:0}
       <button data-lang="both" type="button" aria-pressed="true">EN + 中文</button>
     </div>
   </div>
+<nav class="subnav" aria-label="On this page · 本页导航"><div class="wrap subnav-in"><span class="sublabel"><span class="t en">On this page</span><span class="t zh">本页</span></span><a href="#concept" data-spy="concept"><span class="t en">Concept</span><span class="t zh">概念</span></a><a href="#updates" data-spy="updates"><span class="t en">Timeline</span><span class="t zh">时间线</span></a><a href="#video" data-spy="video"><span class="t en">Video</span><span class="t zh">视频</span></a><a href="#reading" data-spy="reading"><span class="t en">Reading</span><span class="t zh">阅读</span></a></div></nav>
 </header>
-<nav class="subnav" aria-label="On this page · 本页导航"><div class="wrap subnav-in"><span class="sublabel"><span class="t en">On this page</span><span class="t zh">本页</span></span><a href="#concept"><span class="t en">Concept</span><span class="t zh">概念</span></a><a href="#updates"><span class="t en">Timeline</span><span class="t zh">时间线</span></a><a href="#video"><span class="t en">Video</span><span class="t zh">视频</span></a><a href="#reading"><span class="t en">Reading</span><span class="t zh">阅读</span></a></div></nav>
 <main id="top">
   <section class="hero wrap" id="hero"></section>
   <section class="wrap block" id="concept"></section>
@@ -600,7 +605,7 @@ body.lang-both .fsecs .t.en + .t.zh{margin-top:0}
             '<h4>' + ext(en.url, nameHtml(en.name)) + '</h4>' +
             '<div class="who-line">' + bi(en.line, "p") + '</div></li>';
         }).join("");
-        return '<div class="land-group g-' + esc(g.key) + '">' +
+        return '<div class="land-group g-' + esc(g.key) + '" id="g-' + esc(g.key) + '">' +
           '<div class="land-head"><span class="roman">' + ["I", "II", "III"][gi] + '</span><h3>' + bi(g.title) + '</h3></div>' +
           '<ul class="who-list">' + rows + '</ul>' +
           (g.note ? '<div class="land-note">' + bi(g.note, "p") + '</div>' : "") + '</div>';
@@ -647,12 +652,12 @@ body.lang-both .fsecs .t.en + .t.zh{margin-top:0}
         '<div class="lead bci-lead">' + bi(B.lead, "p") + '</div>' +
         (B.feature ? feature(B.feature) : "") +
         '<div class="legend">' + Object.keys(B.markers).map(bm).join("") + '</div>' +
-        '<div class="land-group"><div class="land-head"><span class="roman">I</span><h3>' + bi(B.primer.title) + '</h3></div>' +
+        '<div class="land-group" id="primer"><div class="land-head"><span class="roman">I</span><h3>' + bi(B.primer.title) + '</h3></div>' +
           '<div class="primer">' + primer + '</div></div>' +
-        '<div class="land-group"><div class="land-head"><span class="roman">II</span><h3>' + bi(B.theory.title) + '</h3></div>' +
+        '<div class="land-group" id="theory"><div class="land-head"><span class="roman">II</span><h3>' + bi(B.theory.title) + '</h3></div>' +
           '<ul class="who-list ideas">' + theory + '</ul>' +
           (B.note ? '<div class="land-note">' + bi(B.note, "p") + '</div>' : "") + '</div>' +
-        '<div class="land-group"><div class="land-head"><span class="roman">III</span><h3>' + bi(B.news.title) + '</h3></div>' +
+        '<div class="land-group" id="news"><div class="land-head"><span class="roman">III</span><h3>' + bi(B.news.title) + '</h3></div>' +
           '<ol class="bnews">' + newsHtml + '</ol></div>';
     }
 
@@ -684,7 +689,41 @@ body.lang-both .fsecs .t.en + .t.zh{margin-top:0}
   var q = (location.search.match(/[?&]lang=(en|zh|both)/) || [])[1];
   setLang(q || saved || "both");
 
-  if (location.hash) { var tgt = document.getElementById(location.hash.slice(1)); if (tgt) setTimeout(function () { tgt.scrollIntoView(); }, 0); }
+  // Sticky header height -> scroll offset, so headings are never hidden under the header + section bar.
+  var topbar = document.querySelector(".topbar");
+  function syncOffset() {
+    var hgt = topbar ? Math.ceil(topbar.getBoundingClientRect().height) : 60;
+    document.documentElement.style.setProperty("--hdr", hgt + "px");
+    return hgt;
+  }
+  syncOffset();
+  window.addEventListener("resize", syncOffset);
+
+  // Scroll-spy: highlight the section currently in view in the in-page bar.
+  var spyLinks = Array.prototype.slice.call(document.querySelectorAll(".subnav a[data-spy]"));
+  var spyTargets = spyLinks.map(function (a) { return document.getElementById(a.getAttribute("data-spy")); });
+  var current = null;
+  function spy() {
+    if (!spyLinks.length) return;
+    var line = syncOffset() + 24, idx = -1;
+    spyTargets.forEach(function (el, i) { if (el && el.getBoundingClientRect().top <= line) idx = i; });
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) idx = spyTargets.length - 1;
+    var a = idx > -1 ? spyLinks[idx] : null;
+    if (a === current) return;
+    current = a;
+    spyLinks.forEach(function (l) { if (l === a) l.setAttribute("aria-current", "true"); else l.removeAttribute("aria-current"); });
+    if (a) {  // keep the active link visible in the horizontally scrolling bar on small screens
+      var bar = a.parentNode, r = a.getBoundingClientRect(), br = bar.getBoundingClientRect();
+      if (r.left < br.left || r.right > br.right) bar.scrollLeft += (r.left - br.left) - (br.width - r.width) / 2;
+    }
+  }
+  var ticking = false;
+  window.addEventListener("scroll", function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; spy(); }); }
+  }, { passive: true });
+  spy();
+
+  if (location.hash) { var tgt = document.getElementById(location.hash.slice(1)); if (tgt) setTimeout(function () { tgt.scrollIntoView(); spy(); }, 0); }
 })();
 </script>
 </body>
