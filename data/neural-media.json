@@ -1328,7 +1328,14 @@
         "en": "MA Fashion Media & Communication, London College of Fashion (YouTube)",
         "zh": "伦敦时装学院时尚媒体与传播硕士项目（YouTube）"
       },
-      "thumbnail": "assets/buff-thumb.jpg"
+      "thumbnail": "assets/buff-thumb.jpg",
+      "internal": {
+        "href": "felstead-leung.html#e-buff-summit",
+        "label": {
+          "en": "The organisers, Daniel Felstead & Jenn Leung",
+          "zh": "峰会组织者 Daniel Felstead 与 Jenn Leung"
+        }
+      }
     },
     {
       "id": "2025-02-quicho-girl-intelligence",
@@ -2556,17 +2563,24 @@
           },
           {
             "name": {
-              "en": "Daniel Felstead (London College of Fashion)",
-              "zh": "Daniel Felstead（伦敦时装学院）"
+              "en": "Daniel Felstead & Jenn Leung (London College of Fashion)",
+              "zh": "Daniel Felstead 与 Jenn Leung（伦敦时装学院）"
             },
             "marks": [
               "term"
             ],
             "line": {
-              "en": "Organiser of the BUFF summit on fashion, neural media and bodies; makes films on AI, biotech and neural media.",
-              "zh": "BUFF 时尚、神经媒体与身体峰会的组织者，创作关于 AI、生物科技与神经媒体的短片。"
+              "en": "Organisers of the BUFF summit on fashion, neural media and bodies; make the DIS film series “I'm So Janky” on the metaverse, AI and Neuralink. Leung also builds game-engine interfaces for living neurons.",
+              "zh": "BUFF「时尚、神经媒体与身体」峰会的组织者；合作 DIS 影片系列「I'm So Janky」，谈元宇宙、AI 和 Neuralink。Leung 也为活体神经元开发游戏引擎接口。"
             },
-            "url": "https://www.trienaldelisboa.com/programme/events/humanentities-en"
+            "url": "https://www.trienaldelisboa.com/programme/events/humanentities-en",
+            "internal": {
+              "href": "felstead-leung.html",
+              "label": {
+                "en": "Full page on their work",
+                "zh": "两人工作的专页"
+              }
+            }
           },
           {
             "name": {
@@ -2731,7 +2745,14 @@
               "en": "BUFF: A Summit on Fashion, Neural Media & Our Bodies (Jan 2025).",
               "zh": "BUFF：时尚、神经媒体与身体峰会（2025 年 1 月）。"
             },
-            "url": "https://www.youtube.com/watch?v=f3g9CT5Scjk"
+            "url": "https://www.youtube.com/watch?v=f3g9CT5Scjk",
+            "internal": {
+              "href": "felstead-leung.html#e-buff-summit",
+              "label": {
+                "en": "The summit series, on the Felstead & Leung page",
+                "zh": "系列峰会详情（Felstead 与 Leung 专页）"
+              }
+            }
           },
           {
             "name": {
@@ -3984,6 +4005,14 @@
       "label": {
         "en": "New Models",
         "zh": "New Models 与 Lil Internet"
+      }
+    },
+    {
+      "key": "felstead-leung",
+      "file": "felstead-leung.html",
+      "label": {
+        "en": "Felstead & Leung",
+        "zh": "Felstead 与 Leung"
       }
     }
   ]

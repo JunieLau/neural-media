@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Build the self-contained site: data/neural-media.json + data/new-models.json + src/* -> four pages
+"""Build the self-contained site: data/neural-media.json + data/new-models.json + data/felstead-leung.json + src/* -> five pages
 
 Pages: index.html (identical copy: Neural-Media.html) = hero, concept, timeline, video, reading;
        who-else.html = landscape (who else works on neural media);
        bci.html = BCI x Neural Media, with the Phase Lock feature chapter;
-       new-models.html = New Models / Lil Internet / Caroline Busta: overview, ideas, K link, full archive.
+       new-models.html = New Models / Lil Internet / Caroline Busta: overview, ideas, K link, full archive;
+       felstead-leung.html = Daniel Felstead & Jenn Leung: overview, ideas, K link, full archive.
 
 Usage:  python3 build.py            (stdlib only)
         python3 build.py --today    (also set meta.last_updated to today's date, UTC+8)
@@ -17,6 +18,7 @@ import base64, datetime, json, mimetypes, pathlib, sys
 HERE = pathlib.Path(__file__).resolve().parent
 DATA = HERE / "data" / "neural-media.json"
 NMDATA = HERE / "data" / "new-models.json"
+FLDATA = HERE / "data" / "felstead-leung.json"
 TZ = datetime.timezone(datetime.timedelta(hours=8))
 REQUIRED = ("id", "date", "types", "date_display", "title", "summary", "url", "source")
 
@@ -120,15 +122,15 @@ def validate(d):
         sys.exit("Data errors:\n  " + "\n  ".join(errs))
 
 
-def validate_nm(N):
-    """Checks for the New Models page data (data/new-models.json)."""
+def validate_nm(N, name="new-models"):
+    """Checks for an archive page's data (data/new-models.json, data/felstead-leung.json)."""
     errs = []
     def bil(o, w):
         if not (isinstance(o, dict) and str(o.get("en", "")).strip() and str(o.get("zh", "")).strip()):
-            errs.append(f"new-models {w}: needs both en and zh")
+            errs.append(f"{name} {w}: needs both en and zh")
     def https(u, w):
         if not str(u or "").startswith("https://"):
-            errs.append(f"new-models {w}: url must be https")
+            errs.append(f"{name} {w}: url must be https")
     for k in ("title", "lead", "note"):
         bil(N.get(k), k)
     for n, pp in enumerate(N.get("people", [])):
@@ -143,13 +145,17 @@ def validate_nm(N):
     bil(R.get("summary"), "relation.summary")
     for part in ("direct", "thematic"):
         if not R.get(part):
-            errs.append(f"new-models relation.{part} is empty")
+            errs.append(f"{name} relation.{part} is empty")
         for n, r in enumerate(R.get(part, [])):
             bil(r.get("text"), f"relation {part} {n}")
             if "url" in r:
                 https(r["url"], f"relation {part} {n}")
             if "when" in r:
                 bil(r["when"], f"relation {part} {n} when")
+    W = N.get("who")
+    if W is not None:
+        for k, v in W.items():
+            bil(v, f"who.{k}")
     for grp in ("formats", "basis", "access"):
         for k, v in N.get(grp, {}).items():
             bil(v, f"{grp}.{k}")
@@ -158,34 +164,38 @@ def validate_nm(N):
         w = f"entry {e.get('id', n)}"
         for k in ("id", "date", "fmt", "basis", "access", "title", "summary", "url"):
             if k not in e:
-                errs.append(f"new-models {w}: missing '{k}'")
+                errs.append(f"{name} {w}: missing '{k}'")
         bil(e.get("title"), f"{w} title"); bil(e.get("summary"), f"{w} summary")
         if "date_display" in e:
             bil(e["date_display"], f"{w} date_display")
         if e.get("nm") is not None:
             bil(e["nm"], f"{w} neural-media note")
         if e.get("fmt") not in N.get("formats", {}):
-            errs.append(f"new-models {w}: unknown format '{e.get('fmt')}'")
+            errs.append(f"{name} {w}: unknown format '{e.get('fmt')}'")
         if e.get("basis") not in N.get("basis", {}):
-            errs.append(f"new-models {w}: unknown basis '{e.get('basis')}'")
+            errs.append(f"{name} {w}: unknown basis '{e.get('basis')}'")
         if e.get("access") not in N.get("access", {}):
-            errs.append(f"new-models {w}: unknown access '{e.get('access')}'")
+            errs.append(f"{name} {w}: unknown access '{e.get('access')}'")
         https(e.get("url"), w)
+        if W is not None and e.get("who") not in W:
+            errs.append(f"{name} {w}: unknown person '{e.get('who')}' (use one of {list(W)})")
+        for l in e.get("internal", []):
+            bil(l.get("label"), f"{w} internal label")
         for l in e.get("links", []):
             https(l.get("url"), f"{w} link"); bil(l.get("label"), f"{w} link label")
         if e.get("id") in ids:
-            errs.append(f"new-models duplicate id {e.get('id')}")
+            errs.append(f"{name} duplicate id {e.get('id')}")
         ids.add(e.get("id"))
         try:
             datetime.date.fromisoformat(e.get("date", ""))
         except Exception:
-            errs.append(f"new-models {w}: date must be YYYY-MM-DD")
+            errs.append(f"{name} {w}: date must be YYYY-MM-DD")
         if prev and e.get("date", "") > prev:
-            errs.append(f"new-models {w}: entries must be ordered newest to oldest ({e.get('date')} after {prev})")
+            errs.append(f"{name} {w}: entries must be ordered newest to oldest ({e.get('date')} after {prev})")
         prev = e.get("date", prev)
         zl = len(e.get("summary", {}).get("zh", ""))
         if zl < 40:
-            errs.append(f"new-models {w}: Chinese summary too short ({zl} chars) - write what the episode discusses")
+            errs.append(f"{name} {w}: Chinese summary too short ({zl} chars) - write what the episode discusses")
     if errs:
         sys.exit("Data errors:\n  " + "\n  ".join(errs))
 
@@ -217,6 +227,9 @@ PAGES = {  # key -> (output files, sections in <main>, data keys kept, title)
     "new-models": (["new-models.html"], '  <section class="wrap block page-first" id="newmodels"></section>\n',
                    ("meta", "types", "newmodels"),
                    "New Models & Lil Internet · New Models 与 Lil Internet | Neural Media"),
+    "felstead-leung": (["felstead-leung.html"], '  <section class="wrap block page-first" id="felsteadleung"></section>\n',
+                       ("meta", "types", "felsteadleung"),
+                       "Daniel Felstead & Jenn Leung · Felstead 与 Leung | Neural Media"),
 }
 
 
@@ -234,8 +247,9 @@ def validate_pages(d):
         if f and f not in files:
             errs.append(f"{where}: internal link to unknown page '{href}'")
         anchor = href.split("#")[1] if "#" in href else ""
-        known = ({a for v in SUBNAV.values() for a, _, _ in v} | {"landscape", "bci", "top", "newmodels"}
-                 | {"e-" + e["id"] for e in d.get("newmodels", {}).get("entries", [])})
+        known = ({a for v in SUBNAV.values() for a, _, _ in v} | {"landscape", "bci", "top", "newmodels", "felsteadleung"}
+                 | {"e-" + e["id"] for k in ("newmodels", "felsteadleung") for e in d.get(k, {}).get("entries", [])}
+                 | {"i-" + it["id"] for it in d["items"]})
         if anchor and anchor not in known:
             errs.append(f"{where}: unknown anchor '#{anchor}'")
     for it in d["items"]:
@@ -246,6 +260,20 @@ def validate_pages(d):
     for e in d.get("bci", {}).get("theory", {}).get("entries", []):
         if "internal" in e:
             chk(e["internal"].get("href", ""), f"theory {e['name']['en']}")
+    for g in d.get("landscape", {}).get("groups", []):
+        for e in g.get("entries", []):
+            if "internal" in e:
+                chk(e["internal"].get("href", ""), f"landscape {e['name']['en']}")
+                if not (e["internal"].get("label", {}).get("en") and e["internal"].get("label", {}).get("zh")):
+                    errs.append(f"landscape {e['name']['en']}: internal label needs both en and zh")
+    for k in ("newmodels", "felsteadleung"):
+        for e in d.get(k, {}).get("entries", []):
+            for l in e.get("internal", []):
+                chk(l.get("href", ""), f"{k} entry {e['id']}")
+        for part in ("direct", "thematic"):
+            for r in d.get(k, {}).get("relation", {}).get(part, []):
+                if "internal" in r:
+                    chk(r["internal"], f"{k} relation")
     F = d.get("bci", {}).get("feature")
     if F:
         def bil(o, w):
@@ -315,11 +343,16 @@ def main():
         d["meta"]["last_updated"] = datetime.datetime.now(TZ).date().isoformat()
         DATA.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     d["newmodels"] = json.loads(NMDATA.read_text(encoding="utf-8"))
+    d["felsteadleung"] = json.loads(FLDATA.read_text(encoding="utf-8"))
     validate(d)
     validate_nm(d["newmodels"])
+    validate_nm(d["felsteadleung"], "felstead-leung")
     SUBNAV["new-models"] = ([("nm-about", "Who", "是谁"), ("nm-ideas", "Ideas", "核心观点"), ("nm-k", "K & neural media", "与 K 的关系"),
                              ("nm-archive", "Archive", "全部节目")]
                             + [(f"y{y}", y, y) for y in nm_years(d["newmodels"])])
+    SUBNAV["felstead-leung"] = ([("fl-about", "Who", "是谁"), ("fl-ideas", "Ideas", "核心观点"), ("fl-k", "K & neural media", "与 K 的关系"),
+                                 ("fl-archive", "Archive", "全部作品")]
+                                + [(f"y{y}", y, y) for y in nm_years(d["felsteadleung"])])
     validate_pages(d)
     keys = [g["key"] for g in d.get("landscape", {}).get("groups", [])]
     for a, _, _ in SUBNAV["who-else"]:
@@ -367,6 +400,13 @@ def main():
     print(f"  by year: {dict(sorted(by_year.items(), reverse=True))}")
     print(f"  by format: {by_fmt}")
     print(f"  by basis: {by_basis}")
+    F = d["felsteadleung"]["entries"]
+    cnt = lambda key: dict(sorted(((k, sum(1 for e in F if key(e) == k)) for k in {key(e) for e in F}), key=lambda x: -x[1]))
+    print(f"felstead-leung: {len(F)} entries; flagged neural media/future media: {sum(1 for e in F if e.get('nm'))}")
+    print(f"  by person: {cnt(lambda e: e['who'])}")
+    print(f"  by year: {dict(sorted(cnt(lambda e: e['date'][:4]).items(), reverse=True))}")
+    print(f"  by format: {cnt(lambda e: e['fmt'])}")
+    print(f"  by basis: {cnt(lambda e: e['basis'])}")
 
 
 if __name__ == "__main__":

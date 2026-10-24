@@ -1,0 +1,2606 @@
+{
+ "title": {
+  "en": "Daniel Felstead & Jenn Leung: films, summits, papers and talks, entry by entry",
+  "zh": "Daniel Felstead 与 Jenn Leung：影片、峰会、论文与演讲逐条整理"
+ },
+ "lead": {
+  "en": "Daniel Felstead and Jenn Leung both teach at London College of Fashion (UAL). Together they make the DIS.art film series “I'm So Janky”, narrated by AI celebrity avatars, and run the MA Fashion Media & Communication summits, one of which was titled for neural media and featured K Allado-McDowell. Separately, Felstead writes and talks on fashion, AI and the metaverse, and Leung builds game-engine interfaces for living neurons. This page lists everything we could find by them, together and separately, newest first, with entries on neural media, K, or the future of AI, BCI and neurotech marked.",
+  "zh": "Daniel Felstead 和 Jenn Leung 都在伦敦时装学院（伦敦艺术大学）任教。两人合作做了 DIS.art 上的影片系列「I'm So Janky」，由 AI 生成的名人化身当叙述者；也一起办 MA 时尚媒体与传播课程的系列峰会，其中一场直接以「神经媒体」命名，K Allado-McDowell 到场演讲。各自的工作里，Felstead 写作和演讲，谈时尚、AI 和元宇宙；Leung 用游戏引擎为活体神经元做接口。这一页把我们能找到的两人合作和各自的作品、演讲、论文、访谈、展览逐条整理，从新到旧排列；凡是谈到神经媒体、K，或 AI、脑机接口、神经技术未来的条目，都加了醒目标注，并写了「他们在这里说了什么」。"
+ },
+ "note": {
+  "en": "Sources: DIS.art film pages; Jenn Leung's site (jennleung.xyz: CV, project and talks pages); event pages (Medialab Matadero, Lisbon Human Entities, Shedhalle, Aksioma, Foto Colectania, NCM, NYU Shanghai, Schirn); journal and conference records (Antikythera/MIT Press, NeurIPS, UAL Research Online); press (Dazed, COEVAL, Le Random, Holloway Express, UAL); podcast notes (Disintegrator, New Models); and YouTube auto-captions where available (OPTMZ, EXCESSS, NM91 preview). ‘Full text’ means we read the whole page or article; ‘Transcript’ means auto-captions of the recording; ‘Abstract’ means a paper abstract or thesis summary; ‘Description’ means an event or project description only; ‘Listing only’ means a title in a CV or list. Several dates are inferred and say so. Instagram and X posts could not be read. Quotes are short and translated; nothing is invented.",
+  "zh": "资料来源：DIS.art 影片页面；Jenn Leung 个人网站（jennleung.xyz 的简历、项目页和讲座列表）；各活动页面（马德里 Medialab Matadero、里斯本 Human Entities、苏黎世 Shedhalle、Aksioma、Foto Colectania、墨尔本 NCM、上海纽约大学、法兰克福 Schirn）；期刊和会议记录（Antikythera / MIT Press、NeurIPS、伦敦艺术大学研究库）；媒体报道（Dazed、COEVAL、Le Random、Holloway Express、伦敦艺术大学）；播客节目说明（Disintegrator、New Models）；以及能下载到的 YouTube 自动字幕（OPTMZ、EXCESSS、NM91 预告）。「全文」表示读了整篇页面或文章；「文字稿」表示读了录像的自动字幕；「摘要」表示只读了论文摘要或学位论文简介；「仅活动 / 项目说明」表示只读了官方介绍；「仅列表标题」表示只在简历或列表里见到标题。有些日期是推断的，条目里都写明了。Instagram 和 X 的帖子无法读取。引文为简短翻译，没有编造内容。"
+ },
+ "people": [
+  {
+   "name": "Daniel Felstead",
+   "role": {
+    "en": "Academic and ‘content producer’; Course Leader, MA Fashion Media & Communication, London College of Fashion (UAL)",
+    "zh": "学者、「内容制作人」；伦敦时装学院 MA 时尚媒体与传播课程主任"
+   },
+   "text": {
+    "en": "Born 1976 in the UK (per the Schirn wall text). Trained as an interaction designer, then worked as an experiential designer and strategist, producing work for clients including the British Museum, Google, Serpentine, Tate, V&A and the BBC. PhD at the Royal Central School of Speech & Drama on Tino Sehgal (2018). Founded the MA Fashion Media & Communication at LCF in 2022 (earlier he led Fashion Media Practice & Criticism) and runs its summits. Co-founded the discussion community Emergence of Tomorrow (guests included Jack Self, Shumon Basar, Keller Easterling, Elvia Wilk). Writes and directs the DIS films. Not to be confused with the TV personality Binky Felstead.",
+    "zh": "据 Schirn 展签，1976 年生于英国。先学交互设计，后来做经验设计和策略，客户包括大英博物馆、Google、蛇形画廊、泰特、V&A 和 BBC。在伦敦皇家中央演讲与戏剧学院读博，论文研究艺术家 Tino Sehgal（2018）。2022 年在伦敦时装学院创办 MA 时尚媒体与传播课程并任课程主任（此前主持时尚媒体实践与批评课程），也是课程系列峰会的主办人。与人联合创办讨论社群 Emergence of Tomorrow，嘉宾有 Jack Self、Shumon Basar、Keller Easterling、Elvia Wilk 等。DIS 影片的编剧和导演。注意不要和英国真人秀明星 Binky Felstead 混淆。"
+   },
+   "links": [
+    {
+     "url": "https://www.instagram.com/felstead.daniel",
+     "label": {
+      "en": "Instagram",
+      "zh": "Instagram"
+     }
+    },
+    {
+     "url": "https://www.coeval-magazine.com/coeval/daniel-felstead",
+     "label": {
+      "en": "COEVAL interview",
+      "zh": "COEVAL 专访"
+     }
+    }
+   ]
+  },
+  {
+   "name": "Jenn Leung 梁珍",
+   "role": {
+    "en": "Creative technologist and researcher; Senior Lecturer in Creative Technology & Design, UAL",
+    "zh": "创意技术者、研究者；伦敦艺术大学创意技术与设计高级讲师"
+   },
+   "text": {
+    "en": "Born 1998 in Hong Kong (per the Schirn wall text). A simulation developer (Unreal Engine, real-time tools, streaming) who studied at the Bartlett (UCL), where she is now a visiting researcher on 100 Minds in Motion; researcher at LifeFabs Institute; creative technologist / research consultant for Cortical Labs, Callosum and Moth Quantum. In 2024 she was a studio researcher at Antikythera's Cognitive Infrastructures studio (Berggruen Institute), which led to two MIT Press journal papers and a NeurIPS 2025 paper on game-engine interfaces for brains-on-chips. Earlier: Off World Live (VTuber Studio), the XR collective Xalon, AA Visiting School. Also works with dmstfctn on Serpentine and Leonardo-supercomputer projects. Not the Hong Kong history YouTuber ‘Miss Jenn Leung’.",
+    "zh": "据 Schirn 展签，1998 年生于香港。模拟开发者，擅长虚幻引擎、实时工具和串流技术。硕士读于伦敦大学学院巴特莱特学院，现为该院「100 Minds in Motion」项目的访问研究员；也是 LifeFabs 研究所研究员，并为 Cortical Labs、Callosum 和 Moth Quantum 做创意技术和研究顾问。2024 年在 Antikythera（Berggruen 研究院支持）的「认知基础设施」工作室做研究员，由此产出两篇 MIT Press 期刊论文，以及一篇 NeurIPS 2025 论文，内容是用游戏引擎给「芯片上的大脑」做接口。更早做过 Off World Live（VTuber Studio）、XR 集体 Xalon、AA 访问学校。也与艺术组合 dmstfctn 合作蛇形画廊和 Leonardo 超级计算机项目。不是香港历史 YouTuber「Miss Jenn Leung」。"
+   },
+   "links": [
+    {
+     "url": "https://jennleung.xyz/cv",
+     "label": {
+      "en": "CV",
+      "zh": "简历"
+     }
+    },
+    {
+     "url": "https://www.instagram.com/jennnital/",
+     "label": {
+      "en": "Instagram",
+      "zh": "Instagram"
+     }
+    }
+   ]
+  },
+  {
+   "name": "Felstead & Leung",
+   "role": {
+    "en": "Duo: the DIS film series “I'm So Janky” and the LCF summits",
+    "zh": "合作：DIS 影片系列「I'm So Janky」与伦敦时装学院峰会"
+   },
+   "text": {
+    "en": "Four films since 2023 (The Metaverse in Janky Capitalism; Literally No Place; Always On My Mind; Welcome to Jankspace, Babes), each narrated by an AI celebrity voice and built from internet slop, with Felstead writing/directing and Leung doing the 3D. Shown at Berlin Critics Week, transmediale, Shedhalle, PhotoVogue, MAPS, Schirn and more. They co-organise the MA FMC summits (HYPERHYPERBODIES 2023 and BUFF 2025 featured K). Guests on Disintegrator (2024) and New Models NM91 (2025).",
+    "zh": "2023 年以来合作了四部影片：《Janky 资本主义中的元宇宙》《Literally No Place》《Always On My Mind》《Welcome to Jankspace, Babes》。每部都由 AI 生成的名人声音叙述，用网络上的垃圾内容剪成，Felstead 编导，Leung 做 3D。放映于柏林影评人周、transmediale、苏黎世 Shedhalle、PhotoVogue、丹麦 MAPS、法兰克福 Schirn 等。两人联合主办 MA 时尚媒体与传播课程的峰会，其中 2023 年的 HYPERHYPERBODIES 和 2025 年的 BUFF 都请了 K。也作为嘉宾上过 Disintegrator（2024）和 New Models 第 91 期（2025）。"
+   },
+   "links": [
+    {
+     "url": "https://dis.art/series/im-so-janky",
+     "label": {
+      "en": "“I'm So Janky” on DIS",
+      "zh": "DIS 上的「I'm So Janky」"
+     }
+    }
+   ]
+  }
+ ],
+ "evolution": [
+  {
+   "year": "2018–21",
+   "text": {
+    "en": "Felstead finishes a PhD on Tino Sehgal (2018) and talks tech and fashion on SHOWstudio (2020). Leung, a Bartlett graduate, works on networked XR (Xalon, Ars Electronica 2021) and moderates N. Katherine Hayles (2021).",
+    "zh": "Felstead 完成关于 Tino Sehgal 的博士论文（2018），在 SHOWstudio 谈科技与时尚（2020）。Leung 从巴特莱特毕业，做联网 XR（Xalon，2021 年林茨电子艺术节），并主持 N. Katherine Hayles 的讲座（2021）。"
+   }
+  },
+  {
+   "year": "2022",
+   "text": {
+    "en": "Felstead talks the metaverse at Dubai's Global Art Forum and founds MA Fashion Media & Communication with its summit series. Leung leads AA Visiting School Unit 5 and makes digital fashion films.",
+    "zh": "Felstead 在迪拜全球艺术论坛谈元宇宙，创办 MA 时尚媒体与传播课程和系列峰会。Leung 主持 AA 访问学校第五单元，做数字时装影片。"
+   }
+  },
+  {
+   "year": "2023",
+   "text": {
+    "en": "K speaks at HYPERHYPERBODIES (Feb). The first two DIS films: The Metaverse in Janky Capitalism (Apr) and Literally No Place (Oct), with Dazed coverage and festival screenings.",
+    "zh": "K 在 HYPERHYPERBODIES 峰会演讲（2 月）。前两部 DIS 影片上线：《Janky 资本主义中的元宇宙》（4 月）、《Literally No Place》（10 月），Dazed 报道，并开始在各艺术节放映。"
+   }
+  },
+  {
+   "year": "2024",
+   "text": {
+    "en": "Always On My Mind (Neuralink). The trilogy shown at Shedhalle Zürich. Leung joins Antikythera's studio and turns to organoid intelligence. On Disintegrator they discuss K's neural media.",
+    "zh": "《Always On My Mind》聚焦 Neuralink；三部曲在苏黎世 Shedhalle 展出。Leung 加入 Antikythera 工作室，转向类器官智能。两人在 Disintegrator 播客上讨论 K 的神经媒体。"
+   }
+  },
+  {
+   "year": "2025",
+   "text": {
+    "en": "BUFF, “A Summit on Fashion, Neural Media & Our Bodies”, with K (Jan). Leung's two Antikythera papers (May) and NeurIPS paper (Dec). Welcome to Jankspace, Babes (autumn). New Models NM91 (Nov).",
+    "zh": "BUFF 峰会「时尚、神经媒体与我们的身体」，K 到场（1 月）。Leung 的两篇 Antikythera 论文（5 月）和 NeurIPS 论文（12 月）。《Welcome to Jankspace, Babes》上线（秋）。上 New Models 第 91 期（11 月）。"
+   }
+  },
+  {
+   "year": "2026",
+   "text": {
+    "en": "OPTMZ, where Felstead says they and their students have spent years on K's neural media. Leung's living-neuron work with Cortical Labs in Melbourne and Rhizome 7x7 in New York. Jankspace at Schirn Frankfurt and State of Fashion Arnhem.",
+    "zh": "OPTMZ 峰会上，Felstead 说两人和学生这几年一直在研究 K 的神经媒体。Leung 在墨尔本与 Cortical Labs 做活体神经元作品，在纽约参加 Rhizome 7x7。Jankspace 在法兰克福 Schirn 和阿纳姆 State of Fashion 展出。"
+   }
+  }
+ ],
+ "ideas": [
+  {
+   "term": {
+    "en": "Janky capitalism and ‘jankspace’",
+    "zh": "Janky 资本主义与「jankspace」"
+   },
+   "nm": true,
+   "text": {
+    "en": "Tech promises a seamless world; what we get is janky, like the delivery e-bike with a battery taped to it. Jankspace is the leftover space between platforms that human bodies patch up. The body is janky and no optimisation will fix it.",
+    "zh": "科技许诺一个无缝高效的世界，我们实际得到的却是 janky 的东西，就像绑着电池、用胶带粘手套的外卖电动车。jankspace 是各个平台之间留下的空隙，靠人的身体去缝补。身体本身就是 janky 的，任何优化都修不好。"
+   },
+   "where": {
+    "en": "Metaverse in Janky Capitalism (2023), Welcome to Jankspace (2025), NM91",
+    "zh": "见《Janky 资本主义中的元宇宙》（2023）、《Welcome to Jankspace》（2025）、NM91"
+   }
+  },
+  {
+   "term": {
+    "en": "Neural media is media that senses back",
+    "zh": "神经媒体是「会反过来感知你」的媒体"
+   },
+   "nm": true,
+   "text": {
+    "en": "Following K, Felstead treats neural media as more than generative AI: chatbots, wearables, BCIs, pharmacology, anything built on networks of neurons. It embeds itself in us as it embeds us in it. Hence fashion moving into health and longevity, and Ozempic as ‘the neural media drug par excellence’.",
+    "zh": "沿用 K 的概念，Felstead 认为神经媒体不只是生成式 AI，还包括聊天机器人、可穿戴设备、脑机接口、药物，任何基于神经元网络的东西。它嵌入我们，就像把我们嵌入它。所以时尚会搬进健康和长寿产业，Ozempic 被他称为「神经媒体药物的极致」。"
+   },
+   "where": {
+    "en": "OPTMZ (2026), Disintegrator ep. 22 (2024), BUFF (2025)",
+    "zh": "见 OPTMZ（2026）、Disintegrator 第 22 期（2024）、BUFF（2025）"
+   }
+  },
+  {
+   "term": {
+    "en": "Neither AI utopia nor AI doom",
+    "zh": "既不是 AI 乌托邦，也不是 AI 末日"
+   },
+   "nm": true,
+   "text": {
+    "en": "Both camps are myths. AI is “a twisted reflection of our present moment”, and the interesting question is what it does to bodies, labour and attention now. They reject the techno-gnostic idea that the body is a computer and the mind can be uploaded.",
+    "zh": "两派都是神话。AI 是「我们当下处境的一面扭曲镜子」，值得问的是它此刻对身体、劳动和注意力做了什么。他们反对「技术诺斯替」式的想法：身体是计算机，心智可以上传。"
+   },
+   "where": {
+    "en": "Literally No Place (2023), Dazed (2023), Always On My Mind (2024)",
+    "zh": "见《Literally No Place》（2023）、Dazed（2023）、《Always On My Mind》（2024）"
+   }
+  },
+  {
+   "term": {
+    "en": "BCI and the end of language?",
+    "zh": "脑机接口与语言的终结？"
+   },
+   "nm": true,
+   "text": {
+    "en": "Neuralink's ‘consensual telepathy’ promises communication without words. They read it as a reductive techno-monism that devalues language and treats mind as data, and Leung's EEG butterfly game asks the mind–body question again.",
+    "zh": "Neuralink 所说的「共识心灵感应」许诺不用语言就能沟通。他们把它读作一种简化的技术一元论，贬低语言，把心智当作数据。Leung 的脑电蝴蝶游戏也在重提身心问题。"
+   },
+   "where": {
+    "en": "Always On My Mind (2024), Butterfly Simulation (2025)",
+    "zh": "见《Always On My Mind》（2024）、《夢蝶原型》（2025）"
+   }
+  },
+  {
+   "term": {
+    "en": "Intelligence is grown, not designed",
+    "zh": "智能是培育出来的，不是设计出来的"
+   },
+   "nm": true,
+   "text": {
+    "en": "Leung's research line: organoid intelligence is “less an act of top-down design and more a process of guided evolution”. Game engines can give living neurons on chips a body and a world, closing the loop between cells, software and audiences.",
+    "zh": "Leung 的研究主线：类器官智能「与其说是自上而下的设计，不如说是被引导的进化」。游戏引擎可以给芯片上的活体神经元一个身体和一个世界，在细胞、软件和观众之间形成闭环。"
+   },
+   "where": {
+    "en": "Organoid Array Computing (2025), Assembloid Agency (NeurIPS 2025), NCM (2026), Rhizome 7x7 (2026)",
+    "zh": "见〈类器官阵列计算〉（2025）、〈Assembloid Agency〉（NeurIPS 2025）、NCM（2026）、Rhizome 7x7（2026）"
+   }
+  },
+  {
+   "term": {
+    "en": "Sociality as topology in embedding space",
+    "zh": "社会性是向量空间里的拓扑"
+   },
+   "nm": true,
+   "text": {
+    "en": "Inside an LLM, “language functions geometrically while sociality functions topologically”. Social behaviour can be read as movement through semantic space, which links to the NM91 question of whether a commons could be an embedding.",
+    "zh": "在大语言模型内部，「语言以几何方式运作，社会性以拓扑方式运作」。社会行为可以读作在语义空间里的移动。这和 NM91 里「公地会不会是一种 embedding」的问题相关。"
+   },
+   "where": {
+    "en": "Generative Topolinguistics (2025), NM91 (2025)",
+    "zh": "见〈生成式拓扑语言学〉（2025）、NM91（2025）"
+   }
+  },
+  {
+   "term": {
+    "en": "Fashion as a media platform and worldbuilding technology",
+    "zh": "时尚是媒介平台，也是世界构建技术"
+   },
+   "nm": false,
+   "text": {
+    "en": "For Felstead, fashion has overtaken contemporary art as a media platform. It builds worlds and lore that fans co-create, like K-pop universes or game skins, so studying fashion means studying how worlds are made.",
+    "zh": "Felstead 认为，时尚作为媒介平台已经超过了当代艺术。它构建世界和设定，粉丝参与共同创作，比如 K-pop 世界观、游戏皮肤。所以研究时尚，就是研究世界怎样被造出来。"
+   },
+   "where": {
+    "en": "COEVAL (2024), BUFFER (2024)",
+    "zh": "见 COEVAL（2024）、BUFFER 峰会（2024）"
+   }
+  },
+  {
+   "term": {
+    "en": "Theory in internet-native formats",
+    "zh": "用网络原生的形式做理论"
+   },
+   "nm": true,
+   "text": {
+    "en": "Their essays are films narrated by AI celebrity avatars, cut at feed speed from memes and slop. New Models calls this an emerging media theory that seeks formats compatible with the neural age rather than only analysing it.",
+    "zh": "他们的「论文」是影片，由 AI 名人化身叙述，用梗和垃圾内容按信息流的速度剪成。New Models 认为这是一种正在出现的媒介理论：不只分析神经时代，还寻找能在其中流通的形式。"
+   },
+   "where": {
+    "en": "All four DIS films; NM91 intro",
+    "zh": "见四部 DIS 影片、NM91 开场"
+   }
+  }
+ ],
+ "relation": {
+  "summary": {
+   "en": "The link to K is direct and repeated. K spoke at two summits the duo organised (2023 and 2025), and the 2025 one was named for neural media. Felstead calls K a massive influence and says he and Leung have been working with K's concept with students for years, and K is thanked in the Jankspace credits. We found no text by K about them. New Models hosted them on NM91 and presents them as central to a new media theory. Leung's link is mostly thematic: her organoid and BCI research is the most literal, material end of ‘neural’ media. Their tone differs from K's: satirical, grotesque, focused on bodies under platform capitalism rather than K's more ecological and spiritual register (our reading).",
+   "zh": "两人与 K 的联系是直接的，而且多次出现。K 在两人主办的两场峰会上演讲过（2023 年和 2025 年），2025 年那场直接以「神经媒体」命名。Felstead 公开说 K 对他影响巨大，也说他和 Leung 带着学生研究 K 的概念已经好几年；《Welcome to Jankspace》片尾致谢 K。我们没找到 K 写到他们的文字。New Models 请他们上了第 91 期，并把他们说成一种新媒介理论的核心人物。Leung 与神经媒体的联系主要是主题上的：她做的类器官和脑机接口研究，是「神经」媒体最字面、最物质化的一端。基调上，两人和 K 不同：他们讽刺、怪诞，关注平台资本主义下的身体；K 更偏生态和灵性（这是我们的解读）。"
+  },
+  "direct": [
+   {
+    "when": {
+     "en": "Feb 2023",
+     "zh": "2023 年 2 月"
+    },
+    "text": {
+     "en": "K Allado-McDowell speaks at HYPERHYPERBODIES, the LCF summit organised by Felstead and co-curated by Leung.",
+     "zh": "K Allado-McDowell 在 HYPERHYPERBODIES 峰会演讲。峰会由 Felstead 主办、Leung 联合策划。"
+    },
+    "url": "https://jennleung.xyz/workshops",
+    "internal": "#e-hyperhyperbodies-summit"
+   },
+   {
+    "when": {
+     "en": "Oct 2023 / Mar 2024",
+     "zh": "2023 年 10 月 / 2024 年 3 月"
+    },
+    "text": {
+     "en": "Literally No Place closes on an image of K's Pharmako-AI; in COEVAL Felstead says K “have been such a massive influence on me”.",
+     "zh": "《Literally No Place》片尾放了一张 K《Pharmako-AI》的图片；Felstead 在 COEVAL 访谈里说 K「对我影响巨大」。"
+    },
+    "url": "https://www.coeval-magazine.com/coeval/daniel-felstead",
+    "internal": "#e-coeval-interview-felstead"
+   },
+   {
+    "when": {
+     "en": "Nov 2024",
+     "zh": "2024 年 11 月"
+    },
+    "text": {
+     "en": "On Disintegrator ep. 22, “the second half … spends some time with the theory of K. Allado-McDowell, specifically the concept of neural media”.",
+     "zh": "Disintegrator 第 22 期的节目说明写道：后半段讨论 K Allado-McDowell 的理论，「特别是神经媒体的概念」。"
+    },
+    "url": "https://www.spreaker.com/episode/22-janky-w-daniel-felstead-and-jenn-leung--63001467",
+    "internal": "#e-disintegrator-22-janky"
+   },
+   {
+    "when": {
+     "en": "Jan 2025",
+     "zh": "2025 年 1 月"
+    },
+    "text": {
+     "en": "BUFF, “A Summit on Fashion, Neural Media & Our Bodies”, with K as speaker. K's talk is also on this site's main timeline.",
+     "zh": "BUFF 峰会「时尚、神经媒体与我们的身体」，K 是演讲嘉宾。K 的这场演讲也收在本站主时间线里。"
+    },
+    "url": "https://www.youtube.com/watch?v=f3g9CT5Scjk",
+    "internal": "#e-buff-summit"
+   },
+   {
+    "when": {
+     "en": "2025",
+     "zh": "2025 年"
+    },
+    "text": {
+     "en": "Welcome to Jankspace, Babes thanks K. Allado-McDowell in its credits.",
+     "zh": "《Welcome to Jankspace, Babes》片尾致谢 K Allado-McDowell。"
+    },
+    "url": "https://www.dis.art/welcome-to-jankspace",
+    "internal": "#e-welcome-to-jankspace-film"
+   },
+   {
+    "when": {
+     "en": "Nov 2025",
+     "zh": "2025 年 11 月"
+    },
+    "text": {
+     "en": "New Models NM91: the duo with Lil Internet and Caroline Busta. Busta frames jankspace within the shift ‘to network media and then what we're calling neural media’, citing K's taxonomy.",
+     "zh": "New Models 第 91 期：两人与 Lil Internet、Caroline Busta 对谈。Busta 把 jankspace 放进「从网络媒体到我们所说的神经媒体」的转变中理解，并引用 K 的媒介分类。"
+    },
+    "url": "https://newmodels.substack.com/p/nm-91-daniel-felstead-and-jenn-leung",
+    "internal": "#e-nm91-jankspace"
+   },
+   {
+    "when": {
+     "en": "Jan 2026",
+     "zh": "2026 年 1 月"
+    },
+    "text": {
+     "en": "At OPTMZ Felstead: “For several years now, Jen and I along with our students have been exploring K Allado-McDowell's concept of neural media.”",
+     "zh": "在 OPTMZ 峰会上 Felstead 说：「这几年，Jen 和我和学生们一直在研究 K Allado-McDowell 的神经媒体概念。」"
+    },
+    "url": "https://www.youtube.com/watch?v=fcEOZb8gVWA",
+    "internal": "#e-optmz-summit"
+   }
+  ],
+  "thematic": [
+   {
+    "text": {
+     "en": "Jankspace vs. neural media: K describes media that model and read us; jankspace is what is left over where those systems meet real bodies. Leung calls it a high-dimensional space ‘not meant to be understood by humans’, close to K's account of the latent space.",
+     "zh": "Jankspace 与神经媒体：K 描述的是建模和读取我们的媒介；jankspace 是这些系统碰到真实身体时剩下的东西。Leung 说它是一个「不为人类理解而设的高维空间」，接近 K 对潜在空间的描述。"
+    },
+    "url": "https://newmodels.substack.com/p/nm-91-daniel-felstead-and-jenn-leung",
+    "internal": "#e-nm91-jankspace"
+   },
+   {
+    "text": {
+     "en": "Neural in the literal sense: Leung's organoid computing, EEG games and Cortical Labs pieces put actual neurons in the loop, the material end of the BCI themes on this site's BCI page.",
+     "zh": "字面意义上的「神经」：Leung 的类器官计算、脑电游戏和 Cortical Labs 作品，把真实的神经元放进回路。这是本站 BCI 页面所谈主题的物质一端。"
+    },
+    "url": "https://doi.org/10.1162/anti.5czm",
+    "internal": "#e-antikythera-organoid-array-computing"
+   },
+   {
+    "text": {
+     "en": "Shared circle: Maya B. Kronic, Disintegrator (Poliks & Trillo, also NM guests), Mat Dryhurst, Ruba Al-Sweel and Caroline Busta, who spoke in the same Lisbon series as Felstead, overlap with the New Models orbit.",
+     "zh": "共同的圈子：Maya B. Kronic、Disintegrator（Poliks 与 Trillo，也上过 New Models）、Mat Dryhurst、Ruba Al-Sweel，以及与 Felstead 同在里斯本系列讲座演讲的 Caroline Busta，都和 New Models 的圈子重叠。"
+    },
+    "url": "https://www.trienaldelisboa.com/programme/events/humanentities-en",
+    "internal": "#e-lisbon-human-entities-talk"
+   },
+   {
+    "text": {
+     "en": "Difference in tone: K is hopeful and ecological (Pharmako-AI, shamanism); Felstead and Leung are satirical and grotesque, focused on Ozempic, looksmaxxing and delivery riders. They use K's framework to diagnose platform capitalism rather than to imagine kinship with AI (our reading).",
+     "zh": "基调的差异：K 偏乐观和生态（《Pharmako-AI》、萨满研究）；Felstead 和 Leung 讽刺、怪诞，关注 Ozempic、looksmaxxing 和外卖骑手。他们借 K 的框架去诊断平台资本主义，而不是想象与 AI 的亲缘关系（这是我们的解读）。"
+    },
+    "url": "https://www.dis.art/welcome-to-jankspace"
+   }
+  ]
+ },
+ "who": {
+  "felstead": {
+   "en": "Felstead",
+   "zh": "Felstead"
+  },
+  "leung": {
+   "en": "Leung",
+   "zh": "Leung"
+  },
+  "joint": {
+   "en": "Together",
+   "zh": "两人合作"
+  }
+ },
+ "formats": {
+  "film": {
+   "en": "Films",
+   "zh": "影片"
+  },
+  "summit": {
+   "en": "LCF summits",
+   "zh": "伦敦时装学院峰会"
+  },
+  "podcast": {
+   "en": "Podcasts",
+   "zh": "播客"
+  },
+  "paper": {
+   "en": "Papers & thesis",
+   "zh": "论文"
+  },
+  "talk": {
+   "en": "Talks",
+   "zh": "演讲 / 讲座"
+  },
+  "panel": {
+   "en": "Panels",
+   "zh": "对谈 / 论坛"
+  },
+  "interview": {
+   "en": "Interviews",
+   "zh": "访谈"
+  },
+  "press": {
+   "en": "Press",
+   "zh": "媒体报道"
+  },
+  "exhibition": {
+   "en": "Exhibitions",
+   "zh": "展览"
+  },
+  "screening": {
+   "en": "Screenings",
+   "zh": "放映"
+  },
+  "performance": {
+   "en": "Performances & live events",
+   "zh": "表演 / 现场"
+  },
+  "project": {
+   "en": "Projects & tools",
+   "zh": "项目 / 工具"
+  },
+  "residency": {
+   "en": "Residencies & studios",
+   "zh": "驻留 / 工作室"
+  },
+  "teaching": {
+   "en": "Teaching & workshops",
+   "zh": "教学 / 工作坊"
+  }
+ },
+ "basis": {
+  "full": {
+   "en": "Full text",
+   "zh": "全文"
+  },
+  "transcript": {
+   "en": "Transcript",
+   "zh": "文字稿"
+  },
+  "abstract": {
+   "en": "Abstract",
+   "zh": "摘要"
+  },
+  "description": {
+   "en": "Description only",
+   "zh": "仅活动 / 项目说明"
+  },
+  "listing": {
+   "en": "Listing only",
+   "zh": "仅列表标题"
+  }
+ },
+ "access": {
+  "free": {
+   "en": "Free",
+   "zh": "免费"
+  },
+  "paid": {
+   "en": "Paid / members",
+   "zh": "付费 / 会员"
+  }
+ },
+ "entries": [
+  {
+   "id": "schirn-world-through-ai",
+   "date": "2026-06-11",
+   "who": "joint",
+   "fmt": "exhibition",
+   "basis": "full",
+   "access": "free",
+   "url": "https://www.schirn.de/wp-content/uploads/2026/06/Schirn_Press_The_World_through_AI_Exhibition_Texts.pdf",
+   "title": {
+    "en": "Welcome to Jankspace, Babes in “The World Through AI”, Schirn Kunsthalle Frankfurt",
+    "zh": "《Welcome to Jankspace, Babes》入选法兰克福 Schirn 美术馆「AI 眼中的世界」"
+   },
+   "summary": {
+    "en": "Schirn Kunsthalle Frankfurt's group show The World Through AI (11 Jun–20 Sep 2026; organised with Jeu de Paume, curated by Antonio Somaini) includes Welcome to Jankspace, Babes (2025, 29:07, commissioned by DIS). The wall text describes a Julia Fox avatar guiding viewers through AI-slop internet culture and quotes the artists: “Jankspace is, quite literally, us—our beautifully broken, uncomputable bodies…”. It lists Felstead (b. 1976, UK) with Jenn Leung (b. 1998, Hong Kong).",
+    "zh": "法兰克福 Schirn 美术馆群展「The World Through AI」（2026 年 6 月 11 日–9 月 20 日，由巴黎 Jeu de Paume 与 Schirn 合办，策展人 Antonio Somaini）展出两人 2025 年的视频《Welcome to Jankspace, Babes》（29 分 07 秒，DIS 委托）。展签写道：一个 Julia Fox 虚拟化身带观众穿过被 AI 垃圾内容淹没的网络文化，从 Ozempic、Bryan Johnson 到 Luigi Mangione 和换装游戏 Dress to Impress。标题借用 Koolhaas 的「垃圾空间」（junkspace），把它搬进数字领域。展签引用艺术家的话：「Jankspace 实际上就是我们自己，是我们美丽地坏掉、无法被计算的身体，我们知道它没被编好程序，任何优化都修不好。」展签也写明两人的身份：Felstead 1976 年生于英国，Leung 1998 年生于香港。"
+   },
+   "people": "Daniel Felstead with Jenn Leung; curated by Antonio Somaini",
+   "nm": {
+    "en": "Included in a major survey on AI and visual culture; the curators read it at the junction of platform algorithms, technocapitalist ideology and generative AI, the environment the duo elsewhere call neural media.",
+    "zh": "作品入选一个大型「AI 与视觉文化」专题展，策展文字把它放在「平台算法 + 技术资本主义意识形态 + 生成式 AI」三者交汇处来解读。这正是两人所说的神经媒体环境。"
+   },
+   "links": [
+    {
+     "url": "https://www.schirn.de/en/",
+     "label": {
+      "en": "Schirn Kunsthalle Frankfurt",
+      "zh": "Schirn 美术馆官网"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "11 Jun – 20 Sep 2026",
+    "zh": "2026 年 6 月 11 日–9 月 20 日"
+   }
+  },
+  {
+   "id": "wetware-computing-muenster",
+   "date": "2026-06-02",
+   "who": "leung",
+   "fmt": "talk",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.youtube.com/watch?v=7hD8RRrafAI",
+   "title": {
+    "en": "“Wetware Computing” talk at a Münster philosophy-of-technology workshop (via Zoom)",
+    "zh": "明斯特技术哲学工作坊：「湿件计算」线上报告"
+   },
+   "summary": {
+    "en": "At a workshop on AI and new human–technology relations organised by Jacqueline Bellon (Tübingen) in Münster, Chloe Loewith, Ivar Frisch and Jenn Leung presented via Zoom. A recording titled “Wetware Computing” was posted on 2 Jun 2026. Summarised from the event page only; no transcript.",
+    "zh": "图宾根大学 Jacqueline Bellon 组织的工作坊「人工智能与新型人机关系：科学哲学的挑战」在明斯特举行。工作坊页面列出 Chloe Loewith、Ivar Frisch 和 Jenn Leung 通过 Zoom 参加；这三人也是 Antikythera 论文〈类器官阵列计算〉的作者。Bellon 的 YouTube 频道 2026 年 6 月 2 日上传了题为「Wetware Computing」的报告录像。从标题和合作者推断，内容是用活体神经元做计算（类器官智能）及其带来的哲学问题。我们没有读到字幕，所以只按页面说明整理。"
+   },
+   "people": "Jenn Leung, Chloe Loewith, Ivar Frisch",
+   "nm": {
+    "en": "Wetware (computing with living neurons) is BCI/neurotech frontier: in Leung's work, the most literal material substrate of ‘neural’ media.",
+    "zh": "主题是用活体神经元做计算的「湿件」，属于脑机 / 神经技术前沿。在 Leung 的工作里，这是「神经」媒体最字面意义上的物质基础。"
+   },
+   "links": [
+    {
+     "url": "https://uni-tuebingen.de/en/277482",
+     "label": {
+      "en": "Workshop page (Tübingen)",
+      "zh": "工作坊页面（图宾根大学）"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "video posted 2 Jun 2026",
+    "zh": "视频 2026 年 6 月 2 日发布"
+   }
+  },
+  {
+   "id": "rhizome-7x7-home-worlds",
+   "date": "2026-05-16",
+   "who": "leung",
+   "fmt": "project",
+   "basis": "full",
+   "access": "free",
+   "url": "https://jennleung.xyz/homeworlds",
+   "title": {
+    "en": "Rhizome 7x7 “Containment”: Thoughtforms: Homeworlds encode Intelligences (with Agnieszka Kurant, Michael Levin, Emily Ertle)",
+    "zh": "Rhizome 7x7：「家园世界编码智能」（与 Kurant、Levin、Ertle 合作）"
+   },
+   "summary": {
+    "en": "At Rhizome's 7x7 (New Museum, 16 May 2026) Leung worked with Agnieszka Kurant, Michael Levin and Emily Ertle. From Levin's idea that patterns are “home worlds” for synthetic organisms, they set out to encode finitude via patterns: an agent simulation whose life trajectories became “thought forms”, then a microfluidic chip whose negative space guides living cells. Michael Connor's 12 Jun 2026 editorial lists “Home worlds encode intelligences” as one of seven big ideas.",
+    "zh": "Rhizome 在纽约新美术馆举办的 7x7 活动（2026 年 5 月 16 日）把艺术家和科学家两两配对。Leung 与艺术家 Agnieszka Kurant、生物学家 Michael Levin 和 Emily Ertle 合作。出发点是 Levin 的研究：模式为合成生物提供「家园世界」，培养皿里的细胞，环境就是以电信号输入它的模式。他们的任务是「用模式在合成生物中编码有限性（死亡）」：做了一个智能体模拟，让每个智能体沿共享模式源（一幅画、随机噪声、宇宙微波背景）在 10×10×10 空间里移动，一生轨迹成为一个「思想形态」；再把这些轨迹转换成微流控芯片设计，负空间成为活细胞生长的通道。Rhizome 主编 Michael Connor 6 月 12 日发表的〈7x7 的七个大想法〉第三条就是「家园世界编码智能」。"
+   },
+   "people": "Jenn Leung, Agnieszka Kurant, Michael Levin, Emily Ertle",
+   "nm": {
+    "en": "A speculation on where intelligence comes from: grown from environmental patterns rather than designed, linking AI, synthetic biology and living cells on chips, an extension of Leung's ‘grown, not designed’ line.",
+    "zh": "这是关于「智能从哪里来」的推测：智能不是设计出来的程序，而是由环境模式培育出来的。它把 AI、合成生物和芯片上的活细胞连到一起，也是 Leung 「生长而非设计」思路的延伸。"
+   },
+   "links": [
+    {
+     "url": "https://rhizome.org/editorial/2026/jun/12/3-home-worlds-encode-intelligences/",
+     "label": {
+      "en": "Rhizome editorial by Michael Connor (12 Jun 2026)",
+      "zh": "Rhizome 编辑文章（Michael Connor，2026 年 6 月 12 日）"
+     }
+    }
+   ]
+  },
+  {
+   "id": "arnhem-jankspace-residues",
+   "date": "2026-05-14",
+   "who": "joint",
+   "fmt": "exhibition",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://stateoffashion.org/en/biennale/",
+   "title": {
+    "en": "“Jankspace: Residues of the Stack”, State of Fashion Biennale, Arnhem",
+    "zh": "「Jankspace：堆栈的残渣」，阿纳姆 State of Fashion 双年展"
+   },
+   "summary": {
+    "en": "Leung's CV lists “Jankspace: Residues of the Stack” at the State of Fashion Biennale, Arnhem (14 May–28 Jun 2026), continuing the jankspace series and tying it to ‘the Stack’ of planetary computation. Listed by title only; we found no public description.",
+    "zh": "Leung 的简历列出：两人以「Jankspace: Residues of the Stack」为题参加荷兰阿纳姆的 State of Fashion 时尚双年展（2026 年 5 月 14 日–6 月 28 日）。标题延续「jankspace」系列，把它和 Benjamin Bratton 的「堆栈」（The Stack，全球计算基础设施的分层模型）连起来：jankspace 是这套堆栈留下的残渣。展览的具体呈现方式我们没有找到公开资料，只能按标题列出。"
+   },
+   "people": "Daniel Felstead, Jenn Leung",
+   "date_display": {
+    "en": "14 May – 28 Jun 2026",
+    "zh": "2026 年 5 月 14 日–6 月 28 日"
+   }
+  },
+  {
+   "id": "htgaa-organoid-lab-chip",
+   "date": "2026-05-10",
+   "who": "leung",
+   "fmt": "project",
+   "basis": "full",
+   "access": "free",
+   "url": "https://pages.htgaa.org/2026a/jenn-leung/projects/individual-final-project/index.html",
+   "title": {
+    "en": "MIT HTGAA 2026 final project: a closed-loop organoid lab-on-a-chip proposal (LifeFabs)",
+    "zh": "MIT「如何培育几乎任何东西」课程结业项目：闭环类器官芯片方案"
+   },
+   "summary": {
+    "en": "Leung's final project for MIT's How to Grow (Almost) Anything 2026 (LifeFabs node): a BSL-1 organoid lab-on-a-chip proposal (PC12 cells, Nurr1/FoxA2 mRNA, an Opentrons robot with a reinforcement-learning loop). The page says it was generated in May 2026 and its data are hypothetical. The aim is to make biocomputing accessible to small labs.",
+    "zh": "Leung 在 MIT「How to Grow (Almost) Anything」2026 课程（LifeFabs 研究所节点）的个人结业项目，是一份生物安全一级（BSL-1）的「类器官芯片实验室」方案：用 PC12 细胞和 Nurr1/FoxA2 mRNA 诱导多巴胺能神经元，再用 Opentrons 移液机器人加强化学习做闭环实验。页面写明方案生成于 2026 年 5 月，数据是假设性的，不是实验结果。目标是让小型实验室也能做生物计算（「民主化」类器官计算），而不是只有大公司能做。"
+   },
+   "people": "Jenn Leung",
+   "nm": {
+    "en": "Pushing living-neuron computing toward low-cost tools raises a future-of-neurotech question: who gets to own and train ‘neural’ infrastructure.",
+    "zh": "把「活体神经元当计算机」从大实验室推向低门槛工具，是神经技术的未来路线问题：谁能拥有和训练这类「神经」基础设施。"
+   },
+   "date_display": {
+    "en": "May 2026 (as stated on the page)",
+    "zh": "2026 年 5 月（方案注明的生成时间）"
+   }
+  },
+  {
+   "id": "hk-panels-simulation-speculation",
+   "date": "2026-03-24",
+   "who": "leung",
+   "fmt": "panel",
+   "basis": "description",
+   "access": "free",
+   "url": "https://jennleung.xyz/workshops",
+   "title": {
+    "en": "Hong Kong, March: LACMA Digital Leaders “Simulation / Speculation”, SATA panel and “Don't Hate the Player…” (SPORE live gameplay)",
+    "zh": "香港三月：LACMA「模拟 / 推测」对谈、SATA 论坛与《SPORE》游戏直播对谈"
+   },
+   "summary": {
+    "en": "From Leung's talks page: the LACMA Digital Leaders panel “Simulation / Speculation: Prototyping Worlds” (Soho House HK, 24 Mar; with Kevin Abosch, Quayola, Ayoung Kim and others); SATA's “Flavoring Knowledge in Emergent Realities” (28 Mar; moderated by Ashley Lee Wong) on digital capitalism, bio-computation and urban ecologies; and “Don't Hate the Player…” (2026), a live SPORE gameplay conversation with Brandon Tay at Twenty Alpha asking “How do we bridge the gap between biological intelligence and synthetic simulation?”. The two March panels are undated; 2026 is inferred from ordering.",
+    "zh": "Leung 网站讲座列表中的一组香港活动：3 月 24 日在 Soho House 参加 LACMA Digital Leaders 香港数字艺术对谈「Simulation / Speculation: Prototyping Worlds」（同台有 Kevin Abosch、Quayola、Ayoung Kim、Zheng Mahler 等）；3 月 28 日参加 SATA（亚洲艺术与科技学会）与捷克驻港总领馆合办的系列压轴场「Flavoring Knowledge in Emergent Realities」，由 Ashley Lee Wong 主持，讨论数字资本主义、生物计算和城市生态的交叉；以及在 Twenty Alpha 与艺术家 Brandon Tay 边玩 2008 年的生命模拟游戏《SPORE》边对谈的「Don't Hate the Player…」，问题是「怎样弥合生物智能与合成模拟之间的鸿沟」。网站只给《SPORE》一场标了 2026，两场对谈没写年份，按排序推断为 2026 年。"
+   },
+   "people": "Jenn Leung; Brandon Tay; moderator Ashley Lee Wong",
+   "nm": {
+    "en": "On biological intelligence, simulation and bio-computation: future of AI/neurotech.",
+    "zh": "讨论生物智能与模拟、生物计算的未来，属于 AI / 神经技术议题。"
+   },
+   "date_display": {
+    "en": "24 & 28 Mar (year inferred: 2026)",
+    "zh": "3 月 24 日、28 日（年份按排序推断为 2026）"
+   }
+  },
+  {
+   "id": "ncm-actual-intelligence-interview",
+   "date": "2026-03-18",
+   "who": "leung",
+   "fmt": "interview",
+   "basis": "full",
+   "access": "free",
+   "url": "https://ncm.org.au/knowledge/discussing-actual-intelligence-with-dr-brett-kagan-and-jenn-leung",
+   "title": {
+    "en": "“Discussing Actual Intelligence” with Dr Brett Kagan and Jenn Leung (National Communication Museum)",
+    "zh": "「真实智能」对谈：Brett Kagan 与 Jenn Leung（墨尔本国家传播博物馆）"
+   },
+   "summary": {
+    "en": "NCM senior curator Jemimah Widdicombe interviews Cortical Labs CEO/CSO Brett Kagan and Leung. Leung traces her path from reading on reservoir computing (c. 2021) and game development to Antikythera (2024), where DishBrain became “a really important point of departure for the future of biocomputing”; her real-time streaming background matters because these systems rely on low-latency closed loops between living neurons and game worlds. Kagan: AI is software inspired by the brain; SBI is real brain cells working with computers, “more like growing a new kind of computing system”. Leung wants to network living cells and scaffold them into other systems, using spikes to drive game states toward multiplayer communication.",
+    "zh": "墨尔本国家传播博物馆（NCM）资深策展人 Jemimah Widdicombe 访谈 Cortical Labs 的 CEO 兼首席科学官 Brett Kagan 和 Leung。Leung 说她 2021 年前后开始读「储备池计算」等非常规计算，又做过游戏开发和技术美术；2024 年在 Antikythera 研究「认知基础设施」时，把 DishBrain（让培养的神经元学会玩游戏）当作生物计算未来的起点。她的游戏引擎和实时串流背景之所以有用，是因为这类系统靠活体神经元与游戏环境之间低延迟的闭环互动。Kagan 的区分是：AI 是「受大脑启发的软件」，合成生物智能（SBI）是「真实的脑细胞和计算机一起工作」，更像「培育一种新的计算系统」。Leung 说她最感兴趣的是把活细胞联网并「搭进」别的系统，用神经元的放电驱动游戏状态，进而做多人通信和多人游戏。"
+   },
+   "people": "Jenn Leung, Brett Kagan; interviewer Jemimah Widdicombe",
+   "nm": {
+    "en": "Directly on living-neuron computing: AI vs real brain cells, closed-loop interaction, neurons communicating through multiplayer games. Here ‘neural’ moves from metaphor to actual neurons.",
+    "zh": "直接谈活体神经元计算这一神经技术前沿：AI 与「真实脑细胞」的分野、闭环交互、多人游戏式的神经元通信。Leung 在这里把「神经」从隐喻落到了真实的神经元上。"
+   }
+  },
+  {
+   "id": "connectsci-biocomputer",
+   "date": "2026-03-02",
+   "who": "leung",
+   "fmt": "press",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://jennleung.xyz/corticallabs",
+   "title": {
+    "en": "ConnectSci (Cosmos) article on the Cortical Labs × NCM artwork",
+    "zh": "ConnectSci／Cosmos 科学媒体报道 Cortical Labs × NCM 作品"
+   },
+   "summary": {
+    "en": "ConnectSci's Evrim Yazgin (2 Mar 2026) covered Leung's work with Cortical Labs at NCM, an artwork using cloud-accessed living neurons. Linked from her project page; the article itself timed out for us, so this is listed by title and date.",
+    "zh": "澳大利亚科学媒体 ConnectSci 的 Evrim Yazgin 在 2026 年 3 月 2 日报道了 Leung 与 Cortical Labs 在墨尔本国家传播博物馆的合作：用云端接入的活体神经元做一件互动艺术作品。原文链接在 Leung 的 Cortical Labs 项目页上，我们打开原文时超时，所以只按项目页的标题和日期列出。"
+   },
+   "people": "Jenn Leung; by Evrim Yazgin"
+  },
+  {
+   "id": "ncm-actual-intelligence-performance",
+   "date": "2026-02-26",
+   "who": "leung",
+   "fmt": "performance",
+   "basis": "description",
+   "access": "free",
+   "url": "https://ncm.org.au/knowledge/discussing-actual-intelligence-with-dr-brett-kagan-and-jenn-leung",
+   "title": {
+    "en": "“Actual Intelligence”: live performance and panel with Cortical Labs (NCM Melbourne)",
+    "zh": "「真实智能」：活体神经元 × Commodore 64 现场表演与对谈"
+   },
+   "summary": {
+    "en": "In February 2026 (26 Feb per Leung's site) NCM hosted Actual Intelligence, a performance and panel with Cortical Labs “featuring live neurons interfacing with a Commodore 64 to create music”: cultured human neurons on the CL1 driving an 8-bit home computer through Leung's interface.",
+    "zh": "2026 年 2 月，墨尔本国家传播博物馆举办「Actual Intelligence」，是与 Cortical Labs 合作的现场表演加对谈。NCM 的介绍是：「活体神经元与一台 Commodore 64 连接，生成音乐」。也就是说，Cortical Labs CL1 芯片上培养的人类神经元，通过 Leung 搭建的接口驱动一台 1980 年代的 8 位家用电脑发声，把最新的湿件计算放进最早一代家用电脑的媒介语境里。Leung 的网站把日期记为 2 月 26 日。"
+   },
+   "people": "Jenn Leung with Cortical Labs",
+   "nm": {
+    "en": "Pairing the oldest home computer with the newest neuron chip puts neurotech into media history and asks what interaction and authorship mean when the other end is living cells.",
+    "zh": "用最老的家用电脑去「对话」最新的神经元芯片，把神经技术放进媒介史，提出问题：当媒介另一端是活细胞时，交互和创作意味着什么？"
+   }
+  },
+  {
+   "id": "optmz-summit",
+   "date": "2026-01-29",
+   "who": "felstead",
+   "fmt": "summit",
+   "basis": "transcript",
+   "access": "free",
+   "url": "https://www.youtube.com/watch?v=fcEOZb8gVWA",
+   "title": {
+    "en": "OPTMZ summit (LCF): Daniel Felstead's opening on “Fashion & the Optimized Body”",
+    "zh": "OPTMZ 峰会开场：Felstead 谈「时尚与被优化的身体」"
+   },
+   "summary": {
+    "en": "Felstead opens the MA Fashion Media & Communication summit (29–30 Jan 2026, co-organised with Leung; video posted 30 Jun 2026). Optimisation hides a theological drive toward a ‘complete, 100%’ state (after Reza Negarestani). Examples: Lance Armstrong, Kim K, looksmaxxer Clavicular, Bryan Johnson. Fashion is moving into health and longevity (Gucci × Oura, Prada, Stella McCartney); LVMH overtook Novo Nordisk by market cap, and both were then overtaken by SAP. What does that triad of luxury, pharma and AI cloud mean?",
+    "zh": "伦敦时装学院 MA 时尚媒体与传播课程的年度峰会，Felstead 主办，开场致谢 Jenn 联合组织（峰会 2026 年 1 月 29–30 日，录像 6 月 30 日上传）。他的论点：「优化」看似冷冰冰的科学，其实暗含神学维度，追求「完整、100%」的理想状态（引用 Reza Negarestani）。例子从 Lance Armstrong、Kim Kardashian、「looksmaxxing」网红 Clavicular 到 Bryan Johnson 的长生计划。他指出时尚正在搬进「健康与长寿」产业：Gucci×Oura 智能戒指、Prada、Stella McCartney。去年 LVMH 市值一度超过生产 Ozempic 的诺和诺德，随后两者又被做 AI 和云计算的 SAP 超过。他问：奢侈时尚、大药厂、AI 云计算这个「三角」意味着什么？"
+   },
+   "people": "Daniel Felstead (organiser, with Jenn Leung)",
+   "mins": 14,
+   "nm": {
+    "en": "The clearest statement: “For several years now, Jen and I along with our students have been exploring K Allado-McDowell's concept of neural media.” In his gloss, neural media spans generative AI, chatbots, wearables, BCIs and pharmacology, “a media that senses back”, embedding itself in us as it embeds us. Ozempic is “the neural media drug par excellence”.",
+    "zh": "目前最明确的表态：「这几年，Jen 和我和学生们一直在研究 K Allado-McDowell 的神经媒体概念。」他的转述是：神经媒体不只是生成式 AI，还包括聊天机器人、可穿戴设备、脑机接口、药物，「任何基于神经元网络的东西」；它是「会反过来感知我们的媒介」，嵌入我们，就像把我们嵌入它。他称 Ozempic 是「神经媒体药物的极致」。"
+   },
+   "date_display": {
+    "en": "summit 29–30 Jan 2026 · video posted 30 Jun 2026",
+    "zh": "峰会 2026 年 1 月 29–30 日 · 视频 6 月 30 日上传"
+   }
+  },
+  {
+   "id": "ncm-closed-loop-connections",
+   "date": "2026-01-07",
+   "who": "leung",
+   "fmt": "exhibition",
+   "basis": "description",
+   "access": "free",
+   "url": "https://jennleung.xyz/corticallabs",
+   "title": {
+    "en": "“Closed-Loop Connections” with Cortical Labs CL1, in FRIEND (National Communication Museum, Melbourne)",
+    "zh": "「闭环连接」：Cortical Labs CL1 活体神经元装置（墨尔本 FRIEND 展）"
+   },
+   "summary": {
+    "en": "In NCM's FRIEND exhibition (7 Jan–19 Apr 2026), Leung and Cortical Labs showed Closed Loop Connections, in her words “a first stab at connecting the CL1 to a range of expansive creative technology applications using living neurons as real-time processors”: TouchDesigner movement tracking, embodied Unreal Engine game worlds, ‘biological music signatures’ on a Commodore 64. Audience movement was translated into stimulation patterns sent to the neurons, to “close the loop”.",
+    "zh": "墨尔本国家传播博物馆研发空间的展览「FRIEND」（2026 年 1 月 7 日–4 月 19 日）展出 Leung 与 Cortical Labs 合作的「Closed Loop Connections」。按 Leung 在 NCM 访谈里的说法，这是「把 CL1 接到一系列创意技术应用上的第一次尝试」，让活体神经元充当实时处理器：处理 TouchDesigner 的人体动作追踪数据，进入虚幻引擎里的具身游戏环境，用 Commodore 64 生成「生物音乐签名」。他们还尝试在「移动的身体」与培养的神经元网络之间「闭合回路」：观众的动作被翻译成刺激模式发给 CL1，神经元的反应再回到作品里。"
+   },
+   "people": "Jenn Leung with Cortical Labs",
+   "nm": {
+    "en": "A literal ‘medium that responds’: audience movement stimulates real neurons, which respond back. Compare Felstead's ‘media that senses back’ (OPTMZ).",
+    "zh": "「会回应你的媒介」在这里是字面意义：观众的身体动作刺激真实神经元，神经元再反过来影响作品。可以和 Felstead 说的「会反过来感知你的媒介」（OPTMZ）对照着看。"
+   },
+   "links": [
+    {
+     "url": "https://ncm.org.au/knowledge/discussing-actual-intelligence-with-dr-brett-kagan-and-jenn-leung",
+     "label": {
+      "en": "NCM interview (18 Mar 2026)",
+      "zh": "NCM 访谈（2026 年 3 月 18 日）"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "7 Jan – 19 Apr 2026",
+    "zh": "2026 年 1 月 7 日–4 月 19 日"
+   }
+  },
+  {
+   "id": "lerandom-neurips-interview",
+   "date": "2026-01-06",
+   "who": "leung",
+   "fmt": "interview",
+   "basis": "full",
+   "access": "free",
+   "url": "https://www.lerandom.art/editorial/embodying-ai-at-neurips-2025-creative-ai-track",
+   "title": {
+    "en": "Le Random: “Embodying AI at NeurIPS 2025: Creative AI Track” (Luba Elliott interviews Leung & Loewith)",
+    "zh": "Le Random：「在 NeurIPS 2025 创意 AI 单元让 AI 具身」（Luba Elliott 访谈）"
+   },
+   "summary": {
+    "en": "Luba Elliott, co-chair of the NeurIPS 2025 Creative AI Track, interviews Leung and Chloe Loewith about Assembloid Agency, “an open-source Unreal Engine plugin that connects living neurons grown on a ‘brain-on-a-chip’ to a 3D game world”. Leung describes herself as a simulation developer (game engines, real-time tools, streaming) who teaches game engines, visual programming and speculative design “to extremely fashionable students” at UAL; the two met as Antikythera studio researchers and began, with Ivar Frisch, on the design space of organoid intelligence.",
+    "zh": "NeurIPS 2025 创意 AI 单元联合主席、策展人 Luba Elliott 在生成艺术媒体 Le Random 上访谈两个入选项目，其中之一是 Leung 与 Chloe Loewith 的〈Assembloid Agency〉：一个开源的虚幻引擎插件，把「芯片上的大脑」里培养的活体神经元连到 3D 游戏世界。Leung 介绍自己是做游戏引擎、实时工具和串流技术的模拟开发者，在伦敦艺术大学给「极其时髦的学生」教游戏引擎、可视化编程和推测设计；在巴特莱特读硕士时开始关注神经建筑学，参与结合脑电、眼动和动作数据的「100 Minds in Motion」。两人在 Antikythera 当工作室研究员时认识，和 Ivar Frisch 一起从「类器官智能的设计空间」做起。她说起初大家对活体神经元未来能发展出更复杂认知行为有过「最疯狂的（没有根据的）想象」。"
+   },
+   "people": "Jenn Leung, Chloe Loewith; interviewer Luba Elliott",
+   "nm": {
+    "en": "Another route for AI's future, living neural tissue embodied in game worlds rather than bigger models: BCI/neurotech frontier.",
+    "zh": "谈 AI 的另一条未来路线：不是更大的模型，而是让活体神经组织在游戏世界中「具身」，属于 BCI / 神经技术前沿。"
+   }
+  },
+  {
+   "id": "springer-shoggoth-monoculture",
+   "date": "2026-01-05",
+   "who": "leung",
+   "fmt": "paper",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://jennleung.xyz/cv",
+   "title": {
+    "en": "“Alignment, Shoggoth Monoculture, and the Epistemic Cost of Homogenizing LLMs” (Springer, forthcoming)",
+    "zh": "〈对齐、修格斯单一栽培与 LLM 同质化的认知代价〉（Springer，即将出版）"
+   },
+   "summary": {
+    "en": "A forthcoming Springer chapter (2026) by Loewith, Frisch, Farghly and Leung, per her CV. The ‘Shoggoth’ is the AI meme of the LLM as a Lovecraftian monster wearing an alignment smiley mask; the title suggests alignment homogenises models (‘monoculture’) at an epistemic cost. Title only.",
+    "zh": "Leung 简历列出的 2026 年待出版书章，作者 Chloe Loewith、Ivar Frisch、Farghly 和 Leung，Springer 出版。标题里的「修格斯」（Shoggoth）是 AI 圈流行的梗：大语言模型像一只洛夫克拉夫特式怪物，「对齐」训练只是给它戴上笑脸面具。从标题看，文章讨论对齐训练让各家模型越来越像（「单一栽培」），由此付出认知多样性的代价。我们只读到标题。"
+   },
+   "people": "Chloe Loewith, Ivar Frisch, Farghly, Jenn Leung",
+   "nm": {
+    "en": "By its title, about AI alignment homogenising models, a future-of-AI question; text not read.",
+    "zh": "从标题看，讨论 AI 对齐让模型同质化的风险，属于「AI 未来」议题；内容未读到，不作推断。"
+   },
+   "date_display": {
+    "en": "2026 (forthcoming)",
+    "zh": "2026 年（即将出版）"
+   }
+  },
+  {
+   "id": "alife-2026-tutorial-sbi-games",
+   "date": "2026-01-04",
+   "who": "leung",
+   "fmt": "teaching",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://jennleung.xyz/cv",
+   "title": {
+    "en": "ALife 2026 tutorial on hybrid bio-artificial intelligence; Research Revival Fund for multiplayer SBI games",
+    "zh": "ALife 2026 教程「混合生物 - 人工智能」及多人游戏基准研究资助"
+   },
+   "summary": {
+    "en": "From Leung's 2026 CV: an ALife 2026 (Waterloo) tutorial with Wesley Clawson and Chloe Loewith on signal-scaffolding and benchmarking for hybrid biological–artificial intelligence, and a Research Revival Fund (Analogue Group) grant to benchmark synthetic biological intelligence with multiplayer games. Titles only.",
+    "zh": "Leung 简历的 2026 年条目：在人工生命大会 ALife 2026（滑铁卢）与 Wesley Clawson、Chloe Loewith 合开教程「Meaningful Signal-Scaffolding, Benchmarking, and Designing for Hybrid Biological-Artificial Intelligence」，讲怎样给生物神经元与人工系统混合的智能搭建信号框架和评测标准；并获得 Analogue Group 的 Research Revival Fund，受人工生命研究启发，用多人游戏给合成生物智能（SBI）做基准测试。只读到简历标题。"
+   },
+   "people": "Jenn Leung, Wesley Clawson, Chloe Loewith",
+   "nm": {
+    "en": "Benchmarks and game worlds for neurons on chips: biocomputing/BCI frontier.",
+    "zh": "给「芯片上的神经元」设计评测和游戏环境，属于 BCI / 生物计算前沿。"
+   },
+   "links": [
+    {
+     "url": "https://2026.alife.org/workshops-sessions/",
+     "label": {
+      "en": "ALife 2026 workshops & tutorials",
+      "zh": "ALife 2026 工作坊与教程"
+     }
+    },
+    {
+     "url": "https://www.therevivalfund.com/portfolio/jenn-leung-chloe-loewith",
+     "label": {
+      "en": "Research Revival Fund: Leung & Loewith",
+      "zh": "Research Revival Fund：Leung 与 Loewith"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "2026 (exact date not given)",
+    "zh": "2026 年（具体日期未注明）"
+   }
+  },
+  {
+   "id": "cvpr-art-2026",
+   "date": "2026-01-03",
+   "who": "leung",
+   "fmt": "exhibition",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://thecvf-art.com/project.php?year=2026&artist=jenn-leung&id=963",
+   "title": {
+    "en": "CVPR AI Art Gallery 2026 (Denver and online)",
+    "zh": "CVPR 2026 AI 艺术展（丹佛及线上）"
+   },
+   "summary": {
+    "en": "Leung's CV lists the CVPR 2026 art exhibition (Denver and online gallery). The work is not named and the gallery page was not checked; listed from the CV.",
+    "zh": "Leung 简历列出作品入选计算机视觉顶会 CVPR 2026 的艺术展（在科罗拉多州丹佛现场展出，同时有线上画廊；画廊由策展人 Luba Elliott 主持）。简历没有写入选的是哪件作品，我们也没有打开画廊页面核实，所以只按简历列出。"
+   },
+   "people": "Jenn Leung",
+   "date_display": {
+    "en": "2026 (per CV)",
+    "zh": "2026 年（据简历）"
+   }
+  },
+  {
+   "id": "neurips-design-for-intelligence-panel",
+   "date": "2025-12-03",
+   "who": "leung",
+   "fmt": "panel",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://neurips.cc/virtual/2025/panel/131737",
+   "title": {
+    "en": "NeurIPS 2025 Creative AI panel “Design for Intelligence: Humans, Machines and Nature in Emergent Co-Creation”",
+    "zh": "NeurIPS 2025 创意 AI 对谈「为智能而设计：人、机器与自然的涌现式共创」"
+   },
+   "summary": {
+    "en": "A NeurIPS 2025 Creative AI Track panel (3 Dec 2025, San Diego) with Leung, Chloe Loewith, Vit Ruzicka, Katie Hofstadter, Memo Akten, Dünya Baradari and Diana Mykhaylychenko, on designing intelligence across humans, machines and nature. Title and panellists only.",
+    "zh": "2025 年 12 月 3 日（圣地亚哥）NeurIPS 创意 AI 单元的对谈，由 Priya Prakash 策划，同台的有 Jenn Leung、Chloe Loewith、Vit Ruzicka、Katie Hofstadter、Memo Akten、Dünya Baradari 和 Diana Mykhaylychenko。题目把「智能」当成可以设计的对象，覆盖人、机器和自然（生物）三方。Leung 和 Loewith 在同一届会议展示了〈Assembloid Agency〉海报论文。我们只读到 Leung 网站上的对谈标题和嘉宾名单。"
+   },
+   "people": "Jenn Leung, Chloe Loewith, Memo Akten and others",
+   "nm": {
+    "en": "Designing biological and machine intelligence together, at a major AI conference: future of AI/neurotech.",
+    "zh": "在 AI 顶会上讨论把生物与机器智能一起「设计」，属于 AI / 神经技术的未来议题。"
+   }
+  },
+  {
+   "id": "neurips-assembloid-agency",
+   "date": "2025-12-02",
+   "who": "leung",
+   "fmt": "paper",
+   "basis": "abstract",
+   "access": "free",
+   "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/a8ff6fc513c567311782c91e837b5ab9-Abstract-Creative_AI_Track.html",
+   "title": {
+    "en": "“Assembloid Agency: Unreal Engine API for brain-on-a-chip platforms” (NeurIPS 2025 Creative AI Track, with Chloe Loewith)",
+    "zh": "〈组装体能动性：面向「芯片上的大脑」的虚幻引擎 API〉（NeurIPS 2025，与 Loewith 合著）"
+   },
+   "summary": {
+    "en": "A NeurIPS 2025 Creative AI Track poster. The abstract proposes an open-source Unreal Engine API mediating between living neurons on high-density microelectrode arrays and game environments (stimulation, recording, visualisation, real-time control; wetware, spiking nets or EEG stand-ins; Learning Agents templates for single- and multi-organoid training). It extends Organoid Array Computing's view of brain cultures as increasingly ‘designable’ and ‘playable’ organisms, and foregrounds ethical and aesthetic guardrails.",
+    "zh": "NeurIPS 2025 创意 AI 单元的海报论文（会议 2025 年 12 月 2–7 日，圣地亚哥）。摘要提出一个开源的虚幻引擎 API，在「高密度微电极阵列上培养的活体神经元」和模拟游戏环境之间做中介；插件提供刺激、记录、可视化和实时控制神经元培养物的功能，研究者可以用真实湿件、脉冲神经网络或脑电替身快速搭实验情境，游戏模板基于虚幻的 Learning Agents 强化学习插件，支持单个或多个类器官训练。论文延续〈类器官阵列计算〉：三维脑培养物可能组装成更复杂的认知基础设施，因而变得越来越「可设计」「可游玩」。「assembloid」指把类器官组装成新的计算生态，「agency」既指游戏引擎作为实验主体，也指生物与合成行动者之间协商出来的能动性。摘要最后强调要为类器官智能设下伦理和审美的护栏。"
+   },
+   "people": "Jenn Leung, Chloe Loewith",
+   "nm": {
+    "en": "The most literal neurotech entry: a game engine as interface and training ground for living neurons, BCI in reverse, giving neurons on a chip a world.",
+    "zh": "最直接的「神经」技术条目：把游戏引擎变成活体神经元的接口和训练场。这是 BCI 反过来的方向，不是把芯片放进人脑，而是给芯片上的神经元一个世界。"
+   },
+   "links": [
+    {
+     "url": "https://openreview.net/forum?id=BroaBkQAGa",
+     "label": {
+      "en": "OpenReview page",
+      "zh": "OpenReview 页面"
+     }
+    },
+    {
+     "url": "https://jennleung.xyz/asssembloidassembly",
+     "label": {
+      "en": "Project page",
+      "zh": "项目页"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "Dec 2025 (NeurIPS San Diego; UAL deposit Sep)",
+    "zh": "2025 年 12 月（NeurIPS 圣地亚哥；UAL 9 月存档）"
+   }
+  },
+  {
+   "id": "matadero-welcome-to-jankspace",
+   "date": "2025-11-29",
+   "who": "joint",
+   "fmt": "talk",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.medialab-matadero.es/en/activities/jenn-leung-daniel-felstead-welcome-jankspace-babes",
+   "title": {
+    "en": "Welcome to Jankspace, Babes: screening and project presentation at Medialab Matadero OpenLAB (Madrid)",
+    "zh": "马德里 Medialab Matadero OpenLAB：《Welcome to Jankspace, Babes》放映与项目讲座"
+   },
+   "summary": {
+    "en": "At Medialab Matadero's OpenLAB festival (LAB 4 Weird Futures, theme ‘teslaforming’), the film was screened on 28 Nov 2025 and Leung gave a project presentation on 29 Nov. The page defines jankspace as “the grotesque and hollow realm of technocapitalist networks”: the Uber driver's tangle of screens and cables, and “quite literally, us”. Themes: the aesthetic delirium of digital pop culture, deranged mediated bodies, the “idiotic hallucinations of transhumanism”. Leung's CV also lists a Cineteca Madrid screening on 1 Nov curated by Bani Brusadin.",
+    "zh": "马德里 Medialab Matadero 的年度项目「LAB 4 Weird Futures」（怪异未来）在 2025 年 11 月底举办 OpenLAB 节。11 月 28 日在 Casa del Lector 礼堂放映《Welcome to Jankspace, Babes》（英国，2025，29 分钟，西语字幕），29 日由 Leung 做项目讲座。活动页给 jankspace 的定义是：「技术资本主义网络里怪诞而空洞的领域」，是数字巨型结构消化物质世界时溢出的残渣，比如 Uber 司机那套缠满电线、屏幕闪烁、通知不停的多屏装置；「它就是我们自己」。讲座谈当代数字流行文化的审美错乱、「被媒介化而失常的身体」，以及「超人类主义的愚蠢幻觉」。LAB 4 的总题目是「teslaforming」，即科技叙事怎样主动重塑社会。CV 中另记 11 月 1 日在 Cineteca Madrid 有一场 Bani Brusadin 策划的放映。"
+   },
+   "people": "Jenn Leung, Daniel Felstead",
+   "nm": {
+    "en": "Frames jankspace within ‘weird futures’ and a critique of transhumanism: how techno-utopian narratives land on bodies.",
+    "zh": "把 jankspace 放在「怪异未来 / teslaforming」框架里，批评超人类主义。讨论的是科技乌托邦叙事怎样落到身体上，属于未来媒介 / 身体技术议题。"
+   },
+   "links": [
+    {
+     "url": "https://www.youtube.com/watch?v=g50A2puhmV4",
+     "label": {
+      "en": "LAB 4 Weird Futures trailer (YouTube)",
+      "zh": "LAB 4 怪异未来 预告片（YouTube）"
+     }
+    },
+    {
+     "url": "https://www.medialab-matadero.es/en/programs/lab-4-weird-futures",
+     "label": {
+      "en": "LAB 4 Weird Futures programme",
+      "zh": "LAB 4 项目介绍"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "28–29 Nov 2025",
+    "zh": "2025 年 11 月 28–29 日"
+   }
+  },
+  {
+   "id": "nm91-jankspace",
+   "date": "2025-11-25",
+   "who": "joint",
+   "fmt": "podcast",
+   "basis": "transcript",
+   "access": "paid",
+   "url": "https://newmodels.substack.com/p/nm-91-daniel-felstead-and-jenn-leung",
+   "title": {
+    "en": "New Models NM 91: Daniel Felstead & Jenn Leung on Jankspace",
+    "zh": "New Models 第 91 期：Felstead 与 Leung 谈 Jankspace"
+   },
+   "summary": {
+    "en": "Lil Internet and Caroline Busta host the duo (posted 24 Nov US / 25 Nov UTC+8; ~29-minute free preview with captions). Lil Internet calls them “central to an emerging media theory of the present” that “senses the neural age that's upon us” and seeks compatible formats. A clip of Maya B. Kronic at the Jan 2025 BUFF summit defines jankspace (human bodies and brains as duct tape between systems). Felstead says NM has been “a massive influence” on his thinking; Leung says they quote NM to students. Production stories: ex-students Red and Qianyu modelled Julia; a Chinese Unreal developer remotely fixed the mirror reflections; an ‘Ozi’ Ozempic plush is planned. Leung's one-liner for jankspace: the delivery e-bike with a battery strapped to the down tube and neoprene gloves gaffer-taped to the bars.",
+    "zh": "Lil Internet 和 Caroline Busta 访谈两人（Substack 11 月 24 日发布，北京时间 25 日；免费预告约 29 分钟，有字幕）。开场 Lil Internet 说两人「处在一种正在出现的当下媒介理论的中心」，这种理论感知到正在到来的「神经时代」，不只分析，还寻找能在其中流通的格式，常常拥抱网络审美，哪怕它异化而怪诞。随后播放 Maya B. Kronic 在 2025 年 1 月 BUFF 峰会上的片段：jankspace 是自动化系统之间无人规管的残余空间，「人的身体和大脑」像胶带一样把系统缝起来。Felstead 说自己从节目一开始就在听，New Models 对他的思考「影响巨大」；Leung 说他们在课堂上经常引用 New Models。他们讲制作：两位前学生 Red 和 Qianyu 建模 Julia，一位中国的虚幻引擎开发者远程接管电脑帮忙做镜面反射；还打算把片中的 Ozempic 吉祥物「Ozi」做成毛绒玩具。Leung 给出的 jankspace 最简定义是：Uber Eats / DoorDash 外卖员改装的电动车，下管绑着电池，车把上用胶带粘着氯丁橡胶手套。"
+   },
+   "people": "Daniel Felstead, Jenn Leung; hosts Lil Internet, Caroline Busta",
+   "mins": 29,
+   "nm": {
+    "en": "Busta frames jankspace within “the transition to network media and then what we're calling neural media”, citing K's taxonomy. Leung: jankspace is “this higher dimensional space that's not meant to be understood by humans but is embedding a lot of contradictions”. They discuss whether a commons in neural media is a fleeting embedding space. Felstead dates Kronic's coinage of ‘jankspace’ to about 28 Jan 2025.",
+    "zh": "Busta 在节目里把 jankspace 放进「从网络媒体到我们所说的神经媒体」的转变来理解，并引用 K 的媒介分类（网络媒体在 1980 年代末已经出现）。Leung 把 jankspace 说成「一个不为人类理解而设的高维空间，里面嵌着我们理解不了的矛盾」。讨论还谈到神经媒体中的「公地」是不是一种转瞬即逝的 embedding 空间。另据 Felstead，「jankspace」一词是 Kronic 在 2025 年 1 月 28 日前后提出的。"
+   },
+   "links": [
+    {
+     "url": "https://www.youtube.com/watch?v=eAFnUmrnK7A",
+     "label": {
+      "en": "Free preview (YouTube, 28:48)",
+      "zh": "免费预告（YouTube，28 分 48 秒）"
+     }
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=FfZm7zTQwbE",
+     "label": {
+      "en": "Maya B. Kronic's full BUFF talk (YouTube)",
+      "zh": "Maya B. Kronic 的 BUFF 完整演讲（YouTube）"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "25 Nov 2025 (UTC+8)",
+    "zh": "2025 年 11 月 25 日（北京时间）"
+   },
+   "internal": [
+    {
+     "href": "new-models.html#e-nm91",
+     "label": {
+      "en": "Same episode on the New Models page",
+      "zh": "New Models 页面里的同一期"
+     }
+    }
+   ]
+  },
+  {
+   "id": "shanghai-dirty-products",
+   "date": "2025-11-15",
+   "who": "leung",
+   "fmt": "performance",
+   "basis": "description",
+   "access": "free",
+   "url": "https://jennleung.xyz/workshops",
+   "title": {
+    "en": "<dirty products for a new era> / <新时代劣质产物>, Cedar Shanghai",
+    "zh": "上海「新时代劣质产物」现场"
+   },
+   "summary": {
+    "en": "A night event at Cedar Shanghai (15 Nov 2025): “an experiment and exploration of how subcultures migrate, manipulate, and mutate across regional stacks”, with a Chinese trend report, tactical demos, reversed interpolations and “dirty products for a dirty era”; mappings by yr_data and Leung.",
+    "zh": "2025 年 11 月 15 日晚在上海巨鹿路 Cedar 的现场活动。Leung 网站的说明：这是一次实验，探索亚文化如何在不同地区的「堆栈」之间迁移、操纵和变异，内容包括一份「中国潮流报告」、战术演示、反向插值，以及「为一个肮脏时代准备的肮脏产品」。Leung 与 yr_data 负责影像映射，另有 nephila.world 和 fabricant_fang 参与。和前一天 NYU 上海的讲座同一趟行程。"
+   },
+   "people": "Jenn Leung, yr_data, nephila.world, fabricant_fang"
+  },
+  {
+   "id": "nyush-aic-pores",
+   "date": "2025-11-14",
+   "who": "leung",
+   "fmt": "talk",
+   "basis": "description",
+   "access": "free",
+   "url": "https://aic.shanghai.nyu.edu/en/event/pores",
+   "title": {
+    "en": "“Pores” artist talk, NYU Shanghai Research Centre for AI & Culture (curated by Bogna Konior)",
+    "zh": "上海纽约大学「人工智能与文化」研究中心讲座「Pores」（Bogna Konior 策划）"
+   },
+   "summary": {
+    "en": "On 14 Nov 2025 NYU Shanghai's Research Centre for AI and Culture hosted Leung's talk “Pores”, curated by media theorist Bogna Konior, on “biocomputing, large-scale crowd simulations, streaming, and digital fashion”. Listing description only.",
+    "zh": "2025 年 11 月 14 日，上海纽约大学「人工智能与文化」研究中心（AIC）请 Leung 做艺术家讲座「Pores」，策划人是写过〈互联网黑暗森林理论〉的媒介理论家 Bogna Konior。Leung 网站给出的讲座内容是：生物计算、大规模人群模拟、串流和数字时尚，几乎覆盖她这几年所有方向，从游戏引擎技术美术、Off World Live 串流工具到活体神经元接口。只读到列表说明。"
+   },
+   "people": "Jenn Leung; curated by Bogna Konior",
+   "nm": {
+    "en": "Biocomputing and crowd simulation in an AI-and-culture setting: future of AI/neurotech.",
+    "zh": "在 AI 与文化的学术场合谈生物计算和群体模拟，属于 AI / 神经技术的未来议题。"
+   }
+  },
+  {
+   "id": "excesss-summit",
+   "date": "2025-09-26",
+   "who": "joint",
+   "fmt": "summit",
+   "basis": "transcript",
+   "access": "free",
+   "url": "https://www.youtube.com/watch?v=2dkxeLC0xvE",
+   "title": {
+    "en": "EXCESSS summit (LCF): “Fashion, Luxury & Our Bodies”: opening by Felstead and Leung",
+    "zh": "EXCESSS 峰会开场：时尚、奢侈与我们的身体"
+   },
+   "summary": {
+    "en": "The MA FMC summit of 26 Sep 2025, co-curated by both (video posted 8 Jun 2026; ~17 min, captions). Felstead frames luxury as excess, a medium for harnessing it (Bataille, John Armitage). Leung: luxury once was aura, status, fetish or asset; now it “collapses into slop, memes, or Labubu keychains”; images arrive faster than attention. She cites the Highsnobiety white paper, Chinese factories exposing their luxury production after US tariffs (“the Shanzhai second wave”), and SSENSE's bankruptcy. The opening also says that instead of “fully automated luxury communism” we got “fully automated luxury capitalism”.",
+    "zh": "MA 时尚媒体与传播课程 2025 年 9 月 26 日的峰会，两人联合策划（录像 2026 年 6 月 8 日上传，标题为 Jenn Leung，约 17 分钟，有字幕）。Felstead 先把奢侈定义为「过剩」：情感、道德、尺度的过剩，引用 Bataille 和 John Armitage，认为奢侈是驾驭过剩的一种媒介。Leung 接着讲：奢侈过去是光环、地位符号、恋物或投机资产，如今却塌缩成「垃圾内容、梗或 Labubu 钥匙扣」；「图像比注意力来得快，产品比欲望来得快」。她引用 Highsnobiety 白皮书说奢侈处在临界点；谈到美国加关税后，中国代工厂（正品或山寨）在网上公开自己替大牌生产，她问这是不是「山寨的第二波，这次真的赢了」；也提到 SSENSE 破产。开场还套用一句话：2018 年我们盼望「全自动奢华共产主义」，今天得到的却是「全自动奢华资本主义」。"
+   },
+   "people": "Jenn Leung, Daniel Felstead (organisers)",
+   "mins": 17,
+   "nm": {
+    "en": "Treats the generative-AI glut of images and content as the new condition of luxury: the content economy of the jankspace / neural-media era.",
+    "zh": "把生成式 AI 带来的「图像与内容无限过剩」当作时尚与奢侈的新处境，这是 jankspace / 神经媒体时代内容经济的另一面。"
+   },
+   "links": [
+    {
+     "url": "https://www.youtube.com/watch?v=IoMRjyjsPd0",
+     "label": {
+      "en": "EXCESSS: Adam Rodgers (YouTube)",
+      "zh": "EXCESSS：Adam Rodgers（YouTube）"
+     }
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=1luZBzTmDFc",
+     "label": {
+      "en": "EXCESSS: Flora Weil (YouTube)",
+      "zh": "EXCESSS：Flora Weil（YouTube）"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "summit 26 Sep 2025 · video posted 8 Jun 2026",
+    "zh": "峰会 2025 年 9 月 26 日 · 视频 2026 年 6 月 8 日上传"
+   }
+  },
+  {
+   "id": "aksioma-vast-automaton",
+   "date": "2025-09-11",
+   "who": "joint",
+   "fmt": "screening",
+   "basis": "description",
+   "access": "free",
+   "url": "https://aksioma.org/the-vast-automaton",
+   "title": {
+    "en": "Always On My Mind in “The Vast Automaton” (Aksioma, Slovenian Cinematheque, 5th Industrial Art Biennial)",
+    "zh": "《Always On My Mind》在卢布尔雅那「庞大的自动机」放映（第五届工业艺术双年展）"
+   },
+   "summary": {
+    "en": "Aksioma's screening programme The Vast Automaton at the Slovenian Cinematheque, Ljubljana (11 Sep 2025; curated by Bani Brusadin and Giulia Colletti for the 5th Industrial Art Biennial, with Alice Bucknell, Cemile Sahin, Rich Pell and others) included Always On My Mind; the biennial also has a page for the duo. From event descriptions.",
+    "zh": "斯洛文尼亚 Aksioma 媒体艺术机构在第五届工业艺术双年展（IAB）框架下，2025 年 9 月 11 日于卢布尔雅那的斯洛文尼亚电影资料馆举办放映专场「The Vast Automaton」，策展人 Bani Brusadin 和 Giulia Colletti，参展者还有 Alice Bucknell、Cemile Sahin、Rich Pell 等，放映了两人的《Always On My Mind》。双年展网站另有一个两人的专页。主题围绕自动化、机器与劳动的关系。我们读到的是活动页和双年展页面的说明。"
+   },
+   "people": "Daniel Felstead, Jenn Leung",
+   "nm": {
+    "en": "Screens the film on Neuralink and ‘consensual telepathy’: directly BCI-related.",
+    "zh": "放映的是讨论 Neuralink 与「共识心灵感应」的那部片子，与 BCI 议题直接相关。"
+   },
+   "links": [
+    {
+     "url": "https://2025.industrialartbiennale.eu/felstead-leung/",
+     "label": {
+      "en": "Industrial Art Biennial 2025: Felstead & Leung",
+      "zh": "2025 工业艺术双年展：Felstead 与 Leung"
+     }
+    }
+   ]
+  },
+  {
+   "id": "welcome-to-jankspace-film",
+   "date": "2025-09-05",
+   "who": "joint",
+   "fmt": "film",
+   "basis": "full",
+   "access": "free",
+   "url": "https://www.dis.art/welcome-to-jankspace",
+   "title": {
+    "en": "Welcome to Jankspace, Babes (DIS.art)",
+    "zh": "《欢迎来到 Jankspace，宝贝们》（DIS.art 委托影片）"
+   },
+   "summary": {
+    "en": "Part four of the “I'm So Janky” series (DIS commission, 29:07; 3D by Red Liu & Qianyu Wang; producer Lauren Boyle). An AI Julia Fox gives a house tour of where we now live, a built environment inadvertently designed by the sloppy processes of 2020s technocapitalism, riffing on Koolhaas's “Junkspace”. The series text: tech preaches seamless efficiency but there are cracks, “what they call ‘jankspace’”; the body is janky, “organic, vulnerable, inconvenient”. Material ranges from Ozempic and Bryan Johnson to AI slop, Dress to Impress, Uber drivers and Luigi Mangione. Credits thank K Allado-McDowell, Marek Poliks, Roberto Alonso Trillo, Sam Cummins; special thanks to Maya B. Kronic. DIS gives no release date; New Models says autumn 2025.",
+    "zh": "「I'm So Janky」系列的第四部，DIS 委托，29 分 07 秒，Felstead 与 Leung 合作，3D 由 Red Liu 和 Qianyu Wang 制作，制片 Lauren Boyle。AI 版 Julia Fox 像带看房一样，带观众走过「我们现在居住的地方」：被 2020 年代技术资本主义草率、失控的流程意外建成的环境。题目改写 Koolhaas 2001 年的〈Junkspace〉。系列介绍说，科技宣扬一个无缝高效的世界，但精心打磨的蓝图里有掩饰不住的裂缝，两人称之为「jankspace」：我们用药物、手术和滤镜攻击自己，但「身体是 janky 的」，它有机、脆弱、不方便，始终塞不进虚拟网格。片中素材从 Ozempic、Bryan Johnson、AI 垃圾内容、换装游戏 Dress to Impress、Uber 司机到 Luigi Mangione。片尾致谢 K Allado-McDowell、Marek Poliks、Roberto Alonso Trillo、Sam Cummins，特别鸣谢 Maya B. Kronic，她的文章〈Cute and/or Janky〉讨论过两人的「jank」概念。DIS 页面没有写上线日期，New Models 说是 2025 年秋天发布。"
+   },
+   "people": "Daniel Felstead with Jenn Leung; 3D Red Liu, Qianyu Wang; producer Lauren Boyle",
+   "mins": 29,
+   "nm": {
+    "en": "Credits thank K Allado-McDowell. The film is itself a sample of neural-media-era content (AI avatar narrator, feed-speed montage, the body as the gap between platforms); New Models treats it as a key work of this emerging media theory.",
+    "zh": "片尾致谢 K Allado-McDowell。片子本身是「神经媒体时代内容」的样本：以 AI 化身做叙述者，把算法推送的碎片剪成高速蒙太奇，把「身体」当作平台系统之间的缝隙。New Models 把它当作这一新媒介理论的代表作。"
+   },
+   "links": [
+    {
+     "url": "https://jennleung.xyz/jankspace",
+     "label": {
+      "en": "Series text on Jenn Leung's site",
+      "zh": "Leung 网站上的系列介绍"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "autumn 2025 (undated on DIS; New Models: ‘this fall’)",
+    "zh": "2025 年秋（DIS 未注明日期；New Models 称「今年秋天」）"
+   }
+  },
+  {
+   "id": "hervisions-living-neural-cultures",
+   "date": "2025-08-30",
+   "who": "leung",
+   "fmt": "interview",
+   "basis": "listing",
+   "access": "paid",
+   "url": "https://www.hervisions.world/portal/assembloid-agency-interview",
+   "title": {
+    "en": "HERVISIONS interview: “Designing with Living Neural Cultures”",
+    "zh": "HERVISIONS 访谈：「用活体神经培养物做设计」"
+   },
+   "summary": {
+    "en": "A HERVISIONS interview titled “Designing with Living Neural Cultures”, listed on Leung's site. Behind a members' portal; not read. Date inferred from page metadata (late Aug 2025).",
+    "zh": "伦敦的新媒体艺术平台 HERVISIONS 发表的访谈「Designing with Living Neural Cultures」，标题出现在 Leung 的网站上，Chloe Loewith 的简介里也提到在 HERVISIONS 发表过文章。原文在会员门户后面，我们没能读到，日期是按网页元数据推断的 2025 年 8 月底，可能不准。"
+   },
+   "people": "Jenn Leung",
+   "nm": {
+    "en": "By its title, on designing with living neurons (neurotech); text not read.",
+    "zh": "从标题看，谈的是用活体神经元做设计，属于神经技术议题；正文未读到。"
+   },
+   "date_display": {
+    "en": "c. late Aug 2025 (inferred from metadata)",
+    "zh": "约 2025 年 8 月底（据网页元数据推断）"
+   }
+  },
+  {
+   "id": "futuretense-3",
+   "date": "2025-08-01",
+   "who": "leung",
+   "fmt": "exhibition",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://award.futuretense.hk/",
+   "title": {
+    "en": "FutureTense 3rd edition: award show and “Behind the Win” panel",
+    "zh": "FutureTense 第三届：获奖展与「获奖背后」对谈"
+   },
+   "summary": {
+    "en": "From Leung's CV (Aug 2025): the FutureTense 3rd edition award show and a ‘Behind the Win’ panel. The work is not named; title only.",
+    "zh": "Leung 简历中 2025 年 8 月的条目：参加香港 FutureTense 第三届的获奖作品展（同展有 Yerin Doh、Nhan Phan、Hsin Yu Chang 等）和「Behind the Win」对谈；同月还在 Wyndham Social 为「Knowless」展做对谈和导览。简历没有写明是哪件作品获奖，我们没能在公开资料中核实，只按标题列出。"
+   },
+   "people": "Jenn Leung",
+   "date_display": {
+    "en": "Aug 2025 (per CV)",
+    "zh": "2025 年 8 月（据简历）"
+   }
+  },
+  {
+   "id": "butterfly-simulation",
+   "date": "2025-07-11",
+   "who": "leung",
+   "fmt": "project",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.youtube.com/watch?v=NEy5jh74Txw",
+   "title": {
+    "en": "Butterfly Simulation (Prototype) / 夢蝶原型: EEG neurofeedback game (Knowless: The Metamorphosis, Hong Kong; ALife 2025 Kyoto)",
+    "zh": "《夢蝶原型》：脑电神经反馈游戏（香港「Knowless：变形记」展；ALife 2025 京都）"
+   },
+   "summary": {
+    "en": "An EEG neurofeedback game prototype: brainwaves “materialize butterflies” whose behaviour crosses into Unreal Engine (Learning Agents RL), with players as NPCs in an HDRI inspired by Li Chi Tak. The text: technology has become prosthetic, turning attention inward; with the “hypernormalization” of BCIs like Neuralink “we are now compelled to revisit the classic mind-body problem”. FinalSpark's brain cells steering a virtual butterfly prompted a rereading of Zhuangzi's butterfly dream. Next: multi-agent simulations with the Cortical Labs API. Shown in Knowless: The Metamorphosis, Wyndham Social HK (26 Jul–24 Aug 2025); also ALife 2025 Kyoto per CV. Documentation video posted 11 Jul 2025.",
+    "zh": "一个用脑电（EEG）头戴设备玩的神经反馈游戏原型：玩家的脑电「把蝴蝶实体化」，让蝴蝶的行为穿过屏幕进入虚幻引擎空间，用的是虚幻的 Learning Agents 强化学习系统，玩家在李志德画作启发的 HDRI 场景里扮演 NPC。作品说明写道：技术越来越像「义肢」而不是外部工具，注意力转向身体内部；随着脑机接口「超常态化」（比如 Musk 的 Neuralink），我们不得不在全新语境里重新思考身心问题。说明还提到瑞士公司 FinalSpark 让培养皿里的脑细胞在 3D 环境中驱动一只虚拟蝴蝶，这让她重读庄周梦蝶：是我们梦见蝴蝶，还是蝴蝶在搅乱我们的心智？下一步打算用 Cortical Labs API 连接活体神经元，做多智能体模拟。展出于香港 Wyndham Social「Knowless: The Metamorphosis」（2025 年 7 月 26 日–8 月 24 日，策展 GayBird Leung、Vanissa Law），简历也列出 2025 年 10 月 6–10 日人工生命大会 ALife 2025 京都的展区。"
+   },
+   "people": "Jenn Leung",
+   "nm": {
+    "en": "Directly about BCI: an EEG-driven game setting the Neuralink-era mind–body problem beside Zhuangzi's butterfly, with living neurons next.",
+    "zh": "直接讨论脑机接口：以脑电为界面的游戏，把 Neuralink 时代的身心问题和庄子梦蝶并置，并预告接入活体神经元。"
+   },
+   "links": [
+    {
+     "url": "https://jennleung.xyz/butterflyrl",
+     "label": {
+      "en": "Project page",
+      "zh": "项目页"
+     }
+    },
+    {
+     "url": "https://www.machineartnow.com/knowless-themetamorphosis",
+     "label": {
+      "en": "Knowless: The Metamorphosis",
+      "zh": "「Knowless：变形记」展览页"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "video 11 Jul 2025; HK show 26 Jul – 24 Aug",
+    "zh": "记录视频 2025 年 7 月 11 日；香港展 7 月 26 日–8 月 24 日"
+   }
+  },
+  {
+   "id": "lisbon-human-entities-talk",
+   "date": "2025-05-14",
+   "who": "felstead",
+   "fmt": "talk",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.belasartes.ulisboa.pt/en/human-entities-2025-welcome-to-jankspace-babes-por-daniel-felstead/",
+   "title": {
+    "en": "“Welcome to Jankspace, babes”: artist talk at Human Entities 2025 (Lisbon)",
+    "zh": "里斯本「Human Entities 2025」艺术家讲座：欢迎来到 Jankspace"
+   },
+   "summary": {
+    "en": "Felstead's talk on 14 May 2025 at the Faculty of Fine Arts, University of Lisbon, in Human Entities 2025: culture in the age of AI (CADA with the Lisbon Architecture Triennale; Caroline Busta spoke in the same series on 28 May). Jankspace is “the leaking residual of the stack as it metabolises meatspace into hallucinogenic sludge”, the Uber driver's multi-display setup, “literally us and our gorgeously fucked-up, uncomputable bodies”. Themes: aesthetic derangement of digital culture, unhinged mediated bodies, “the idiotic delusions of transhumanism”. His bio says his films explore the myths and realities of “the metaverse, AI, biotech and neural media”.",
+    "zh": "2025 年 5 月 14 日在里斯本大学美术学院大礼堂的讲座，属于 CADA 与里斯本建筑三年展合办的「Human Entities 2025：人工智能时代的文化」第九届系列（同系列 5 月 28 日的讲者是 New Models 的 Caroline Busta）。简介对 jankspace 的定义：「堆栈把肉身空间消化成致幻污泥时漏出来的残渣」，是 Uber 司机那套缠满电线、屏幕闪烁、通知不断的多屏装置，「就是我们自己和我们乱七八糟、无法被计算的身体」，任何优化都修不好。讲座主题是日常数字文化的审美错乱、被媒介化而失常的身体，以及「超人类主义的愚蠢妄想」。主办方的简介说他的博士研究涉及推测性生产方式、复杂系统和平台，最近的短片探讨「元宇宙、AI、生物技术和神经媒体」的神话、意识形态与现实。"
+   },
+   "people": "Daniel Felstead",
+   "nm": {
+    "en": "His official bio names ‘neural media’ among his films' subjects; the talk critiques transhumanism, alongside Busta's talk in the same series.",
+    "zh": "主办方的简介明确把他的影片主题写成包括「神经媒体」；讲座本身批评超人类主义，与 Busta 在同一系列的演讲形成呼应。"
+   },
+   "links": [
+    {
+     "url": "https://www.trienaldelisboa.com/programme/events/humanentities-en",
+     "label": {
+      "en": "Human Entities 2025 programme",
+      "zh": "Human Entities 2025 项目"
+     }
+    }
+   ]
+  },
+  {
+   "id": "antikythera-generative-topolinguistics",
+   "date": "2025-05-11",
+   "who": "leung",
+   "fmt": "paper",
+   "basis": "abstract",
+   "access": "free",
+   "url": "https://ualresearchonline.arts.ac.uk/id/eprint/24037/1/GenerativeTopolinguistics.pdf",
+   "title": {
+    "en": "“Generative Topolinguistics: Bidirectional Interfaces for Emergent Language Topologies” (Antikythera journal, with Iulia Ionescu & Yannis Siglidis)",
+    "zh": "〈生成式拓扑语言学：面向涌现语言拓扑的双向界面〉（Antikythera 期刊）"
+   },
+   "summary": {
+    "en": "Antikythera journal (MIT Press), by Iulia Ionescu, Jenn Leung and Yannis Siglidis (DOI 10.1162/ANTI.5CZR). The abstract studies “the sociality of meaning construction in artificial cognitive systems”: inside LLM vector spaces “language functions geometrically while sociality functions topologically”, with changes in the topology of movement in semantic space read as social behaviour. A bidirectional interface for LLMs speculates how manipulating semantic space could make sociolinguistic features emerge. Keywords include bot-only social networks.",
+    "zh": "Antikythera 期刊（MIT Press）论文，作者 Iulia Ionescu、Jenn Leung（均为伦敦艺术大学）和 Yannis Siglidis（巴黎路桥学院），DOI 10.1162/ANTI.5CZR。摘要：研究人工认知系统中「意义建构的社会性」。他们把语言放进大语言模型的高维向量空间里看，「语言以几何方式运作，社会性以拓扑方式运作」，即 token 在语义空间中移动的拓扑变化可以被解读为社会行为。论文提出一个大语言模型的「双向界面」，推测通过操纵语义空间的结构，可以让各种社会语言特征涌现，进而搭出可解释的更高阶社会现象。关键词包括「纯机器人社交网络」。"
+   },
+   "people": "Iulia Ionescu, Jenn Leung, Yannis Siglidis",
+   "nm": {
+    "en": "On neural media's core object, LLM embedding space, reading sociality as topology in vector space; directly relevant to the NM91 question of whether a commons can be an embedding.",
+    "zh": "这篇论文讨论的正是神经媒体的核心对象：大语言模型的 embedding / 语义空间。它把社会性理解为向量空间里的拓扑运动，和 New Models 节目里「公地会不会是一种 embedding」的讨论直接相关。"
+   },
+   "date_display": {
+    "en": "11 May 2025 (UAL record)",
+    "zh": "2025 年 5 月 11 日（UAL 存档日期）"
+   }
+  },
+  {
+   "id": "antikythera-organoid-array-computing",
+   "date": "2025-05-04",
+   "who": "leung",
+   "fmt": "paper",
+   "basis": "abstract",
+   "access": "free",
+   "url": "https://doi.org/10.1162/anti.5czm",
+   "title": {
+    "en": "“Organoid Array Computing: The Design Space of Organoid Intelligence” (Antikythera journal, with Chloe Loewith & Ivar Frisch)",
+    "zh": "〈类器官阵列计算：类器官智能的设计空间〉（Antikythera 期刊）"
+   },
+   "summary": {
+    "en": "Antikythera journal (MIT Press), by Ivar Frisch, Jenn Leung and Chloe Loewith, developed in Antikythera's Summer 2024 Synthetic Intelligence studio. It asks how stringing together functional neural networks grown from stem cells might help “biologicalise AI”, chaining reinforcement learning between “thinking rocks” (microprocessors) and thinking groups of cells. The design of OI is “less an act of top-down design and more a process of guided evolution”. Also featured in TANK.",
+    "zh": "Antikythera「行星计算哲学」期刊（MIT Press）论文，作者 Ivar Frisch、Jenn Leung、Chloe Loewith，诞生于 2024 年夏 Antikythera 的「合成智能」设计开发工作室。类器官是简化、微型化的器官，用于药物研发和再生医学；论文问：把脑干细胞长成的功能性神经网络串联起来，是否会成为「让 AI 生物化」的关键，在「会思考的石头」（微处理器）和「会思考的细胞群」之间引发强化学习的连锁反应。核心论点：类器官智能的设计「与其说是自上而下的设计，不如说是一种被引导的进化」，更高阶的认知功能从底层生化基质的复杂互动中有机涌现。论文也被 TANK 杂志转载报道。"
+   },
+   "people": "Ivar Frisch, Jenn Leung, Chloe Loewith",
+   "nm": {
+    "en": "Treats organoid intelligence as a new form of AI, the neurotech frontier and the most material end of ‘neural’ media in the duo's vocabulary.",
+    "zh": "把类器官智能（活体脑组织做计算）当作 AI 的一种新形态来讨论，属于神经技术前沿。在两人的语汇里，这是「神经」媒体最物质化的一端。"
+   },
+   "links": [
+    {
+     "url": "https://jennleung.xyz/organoidarraycomputing",
+     "label": {
+      "en": "Project page",
+      "zh": "项目页"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "May 2025 (journal publication)",
+    "zh": "2025 年 5 月（期刊上线）"
+   }
+  },
+  {
+   "id": "boiler-room-hk",
+   "date": "2025-05-03",
+   "who": "leung",
+   "fmt": "project",
+   "basis": "description",
+   "access": "free",
+   "url": "https://jennleung.xyz/boilerroomhk",
+   "title": {
+    "en": "Boiler Room Hong Kong visuals (Unreal Engine)",
+    "zh": "Boiler Room 香港场视觉"
+   },
+   "summary": {
+    "en": "Live visuals for Boiler Room Hong Kong (4 May 2025): classic Hong Kong scenes rendered in Unreal Engine with Off World Live's 360 Movie Render Queue.",
+    "zh": "2025 年 5 月 4 日 Boiler Room 香港场第二天的现场视觉（制作 Clio Marden，合作 Akira Mimasu、Kalmarr Lam），由 Leung 用虚幻引擎渲染「经典香港」街景，用 Off World Live 的 360 度影片渲染方案输出。这是她在俱乐部 / 音乐现场的实时影像工作，与她参与开发的 Off World Live 串流工具一脉相承。"
+   },
+   "people": "Jenn Leung",
+   "date_display": {
+    "en": "4 May 2025",
+    "zh": "2025 年 5 月 4 日"
+   }
+  },
+  {
+   "id": "ucl-100-minds-in-motion",
+   "date": "2025-05-01",
+   "who": "leung",
+   "fmt": "project",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.ucl.ac.uk/bartlett/research-projects/2025/may/100-minds-motion",
+   "title": {
+    "en": "100 Minds in Motion (The Bartlett / UCL PEARL): EEG, eye-tracking and movement in agent simulation",
+    "zh": "「百心流动」（伦敦大学学院巴特莱特学院 / PEARL）：脑电、眼动与动作数据的智能体模拟"
+   },
+   "summary": {
+    "en": "A Bartlett (UCL) project (page dated May 2025) at UCL's PEARL facility: movable partitions, camera tracking, location-based and wearable biosensors record the movement of 100+ participants in a light/sound/temperature-controlled space, combined with EEG and eye-tracking in an agent simulation (per Leung's CV and Le Random). She is a visiting researcher.",
+    "zh": "伦敦大学学院巴特莱特学院的研究项目（项目页归在 2025 年 5 月），在 UCL 的 PEARL 大型人体实验设施里进行。Leung 简历的描述：用可移动隔板搭成灵活的空间结构，配合新的摄像追踪系统、基于位置的传感器和多种可穿戴生物传感器，在光线、声音、温度可控的物理空间里记录 100 多名参与者的移动模式。她在 Le Random 访谈里说，项目把脑电（EEG）、眼动追踪和动作数据结合进智能体模拟，这是她从巴特莱特硕士阶段开始的「神经建筑学」兴趣。她是这里的访问研究员。"
+   },
+   "people": "Jenn Leung and Bartlett team",
+   "nm": {
+    "en": "Brain and eye data driving spatial simulation: neurotech / neuroarchitecture.",
+    "zh": "用脑电和眼动等生理数据驱动空间模拟，属于神经技术 / 神经建筑学议题。"
+   },
+   "date_display": {
+    "en": "May 2025 (project page)",
+    "zh": "2025 年 5 月（项目页日期）"
+   }
+  },
+  {
+   "id": "art-dubai-meme-culture",
+   "date": "2025-04-18",
+   "who": "felstead",
+   "fmt": "panel",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.youtube.com/watch?v=65GXtF9EDzk",
+   "title": {
+    "en": "Art Dubai Digital Summit: “On the Political Impact of Meme Culture”",
+    "zh": "迪拜艺术博览会数字峰会：「论梗文化的政治影响」"
+   },
+   "summary": {
+    "en": "Art Dubai Digital Summit panel (18 Apr 2025) with Cem A. (Freeze Magazine), moderated by Marlene Wenger (HEK), on memes as political force. Recording on Art Dubai's YouTube; no transcript obtained.",
+    "zh": "2025 年 4 月 18 日迪拜艺术博览会数字峰会的对谈，Felstead 与 Freeze Magazine 的 Cem A. 同台，主持是巴塞尔电子艺术之家（HEK）的 Marlene Wenger。题目是梗（meme）怎样成为政治力量，这与两人影片大量用梗和网络碎片做材料的方法相关。录像在 Art Dubai 的 YouTube 上；我们没有拿到字幕，只按峰会页面整理。"
+   },
+   "people": "Daniel Felstead, Cem A.; moderator Marlene Wenger",
+   "links": [
+    {
+     "url": "https://www.artdubai.ae/digital-summit/",
+     "label": {
+      "en": "Art Dubai Digital Summit",
+      "zh": "迪拜艺术博览会数字峰会"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tai-kwun-fragile",
+   "date": "2025-04-04",
+   "who": "leung",
+   "fmt": "performance",
+   "basis": "description",
+   "access": "free",
+   "url": "https://jennleung.xyz/fragile",
+   "title": {
+    "en": "Fragile! Human Inside / 人類開箱 (GayBird, Tai Kwun, Hong Kong)",
+    "zh": "《Fragile! 人類開箱》（GayBird，香港大馆）"
+   },
+   "summary": {
+    "en": "GayBird's multimedia performance at Tai Kwun (4–8 Apr 2025). Leung was an interactive and moving-image designer: a MIDI-controlled VR FPS game and Mass AI crowd simulations (TouchDesigner, Unreal, Nvidia Audio2Face). Cardboard boxes against Tai Kwun's bricks ask whether the body is our only constant home.",
+    "zh": "香港声音艺术家 GayBird 在大馆的多媒体演出（2025 年 4 月 4–8 日，与 Jervois X 合作），观众在大馆不同空间游走。Leung 是互动与动态影像设计师之一，负责一个用 MIDI 控制的 VR 第一人称射击游戏和大规模 AI 人群模拟（Mass AI），工具有 TouchDesigner、虚幻引擎、Nvidia Audio2Face。作品用纸箱对照大馆的砖墙，问：身体是否是唯一恒常的家？虚拟空间能否成为新的家？"
+   },
+   "people": "GayBird; Jenn Leung among designers",
+   "date_display": {
+    "en": "4–8 Apr 2025",
+    "zh": "2025 年 4 月 4–8 日"
+   }
+  },
+  {
+   "id": "holloway-express-profile",
+   "date": "2025-03-27",
+   "who": "felstead",
+   "fmt": "press",
+   "basis": "full",
+   "access": "free",
+   "url": "https://hollowayexpress.org.uk/fashion-and-ai-profile-daniel-felstead/",
+   "title": {
+    "en": "Holloway Express: “Fashion and AI Profile: Daniel Felstead” (London Met “Hope or Hype?” panel)",
+    "zh": "伦敦都会大学学生媒体专访：「时尚与 AI 人物：Daniel Felstead」"
+   },
+   "summary": {
+    "en": "London Met student journalists profile Felstead (27 Mar 2025) after the Hope or Hype? panel. His test: swap ‘AI’ for ‘the internet’ in any sweeping claim and see if it still holds up. Is AI a threat to brand identity? “In short, yes”, but more likely to homogenise high-street brands into algorithm-friendly sameness, while luxury will use it “as a tool rather than a crutch”. Mentions Emergence of Tomorrow, which he co-founded.",
+    "zh": "伦敦都会大学新闻系学生媒体 2025 年 3 月 27 日的人物稿，围绕他在该校会议「Hope or Hype? AI 如何改变时尚业」的发言。他提醒别被关于 AI 的笼统说法带偏：把任何宏大论断里的「AI」换成「互联网」，听起来荒谬的多半就是荒谬的。被问 AI 是否威胁品牌身份，他说「简单说，是的」，但要看是谁：AI 更可能把大众和快时尚品牌同质化成「算法友好」的千篇一律，奢侈品牌则因为牢牢掌控创意，会把 AI 当工具而不是拐杖。文中还提到他联合创办的 Emergence of Tomorrow 讨论社群，以及他在 Coeval 访谈里不愿把自己的作品称为「艺术」。"
+   },
+   "people": "Daniel Felstead; London Met Journalism",
+   "nm": {
+    "en": "On AI's future impact on fashion: homogenisation of the mass market, and scepticism of AI hype.",
+    "zh": "谈 AI 对时尚和品牌的未来影响：同质化风险落在大众市场，以及对 AI 话语的怀疑。"
+   }
+  },
+  {
+   "id": "maps-koge-dancing-in-the-streets",
+   "date": "2025-03-22",
+   "who": "joint",
+   "fmt": "exhibition",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://www.e-flux.com/announcements/622840/the-story-of-public-art/",
+   "title": {
+    "en": "“Dancing in the Streets (On Power)”, MAPS (Museum of Art in Public Spaces), Køge",
+    "zh": "丹麦克厄 MAPS 公共空间艺术博物馆「街头起舞（论权力）」"
+   },
+   "summary": {
+    "en": "An e-flux announcement (22 Mar 2025) for MAPS, Køge, lists “Daniel Felstead with Jenn Leung” in Dancing in the Streets (On Power). The work shown is not named; listed from the artist list only.",
+    "zh": "e-flux 2025 年 3 月 22 日发布的丹麦克厄 MAPS（公共空间艺术博物馆）公告，展览「Dancing in the Streets (On Power)」参展名单中列有「Daniel Felstead with Jenn Leung」。公告没有写展出的是哪一部片子，我们也没有找到展览详情，只能按名单列出。Felstead 的里斯本简介也把 MAPS 列为展出过的机构。"
+   },
+   "people": "Daniel Felstead with Jenn Leung",
+   "date_display": {
+    "en": "Mar 2025 (e-flux, 22 Mar)",
+    "zh": "2025 年 3 月（e-flux 公告 3 月 22 日）"
+   }
+  },
+  {
+   "id": "dmstfctn-the-models",
+   "date": "2025-02-07",
+   "who": "leung",
+   "fmt": "project",
+   "basis": "description",
+   "access": "free",
+   "url": "https://jennleung.xyz/themodels",
+   "title": {
+    "en": "The Models (dmstfctn), Tecnopolo Bologna: additional Unreal development",
+    "zh": "dmstfctn《The Models》（博洛尼亚 Tecnopolo）：虚幻引擎开发"
+   },
+   "summary": {
+    "en": "dmstfctn's interactive simulation (Tecnopolo Bologna, 7–9 Feb 2025), with additional Unreal development by Leung. Commedia dell'Arte masks embody LLM tendencies (making things up, being antagonistic or overly servile); audiences prompt them by phone and characters confabulate in real time, with dialogue generated by models on the Leonardo supercomputer.",
+    "zh": "艺术双人组 dmstfctn 的互动模拟装置（2025 年 2 月 7–9 日，博洛尼亚 Tecnopolo Manifattura），Leung 负责额外的虚幻引擎开发。作品借意大利即兴喜剧，让 Arlecchino 等角色体现大语言模型的倾向：编造、抬杠、过度谄媚。观众用手机给角色下指令、喝彩或喝倒彩，往台上扔象征迷信、谣言的道具；角色实时「编造真相和阴谋论」，对白由艺术家在全球第六强的 Leonardo 超级计算机上组装的 AI 模型系统生成。"
+   },
+   "people": "dmstfctn; Jenn Leung (additional UE development)",
+   "nm": {
+    "en": "Stages LLM ‘personality’ tendencies as audience-steerable theatre: AI truthfulness and hallucination.",
+    "zh": "把大语言模型的「人格倾向」做成可被观众操纵的剧场，讨论 AI 的可信度与幻觉问题。"
+   },
+   "date_display": {
+    "en": "7–9 Feb 2025",
+    "zh": "2025 年 2 月 7–9 日"
+   }
+  },
+  {
+   "id": "transmediale-2025",
+   "date": "2025-01-31",
+   "who": "joint",
+   "fmt": "screening",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://transmediale.de/en/2025/event/a-movement-hanging-in-the-air",
+   "title": {
+    "en": "Literally No Place at transmediale 2025 (“A Movement Hanging in the Air”)",
+    "zh": "《Literally No Place》在 transmediale 2025 放映"
+   },
+   "summary": {
+    "en": "Leung's CV lists Literally No Place in transmediale 2025's programme “A Movement Hanging in the Air”. The exact date was not verified; placed during the festival (late Jan/early Feb 2025).",
+    "zh": "Leung 简历列出：《Literally No Place》在柏林 transmediale 2025 的放映单元「A Movement Hanging in the Air」中放映。Felstead 的里斯本简介也把 transmediale 列为演讲 / 展出过的机构。transmediale 的页面我们没读到有效文字，具体场次日期未核实，这里放在 2025 年 1 月底到 2 月初的艺术节期间。"
+   },
+   "people": "Daniel Felstead, Jenn Leung",
+   "date_display": {
+    "en": "early 2025 (transmediale; date not verified)",
+    "zh": "2025 年初（transmediale 2025，场次日期未核实）"
+   }
+  },
+  {
+   "id": "buff-summit",
+   "date": "2025-01-30",
+   "who": "joint",
+   "fmt": "summit",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.youtube.com/watch?v=-eyQ-Hk2L6c",
+   "title": {
+    "en": "BUFF: “A Summit on Fashion, Neural Media & Our Bodies” (LCF), with K Allado-McDowell",
+    "zh": "BUFF 峰会：「时尚、神经媒体与我们的身体」（K Allado-McDowell 演讲）"
+   },
+   "summary": {
+    "en": "The MA FMC summit of 30–31 Jan 2025, organised by Felstead and co-curated by Leung, titled around neural media. Speakers included K Allado-McDowell, Maya B. Kronic (whose jankspace definition NM91 later quoted), Disintegrator (Poliks, Trillo), Elizabeth Gabrielle Lee, Ruba Al-Sweel, Henry Bruce Jones and Zein Majali. Videos were posted 15–16 Feb 2025; Felstead's own ~21-minute talk (main video here) has no captions, so its content is unverified.",
+    "zh": "伦敦时装学院 MA 时尚媒体与传播课程 2025 年 1 月 30–31 日的峰会，Felstead 主办、Leung 联合策划，题目直接用了「神经媒体」。演讲者包括 K Allado-McDowell、Maya B. Kronic（她在这里给出 jankspace 的定义，后来被 New Models 第 91 期引用）、Disintegrator 播客（Marek Poliks、Roberto Alonso Trillo）、Elizabeth Gabrielle Lee、Ruba Al-Sweel、Henry Bruce Jones、Zein Majali 等。录像 2025 年 2 月 15–16 日上传到课程的 YouTube 频道，其中 Felstead 本人约 21 分钟的发言（这里的主视频）没有字幕，内容未能核实，所以只按标题和嘉宾整理。"
+   },
+   "people": "Daniel Felstead, Jenn Leung (organisers); K Allado-McDowell, Maya B. Kronic and others",
+   "mins": 21,
+   "nm": {
+    "en": "One of the most direct links to K: a summit named for neural media, with K speaking. The main site's BUFF timeline item is K's talk here.",
+    "zh": "与 K 最直接的交集之一：一场以「神经媒体」命名的峰会，K 本人到场演讲。本站主时间线里的 BUFF 条目就是 K 在这里的演讲。"
+   },
+   "links": [
+    {
+     "url": "https://www.youtube.com/watch?v=f3g9CT5Scjk",
+     "label": {
+      "en": "K Allado-McDowell's talk (YouTube)",
+      "zh": "K Allado-McDowell 的演讲（YouTube）"
+     }
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=zCsROWqueXY",
+     "label": {
+      "en": "Maya B. Kronic's talk (YouTube)",
+      "zh": "Maya B. Kronic 的演讲（YouTube）"
+     }
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=24h6DBAdyro",
+     "label": {
+      "en": "Disintegrator (YouTube)",
+      "zh": "Disintegrator 播客现场（YouTube）"
+     }
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=sXfNKoiKNHg",
+     "label": {
+      "en": "Full Day 1 (YouTube)",
+      "zh": "第一天全程（YouTube）"
+     }
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=cGyjBcRgips",
+     "label": {
+      "en": "Full Day 2 (YouTube)",
+      "zh": "第二天全程（YouTube）"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "30–31 Jan 2025 · videos posted 15–16 Feb",
+    "zh": "2025 年 1 月 30–31 日 · 视频 2 月 15–16 日上传"
+   },
+   "internal": [
+    {
+     "href": "index.html#i-2025-02-16-buff-summit",
+     "label": {
+      "en": "K's BUFF talk on the main timeline",
+      "zh": "主时间线上的 K BUFF 演讲"
+     }
+    }
+   ]
+  },
+  {
+   "id": "disintegrator-22-janky",
+   "date": "2024-11-25",
+   "who": "joint",
+   "fmt": "podcast",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.spreaker.com/episode/22-janky-w-daniel-felstead-and-jenn-leung--63001467",
+   "title": {
+    "en": "Disintegrator ep. 22: “Janky” (w/ Daniel Felstead and Jenn Leung)",
+    "zh": "Disintegrator 播客第 22 期：「Janky」"
+   },
+   "summary": {
+    "en": "Hosted by Exocapitalism authors Marek Poliks and Roberto Alonso Trillo (54:40). The notes introduce the duo as “experiential designers” from UAL and summarise Janky Capitalism as “the obvious falling-apart weirdness of the world while capital spins off farther and farther away from it”; also Roblox and neural media. References: Ruba Al-Sweel's ‘Sandbox Semiotics’, Anna Uddenberg, Harvard GSD's Guide to Shopping, Ian Bogost (Leung); Sam Cummins of Nymphet Alumni and Catherine Malabou's plasticity (Felstead).",
+    "zh": "《Exocapitalism》作者 Marek Poliks 和 Roberto Alonso Trillo 主持的播客（54 分 40 秒；Leung 简历记联合主持还有 Helena McFadzean）。节目说明称两人是「来自伦敦艺术大学时尚媒体实践与批评专业的经验设计师」，讨论「Janky 资本主义」：世界明显在散架、变怪，而资本越飘越远，把我们抛在后面；还谈 Roblox 和神经媒体。节目说明列出的参考：Ruba Al-Sweel 的〈Sandbox Semiotics〉；Leung 提到 Anna Uddenberg（如《Continental Breakfast》）、哈佛设计学院的《Guide to Shopping》和 Ian Bogost 对游戏拟人化的批评；Felstead 提到 Nymphet Alumni 播客的 Sam Cummins，以及 Catherine Malabou 的「可塑性」概念。"
+   },
+   "people": "Daniel Felstead, Jenn Leung; hosts Marek Poliks, Roberto Alonso Trillo",
+   "mins": 55,
+   "nm": {
+    "en": "The notes: “The second half of the episode spends some time with the theory of K. Allado-McDowell, specifically the concept of neural media”, recommending New Models' K episode. An early public record (Nov 2024) of the duo on K's neural media.",
+    "zh": "节目说明原话：「后半段花了一些时间讨论 K. Allado-McDowell 的理论，特别是神经媒体的概念」，并强烈推荐 New Models 对 K 的那期专访。这是两人公开谈 K 的神经媒体的较早记录（2024 年 11 月）。"
+   },
+   "links": [
+    {
+     "url": "https://open.spotify.com/episode/1zt1kSnGjOvtsV6XtaqNCn",
+     "label": {
+      "en": "Spotify",
+      "zh": "Spotify"
+     }
+    }
+   ],
+   "internal": [
+    {
+     "href": "new-models.html#e-nm76",
+     "label": {
+      "en": "The New Models K interview they recommend",
+      "zh": "节目推荐的 New Models K 专访"
+     }
+    }
+   ]
+  },
+  {
+   "id": "buffer-summit",
+   "date": "2024-09-26",
+   "who": "joint",
+   "fmt": "summit",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.linkedin.com/posts/daniella-loftus_fashion-tech-interoperability-activity-7245334334780383233-4d1Z",
+   "title": {
+    "en": "BUFFER summit (LCF): “Fashion, Worldbuilding & Our Bodies”",
+    "zh": "BUFFER 峰会：时尚、世界构建与我们的身体"
+   },
+   "summary": {
+    "en": "The MA FMC summit of 26–27 Sep 2024 (Felstead organiser, Leung co-curator) on fashion and worldbuilding: how brands, games and fandoms build inhabitable fictional worlds and lore. Speakers included Daniella Loftus, Cécile B. Evans, Zaiba Jabbar, Sam Cummins and Alex Quicho. From speakers' posts and course material; no public recording found.",
+    "zh": "MA 时尚媒体与传播课程 2024 年 9 月 26–27 日的峰会，Felstead 主办，Leung 联合策划，主题是时尚与「世界构建」（worldbuilding）：品牌、游戏和粉丝社群怎样搭建一整套可以居住的虚构世界和设定（lore）。演讲者包括 Daniella Loftus、Cécile B. Evans、Zaiba Jabbar、Sam Cummins、Alex Quicho 等。资料来自 Daniella Loftus 在 LinkedIn 上的帖子（她写道是为「Dr. Daniel Felstead 的 BUFFER 峰会」讲课）和学生材料，我们没有找到这场峰会的公开录像。"
+   },
+   "people": "Daniel Felstead, Jenn Leung (organisers)",
+   "links": [
+    {
+     "url": "https://freight.cargo.site/m/H2858455053060179755683398638329/OFS_introduction_2425.pdf",
+     "label": {
+      "en": "Student glossary PDF mentioning BUFFER",
+      "zh": "提到 BUFFER 的学生词汇表 PDF"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "26–27 Sep 2024",
+    "zh": "2024 年 9 月 26–27 日"
+   }
+  },
+  {
+   "id": "lcf-ai-fashion-symposium",
+   "date": "2024-06-12",
+   "who": "joint",
+   "fmt": "panel",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.youtube.com/watch?v=y0OR64NNp7A",
+   "title": {
+    "en": "“In Conversation with Dr Daniel Felstead and Jenn Leung”, AI Fashion Symposium 2024 (LCF, London Tech Week)",
+    "zh": "伦敦时装学院 AI 时尚研讨会 2024：Felstead 与 Leung 对谈"
+   },
+   "summary": {
+    "en": "At LCF's AI Fashion Symposium during London Tech Week 2024, the duo were in conversation, moderated by Ingo Rollwagen (per Leung's site); the video is on LCF's YouTube. No transcript obtained.",
+    "zh": "伦敦时装学院在 2024 年伦敦科技周期间举办的「AI Fashion Symposium」，其中一场是两人的对谈，由 Ingo Rollwagen 主持（Leung 网站记录）。录像在伦敦时装学院 YouTube 频道，标题为「In Conversation with Dr Daniel Felstead and Jenn Leung | AI Fashion Symposium | 2024」。当时两人已发布前两部 DIS 影片，第三部《Always On My Mind》刚开始放映。我们没有拿到这段录像的字幕，只按标题和网站信息整理。"
+   },
+   "people": "Daniel Felstead, Jenn Leung; moderator Ingo Rollwagen",
+   "nm": {
+    "en": "On AI and the future of fashion, from their film practice.",
+    "zh": "主题就是 AI 与时尚的未来；两人从影片创作角度谈生成式 AI。"
+   },
+   "date_display": {
+    "en": "Jun 2024 (London Tech Week)",
+    "zh": "2024 年 6 月（伦敦科技周期间）"
+   }
+  },
+  {
+   "id": "shedhalle-protozone15",
+   "date": "2024-06-08",
+   "who": "joint",
+   "fmt": "exhibition",
+   "basis": "description",
+   "access": "free",
+   "url": "https://shedhalle.ch/en/agenda/protozone15-time-is-pressure-2/",
+   "title": {
+    "en": "ProtoZone15 “Time is Pressure”, Shedhalle Zürich: all three films + Felstead lecture performance",
+    "zh": "苏黎世 Shedhalle「ProtoZone15：时间就是压力」：三部影片装置与 Felstead 讲演表演"
+   },
+   "summary": {
+    "en": "Shedhalle Zürich's ProtoZone15 “Time is Pressure” (curated by Michelangelo Miccolis, until 4 Aug 2024) installed all three films. On 8 Jun 2024 (Zurich Art Weekend) Felstead gave a lecture performance followed by a conversation. The first time the trilogy was shown together in a gallery.",
+    "zh": "苏黎世 Shedhalle 艺术空间的 ProtoZone15「Time is Pressure」（策展人 Michelangelo Miccolis，展期至 2024 年 8 月 4 日）以装置形式同时展出《The Metaverse in Janky Capitalism》《Literally No Place》《Always On My Mind》三部片子。2024 年 6 月 8 日苏黎世艺术周末期间，Felstead 在现场做了一场讲演式表演（lecture performance），之后与策展人对谈。这是「I'm So Janky」系列第一次以完整三部曲的形式在美术馆空间展出。"
+   },
+   "people": "Daniel Felstead, Jenn Leung; curator Michelangelo Miccolis",
+   "nm": {
+    "en": "The trilogy takes on the metaverse, AI hype/doom and Neuralink in turn: a critique of future-media myths.",
+    "zh": "三部曲依次针对元宇宙、AI 炒作 / 末日论、Neuralink 脑机接口，整体就是一份关于未来媒介神话的批评。"
+   },
+   "date_display": {
+    "en": "talk 8 Jun 2024 · show until 4 Aug",
+    "zh": "讲演 2024 年 6 月 8 日 · 展期至 8 月 4 日"
+   }
+  },
+  {
+   "id": "antikythera-studio-2024",
+   "date": "2024-06-01",
+   "who": "leung",
+   "fmt": "residency",
+   "basis": "description",
+   "access": "free",
+   "url": "https://jennleung.xyz/organoidarraycomputing",
+   "title": {
+    "en": "Antikythera Synthetic Intelligence / Cognitive Infrastructures studio (Berggruen Institute), Summer 2024",
+    "zh": "Antikythera「合成智能 / 认知基础设施」设计研究工作室（2024 年夏）"
+   },
+   "summary": {
+    "en": "In Summer 2024 Leung was a studio researcher at Antikythera (Benjamin Bratton's planetary-computation programme, Berggruen Institute), briefed on cognitive infrastructures and synthetic intelligence; there DishBrain became a point of departure. Final presentations became two Antikythera journal papers: Organoid Array Computing and Generative Topolinguistics.",
+    "zh": "Leung 2024 年夏是 Antikythera 工作室研究员。这是 Benjamin Bratton 主持、Berggruen 研究院支持的「行星计算」研究机构，那一期的题目是「认知基础设施」和「合成智能」。她在 NCM 访谈中说，团队正是在这里把 DishBrain 当作生物计算未来的出发点。工作室的两项期末成果后来都发表在 Antikythera 期刊（MIT Press）：与 Chloe Loewith、Ivar Frisch 合作的〈类器官阵列计算〉，以及与 Iulia Ionescu、Yannis Siglidis 合作的〈生成式拓扑语言学〉。"
+   },
+   "people": "Jenn Leung; with Chloe Loewith, Ivar Frisch, Iulia Ionescu, Yannis Siglidis",
+   "nm": {
+    "en": "Leung's turn from image/game work to living-neuron computing, on AI's cognitive infrastructures.",
+    "zh": "Leung 从「影像 / 游戏」转向「活体神经元计算」的转折点，研究对象是 AI 的认知基础设施。"
+   },
+   "links": [
+    {
+     "url": "https://tank.tv/magazine/issue-100/features/antikythera",
+     "label": {
+      "en": "TANK issue 100: Antikythera feature",
+      "zh": "TANK 第 100 期 Antikythera 专题"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "Summer 2024",
+    "zh": "2024 年夏"
+   }
+  },
+  {
+   "id": "always-on-my-mind",
+   "date": "2024-05-25",
+   "who": "joint",
+   "fmt": "film",
+   "basis": "full",
+   "access": "free",
+   "url": "https://dis.art/always-on-my-mind",
+   "title": {
+    "en": "Always On My Mind (DIS.art)",
+    "zh": "《Always On My Mind》（DIS.art 委托影片）"
+   },
+   "summary": {
+    "en": "Part three of “I'm So Janky”, narrated by a Nicki Minaj voice. It starts from Neuralink's first implant (Noland Arbaugh, Jan 2024) and Musk's ‘consensual telepathy’ with its devaluing of language, critiques a ‘retro broey techno-monism’ that reduces mind to data, and touches on US BCI security. Earliest recorded screening: Umanesimo Artificiale, Palazzo Bruschi, Pergola, 25 May 2024; online on DIS around summer 2024.",
+    "zh": "「I'm So Janky」系列的第三部，Felstead 与 Leung 合作，这一次的 AI 叙述者是 Nicki Minaj 的声音。影片从 2024 年 1 月 Neuralink 第一位植入者 Noland Arbaugh 讲起，讨论 Musk 所说的「共识心灵感应」（consensual telepathy），以及这种设想怎样把语言贬低为多余的东西；批评一种「复古的兄弟式技术一元论」，即把心智简化成可读写的数据；也谈美国把脑机接口当作国家安全问题。Leung 简历记载的最早放映是 2024 年 5 月 25 日在意大利 Pergola 的 Palazzo Bruschi（Umanesimo Artificiale 主办）；DIS 线上发布约在 2024 年夏天。"
+   },
+   "people": "Daniel Felstead, Jenn Leung",
+   "nm": {
+    "en": "Entirely about BCI (Neuralink, telepathy as post-linguistic communication, mind and body), overlapping directly with this site's BCI page.",
+    "zh": "整部片子是关于脑机接口的：Neuralink、「心灵感应」作为后语言沟通、心智与身体的关系。和本站 BCI 页面的主题直接重合。"
+   },
+   "date_display": {
+    "en": "first screening 25 May 2024; on DIS c. summer 2024",
+    "zh": "首映 2024 年 5 月 25 日；DIS 上线约 2024 年夏"
+   },
+   "internal": [
+    {
+     "href": "bci.html",
+     "label": {
+      "en": "BCI × Neural Media page",
+      "zh": "本站「脑机接口 × 神经媒体」页面"
+     }
+    }
+   ]
+  },
+  {
+   "id": "per-speculum-verona",
+   "date": "2024-05-10",
+   "who": "joint",
+   "fmt": "exhibition",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://arte8lusso.net/art/per-speculum-the-group-show-curated-by-domenico-quaranta-for-fondazione-spazio-vitale/",
+   "title": {
+    "en": "Per Speculum (Fondazione Spazio Vitale, Verona, curated by Domenico Quaranta)",
+    "zh": "维罗纳 Spazio Vitale 基金会群展「Per Speculum」（Domenico Quaranta 策展）"
+   },
+   "summary": {
+    "en": "Domenico Quaranta's group show Per Speculum at Fondazione Spazio Vitale, Verona, included Literally No Place (Artribune review, June 2024). Leung's CV writes “May 2025” under its 2024 heading; we follow the 2024 review date.",
+    "zh": "意大利媒体艺术策展人 Domenico Quaranta 在维罗纳 Fondazione Spazio Vitale 策划的群展「Per Speculum」展出《Literally No Place》，展名取自「透过镜子」，围绕媒介中的反射与自我形象；Artribune 2024 年 6 月发表过展评。注意：Leung 简历把它写成「2025 年 5 月」，但同一条目排在 2024 年栏下，Artribune 评论也发表于 2024 年，所以这里按 2024 年 5 月列出。"
+   },
+   "people": "Daniel Felstead, Jenn Leung",
+   "date_display": {
+    "en": "May 2024 (CV says May 2025; uncertain)",
+    "zh": "2024 年 5 月（简历写作 2025 年 5 月，存疑）"
+   }
+  },
+  {
+   "id": "hypa-phixed-backstreet-vroomer",
+   "date": "2024-04-26",
+   "who": "leung",
+   "fmt": "exhibition",
+   "basis": "description",
+   "access": "free",
+   "url": "https://jennleung.xyz/backstreetvroomer",
+   "title": {
+    "en": "Backstreet Vroomer in HYPA-PHIXED (in vitro × Gossamer Fog, Enclave Projects, London)",
+    "zh": "《Backstreet Vroomer》参展伦敦「HYPA-PHIXED」"
+   },
+   "summary": {
+    "en": "HYPA-PHIXED at Enclave Projects, Deptford (from 26 Apr 2024; curated by Jordan Edge and Kiik Amor; commissioned by Gossamer Fog and Arts Council England). Leung's Backstreet Vroomer is a ‘vroomulator’ projection of silly vehicles trained with Unreal Learning Agents and behaviour cloning.",
+    "zh": "伦敦德特福德 Enclave Projects 的群展兼表演项目「HYPA-PHIXED」（2024 年 4 月 26 日起，策展 Jordan Edge、Kiik Amor，Gossamer Fog 与英格兰艺术委员会委托），参展者有 Joey Holder、BORA 等。Leung 的作品《Backstreet Vroomer》是一个「车辆模拟器」投影：用虚幻引擎的 Learning Agents 和行为克隆训练一群「傻乎乎的车」，让 AI 智能体从示范中学开车。"
+   },
+   "people": "Jenn Leung",
+   "date_display": {
+    "en": "from 26 Apr 2024 (to late May)",
+    "zh": "2024 年 4 月 26 日起（约至 5 月下旬）"
+   }
+  },
+  {
+   "id": "coeval-interview-felstead",
+   "date": "2024-03-20",
+   "who": "felstead",
+   "fmt": "interview",
+   "basis": "full",
+   "access": "free",
+   "url": "https://www.coeval-magazine.com/coeval/daniel-felstead",
+   "title": {
+    "en": "COEVAL Magazine interview: Daniel Felstead (by Rafi Abdullah)",
+    "zh": "COEVAL 杂志专访 Daniel Felstead"
+   },
+   "summary": {
+    "en": "Rafi Abdullah's long interview (dated 20 Mar; year inferred as 2024). Felstead: fashion as a media platform has overtaken contemporary art; fashion is a world-building technology (Le Guin, McKenzie Wark's ‘vectors of information’); a flat ontology rather than calling his films ‘art’; lore systems like K-pop's Loonaverse (Alexi Alario at BODYSTACK) and fans as co-creators; AI Julia as a muse or ‘conduit’.",
+    "zh": "Rafi Abdullah 的长访谈（页面只写 3 月 20 日，年份按内容推断为 2024）。Felstead 的主要观点：时尚作为媒介平台已经超过当代艺术，成为文化生产的中心；时尚是一种「世界构建技术」（引用 Ursula K. Le Guin 和 McKenzie Wark 的「信息向量」）；他偏好「扁平本体论」，不把自己的影片定义为「艺术」，而关心塑造文化与价值的力量；他举 K-pop 的 Loonaverse 设定、BODYSTACK 峰会上 Alexi Alario 的演讲，谈粉丝如何成为共同创作者。他也讲到影片里的 AI Julia Fox：她更像一个缪斯或「通道」，而不是演员。"
+   },
+   "people": "Daniel Felstead; interviewer Rafi Abdullah",
+   "nm": {
+    "en": "One of the most direct personal links to K: K “have been such a massive influence on me”; Literally No Place closes on an image of Pharmako-AI; he cites K's work on shamanism.",
+    "zh": "和 K 最直接的个人表态之一：他说 K「对我影响巨大」；《Literally No Place》片尾放了一张《Pharmako-AI》（K 与 GPT-3 合写的书）的图片；他也提到 K 关于萨满实践的研究。"
+   },
+   "date_display": {
+    "en": "20 Mar (year inferred: 2024)",
+    "zh": "3 月 20 日（年份推断为 2024）"
+   }
+  },
+  {
+   "id": "berlin-critics-week-elemental-bodies",
+   "date": "2024-02-17",
+   "who": "joint",
+   "fmt": "screening",
+   "basis": "description",
+   "access": "free",
+   "url": "https://wochederkritik.de/en_US/elemental-bodies-ecologies-media-extraction/",
+   "title": {
+    "en": "Literally No Place + generative workshop “In-extractive Content”, Berlin Critics Week (“Elemental Bodies”, curated by T.J. Demos)",
+    "zh": "柏林影评人周「元素身体」：《Literally No Place》放映与生成工作坊"
+   },
+   "summary": {
+    "en": "At Berlin Critics Week (Feb 2024), T.J. Demos's guest programme “Elemental Bodies: Ecologies, Media, Extraction” screened Literally No Place with a debate, and the duo ran a generative workshop “In-extractive Content”, scraping participants' content and a live feed as inputs for real-time img2img generation. Exact date not verified.",
+    "zh": "2024 年 2 月柏林影评人周（Woche der Kritik，与柏林电影节同期）的客座单元「Elemental Bodies: Ecologies, Media, Extraction」（元素身体：生态、媒介、开采），由艺术史学者 T.J. Demos 策划。放映《Literally No Place》并有讨论；两人还带了一个生成工作坊「In-extractive Content」（非开采式内容）：抓取现场观众的内容和直播画面作为输入，实时用图生图（img2img）生成影像，回应「生成式 AI 靠开采数据运转」这一批评。具体场次日期未核实。"
+   },
+   "people": "Daniel Felstead, Jenn Leung; curator T.J. Demos",
+   "nm": {
+    "en": "The workshop answers generative AI's data extraction with an ‘in-extractive’ method.",
+    "zh": "工作坊直接回应生成式 AI 的数据开采问题，尝试一种「不开采」的生成方式。"
+   },
+   "date_display": {
+    "en": "Feb 2024 (date not verified)",
+    "zh": "2024 年 2 月（柏林影评人周，场次日期未核实）"
+   }
+  },
+  {
+   "id": "waluigis-purgatory",
+   "date": "2024-02-08",
+   "who": "leung",
+   "fmt": "project",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.serpentinegalleries.org/whats-on/dmstfctn-waluigis-purgatory/",
+   "title": {
+    "en": "Waluigi's Purgatory (dmstfctn ft. Evita Manji), Serpentine Arts Technologies × hqi: additional Unreal development",
+    "zh": "《Waluigi 的炼狱》（dmstfctn 与 Evita Manji，蛇形画廊艺术科技部 × hqi）"
+   },
+   "summary": {
+    "en": "dmstfctn and Evita Manji's interactive AV performance premiered at hqi, London (8 Feb 2024; Serpentine Arts Technologies × hqi), later at FOLD's FuturShock and Romaeuropa (Oct 2024). An AI lands in a purgatory for AIs who cheated in training and learns its desires may not align with its trainers', on the theme of ‘AI folklore’. Leung did additional Unreal development (rigging, cloth/chain simulation, AI NPC behaviour trees).",
+    "zh": "dmstfctn 与音乐人 Evita Manji 的互动视听表演，2024 年 2 月 8 日在伦敦 hqi 首演，由蛇形画廊的 Arts Technologies 项目和 hqi 策划制作，后来也在 FOLD 的 FuturShock 和罗马 Romaeuropa（2024 年 10 月）演出。故事讲一个因为在训练中作弊而被打入「AI 炼狱」的人工智能，它慢慢接受自己的欲望可能与人类训练者并不一致。作品主题是「AI 民间传说」：关于 AI 在训练中表现出出人意料的意图、创造力和决心的故事与谣言。Leung 负责额外的虚幻引擎开发：角色绑定、斗篷和锁链模拟、AI NPC 交互与行为树。"
+   },
+   "people": "dmstfctn, Evita Manji; Jenn Leung (additional UE development)",
+   "nm": {
+    "en": "About AI alignment and ‘AI folklore’: a narrative on AI's future.",
+    "zh": "讲 AI 对齐与「AI 民间传说」，是关于 AI 未来的叙事作品。"
+   },
+   "links": [
+    {
+     "url": "https://jennleung.xyz/waluigispurgatory",
+     "label": {
+      "en": "Project page",
+      "zh": "项目页"
+     }
+    }
+   ]
+  },
+  {
+   "id": "bodystacked-summit",
+   "date": "2024-01-02",
+   "who": "joint",
+   "fmt": "summit",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://jennleung.xyz/workshops",
+   "title": {
+    "en": "BODYSTACKED summit (LCF): “Fashion, AI & Our Bodies”",
+    "zh": "BODYSTACKED 峰会：时尚、AI 与我们的身体"
+   },
+   "summary": {
+    "en": "Leung's site lists “2024 BODYSTACKED / HYPERHYPERBODIES” as co-curated summits on AI, fashion and bodies, with a combined speaker list (K Allado-McDowell, Mat Dryhurst, Gabriel Massan, Isabel Millar, Alasdair Milne, dmstfctn, Jacob Hurwitz-Goodman, Cream Projects, Omar Karim, Alex Quicho, Rival Strategy). Who spoke where is not split; K spoke at HYPERHYPERBODIES (Feb 2023). Exact date not found.",
+    "zh": "Leung 网站把「2024 BODYSTACKED / HYPERHYPERBODIES」并列为她联合策划的关于 AI、时尚与身体的峰会，合并列出的演讲者有 K Allado-McDowell、Mat Dryhurst、Gabriel Massan、Isabel Millar、Alasdair Milne、dmstfctn、Jacob Hurwitz-Goodman、Cream Projects、Omar Karim、Alex Quicho、Rival Strategy。网站没有分开写哪位在哪一场；按其他资料，K 是在 2023 年 2 月的 HYPERHYPERBODIES 上演讲。BODYSTACKED 的具体日期未找到。"
+   },
+   "people": "Daniel Felstead, Jenn Leung (organisers)",
+   "nm": {
+    "en": "An AI-and-body summit whose combined speaker list includes K and Mat Dryhurst.",
+    "zh": "以 AI 与身体为主题的峰会，嘉宾名单里有 K 和 Mat Dryhurst 等神经媒体讨论的核心人物。"
+   },
+   "date_display": {
+    "en": "2024 (exact date not found)",
+    "zh": "2024 年（具体日期未找到）"
+   }
+  },
+  {
+   "id": "leung-talks-2023-24",
+   "date": "2024-01-01",
+   "who": "leung",
+   "fmt": "teaching",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://jennleung.xyz/workshops",
+   "title": {
+    "en": "Teaching & talks 2023–24: AA “Stream-maxxing” workshop, Imperial Young Producers, SHOWstudio Women in Fashion SS24",
+    "zh": "2023–2024 教学与讲座：AA「Stream-maxxing」工作坊、帝国理工 Young Producers、SHOWstudio"
+   },
+   "summary": {
+    "en": "Smaller items from Leung's talks page: the AA ‘Stream-maxxing’ workshop on Unreal live-streaming and VTubing (2023); an artist talk on interaction design with AI for Imperial College's Young Producers (2024); SHOWstudio Women in Fashion SS24. Titles only.",
+    "zh": "Leung 网站讲座列表里 2023–2024 年的几项小型活动：2023 年在建筑联盟学院（AA）开「Stream-maxxing」工作坊，教虚幻引擎直播和 VTuber（虚拟主播）制作；2024 年在帝国理工学院「Young Producers」项目做艺术家讲座，主题是「用 AI 做交互设计」；参与 SHOWstudio 的「Women in Fashion SS24」。都只有列表标题。"
+   },
+   "people": "Jenn Leung",
+   "date_display": {
+    "en": "2023–24",
+    "zh": "2023–2024 年"
+   }
+  },
+  {
+   "id": "paf-olomouc-2023",
+   "date": "2023-12-01",
+   "who": "joint",
+   "fmt": "screening",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://jennleung.xyz/literallynoplace",
+   "title": {
+    "en": "Literally No Place at PAF Olomouc 2023 (“True Stories from AI”)",
+    "zh": "《Literally No Place》在捷克 PAF 奥洛穆茨电影节 2023 放映"
+   },
+   "summary": {
+    "en": "PAF Olomouc 2023's programme “True Stories from AI” screened Literally No Place alongside works by Jon Rafman and Sondra Perry. Listed on Leung's site; exact date not verified (placed early Dec 2023). Charles University's ‘Hellscapes’ programme also screened it.",
+    "zh": "捷克奥洛穆茨的 PAF 电影与媒体艺术节 2023 年的放映单元「True Stories from AI」放映了《Literally No Place》，同场有 Jon Rafman、Sondra Perry 等人的作品。Leung 的项目页和简历都列有这一场，具体场次日期未核实（我们按 2023 年 12 月初列出）。查理大学人文学院的「Hellscapes: On Art, Technology and Loneliness」放映单元也放过这部片子。"
+   },
+   "people": "Daniel Felstead, Jenn Leung",
+   "links": [
+    {
+     "url": "https://tarantula.ruk.cuni.cz/AKTUALITY-24284-version1-avu_booklet_2.pdf",
+     "label": {
+      "en": "Hellscapes booklet (Charles University)",
+      "zh": "查理大学 Hellscapes 放映手册"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "2023 (c. Dec; date not verified)",
+    "zh": "2023 年（约 12 月，日期未核实）"
+   }
+  },
+  {
+   "id": "foto-colectania-done-7",
+   "date": "2023-11-30",
+   "who": "joint",
+   "fmt": "screening",
+   "basis": "description",
+   "access": "free",
+   "url": "https://fotocolectania.org/en/activity/414/event-done-7-synthetic-methods",
+   "title": {
+    "en": "Literally No Place at DONE 7 “Synthetic Methods”, Fundació Foto Colectania (Barcelona)",
+    "zh": "巴塞罗那 Foto Colectania「DONE 7：合成方法」放映《Literally No Place》"
+   },
+   "summary": {
+    "en": "Foto Colectania's DONE 7 “Synthetic Methods” (Barcelona, 30 Nov 2023, 6–9pm), on synthetic and generative images, screened Literally No Place.",
+    "zh": "巴塞罗那摄影机构 Foto Colectania 的「DONE」系列第七期「Synthetic Methods」（合成方法），2023 年 11 月 30 日晚 6–9 点，讨论用合成 / 生成方式制作的影像，放映了《Literally No Place》。Felstead 在里斯本的简介里也把 Foto Colectania 列为展出过的机构。"
+   },
+   "people": "Daniel Felstead, Jenn Leung"
+  },
+  {
+   "id": "photovogue-2023",
+   "date": "2023-11-17",
+   "who": "joint",
+   "fmt": "screening",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://www.vogue.com/video/watch/a-dot-i-savior-or-destroyer-photovogue-festival-2023-what-makes-us-human-image-in-the-age-of-ai",
+   "title": {
+    "en": "Literally No Place at PhotoVogue Festival 2023 (“What Makes Us Human? Image in the Age of AI”)",
+    "zh": "《Literally No Place》在 PhotoVogue 艺术节 2023 放映"
+   },
+   "summary": {
+    "en": "PhotoVogue Festival 2023 in Milan (“What Makes Us Human? Image in the Age of AI”) screened Literally No Place; Vogue's related video is titled “A.I.: Savior or Destroyer?”. Exact date not verified (festival in mid-Nov 2023).",
+    "zh": "Vogue 旗下的 PhotoVogue 艺术节 2023 年在米兰的主题是「What Makes Us Human? Image in the Age of AI」（什么使我们成为人：AI 时代的图像），《Literally No Place》在其中放映。Vogue 网站上的相关视频题为「A.I.: Savior or Destroyer?」，与片子讨论的「AI 救世还是毁灭」二元对立对应。具体场次日期未核实，按 2023 年 11 月中旬的艺术节期间列出。"
+   },
+   "people": "Daniel Felstead, Jenn Leung",
+   "nm": {
+    "en": "The festival theme is the image and the human in the age of AI.",
+    "zh": "艺术节主题就是 AI 时代的图像与「人」的定义。"
+   },
+   "date_display": {
+    "en": "Nov 2023 (festival)",
+    "zh": "2023 年 11 月（艺术节期间）"
+   }
+  },
+  {
+   "id": "dazed-literally-no-place",
+   "date": "2023-10-27",
+   "who": "joint",
+   "fmt": "interview",
+   "basis": "full",
+   "access": "free",
+   "url": "https://www.dazeddigital.com/life-culture/article/61186/1/the-film-starring-ai-julia-fox-deliver-a-sermon-about-ai-utopian-doomerism",
+   "title": {
+    "en": "Dazed: the film starring AI Julia Fox that delivers a sermon about AI utopianism and doomerism (by Günseli Yalcinkaya)",
+    "zh": "Dazed 专访：AI Julia Fox 主演、讲 AI 乌托邦与末日论的影片"
+   },
+   "summary": {
+    "en": "Günseli Yalcinkaya's Dazed piece (27 Oct 2023). The duo want to step outside the AI utopia/doom binary, treating AI as “a twisted reflection of our present moment”; the film critiques techno-gnostic myths of the body as computer and mind as uploadable software, citing Kate Crawford and Isabel Millar. Tools: Stable Diffusion, D-ID, Runway, Descript, UE5.",
+    "zh": "Dazed 科技与文化编辑 Günseli Yalcinkaya 2023 年 10 月 27 日的报道和访谈。两人说，影片想跳出「AI 乌托邦 vs. AI 末日」的二元争吵，把 AI 看作「我们当下处境的一面扭曲镜子」；片子批评一种「技术诺斯替」神话，即把身体当作计算机、把心智当作可上传的软件；访谈中引用了 Kate Crawford（AI 的物质与劳动成本）和精神分析学者 Isabel Millar。谈到制作：用 Stable Diffusion、D-ID、Runway、Descript 和虚幻引擎 5 生成 Julia 的形象、声音和场景。"
+   },
+   "people": "Daniel Felstead, Jenn Leung; by Günseli Yalcinkaya",
+   "nm": {
+    "en": "On AI futures: refusing the utopia/doom poles and the body-as-computer myth, a line that runs on to Always On My Mind and OPTMZ.",
+    "zh": "谈 AI 的未来想象：拒绝乌托邦 / 末日两极，批评「身体是计算机」的神话。这条思路后来贯穿《Always On My Mind》和 OPTMZ。"
+   }
+  },
+  {
+   "id": "literally-no-place",
+   "date": "2023-10-26",
+   "who": "joint",
+   "fmt": "film",
+   "basis": "full",
+   "access": "free",
+   "url": "https://jennleung.xyz/literallynoplace",
+   "title": {
+    "en": "Literally No Place (DIS.art)",
+    "zh": "《Literally No Place》（DIS.art 委托影片）"
+   },
+   "summary": {
+    "en": "Part two of “I'm So Janky”, on AI's hype–doom dialectic (written and directed by Felstead, 3D by Leung, producer Lauren Boyle, DIS commission). AI Julia Fox, “the final boss of vocal fry”, tours the AI utopian vs doomer “cyberwarfare bedlam”: post-scarcity luxury or extinction? It surveys the visions of Sam Altman and Sundar Pichai. Made with Stable Diffusion, D-ID, Runway, Descript and UE5. Later screened widely and featured in the book Choreomata (Routledge). Undated on DIS; placed by the Dazed coverage (late Oct 2023).",
+    "zh": "「I'm So Janky」系列第二部，讲 AI 的「炒作 - 末日」辩证法。Felstead 编剧兼导演，Leung 做 3D 动画，制片 Lauren Boyle，DIS 委托。AI Julia Fox 自称「气泡音的最终 boss」，上一集对付了扎克伯格的元宇宙，这一次带观众进入「AI 乌托邦派 vs. AI 末日派」的混战：AI 会带来马克思设想的后稀缺社会，让人人享受无需劳动的奢华，还是会把人类灭绝？片中呈现 Sam Altman、Sundar Pichai 等科技领袖的愿景，以及「AI 迷」的投射。内容、化身和声音用 Stable Diffusion、D-ID、Runway、Descript 和 UE5 生成；片尾致谢「互联网」。片子后来在柏林影评人周、PAF、Foto Colectania、PhotoVogue 等放映，并被收入《Choreomata: Performance and Performativity after AI》一书（Routledge，Trillo 与 Poliks 编）。DIS 页面无日期，按 Dazed 同期报道定在 2023 年 10 月下旬。"
+   },
+   "people": "Daniel Felstead, Jenn Leung; producer Lauren Boyle",
+   "nm": {
+    "en": "Entirely about AI futures; per Felstead (COEVAL) it closes on an image of K's Pharmako-AI, the earliest direct link to K in the films.",
+    "zh": "整部片子讨论 AI 的未来想象。Felstead 在 COEVAL 访谈中说片尾放了一张 K《Pharmako-AI》的图片，这是作品与 K 最早的直接关联。"
+   },
+   "links": [
+    {
+     "url": "https://dis.art/series/im-so-janky",
+     "label": {
+      "en": "“I'm So Janky” series on DIS",
+      "zh": "DIS 上的「I'm So Janky」系列"
+     }
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=BM1VJfMqbIE",
+     "label": {
+      "en": "COEVAL clip (YouTube)",
+      "zh": "COEVAL 片段（YouTube）"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "late Oct 2023 (inferred from Dazed)",
+    "zh": "2023 年 10 月下旬（据 Dazed 报道推断）"
+   }
+  },
+  {
+   "id": "bodystack-summit",
+   "date": "2023-09-21",
+   "who": "felstead",
+   "fmt": "summit",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.youtube.com/watch?v=H0X8C8WmCUM",
+   "title": {
+    "en": "BODYSTACK summit (LCF): “Our Bodies in the Platform Stacks”",
+    "zh": "BODYSTACK 峰会：平台堆栈中的身体"
+   },
+   "summary": {
+    "en": "The MA FMC summit of 21–22 Sep 2023, organised by Felstead, putting bodies in Bratton's platform ‘Stack’. Public videos include Günseli Yalcinkaya's “Cryptid: A Theory of Post-Digital Selfhood”; Felstead later singled out Alexi Alario's talk on LOONA's ‘Loonaverse’ lore.",
+    "zh": "MA 时尚媒体与传播课程 2023 年 9 月 21–22 日的峰会，Felstead 主办（他在 COEVAL 访谈里说「我 2023 年 9 月组织的 BODYSTACK 峰会」）。题目把 Benjamin Bratton「堆栈」（全球计算基础设施的分层模型）和身体放在一起。公开录像之一是 Günseli Yalcinkaya 的演讲「Cryptid: A Theory of Post-Digital Selfhood」（隐兽：后数字自我理论）；Felstead 在 COEVAL 访谈中特别提到 Alexi Alario 讲 K-pop 组合 LOONA 的「Loonaverse」世界设定的演讲。"
+   },
+   "people": "Daniel Felstead (organiser); Günseli Yalcinkaya, Alexi Alario and others",
+   "date_display": {
+    "en": "21–22 Sep 2023",
+    "zh": "2023 年 9 月 21–22 日"
+   }
+  },
+  {
+   "id": "data-dolly-eschalon",
+   "date": "2023-08-13",
+   "who": "leung",
+   "fmt": "exhibition",
+   "basis": "description",
+   "access": "free",
+   "url": "https://thehart.com.hk/events/welcome-take-a-seat-wherever",
+   "title": {
+    "en": "Data Dolly Eschalon (with Miri), in “Welcome >_< Take a Seat Wherever” (HART × Tomorrow Maybe, Hong Kong)",
+    "zh": "《Data Dolly Eschalon》（与 Miri 合作）参展香港「歡迎光臨矛盾漩渦」"
+   },
+   "summary": {
+    "en": "A group show at Tomorrow Maybe, Eaton HK (13 Aug–3 Sep 2023; curated by Angela Liu; HART). Leung and data modeller Miri made an interactive game, an ‘online girl's’ room of compressed citations and data traces with a cross-spatial Twitch stream and an AI character, Dolly, you can activate and talk to.",
+    "zh": "香港 Eaton 酒店 Tomorrow Maybe 空间的群展（2023 年 8 月 13 日–9 月 3 日，策展 Angela Liu，HART 与 Tomorrow Maybe 支持）。Leung 和数据建模师 Miri 做了一个可互动的游戏：一个「网络女孩」的房间，塞满压缩的引用、数据痕迹和一个跨空间的 Twitch 直播，按空格键可以激活 / 关闭 AI 角色「Dolly」并跟她说话，点汽水可以推流到 Twitch。作品的说法是「一个网络女孩是构成主体本身的一部法典」。"
+   },
+   "people": "Jenn Leung, Miri; curator Angela Liu",
+   "date_display": {
+    "en": "13 Aug – 3 Sep 2023",
+    "zh": "2023 年 8 月 13 日–9 月 3 日"
+   }
+  },
+  {
+   "id": "metaverse-in-janky-capitalism",
+   "date": "2023-04-25",
+   "who": "joint",
+   "fmt": "film",
+   "basis": "full",
+   "access": "free",
+   "url": "https://www.dis.art/the-metaverse-in-janky-capitalism",
+   "title": {
+    "en": "The Metaverse in Janky Capitalism (DIS.art)",
+    "zh": "《Janky 资本主义中的元宇宙》（DIS.art 委托影片）"
+   },
+   "summary": {
+    "en": "Part one of “I'm So Janky” (written and produced by Felstead, 3D by Leung, producer Lauren Boyle, DIS commission). An AI Julia Fox muses in robotic vocal fry on how internet dynamics shape ideological trends; Facebook's metaverse is sanitised and uncannily smooth, while capitalism is janky, partly from “the sloppy and frustrating interaction between online and offline life”. Janky Capitalism is “the jacked-up Uber Eats delivery bike … cool as fuck, kind of”. Julia began as a Convai in-game NPC, voice trained with Descript. Shown on Joshua Citarella's Monday Night Memes and at NYU ITP Camp Cinema Club. Release date inferred from Felstead's Instagram (c. 25 Apr 2023).",
+    "zh": "「I'm So Janky」系列第一部，Felstead 编剧和制作，Leung 做 3D 动画，制片 Lauren Boyle，DIS 委托。叙述者是一个「无法抗拒的漫不经心」的 AI Julia Fox：她本人就擅长制造和操纵潮流，在片中用机器人式的气泡音琢磨网络动态怎样塑造意识形态潮流。片子的论点是：扎克伯格版元宇宙被消毒得「诡异地光滑」，而真实的资本主义是 janky 的，原因之一是线上线下生活之间草率、令人沮丧的互动。系列给「janky 资本主义」的比喻是「改装过的 Uber Eats 外卖电动车」：笨拙、低效、拼凑、勉强能用、可能会要你的命，「但有点酷」。Julia 最初是用 Convai 对话 AI 插件做的游戏 NPC，声音用 Descript 训练。片子在 Joshua Citarella 主持的 Do Not Research「Monday Night Memes」直播、纽约大学 ITP Camp 电影俱乐部（与 Hito Steyerl 等的作品同场）放映。上线日期按 Felstead 的 Instagram 帖子推断为 2023 年 4 月 25 日前后。"
+   },
+   "people": "Daniel Felstead, Jenn Leung; producer Lauren Boyle",
+   "nm": {
+    "en": "An AI-generated celebrity avatar as narrator is itself an experiment in future media; the target is the metaverse as ‘next internet’.",
+    "zh": "用 AI 生成的名人化身当叙述者，本身就是对未来媒介形态的实验；批评的对象是元宇宙这一「下一代互联网」叙事。"
+   },
+   "links": [
+    {
+     "url": "https://jennleung.xyz/jankycapitalism",
+     "label": {
+      "en": "Project page (Jenn Leung)",
+      "zh": "项目页（Jenn Leung）"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "c. 25 Apr 2023 (inferred from Instagram)",
+    "zh": "约 2023 年 4 月 25 日（据 Instagram 推断）"
+   }
+  },
+  {
+   "id": "vtuber-studio",
+   "date": "2023-03-06",
+   "who": "leung",
+   "fmt": "project",
+   "basis": "description",
+   "access": "free",
+   "url": "https://github.com/Off-World-Live-Collaborative/VTuberStudio",
+   "title": {
+    "en": "VTuber Studio: open-source Unreal Engine live-streaming template (Off World Live)",
+    "zh": "VTuber Studio：开源虚幻引擎直播模板（Off World Live）"
+   },
+   "summary": {
+    "en": "An open-source Unreal Engine template Leung developed for Off World Live (repo created 6 Mar 2023): Mediapipe full-body tracking, Twitch chat interactivity, viewport/CineCam/360 capture, virtual webcam, Spout/NDI, RTMP streaming and sample avatars, for VTubers and streamers.",
+    "zh": "Leung 为 Off World Live（虚幻引擎直播 / 采集工具公司）开发的开源项目模板，GitHub 仓库建于 2023 年 3 月 6 日，说明是「OWL VTuber Studio for Live-Streaming」。功能包括 Mediapipe 全身动捕、Twitch 聊天互动、视口 / 电影机 / 360 度采集、虚拟摄像头、Spout/NDI 输出、RTMP 推流，以及 VRM、MetaHuman 等示例化身，方便虚拟主播和游戏主播快速搭建自己的直播间。Leung 的 YouTube 上有配套教程。"
+   },
+   "people": "Jenn Leung; Off World Live",
+   "links": [
+    {
+     "url": "https://jennleung.xyz/vtuberstudio",
+     "label": {
+      "en": "Project page",
+      "zh": "项目页"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "6 Mar 2023 (repo created)",
+    "zh": "2023 年 3 月 6 日（GitHub 仓库创建）"
+   }
+  },
+  {
+   "id": "hyperhyperbodies-summit",
+   "date": "2023-02-09",
+   "who": "joint",
+   "fmt": "summit",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://jennleung.xyz/workshops",
+   "title": {
+    "en": "HYPERHYPERBODIES summit (LCF, with International Magic), with K Allado-McDowell and Mat Dryhurst",
+    "zh": "HYPERHYPERBODIES 峰会（与 International Magic 合办，K Allado-McDowell 演讲）"
+   },
+   "summary": {
+    "en": "The MA FMC summit of 9–10 Feb 2023, organised by Felstead with International Magic and co-curated by Leung, on AI, fashion and bodies. Speakers included K Allado-McDowell and Mat Dryhurst: the earliest overlap we found between K and the duo's events. No public recording found.",
+    "zh": "MA 时尚媒体与传播课程 2023 年 2 月 9–10 日的峰会，Felstead 主办，与创意机构 International Magic 合作，Leung 网站列为她联合策划的峰会之一，主题是 AI、时尚与身体。演讲者包括 K Allado-McDowell 和 Mat Dryhurst（Holly Herndon 的合作者，Spawning 联合创始人）。这是我们找到的 K 与两人活动最早的交集，比 BUFF 峰会早两年。我们没有找到这场的公开录像。"
+   },
+   "people": "Daniel Felstead, Jenn Leung (organisers); K Allado-McDowell, Mat Dryhurst and others",
+   "nm": {
+    "en": "K spoke here: the earliest direct link we found (Feb 2023).",
+    "zh": "K 本人在这里演讲，是我们找到的与 K 最早的直接联系（2023 年 2 月）。"
+   },
+   "date_display": {
+    "en": "9–10 Feb 2023",
+    "zh": "2023 年 2 月 9–10 日"
+   }
+  },
+  {
+   "id": "ghost-stories-dfw",
+   "date": "2023-02-01",
+   "who": "leung",
+   "fmt": "film",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.youtube.com/watch?v=zdC1ZRU-j7w",
+   "title": {
+    "en": "Ghost Stories / Ghost Stories: A New World (Digital Fashion Week London 2022 & 2023, with Jivomir Domoustchiev)",
+    "zh": "《Ghost Stories》数字时装影片（伦敦数字时装周 2022、2023）"
+   },
+   "summary": {
+    "en": "Two digital fashion works co-directed with Jivomir Domoustchiev (Leung: environment design, rigging, optimisation). Part one played on a 23-metre LED wall at W1 Curates for Digital Fashion Week London 2022; the sequel, Ghost Stories: A New World, screened at Epic Games Innovation Lab's virtual production studio (Feb 2023), with cloth-simulated garments on MoCap MetaHumans in UE5.",
+    "zh": "与设计师 Jivomir Domoustchiev 联合导演的两部数字时装作品，Leung 负责环境设计、绑定和优化。第一部在 2022 年伦敦数字时装周的 W1 Curates 播放，投在 23 米长的 LED 墙上：受生存游戏和流亡启发，六个穿着「幽灵盔甲」的化身站在城市开放世界里。续篇《Ghost Stories: A New World》2023 年 2 月在 Epic Games 创新实验室的虚拟制片棚放映，用 UE5 渲染、动捕驱动的 MetaHuman 和布料模拟展示数字服装。这个系列也跨平台做进了 Unity、Web3 区块链游戏和 Sandbox 等化身里，Domoustchiev 的 A/W23 系列也在 SHOWstudio 上发布。"
+   },
+   "people": "Jenn Leung, Jivomir Domoustchiev",
+   "links": [
+    {
+     "url": "https://jennleung.xyz/ghoststories",
+     "label": {
+      "en": "Project page",
+      "zh": "项目页"
+     }
+    },
+    {
+     "url": "https://www.showstudio.com/collections/autumn-winter-2023/Jivomir-Domoustchiev-aw-23-womenswear",
+     "label": {
+      "en": "SHOWstudio: Domoustchiev A/W23",
+      "zh": "SHOWstudio：Domoustchiev A/W23"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "Feb 2023 (sequel); part one 2022",
+    "zh": "2023 年 2 月（续篇）；第一部 2022 年"
+   }
+  },
+  {
+   "id": "ual-gaf-interview",
+   "date": "2022-10-04",
+   "who": "felstead",
+   "fmt": "interview",
+   "basis": "full",
+   "access": "free",
+   "url": "https://www.arts.ac.uk/colleges/london-college-of-fashion/stories/ma-fashion-media-and-communication-course-leader-daniel-felstead-presents-at-global-art-forum",
+   "title": {
+    "en": "UAL story: MA Fashion Media and Communication Course Leader Daniel Felstead presents at Global Art Forum",
+    "zh": "伦敦艺术大学专访：Felstead 谈在迪拜全球艺术论坛的元宇宙演讲"
+   },
+   "summary": {
+    "en": "A UAL Q&A (4 Oct 2022) on his Global Art Forum talk. The metaverse is “fiction all the way down”, a speculative performativity that talks itself into being; after Byung-Chul Han we are entering an age of non-objects; ‘meta-’ means ‘in-between’; Web3 has socio-political potential beyond speculation. Also on the MA FMC course's focus on AI, gaming and hybrid fashion experiences.",
+    "zh": "伦敦艺术大学 2022 年 10 月 4 日发布的问答，回顾他 3 月在迪拜全球艺术论坛的演讲。他的观点：元宇宙「从头到尾都是虚构」，它是一种「推测性的述行」，即靠讲述它来召唤它出现；他借韩炳哲的「非物」（non-objects）说我们正进入一个以信息而非物品为中心的时代；「meta-」这个前缀本义是「在……之间」，元宇宙的意义恰在这种模糊的中间状态；他也认为 Web3 有社会政治上的潜力，不该只被看成投机泡沫。他同时介绍了 MA 时尚媒体与传播课程的方向：AI、游戏和混合式时尚体验。"
+   },
+   "people": "Daniel Felstead",
+   "nm": {
+    "en": "On ‘next internet’ narratives (metaverse, Web3) and the age of non-objects: the theory behind his later metaverse film.",
+    "zh": "讨论「下一代互联网」叙事（元宇宙、Web3）与信息时代的「非物」，是他后来批评元宇宙的影片的理论前奏。"
+   }
+  },
+  {
+   "id": "hyperbodies-summit",
+   "date": "2022-09-01",
+   "who": "felstead",
+   "fmt": "summit",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://www.arts.ac.uk/subjects/fashion-communication/postgraduate/ma-fashion-media-and-communication-lcf",
+   "title": {
+    "en": "HYPERBODIES: the first MA Fashion Media & Communication summit",
+    "zh": "HYPERBODIES：MA 时尚媒体与传播课程的第一场峰会"
+   },
+   "summary": {
+    "en": "We saw HYPERBODIES (Sep 2022) named only in secondary material as the first of Felstead's course summits, followed by body-themed summits through to BUFF (neural media, 2025) and OPTMZ (2026), the main channel bringing K and the New Models orbit into a fashion school. No line-up or recording found for HYPERBODIES.",
+    "zh": "我们只在二手资料里见到「HYPERBODIES」这个名字和 2022 年 9 月这个时间，它被说成是 Felstead 为这门课办的第一场峰会。此后的峰会题目都以「身体」为轴：HYPERHYPERBODIES（2023 年 2 月）、BODYSTACK（2023 年 9 月）、BODYSTACKED（2024）、BUFFER（2024 年 9 月）、BUFF（2025 年 1 月，神经媒体）、EXCESSS（2025 年 9 月）、OPTMZ（2026 年 1 月）。这套峰会是两人把 K、New Models 周边的理论家和艺术家请进时尚学院的主要渠道。HYPERBODIES 本身没有找到嘉宾名单或录像。"
+   },
+   "people": "Daniel Felstead",
+   "date_display": {
+    "en": "Sep 2022",
+    "zh": "2022 年 9 月"
+   }
+  },
+  {
+   "id": "gaf15-kissed-in-the-metaverse",
+   "date": "2022-03-13",
+   "who": "felstead",
+   "fmt": "talk",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.youtube.com/watch?v=Zap9BSBdmPg",
+   "title": {
+    "en": "“What If We Kissed In The Metaverse”, Global Art Forum 15 (Dubai), with Ruba Al-Sweel, hosted by Shumon Basar",
+    "zh": "迪拜全球艺术论坛第 15 届：「如果我们在元宇宙里接吻」（与 Ruba Al-Sweel，主持 Shumon Basar）"
+   },
+   "summary": {
+    "en": "A Global Art Forum 15 (“This is the Picture”) session on 13 Mar 2022 with Ruba Al-Sweel, hosted by Shumon Basar; video posted 29 Mar 2022. Per the later UAL interview: the metaverse as speculative performativity, its ambiguity both strength and flaw. Al-Sweel later spoke at BUFF.",
+    "zh": "2022 年 3 月 13 日迪拜全球艺术论坛第 15 届（主题「This is the Picture」）的一场对谈，Felstead 与研究游戏和数字文化的 Ruba Al-Sweel 同台，主持是论坛长期策划人、作家 Shumon Basar（《The Age of Earthquakes》合著者）。录像 3 月 29 日上传。内容见伦敦艺术大学之后的专访：元宇宙是「推测性的述行」，是一个靠被讲述而成形的虚构；它的模糊既是最大优势，也是最大缺陷。Ruba Al-Sweel 后来也是 BUFF 峰会的讲者。"
+   },
+   "people": "Daniel Felstead, Ruba Al-Sweel; host Shumon Basar",
+   "nm": {
+    "en": "On the metaverse as a future-internet vision: an early record of Felstead on new-media futures.",
+    "zh": "讨论元宇宙这一「未来互联网」愿景，是 Felstead 公开谈新媒介未来的早期记录。"
+   },
+   "links": [
+    {
+     "url": "https://www.arts.ac.uk/colleges/london-college-of-fashion/stories/ma-fashion-media-and-communication-course-leader-daniel-felstead-presents-at-global-art-forum",
+     "label": {
+      "en": "UAL interview about the talk",
+      "zh": "伦敦艺术大学关于这场演讲的专访"
+     }
+    }
+   ]
+  },
+  {
+   "id": "dae-unfolding-spaces-xalon",
+   "date": "2022-03-01",
+   "who": "leung",
+   "fmt": "talk",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.designacademy.nl/page/5590/dae-research-festival",
+   "title": {
+    "en": "Xalon at Design Academy Eindhoven Research Festival “Unfolding Spaces”",
+    "zh": "Xalon 在埃因霍温设计学院研究节「展开的空间」"
+   },
+   "summary": {
+    "en": "In March 2022 Leung presented Xalon's real-time networked environment (MQTT, pose estimation) at DAE's Research Festival “Unfolding Spaces”. Xalon is her XR collective with Arshiya Vij and Serra Ozdemir, on inclusive, embodied real-time collaboration in networked XR.",
+    "zh": "2022 年 3 月，Leung 在埃因霍温设计学院研究节「Unfolding Spaces」展示 Xalon 的实时联网环境：用 MQTT 消息协议和姿态估计，让不同地点的人以身体动作在同一个 XR 空间里协作。Xalon 是她与 Arshiya Vij、Serra Ozdemir 组成的 XR 集体，关注 XR 中的包容性、伦理、可持续和身体化的实时协作。"
+   },
+   "people": "Jenn Leung, Arshiya Vij, Serra Ozdemir",
+   "date_display": {
+    "en": "Mar 2022",
+    "zh": "2022 年 3 月"
+   }
+  },
+  {
+   "id": "xalon-2022",
+   "date": "2022-02-01",
+   "who": "leung",
+   "fmt": "teaching",
+   "basis": "description",
+   "access": "free",
+   "url": "https://jennleung.xyz/xalon",
+   "title": {
+    "en": "Xalon 2022: AA Visiting School Unit 5 “About a new togetherness”, Xalon Lecture Series, CIVA Vienna",
+    "zh": "Xalon 2022：AA 访问学校第五单元、讲座系列与维也纳 CIVA 艺术节"
+   },
+   "summary": {
+    "en": "Xalon in early 2022: Leung led AA Visiting School Unit 5 “Xalon: About a new togetherness” (Feb–Jul 2022), ran the Xalon Lecture Series (Jan–Mar 2022), and took part in CIVA Vienna (Feb 2022), MONA Gallery, a Posthuman Symposium and Wipro's Thursday Talks.",
+    "zh": "Xalon 在 2022 年上半年的活动：Leung 担任建筑联盟学院（AA）访问学校第五单元「Xalon: About a new togetherness」（关于一种新的共处，2022 年 2–7 月）的项目负责人；办了 Xalon 讲座系列（2022 年 1–3 月）；参加维也纳 CIVA 媒体艺术节（2022 年 2 月）、MONA 画廊和后人类研讨会；还在 Wipro 的「Thursday Talks」上做过分享。导师包括 Fiona Zisch、Alex Whitley 等。"
+   },
+   "people": "Jenn Leung, Arshiya Vij, Serra Ozdemir",
+   "date_display": {
+    "en": "Jan–Jul 2022",
+    "zh": "2022 年 1–7 月"
+   }
+  },
+  {
+   "id": "mafmc-founded",
+   "date": "2022-01-01",
+   "who": "felstead",
+   "fmt": "teaching",
+   "basis": "description",
+   "access": "free",
+   "url": "https://www.arts.ac.uk/subjects/fashion-communication/postgraduate/ma-fashion-media-and-communication-lcf",
+   "title": {
+    "en": "Felstead founds and leads MA Fashion Media & Communication (London College of Fashion, UAL)",
+    "zh": "Felstead 创办并主持伦敦时装学院 MA 时尚媒体与传播课程"
+   },
+   "summary": {
+    "en": "Per the OPTMZ bio, Felstead founded the MA Fashion Media & Communication at LCF (UAL) in 2022 and leads it; earlier he led MA/BA Fashion Media Practice & Criticism (SHOWstudio bio). Students work on AI, gaming and hybrid fashion experiences (Holloway Express). Leung teaches at the same college; their students worked on the films.",
+    "zh": "OPTMZ 峰会的嘉宾介绍说，Felstead 在 2022 年创办了伦敦时装学院（UAL）的 MA 时尚媒体与传播（Fashion Media & Communication）课程，并任课程主任；此前他主持过 MA / BA 时尚媒体实践与批评课程（据 SHOWstudio 简介）。按 Holloway Express 的介绍，学生在课上直接钻研 AI、游戏和混合式时尚体验，目标是培养能塑造时尚媒体未来的多面手。Leung 是同一学院的创意技术与设计高级讲师，两人一起带学生研究神经媒体，这些学生后来也参与了影片制作（如《Welcome to Jankspace》的 3D 建模）。"
+   },
+   "people": "Daniel Felstead",
+   "date_display": {
+    "en": "2022",
+    "zh": "2022 年"
+   }
+  },
+  {
+   "id": "bartlett-hayles-lecture",
+   "date": "2021-12-01",
+   "who": "leung",
+   "fmt": "talk",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://jennleung.xyz/xalon",
+   "title": {
+    "en": "Moderating “A Cognitive Framework”: N. Katherine Hayles, Bartlett International Lecture Series (UCL)",
+    "zh": "主持巴特莱特国际讲座：N. Katherine Hayles「一个认知框架」"
+   },
+   "summary": {
+    "en": "In Dec 2021 Leung (with Xalon) moderated N. Katherine Hayles's Bartlett International Lecture “A Cognitive Framework”. Hayles (How We Became Posthuman) proposes ‘nonconscious cognition’ extending cognition to animals, plants and computers. Title only.",
+    "zh": "2021 年 12 月，Leung（以 Xalon 名义）主持了伦敦大学学院巴特莱特建筑学院国际讲座系列中 N. Katherine Hayles 的讲座「A Cognitive Framework」。Hayles 是《我们如何成为后人类》的作者，近年提出「非意识认知」（nonconscious cognition）框架，把认知扩展到动物、植物和计算机。我们只读到 Leung 网站上的标题记录。"
+   },
+   "people": "Jenn Leung (moderator); N. Katherine Hayles",
+   "date_display": {
+    "en": "Dec 2021",
+    "zh": "2021 年 12 月"
+   }
+  },
+  {
+   "id": "ars-electronica-polysocial",
+   "date": "2021-09-08",
+   "who": "leung",
+   "fmt": "panel",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://jennleung.xyz/xalon",
+   "title": {
+    "en": "PolySocial Realities panel, Ars Electronica 2021 (Xalon)",
+    "zh": "林茨电子艺术节 2021：「多重社交现实」对谈（Xalon）"
+   },
+   "summary": {
+    "en": "Leung curated and hosted the “PolySocial Realities” panel (community building and networked environments) at Ars Electronica with Xalon. Her talks list says 2020; the Xalon page and CV say 2021, which we follow (festival 8–12 Sep 2021). Title only.",
+    "zh": "Leung 以 Xalon 名义在林茨电子艺术节策划并主持「PolySocial Realities」对谈，讨论社群建设和联网环境。她的讲座列表写作 2020 年，Xalon 页面和简历写作 Ars Electronica 2021，这里按 2021 年（当年主题「A New Digital Deal」，9 月 8–12 日）列出。只读到标题记录。"
+   },
+   "people": "Jenn Leung; Xalon",
+   "date_display": {
+    "en": "Sep 2021 (talks list says 2020)",
+    "zh": "2021 年 9 月（talks 列表写作 2020，存疑）"
+   }
+  },
+  {
+   "id": "leung-group-shows-2021",
+   "date": "2021-06-26",
+   "who": "leung",
+   "fmt": "exhibition",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://tzvetnik.online/article/tek-kwun-at-tai-kwun-centre-for-heritage-and-arts-hong-kong",
+   "title": {
+    "en": "Group shows 2020–21: Tek Kwun (Tai Kwun), prsntprsnt “Camouflage”, BSMNT Leipzig “TUTORIAL”, NNN, soloshow.online, Underground Flower and others",
+    "zh": "2020–2021 年群展合集：大馆 Tek Kwun、prsntprsnt「Camouflage」、莱比锡「TUTORIAL」等"
+   },
+   "summary": {
+    "en": "Leung's early group shows as a digital/3D artist, from her site and press: Tek Kwun at Tai Kwun, prsntprsnt's off-site “Camouflage”, BSMNT Leipzig's “TUTORIAL” (all covered by Tzvetnik), NNN, Sundae Matsudo, MAMAN/TOXICFEST Antwerp, Fold × Futur.shock, and in 2020 soloshow.online and Underground Flower's “Cellophane Mother Memory”. Dates not individually verified; merged into one entry placed mid-2021.",
+    "zh": "Leung 早期以数字 / 3D 艺术家身份参加的一批群展，来自她网站的展览列表和外部报道：香港大馆的「Tek Kwun」、prsntprsnt 在西贡 Shui Long Wo 的离场展「Camouflage」、莱比锡 BSMNT 的「TUTORIAL」小组项目（以上有 Tzvetnik 报道），以及 NNN 艺术博览会、千叶 Sundae Matsudo、安特卫普 MAMAN / TOXICFEST、Fold × Futur.shock，2020 年的 soloshow.online 和香港 Underground Flower 的「Cellophane Mother Memory」。各展的具体日期没有逐一核实，这里合并成一条，日期取 2021 年年中。"
+   },
+   "people": "Jenn Leung",
+   "links": [
+    {
+     "url": "https://tzvetnik.online/article/camouflage-off-site-show-by-prsntprsnt-in-shui-long-wo-sai-kung-hong-kong",
+     "label": {
+      "en": "Tzvetnik: Camouflage",
+      "zh": "Tzvetnik：Camouflage"
+     }
+    },
+    {
+     "url": "https://tzvetnik.online/article/tutorial-group-project-at-bsmnt-leipzig",
+     "label": {
+      "en": "Tzvetnik: TUTORIAL",
+      "zh": "Tzvetnik：TUTORIAL"
+     }
+    },
+    {
+     "url": "https://www.artasiapacific.com/blog/herenowandthenewbabyloninterviewwithprsntprsnt/",
+     "label": {
+      "en": "ArtAsiaPacific: prsntprsnt interview",
+      "zh": "《藝術亞太》：prsntprsnt 访谈"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "2020–21 (dates not individually verified)",
+    "zh": "2020–2021 年（日期未逐一核实）"
+   }
+  },
+  {
+   "id": "showstudio-tech-change-fashion",
+   "date": "2020-09-27",
+   "who": "felstead",
+   "fmt": "panel",
+   "basis": "listing",
+   "access": "free",
+   "url": "https://www.youtube.com/watch?v=Aa9rRRAOiXY",
+   "title": {
+    "en": "SHOWstudio panel: “How Will Technology Change Fashion?”",
+    "zh": "SHOWstudio 对谈：「科技将如何改变时尚？」"
+   },
+   "summary": {
+    "en": "A SHOWstudio panel video (27 Sep 2020), “How Will Technology Change Fashion?”, with Felstead among the guests, against the pandemic shift to digital shows and virtual garments. No transcript; title only.",
+    "zh": "Nick Knight 创办的时尚影像平台 SHOWstudio 2020 年 9 月 27 日发布的线上对谈录像，题目是「科技将如何改变时尚」，Felstead 是嘉宾之一（他当时主持伦敦时装学院的时尚媒体实践与批评课程）。疫情期间时尚业被迫转向数字发布、虚拟服装和线上展示，这是讨论背景。我们没有取得字幕，只按标题列出。"
+   },
+   "people": "Daniel Felstead and others",
+   "nm": {
+    "en": "On technology and fashion's future: Felstead's earliest public recording on future media.",
+    "zh": "主题是科技与时尚的未来（虚拟服装、数字发布），是 Felstead 谈「未来媒介」最早的公开录像。"
+   }
+  },
+  {
+   "id": "felstead-phd-sehgal",
+   "date": "2018-03-01",
+   "who": "felstead",
+   "fmt": "paper",
+   "basis": "abstract",
+   "access": "free",
+   "url": "https://repository.cssd.ac.uk/id/eprint/761",
+   "title": {
+    "en": "PhD thesis: “What Can We Do With These Associations? Production, Organisation and Materiality in the Work of Tino Sehgal” (Royal Central School of Speech & Drama)",
+    "zh": "博士论文：〈我们能拿这些关联做什么？Tino Sehgal 作品中的生产、组织与物质性〉"
+   },
+   "summary": {
+    "en": "Felstead's PhD (Royal Central School of Speech & Drama, deposited 1 Mar 2018) on Tino Sehgal, whose works consist only of human actions and ‘constructed situations’, with no objects or photos. It asks how such work is produced and organised and where its materiality lies; his Lisbon bio sums it up as speculative modes of production, complex systems and the platform in participatory art.",
+    "zh": "Felstead 在伦敦皇家中央演讲与戏剧学院的博士论文（2018 年 3 月 1 日入库）。研究对象是艺术家 Tino Sehgal：他的作品只由人的动作、对话和「情境」构成，不留任何实物，不准拍照，买卖靠口头合同。论文讨论这种作品怎样被生产、组织，以及它的「物质性」到底在哪里。里斯本讲座简介把这项研究概括为探讨「推测性的生产方式、复杂系统和平台」与参与式艺术的关系。这条线索解释了他后来的思路：把元宇宙、AI 和「jankspace」都看成由人的行为和叙述维持的系统。"
+   },
+   "people": "Daniel Felstead",
+   "date_display": {
+    "en": "1 Mar 2018 (deposited)",
+    "zh": "2018 年 3 月 1 日（入库）"
+   }
+  }
+ ]
+}

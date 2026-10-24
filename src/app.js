@@ -19,6 +19,59 @@
   function intl(href, inner, cls) {
     return '<a ' + (cls ? 'class="' + cls + '" ' : "") + 'data-internal href="' + esc(href) + '">' + inner + "</a>";
   }
+  // YouTube: lite click-to-play embed. Shows the video's own thumbnail (lazy-loaded) with a play
+  // button; clicking swaps in a youtube-nocookie iframe with autoplay. The "Open on YouTube" link
+  // stays as a fallback (e.g. when the embed is blocked or the page is opened from disk).
+  function ytId(u) {
+    var m = /^https:\/\/(?:www\.|m\.)?(?:youtube\.com\/(?:watch\?(?:[^#]*&)?v=|embed\/|live\/|shorts\/)|youtu\.be\/)([\w-]{11})/.exec(u || "");
+    return m ? m[1] : null;
+  }
+  function ytStart(u) { var m = /[?&#](?:t|start)=(\d+)s?/.exec(u || ""); return m ? m[1] : ""; }
+  function yt(url, label, opt) {
+    opt = opt || {};
+    var id = ytId(url); if (!id) return "";
+    var st = ytStart(url);
+    var cap = label ? '<span class="yt-cap">' + bi(label) + '</span>' : "";
+    return '<div class="yt' + (opt.cls ? " " + opt.cls : "") + '" data-yt="' + id + '"' + (st ? ' data-start="' + st + '"' : "") + '>' +
+      '<button type="button" class="yt-cover" aria-label="Play video · 播放视频' + (label ? ": " + esc(label.en) : "") + '">' +
+        '<img loading="lazy" decoding="async" alt="" src="https://i.ytimg.com/vi/' + id + '/hqdefault.jpg"' + (opt.fallback ? ' data-fb="' + esc(opt.fallback) + '"' : "") + '>' +
+        '<span class="yt-play" aria-hidden="true"></span>' + cap + '</button>' +
+      '<a class="yt-open" href="https://www.youtube.com/watch?v=' + id + (st ? "&t=" + st + "s" : "") + '" target="_blank" rel="noopener noreferrer">' +
+        bi({ en: "Open on YouTube ↗", zh: "在 YouTube 打开 ↗" }) + '</a></div>';
+  }
+  // All YouTube videos of an entry: its own url first, then its links (deduplicated by id).
+  function ytList(url, title, links) {
+    var seen = {}, out = [];
+    var add = function (u, lab) { var id = ytId(u); if (id && !seen[id]) { seen[id] = 1; out.push({ url: u, label: lab }); } };
+    add(url, title); (links || []).forEach(function (l) { add(l.url, l.label); });
+    return out;
+  }
+  function ytRow(list, cls) {
+    if (!list.length) return "";
+    return '<div class="yt-row' + (list.length > 1 ? " multi" : "") + (cls ? " " + cls : "") + '">' +
+      list.map(function (v) { return yt(v.url, list.length > 1 || v.force ? v.label : null); }).join("") + '</div>';
+  }
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest && ev.target.closest(".yt-cover"); if (!b) return;
+    var box = b.parentNode, id = box.getAttribute("data-yt"), st = box.getAttribute("data-start");
+    // Opened straight from disk (file://) YouTube refuses to play embeds (no referrer → "configuration error"),
+    // so open the video on YouTube instead; on any http(s) host it plays inline.
+    if (location.protocol === "file:") { window.open("https://www.youtube.com/watch?v=" + id + (st ? "&t=" + st + "s" : ""), "_blank", "noopener"); return; }
+    var f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&playsinline=1" + (st ? "&start=" + st : "");
+    f.title = "YouTube video player";
+    f.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+    f.setAttribute("allowfullscreen", "");
+    f.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+    f.className = "yt-frame";
+    box.replaceChild(f, b); box.classList.add("playing");
+  });
+  // If a YouTube thumbnail fails, fall back to the bundled local copy when there is one.
+  document.addEventListener("error", function (ev) {
+    var t = ev.target;
+    if (t && t.tagName === "IMG" && t.getAttribute("data-fb")) { var fb = t.getAttribute("data-fb"); t.removeAttribute("data-fb"); t.src = fb; }
+  }, true);
+
   function feature(F) {
     var A = F.argument, S = F.structure, V = F.versions, C = F.chain;
     var cta = F.cta.map(function (c) { return ext(c.url, bi(c.label) + ' <span aria-hidden="true">↗</span>', "btn" + (c.primary ? " primary" : "")); }).join("");
@@ -111,14 +164,17 @@
         (i.internal ? intl(i.internal.href, bi(i.internal.label) + " →", "internal") : "") +
         (i.links || []).map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("") +
         '<span class="src">' + bi(i.source) + '</span>';
-      var thumb = i.thumbnail ? ext(i.url, '<img alt="" src="' + esc(i.thumbnail) + '">', "thumb") : "";
-      return '<li class="item' + ((Date.parse(D.meta.last_updated) - Date.parse(i.date)) / 864e5 <= 30 ? " fresh" : "") + '" data-types="' + esc(i.types.join(" ")) + '">' +
+      var vids = ytList(i.url, i.title, i.links);
+      var thumb = vids.length ? yt(vids[0].url, null, { cls: "thumb", fallback: ytId(i.url) === ytId(vids[0].url) ? i.thumbnail : null }) :
+        (i.thumbnail ? ext(i.url, '<img alt="" src="' + esc(i.thumbnail) + '">', "thumb") : "");
+      var moreVids = vids.length > 1 ? ytRow(vids.slice(1), "in-card") : "";
+      return '<li class="item' + ((Date.parse(D.meta.last_updated) - Date.parse(i.date)) / 864e5 <= 30 ? " fresh" : "") + '" id="i-' + esc(i.id) + '" data-types="' + esc(i.types.join(" ")) + '">' +
         '<div class="when"><time datetime="' + esc(i.date) + '">' + bi(i.date_display) + '</time></div>' +
         '<article class="card' + (thumb ? " has-thumb" : "") + '">' +
           '<div class="tags">' + tags + '</div>' +
           '<h3>' + ext(i.url, bi(i.title)) + '</h3>' +
           '<div class="sum">' + bi(i.summary, "p") + '</div>' +
-          '<div class="links">' + links + '</div>' + thumb +
+          '<div class="links">' + links + '</div>' + moreVids + thumb +
         '</article></li>';
     }).join("");
     var up = document.getElementById("updates");
@@ -142,11 +198,12 @@
     document.getElementById("video").innerHTML =
       '<div class="sec-head"><span class="num">03</span><h2>' + bi({ en: "Featured talk", zh: "精选演讲" }) + '</h2></div>' +
       '<div class="video-grid">' +
-        ext(v.url, '<img alt="On Neural Media, Long Now talk thumbnail" src="' + esc(v.thumbnail) + '"><span class="play" aria-hidden="true"></span>' +
-          '<span class="cap">' + bi({ en: "Watch on YouTube", zh: "在 YouTube 观看" }) + '</span>', "player") +
+        (ytId(v.url) ? yt(v.url, { en: "Play here", zh: "在本页播放" }, { cls: "player", fallback: v.thumbnail }) :
+          ext(v.url, '<img alt="" src="' + esc(v.thumbnail) + '"><span class="play" aria-hidden="true"></span>', "player")) +
         '<div class="video-info"><h3>' + bi(v.title) + '</h3><div class="meta">' + bi(v.meta) + '</div>' +
           '<ol class="take">' + v.takeaways.map(function (t) { return '<li>' + bi(t) + '</li>'; }).join("") + '</ol>' +
           '<div class="links">' + v.more.map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("") + '</div>' +
+          ytRow(ytList(null, null, v.more).filter(function (x) { return ytId(x.url) !== ytId(v.url); }).map(function (x) { return { url: x.url, label: x.label, force: 1 }; }), "in-card") +
         '</div></div>';
 
     // Reading list
@@ -175,7 +232,9 @@
           return '<li class="who">' +
             '<div class="who-marks">' + en.marks.map(mk).join("") + '</div>' +
             '<h4>' + ext(en.url, nameHtml(en.name)) + '</h4>' +
-            '<div class="who-line">' + bi(en.line, "p") + '</div></li>';
+            '<div class="who-line">' + bi(en.line, "p") + '</div>' +
+            (en.internal ? '<div class="links">' + intl(en.internal.href, bi(en.internal.label) + " →", "internal") + '</div>' : "") +
+            ytRow(ytList(en.url, en.name, en.links), "in-who") + '</li>';
         }).join("");
         return '<div class="land-group g-' + esc(g.key) + '" id="g-' + esc(g.key) + '">' +
           '<div class="land-head"><span class="roman">' + ["I", "II", "III"][gi] + '</span><h3>' + bi(g.title) + '</h3></div>' +
@@ -234,10 +293,19 @@
     }
 
 
-    // New Models / Lil Internet / Caroline Busta page
-    var N = D.newmodels;
-    if (N && document.getElementById("newmodels")) {
-      var nmTag = function (cls, o) { return '<span class="ntag ' + cls + '">' + bi(o) + '</span>'; };
+    // Archive pages (New Models; Felstead & Leung): overview, ideas, K link, full archive with filters
+    if (D.newmodels && document.getElementById("newmodels")) archive(D.newmodels, "newmodels", {
+      num: "07", pre: "nm",
+      about: { en: "Who they are", zh: "他们是谁" }, evo: { en: "How the platform evolved", zh: "平台的演变" },
+      all: { en: "Every episode & post, newest first", zh: "全部节目与文章（从新到旧）" }, fmt: { en: "Filter by series", zh: "按栏目筛选" } });
+    if (D.felsteadleung && document.getElementById("felsteadleung")) archive(D.felsteadleung, "felsteadleung", {
+      num: "08", pre: "fl",
+      about: { en: "Who they are", zh: "他们是谁" }, evo: { en: "How their work developed", zh: "工作的发展脉络" },
+      all: { en: "Every work, talk & text, newest first", zh: "全部作品、演讲与文字（从新到旧）" }, fmt: { en: "Filter by format", zh: "按形式筛选" } });
+
+    function archive(N, hostId, o) {
+      var P = o.pre;
+      var nmTag = function (cls, x) { return '<span class="ntag ' + cls + '">' + bi(x) + '</span>'; };
       var badge = '<span class="nm-badge">' + bi({ en: "Neural media / future media", zh: "神经媒体 / 未来新媒体" }) + '</span>';
       var people = N.people.map(function (pp) {
         return '<article class="nm-person"><h4>' + esc(pp.name) + '</h4><div class="nm-role">' + bi(pp.role) + '</div>' +
@@ -258,11 +326,15 @@
             (r.url ? '<div class="links">' + ext(r.url, bi({ en: "Source ↗", zh: "来源 ↗" })) + (r.internal ? intl(r.internal, bi({ en: "Entry below", zh: "见下方条目" }) + " ↓", "internal") : "") + '</div>' : "") + '</li>';
         }).join("");
       };
-      var E = N.entries;
+      var E = N.entries, W = N.who || null;
       var nFlag = E.filter(function (e) { return e.nm; }).length;
       var fmtCount = {}; E.forEach(function (e) { fmtCount[e.fmt] = (fmtCount[e.fmt] || 0) + 1; });
+      var whoCount = {}; E.forEach(function (e) { if (e.who) whoCount[e.who] = (whoCount[e.who] || 0) + 1; });
       var chips = '<button class="chip" type="button" data-f="all" aria-pressed="true">' + bi({ en: "All", zh: "全部" }) + '<b>' + E.length + '</b></button>' +
-        '<button class="chip chip-nm" type="button" data-f="nm" aria-pressed="false">' + bi({ en: "Neural media / future media only", zh: "只看神经媒体 / 未来新媒体" }) + '<b>' + nFlag + '</b></button>';
+        '<button class="chip chip-nm" type="button" data-f="nm" aria-pressed="false">' + bi({ en: "Neural media / future media only", zh: "只看神经媒体 / 未来新媒体" }) + '<b>' + nFlag + '</b></button>' +
+        (W ? Object.keys(W).filter(function (k) { return whoCount[k]; }).map(function (k) {
+          return '<button class="chip chip-who" type="button" data-f="w:' + k + '" aria-pressed="false">' + bi(W[k]) + '<b>' + whoCount[k] + '</b></button>';
+        }).join("") : "");
       var fchips = Object.keys(N.formats).filter(function (k) { return fmtCount[k]; }).map(function (k) {
         return '<button class="chip" type="button" data-f="f:' + k + '" aria-pressed="false">' + bi(N.formats[k]) + '<b>' + fmtCount[k] + '</b></button>';
       }).join("");
@@ -274,45 +346,49 @@
           lastY = y;
         }
         var dd = e.date_display || fmtStamp(e.date);
-        var meta = nmTag("f-" + esc(e.fmt), N.formats[e.fmt]) + nmTag("a-" + esc(e.access), N.access[e.access]) + nmTag("b-" + esc(e.basis), N.basis[e.basis]) +
+        var meta = (W && e.who ? nmTag("w-" + esc(e.who), W[e.who]) : "") + nmTag("f-" + esc(e.fmt), N.formats[e.fmt]) + nmTag("a-" + esc(e.access), N.access[e.access]) + nmTag("b-" + esc(e.basis), N.basis[e.basis]) +
           (e.mins ? '<span class="ntag mins">' + esc(e.mins) + ' min</span>' : "") + (e.nm ? badge : "");
-        return yr + '<li class="nitem nm-entry' + (e.nm ? " flag" : "") + '" id="e-' + esc(e.id) + '" data-year="' + y + '" data-fmt="' + esc(e.fmt) + '" data-nm="' + (e.nm ? "1" : "0") + '">' +
+        return yr + '<li class="nitem nm-entry' + (e.nm ? " flag" : "") + '" id="e-' + esc(e.id) + '" data-year="' + y + '" data-fmt="' + esc(e.fmt) + '" data-who="' + esc(e.who || "") + '" data-nm="' + (e.nm ? "1" : "0") + '">' +
           '<div class="ndate"><time datetime="' + esc(e.date) + '">' + bi(dd) + '</time></div>' +
           '<div class="nbody"><div class="who-marks">' + meta + '</div>' +
           '<h4>' + ext(e.url, bi(e.title)) + '</h4>' +
           (e.people ? '<div class="nm-people">' + (/; hosts$/.test(e.people) ? bi({ en: e.people.replace(/; hosts$/, " · with the hosts"), zh: e.people.replace(/; hosts$/, " · 与主持人") }) : esc(e.people)) + '</div>' : "") +
           '<div class="who-line nm-sum">' + bi(e.summary, "p") + '</div>' +
           (e.nm ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "On neural / future media", zh: "关于神经媒体 / 未来新媒体" }) + '</span>' + bi(e.nm, "p") + '</div>' : "") +
+          ytRow(ytList(e.url, e.title, e.links)) +
           '<div class="links">' + ext(e.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) +
-            (e.links || []).map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("") + '</div>' +
+            (e.links || []).map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("") +
+            (e.internal || []).map(function (l) { return intl(l.href, bi(l.label) + " →", "internal"); }).join("") + '</div>' +
           '</div></li>';
       }).join("");
       var R = N.relation;
-      var host = document.getElementById("newmodels");
+      var host = document.getElementById(hostId);
       host.innerHTML =
-        '<div class="sec-head"><span class="num">07</span><h2>' + bi(N.title) + '</h2></div>' +
+        '<div class="sec-head"><span class="num">' + o.num + '</span><h2>' + bi(N.title) + '</h2></div>' +
         '<div class="lead nm-lead">' + bi(N.lead, "p") + '</div>' + stamp + '<div style="height:40px"></div>' +
-        '<div class="land-group" id="nm-about"><div class="land-head"><span class="roman">I</span><h3>' + bi({ en: "Who they are", zh: "他们是谁" }) + '</h3></div>' +
+        '<div class="land-group" id="' + P + '-about"><div class="land-head"><span class="roman">I</span><h3>' + bi(o.about) + '</h3></div>' +
           '<div class="nm-people-grid">' + people + '</div>' +
-          '<h5 class="nm-sub">' + bi({ en: "How the platform evolved", zh: "平台的演变" }) + '</h5><ol class="nm-evo">' + evo + '</ol></div>' +
-        '<div class="land-group" id="nm-ideas"><div class="land-head"><span class="roman">II</span><h3>' + bi({ en: "Core recurring ideas, in plain language", zh: "反复出现的核心观点（白话版）" }) + '</h3></div>' +
+          '<h5 class="nm-sub">' + bi(o.evo) + '</h5><ol class="nm-evo">' + evo + '</ol></div>' +
+        '<div class="land-group" id="' + P + '-ideas"><div class="land-head"><span class="roman">II</span><h3>' + bi({ en: "Core recurring ideas, in plain language", zh: "反复出现的核心观点（白话版）" }) + '</h3></div>' +
           '<div class="nm-ideas">' + ideas + '</div></div>' +
-        '<div class="land-group" id="nm-k"><div class="land-head"><span class="roman">III</span><h3>' + bi({ en: "Relationship to K & neural media", zh: "与 K 及「神经媒体」的关系" }) + '</h3></div>' +
+        '<div class="land-group" id="' + P + '-k"><div class="land-head"><span class="roman">III</span><h3>' + bi({ en: "Relationship to K & neural media", zh: "与 K 及「神经媒体」的关系" }) + '</h3></div>' +
           '<div class="nm-relsum">' + bi(R.summary, "p") + '</div>' +
           '<div class="nm-rel"><section><h5 class="nm-sub">' + bi({ en: "Direct links (sourced)", zh: "直接联系（有出处）" }) + '</h5><ul class="nm-rlist">' + rel(R.direct) + '</ul></section>' +
           '<section><h5 class="nm-sub">' + bi({ en: "Thematic overlap & differences", zh: "主题重叠与差异" }) + '</h5><ul class="nm-rlist">' + rel(R.thematic) + '</ul></section></div></div>' +
-        '<div class="land-group" id="nm-archive"><div class="land-head"><span class="roman">IV</span><h3>' + bi({ en: "Every episode & post, newest first", zh: "全部节目与文章（从新到旧）" }) + '</h3></div>' +
+        '<div class="land-group" id="' + P + '-archive"><div class="land-head"><span class="roman">IV</span><h3>' + bi(o.all) + '</h3></div>' +
           '<div class="feed-note">' + bi(N.note, "p") + '</div>' +
           '<div class="legend nm-legend">' + Object.keys(N.basis).map(function (k) { return nmTag("b-" + k, N.basis[k]); }).join("") + '</div>' +
           '<div class="filters nm-filters" role="group" aria-label="Filter · 筛选">' + chips + '</div>' +
-          '<details class="nm-fmt"><summary>' + bi({ en: "Filter by series", zh: "按栏目筛选" }) + '</summary><div class="filters">' + fchips + '</div></details>' +
+          '<details class="nm-fmt"><summary>' + bi(o.fmt) + '</summary><div class="filters">' + fchips + '</div></details>' +
           '<div class="nm-shown" aria-live="polite"></div>' +
           '<ol class="bnews nm-list">' + list + '</ol></div>';
       var shown = host.querySelector(".nm-shown");
       var applyF = function (f) {
         var n = 0;
         host.querySelectorAll(".nm-entry").forEach(function (li) {
-          var ok = f === "all" || (f === "nm" && li.getAttribute("data-nm") === "1") || (f.indexOf("f:") === 0 && li.getAttribute("data-fmt") === f.slice(2));
+          var ok = f === "all" || (f === "nm" && li.getAttribute("data-nm") === "1") ||
+            (f.indexOf("f:") === 0 && li.getAttribute("data-fmt") === f.slice(2)) ||
+            (f.indexOf("w:") === 0 && li.getAttribute("data-who") === f.slice(2));
           li.hidden = !ok; if (ok) n++;
         });
         host.querySelectorAll(".nm-year").forEach(function (yh) {
@@ -328,8 +404,8 @@
         var b = ev.target.closest(".nm-filters .chip, .nm-fmt .chip"); if (!b) return;
         applyF(b.getAttribute("data-f"));
       });
-      // Year links in the sticky bar: if a filter hides that year, reset to "All" first.
-      document.querySelectorAll('.subnav a[href^="#y"]').forEach(function (a) {
+      // Year links in the sticky bar (and in-page links to entries): if a filter hides the target, reset to "All" first.
+      document.querySelectorAll('.subnav a[href^="#y"], a[href^="#e-"]').forEach(function (a) {
         a.addEventListener("click", function () {
           var t = document.getElementById(a.getAttribute("href").slice(1));
           if (t && t.hidden) applyF("all");
@@ -401,7 +477,16 @@
 
   // On narrow screens the page nav scrolls sideways: keep the current page's tab in view.
   var curNav = document.querySelector('.nav a[aria-current="page"]');
-  if (curNav) { var navEl = curNav.parentNode; if (navEl.scrollWidth > navEl.clientWidth + 1) navEl.scrollLeft = Math.max(0, curNav.offsetLeft - navEl.offsetLeft - 12); }
+  function navToCur() {
+    if (!curNav) return;
+    var navEl = curNav.closest(".nav") || curNav.parentNode;
+    if (navEl.scrollWidth <= navEl.clientWidth + 1) return;
+    if (!curNav.nextElementSibling) { navEl.scrollLeft = navEl.scrollWidth; return; }
+    var nr = navEl.getBoundingClientRect(), cr = curNav.getBoundingClientRect();
+    if (cr.right > nr.right - 4 || cr.left < nr.left) navEl.scrollLeft += (cr.right - nr.right) + 16;
+  }
+  navToCur(); window.addEventListener("load", navToCur);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(navToCur);
 
   if (location.hash) { var tgt = document.getElementById(location.hash.slice(1)); if (tgt) setTimeout(function () { tgt.scrollIntoView(); spy(); }, 0); }
 })();

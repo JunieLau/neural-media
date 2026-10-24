@@ -1018,7 +1018,16 @@
    "nm": {
     "en": "Opens with a clip from an LCF summit on fashion and neural media (BUFF, 31 Jan 2025); asks whether the commons in neural media is a kind of embedding. Leung calls jankspace 'a high-dimensional space not meant for human understanding'.",
     "zh": "开场播放的定义来自一场以「神经媒体」为名的时尚峰会（BUFF: A Summit on Fashion, Neural Media, & Our Bodies，2025 年 1 月 31 日）。节目讨论神经媒体中的「公地」会不会是一种 embedding；Leung 把 jankspace 描述为「一个不为人类理解而设的高维空间」。"
-   }
+   },
+   "internal": [
+    {
+     "href": "felstead-leung.html#e-nm91-jankspace",
+     "label": {
+      "en": "Everything by Felstead & Leung",
+      "zh": "Felstead 与 Leung 的全部作品"
+     }
+    }
+   ]
   },
   {
    "id": "greenroom-kan-sperling",

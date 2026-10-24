@@ -470,3 +470,43 @@ body.lang-both .nm-note p.t.zh{color:var(--text)}
 
 .nm-entry[hidden],.nm-year[hidden]{display:none!important}
 .subnav .sublabel{white-space:nowrap;flex-shrink:0}
+
+/* YouTube lite embed: thumbnail cover, click to play inline (youtube-nocookie), fallback link */
+.yt{display:flex;flex-direction:column;gap:6px;min-width:0}
+.yt-cover{position:relative;display:block;width:100%;aspect-ratio:16/9;padding:0;border:1px solid var(--line2);border-radius:10px;overflow:hidden;background:#000;cursor:pointer;color:#fff;font:inherit;text-align:left}
+.yt-cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s,filter .3s;filter:saturate(.92)}
+.yt-cover:hover img,.yt-cover:focus-visible img{transform:scale(1.03);filter:saturate(1.05)}
+.yt-cover:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:40px;border-radius:12px;background:rgba(15,15,15,.82);display:grid;place-items:center;box-shadow:0 6px 24px rgba(0,0,0,.45);transition:background .2s}
+.yt-play::before{content:"";border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+.yt-cover:hover .yt-play,.yt-cover:focus-visible .yt-play{background:#f00}
+.yt-cap{position:absolute;left:0;right:0;bottom:0;padding:18px 10px 8px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:12px;line-height:1.35;color:#eee}
+.yt-cap .t{display:block}body.lang-both .yt-cap .t.zh{color:#bbb}
+.yt-frame{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:10px;background:#000}
+.yt-open{font-size:12px;color:var(--muted);text-decoration:none;align-self:flex-start}
+.yt-open:hover{color:var(--accent);text-decoration:underline}
+.yt-open .t{display:inline}body.lang-both .yt-open .t.zh::before{content:" · "}
+.yt-row{display:grid;grid-template-columns:minmax(0,520px);gap:14px;margin:4px 0 2px}
+.yt-row.multi{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
+.yt-row.in-card{margin:0}.yt-row.in-who{margin-top:10px;grid-template-columns:minmax(0,360px)}
+.card .yt.thumb{border:0;border-radius:0;overflow:visible}
+.card .yt.thumb::after{content:none}
+.yt.player{border:0;border-radius:0;overflow:visible;display:flex}
+.yt.player .yt-cover{border-radius:var(--radius)}
+.yt.player .yt-play{width:76px;height:54px;border-radius:16px}
+.yt.player .yt-play::before{border-left-width:22px;border-top-width:13px;border-bottom-width:13px}
+.yt.player .yt-cap{font-size:13px;padding:16px}
+.yt.player .yt-cap .t{display:inline}body.lang-both .yt.player .yt-cap .t.zh::before{content:" · "}
+.yt.player .yt-frame{border-radius:var(--radius)}
+.video-info .yt-row{margin-top:18px}
+@media (max-width:640px){.yt-row.multi{grid-template-columns:1fr 1fr;gap:10px}.yt-cap{font-size:11px;padding:14px 8px 6px}}
+/* Person tags on the Felstead & Leung page */
+.ntag.w-felstead{color:#ffb38a;background:rgba(255,179,138,.1)}
+.ntag.w-leung{color:#8fd8ff;background:rgba(143,216,255,.1)}
+.ntag.w-joint{color:#e3a8ff;background:rgba(227,168,255,.1)}
+.ntag.b-full{color:#8fffd0;background:rgba(143,255,208,.08)}
+.ntag.b-abstract{color:#c8ff4d;background:rgba(200,255,77,.07)}
+.ntag.b-description{color:#ffd27a;background:rgba(255,210,122,.07)}
+.chip-who{border-style:dashed}
+.yt-row .yt-cap .t{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+body.lang-both .yt-row .yt-cap .t{-webkit-line-clamp:1}
