@@ -59,6 +59,49 @@
       '<span class="film-play" aria-hidden="true"></span>' +
       (watchLabel ? '<span class="film-watch">' + bi(watchLabel) + '</span>' : "") + '</a>';
   }
+  // Newest items for the "Latest updates" block near the top of each page.
+  // Prefer the last `days` days; if fewer than `minN`, pad with the next-newest up to `minN` (cap `maxN`).
+  function pickLatest(entries, asOfIso, days, minN, maxN) {
+    days = days || 30; minN = minN || 6; maxN = maxN || 10;
+    var asOf = Date.parse(asOfIso || "") || Date.now();
+    var cut = asOf - days * 864e5;
+    var sorted = (entries || []).slice().sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+    var recent = sorted.filter(function (e) { return Date.parse(e.date) >= cut; });
+    var list = recent.length >= minN ? recent : sorted.slice(0, Math.max(minN, recent.length));
+    return list.slice(0, maxN);
+  }
+  function latestSection(opts) {
+    // opts: { id, items:[{date,date_display,title,url,summary,href,meta,fresh}], stamp, note, empty }
+    var items = opts.items || [];
+    if (!items.length && opts.empty) {
+      return '<div class="land-group latest-block" id="' + esc(opts.id) + '">' +
+        '<div class="sec-head latest-head"><span class="num">★</span><h2>' + bi({ en: "Latest updates", zh: "最新动态" }) + '</h2></div>' +
+        (opts.stamp || "") + '<div class="feed-note">' + bi(opts.empty, "p") + '</div></div>';
+    }
+    if (!items.length) return "";
+    var rows = items.map(function (it) {
+      var dd = it.date_display || fmtStamp(it.date);
+      var title = it.href
+        ? intl(it.href, bi(it.title), "internal latest-title")
+        : ext(it.url, bi(it.title));
+      return '<li class="latest-item' + (it.fresh ? " fresh" : "") + '">' +
+        '<div class="ndate"><time datetime="' + esc(it.date) + '">' + bi(dd) + '</time></div>' +
+        '<div class="nbody">' +
+          (it.meta ? '<div class="who-marks">' + it.meta + '</div>' : "") +
+          '<h4>' + title + '</h4>' +
+          (it.summary ? '<div class="who-line nm-sum">' + bi(it.summary, "p") + '</div>' : "") +
+          '<div class="links">' +
+            (it.href ? intl(it.href, bi({ en: "On this page ↓", zh: "本页详情 ↓" }), "internal") : "") +
+            (it.url ? ext(it.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) : "") +
+          '</div></div></li>';
+    }).join("");
+    return '<div class="land-group latest-block" id="' + esc(opts.id) + '">' +
+      '<div class="sec-head latest-head"><span class="num">★</span><h2>' + bi({ en: "Latest updates", zh: "最新动态" }) + '</h2></div>' +
+      (opts.stamp || "") +
+      (opts.note ? '<div class="feed-note">' + bi(opts.note, "p") + '</div>' : "") +
+      '<ol class="bnews latest-list">' + rows + '</ol></div>';
+  }
+
   document.addEventListener("click", function (ev) {
     var b = ev.target.closest && ev.target.closest(".yt-cover"); if (!b) return;
     var box = b.parentNode, id = box.getAttribute("data-yt"), st = box.getAttribute("data-start");
@@ -249,9 +292,18 @@
           '<ul class="who-list">' + rows + '</ul>' +
           (g.note ? '<div class="land-note">' + bi(g.note, "p") + '</div>' : "") + '</div>';
       }).join("");
+      // Latest: slim feed prepared at build time (recent context / cross-linked timeline items).
+      var asOf = D.meta && D.meta.last_updated;
+      var whoLatest = (L.latest || []).map(function (i) {
+        var fresh = (Date.parse(asOf) - Date.parse(i.date)) / 864e5 <= 30;
+        var meta = (i.types || []).map(function (t) { return '<span class="tag ' + esc(t) + '">' + bi((D.types && D.types[t]) || { en: t, zh: t }) + '</span>'; }).join("");
+        var href = (i.internal && i.internal.href) ? i.internal.href : (i.id ? "index.html#i-" + i.id : null);
+        return { date: i.date, date_display: i.date_display, title: i.title, url: i.url, summary: i.summary, meta: meta, fresh: fresh, href: href };
+      });
       document.getElementById("landscape").innerHTML =
         '<div class="sec-head"><span class="num">05</span><h2>' + bi(L.title) + '</h2></div>' +
-        '<div class="lead land-lead">' + bi(L.lead, "p") + '</div>' +
+        '<div class="lead land-lead">' + bi(L.lead, "p") + '</div>' + stamp +
+        latestSection({ id: "who-latest", items: whoLatest, stamp: "", note: { en: "Recent site updates about other people, institutions and adjacent work (last ~30 days, or the newest six). The full map of who else is below.", zh: "本站近期关于其他人、机构与相邻工作的更新（约最近 30 天；不足则取最新六条）。下方是完整的「还有谁」地图。" } }) +
         '<div class="legend">' + legend + '</div>' + groups;
     }
 
@@ -285,10 +337,17 @@
           '<div class="nbody"><div class="who-marks">' + n.marks.map(bm).join("") + '</div>' +
           '<h4>' + ext(n.url, bi(n.title)) + '</h4>' + '<div class="who-line">' + bi(n.line, "p") + '</div></div></li>';
       }).join("");
+      var asOfB = D.meta && D.meta.last_updated;
+      var bciLatest = pickLatest(news, asOfB, 30, 6, 8).map(function (n) {
+        return { date: n.date, date_display: n.date_display, title: n.title, url: n.url, summary: n.line,
+          meta: n.marks.map(bm).join(""), fresh: (Date.parse(asOfB) - Date.parse(n.date)) / 864e5 <= 30,
+          href: "#news" };
+      });
       document.getElementById("bci").innerHTML =
         '<div class="sec-head"><span class="num">06</span><h2>' + bi(B.title) + '</h2></div>' +
         '<div class="bci-strap" aria-hidden="true"><span class="s-brain">BRAIN · 大脑</span><span class="s-wave"></span><span class="s-net">NET · 网络</span></div>' +
-        '<div class="lead bci-lead">' + bi(B.lead, "p") + '</div>' +
+        '<div class="lead bci-lead">' + bi(B.lead, "p") + '</div>' + stamp +
+        latestSection({ id: "bci-latest", items: bciLatest, note: { en: "Newest BCI × AI news (last ~30 days, or the newest six). Full news list further down.", zh: "最新的脑机接口 × AI 新闻（约最近 30 天；不足则取最新六条）。完整新闻列表在页面更下方。" } }) +
         (B.feature ? feature(B.feature) : "") +
         '<div class="legend">' + Object.keys(B.markers).map(bm).join("") + '</div>' +
         '<div class="land-group" id="primer"><div class="land-head"><span class="roman">I</span><h3>' + bi(B.primer.title) + '</h3></div>' +
@@ -404,10 +463,19 @@
             '<div class="janky-films">' + films + '</div></div>';
       }
       var archRoman = S ? "V" : "IV";
+      var asOfA = (typeof D !== "undefined" && D.meta && D.meta.last_updated) || (E[0] && E[0].date);
+      var latestItems = pickLatest(E, asOfA, 30, 6, 8).map(function (e) {
+        var dd = e.date_display || fmtStamp(e.date);
+        var meta = (W && e.who ? nmTag("w-" + esc(e.who), W[e.who]) : "") + nmTag("f-" + esc(e.fmt), N.formats[e.fmt]) +
+          (e.mins ? '<span class="ntag mins">' + esc(e.mins) + ' min</span>' : "") + (e.nm ? badge : "");
+        return { date: e.date, date_display: dd, title: e.title, url: e.url, summary: e.summary, meta: meta,
+          href: "#e-" + e.id, fresh: (Date.parse(asOfA) - Date.parse(e.date)) / 864e5 <= 30 };
+      });
       var host = document.getElementById(hostId);
       host.innerHTML =
         '<div class="sec-head"><span class="num">' + o.num + '</span><h2>' + bi(N.title) + '</h2></div>' +
-        '<div class="lead nm-lead">' + bi(N.lead, "p") + '</div>' + stamp + '<div style="height:40px"></div>' +
+        '<div class="lead nm-lead">' + bi(N.lead, "p") + '</div>' + stamp + '<div style="height:24px"></div>' +
+        latestSection({ id: P + "-latest", items: latestItems, note: o.latestNote || { en: "Newest entries (last ~30 days, or the newest six). Full archive with filters further down.", zh: "最新条目（约最近 30 天；不足则取最新六条）。带筛选的完整档案在更下方。" } }) +
         '<div class="land-group" id="' + P + '-about"><div class="land-head"><span class="roman">I</span><h3>' + bi(o.about) + '</h3></div>' +
           '<div class="nm-people-grid">' + people + '</div>' +
           '<h5 class="nm-sub">' + bi(o.evo) + '</h5><ol class="nm-evo">' + evo + '</ol></div>' +

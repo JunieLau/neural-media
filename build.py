@@ -232,10 +232,10 @@ def nm_years(N):
 
 
 SUBNAV = {  # in-page section bar (sticky under the header) for each page
-    "home": [("concept", "Concept", "概念"), ("updates", "Timeline", "时间线"), ("video", "Video", "视频"), ("reading", "Reading", "阅读")],
-    "who-else": [("g-people", "Scholars & artists", "学者与艺术家"), ("g-institutions", "Institutions", "机构与项目"),
+    "home": [("concept", "Concept", "概念"), ("updates", "Latest", "最新"), ("video", "Video", "视频"), ("reading", "Reading", "阅读")],
+    "who-else": [("who-latest", "Latest", "最新"), ("g-people", "Scholars & artists", "学者与艺术家"), ("g-institutions", "Institutions", "机构与项目"),
                  ("g-meanings", "Different meanings", "同名异义")],
-    "bci": [("phase-lock", "Phase Lock", "《Phase Lock》专题"), ("primer", "Primer", "入门"), ("theory", "Theory", "理论"),
+    "bci": [("bci-latest", "Latest", "最新"), ("phase-lock", "Phase Lock", "《Phase Lock》专题"), ("primer", "Primer", "入门"), ("theory", "Theory", "理论"),
             ("news", "News", "新闻")],
     # "new-models": filled in main(): overview sections + one link per year of the archive
 }
@@ -375,16 +375,41 @@ def main():
     validate(d)
     validate_nm(d["newmodels"])
     validate_nm(d["felsteadleung"], "felstead-leung")
-    SUBNAV["new-models"] = ([("nm-about", "Who", "是谁"), ("nm-ideas", "Ideas", "核心观点"), ("nm-k", "K & neural media", "与 K 的关系"),
+    # Slim "latest" feed for who-else (no thumbnails): recent context / cross-linked items.
+    def _slim_latest(items, last_updated, days=30, min_n=6, max_n=8):
+        import datetime as _dt
+        asof = _dt.date.fromisoformat(last_updated)
+        cut = (asof - _dt.timedelta(days=days)).isoformat()
+        def score(it):
+            types = it.get("types") or []
+            href = (it.get("internal") or {}).get("href") or ""
+            return ("context" in types) or any(k in href for k in ("who-else", "felstead", "new-models", "bci"))
+        pool = [i for i in items if score(i)] or list(items)
+        pool = sorted(pool, key=lambda i: i["date"], reverse=True)
+        recent = [i for i in pool if i["date"] >= cut]
+        chosen = recent if len(recent) >= min_n else pool[:max(min_n, len(recent))]
+        out = []
+        for i in chosen[:max_n]:
+            out.append({
+                "id": i["id"], "date": i["date"], "date_display": i["date_display"],
+                "title": i["title"], "summary": i["summary"], "url": i["url"],
+                "types": i.get("types", []),
+                "internal": i.get("internal"),
+            })
+        return out
+    d["landscape"]["latest"] = _slim_latest(d["items"], d["meta"]["last_updated"])
+    SUBNAV["new-models"] = ([("nm-latest", "Latest", "最新"), ("nm-about", "Who", "是谁"), ("nm-ideas", "Ideas", "核心观点"), ("nm-k", "K & neural media", "与 K 的关系"),
                              ("nm-archive", "Archive", "全部节目")]
                             + [(f"y{y}", y, y) for y in nm_years(d["newmodels"])])
-    SUBNAV["felstead-leung"] = ([("fl-about", "Who", "是谁"), ("fl-ideas", "Ideas", "核心观点"), ("fl-k", "K & neural media", "与 K 的关系"),
+    SUBNAV["felstead-leung"] = ([("fl-latest", "Latest", "最新"), ("fl-about", "Who", "是谁"), ("fl-ideas", "Ideas", "核心观点"), ("fl-k", "K & neural media", "与 K 的关系"),
                                  ("fl-janky", "I'm So Janky", "影像随笔"),
                                  ("fl-archive", "Archive", "全部作品")]
                                 + [(f"y{y}", y, y) for y in nm_years(d["felsteadleung"])])
     validate_pages(d)
     keys = [g["key"] for g in d.get("landscape", {}).get("groups", [])]
     for a, _, _ in SUBNAV["who-else"]:
+        if not a.startswith("g-"):
+            continue
         if a[2:] not in keys:
             sys.exit(f"Data errors:\n  who-else in-page bar points to missing landscape group '{a[2:]}'")
     d["items"].sort(key=lambda i: i["date"], reverse=True)

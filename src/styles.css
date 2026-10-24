@@ -541,3 +541,16 @@ body.lang-both .yt-row .yt-cap .t{-webkit-line-clamp:1}
   .film-cover.hero .film-play{width:48px;height:48px;margin:-24px 0 0 -24px}
   .film-cover.hero .film-play::before{left:18px;top:14px;border-width:10px 0 10px 16px}
 }
+
+/* Latest updates block (near top of every page) */
+.latest-block{margin:8px 0 36px;padding:18px 18px 8px;border:1px solid rgba(182,255,59,.22);border-radius:14px;background:rgba(182,255,59,.04)}
+.latest-head{margin-bottom:6px}
+.latest-head .num{color:var(--accent,#b6ff3b)}
+.latest-block .stamp{margin:4px 0 12px}
+.latest-block .feed-note{margin:0 0 14px;font-size:13.5px;color:#9a9a9a}
+.latest-list{margin:0;padding:0}
+.latest-item{padding-top:4px;padding-bottom:14px}
+.latest-item.fresh .ndate time{color:var(--accent,#b6ff3b)}
+.latest-title{text-decoration:none}
+.latest-title:hover{color:var(--accent,#b6ff3b)}
+@media (max-width:640px){.latest-block{padding:14px 12px 4px;margin-bottom:28px}}
