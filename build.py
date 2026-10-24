@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Build the self-contained site: data/neural-media.json + src/* -> three pages
+"""Build the self-contained site: data/neural-media.json + data/new-models.json + src/* -> four pages
 
 Pages: index.html (identical copy: Neural-Media.html) = hero, concept, timeline, video, reading;
        who-else.html = landscape (who else works on neural media);
-       bci.html = BCI x Neural Media, with the Phase Lock feature chapter.
+       bci.html = BCI x Neural Media, with the Phase Lock feature chapter;
+       new-models.html = New Models / Lil Internet / Caroline Busta: overview, ideas, K link, full archive.
 
 Usage:  python3 build.py            (stdlib only)
         python3 build.py --today    (also set meta.last_updated to today's date, UTC+8)
@@ -15,6 +16,7 @@ import base64, datetime, json, mimetypes, pathlib, sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 DATA = HERE / "data" / "neural-media.json"
+NMDATA = HERE / "data" / "new-models.json"
 TZ = datetime.timezone(datetime.timedelta(hours=8))
 REQUIRED = ("id", "date", "types", "date_display", "title", "summary", "url", "source")
 
@@ -118,12 +120,87 @@ def validate(d):
         sys.exit("Data errors:\n  " + "\n  ".join(errs))
 
 
+def validate_nm(N):
+    """Checks for the New Models page data (data/new-models.json)."""
+    errs = []
+    def bil(o, w):
+        if not (isinstance(o, dict) and str(o.get("en", "")).strip() and str(o.get("zh", "")).strip()):
+            errs.append(f"new-models {w}: needs both en and zh")
+    def https(u, w):
+        if not str(u or "").startswith("https://"):
+            errs.append(f"new-models {w}: url must be https")
+    for k in ("title", "lead", "note"):
+        bil(N.get(k), k)
+    for n, pp in enumerate(N.get("people", [])):
+        bil(pp.get("role"), f"person {n} role"); bil(pp.get("text"), f"person {n} text")
+        for l in pp.get("links", []):
+            https(l.get("url"), f"person {n} link"); bil(l.get("label"), f"person {n} link label")
+    for n, ev in enumerate(N.get("evolution", [])):
+        bil(ev.get("text"), f"evolution {n}")
+    for n, idea in enumerate(N.get("ideas", [])):
+        bil(idea.get("term"), f"idea {n} term"); bil(idea.get("text"), f"idea {n} text")
+    R = N.get("relation", {})
+    bil(R.get("summary"), "relation.summary")
+    for part in ("direct", "thematic"):
+        if not R.get(part):
+            errs.append(f"new-models relation.{part} is empty")
+        for n, r in enumerate(R.get(part, [])):
+            bil(r.get("text"), f"relation {part} {n}")
+            if "url" in r:
+                https(r["url"], f"relation {part} {n}")
+            if "when" in r:
+                bil(r["when"], f"relation {part} {n} when")
+    for grp in ("formats", "basis", "access"):
+        for k, v in N.get(grp, {}).items():
+            bil(v, f"{grp}.{k}")
+    ids, prev = set(), None
+    for n, e in enumerate(N.get("entries", [])):
+        w = f"entry {e.get('id', n)}"
+        for k in ("id", "date", "fmt", "basis", "access", "title", "summary", "url"):
+            if k not in e:
+                errs.append(f"new-models {w}: missing '{k}'")
+        bil(e.get("title"), f"{w} title"); bil(e.get("summary"), f"{w} summary")
+        if "date_display" in e:
+            bil(e["date_display"], f"{w} date_display")
+        if e.get("nm") is not None:
+            bil(e["nm"], f"{w} neural-media note")
+        if e.get("fmt") not in N.get("formats", {}):
+            errs.append(f"new-models {w}: unknown format '{e.get('fmt')}'")
+        if e.get("basis") not in N.get("basis", {}):
+            errs.append(f"new-models {w}: unknown basis '{e.get('basis')}'")
+        if e.get("access") not in N.get("access", {}):
+            errs.append(f"new-models {w}: unknown access '{e.get('access')}'")
+        https(e.get("url"), w)
+        for l in e.get("links", []):
+            https(l.get("url"), f"{w} link"); bil(l.get("label"), f"{w} link label")
+        if e.get("id") in ids:
+            errs.append(f"new-models duplicate id {e.get('id')}")
+        ids.add(e.get("id"))
+        try:
+            datetime.date.fromisoformat(e.get("date", ""))
+        except Exception:
+            errs.append(f"new-models {w}: date must be YYYY-MM-DD")
+        if prev and e.get("date", "") > prev:
+            errs.append(f"new-models {w}: entries must be ordered newest to oldest ({e.get('date')} after {prev})")
+        prev = e.get("date", prev)
+        zl = len(e.get("summary", {}).get("zh", ""))
+        if zl < 40:
+            errs.append(f"new-models {w}: Chinese summary too short ({zl} chars) - write what the episode discusses")
+    if errs:
+        sys.exit("Data errors:\n  " + "\n  ".join(errs))
+
+
+def nm_years(N):
+    return sorted({e["date"][:4] for e in N.get("entries", [])}, reverse=True)
+
+
 SUBNAV = {  # in-page section bar (sticky under the header) for each page
     "home": [("concept", "Concept", "概念"), ("updates", "Timeline", "时间线"), ("video", "Video", "视频"), ("reading", "Reading", "阅读")],
     "who-else": [("g-people", "Scholars & artists", "学者与艺术家"), ("g-institutions", "Institutions", "机构与项目"),
                  ("g-meanings", "Different meanings", "同名异义")],
     "bci": [("phase-lock", "Phase Lock", "《Phase Lock》专题"), ("primer", "Primer", "入门"), ("theory", "Theory", "理论"),
             ("news", "News", "新闻")],
+    # "new-models": filled in main(): overview sections + one link per year of the archive
 }
 PAGES = {  # key -> (output files, sections in <main>, data keys kept, title)
     "home": (["Neural-Media.html", "index.html"],
@@ -137,6 +214,9 @@ PAGES = {  # key -> (output files, sections in <main>, data keys kept, title)
     "bci": (["bci.html"], '  <section class="wrap block page-first" id="bci"></section>\n',
             ("meta", "types", "bci"),
             "BCI × Neural Media · 脑机接口与神经媒体 | Neural Media"),
+    "new-models": (["new-models.html"], '  <section class="wrap block page-first" id="newmodels"></section>\n',
+                   ("meta", "types", "newmodels"),
+                   "New Models & Lil Internet · New Models 与 Lil Internet | Neural Media"),
 }
 
 
@@ -154,7 +234,8 @@ def validate_pages(d):
         if f and f not in files:
             errs.append(f"{where}: internal link to unknown page '{href}'")
         anchor = href.split("#")[1] if "#" in href else ""
-        known = {a for v in SUBNAV.values() for a, _, _ in v} | {"landscape", "bci", "top"}
+        known = ({a for v in SUBNAV.values() for a, _, _ in v} | {"landscape", "bci", "top", "newmodels"}
+                 | {"e-" + e["id"] for e in d.get("newmodels", {}).get("entries", [])})
         if anchor and anchor not in known:
             errs.append(f"{where}: unknown anchor '#{anchor}'")
     for it in d["items"]:
@@ -233,7 +314,12 @@ def main():
     if "--today" in sys.argv:
         d["meta"]["last_updated"] = datetime.datetime.now(TZ).date().isoformat()
         DATA.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    d["newmodels"] = json.loads(NMDATA.read_text(encoding="utf-8"))
     validate(d)
+    validate_nm(d["newmodels"])
+    SUBNAV["new-models"] = ([("nm-about", "Who", "是谁"), ("nm-ideas", "Ideas", "核心观点"), ("nm-k", "K & neural media", "与 K 的关系"),
+                             ("nm-archive", "Archive", "全部节目")]
+                            + [(f"y{y}", y, y) for y in nm_years(d["newmodels"])])
     validate_pages(d)
     keys = [g["key"] for g in d.get("landscape", {}).get("groups", [])]
     for a, _, _ in SUBNAV["who-else"]:
@@ -271,6 +357,16 @@ def main():
             counts[t] = counts.get(t, 0) + 1
     print("Built " + "; ".join(report))
     print(f"{len(d['items'])} items; by type: {counts}; last_updated {d['meta']['last_updated']} (UTC+8)")
+    E = d["newmodels"]["entries"]
+    by_year, by_fmt, by_basis = {}, {}, {}
+    for e in E:
+        by_year[e["date"][:4]] = by_year.get(e["date"][:4], 0) + 1
+        by_fmt[e["fmt"]] = by_fmt.get(e["fmt"], 0) + 1
+        by_basis[e["basis"]] = by_basis.get(e["basis"], 0) + 1
+    print(f"new-models: {len(E)} entries; flagged neural media/future media: {sum(1 for e in E if e.get('nm'))}")
+    print(f"  by year: {dict(sorted(by_year.items(), reverse=True))}")
+    print(f"  by format: {by_fmt}")
+    print(f"  by basis: {by_basis}")
 
 
 if __name__ == "__main__":

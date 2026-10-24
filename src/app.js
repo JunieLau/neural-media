@@ -233,6 +233,110 @@
           '<ol class="bnews">' + newsHtml + '</ol></div>';
     }
 
+
+    // New Models / Lil Internet / Caroline Busta page
+    var N = D.newmodels;
+    if (N && document.getElementById("newmodels")) {
+      var nmTag = function (cls, o) { return '<span class="ntag ' + cls + '">' + bi(o) + '</span>'; };
+      var badge = '<span class="nm-badge">' + bi({ en: "Neural media / future media", zh: "神经媒体 / 未来新媒体" }) + '</span>';
+      var people = N.people.map(function (pp) {
+        return '<article class="nm-person"><h4>' + esc(pp.name) + '</h4><div class="nm-role">' + bi(pp.role) + '</div>' +
+          '<div class="ptext">' + bi(pp.text, "p") + '</div>' +
+          (pp.links && pp.links.length ? '<div class="links">' + pp.links.map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("") + '</div>' : "") + '</article>';
+      }).join("");
+      var evo = N.evolution.map(function (ev) {
+        return '<li><span class="evy">' + esc(ev.year) + '</span><div class="evt">' + bi(ev.text, "p") + '</div></li>';
+      }).join("");
+      var ideas = N.ideas.map(function (it, ii) {
+        return '<article class="nm-idea' + (it.nm ? " flag" : "") + '"><span class="pnum">' + (ii + 1 < 10 ? "0" : "") + (ii + 1) + '</span>' +
+          (it.nm ? badge : "") + '<h4>' + bi(it.term) + '</h4><div class="ptext">' + bi(it.text, "p") + '</div>' +
+          (it.where ? '<div class="idea-src">' + bi(it.where) + '</div>' : "") + '</article>';
+      }).join("");
+      var rel = function (arr) {
+        return arr.map(function (r) {
+          return '<li>' + (r.when ? '<span class="rwhen">' + bi(r.when) + '</span>' : "") + '<div class="who-line">' + bi(r.text, "p") + '</div>' +
+            (r.url ? '<div class="links">' + ext(r.url, bi({ en: "Source ↗", zh: "来源 ↗" })) + (r.internal ? intl(r.internal, bi({ en: "Entry below", zh: "见下方条目" }) + " ↓", "internal") : "") + '</div>' : "") + '</li>';
+        }).join("");
+      };
+      var E = N.entries;
+      var nFlag = E.filter(function (e) { return e.nm; }).length;
+      var fmtCount = {}; E.forEach(function (e) { fmtCount[e.fmt] = (fmtCount[e.fmt] || 0) + 1; });
+      var chips = '<button class="chip" type="button" data-f="all" aria-pressed="true">' + bi({ en: "All", zh: "全部" }) + '<b>' + E.length + '</b></button>' +
+        '<button class="chip chip-nm" type="button" data-f="nm" aria-pressed="false">' + bi({ en: "Neural media / future media only", zh: "只看神经媒体 / 未来新媒体" }) + '<b>' + nFlag + '</b></button>';
+      var fchips = Object.keys(N.formats).filter(function (k) { return fmtCount[k]; }).map(function (k) {
+        return '<button class="chip" type="button" data-f="f:' + k + '" aria-pressed="false">' + bi(N.formats[k]) + '<b>' + fmtCount[k] + '</b></button>';
+      }).join("");
+      var lastY = "", list = E.map(function (e) {
+        var y = e.date.slice(0, 4), yr = "";
+        if (y !== lastY) {
+          var cnt = E.filter(function (x) { return x.date.slice(0, 4) === y; }).length;
+          yr = '<li class="nyear nm-year" id="y' + y + '" data-year="' + y + '"><span>' + y + '</span><em>' + bi({ en: cnt + " entries", zh: cnt + " 条" }) + '</em></li>';
+          lastY = y;
+        }
+        var dd = e.date_display || fmtStamp(e.date);
+        var meta = nmTag("f-" + esc(e.fmt), N.formats[e.fmt]) + nmTag("a-" + esc(e.access), N.access[e.access]) + nmTag("b-" + esc(e.basis), N.basis[e.basis]) +
+          (e.mins ? '<span class="ntag mins">' + esc(e.mins) + ' min</span>' : "") + (e.nm ? badge : "");
+        return yr + '<li class="nitem nm-entry' + (e.nm ? " flag" : "") + '" id="e-' + esc(e.id) + '" data-year="' + y + '" data-fmt="' + esc(e.fmt) + '" data-nm="' + (e.nm ? "1" : "0") + '">' +
+          '<div class="ndate"><time datetime="' + esc(e.date) + '">' + bi(dd) + '</time></div>' +
+          '<div class="nbody"><div class="who-marks">' + meta + '</div>' +
+          '<h4>' + ext(e.url, bi(e.title)) + '</h4>' +
+          (e.people ? '<div class="nm-people">' + (/; hosts$/.test(e.people) ? bi({ en: e.people.replace(/; hosts$/, " · with the hosts"), zh: e.people.replace(/; hosts$/, " · 与主持人") }) : esc(e.people)) + '</div>' : "") +
+          '<div class="who-line nm-sum">' + bi(e.summary, "p") + '</div>' +
+          (e.nm ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "On neural / future media", zh: "关于神经媒体 / 未来新媒体" }) + '</span>' + bi(e.nm, "p") + '</div>' : "") +
+          '<div class="links">' + ext(e.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) +
+            (e.links || []).map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("") + '</div>' +
+          '</div></li>';
+      }).join("");
+      var R = N.relation;
+      var host = document.getElementById("newmodels");
+      host.innerHTML =
+        '<div class="sec-head"><span class="num">07</span><h2>' + bi(N.title) + '</h2></div>' +
+        '<div class="lead nm-lead">' + bi(N.lead, "p") + '</div>' + stamp + '<div style="height:40px"></div>' +
+        '<div class="land-group" id="nm-about"><div class="land-head"><span class="roman">I</span><h3>' + bi({ en: "Who they are", zh: "他们是谁" }) + '</h3></div>' +
+          '<div class="nm-people-grid">' + people + '</div>' +
+          '<h5 class="nm-sub">' + bi({ en: "How the platform evolved", zh: "平台的演变" }) + '</h5><ol class="nm-evo">' + evo + '</ol></div>' +
+        '<div class="land-group" id="nm-ideas"><div class="land-head"><span class="roman">II</span><h3>' + bi({ en: "Core recurring ideas, in plain language", zh: "反复出现的核心观点（白话版）" }) + '</h3></div>' +
+          '<div class="nm-ideas">' + ideas + '</div></div>' +
+        '<div class="land-group" id="nm-k"><div class="land-head"><span class="roman">III</span><h3>' + bi({ en: "Relationship to K & neural media", zh: "与 K 及「神经媒体」的关系" }) + '</h3></div>' +
+          '<div class="nm-relsum">' + bi(R.summary, "p") + '</div>' +
+          '<div class="nm-rel"><section><h5 class="nm-sub">' + bi({ en: "Direct links (sourced)", zh: "直接联系（有出处）" }) + '</h5><ul class="nm-rlist">' + rel(R.direct) + '</ul></section>' +
+          '<section><h5 class="nm-sub">' + bi({ en: "Thematic overlap & differences", zh: "主题重叠与差异" }) + '</h5><ul class="nm-rlist">' + rel(R.thematic) + '</ul></section></div></div>' +
+        '<div class="land-group" id="nm-archive"><div class="land-head"><span class="roman">IV</span><h3>' + bi({ en: "Every episode & post, newest first", zh: "全部节目与文章（从新到旧）" }) + '</h3></div>' +
+          '<div class="feed-note">' + bi(N.note, "p") + '</div>' +
+          '<div class="legend nm-legend">' + Object.keys(N.basis).map(function (k) { return nmTag("b-" + k, N.basis[k]); }).join("") + '</div>' +
+          '<div class="filters nm-filters" role="group" aria-label="Filter · 筛选">' + chips + '</div>' +
+          '<details class="nm-fmt"><summary>' + bi({ en: "Filter by series", zh: "按栏目筛选" }) + '</summary><div class="filters">' + fchips + '</div></details>' +
+          '<div class="nm-shown" aria-live="polite"></div>' +
+          '<ol class="bnews nm-list">' + list + '</ol></div>';
+      var shown = host.querySelector(".nm-shown");
+      var applyF = function (f) {
+        var n = 0;
+        host.querySelectorAll(".nm-entry").forEach(function (li) {
+          var ok = f === "all" || (f === "nm" && li.getAttribute("data-nm") === "1") || (f.indexOf("f:") === 0 && li.getAttribute("data-fmt") === f.slice(2));
+          li.hidden = !ok; if (ok) n++;
+        });
+        host.querySelectorAll(".nm-year").forEach(function (yh) {
+          var y = yh.getAttribute("data-year");
+          var c = host.querySelectorAll('.nm-entry[data-year="' + y + '"]:not([hidden])').length;
+          yh.hidden = !c;
+          yh.querySelector("em").innerHTML = bi({ en: c + " entries", zh: c + " 条" });
+        });
+        shown.innerHTML = f === "all" ? "" : bi({ en: "Showing " + n + " of " + E.length + " entries", zh: "显示 " + n + " / " + E.length + " 条" });
+        host.querySelectorAll(".nm-filters .chip, .nm-fmt .chip").forEach(function (x) { x.setAttribute("aria-pressed", String(x.getAttribute("data-f") === f)); });
+      };
+      host.addEventListener("click", function (ev) {
+        var b = ev.target.closest(".nm-filters .chip, .nm-fmt .chip"); if (!b) return;
+        applyF(b.getAttribute("data-f"));
+      });
+      // Year links in the sticky bar: if a filter hides that year, reset to "All" first.
+      document.querySelectorAll('.subnav a[href^="#y"]').forEach(function (a) {
+        a.addEventListener("click", function () {
+          var t = document.getElementById(a.getAttribute("href").slice(1));
+          if (t && t.hidden) applyF("all");
+        });
+      });
+    }
+
     document.getElementById("foot").innerHTML =
       bi({ en: "An independent bilingual tracker of public sources on Neural Media, a concept by K Allado-McDowell. Every item links to its original source. Dates are China time (UTC+8).",
            zh: "这是一个独立的双语追踪站，收录有关 K Allado-McDowell「神经媒体」概念的公开资料。每一条目都附有原始来源链接。日期均为北京时间（UTC+8）。" }, "p");
@@ -294,6 +398,10 @@
     if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; spy(); }); }
   }, { passive: true });
   spy();
+
+  // On narrow screens the page nav scrolls sideways: keep the current page's tab in view.
+  var curNav = document.querySelector('.nav a[aria-current="page"]');
+  if (curNav) { var navEl = curNav.parentNode; if (navEl.scrollWidth > navEl.clientWidth + 1) navEl.scrollLeft = Math.max(0, curNav.offsetLeft - navEl.offsetLeft - 12); }
 
   if (location.hash) { var tgt = document.getElementById(location.hash.slice(1)); if (tgt) setTimeout(function () { tgt.scrollIntoView(); spy(); }, 0); }
 })();

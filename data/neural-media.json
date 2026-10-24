@@ -840,7 +840,14 @@
         "en": "New Models (YouTube)",
         "zh": "New Models（YouTube）"
       },
-      "thumbnail": "assets/newmodels-thumb.jpg"
+      "thumbnail": "assets/newmodels-thumb.jpg",
+      "internal": {
+        "href": "new-models.html#e-nm76",
+        "label": {
+          "en": "Full summary on the New Models page",
+          "zh": "在 New Models 专页查看详细摘要"
+        }
+      }
     },
     {
       "id": "2025-10-09-aprja-itavuori",
@@ -1112,6 +1119,13 @@
       "source": {
         "en": "New Models (SoundCloud)",
         "zh": "New Models（SoundCloud）"
+      },
+      "internal": {
+        "href": "new-models.html#e-nm76-unlocked",
+        "label": {
+          "en": "Full summary on the New Models page",
+          "zh": "在 New Models 专页查看详细摘要"
+        }
       }
     },
     {
@@ -1459,7 +1473,14 @@
             "zh": "《Document Journal》原文（核查时该网站无法打开）"
           }
         }
-      ]
+      ],
+      "internal": {
+        "href": "new-models.html#e-reads-hallucinating-sense",
+        "label": {
+          "en": "Full summary on the New Models page",
+          "zh": "在 New Models 专页查看详细摘要"
+        }
+      }
     },
     {
       "id": "2024-04-30-hanart-forum",
@@ -1593,13 +1614,20 @@
         "zh": "New Models 第 76 期：K Allado-McDowell 谈神经媒体"
       },
       "summary": {
-        "en": "Episode on how neural media developed out of network media in the mid-2010s. First released to subscribers only; made free in March 2025 (see the separate entry).",
-        "zh": "本期讨论神经媒体如何在 2010 年代中期从网络媒体中发展出来。最初只对付费订阅者开放，2025 年 3 月起免费收听（见单独条目）。"
+        "en": "Recorded in Berlin after K's Gropius Bau talk. K extends Fred Turner into four media eras (broadcast, immersive, network, neural), each shaping a different subject. Neural media emerged around 2010 with algorithmic timelines: high-dimensional space, hallucinated content, identity as embedding. K uses 'neural' rather than 'AI' to leave room for Neuralink, neuroscience and pharmacology, argues neural media actively sense us, and proposes communities train their own models against 'semiotic enclosure'. Subscribers only at first; free from March 2025.",
+        "zh": "录于柏林，K 刚在 Gropius Bau 做完讲座。K 在 Fred Turner 的基础上把媒介分成广播、沉浸、网络、神经四个时代，每种媒介都会塑造一种不同的主体。神经媒体约在 2010 年随算法时间线出现：空间是高维的，内容是「幻觉」，身份是 embedding。K 说用「神经」而不只说「AI」，是为了容纳 Neuralink、神经科学和药理学；神经媒体「一直在主动感知我们」；出路是让社群训练自己的模型，避免集体性被少数公司「符号圈地」。最初只对订阅者开放，2025 年 3 月起免费。"
       },
       "url": "https://newmodels.substack.com/p/nm-76-k-allado-mcdowell-on-neural",
       "source": {
         "en": "New Models",
         "zh": "New Models"
+      },
+      "internal": {
+        "href": "new-models.html#e-nm76",
+        "label": {
+          "en": "Full summary on the New Models page",
+          "zh": "在 New Models 专页查看详细摘要"
+        }
       }
     },
     {
@@ -1880,8 +1908,8 @@
         "zh": "Caroline Busta 与 Lil Internet：《论神经媒体与文化的重组》，维也纳数字文化节"
       },
       "summary": {
-        "en": "The New Models co-founders spoke at Kunsthalle Wien Karlsplatz during Vienna Digital Cultures 2025 (5–18 May, theme “model collapse”). Busta asked how media organised by neural rather than linear or network patterns reshapes what it means to be human, using TikTok, Balenciaga and Shein as examples, then discussed with Lil Internet how algorithmic media flows create new forms of subjectivity.",
-        "zh": "两位 New Models 联合创始人在 2025 年维也纳数字文化节（5 月 5 日至 18 日，主题为「模型崩溃」）期间于维也纳美术馆卡尔广场馆演讲。Busta 探讨当媒介不再按线性或网络模式、而是按神经模式组织时，人的概念会如何改变，并以 TikTok、Balenciaga 和 Shein 为例；随后与 Lil Internet 讨论算法驱动的媒介流如何催生新的主体形式和文化结构。"
+        "en": "The New Models co-founders spoke at Kunsthalle Wien Karlsplatz during Vienna Digital Cultures 2025 (5–18 May, theme “model collapse”). Busta asked how media organised by neural rather than linear or network patterns reshapes what it means to be human, using TikTok, Balenciaga and Shein as examples, then discussed with Lil Internet how algorithmic media flows create new forms of subjectivity. Busta also says she has read K's media taxonomy “maybe 30 times” and builds the talk on it.",
+        "zh": "两位 New Models 联合创始人在 2025 年维也纳数字文化节（5 月 5 日至 18 日，主题为「模型崩溃」）期间于维也纳美术馆卡尔广场馆演讲。Busta 探讨当媒介不再按线性或网络模式、而是按神经模式组织时，人的概念会如何改变，并以 TikTok、Balenciaga 和 Shein 为例；随后与 Lil Internet 讨论算法驱动的媒介流如何催生新的主体形式和文化结构。Busta 还在演讲中说，K 的媒介分类「我大概读了 30 遍」，整场演讲都建立在这套框架上。"
       },
       "url": "https://www.museumsfernsehen.de/caroline-busta-lil-internet-on-neural-media-and-the-re-organisation-of-culture-kunsthalle-wien-karlsplatz-vienna-digital-cultures-2025/",
       "source": {
@@ -1896,7 +1924,14 @@
             "zh": "文化节档案"
           }
         }
-      ]
+      ],
+      "internal": {
+        "href": "new-models.html#e-busta-li-vienna-transmit",
+        "label": {
+          "en": "Full summary on the New Models page",
+          "zh": "在 New Models 专页查看详细摘要"
+        }
+      }
     },
     {
       "id": "2026-08-26-mutek-new-models",
@@ -1921,6 +1956,13 @@
       "source": {
         "en": "MUTEK Forum",
         "zh": "MUTEK 论坛"
+      },
+      "internal": {
+        "href": "new-models.html#e-mutek-vibeocracy",
+        "label": {
+          "en": "Full summary on the New Models page",
+          "zh": "在 New Models 专页查看详细摘要"
+        }
       }
     },
     {
@@ -3934,6 +3976,14 @@
       "label": {
         "en": "BCI × Neural Media",
         "zh": "脑机接口与神经媒体"
+      }
+    },
+    {
+      "key": "new-models",
+      "file": "new-models.html",
+      "label": {
+        "en": "New Models",
+        "zh": "New Models 与 Lil Internet"
       }
     }
   ]

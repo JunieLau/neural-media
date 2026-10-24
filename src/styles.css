@@ -389,3 +389,84 @@ body.lang-both .fsecs .t.en + .t.zh{margin-top:0}
 /* sticky in-page bar: section anchors land below header + bar */
 [id]{scroll-margin-top:calc(var(--hdr,72px) + 12px)}
 @media (max-width:960px){.subnav-in{height:40px;gap:18px}}
+
+/* ---------- New Models page ---------- */
+.nm-lead p{font-size:17px;line-height:1.7;max-width:900px}
+.nm-sub{margin:30px 0 12px;font:600 12px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.nm-sub .t{display:inline}body.lang-both .nm-sub .t.zh::before{content:" · "}
+.nm-people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.nm-person{background:linear-gradient(180deg,rgba(200,255,77,.05),var(--panel) 55%);border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.nm-person h4{margin:0;font:400 24px/1.15 var(--serif)}
+.nm-role{font:500 12.5px/1.5 var(--sans);color:var(--violet)}
+.nm-role .t{display:inline}body.lang-both .nm-role .t.zh::before{content:" / "}
+.nm-person .ptext p{font-size:14.5px;line-height:1.65;margin:0 0 6px}
+.nm-person .links{margin-top:auto}
+.nm-evo{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.nm-evo li{display:grid;grid-template-columns:110px 1fr;gap:18px;padding:12px 0;border-bottom:1px solid var(--line)}
+.evy{font:400 22px/1.2 var(--serif);color:var(--violet)}
+.evt p{margin:0 0 4px;font-size:15px;line-height:1.6}
+.nm-ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.nm-idea{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px 18px 18px;display:flex;flex-direction:column;gap:9px;min-width:0}
+.nm-idea.flag{border-color:rgba(200,255,77,.4);background:linear-gradient(180deg,rgba(200,255,77,.07),var(--panel) 50%)}
+.nm-idea .pnum{position:absolute;right:14px;top:8px;font:italic 400 38px/1 var(--serif);color:var(--violet);opacity:.22}
+.nm-idea h4{margin:0;font:400 21px/1.25 var(--serif);padding-right:40px}
+.nm-idea h4 .t.zh{font:500 15px/1.5 var(--sans);color:var(--muted)}
+body.lang-zh .nm-idea h4 .t.zh{font:400 20px/1.35 var(--serif);color:var(--text)}
+.nm-idea .ptext p{margin:0 0 6px;font-size:14.5px;line-height:1.62}
+.nm-idea .nm-badge{align-self:flex-start}
+.nm-relsum p{font-size:16.5px;line-height:1.7;max-width:900px;margin:14px 0 6px}
+.nm-rel{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.nm-rlist{list-style:none;margin:0;padding:0}
+.nm-rlist li{padding:12px 0;border-bottom:1px solid var(--line);display:grid;gap:6px}
+.rwhen{font:600 12px/1.4 var(--sans);color:var(--accent);letter-spacing:.04em}
+.rwhen .t{display:inline}body.lang-both .rwhen .t.zh::before{content:" · "}
+.nm-rlist .who-line p{margin:0 0 4px;font-size:14.5px;line-height:1.62}
+.nm-badge{display:inline-flex;align-items:center;gap:0;font:700 10.5px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:5px 9px;background:var(--accent);color:var(--accent-ink);white-space:nowrap}
+.nm-badge .t{display:inline}body.lang-both .nm-badge .t.zh::before{content:" · "}
+.ntag{display:inline-flex;align-items:center;font:600 10.5px/1 var(--sans);letter-spacing:.05em;border-radius:6px;padding:5px 7px;background:#1c2030;color:var(--muted);white-space:nowrap}
+.ntag .t{display:inline}body.lang-both .ntag .t.zh::before{content:" · "}
+.ntag.b-transcript{color:#8fffd0;background:rgba(143,255,208,.08)}
+.ntag.b-preview{color:#ffc46b;background:rgba(255,196,107,.08)}
+.ntag.b-notes{color:#7fd3ff;background:rgba(127,211,255,.08)}
+.ntag.b-listing{color:var(--dim);background:transparent;border:1px dashed var(--line2)}
+.ntag.a-free,.ntag.a-unlocked{color:var(--text)}
+.ntag.mins{color:var(--dim);background:transparent;padding-left:2px}
+.nm-legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.chip-nm{border-color:rgba(200,255,77,.55);color:var(--accent)}
+.chip-nm[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chip-nm[aria-pressed="true"] b{color:var(--accent-ink)}
+.nm-fmt{margin:4px 0 6px}
+.nm-fmt summary{cursor:pointer;color:var(--muted);font-size:13.5px;padding:6px 0}
+.nm-fmt summary .t{display:inline}body.lang-both .nm-fmt summary .t.zh::before{content:" · "}
+.nm-fmt .filters{margin-top:8px}
+.nm-shown{font-size:13px;color:var(--accent);min-height:18px;margin:6px 0 0}
+.nm-shown .t{display:inline}body.lang-both .nm-shown .t.zh::before{content:" · "}
+.nm-year em{grid-column:2;align-self:end;font:500 12px/1 var(--sans);font-style:normal;color:var(--dim)}
+.nm-year em .t{display:inline}body.lang-both .nm-year em .t.zh::before{content:" · "}
+.nm-entry{padding:16px 0}
+.nm-entry .nbody{min-width:0;display:grid;gap:8px}
+.nm-entry h4{margin:2px 0 0;font:600 17.5px/1.4 var(--sans)}
+.nm-entry h4 a{text-decoration:none}.nm-entry h4 a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+.nm-entry h4 .t.zh{font-weight:500;font-size:15.5px;color:var(--muted)}
+body.lang-zh .nm-entry h4 .t.zh{font-weight:600;font-size:17px;color:var(--text)}
+.nm-people{font-size:13px;color:var(--violet)}
+.nm-sum p{margin:0 0 6px;font-size:15px;line-height:1.7}
+.nm-entry.flag::before{width:9px;height:9px;left:127px;top:20px;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+.nm-entry:not(.flag)::before{background:var(--bg);border:2px solid var(--violet);box-shadow:none;width:7px;height:7px}
+.nm-note{border-left:3px solid var(--accent);background:rgba(200,255,77,.07);border-radius:0 10px 10px 0;padding:10px 14px}
+.nm-note-h{display:block;font:700 11px/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+.nm-note-h .t{display:inline}body.lang-both .nm-note-h .t.zh::before{content:" · "}
+.nm-note p{margin:0 0 4px;font-size:14.5px;line-height:1.65}
+body.lang-both .nm-note p.t.zh{color:var(--text)}
+@media (max-width:960px){.nm-people-grid,.nm-ideas{grid-template-columns:1fr 1fr}.nm-rel{grid-template-columns:1fr;gap:6px}}
+@media (max-width:640px){
+  .nm-people-grid,.nm-ideas{grid-template-columns:1fr}
+  .nm-evo li{grid-template-columns:1fr;gap:4px}
+  .nm-year em{grid-column:1}
+  .nm-entry.flag::before{left:1px;top:19px}
+  .nm-entry h4{font-size:16.5px}
+  .who-marks .ntag,.who-marks .nm-badge{white-space:normal}
+}
+
+.nm-entry[hidden],.nm-year[hidden]{display:none!important}
+.subnav .sublabel{white-space:nowrap;flex-shrink:0}
