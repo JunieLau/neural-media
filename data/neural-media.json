@@ -1,0 +1,2495 @@
+{
+  "meta": {
+    "last_updated": "2026-10-25",
+    "launched": "2026-10-21",
+    "timezone": "UTC+8",
+    "note": {
+      "en": "No new standalone Neural Media book or essay from K has appeared in 2026 so far. This year's activity is posts, interviews, talks, an exhibition, a book release and papers by other writers that cite K's neural media essays. Items tagged “Wider context” are either K's recent activity that isn't about neural media itself, or related work by others that doesn't directly engage K's framework. Dates are shown in China time (UTC+8), so US-dated posts can appear one day later.",
+      "zh": "截至目前，K 在 2026 年尚未发表新的「神经媒体」专著或独立文章。今年的动态主要是社交媒体帖子、访谈、演讲、展览、一本新书的发行，以及其他作者引用 K 神经媒体文章的论文。标为「相关背景」的条目，或是并非专门讨论神经媒体的 K 的近期动态，或是未直接讨论 K 理论框架的其他人的相关工作。所有日期均按北京时间（UTC+8）显示，因此美国时间发布的帖子可能会显示为晚一天。"
+    }
+  },
+  "types": {
+    "video": {
+      "en": "Video",
+      "zh": "视频"
+    },
+    "post": {
+      "en": "Post",
+      "zh": "帖子"
+    },
+    "essay": {
+      "en": "Essay/Paper",
+      "zh": "文章/论文"
+    },
+    "interview": {
+      "en": "Interview",
+      "zh": "访谈"
+    },
+    "podcast": {
+      "en": "Podcast",
+      "zh": "播客"
+    },
+    "talk": {
+      "en": "Talk",
+      "zh": "演讲"
+    },
+    "exhibition": {
+      "en": "Exhibition",
+      "zh": "展览"
+    },
+    "book": {
+      "en": "Book",
+      "zh": "图书"
+    },
+    "context": {
+      "en": "Wider context",
+      "zh": "相关背景"
+    },
+    "course": {
+      "en": "Course",
+      "zh": "课程"
+    }
+  },
+  "hero": {
+    "kicker": {
+      "en": "Daily tracker · EN / 中文",
+      "zh": "每日追踪 · 中英双语"
+    },
+    "title": {
+      "en": "Neural Media",
+      "zh": "神经媒体"
+    },
+    "intro": {
+      "en": "Everything we can find on K Allado-McDowell's concept of Neural Media: AI-era media that sense us, model us and generate content back at us. Videos, posts, essays, interviews, podcasts, talks, exhibitions and books in one timeline, newest first.",
+      "zh": "这里汇集了关于 K Allado-McDowell「神经媒体」（Neural Media）概念的全部资料。神经媒体指 AI 时代那些感知我们、为我们建模，并反过来向我们生成内容的媒介。视频、帖子、文章、访谈、播客、演讲、展览和图书都收在同一条时间线上，最新的排在最前。"
+    }
+  },
+  "concept": {
+    "lead": {
+      "en": "K splits media into four types. Each takes about 30 years to go from birth to maturity, when it becomes the dominant form, and each is defined by a kind of space, a kind of content and a kind of identity.",
+      "zh": "K 把媒介分为四种类型。每种类型从诞生到成熟、成为主导媒介大约需要 30 年，并各自对应一种空间、一种内容和一种身份。"
+    },
+    "eras": [
+      {
+        "key": "broadcast",
+        "name": {
+          "en": "Broadcast",
+          "zh": "广播媒体"
+        },
+        "span": "1920–1950",
+        "space": {
+          "en": "Centralized",
+          "zh": "中心化"
+        },
+        "content": {
+          "en": "Programmatic",
+          "zh": "节目化"
+        },
+        "identity_type": {
+          "en": "Demographic",
+          "zh": "人口统计式"
+        },
+        "identity": {
+          "en": "Sorts people into demographics.",
+          "zh": "把人归入不同的人口统计群体。"
+        }
+      },
+      {
+        "key": "immersive",
+        "name": {
+          "en": "Immersive",
+          "zh": "沉浸媒体"
+        },
+        "span": "1950–1980",
+        "space": {
+          "en": "Distributed",
+          "zh": "分布式"
+        },
+        "content": {
+          "en": "Experience",
+          "zh": "体验"
+        },
+        "identity_type": {
+          "en": "Constructed",
+          "zh": "自我建构式"
+        },
+        "identity": {
+          "en": "Lets people build their own identity.",
+          "zh": "让人们自行建构身份。"
+        }
+      },
+      {
+        "key": "network",
+        "name": {
+          "en": "Network",
+          "zh": "网络媒体"
+        },
+        "span": "1980–2010",
+        "space": {
+          "en": "Circulatory",
+          "zh": "循环流通"
+        },
+        "content": {
+          "en": "Memetic",
+          "zh": "模因"
+        },
+        "identity_type": {
+          "en": "Fractal",
+          "zh": "分形式"
+        },
+        "identity": {
+          "en": "Splits identity into fragments.",
+          "zh": "把身份拆解成碎片。"
+        }
+      },
+      {
+        "key": "neural",
+        "name": {
+          "en": "Neural",
+          "zh": "神经媒体"
+        },
+        "span": "2010–2040",
+        "space": {
+          "en": "High-dimensional",
+          "zh": "高维"
+        },
+        "content": {
+          "en": "Hallucinated",
+          "zh": "幻觉生成"
+        },
+        "identity_type": {
+          "en": "Embedded",
+          "zh": "嵌入式"
+        },
+        "identity": {
+          "en": "Treats us as “embeddings”: points in an AI system's statistical map that sense us, model us and generate content back at us.",
+          "zh": "把我们当作「嵌入」（embedding），也就是 AI 系统统计图谱中的一个个点。这些系统感知我们、为我们建模，并反过来向我们生成内容。"
+        }
+      }
+    ],
+    "notes": [
+      {
+        "en": "The neural phase also covers brain-computer interfaces and biological computing.",
+        "zh": "神经媒体阶段还涵盖脑机接口与生物计算。"
+      },
+      {
+        "en": "By K's timeline it is only half-formed, so it can still be shaped.",
+        "zh": "按照 K 的时间线，这一阶段才走到一半，因此仍有被塑造的空间。"
+      },
+      {
+        "en": "K's hope: point it at ecology and nonhuman intelligence, not just at modelling people.",
+        "zh": "K 希望让它面向生态与非人类智能，而不只是用来为人建模。"
+      }
+    ]
+  },
+  "featured": {
+    "url": "https://www.youtube.com/watch?v=Eu3ygZh8pY8",
+    "thumbnail": "assets/longnow-thumb.jpg",
+    "title": {
+      "en": "On Neural Media: K Allado-McDowell at Long Now",
+      "zh": "《论神经媒体》：K Allado-McDowell 在 Long Now 的演讲"
+    },
+    "meta": {
+      "en": "Recorded 25 Feb 2025 at the Cowell Theatre, San Francisco · 54:25 · the fullest version of the framework",
+      "zh": "2025 年 2 月 25 日录制于旧金山 Cowell 剧场 · 54 分 25 秒 · 该框架最完整的阐述"
+    },
+    "takeaways": [
+      {
+        "en": "K coined the term while making a neuro-opera in which brain waves controlled AI-generated visuals.",
+        "zh": "K 是在创作一部「神经歌剧」时提出这个术语的。在那部作品中，脑电波实时控制着 AI 生成的影像。"
+      },
+      {
+        "en": "K reads low-quality AI “slop” as the statistical average of style and ideology.",
+        "zh": "K 把低质量的 AI「垃圾内容」（slop）解读为风格与意识形态的统计平均值。"
+      },
+      {
+        "en": "Systems for credit, insurance and dating increasingly treat us as embeddings.",
+        "zh": "信用、保险和约会等系统越来越多地把我们当作「嵌入」来对待。"
+      },
+      {
+        "en": "K's hopeful path runs through projects like Project CETI's whale research and SPUN's maps of fungal networks.",
+        "zh": "K 看到的希望，体现在 Project CETI 的鲸类研究和 SPUN 绘制的真菌网络地图等项目中。"
+      }
+    ],
+    "more": [
+      {
+        "url": "https://www.youtube.com/watch?v=AsCGRjl3zac",
+        "label": {
+          "en": "Full livestream (about 1 h 24 min, includes Q&A)",
+          "zh": "完整直播录像（约 1 小时 24 分钟，含问答）"
+        }
+      },
+      {
+        "url": "https://longnow.org/talks/02025-allado-mcdowell/",
+        "label": {
+          "en": "Long Now talk page with transcript",
+          "zh": "Long Now 演讲页面（含文字稿）"
+        }
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "2026-10-23-calarts-ccat",
+      "date": "2026-10-23",
+      "types": [
+        "talk",
+        "context"
+      ],
+      "added": "2026-10-22",
+      "date_display": {
+        "en": "23 Oct 2026",
+        "zh": "2026 年 10 月 23 日"
+      },
+      "title": {
+        "en": "CHANEL Center for Artists and Technology (CCAT) Speaker Series: Barry Threw & K Allado-McDowell, CalArts",
+        "zh": "加州艺术学院 CHANEL 艺术与技术中心（CCAT）演讲系列：Barry Threw 与 K Allado-McDowell"
+      },
+      "summary": {
+        "en": "K joins curator and Gray Area director Barry Threw at CalArts’ Bijou Theater (4:30–6 PM) for a CCAT Speaker Series conversation on how emerging technology enables creativity and the institutional infrastructures that support artistic experimentation, followed by a Q&A moderated by Robin Xie (MFA Film Directing). Wider context: this is K’s recent activity, not specifically about neural media.",
+        "zh": "K 与策展人、旧金山 Gray Area 艺术总监 Barry Threw 一同出席加州艺术学院 Bijou 剧场的 CCAT 演讲系列（下午 4:30–6:00），对谈新兴技术如何赋能创作，以及支撑艺术实验的制度基础；随后由电影导演 MFA 学生 Robin Xie 主持问答。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
+      },
+      "url": "https://calarts.edu/calarts-events/chanel-center-artists-and-technology-ccat-speaker-series-barry-threw-k-allado",
+      "source": {
+        "en": "CalArts",
+        "zh": "加州艺术学院（CalArts）"
+      }
+    },
+    {
+      "id": "2026-10-07-neuralese-outside",
+      "date": "2026-10-07",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "7 Oct 2026",
+        "zh": "2026 年 10 月 7 日"
+      },
+      "title": {
+        "en": "K on X: explorations of neuralese approach neural media “on their own terms”",
+        "zh": "K 在 X 上发帖：探索 neuralese，就是「按神经媒体自身的方式」去理解它们"
+      },
+      "summary": {
+        "en": "K describes explorations of neuralese as approaching neural media “as a high dimensional outside beyond human language, as maps of the virtual translated for us, not (yet) directly perceptible.”",
+        "zh": "K 写道，对 neuralese 的探索是把神经媒体当作「人类语言之外的高维外部，当作为我们翻译过来的虚拟地图，（尚）不能被直接感知」来理解。"
+      },
+      "url": "https://x.com/kalladomcdowell/status/2107825781351268839",
+      "source": {
+        "en": "X (@kalladomcdowell)",
+        "zh": "X（@kalladomcdowell）"
+      }
+    },
+    {
+      "id": "2026-10-07-network-media",
+      "date": "2026-10-07",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "7 Oct 2026",
+        "zh": "2026 年 10 月 7 日"
+      },
+      "title": {
+        "en": "K on X: neural media are made of network media",
+        "zh": "K 在 X 上发帖：神经媒体由网络媒体构成"
+      },
+      "summary": {
+        "en": "“The language of the embedded subject is made of memetic pointers because neural media are made of network media (like tv was once made of theater).”",
+        "zh": "「嵌入式主体的语言由模因指针构成，因为神经媒体由网络媒体构成（就像电视曾经由戏剧构成）。」"
+      },
+      "url": "https://x.com/kalladomcdowell/status/2107761349204000894",
+      "source": {
+        "en": "X (@kalladomcdowell)",
+        "zh": "X（@kalladomcdowell）"
+      }
+    },
+    {
+      "id": "2026-10-07-bci-ai",
+      "date": "2026-10-07",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "7 Oct 2026",
+        "zh": "2026 年 10 月 7 日"
+      },
+      "title": {
+        "en": "K on X: “BCI x AI = neural media”",
+        "zh": "K 在 X 上发帖：「脑机接口 × AI = 神经媒体」"
+      },
+      "summary": {
+        "en": "Quoting a thread on neuroAI (AI scaling laws applied to brain-computer interfaces), K restates that BCIs combined with AI fall under neural media.",
+        "zh": "K 转引了一条关于 neuroAI（把 AI 的规模定律应用于脑机接口）的帖子，并重申：脑机接口与 AI 的结合属于神经媒体。"
+      },
+      "url": "https://x.com/kalladomcdowell/status/2107760105198690608",
+      "source": {
+        "en": "X (@kalladomcdowell)",
+        "zh": "X（@kalladomcdowell）"
+      }
+    },
+    {
+      "id": "2026-10-06-neuralese",
+      "date": "2026-10-06",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "6 Oct 2026",
+        "zh": "2026 年 10 月 6 日"
+      },
+      "title": {
+        "en": "K on X: “Neuralese: what neural media speak”",
+        "zh": "K 在 X 上发帖：「Neuralese：神经媒体所说的语言」"
+      },
+      "summary": {
+        "en": "K frames “neuralese”, the internal language of AI agents, as the language of neural media. This opens the run of neuralese posts.",
+        "zh": "K 把「neuralese」（神经语，即 AI 智能体的内部语言）定义为神经媒体的语言，由此开启了一系列关于 neuralese 的帖子。"
+      },
+      "url": "https://x.com/kalladomcdowell/status/2107195635674066984",
+      "source": {
+        "en": "X (@kalladomcdowell)",
+        "zh": "X（@kalladomcdowell）"
+      }
+    },
+    {
+      "id": "2026-10-02-phase-lock",
+      "date": "2026-10-02",
+      "types": [
+        "essay",
+        "context"
+      ],
+      "added": "2026-10-22",
+      "date_display": {
+        "en": "2 Oct 2026 (updated 16 Oct)",
+        "zh": "2026 年 10 月 2 日（10 月 16 日更新）"
+      },
+      "title": {
+        "en": "Saturnin Pugnet, “Phase Lock”: a manifesto on brain-computer interfaces and human agency in the age of AI",
+        "zh": "Saturnin Pugnet《Phase Lock》：关于脑机接口与 AI 时代人类能动性的宣言"
+      },
+      "summary": {
+        "en": "A long-form manifesto arguing that AI is outpacing humans' ability to steer it through keyboards and screens, and that brain-computer interfaces offer “alignment-by-integration”: BCI as a training signal for AI, a new interface, and a way to widen mind–machine bandwidth. It bets that AI-style scaling (hardware, data, models) applies to brain decoding, led by consumer non-invasive devices. First published 2 Oct 2026; v1.2 on 16 Oct. Wider context: it does not mention K or the term neural media, but it covers the BCI × AI convergence that K counts as part of neural media (see K's 7 Oct post “BCI x AI = neural media”).",
+        "zh": "这是一篇长篇宣言，认为 AI 的发展已经超出人类用键盘和屏幕去引导它的能力，主张通过脑机接口实现“融合式对齐”：用脑机接口为 AI 提供训练信号、作为新的交互界面，并扩大大脑与机器之间的带宽。作者认为 AI 那套“更好硬件、更多数据、更大模型”的扩展规律同样适用于大脑解码，而消费级非侵入式设备会是最快的路线。2026 年 10 月 2 日首发，10 月 16 日更新至 v1.2。（相关背景：文中没有提到 K 或“神经媒体”一词，但讨论的正是 K 归入神经媒体的“脑机接口 × AI”融合，参见 K 10 月 7 日的推文“BCI x AI = neural media”。）"
+      },
+      "url": "https://phaselock.satpugnet.com/",
+      "source": {
+        "en": "phaselock.satpugnet.com",
+        "zh": "phaselock.satpugnet.com"
+      }
+    },
+    {
+      "id": "2026-10-interspecies-future",
+      "date": "2026-10-01",
+      "types": [
+        "book",
+        "context"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "Oct 2026",
+        "zh": "2026 年 10 月"
+      },
+      "title": {
+        "en": "Interspecies Future: A Primer gets a University of Chicago Press release",
+        "zh": "《Interspecies Future: A Primer》（跨物种未来：入门）由芝加哥大学出版社发行"
+      },
+      "summary": {
+        "en": "The LAS Art Foundation reader, co-edited by K Allado-McDowell, Julia Kaganskiy, Bettina Kames and Corinne Mynatt with more than 60 contributions, is listed by University of Chicago Press for October 2026. LAS and DISTANZ first launched it in April 2024. Wider context: this is K's recent activity, not specifically about neural media.",
+        "zh": "这本由 LAS 艺术基金会推出的读本由 K Allado-McDowell、Julia Kaganskiy、Bettina Kames 和 Corinne Mynatt 合编，收录 60 多篇文章。芝加哥大学出版社将其列为 2026 年 10 月出版。该书最初由 LAS 与 DISTANZ 于 2024 年 4 月推出。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
+      },
+      "url": "https://press.uchicago.edu/ucp/books/book/distributed/I/bo283349115.html",
+      "source": {
+        "en": "University of Chicago Press",
+        "zh": "芝加哥大学出版社"
+      }
+    },
+    {
+      "id": "2026-09-30-organised-sound",
+      "date": "2026-09-30",
+      "types": [
+        "essay"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "30 Sep 2026",
+        "zh": "2026 年 9 月 30 日"
+      },
+      "title": {
+        "en": "Paper: “Mapping codependency: Intermedial causality in real-time audiovisual performance”",
+        "zh": "论文：《映射共生依赖：实时视听表演中的跨媒介因果》"
+      },
+      "summary": {
+        "en": "Roberto Alonso Trillo, Peter A. C. Nelson and Kratika Jain cite K's New Models conversation “On Neural Media” (2024) and use its idea of interpellative media structures in a study of audiovisual performance.",
+        "zh": "Roberto Alonso Trillo、Peter A. C. Nelson 与 Kratika Jain 在这项视听表演研究中引用了 K 在 New Models 的对谈《论神经媒体》（2024），并借用了其中「询唤式媒介结构」的概念。"
+      },
+      "url": "https://doi.org/10.1017/S1355771826101617",
+      "source": {
+        "en": "Organised Sound (Cambridge University Press), academic paper",
+        "zh": "《Organised Sound》（剑桥大学出版社），学术论文"
+      }
+    },
+    {
+      "id": "2026-09-11-image-after-ai",
+      "date": "2026-09-11",
+      "types": [
+        "talk",
+        "post",
+        "context"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "11 Sep 2026",
+        "zh": "2026 年 9 月 11 日"
+      },
+      "title": {
+        "en": "“The Image After AI” panel at Creative Intelligence, Southbank Centre, London",
+        "zh": "伦敦南岸中心「创意智能」峰会：「AI 之后的图像」圆桌"
+      },
+      "summary": {
+        "en": "K joined Sougwen Chung and Jazia Hammoudi on a panel led by Right Click Save editor Alex Estorick at the Creative Intelligence Summit. The festival ran 11–13 Sep 2026 and was curated with PACT. Fellowship Trust announced the panel on X. Wider context: this is K's recent activity, not specifically about neural media.",
+        "zh": "K 与 Sougwen Chung、Jazia Hammoudi 一同参加了「创意智能」（Creative Intelligence）峰会上的圆桌讨论，由 Right Click Save 编辑 Alex Estorick 主持。该艺术节于 2026 年 9 月 11 日至 13 日举办，与 PACT 合作策划。Fellowship Trust 在 X 上发布了这场圆桌的消息。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
+      },
+      "url": "https://x.com/fellowshiptrust/status/2098305593106895215",
+      "source": {
+        "en": "X (@fellowshiptrust)",
+        "zh": "X（@fellowshiptrust）"
+      }
+    },
+    {
+      "id": "2026-09-10-playing-the-long-game",
+      "date": "2026-09-10",
+      "types": [
+        "talk",
+        "context"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "10 Sep 2026",
+        "zh": "2026 年 9 月 10 日"
+      },
+      "title": {
+        "en": "“Playing the Long Game: Art, Extinction and AI”, MU Hybrid Art House, Eindhoven",
+        "zh": "埃因霍温 MU 混合艺术馆演讲：「长线博弈：艺术、灭绝与 AI」"
+      },
+      "summary": {
+        "en": "Talks by K Allado-McDowell and Marjolijn Dijkman about their work in Metabolising Time. K took a closer look at The Known Lost, a proposal for a large-scale monument to all extinct species. Wider context: this is K's recent activity, not specifically about neural media.",
+        "zh": "K Allado-McDowell 与 Marjolijn Dijkman 围绕各自在「代谢时间」（Metabolising Time）展中的作品进行演讲。K 详细介绍了《The Known Lost》，这是一座纪念所有已灭绝物种的大型纪念碑提案。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
+      },
+      "url": "https://marjolijndijkman.com/news/playing-the-long-game-art-extinction-and-ai",
+      "source": {
+        "en": "Marjolijn Dijkman",
+        "zh": "Marjolijn Dijkman 官网"
+      }
+    },
+    {
+      "id": "2026-09-09-rightclicksave",
+      "date": "2026-09-10",
+      "types": [
+        "interview",
+        "context"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "10 Sep 2026 (9 Sep UK/US time)",
+        "zh": "2026 年 9 月 10 日（英美时间 9 日）"
+      },
+      "title": {
+        "en": "Right Click Save: “In Search of Creative Intelligence”",
+        "zh": "Right Click Save 专访：《寻找创意智能》"
+      },
+      "summary": {
+        "en": "Interview with PACT members Liam Young, Ayoung Kim, K Allado-McDowell and Keri Elmsly. K describes The Known Lost, an opera and monument whose libretto is 187,000 Latin names of extinct species. Wider context: this is K's recent activity, not specifically about neural media.",
+        "zh": "对 PACT 成员 Liam Young、Ayoung Kim、K Allado-McDowell 和 Keri Elmsly 的专访。K 介绍了《The Known Lost》：这是一部歌剧兼纪念碑，唱词由 18.7 万个已灭绝物种的拉丁学名组成。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
+      },
+      "url": "https://www.rightclicksave.com/article/in-search-of-creative-intelligence",
+      "source": {
+        "en": "Right Click Save",
+        "zh": "Right Click Save"
+      }
+    },
+    {
+      "id": "2026-08-17-giornale-dellarte",
+      "date": "2026-08-17",
+      "types": [
+        "interview"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "17 Aug 2026",
+        "zh": "2026 年 8 月 17 日"
+      },
+      "title": {
+        "en": "Il Giornale dell'Arte: “Oltre il mito dell'algoritmo”",
+        "zh": "意大利《艺术报》专访：《超越算法神话》"
+      },
+      "summary": {
+        "en": "Interview by Sara Benaglia. K says the Neural Media essays dig into AI as a media form, calls media literacy a political skill, and says neural media extend to brain-computer interfaces and biological computing. Also covers “co-thinking” with machines.",
+        "zh": "Sara Benaglia 的专访。K 表示，「神经媒体」系列文章是把 AI 当作一种媒介形式来深入剖析；K 称媒介素养是一种政治能力，并指出神经媒体还延伸到脑机接口与生物计算。访谈也谈到了与机器「共同思考」（co-thinking）。"
+      },
+      "url": "https://www.ilgiornaledellarte.com/Articolo/Oltre-il-mito-dellalgoritmo-intervista-con-KAllado-McDowell",
+      "source": {
+        "en": "Il Giornale dell'Arte",
+        "zh": "Il Giornale dell'Arte（意大利《艺术报》）"
+      }
+    },
+    {
+      "id": "2026-07-25-pace-layers",
+      "date": "2026-07-25",
+      "types": [
+        "essay",
+        "post",
+        "context"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "25 Jul 2026 (24 Jul US time)",
+        "zh": "2026 年 7 月 25 日（美国时间 24 日）"
+      },
+      "title": {
+        "en": "K's essay in Long Now's Pace Layers annual journal",
+        "zh": "K 的文章收录于 Long Now 年刊《Pace Layers》"
+      },
+      "summary": {
+        "en": "Long Now posted on X that copies of its Pace Layers journal are still available, with essays by Blaise Agüera y Arcas, K Allado-McDowell, Benjamin Bratton and Sara Imari Walker. Wider context: this is K's recent activity, not specifically about neural media.",
+        "zh": "Long Now 在 X 上发帖称其年刊《Pace Layers》仍有余册，收录了 Blaise Agüera y Arcas、K Allado-McDowell、Benjamin Bratton 和 Sara Imari Walker 等人的文章。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
+      },
+      "url": "https://x.com/longnow/status/2080717282112885005",
+      "source": {
+        "en": "X (@longnow)",
+        "zh": "X（@longnow）"
+      },
+      "links": [
+        {
+          "url": "https://longnow.org/pacelayers/",
+          "label": {
+            "en": "Pace Layers page (Issue 2, 02025)",
+            "zh": "《Pace Layers》页面（第 2 期，2025 年）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-07-17-metabolising-time",
+      "date": "2026-07-17",
+      "types": [
+        "exhibition",
+        "context"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "17 Jul – 20 Sep 2026",
+        "zh": "2026 年 7 月 17 日 – 9 月 20 日"
+      },
+      "title": {
+        "en": "Metabolising Time, group show at MU Hybrid Art House, Eindhoven",
+        "zh": "群展「代谢时间」（Metabolising Time），埃因霍温 MU 混合艺术馆"
+      },
+      "summary": {
+        "en": "K Allado-McDowell is among the artists in this group exhibition on non-linear time: cyclical, embodied, ancestral, geological and more-than-human. Curated by Rawad Baaklini, Marijn Bril, Alexander Burenkov and Angelique Spaninks. Wider context: this is K's recent activity, not specifically about neural media.",
+        "zh": "K Allado-McDowell 是这场群展的参展艺术家之一。展览探讨非线性的时间，包括循环的、具身的、祖先的、地质的和超越人类的时间。策展人为 Rawad Baaklini、Marijn Bril、Alexander Burenkov 和 Angelique Spaninks。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
+      },
+      "url": "https://mu.nl/expo/metabolising-time",
+      "source": {
+        "en": "MU Hybrid Art House",
+        "zh": "MU 混合艺术馆"
+      }
+    },
+    {
+      "id": "2026-06-25-longnow-slop",
+      "date": "2026-06-26",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "26 Jun 2026 (25 Jun US time)",
+        "zh": "2026 年 6 月 26 日（美国时间 25 日）"
+      },
+      "title": {
+        "en": "Long Now re-shares “Am I Slop?”",
+        "zh": "Long Now 再次推荐《我是 AI 垃圾内容吗？》"
+      },
+      "summary": {
+        "en": "“‘Slop’ aka the low-effort, high-volume AI-generated content, asks an urgent question: what happens when human expression can be reproduced at scale?” Long Now posted this on X and LinkedIn, pointing to K's essay.",
+        "zh": "「所谓 slop，就是低投入、大批量的 AI 生成内容，它提出了一个紧迫的问题：当人类的表达可以被大规模复制时，会发生什么？」Long Now 在 X 和 LinkedIn 上发布了这段话，并附上 K 的文章链接。"
+      },
+      "url": "https://x.com/longnow/status/2070208066843451620",
+      "source": {
+        "en": "Long Now (LinkedIn; also posted on X)",
+        "zh": "Long Now（LinkedIn，同时发布于 X）"
+      },
+      "links": [
+        {
+          "url": "https://www.linkedin.com/posts/longnow_slop-aka-the-low-effort-high-volume-ai-generated-activity-7475973783997153280-8hkO",
+          "label": {
+            "en": "Same post on LinkedIn",
+            "zh": "LinkedIn 上的同一帖子"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-06-26-k-framing-replies",
+      "date": "2026-06-26",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "26 Jun 2026 (25 Jun US time)",
+        "zh": "2026 年 6 月 26 日（美国时间 25 日）"
+      },
+      "title": {
+        "en": "K on X: why “neural media” needs its own name",
+        "zh": "K 在 X 上回应：为什么「神经媒体」需要一个独立的名称"
+      },
+      "summary": {
+        "en": "Replying to a reader who questioned the term under Long Now's slop post, K wrote that “neural media's accelerated feedback loops affect our psyches much more powerfully than previous forms, which is why the distinction matters”. In a follow-up the next day K added that these differences “warrant a new framing”.",
+        "zh": "有读者在 Long Now 关于 AI 垃圾内容的帖子下质疑这个术语。K 回复说，神经媒体加速的反馈回路对我们心理的影响远比以往的媒介形式强烈，所以这个区分很重要。次日 K 又补充说，这些差异值得用一个新的框架来理解。"
+      },
+      "url": "https://x.com/kalladomcdowell/status/2070214410795450688",
+      "source": {
+        "en": "X (@kalladomcdowell)",
+        "zh": "X（@kalladomcdowell）"
+      },
+      "links": [
+        {
+          "url": "https://x.com/kalladomcdowell/status/2070555423883788691",
+          "label": {
+            "en": "Follow-up reply (27 Jun 2026, China time)",
+            "zh": "后续回复（北京时间 2026 年 6 月 27 日）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-06-22-media-theory",
+      "date": "2026-06-22",
+      "types": [
+        "essay"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "22 Jun 2026",
+        "zh": "2026 年 6 月 22 日"
+      },
+      "title": {
+        "en": "Paper: “On Modes of (Over)Stimulation”",
+        "zh": "论文：《论（过度）刺激的模式》"
+      },
+      "summary": {
+        "en": "Tony D. Sampson, Jernej Markelj and Diana Lengua cite K's “Designing Neural Media” (2023) and include a section titled “Neural media, augmented perception and the frontier of stimulation”.",
+        "zh": "Tony D. Sampson、Jernej Markelj 与 Diana Lengua 引用了 K 的《设计神经媒体》（2023），文中有一节题为「神经媒体、增强感知与刺激的前沿」。"
+      },
+      "url": "https://doi.org/10.70064/mt.v10i1.1364",
+      "source": {
+        "en": "Media Theory 10(1), academic paper",
+        "zh": "《Media Theory》第 10 卷第 1 期，学术论文"
+      },
+      "links": [
+        {
+          "url": "https://repository.essex.ac.uk/42355/1/01-28%2BSampson%2Bet%2Bal.pdf",
+          "label": {
+            "en": "Open-access PDF (University of Essex)",
+            "zh": "开放获取 PDF（埃塞克斯大学）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-03-06-rice-keynote",
+      "date": "2026-03-06",
+      "types": [
+        "talk",
+        "context"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "6 Mar 2026",
+        "zh": "2026 年 3 月 6 日"
+      },
+      "title": {
+        "en": "Keynote, “Imaging after Photography” symposium, Rice University",
+        "zh": "莱斯大学「摄影之后的成像」研讨会主旨演讲"
+      },
+      "summary": {
+        "en": "K gave the keynote at the Moody Center for the Arts' half-day symposium on AI, creativity and ethics. Wider context: this is K's recent activity, not specifically about neural media.",
+        "zh": "K 在莱斯大学 Moody 艺术中心举办的半日研讨会上发表主旨演讲，主题涉及 AI、创造力与伦理。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
+      },
+      "url": "https://moody.rice.edu/events/imaging-after-photography-symposium",
+      "source": {
+        "en": "Rice University (Moody Center)",
+        "zh": "莱斯大学 Moody 艺术中心"
+      }
+    },
+    {
+      "id": "2025-12-10-longnow-what-is",
+      "date": "2025-12-10",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "10 Dec 2025 (9 Dec US time)",
+        "zh": "2025 年 12 月 10 日（美国时间 9 日）"
+      },
+      "title": {
+        "en": "Long Now on X: “What is ‘neural media’?”",
+        "zh": "Long Now 在 X 上发帖：「什么是神经媒体？」"
+      },
+      "summary": {
+        "en": "Long Now resurfaced K's talk: neural media is media that doesn't simply broadcast or connect, but appears to think, reason and create. The post links the talk video.",
+        "zh": "Long Now 重新推荐了 K 的演讲：神经媒体不只是广播或连接，它看起来还能思考、推理和创造。帖子附有演讲视频链接。"
+      },
+      "url": "https://x.com/longnow/status/1998516032617722131",
+      "source": {
+        "en": "X (@longnow)",
+        "zh": "X（@longnow）"
+      }
+    },
+    {
+      "id": "2025-11-06-new-models-youtube",
+      "date": "2025-11-06",
+      "types": [
+        "video",
+        "podcast"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "6 Nov 2025 (5 Nov US time)",
+        "zh": "2025 年 11 月 6 日（美国时间 5 日）"
+      },
+      "title": {
+        "en": "New Models on YouTube: “Unlocked | K Allado-McDowell on Neural Media (NM76) 2024”",
+        "zh": "New Models 在 YouTube 发布：《解锁版｜K Allado-McDowell 谈神经媒体（NM76）2024》"
+      },
+      "summary": {
+        "en": "The full 2024 conversation (about 75 min), now free on YouTube. K explains how neural media grew out of network media and what it means for identity. The description links “Designing Neural Media” and “Am I Slop?”.",
+        "zh": "2024 年的完整对谈（约 75 分钟），现已在 YouTube 免费观看。K 讲述神经媒体如何从网络媒体中发展出来，以及它对身份意味着什么。视频简介附有《设计神经媒体》和《我是 AI 垃圾内容吗？》的链接。"
+      },
+      "url": "https://www.youtube.com/watch?v=CJ3MovgSN9s",
+      "source": {
+        "en": "New Models (YouTube)",
+        "zh": "New Models（YouTube）"
+      },
+      "thumbnail": "assets/newmodels-thumb.jpg"
+    },
+    {
+      "id": "2025-10-09-aprja-itavuori",
+      "date": "2025-10-09",
+      "types": [
+        "essay"
+      ],
+      "added": "2026-10-22",
+      "date_display": {
+        "en": "9 Oct 2025",
+        "zh": "2025 年 10 月 9 日"
+      },
+      "title": {
+        "en": "Paper: “The Computational Approach To Aesthetics” (APRJA)",
+        "zh": "论文：《美学的计算路径》（APRJA）"
+      },
+      "summary": {
+        "en": "Sami P. Itävuori studies how Tate collection images feed the LAION-5B dataset behind Stable Diffusion. The paper calls generative AI a “neural media” technology, speaks of “the museum collection in an era of neural media”, and cites K's “Am I Slop?”.",
+        "zh": "Sami P. Itävuori 研究泰特美术馆的藏品图像如何进入 Stable Diffusion 所用的 LAION-5B 数据集。论文把生成式 AI 称为「神经媒体」技术，讨论「神经媒体时代的博物馆藏品」，并引用了 K 的《我是 AI 垃圾内容吗？》。"
+      },
+      "url": "https://doi.org/10.7146/aprja.v14i1.160275",
+      "source": {
+        "en": "APRJA 14(1), academic paper",
+        "zh": "《APRJA》第 14 卷第 1 期，学术论文"
+      }
+    },
+    {
+      "id": "2025-08-11-le-random",
+      "date": "2025-08-11",
+      "types": [
+        "essay"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "11 Aug 2025",
+        "zh": "2025 年 8 月 11 日"
+      },
+      "title": {
+        "en": "Le Random review: “Cognitive Technologies: K Allado-McDowell, Pierre Huyghe”",
+        "zh": "Le Random 评论：《认知技术：K Allado-McDowell 与 Pierre Huyghe》"
+      },
+      "summary": {
+        "en": "Brian Droitcour reviews K's exhibition The Known Lost and reads it through K's idea of neural media.",
+        "zh": "Brian Droitcour 评论 K 的展览「The Known Lost」，并从 K 的神经媒体概念出发解读这件作品。"
+      },
+      "url": "https://www.lerandom.art/editorial/cognitive-technologies",
+      "source": {
+        "en": "Le Random (exhibition review)",
+        "zh": "Le Random（展览评论）"
+      }
+    },
+    {
+      "id": "2025-07-31-zep-zenith",
+      "date": "2025-07-31",
+      "types": [
+        "essay"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "31 Jul 2025",
+        "zh": "2025 年 7 月 31 日"
+      },
+      "title": {
+        "en": "Paper: “The Zenith Principle: Rethinking Education in the Age of AI and Global Uncertainty”",
+        "zh": "论文：《顶点原则：在 AI 与全球不确定性时代重新思考教育》"
+      },
+      "summary": {
+        "en": "Nick Palmer cites K's “Am I Slop?” and discusses neural media, embedded identity and AI slop in relation to education.",
+        "zh": "Nick Palmer 引用 K 的《我是 AI 垃圾内容吗？》，从教育角度讨论神经媒体、嵌入式身份与 AI 垃圾内容。"
+      },
+      "url": "https://doi.org/10.20377/zep-30",
+      "source": {
+        "en": "ZEP 48(2), 2025, academic paper",
+        "zh": "《ZEP》第 48 卷第 2 期（2025），学术论文"
+      },
+      "links": [
+        {
+          "url": "https://www.pedocs.de/volltexte/2025/34019/pdf/ZEP_2025_2_Palmer_The_Zenith_Principle_Rethinking.pdf",
+          "label": {
+            "en": "Open-access PDF (peDOCS)",
+            "zh": "开放获取 PDF（peDOCS）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2025-05-07-the-known-lost",
+      "date": "2025-05-07",
+      "types": [
+        "exhibition",
+        "context"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "7 May – 7 Sep 2025",
+        "zh": "2025 年 5 月 7 日 – 9 月 7 日"
+      },
+      "title": {
+        "en": "The Known Lost, Swiss Institute, New York",
+        "zh": "《The Known Lost》，纽约瑞士学院"
+      },
+      "summary": {
+        "en": "K's first solo exhibition: a participatory opera and proposed monument where visitors read or sing the names of known extinct species. Wider context: this is K's recent activity, not specifically about neural media.",
+        "zh": "K 的首次个展：一部参与式歌剧兼纪念碑提案，观众可以朗读或吟唱已知灭绝物种的名字。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
+      },
+      "url": "https://swissinstitute.net/exhibitions/k-allado-mcdowell-the-known-lost",
+      "source": {
+        "en": "Swiss Institute",
+        "zh": "瑞士学院（Swiss Institute）"
+      }
+    },
+    {
+      "id": "2025-04-12-longnow-clips",
+      "date": "2025-04-12",
+      "types": [
+        "video"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "12 Apr 2025 (11–12 Apr US time)",
+        "zh": "2025 年 4 月 12 日（美国时间 11–12 日）"
+      },
+      "title": {
+        "en": "Long Now short clips: “Neural Networks & Creativity” and “Immersive Media”",
+        "zh": "Long Now 短片：《神经网络与创造力》《沉浸式媒体》"
+      },
+      "summary": {
+        "en": "Two short excerpts (about 1.5 min each) from K's Long Now talk on neural media: how neural networks embed information, and the history of immersive media design.",
+        "zh": "K 在 Long Now 神经媒体演讲中的两段短片（各约 1.5 分钟）：一段讲神经网络如何嵌入信息，另一段讲 20 世纪沉浸式媒体设计的历史。"
+      },
+      "url": "https://www.youtube.com/watch?v=KWQi1J_BiDc",
+      "source": {
+        "en": "The Long Now Foundation (YouTube)",
+        "zh": "Long Now 基金会（YouTube）"
+      },
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=MpxcTsit6KA",
+          "label": {
+            "en": "“Immersive Media” clip",
+            "zh": "《沉浸式媒体》短片"
+          }
+        }
+      ],
+      "thumbnail": "assets/longnow-clip-thumb.jpg"
+    },
+    {
+      "id": "2025-04-11-longnow-video",
+      "date": "2025-04-11",
+      "types": [
+        "video",
+        "talk"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "11 Apr 2025",
+        "zh": "2025 年 4 月 11 日"
+      },
+      "title": {
+        "en": "“On Neural Media”, edited Long Now talk on YouTube",
+        "zh": "《论神经媒体》Long Now 演讲剪辑版上线 YouTube"
+      },
+      "summary": {
+        "en": "The edited 54:25 recording of K's talk, recorded 25 Feb 2025 at the Cowell Theatre in San Francisco. It is the Featured talk on this page.",
+        "zh": "K 演讲的剪辑版录像，时长 54 分 25 秒，2025 年 2 月 25 日录制于旧金山 Cowell 剧场。即本页「精选演讲」中的视频。"
+      },
+      "url": "https://www.youtube.com/watch?v=Eu3ygZh8pY8",
+      "thumbnail": "assets/longnow-thumb.jpg",
+      "source": {
+        "en": "The Long Now Foundation / YouTube",
+        "zh": "Long Now 基金会 / YouTube"
+      },
+      "links": [
+        {
+          "url": "https://x.com/longnow/status/1910441359884132680",
+          "label": {
+            "en": "Long Now's post announcing the video",
+            "zh": "Long Now 发布视频的推文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2025-04-05-longnow-podcast",
+      "date": "2025-04-05",
+      "types": [
+        "podcast"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "5 Apr 2025",
+        "zh": "2025 年 4 月 5 日"
+      },
+      "title": {
+        "en": "Long Now Talks podcast: “K Allado-McDowell: On Neural Media”",
+        "zh": "Long Now Talks 播客：《K Allado-McDowell：论神经媒体》"
+      },
+      "summary": {
+        "en": "Audio version of the talk (about 57 min), published on SoundCloud and also on Apple Podcasts (10 Apr 2025).",
+        "zh": "演讲的音频版（约 57 分钟），发布于 SoundCloud，并于 2025 年 4 月 10 日上线 Apple 播客。"
+      },
+      "url": "https://soundcloud.com/longnow/neural-media",
+      "source": {
+        "en": "The Long Now Foundation (SoundCloud / Apple Podcasts)",
+        "zh": "Long Now 基金会（SoundCloud / Apple 播客）"
+      },
+      "links": [
+        {
+          "url": "https://podcasts.apple.com/us/podcast/k-allado-mcdowell-on-neural-media/id186908455?i=1000703060442",
+          "label": {
+            "en": "Apple Podcasts",
+            "zh": "Apple 播客"
+          }
+        },
+        {
+          "url": "https://longnow.org/talks/02025-allado-mcdowell/",
+          "label": {
+            "en": "Long Now talk page",
+            "zh": "Long Now 演讲页面"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2025-03-07-k-neural-media-reply",
+      "date": "2025-03-07",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "7 Mar 2025",
+        "zh": "2025 年 3 月 7 日"
+      },
+      "title": {
+        "en": "K on X: “Neural media”, as a better name for AI",
+        "zh": "K 在 X 上回复：用「神经媒体」来称呼 AI"
+      },
+      "summary": {
+        "en": "When Nick Cammarata asked what we should call AI instead, K replied simply: “Neural media”.",
+        "zh": "Nick Cammarata 问我们该用什么词来代替「AI」，K 只回答了一句：「神经媒体」。"
+      },
+      "url": "https://x.com/kalladomcdowell/status/1897825713421779337",
+      "source": {
+        "en": "X (@kalladomcdowell)",
+        "zh": "X（@kalladomcdowell）"
+      }
+    },
+    {
+      "id": "2025-03-03-new-models-unlocked",
+      "date": "2025-03-03",
+      "types": [
+        "podcast"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "3 Mar 2025 (2 Mar US/UK time)",
+        "zh": "2025 年 3 月 3 日（欧美时间 2 日）"
+      },
+      "title": {
+        "en": "New Models makes NM76 free: “Unlocked | K Allado-McDowell on Neural Media”",
+        "zh": "New Models 免费开放第 76 期：《解锁版｜K Allado-McDowell 谈神经媒体》"
+      },
+      "summary": {
+        "en": "The 2024 episode, previously for subscribers only, released free on SoundCloud. K sets out the taxonomy of media and the idea of embedded identity.",
+        "zh": "原本只对订阅者开放的 2024 年节目在 SoundCloud 免费发布。K 在节目中阐述媒介的分类和「嵌入式身份」的概念。"
+      },
+      "url": "https://soundcloud.com/newmodels/nm76-k-allado-mcdowell-unlocked",
+      "source": {
+        "en": "New Models (SoundCloud)",
+        "zh": "New Models（SoundCloud）"
+      }
+    },
+    {
+      "id": "2025-02-26-livestream",
+      "date": "2025-02-26",
+      "types": [
+        "video",
+        "talk"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "26 Feb 2025 (25 Feb, San Francisco)",
+        "zh": "2025 年 2 月 26 日（旧金山当地时间 25 日）"
+      },
+      "title": {
+        "en": "LIVESTREAM: K Allado-McDowell, “On Neural Media”",
+        "zh": "直播录像：K Allado-McDowell《论神经媒体》"
+      },
+      "summary": {
+        "en": "The full event livestream from the Cowell Theatre (about 1 h 24 min), including the Long Now introduction and the audience Q&A on neural media, ecology, authorship and extinction.",
+        "zh": "Cowell 剧场活动的完整直播录像（约 1 小时 24 分钟），包括 Long Now 的开场介绍，以及围绕神经媒体、生态、作者身份与物种灭绝的观众问答。"
+      },
+      "url": "https://www.youtube.com/watch?v=AsCGRjl3zac",
+      "thumbnail": "assets/livestream-thumb.jpg",
+      "source": {
+        "en": "The Long Now Foundation / YouTube",
+        "zh": "Long Now 基金会 / YouTube"
+      }
+    },
+    {
+      "id": "2025-02-26-k-stream-post",
+      "date": "2025-02-26",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "26 Feb 2025",
+        "zh": "2025 年 2 月 26 日"
+      },
+      "title": {
+        "en": "K on X: “Stream my talk at @longnow on neural media and identity!”",
+        "zh": "K 在 X 上发帖：「来看我在 Long Now 关于神经媒体与身份的演讲直播！」"
+      },
+      "summary": {
+        "en": "K shared the livestream link a few hours after the talk (held the evening of 25 Feb in San Francisco).",
+        "zh": "演讲（旧金山时间 2 月 25 日晚）结束几小时后，K 分享了直播录像的链接。"
+      },
+      "url": "https://x.com/kalladomcdowell/status/1894658070900609219",
+      "source": {
+        "en": "X (@kalladomcdowell)",
+        "zh": "X（@kalladomcdowell）"
+      }
+    },
+    {
+      "id": "2025-02-21-k-slop-thread",
+      "date": "2025-02-21",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "21 Feb 2025 (20 Feb US time)",
+        "zh": "2025 年 2 月 21 日（美国时间 20 日）"
+      },
+      "title": {
+        "en": "K on X: “I wrote about AI slop, agency, and geospatial foundation models for @longnow”",
+        "zh": "K 在 X 上发帖：「我为 Long Now 写了一篇关于 AI 垃圾内容、能动性和地理空间基础模型的文章」"
+      },
+      "summary": {
+        "en": "K's thread introducing the essay “Am I Slop? Am I Agentic? Am I Earth?”, linking the essay and the talk page and noting the upcoming Long Now talk on 25 Feb. Long Now also quoted the thread.",
+        "zh": "K 用一组推文介绍《我是 AI 垃圾内容吗？我是智能体吗？我是地球吗？》，附上文章和演讲页面链接，并预告 2 月 25 日的 Long Now 演讲。Long Now 也引用转发了这组推文。"
+      },
+      "url": "https://x.com/kalladomcdowell/status/1892606535131373857",
+      "source": {
+        "en": "X (@kalladomcdowell)",
+        "zh": "X（@kalladomcdowell）"
+      },
+      "links": [
+        {
+          "url": "https://x.com/kalladomcdowell/status/1892606611673206917",
+          "label": {
+            "en": "Thread: link to the essay",
+            "zh": "推文串：文章链接"
+          }
+        },
+        {
+          "url": "https://x.com/kalladomcdowell/status/1892606773972160642",
+          "label": {
+            "en": "Thread: “I'm speaking about all this… on the 25th”",
+            "zh": "推文串：「我将在 25 日讲这些内容」"
+          }
+        },
+        {
+          "url": "https://x.com/kalladomcdowell/status/1892606909724705251",
+          "label": {
+            "en": "Thread: link to the talk page",
+            "zh": "推文串：演讲页面链接"
+          }
+        },
+        {
+          "url": "https://x.com/longnow/status/1892632524360143162",
+          "label": {
+            "en": "Long Now's quote post about the essay",
+            "zh": "Long Now 引用转发并推荐该文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2025-02-19-am-i-slop",
+      "date": "2025-02-19",
+      "types": [
+        "essay"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "19 Feb 2025",
+        "zh": "2025 年 2 月 19 日"
+      },
+      "title": {
+        "en": "“Am I Slop? Am I Agentic? Am I Earth? Identity in the Age of Neural Media”",
+        "zh": "《我是 AI 垃圾内容吗？我是智能体吗？我是地球吗？——神经媒体时代的身份》"
+      },
+      "summary": {
+        "en": "Long Now Ideas essay: broadcast, immersive, network and neural media each produce a different identity. Neural media are about 15 years into a 30-year maturation and still malleable.",
+        "zh": "发表于 Long Now Ideas 的文章：广播、沉浸、网络和神经媒体各自塑造出不同的身份。神经媒体在 30 年的成熟周期中已走过约 15 年，仍然可塑。"
+      },
+      "url": "https://longnow.org/ideas/identity-neural-media-ai/",
+      "source": {
+        "en": "Long Now Ideas",
+        "zh": "Long Now Ideas"
+      },
+      "links": [
+        {
+          "url": "https://longnow.org/ideas/about/neural-media",
+          "label": {
+            "en": "Long Now's “Neural Media” topic page",
+            "zh": "Long Now 的「神经媒体」专题页"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2025-02-19-k-longnow-announce",
+      "date": "2025-02-19",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "19 Feb 2025 (18 Feb US time)",
+        "zh": "2025 年 2 月 19 日（美国时间 18 日）"
+      },
+      "title": {
+        "en": "K on X: “Next week, I'll speak at @longnow on neural media…”",
+        "zh": "K 在 X 上发帖：「下周我将在 Long Now 演讲，主题是神经媒体……」"
+      },
+      "summary": {
+        "en": "K announced the Long Now talk on neural media, AI slop, AI agents and geospatial AI models. Long Now posted its own announcement shortly before.",
+        "zh": "K 预告了在 Long Now 的演讲，主题包括神经媒体、AI 垃圾内容、AI 智能体和地理空间 AI 模型。Long Now 稍早也发布了活动预告。"
+      },
+      "url": "https://x.com/kalladomcdowell/status/1891937549226041692",
+      "source": {
+        "en": "X (@kalladomcdowell)",
+        "zh": "X（@kalladomcdowell）"
+      },
+      "links": [
+        {
+          "url": "https://x.com/longnow/status/1891932806831288430",
+          "label": {
+            "en": "Long Now's announcement",
+            "zh": "Long Now 的活动预告"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2025-02-16-buff-summit",
+      "date": "2025-02-16",
+      "types": [
+        "video",
+        "talk"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "Summit 30–31 Jan 2025 · video posted 16 Feb 2025",
+        "zh": "峰会 2025 年 1 月 30–31 日 · 视频于 2025 年 2 月 16 日发布"
+      },
+      "title": {
+        "en": "K Allado-McDowell at BUFF: A Summit on Fashion, Neural Media & Our Bodies",
+        "zh": "K Allado-McDowell 在 BUFF 峰会：时尚、神经媒体与我们的身体"
+      },
+      "summary": {
+        "en": "Recording of K's talk (about 54 min) at a two-day London College of Fashion summit on neural media and its impact on fashion and the body. Date shown is the YouTube upload.",
+        "zh": "K 的演讲录像（约 54 分钟），来自伦敦时装学院为期两天的峰会，主题是神经媒体及其对时尚和身体的影响。所示日期为 YouTube 上传日期。"
+      },
+      "url": "https://www.youtube.com/watch?v=f3g9CT5Scjk",
+      "source": {
+        "en": "MA Fashion Media & Communication, London College of Fashion (YouTube)",
+        "zh": "伦敦时装学院时尚媒体与传播硕士项目（YouTube）"
+      },
+      "thumbnail": "assets/buff-thumb.jpg"
+    },
+    {
+      "id": "2025-02-quicho-girl-intelligence",
+      "date": "2025-02-01",
+      "types": [
+        "essay"
+      ],
+      "added": "2026-10-22",
+      "date_display": {
+        "en": "Feb 2025",
+        "zh": "2025 年 2 月"
+      },
+      "title": {
+        "en": "Alex Quicho, “Girl Intelligence” (Aksioma PostScriptUM #52)",
+        "zh": "Alex Quicho《少女智能》（Aksioma PostScriptUM 第 52 期）"
+      },
+      "summary": {
+        "en": "An essay on “the Girl” as a technological figure that uses K's “self-as-model” and “model-as-self” distinction from “Designing Neural Media” and cites the essay.",
+        "zh": "这篇文章把「少女」视为一种技术形象，借用了 K 在《设计神经媒体》中提出的「自我即模型」与「模型即自我」之分，并引用了该文。"
+      },
+      "url": "https://aksioma.org/pdf/aksioma_PostScriptUM_52_ENG_quicho.pdf",
+      "source": {
+        "en": "Aksioma – Institute for Contemporary Art, Ljubljana",
+        "zh": "卢布尔雅那 Aksioma 当代艺术研究所"
+      }
+    },
+    {
+      "id": "2025-01-30-humans-on-the-loop",
+      "date": "2025-01-31",
+      "types": [
+        "podcast"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "31 Jan 2025 (30 Jan US time)",
+        "zh": "2025 年 1 月 31 日（美国时间 30 日）"
+      },
+      "title": {
+        "en": "Humans On The Loop: “New Selves of Neural Media & AI as ‘The Poison Path’”",
+        "zh": "Humans On The Loop 播客：《神经媒体的新自我，以及作为「毒药之路」的 AI》"
+      },
+      "summary": {
+        "en": "Michael Garfield interviews K, with a chapter on neural, network, immersive and broadcast media.",
+        "zh": "Michael Garfield 对 K 的访谈，其中有一章专门讨论神经、网络、沉浸和广播媒体。"
+      },
+      "url": "https://www.humansontheloop.com/p/h-06",
+      "source": {
+        "en": "Humans On The Loop",
+        "zh": "Humans On The Loop"
+      },
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=NGngcbwZxpc",
+          "label": {
+            "en": "Video version on YouTube (about 82 min)",
+            "zh": "YouTube 视频版（约 82 分钟）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2024-12-artforum-critics",
+      "date": "2024-12-01",
+      "types": [
+        "essay"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "Dec 2024",
+        "zh": "2024 年 12 月"
+      },
+      "title": {
+        "en": "Artforum “Best of 2024: The Critics' Critics”: Caroline Busta picks K's neural media essays",
+        "zh": "Artforum《2024 年度最佳：评论家之选》：Caroline Busta 推荐 K 的神经媒体系列文章"
+      },
+      "summary": {
+        "en": "Caroline Busta chose K's three-part neural media series for the Gropius Bau Journal, noting that the third essay (then forthcoming) would cover the bell curve, “midness” and AI slop.",
+        "zh": "Caroline Busta 选择了 K 为 Gropius Bau Journal 撰写的三篇神经媒体系列文章，并提到当时即将发表的第三篇将讨论钟形曲线、「平庸」和 AI 垃圾内容。"
+      },
+      "url": "https://www.artforum.com/lists/the-critics-critics-2024/",
+      "source": {
+        "en": "Artforum",
+        "zh": "Artforum"
+      }
+    },
+    {
+      "id": "2024-09-20-fwb-fest",
+      "date": "2024-09-20",
+      "types": [
+        "video",
+        "talk"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "20 Sep 2024",
+        "zh": "2024 年 9 月 20 日"
+      },
+      "title": {
+        "en": "“Designing Neural Media” by K Allado-McDowell at FWB FEST24",
+        "zh": "K Allado-McDowell 在 FWB FEST24 的演讲《设计神经媒体》"
+      },
+      "summary": {
+        "en": "A 39-minute recorded lecture from FWB FEST 2024 setting out the typology of broadcast, immersive, network and neural media, and how AI may change identity. Date shown is the YouTube upload.",
+        "zh": "FWB FEST 2024 的演讲录像（39 分钟），阐述广播、沉浸、网络与神经媒体的分类，以及 AI 可能如何改变身份。所示日期为 YouTube 上传日期。"
+      },
+      "url": "https://www.youtube.com/watch?v=WJWFI48Plj4",
+      "thumbnail": "assets/fwb-thumb.jpg",
+      "source": {
+        "en": "FWB / YouTube",
+        "zh": "FWB / YouTube"
+      }
+    },
+    {
+      "id": "2024-05-busta-document",
+      "date": "2024-05-01",
+      "types": [
+        "essay"
+      ],
+      "added": "2026-10-22",
+      "date_display": {
+        "en": "May 2024 (Document Journal SS24)",
+        "zh": "2024 年 5 月（《Document Journal》2024 春夏刊）"
+      },
+      "title": {
+        "en": "Caroline Busta, “Hallucinating Sense in the Era of Infinity-Content”",
+        "zh": "Caroline Busta《在无限内容时代幻觉式地感知意义》"
+      },
+      "summary": {
+        "en": "Busta's essay on how endless online content shifts meaning from reading to sensing asks why “this age of neural media” would not change how we experience time. New Models lists K Allado-McDowell among the essay's sources and released an audio reading.",
+        "zh": "Busta 在文中讨论无穷无尽的网络内容如何让意义从「阅读」转向「感受」，并发问：「这个神经媒体的时代」为何不会改变我们体验时间的方式？New Models 将 K Allado-McDowell 列为该文的参考来源之一，并发布了朗读音频。"
+      },
+      "url": "https://newmodels.substack.com/p/nm-reads-hallucinating-sense-in-the",
+      "source": {
+        "en": "Document Journal SS24 / New Models (audio reading)",
+        "zh": "《Document Journal》2024 春夏刊 / New Models（朗读音频）"
+      },
+      "links": [
+        {
+          "url": "https://www.documentjournal.com/2024/05/technical-images-film01-angelicism-art-showtime-true-detective-shein/",
+          "label": {
+            "en": "Original essay in Document Journal (site did not load during checks)",
+            "zh": "《Document Journal》原文（核查时该网站无法打开）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2024-04-30-hanart-forum",
+      "date": "2024-04-30",
+      "types": [
+        "video",
+        "talk"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "30 Apr 2024",
+        "zh": "2024 年 4 月 30 日"
+      },
+      "title": {
+        "en": "Hanart Forum lecture: “Designing Neural Media”",
+        "zh": "汉雅论坛（Hanart Forum）讲座：《设计神经媒体》"
+      },
+      "summary": {
+        "en": "K outlines the four-part media typology (each type's period, space, content and identity), discusses interpellation, and argues that identity should be understood as an embedding within the medium.",
+        "zh": "K 介绍了四种媒介类型（各自的时期、空间、内容与身份），讨论了「询唤」（interpellation）概念，并提出应把身份理解为媒介内部的一个「嵌入」。"
+      },
+      "url": "https://hanartforum.org/archive/k-allado-mcdowell-designing-neural-media/",
+      "source": {
+        "en": "Hanart Forum",
+        "zh": "汉雅论坛（Hanart Forum）"
+      },
+      "thumbnail": "assets/hanart-thumb.jpg",
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=9c3FoAi_SLQ",
+          "label": {
+            "en": "Lecture video on Hanart Forum's YouTube (50 min)",
+            "zh": "Hanart Forum YouTube 上的讲座录像（50 分钟）"
+          }
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8_XiLQjxHVI",
+          "label": {
+            "en": "Same lecture on the Research Network for Philosophy and Technology channel",
+            "zh": "哲学与技术研究网络频道上的同一讲座"
+          }
+        },
+        {
+          "url": "https://hanartforum.org/cn/archive/k-allado-mcdowell-designing-neural-media/",
+          "label": {
+            "en": "Chinese page: 設計神經媒體",
+            "zh": "中文页面：《設計神經媒體》"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2024-neural-interpellation",
+      "date": "2024-04-30",
+      "types": [
+        "essay"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "Late Apr 2024 (K shared it 30 Apr, China time)",
+        "zh": "2024 年 4 月下旬（K 于北京时间 4 月 30 日分享）"
+      },
+      "title": {
+        "en": "“Neural Interpellation”",
+        "zh": "《神经询唤》"
+      },
+      "summary": {
+        "en": "Gropius Bau Journal essay laying out the taxonomy of media types (broadcast, immersive, network, neural) by space, content and identity. Neural media produce “a high-dimensional space with hallucinated content for embedded identities.”",
+        "zh": "发表于柏林格罗皮乌斯展览馆 Journal 的文章，从空间、内容与身份三个维度梳理广播、沉浸、网络、神经四种媒介类型。文中写道，神经媒体构成了「一个为嵌入式身份提供幻觉内容的高维空间」。"
+      },
+      "url": "https://www.berlinerfestspiele.de/en/gropius-bau/programm/journal/2024/kalladomcdowellneural",
+      "source": {
+        "en": "Gropius Bau Journal",
+        "zh": "格罗皮乌斯展览馆 Journal"
+      },
+      "links": [
+        {
+          "url": "https://x.com/gropiusbau/status/1790327119723077642",
+          "label": {
+            "en": "Gropius Bau post (14 May 2024)",
+            "zh": "Gropius Bau 的推文（2024 年 5 月 14 日）"
+          }
+        },
+        {
+          "url": "https://www.kalladomcdowell.com/read",
+          "label": {
+            "en": "K's own site lists the three neural media essays",
+            "zh": "K 的个人网站列出了三篇神经媒体文章"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2024-04-30-k-interpellation-post",
+      "date": "2024-04-30",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "30 Apr 2024 (29 Apr Europe/US time)",
+        "zh": "2024 年 4 月 30 日（欧美时间 29 日）"
+      },
+      "title": {
+        "en": "K on X: sharing “Neural Interpellation”",
+        "zh": "K 在 X 上分享《神经询唤》"
+      },
+      "summary": {
+        "en": "K's pinned post announcing the second Gropius Bau neural media essay.",
+        "zh": "K 的置顶推文，宣布为 Gropius Bau 撰写的第二篇神经媒体文章发表。"
+      },
+      "url": "https://x.com/kalladomcdowell/status/1785076018031546590",
+      "source": {
+        "en": "X (@kalladomcdowell)",
+        "zh": "X（@kalladomcdowell）"
+      }
+    },
+    {
+      "id": "2024-03-19-new-models",
+      "date": "2024-03-20",
+      "types": [
+        "podcast"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "20 Mar 2024 (19 Mar US time)",
+        "zh": "2024 年 3 月 20 日（美国时间 19 日）"
+      },
+      "title": {
+        "en": "New Models NM 76: K Allado-McDowell on Neural Media",
+        "zh": "New Models 第 76 期：K Allado-McDowell 谈神经媒体"
+      },
+      "summary": {
+        "en": "Episode on how neural media developed out of network media in the mid-2010s. First released to subscribers only; made free in March 2025 (see the separate entry).",
+        "zh": "本期讨论神经媒体如何在 2010 年代中期从网络媒体中发展出来。最初只对付费订阅者开放，2025 年 3 月起免费收听（见单独条目）。"
+      },
+      "url": "https://newmodels.substack.com/p/nm-76-k-allado-mcdowell-on-neural",
+      "source": {
+        "en": "New Models",
+        "zh": "New Models"
+      }
+    },
+    {
+      "id": "2024-01-14-gropius-lecture",
+      "date": "2024-01-14",
+      "types": [
+        "talk"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "14 Jan 2024 (16:00 Berlin, 23:00 China time)",
+        "zh": "2024 年 1 月 14 日（柏林时间 16:00，北京时间 23:00）"
+      },
+      "title": {
+        "en": "Gropius Bau lecture: “Designing Neural Media”",
+        "zh": "Gropius Bau 讲座：《设计神经媒体》"
+      },
+      "summary": {
+        "en": "K's live lecture at Gropius Bau, Berlin, on how AI mirrors and shapes humanity, part of Ether's Bloom, the Gropius Bau programme on artificial intelligence.",
+        "zh": "K 在柏林 Gropius Bau 的现场讲座，探讨 AI 如何映照并塑造人类，属于 Gropius Bau 的人工智能项目「Ether's Bloom」。"
+      },
+      "url": "https://www.berlinerfestspiele.de/gropius-bau/programm/2023/ausstellungen/kuenstliche-intelligenz/veranstaltungen/designing-neural-media",
+      "source": {
+        "en": "Gropius Bau / Berliner Festspiele (event page)",
+        "zh": "Gropius Bau / 柏林艺术节（活动页面）"
+      },
+      "links": [
+        {
+          "url": "https://x.com/gropiusbau/status/1744320481409245517",
+          "label": {
+            "en": "Gropius Bau post about the lecture",
+            "zh": "Gropius Bau 关于讲座的推文"
+          }
+        },
+        {
+          "url": "https://x.com/gropiusbau/status/1739571804639784971",
+          "label": {
+            "en": "Earlier Gropius Bau announcement",
+            "zh": "Gropius Bau 更早的预告"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2023-12-gropius-ai-talks-ep3",
+      "date": "2023-12-01",
+      "types": [
+        "podcast"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "Between Nov 2023 and Mar 2024 (exact date not published)",
+        "zh": "2023 年 11 月至 2024 年 3 月之间（确切日期未公布）"
+      },
+      "title": {
+        "en": "Gropius Bau podcast “Beyond and Within: AI Talks”, Ep. 3 “AI All Around Us”",
+        "zh": "Gropius Bau 播客「Beyond and Within: AI Talks」第 3 集《我们身边的 AI》"
+      },
+      "summary": {
+        "en": "K and Robert Maharajh, hosted by Eliane Eid, talk about K's journal essays and the high-dimensional spaces of neural networks. A transcript is linked from the page.",
+        "zh": "K 与 Robert Maharajh 对谈，由 Eliane Eid 主持，讨论 K 的系列文章和神经网络的高维空间。页面上附有文字稿。"
+      },
+      "url": "https://www.berlinerfestspiele.de/en/gropius-bau/programm/2023/ausstellungen/kuenstliche-intelligenz/beyond-and-within-ai-talks",
+      "source": {
+        "en": "Gropius Bau / Berliner Festspiele (podcast)",
+        "zh": "Gropius Bau / 柏林艺术节（播客）"
+      }
+    },
+    {
+      "id": "2023-11-03-ckweb",
+      "date": "2023-11-03",
+      "types": [
+        "video",
+        "talk"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "3 Nov 2023 (2 Nov Americas time)",
+        "zh": "2023 年 11 月 3 日（美洲时间 2 日）"
+      },
+      "title": {
+        "en": "“Diseñando medios neuronales” (Designing Neural Media), livestreamed talk for CK:\\WEB",
+        "zh": "《Diseñando medios neuronales》（设计神经媒体）：CK:\\WEB 直播讲座"
+      },
+      "summary": {
+        "en": "A livestreamed talk (about 76 min) for a colloquium programmed with Línea ACT and streamed by the transmedia lab CK:\\WEB, citing K's essay “Designing Neural Media”.",
+        "zh": "为一场与 Línea ACT 合作的学术研讨会所做的直播讲座（约 76 分钟），由跨媒体实验室 CK:\\WEB 直播，引用了 K 的文章《设计神经媒体》。"
+      },
+      "url": "https://www.youtube.com/watch?v=viruRByI0rM",
+      "source": {
+        "en": "CK:\\WEB – Estación Experimental Transmedia (YouTube)",
+        "zh": "CK:\\WEB 跨媒体实验站（YouTube）"
+      },
+      "thumbnail": "assets/ckweb-thumb.jpg"
+    },
+    {
+      "id": "2023-10-31-berlin-art-link",
+      "date": "2023-10-31",
+      "types": [
+        "interview"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "31 Oct 2023",
+        "zh": "2023 年 10 月 31 日"
+      },
+      "title": {
+        "en": "Berlin Art Link: “Seeing Outside of Ourselves: An Interview with K Allado-McDowell”",
+        "zh": "Berlin Art Link：《看见自身之外：K Allado-McDowell 访谈》"
+      },
+      "summary": {
+        "en": "Interview with K as Gropius Bau writer in residence, including a discussion of the “Designing Neural Media” essay.",
+        "zh": "对 Gropius Bau 驻留作家 K 的访谈，其中谈到了《设计神经媒体》一文。"
+      },
+      "url": "https://www.berlinartlink.com/2023/10/31/interview-k-allado-mcdowell-gropius-bau-writer-in-residence/",
+      "source": {
+        "en": "Berlin Art Link",
+        "zh": "Berlin Art Link"
+      }
+    },
+    {
+      "id": "2023-09-29-k-essay-post",
+      "date": "2023-09-29",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "29 Sep 2023 (28 Sep Europe/US time)",
+        "zh": "2023 年 9 月 29 日（欧美时间 28 日）"
+      },
+      "title": {
+        "en": "K on X: announcing “Designing Neural Media”",
+        "zh": "K 在 X 上宣布《设计神经媒体》发表"
+      },
+      "summary": {
+        "en": "“What are the subjective and social effects of widespread AI? How will it change how we see ourselves?” K announced the new Gropius Bau essay in English and German.",
+        "zh": "「AI 普及会带来哪些主观和社会影响？它会怎样改变我们看待自己的方式？」K 宣布为 Gropius Bau 撰写的新文章发表，提供英文和德文版本。"
+      },
+      "url": "https://x.com/kalladomcdowell/status/1707451755964072273",
+      "source": {
+        "en": "X (@kalladomcdowell)",
+        "zh": "X（@kalladomcdowell）"
+      },
+      "links": [
+        {
+          "url": "https://x.com/gropiusbau/status/1707429385303892475",
+          "label": {
+            "en": "Gropius Bau's post about the essay",
+            "zh": "Gropius Bau 关于该文的推文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2023-09-designing-neural-media",
+      "date": "2023-09-28",
+      "types": [
+        "essay"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "28 Sep 2023",
+        "zh": "2023 年 9 月 28 日"
+      },
+      "title": {
+        "en": "“Designing Neural Media”",
+        "zh": "《设计神经媒体》"
+      },
+      "summary": {
+        "en": "First essay in K's three-part series as Gropius Bau Writer in Residence, and where the term was first set out: how neural networks work and how their design shapes subjectivity.",
+        "zh": "K 担任格罗皮乌斯展览馆驻馆作家期间三篇系列文章中的第一篇，也是这一术语最早被系统提出的地方。文章讲解神经网络如何运作，以及其设计如何塑造主体性。"
+      },
+      "url": "https://www.berlinerfestspiele.de/en/gropius-bau/programm/journal/2023/k-allado-mcdowell-designing-neural-media",
+      "source": {
+        "en": "Gropius Bau Journal",
+        "zh": "格罗皮乌斯展览馆 Journal"
+      },
+      "links": [
+        {
+          "url": "https://www.berlinerfestspiele.de/gropius-bau/programm/journal/2023/k-allado-mcdowell-designing-neural-media",
+          "label": {
+            "en": "German version",
+            "zh": "德文版"
+          }
+        },
+        {
+          "url": "https://www.e-flux.com/announcements/552015/programme-on-artificial-intelligence",
+          "label": {
+            "en": "e-flux announcement of the Gropius Bau AI programme",
+            "zh": "e-flux 上的 Gropius Bau 人工智能项目公告"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2023-09-28-holo",
+      "date": "2023-09-28",
+      "types": [
+        "post"
+      ],
+      "added": "2026-10-21",
+      "date_display": {
+        "en": "28 Sep 2023",
+        "zh": "2023 年 9 月 28 日"
+      },
+      "title": {
+        "en": "HOLO: “K Allado McDowell Contemplates Neural Media”",
+        "zh": "HOLO：《K Allado McDowell 思考神经媒体》"
+      },
+      "summary": {
+        "en": "A short HOLO note on the new essay, quoting: “When we interact with neural media, we interact with an entire network at once.”",
+        "zh": "HOLO 对这篇新文章的简短介绍，引用了文中的一句话：「当我们与神经媒体互动时，我们是在同时与整个网络互动。」"
+      },
+      "url": "https://www.holo.mg/stream/gropius-bau-berlin-k-allado-mcdowell-neural-media/",
+      "source": {
+        "en": "HOLO",
+        "zh": "HOLO"
+      }
+    },
+    {
+      "id": "2026-08-04-kaganskiy-shimmer",
+      "date": "2026-08-04",
+      "types": [
+        "essay",
+        "book",
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "4 Aug 2026",
+        "zh": "2026 年 8 月 4 日"
+      },
+      "title": {
+        "en": "Julia Kaganskiy, “Dreaming a New Reality in the Age of Neural Media” (in Shimmer, MIT Press)",
+        "zh": "Julia Kaganskiy《在神经媒体时代梦想新的现实》（收录于 MIT 出版社《Shimmer》）"
+      },
+      "summary": {
+        "en": "A chapter in Shimmer: Artists Dream a Posthuman World (MIT Press), the catalogue of the Frist Art Museum exhibition Shimmer: Dreaming the Posthuman (Nashville, 25 Sep 2026 – 3 Jan 2027; touring to Doha and Penn State in 2027). The museum quotes it on how dreams can “remake our world model”. Kaganskiy co-edited Interspecies Future with K. Wider context: the chapter uses the term “neural media” in its title, but because it is paywalled it is unconfirmed whether it cites K.",
+        "zh": "这是 MIT 出版社《Shimmer: Artists Dream a Posthuman World》中的一章。该书是弗里斯特艺术博物馆（Frist Art Museum）展览「Shimmer: Dreaming the Posthuman」的图录（纳什维尔，2026 年 9 月 25 日至 2027 年 1 月 3 日，2027 年巡展至多哈和宾州州立大学）。博物馆引用了文中关于梦能够「重塑我们的世界模型」的段落。Kaganskiy 曾与 K 共同编辑《Interspecies Future》。（相关背景：本章标题使用了「神经媒体」一词，但因需付费阅读，尚未确认文中是否引用 K。）"
+      },
+      "url": "https://doi.org/10.7551/mitpress/15922.003.0006",
+      "source": {
+        "en": "MIT Press (book chapter)",
+        "zh": "MIT 出版社（图书章节）"
+      },
+      "links": [
+        {
+          "url": "https://fristartmuseum.org/exhibition/shimmer-dreaming-the-posthuman/",
+          "label": {
+            "en": "Frist exhibition",
+            "zh": "弗里斯特展览页面"
+          }
+        },
+        {
+          "url": "https://fristartmuseum.org/shimmer-introduction-and-gallery-description/",
+          "label": {
+            "en": "Gallery text quoting the chapter",
+            "zh": "引用该章的展厅文字"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2025-05-vienna-busta-lil-internet",
+      "date": "2025-05-01",
+      "types": [
+        "talk",
+        "video"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "May 2025 (video posted 6 Aug 2025)",
+        "zh": "2025 年 5 月（视频于 2025 年 8 月 6 日发布）"
+      },
+      "title": {
+        "en": "Caroline Busta & Lil Internet, “On Neural Media and the Re-Organisation of Culture”, Vienna Digital Cultures",
+        "zh": "Caroline Busta 与 Lil Internet：《论神经媒体与文化的重组》，维也纳数字文化节"
+      },
+      "summary": {
+        "en": "The New Models co-founders spoke at Kunsthalle Wien Karlsplatz during Vienna Digital Cultures 2025 (5–18 May, theme “model collapse”). Busta asked how media organised by neural rather than linear or network patterns reshapes what it means to be human, using TikTok, Balenciaga and Shein as examples, then discussed with Lil Internet how algorithmic media flows create new forms of subjectivity.",
+        "zh": "两位 New Models 联合创始人在 2025 年维也纳数字文化节（5 月 5 日至 18 日，主题为「模型崩溃」）期间于维也纳美术馆卡尔广场馆演讲。Busta 探讨当媒介不再按线性或网络模式、而是按神经模式组织时，人的概念会如何改变，并以 TikTok、Balenciaga 和 Shein 为例；随后与 Lil Internet 讨论算法驱动的媒介流如何催生新的主体形式和文化结构。"
+      },
+      "url": "https://www.museumsfernsehen.de/caroline-busta-lil-internet-on-neural-media-and-the-re-organisation-of-culture-kunsthalle-wien-karlsplatz-vienna-digital-cultures-2025/",
+      "source": {
+        "en": "museumsfernsehen / Vienna Digital Cultures",
+        "zh": "museumsfernsehen / 维也纳数字文化节"
+      },
+      "links": [
+        {
+          "url": "https://autotelic-foundation.org/archive/festivals/vienna-digital-cultures-2025/",
+          "label": {
+            "en": "Festival archive",
+            "zh": "文化节档案"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-08-26-mutek-new-models",
+      "date": "2026-08-26",
+      "types": [
+        "talk"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "26 Aug 2026",
+        "zh": "2026 年 8 月 26 日"
+      },
+      "title": {
+        "en": "New Models at MUTEK Forum Montréal: “Vibe-ocracy in the Psyber Age”",
+        "zh": "New Models 于蒙特利尔 MUTEK 论坛：《赛博时代的“氛围统治”》"
+      },
+      "summary": {
+        "en": "Caroline Busta and Lil Internet consider frameworks for the present and future of media, “from ‘psyop realism’ to ‘post-discursivity’ to ‘neural media’”, arguing that vibes are measurable to the machine learning that now dominates media.",
+        "zh": "Caroline Busta 与 Lil Internet 探讨理解当下与未来媒介的几种框架，「从“心理战现实主义”到“后话语性”，再到“神经媒体”」，并指出「氛围」对如今主导媒介的机器学习而言是可测量、可读取的。"
+      },
+      "url": "https://forum.mutek.org/en/shows/2026/vibe-ocracy-in-the-psyber-age",
+      "source": {
+        "en": "MUTEK Forum",
+        "zh": "MUTEK 论坛"
+      }
+    },
+    {
+      "id": "2026-03-18-fact-neurophoria",
+      "date": "2026-03-18",
+      "types": [
+        "exhibition",
+        "interview"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "18 Mar 2026 (show open until 26 Apr 2026)",
+        "zh": "2026 年 3 月 18 日（展览开放至 2026 年 4 月 26 日）"
+      },
+      "title": {
+        "en": "FACT Liverpool: Milia Xin Bi’s “Can Meeple Escape the Neurophoria?” and curator interview",
+        "zh": "利物浦 FACT：Milia Xin Bi策划的展览「Can Meeple Escape the Neurophoria?」及策展人访谈"
+      },
+      "summary": {
+        "en": "An interactive show with Vytas Jankauskas, Jan Zuiderveld and Joseph Wilk about living as “embedded nodes” inside intelligent systems that project versions of ourselves back to us. In the interview the curator names K Allado-McDowell’s concept of designing neural media, together with N. Katherine Hayles, as a major inspiration.",
+        "zh": "这是一个互动展览，参展艺术家为 Vytas Jankauskas、Jan Zuiderveld 和 Joseph Wilk，探讨我们作为「嵌入式节点」生活在智能系统中，系统又通过预测、标注和优化把各种版本的我们投射回来。策展人在访谈中表示，K Allado-McDowell 的「设计神经媒体」概念与 N. Katherine Hayles 的理论是她的主要灵感来源。"
+      },
+      "url": "https://www.fact.co.uk/news/2026/03/interview-with-curator-in-residence-milia-xin-bi",
+      "source": {
+        "en": "FACT Liverpool",
+        "zh": "利物浦 FACT"
+      }
+    },
+    {
+      "id": "2026-05-21-opening-hours-starter-pack",
+      "date": "2026-05-21",
+      "types": [
+        "talk"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "21 May 2026",
+        "zh": "2026 年 5 月 21 日"
+      },
+      "title": {
+        "en": "Opening Hours Studio, “Neural Media Starter Pack” (Visueltdagen 2026, Oslo) and its neural media research",
+        "zh": "Opening Hours Studio《神经媒体入门包》（2026 年 Visueltdagen，奥斯陆）及其神经媒体研究"
+      },
+      "summary": {
+        "en": "The Oslo design studio has a Grafill research grant to build “a theoretical framework for neural media: a cognitive, generative medium”, explicitly building on K’s ideas. Its talks include “Neural Media Starter Pack” at Klingenberg Cinema (21 May 2026) and “Storytelling in Neural Media” for Norway’s National Museum and Snøhetta (25 May 2024).",
+        "zh": "这家奥斯陆设计工作室获得 Grafill 研究资助，正在建立「神经媒体（一种具有认知能力的生成式媒介）的理论框架」，明确以 K 的思想为基础。其讲座包括在 Klingenberg 影院举办的《神经媒体入门包》（2026 年 5 月 21 日），以及应挪威国家艺术、建筑与设计博物馆和 Snøhetta 之邀所做的《神经媒体中的叙事》（2024 年 5 月 25 日）。"
+      },
+      "url": "https://openinghours.studio/research",
+      "source": {
+        "en": "Opening Hours Studio",
+        "zh": "Opening Hours Studio"
+      }
+    },
+    {
+      "id": "2026-04-longnow-topic-page",
+      "date": "2026-04-06",
+      "types": [
+        "essay",
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "Topic page (latest tagged essay 6 Apr 2026)",
+        "zh": "专题页面（最新标注文章：2026 年 4 月 6 日）"
+      },
+      "title": {
+        "en": "Long Now Ideas: the “Neural Media” topic",
+        "zh": "Long Now Ideas：「神经媒体」专题"
+      },
+      "summary": {
+        "en": "Long Now now files AI essays under a “Neural Media” topic. Besides K’s “Am I Slop?” it includes Patrick Dowd’s “The Inheritance of Dreams” (24 Jun 2025) and “The Fifth Era of Science: Artificial Scientific Intelligence” (Apr 2026). Wider context: most tagged essays are about AI in general and do not discuss K’s framework.",
+        "zh": "Long Now 现在把与 AI 相关的文章归入「神经媒体」专题。除了 K 的《Am I Slop?》，还收录了 Patrick Dowd 的《The Inheritance of Dreams》（2025 年 6 月 24 日）和《The Fifth Era of Science: Artificial Scientific Intelligence》（2026 年 4 月）等文章。（相关背景：这些文章大多泛谈 AI，并未讨论 K 的理论框架。）"
+      },
+      "url": "https://longnow.org/ideas/about/neural-media/",
+      "source": {
+        "en": "Long Now Ideas",
+        "zh": "Long Now Ideas"
+      }
+    },
+    {
+      "id": "2026-09-calarts-mtec521",
+      "date": "2026-09-01",
+      "types": [
+        "course",
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "Fall 2026 term (offered every fall)",
+        "zh": "2026 年秋季学期（每年秋季开设）"
+      },
+      "title": {
+        "en": "CalArts graduate course MTEC 521, “Neural Media: Art, Sound, Politics of AI”",
+        "zh": "加州艺术学院研究生课程 MTEC 521《神经媒体：艺术、声音与 AI 政治》"
+      },
+      "summary": {
+        "en": "A 1.5-credit course in the Music Technology: Interaction, Intelligence, and Design (MTIID) MFA, developed by lecturer Kai-Luen Liang. Students make work with generative AI image, video, sound and gameplay while examining automation, labour, authorship and bias. Wider context: the course uses the name but its description does not cite K.",
+        "zh": "这是音乐科技：交互、智能与设计（MTIID）艺术硕士项目中的一门 1.5 学分课程，由讲师Kai-Luen Liang开发。学生用生成式 AI 创作图像、视频、声音和游戏，同时探讨自动化、劳动、作者身份与偏见问题。（相关背景：课程使用了这一名称，但课程介绍并未引用 K。）"
+      },
+      "url": "https://catalog.calarts.edu/courses/a0dwI2r0gUfzEMBfrXG4",
+      "source": {
+        "en": "CalArts course catalog",
+        "zh": "加州艺术学院课程目录"
+      },
+      "links": [
+        {
+          "url": "https://kailuenliang.com/cv.html",
+          "label": {
+            "en": "Instructor CV",
+            "zh": "讲师履历"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2024-10-08-entangled-dimensions",
+      "date": "2024-10-08",
+      "types": [
+        "exhibition",
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "8–9 Oct 2024",
+        "zh": "2024 年 10 月 8 日至 9 日"
+      },
+      "title": {
+        "en": "“Entangled Dimensions: Art in the Age of Neural Media”, Illuminarium, Toronto",
+        "zh": "「纠缠的维度：神经媒体时代的艺术」，多伦多 Illuminarium"
+      },
+      "summary": {
+        "en": "Curated by Ryan Kelln (Human Feedback Foundation) with Future Makers and Toronto Metropolitan University: AI-driven, EEG/brainwave-powered and other digital works, centred on Artificial Nature’s (Haru Ji & Graham Wakefield) immersive installation We Are Entanglement. Wider context: it uses the term but does not cite K.",
+        "zh": "由 Ryan Kelln（Human Feedback Foundation）策划，合作方为 Future Makers 与多伦多都会大学。展出 AI 驱动、脑电波驱动等数字作品，核心作品是 Artificial Nature（Haru Ji 与 Graham Wakefield）的沉浸式装置《We Are Entanglement》。（相关背景：展览使用了这一术语，但并未引用 K。）"
+      },
+      "url": "https://www.ocadu.ca/events-and-exhibitions/entangled-dimensions-art-age-neural-media",
+      "source": {
+        "en": "OCAD University events",
+        "zh": "安大略艺术设计大学活动页面"
+      },
+      "links": [
+        {
+          "url": "https://vista.info.yorku.ca/2024/10/entangled-dimensions-art-in-the-age-of-neural-media/",
+          "label": {
+            "en": "York University VISTA",
+            "zh": "约克大学 VISTA"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2021-03-choi-dipaola-neural-media",
+      "date": "2021-03-01",
+      "types": [
+        "essay",
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "2021 (follow-ups 2023)",
+        "zh": "2021 年（后续论文 2023 年）"
+      },
+      "title": {
+        "en": "Suk Kyoung Choi & Steve DiPaola (Simon Fraser University): an independent coinage of “neural media”",
+        "zh": "Suk Kyoung Choi 与 Steve DiPaola（西蒙菲莎大学）：独立提出的「神经媒体」概念"
+      },
+      "summary": {
+        "en": "In “Artistic Style Meets Artificial Intelligence” (Journal of Perceptual Imaging, 2021, with Hannu Töyrylä) they propose a post-phenomenology of “neural media”, meaning artistic practice with deep neural networks that unsettles intention and authorship. They continued the idea in 2023 papers on generative AI as an “other” and on journeys through latent space. Wider context: a separate, earlier use of the term about artists’ process, not K’s media-eras framework.",
+        "zh": "他们在《Artistic Style Meets Artificial Intelligence》（《Journal of Perceptual Imaging》，2021 年，与 Hannu Töyrylä 合著）中提出「神经媒体」的后现象学：指借助深度神经网络进行的艺术实践，这种实践会动摇创作意图与作者身份。2023 年他们又发表论文，延续讨论把生成式 AI 视为「他者」以及在潜在空间中的创作旅程。（相关背景：这是更早、独立的术语用法，关注艺术家的创作过程，而非 K 的媒介时代框架。）"
+      },
+      "url": "https://doi.org/10.2352/J.Percept.Imaging.2021.4.2.020501",
+      "source": {
+        "en": "Journal of Perceptual Imaging (IS&T)",
+        "zh": "《Journal of Perceptual Imaging》（IS&T）"
+      },
+      "links": [
+        {
+          "url": "https://computationalcreativity.net/iccc23/papers/ICCC-2023_paper_109.pdf",
+          "label": {
+            "en": "ICCC 2023 paper",
+            "zh": "ICCC 2023 论文"
+          }
+        },
+        {
+          "url": "https://doi.org/10.1145/3610661.3616125",
+          "label": {
+            "en": "ACM 2023 paper",
+            "zh": "ACM 2023 论文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-04-23-most-dismal-swamp",
+      "date": "2026-04-23",
+      "types": [
+        "exhibition",
+        "talk",
+        "context"
+      ],
+      "added": "2026-10-25",
+      "date_display": {
+        "en": "23 Apr 2026 (Goldsmiths talk 16 Oct 2025)",
+        "zh": "2026 年 4 月 23 日（金史密斯讲座：2025 年 10 月 16 日）"
+      },
+      "title": {
+        "en": "Most Dismal Swamp in “The World Is Sleepwalking”, Rijeka, and at Goldsmiths",
+        "zh": "Most Dismal Swamp 参展「The World Is Sleepwalking」（里耶卡），并在金史密斯学院演讲"
+      },
+      "summary": {
+        "en": "Dane Sutherland’s project describes itself as “Multi-User Shared Hallucinations dredged from the slumgullion swamp of adversarial digital, platform, and neural media”; its work The Bastard Fields “dredges our emerging neural mediascapes”. It was shown in Daniela Cotimbo’s exhibition (Re:humanism, Mine, Yours, Ours festival, 23 Apr – 14 May 2026), and Sutherland gave a Goldsmiths Visual Cultures lecture on 16 Oct 2025. Wider context: it uses the term but does not cite K.",
+        "zh": "Dane Sutherland 的这个艺术项目自称是从「对抗性的数字媒体、平台媒体与神经媒体的泥沼中打捞出的多用户共享幻觉」，作品《The Bastard Fields》则「打捞我们正在形成的神经媒介景观」。作品入选 Daniela Cotimbo 策划的展览（Re:humanism，Mine, Yours, Ours 艺术节，2026 年 4 月 23 日至 5 月 14 日）；Sutherland 还于 2025 年 10 月 16 日在金史密斯学院视觉文化系演讲。（相关背景：使用了这一术语，但并未引用 K。）"
+      },
+      "url": "https://drugo-more.hr/en/mine-yours-ours-2026/",
+      "source": {
+        "en": "Drugo More (Rijeka)",
+        "zh": "Drugo More（里耶卡）"
+      },
+      "links": [
+        {
+          "url": "https://www.gold.ac.uk/calendar/?id=15659",
+          "label": {
+            "en": "Goldsmiths lecture",
+            "zh": "金史密斯讲座"
+          }
+        }
+      ]
+    }
+  ],
+  "reading": [
+    "2023-09-designing-neural-media",
+    "2024-neural-interpellation",
+    "2025-02-19-am-i-slop",
+    "2025-04-11-longnow-video"
+  ],
+  "landscape": {
+    "title": {
+      "en": "Who else works on neural media",
+      "zh": "其他研究者与机构"
+    },
+    "lead": {
+      "en": "No one besides K has published a full theory of neural media. The term is now used by critics, curators, designers and schools, mostly building on K's framework; one research group coined it separately in 2021, and several scholars work on the same questions under other names. Labels show whether each source explicitly uses the term “neural media”, cites K, or is adjacent work.",
+      "zh": "除 K 之外，目前还没有人发表过完整的神经媒体理论。如今这个词已被评论家、策展人、设计师和院校使用，大多以 K 的框架为基础；有一个研究团队在 2021 年独立提出了这个词，另有几位学者用其他名称研究相同的问题。标签说明每条来源是明确使用「神经媒体」一词、引用 K，还是属于相关领域的研究。"
+    },
+    "markers": {
+      "term": {
+        "en": "uses the term",
+        "zh": "使用该术语"
+      },
+      "citesK": {
+        "en": "cites K",
+        "zh": "引用 K"
+      },
+      "adjacent": {
+        "en": "adjacent",
+        "zh": "相关领域"
+      },
+      "different": {
+        "en": "different meaning",
+        "zh": "不同含义"
+      }
+    },
+    "groups": [
+      {
+        "key": "people",
+        "title": {
+          "en": "Scholars, critics & artists",
+          "zh": "学者、评论家与艺术家"
+        },
+        "entries": [
+          {
+            "name": {
+              "en": "Caroline Busta & Lil Internet (New Models)",
+              "zh": "Caroline Busta 与 Lil Internet（New Models）"
+            },
+            "marks": [
+              "term",
+              "citesK"
+            ],
+            "line": {
+              "en": "Extend the framework in talks: Vienna Digital Cultures 2025 and MUTEK Montréal 2026. Busta named K's essay a best of 2024 in Artforum.",
+              "zh": "在演讲中延伸这一框架：2025 年维也纳数字文化节和 2026 年蒙特利尔 MUTEK。Busta 曾在 Artforum 把 K 的文章评为 2024 年最佳之一。"
+            },
+            "url": "https://forum.mutek.org/en/shows/2026/vibe-ocracy-in-the-psyber-age"
+          },
+          {
+            "name": {
+              "en": "Julia Kaganskiy",
+              "zh": "Julia Kaganskiy"
+            },
+            "marks": [
+              "term"
+            ],
+            "line": {
+              "en": "Chapter “Dreaming a New Reality in the Age of Neural Media” in Shimmer (MIT Press, 2026). Unconfirmed whether it cites K.",
+              "zh": "在《Shimmer》（MIT 出版社，2026）中撰写《在神经媒体时代梦想新的现实》一章；尚未确认是否引用 K。"
+            },
+            "url": "https://doi.org/10.7551/mitpress/15922.003.0006"
+          },
+          {
+            "name": {
+              "en": "Suk Kyoung Choi & Steve DiPaola (Simon Fraser University)",
+              "zh": "Suk Kyoung Choi 与 Steve DiPaola（西蒙菲莎大学）"
+            },
+            "marks": [
+              "term"
+            ],
+            "line": {
+              "en": "Coined “neural media” separately in 2021, as a phenomenology of making art with neural networks in latent space.",
+              "zh": "2021 年独立提出「神经媒体」，指在潜在空间中借助神经网络进行艺术创作的现象学。"
+            },
+            "url": "https://library.imaging.org/jpi/articles/4/2/jpi0139"
+          },
+          {
+            "name": {
+              "en": "Milia Xin Bi (FACT Liverpool)",
+              "zh": "Milia Xin Bi（利物浦 FACT）"
+            },
+            "marks": [
+              "citesK"
+            ],
+            "line": {
+              "en": "Curator of “Can Meeple Escape the Neurophoria?” (2026); names K's “designing neural media” as a main inspiration.",
+              "zh": "「Can Meeple Escape the Neurophoria?」（2026）的策展人，称 K 的「设计神经媒体」是主要灵感来源。"
+            },
+            "url": "https://www.fact.co.uk/news/2026/03/interview-with-curator-in-residence-milia-xin-bi"
+          },
+          {
+            "name": {
+              "en": "Daniel Felstead (London College of Fashion)",
+              "zh": "Daniel Felstead（伦敦时装学院）"
+            },
+            "marks": [
+              "term"
+            ],
+            "line": {
+              "en": "Organiser of the BUFF summit on fashion, neural media and bodies; makes films on AI, biotech and neural media.",
+              "zh": "BUFF 时尚、神经媒体与身体峰会的组织者，创作关于 AI、生物科技与神经媒体的短片。"
+            },
+            "url": "https://www.trienaldelisboa.com/programme/events/humanentities-en"
+          },
+          {
+            "name": {
+              "en": "Sami P. Itävuori; Nick Palmer; Tony D. Sampson et al.; Roberto Alonso Trillo et al.",
+              "zh": "Sami P. Itävuori；Nick Palmer；Tony D. Sampson 等；Roberto Alonso Trillo 等"
+            },
+            "marks": [
+              "term",
+              "citesK"
+            ],
+            "line": {
+              "en": "Academic papers (2025–2026) in APRJA, ZEP, Media Theory and Organised Sound that cite K's neural media essays (see the timeline).",
+              "zh": "在《APRJA》《ZEP》《Media Theory》《Organised Sound》上发表的学术论文（2025–2026），引用了 K 的神经媒体文章（详见时间线）。"
+            },
+            "url": "https://doi.org/10.7146/aprja.v14i1.160275"
+          },
+          {
+            "name": {
+              "en": "Alex Quicho",
+              "zh": "Alex Quicho"
+            },
+            "marks": [
+              "citesK"
+            ],
+            "line": {
+              "en": "“Girl Intelligence” (Aksioma, 2025) draws on K's neural media essays.",
+              "zh": "《Girl Intelligence》（Aksioma，2025）借鉴了 K 的神经媒体文章。"
+            },
+            "url": "https://aksioma.org/pdf/aksioma_PostScriptUM_52_ENG_quicho.pdf"
+          },
+          {
+            "name": {
+              "en": "Most Dismal Swamp (Dane Sutherland)",
+              "zh": "Most Dismal Swamp（Dane Sutherland）"
+            },
+            "marks": [
+              "term"
+            ],
+            "line": {
+              "en": "Artist project working with “adversarial digital, platform, and neural media”; shown at Goldsmiths (2025) and in Rijeka (2026).",
+              "zh": "以「对抗性的数字、平台与神经媒体」为素材的艺术项目，曾在金史密斯学院（2025）和里耶卡（2026）展示。"
+            },
+            "url": "https://drugo-more.hr/en/mine-yours-ours-2026/"
+          },
+          {
+            "name": {
+              "en": "Ryan Kelln (Human Feedback Foundation)",
+              "zh": "Ryan Kelln（Human Feedback Foundation）"
+            },
+            "marks": [
+              "term"
+            ],
+            "line": {
+              "en": "Curated “Entangled Dimensions: Art in the Age of Neural Media”, Toronto, 2024.",
+              "zh": "策划「纠缠的维度：神经媒体时代的艺术」，多伦多，2024。"
+            },
+            "url": "https://www.ocadu.ca/events-and-exhibitions/entangled-dimensions-art-age-neural-media"
+          },
+          {
+            "name": {
+              "en": "Natalie Marie",
+              "zh": "Natalie Marie"
+            },
+            "marks": [
+              "term"
+            ],
+            "line": {
+              "en": "Essay “Neural Media” (2024) on neural networks and latent space as a creative medium, from a crypto investor's view.",
+              "zh": "文章《Neural Media》（2024），从加密货币投资人的视角，讨论把神经网络和潜在空间当作创作媒介。"
+            },
+            "url": "https://nataliemarie.substack.com/p/neural-media"
+          },
+          {
+            "name": {
+              "en": "Antonio Somaini (Sorbonne Nouvelle)",
+              "zh": "Antonio Somaini（巴黎第三大学）"
+            },
+            "marks": [
+              "adjacent"
+            ],
+            "line": {
+              "en": "“Latent Spaces: AI, Art, and the Archive” (October, MIT Press), a critical theory of latent space; curator of “The World Through AI”.",
+              "zh": "《Latent Spaces: AI, Art, and the Archive》（《October》，MIT 出版社），提出关于潜在空间的批判理论；「The World Through AI」展览策展人。"
+            },
+            "url": "https://direct.mit.edu/octo/article/doi/10.1162/OCTO.a.545/137249/Latent-Spaces-AI-Art-and-the-Archive"
+          }
+        ]
+      },
+      {
+        "key": "institutions",
+        "title": {
+          "en": "Institutions & programs",
+          "zh": "机构与项目"
+        },
+        "entries": [
+          {
+            "name": {
+              "en": "Long Now Foundation",
+              "zh": "Long Now 基金会"
+            },
+            "marks": [
+              "term"
+            ],
+            "line": {
+              "en": "Hosted K's talk and essay; runs a “Neural Media” topic on Long Now Ideas.",
+              "zh": "举办了 K 的演讲并发表其文章，在 Long Now Ideas 上开设「神经媒体」专题。"
+            },
+            "url": "https://longnow.org/ideas/about/neural-media/"
+          },
+          {
+            "name": {
+              "en": "Opening Hours Studio (Oslo)",
+              "zh": "Opening Hours Studio（奥斯陆）"
+            },
+            "marks": [
+              "term",
+              "citesK"
+            ],
+            "line": {
+              "en": "Grant-funded research on a theoretical framework for neural media, built on K's ideas.",
+              "zh": "获资助研究神经媒体的理论框架，以 K 的思想为基础。"
+            },
+            "url": "https://openinghours.studio/research"
+          },
+          {
+            "name": {
+              "en": "CalArts (MTIID program)",
+              "zh": "加州艺术学院（MTIID 项目）"
+            },
+            "marks": [
+              "term"
+            ],
+            "line": {
+              "en": "Graduate course MTEC 521 “Neural Media: Art, Sound, Politics of AI”.",
+              "zh": "研究生课程 MTEC 521《神经媒体：艺术、声音与 AI 政治》。"
+            },
+            "url": "https://catalog.calarts.edu/courses/a0dwI2r0gUfzEMBfrXG4"
+          },
+          {
+            "name": {
+              "en": "FACT Liverpool",
+              "zh": "利物浦 FACT"
+            },
+            "marks": [
+              "citesK"
+            ],
+            "line": {
+              "en": "“Can Meeple Escape the Neurophoria?” (2026), inspired by K's neural media essays.",
+              "zh": "「Can Meeple Escape the Neurophoria?」（2026），灵感来自 K 的神经媒体文章。"
+            },
+            "url": "https://www.fact.co.uk/news/2026/03/interview-with-curator-in-residence-milia-xin-bi"
+          },
+          {
+            "name": {
+              "en": "London College of Fashion (UAL)",
+              "zh": "伦敦时装学院（UAL）"
+            },
+            "marks": [
+              "term"
+            ],
+            "line": {
+              "en": "BUFF: A Summit on Fashion, Neural Media & Our Bodies (Jan 2025).",
+              "zh": "BUFF：时尚、神经媒体与身体峰会（2025 年 1 月）。"
+            },
+            "url": "https://www.youtube.com/watch?v=f3g9CT5Scjk"
+          },
+          {
+            "name": {
+              "en": "Gropius Bau / Berliner Festspiele",
+              "zh": "柏林格罗皮乌斯博物馆 / 柏林艺术节"
+            },
+            "marks": [
+              "term",
+              "citesK"
+            ],
+            "line": {
+              "en": "Commissioned K's “Designing Neural Media” essays during K's 2023–24 writer residency.",
+              "zh": "在 K 2023–24 年驻留写作期间委约了《设计神经媒体》系列文章。"
+            },
+            "url": "https://www.berlinerfestspiele.de/en/gropius-bau/programm/journal/2023/k-allado-mcdowell-designing-neural-media"
+          },
+          {
+            "name": {
+              "en": "Vienna Digital Cultures (Kunsthalle Wien) · MUTEK Montréal",
+              "zh": "维也纳数字文化节（维也纳美术馆）· 蒙特利尔 MUTEK"
+            },
+            "marks": [
+              "term"
+            ],
+            "line": {
+              "en": "Festivals that hosted the New Models neural media talks (2025, 2026).",
+              "zh": "举办 New Models 神经媒体演讲的艺术节（2025、2026）。"
+            },
+            "url": "https://autotelic-foundation.org/archive/festivals/vienna-digital-cultures-2025/"
+          },
+          {
+            "name": {
+              "en": "MIT Press · Frist Art Museum",
+              "zh": "MIT 出版社 · 弗里斯特艺术博物馆"
+            },
+            "marks": [
+              "term"
+            ],
+            "line": {
+              "en": "Shimmer book and exhibition (2026–27), including Kaganskiy's neural media chapter.",
+              "zh": "《Shimmer》图书与展览（2026–27），收录 Kaganskiy 的神经媒体章节。"
+            },
+            "url": "https://fristartmuseum.org/exhibition/shimmer-dreaming-the-posthuman/"
+          },
+          {
+            "name": {
+              "en": "Re:humanism (Rome) · Drugo More (Rijeka)",
+              "zh": "Re:humanism（罗马）· Drugo More（里耶卡）"
+            },
+            "marks": [
+              "adjacent"
+            ],
+            "line": {
+              "en": "“The World Is Sleepwalking” (2026), on AI media as a waking dream.",
+              "zh": "「The World Is Sleepwalking」（2026），把 AI 媒介视为一场清醒的梦。"
+            },
+            "url": "https://drugo-more.hr/en/mine-yours-ours-2026/"
+          }
+        ],
+        "note": {
+          "en": "Searched but found no evidence of a neural media program at Serpentine Arts Technologies, Gray Area, Antikythera/Berggruen, ZKM, transmediale or Ars Electronica; Gray Area and Ars Electronica have hosted K.",
+          "zh": "已检索但未发现 Serpentine 艺术科技部、Gray Area、Antikythera/Berggruen、ZKM、transmediale 或 Ars Electronica 设有神经媒体专项；Gray Area 与 Ars Electronica 曾邀请过 K。"
+        }
+      },
+      {
+        "key": "meanings",
+        "title": {
+          "en": "Same words, different meanings",
+          "zh": "同名但含义不同"
+        },
+        "entries": [
+          {
+            "name": {
+              "en": "Media-bias detection (NLP)",
+              "zh": "媒体偏见检测（自然语言处理）"
+            },
+            "marks": [
+              "different"
+            ],
+            "line": {
+              "en": "“Neural media bias detection”: neural networks that detect bias in news (Timo Spinde et al., 2021).",
+              "zh": "「神经网络媒体偏见检测」：用神经网络识别新闻偏见（Timo Spinde 等，2021）。"
+            },
+            "url": "https://doi.org/10.18653/v1/2021.findings-emnlp.101"
+          },
+          {
+            "name": {
+              "en": "Neuroscience: neural fields",
+              "zh": "神经科学：神经场"
+            },
+            "marks": [
+              "different"
+            ],
+            "line": {
+              "en": "Brain tissue modelled as an excitable “neural medium” (Amari-type neural field equations), plus physics-style “neural media” models.",
+              "zh": "把大脑组织建模为可兴奋的「神经介质」（Amari 型神经场方程），以及物理风格的「神经介质」模型。"
+            },
+            "url": "https://doi.org/10.21203/rs.3.rs-9850943/v1"
+          },
+          {
+            "name": {
+              "en": "Computer science: neural rendering & codecs",
+              "zh": "计算机科学：神经渲染与神经编解码"
+            },
+            "marks": [
+              "different"
+            ],
+            "line": {
+              "en": "NeRF, learned compression and the JPEG AI standard: neural networks used to encode or render media files.",
+              "zh": "NeRF、学习型压缩和 JPEG AI 标准：用神经网络编码或渲染媒体文件。"
+            },
+            "url": "https://arxiv.org/html/2503.16288v1"
+          },
+          {
+            "name": {
+              "en": "Dai Pan 戴潘: neuro-mediality (神经媒介性)",
+              "zh": "戴潘：神经媒介性"
+            },
+            "marks": [
+              "different"
+            ],
+            "line": {
+              "en": "Philosophy of mind (Philosophical Analysis, 2025): how brain processes fuse with media practices in extended cognition. Not about AI media eras.",
+              "zh": "心灵哲学（《哲学分析》，2025）：在延展认知中，大脑神经过程如何与媒介过程融合。与 AI 媒介时代无关。"
+            },
+            "url": "https://ip.sass.org.cn/2025/1015/c24a583326/page.htm"
+          }
+        ]
+      }
+    ]
+  }
+}
