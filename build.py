@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Build the self-contained site: data/neural-media.json + src/* -> index.html
+"""Build the self-contained site: data/neural-media.json + src/* -> three pages
+
+Pages: index.html (identical copy: Neural-Media.html) = hero, concept, timeline, video, reading;
+       who-else.html = landscape (who else works on neural media);
+       bci.html = BCI x Neural Media, with the Phase Lock feature chapter.
 
 Usage:  python3 build.py            (stdlib only)
         python3 build.py --today    (also set meta.last_updated to today's date, UTC+8)
 
-Everything is inlined into Neural-Media.html (CSS, JS, JSON data and thumbnails
-as base64), so it opens directly from disk with no server and no network.
-index.html is written as an identical copy for local preview convenience.
+Each page inlines its CSS, JS and the part of the JSON data it needs (thumbnails
+as base64), so every page opens directly from disk with no server and no network.
 """
 import base64, datetime, json, mimetypes, pathlib, sys
 
@@ -115,31 +118,147 @@ def validate(d):
         sys.exit("Data errors:\n  " + "\n  ".join(errs))
 
 
+SUBNAV = [("concept", "Concept", "概念"), ("updates", "Timeline", "时间线"), ("video", "Video", "视频"), ("reading", "Reading", "阅读")]
+PAGES = {  # key -> (output files, sections in <main>, data keys kept, title)
+    "home": (["Neural-Media.html", "index.html"],
+             '  <section class="hero wrap" id="hero"></section>\n' + "".join(
+                 f'  <section class="wrap block" id="{s}"></section>\n' for s in ("concept", "updates", "video", "reading")),
+             ("meta", "types", "hero", "concept", "featured", "items", "reading"),
+             "Neural Media · 神经媒体 | K Allado-McDowell tracker"),
+    "who-else": (["who-else.html"], '  <section class="wrap block page-first" id="landscape"></section>\n',
+                 ("meta", "types", "landscape"),
+                 "Who else works on neural media · 其他研究者与机构 | Neural Media"),
+    "bci": (["bci.html"], '  <section class="wrap block page-first" id="bci"></section>\n',
+            ("meta", "types", "bci"),
+            "BCI × Neural Media · 脑机接口与神经媒体 | Neural Media"),
+}
+
+
+def validate_pages(d):
+    errs = []
+    keys = [p.get("key") for p in d.get("pages", [])]
+    if keys != list(PAGES):
+        errs.append(f"pages must list {list(PAGES)} in order, got {keys}")
+    files = {p["file"] for p in d.get("pages", [])} | {"Neural-Media.html"}
+    for p in d.get("pages", []):
+        if not (p.get("label", {}).get("en") and p.get("label", {}).get("zh")):
+            errs.append(f"page {p.get('key')}: label needs both en and zh")
+    def chk(href, where):
+        f = href.split("#")[0]
+        if f and f not in files:
+            errs.append(f"{where}: internal link to unknown page '{href}'")
+        anchor = href.split("#")[1] if "#" in href else ""
+        if anchor and anchor not in ("phase-lock", "concept", "updates", "video", "reading", "landscape", "bci", "top"):
+            errs.append(f"{where}: unknown anchor '#{anchor}'")
+    for it in d["items"]:
+        if "internal" in it:
+            chk(it["internal"].get("href", ""), f"item {it['id']}")
+            if not (it["internal"].get("label", {}).get("en") and it["internal"].get("label", {}).get("zh")):
+                errs.append(f"item {it['id']}: internal label needs both en and zh")
+    for e in d.get("bci", {}).get("theory", {}).get("entries", []):
+        if "internal" in e:
+            chk(e["internal"].get("href", ""), f"theory {e['name']['en']}")
+    F = d.get("bci", {}).get("feature")
+    if F:
+        def bil(o, w):
+            if not (isinstance(o, dict) and o.get("en") and o.get("zh")):
+                errs.append(f"feature {w}: needs both en and zh")
+        def https(u, w):
+            if not str(u or "").startswith("https://"):
+                errs.append(f"feature {w}: url must be https")
+        for k in ("kicker", "subtitle", "byline", "note"):
+            bil(F.get(k), k)
+        bil(F["definition"].get("quote"), "definition.quote"); bil(F["definition"].get("note"), "definition.note")
+        for n, c in enumerate(F.get("cta", [])):
+            https(c.get("url"), f"cta {n}"); bil(c.get("label"), f"cta {n} label")
+        bil(F["author"].get("title"), "author.title"); bil(F["author"].get("text"), "author.text")
+        for l in F["author"].get("links", []):
+            https(l.get("url"), "author link"); bil(l.get("label"), "author link label")
+        bil(F["argument"].get("title"), "argument.title")
+        for n, pt in enumerate(F["argument"].get("points", [])):
+            bil(pt.get("term"), f"point {n} term"); bil(pt.get("text"), f"point {n} text")
+            if "quote" in pt:
+                bil(pt["quote"], f"point {n} quote")
+        bil(F["structure"].get("title"), "structure.title"); bil(F["structure"].get("intro"), "structure.intro")
+        for pt in F["structure"].get("parts", []):
+            for k in ("name", "question", "text"):
+                bil(pt.get(k), f"part {pt.get('num')} {k}")
+            https(pt.get("url"), f"part {pt.get('num')}")
+            for s in pt.get("sections", []):
+                bil(s, f"part {pt.get('num')} section")
+        bil(F["versions"].get("title"), "versions.title")
+        for v in F["versions"].get("entries", []):
+            try:
+                datetime.date.fromisoformat(v.get("date", ""))
+            except Exception:
+                errs.append(f"feature version {v.get('label')}: date must be YYYY-MM-DD")
+            bil(v.get("text"), f"version {v.get('label')}")
+            if not isinstance(v.get("label"), str):
+                bil(v.get("label"), "version label")
+        https(F["versions"]["source"].get("url"), "versions.source")
+        bil(F["chain"].get("title"), "chain.title"); bil(F["chain"].get("note"), "chain.note")
+        for s in F["chain"].get("steps", []):
+            bil(s.get("date"), f"chain {s.get('who')} date"); bil(s.get("what"), f"chain {s.get('who')} what")
+            https(s.get("url"), f"chain {s.get('who')}")
+    if errs:
+        sys.exit("Data errors:\n  " + "\n  ".join(errs))
+
+
+def nav_html(d, key):
+    out = []
+    for p in d["pages"]:
+        href = "#top" if p["key"] == key else p["file"]
+        cur = ' aria-current="page"' if p["key"] == key else ""
+        out.append(f'<a href="{href}" data-internal{cur}><span class="t en">{p["label"]["en"]}</span>'
+                   f'<span class="t zh">{p["label"]["zh"]}</span></a>')
+    return "".join(out)
+
+
+def subnav_html():
+    links = "".join(f'<a href="#{a}"><span class="t en">{en}</span><span class="t zh">{zh}</span></a>' for a, en, zh in SUBNAV)
+    return ('<nav class="subnav" aria-label="On this page · 本页导航"><div class="wrap subnav-in">'
+            '<span class="sublabel"><span class="t en">On this page</span><span class="t zh">本页</span></span>' + links + '</div></nav>')
+
+
 def main():
     d = json.loads(DATA.read_text(encoding="utf-8"))
     if "--today" in sys.argv:
         d["meta"]["last_updated"] = datetime.datetime.now(TZ).date().isoformat()
         DATA.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     validate(d)
+    validate_pages(d)
     d["items"].sort(key=lambda i: i["date"], reverse=True)
     # inline images
     d["featured"]["thumbnail"] = data_uri(d["featured"]["thumbnail"])
     for it in d["items"]:
         if it.get("thumbnail"):
             it["thumbnail"] = data_uri(it["thumbnail"])
-    blob = json.dumps(d, ensure_ascii=False).replace("</", "<\\/")
-    html = (HERE / "src" / "template.html").read_text(encoding="utf-8")
-    html = html.replace("/*__CSS__*/", (HERE / "src" / "styles.css").read_text(encoding="utf-8"))
-    html = html.replace("/*__DATA__*/null", blob)
-    html = html.replace("/*__JS__*/", (HERE / "src" / "app.js").read_text(encoding="utf-8"))
-    out = HERE / "Neural-Media.html"
-    out.write_text(html, encoding="utf-8")
-    (HERE / "index.html").write_text(html, encoding="utf-8")  # identical copy
+    tpl = (HERE / "src" / "template.html").read_text(encoding="utf-8")
+    css = (HERE / "src" / "styles.css").read_text(encoding="utf-8")
+    js = (HERE / "src" / "app.js").read_text(encoding="utf-8")
+    report = []
+    for key, (files, main_html, keep, title) in PAGES.items():
+        sub = {k: d[k] for k in keep if k in d}
+        sub["pages"] = d["pages"]
+        blob = json.dumps(sub, ensure_ascii=False).replace("</", "<\\/")
+        html = (tpl.replace("<!--__TITLE__-->", title)
+                   .replace("<!--__PAGE__-->", key)
+                   .replace("<!--__HOME__-->", "#top" if key == "home" else "index.html")
+                   .replace("<!--__NAV__-->", nav_html(d, key))
+                   .replace("<!--__SUBNAV__-->", subnav_html() if key == "home" else "")
+                   .replace("<!--__MAIN__-->", main_html.rstrip("\n"))
+                   .replace("/*__CSS__*/", css)
+                   .replace("/*__DATA__*/null", blob)
+                   .replace("/*__JS__*/", js))
+        for f in files:
+            (HERE / f).write_text(html, encoding="utf-8")
+        report.append(f"{' = '.join(files)} ({len(html)//1024} KB)")
     counts = {}
     for it in d["items"]:
         for t in it["types"]:
             counts[t] = counts.get(t, 0) + 1
-    print(f"Built Neural-Media.html ({len(html)//1024} KB): {len(d['items'])} items; by type: {counts}; last_updated {d['meta']['last_updated']} (UTC+8)")
+    print("Built " + "; ".join(report))
+    print(f"{len(d['items'])} items; by type: {counts}; last_updated {d['meta']['last_updated']} (UTC+8)")
 
 
 if __name__ == "__main__":

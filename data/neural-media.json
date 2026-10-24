@@ -325,8 +325,8 @@
         "zh": "K 在 X 上发帖：「脑机接口 × AI = 神经媒体」"
       },
       "summary": {
-        "en": "K’s whole post reads “BCI x AI = neural media”. It quotes a thread by Trent McConaghy that defines neuroAI as “AI scaling laws x BCI” (decoding thought-to-text and thought-to-image with lots of data) and recommends Saturnin Pugnet’s manifesto Phase Lock. The clearest statement so far that K counts AI-decoded brain–computer interfaces as neural media. See section 06.",
-        "zh": "K 的帖子全文就是「BCI x AI = neural media」（脑机接口 × AI = 神经媒体）。它转引了 Trent McConaghy 的一条长帖：McConaghy 把 neuroAI 定义为「AI 规模定律 × 脑机接口」，即依靠海量数据把思维解码成文字和图像，并推荐了 Saturnin Pugnet 的宣言《Phase Lock》。这是 K 迄今最明确的表态：由 AI 解码的脑机接口属于神经媒体。详见第 06 部分。"
+        "en": "K’s whole post reads “BCI x AI = neural media”. It quotes a thread by Trent McConaghy that defines neuroAI as “AI scaling laws x BCI” (decoding thought-to-text and thought-to-image with lots of data) and recommends Saturnin Pugnet’s manifesto Phase Lock. The clearest statement so far that K counts AI-decoded brain–computer interfaces as neural media. See the BCI × Neural Media page.",
+        "zh": "K 的帖子全文就是「BCI x AI = neural media」（脑机接口 × AI = 神经媒体）。它转引了 Trent McConaghy 的一条长帖：McConaghy 把 neuroAI 定义为「AI 规模定律 × 脑机接口」，即依靠海量数据把思维解码成文字和图像，并推荐了 Saturnin Pugnet 的宣言《Phase Lock》。这是 K 迄今最明确的表态：由 AI 解码的脑机接口属于神经媒体。详见「脑机接口与神经媒体」页面。"
       },
       "url": "https://x.com/kalladomcdowell/status/2107760105198690608",
       "source": {
@@ -348,7 +348,14 @@
             "zh": "《Phase Lock》"
           }
         }
-      ]
+      ],
+      "internal": {
+        "href": "bci.html#phase-lock",
+        "label": {
+          "en": "The Phase Lock chapter",
+          "zh": "《Phase Lock》专题"
+        }
+      }
     },
     {
       "id": "2026-10-06-neuralese",
@@ -429,7 +436,14 @@
             "zh": "作者简介"
           }
         }
-      ]
+      ],
+      "internal": {
+        "href": "bci.html#phase-lock",
+        "label": {
+          "en": "Feature chapter on this site",
+          "zh": "站内专题章节"
+        }
+      }
     },
     {
       "id": "2026-10-interspecies-future",
@@ -2151,8 +2165,8 @@
         "zh": "脑植入设备同时解码语言和手势，驱动全身虚拟化身（加州大学旧金山分校，《自然·神经科学》）"
       },
       "summary": {
-        "en": "Edward Chang’s team at UCSF used machine-learning decoders on electrocorticography (ECoG) arrays over the motor cortex of people with paralysis. Two participants could speak and gesture (a wave, a thumbs-up) at the same time through a virtual avatar. Decoders worked better when trained on combined speech-and-gesture data, not on each separately. Wider context: BCI × AI research, not about K; see section 06.",
-        "zh": "加州大学旧金山分校 Edward Chang 团队在瘫痪患者运动皮层表面放置皮层电极阵列（ECoG），用机器学习解码器读取信号。两名参与者能通过虚拟化身同时「说话」和做手势（挥手、竖大拇指）。研究发现，用「说话加手势」的混合数据训练的解码器，比分别训练的效果更好。（相关背景：属于脑机接口 × AI 研究，与 K 无直接关系，详见第 06 部分。）"
+        "en": "Edward Chang’s team at UCSF used machine-learning decoders on electrocorticography (ECoG) arrays over the motor cortex of people with paralysis. Two participants could speak and gesture (a wave, a thumbs-up) at the same time through a virtual avatar. Decoders worked better when trained on combined speech-and-gesture data, not on each separately. Wider context: BCI × AI research, not about K; see the BCI × Neural Media page.",
+        "zh": "加州大学旧金山分校 Edward Chang 团队在瘫痪患者运动皮层表面放置皮层电极阵列（ECoG），用机器学习解码器读取信号。两名参与者能通过虚拟化身同时「说话」和做手势（挥手、竖大拇指）。研究发现，用「说话加手势」的混合数据训练的解码器，比分别训练的效果更好。（相关背景：属于脑机接口 × AI 研究，与 K 无直接关系，详见「脑机接口与神经媒体」页面。）"
       },
       "url": "https://www.nature.com/articles/s41593-026-02446-2",
       "source": {
@@ -2297,8 +2311,8 @@
         "zh": "斯坦福团队从运动皮层解码「内心语言」（《细胞》）"
       },
       "summary": {
-        "en": "Erin Kunz and colleagues showed that implanted arrays in four people with paralysis pick up imagined, unspoken sentences, decoded in real time from a vocabulary of up to 125,000 words, with error rates of roughly 26–54%. They also tested a mental “password” that stops the device decoding private inner speech unless the user unlocks it. Wider context: not about K, but it raises the mental-privacy questions in section 06.",
-        "zh": "Erin Kunz 等研究者发现，四名瘫痪患者脑中植入的电极阵列能捕捉到想象中、未说出口的句子，并在最多 12.5 万词的词汇范围内实时解码，错误率约为 26% 至 54%。团队还测试了一种「意念密码」：用户不解锁，设备就不会解码其私密的内心语言。（相关背景：与 K 无直接关系，但涉及第 06 部分讨论的精神隐私问题。）"
+        "en": "Erin Kunz and colleagues showed that implanted arrays in four people with paralysis pick up imagined, unspoken sentences, decoded in real time from a vocabulary of up to 125,000 words, with error rates of roughly 26–54%. They also tested a mental “password” that stops the device decoding private inner speech unless the user unlocks it. Wider context: not about K, but it raises the mental-privacy questions on the BCI × Neural Media page.",
+        "zh": "Erin Kunz 等研究者发现，四名瘫痪患者脑中植入的电极阵列能捕捉到想象中、未说出口的句子，并在最多 12.5 万词的词汇范围内实时解码，错误率约为 26% 至 54%。团队还测试了一种「意念密码」：用户不解锁，设备就不会解码其私密的内心语言。（相关背景：与 K 无直接关系，但涉及「脑机接口与神经媒体」页面讨论的精神隐私问题。）"
       },
       "url": "https://doi.org/10.1016/j.cell.2025.06.015",
       "source": {
@@ -2989,7 +3003,14 @@
             "en": "Keyboards and screens are too narrow a channel to steer advanced AI (“the bandwidth problem”). BCI could couple human intent to AI directly, as a blueprint, a training signal and a wider pipe. The bet is that AI’s scaling laws carry over to brain decoding. It does not cite K.",
             "zh": "键盘和屏幕这条通道太窄，不足以引导越来越强大的 AI（作者称之为「带宽问题」）。脑机接口可以把人的意图直接接入 AI，同时充当蓝本、训练信号和更宽的通道。作者押注 AI 的扩展规律同样适用于大脑解码。文中没有引用 K。"
           },
-          "url": "https://phaselock.satpugnet.com/"
+          "url": "https://phaselock.satpugnet.com/",
+          "internal": {
+            "href": "#phase-lock",
+            "label": {
+              "en": "Feature chapter above",
+              "zh": "见上方专题"
+            }
+          }
         },
         {
           "name": {
@@ -3396,6 +3417,524 @@
           "url": "https://derechocienciaytecnologia.uc.cl/sentencia/girardi-emotiv-inc-rol-105065-2023-corte-suprema/"
         }
       ]
+    },
+    "feature": {
+      "id": "phase-lock",
+      "kicker": {
+        "en": "Feature",
+        "zh": "专题"
+      },
+      "title": "Phase Lock",
+      "subtitle": {
+        "en": "A manifesto on brain–computer interfaces and preserving human agency in the age of AI",
+        "zh": "一份关于脑机接口、以及在 AI 时代守住人类能动性的宣言"
+      },
+      "byline": {
+        "en": "Saturnin Pugnet · first published 2 Oct 2026 · latest version v1.3, 23 Oct 2026",
+        "zh": "Saturnin Pugnet · 2026 年 10 月 2 日首发 · 最新版本 v1.3（2026 年 10 月 23 日）"
+      },
+      "definition": {
+        "word": "phase lock /feɪz lɒk/ n.",
+        "quote": {
+          "en": "“The exact threshold where two independent systems collapse into a single, unified frequency.”",
+          "zh": "两个独立系统坍缩为同一个统一频率的确切临界点。"
+        },
+        "note": {
+          "en": "The essay’s epigraph. Pugnet takes the term from physics, electronics and neuroscience, and applies it to humanity and AI.",
+          "zh": "这是文章开篇的题词（中文为本站意译）。作者借用了物理学、电子学和神经科学中的这个术语，用来描述人类与 AI 的关系。"
+        }
+      },
+      "cta": [
+        {
+          "url": "https://phaselock.satpugnet.com/",
+          "primary": true,
+          "label": {
+            "en": "Read it online",
+            "zh": "在线阅读全文"
+          }
+        },
+        {
+          "url": "https://phaselock.satpugnet.com/phase-lock-28fc3dab.pdf",
+          "label": {
+            "en": "PDF (about 22 MB)",
+            "zh": "PDF 版（约 22 MB）"
+          }
+        },
+        {
+          "url": "https://x.com/satpugnet/status/2107485695795220596",
+          "label": {
+            "en": "Launch post on X",
+            "zh": "X 上的发布帖"
+          }
+        },
+        {
+          "url": "https://blog.satpugnet.com/p/phase-lock",
+          "label": {
+            "en": "Substack edition",
+            "zh": "Substack 版本"
+          }
+        }
+      ],
+      "note": {
+        "en": "Wider context: Phase Lock never mentions K Allado-McDowell or the term “neural media”. It is featured here because K linked BCI × AI to neural media in a post that points to it (see “How it connects to K” below).",
+        "zh": "相关背景：《Phase Lock》全文没有提到 K Allado-McDowell，也没有使用「神经媒体」一词。本站之所以专门介绍它，是因为 K 在一条指向这篇宣言的帖子里，把「脑机接口 × AI」等同于神经媒体（见下文「与 K 的关联」）。"
+      },
+      "author": {
+        "title": {
+          "en": "The author",
+          "zh": "作者"
+        },
+        "text": {
+          "en": "Saturnin Pugnet is French and lives in New York. He writes that he pivoted his life in 2017 after concluding that AGI was coming, did AI and neurotech research at Caltech, and became a founding member of World (formerly Worldcoin), built with Sam Altman. He founded Factor Omega, an AI-safety nonprofit, and says he is now gearing up to build something new in neurotech. He spent six months writing Phase Lock.",
+          "zh": "Saturnin Pugnet 是法国人，现居纽约。他自述在 2017 年认定通用人工智能（AGI）即将到来，从此彻底转变人生方向：先在加州理工学院从事 AI 与神经技术研究，后成为 World（原 Worldcoin）的创始成员，与 Sam Altman 一同创办这家公司。他还创立了 AI 安全非营利组织 Factor Omega，并表示正准备在神经技术领域开创新事业。《Phase Lock》他写了六个月。"
+        },
+        "links": [
+          {
+            "url": "https://phaselock.satpugnet.com/about",
+            "label": {
+              "en": "About (Phase Lock site)",
+              "zh": "作者简介（Phase Lock 网站）"
+            }
+          },
+          {
+            "url": "https://factoromega.org/",
+            "label": {
+              "en": "Factor Omega",
+              "zh": "Factor Omega"
+            }
+          }
+        ]
+      },
+      "argument": {
+        "title": {
+          "en": "The core argument",
+          "zh": "核心论点"
+        },
+        "points": [
+          {
+            "term": {
+              "en": "The bandwidth problem",
+              "zh": "带宽问题"
+            },
+            "text": {
+              "en": "AI capability is racing ahead of human biology. We still steer it through keyboards, screens and clicks, so our ability to direct and govern AI does not scale with its power.",
+              "zh": "AI 的能力正在甩开人类生理的极限。我们仍在用键盘、屏幕和鼠标点击来操控它，因此人类引导和管理 AI 的能力，跟不上 AI 本身的增长。"
+            },
+            "quote": {
+              "en": "“Either we align AI or we get left behind.”",
+              "zh": "「要么我们让 AI 与人类对齐，要么我们被甩在身后。」"
+            }
+          },
+          {
+            "term": {
+              "en": "Alignment-by-integration",
+              "zh": "融合式对齐"
+            },
+            "text": {
+              "en": "Two ways to keep AI aligned: “alignment-by-control” constrains the machine from outside; “alignment-by-integration” couples human values and intent to it directly. Control may hold for a few years; integration is what lasts. The short period in which humans can still set the terms is the “Phase Lock Window”.",
+              "zh": "让 AI 与人类保持一致有两条路：「控制式对齐」从外部约束机器；「融合式对齐」则把人类的价值观和意图直接接入机器。控制或许能维持几年，真正长久的是融合。人类仍能决定融合条件的这段短暂时间，作者称为「相位锁定窗口」。"
+            },
+            "quote": {
+              "en": "“Control can hold for the next few years, but ultimately, only integration will last.”",
+              "zh": "「控制能撑过未来几年，但最终，只有融合才能长久。」"
+            }
+          },
+          {
+            "term": {
+              "en": "Blueprint, training signal, channel",
+              "zh": "蓝本、训练信号、通道"
+            },
+            "text": {
+              "en": "BCI does three jobs at once: the brain offers an architectural blueprint for an aligned intelligence; neural data gives AI a training signal for human intent and values, instead of inferring them from what we write and make; and BCI widens the bandwidth between mind and machine so humans can keep pace.",
+              "zh": "脑机接口同时承担三项任务：大脑为「对齐的智能」提供结构蓝本；神经数据为 AI 提供学习人类意图和价值观的训练信号，而不必从我们写下和做出的东西中去推断；脑机接口还拓宽了大脑与机器之间的带宽，让人类跟得上 AI。"
+            }
+          },
+          {
+            "term": {
+              "en": "The scaling-laws bet",
+              "zh": "押注扩展规律"
+            },
+            "text": {
+              "en": "The bet is that the recipe behind modern AI (better hardware, larger datasets, bigger models) works on brain decoding too. Treat the brain as a vast, noisy, mostly unlabelled dataset, the way the internet was, and AI can find structure in it. Pugnet puts BCI about eight years behind AI, at roughly AI’s 2017 level.",
+              "zh": "作者押注：造就现代 AI 的那套方法（更好的硬件、更大的数据集、更大的模型）同样适用于大脑解码。把大脑看作一个庞大、嘈杂、几乎没有标注的数据集，就像当年的互联网，AI 就能从中找到结构。作者估计脑机接口落后 AI 大约八年，相当于 AI 在 2017 年的水平。"
+            },
+            "quote": {
+              "en": "“the ChatGPT moment of the brain is now around the corner.”",
+              "zh": "「大脑的 ChatGPT 时刻已近在眼前。」"
+            }
+          },
+          {
+            "term": {
+              "en": "The non-invasive consumer route",
+              "zh": "非侵入式消费级路线"
+            },
+            "text": {
+              "en": "Implants give the cleanest signal, but the fastest path to scale is non-invasive. Consumer devices can reach millions of people without surgery and generate the large, varied neural datasets the field lacks. Consumer demand, plus the value of neural data to frontier AI labs and robotics companies, would then fund further progress in a flywheel.",
+              "zh": "植入式设备信号最清晰，但规模化最快的路径是非侵入式。消费级设备无需手术就能触达数百万人，产生这个领域最缺的大规模、多样化神经数据。消费需求，加上神经数据对前沿 AI 实验室和机器人公司的价值，会继续为研发提供资金，形成一个飞轮。"
+            }
+          },
+          {
+            "term": {
+              "en": "Neurorights and cognitive liberty",
+              "zh": "神经权利与认知自由"
+            },
+            "text": {
+              "en": "Part IV asks what could go wrong with mind reading at scale. Pugnet calls for strict protection of neural data (no employer or insurer access by default, deletion rights, hard limits on what can be trained from it) and wants cognitive liberty, the right to mental self-determination, recognised as a fundamental right. He cites Chile’s 2021 constitutional neurorights, US state neural-data laws and UNESCO’s 2025 standard as encouraging signs.",
+              "zh": "第四部分探讨大规模「读心」可能出什么问题。作者呼吁严格保护神经数据：默认不允许雇主或保险公司访问，保障删除权，并严格限制用这些数据训练什么。他主张把认知自由，即精神上的自我决定权，确立为一项基本权利。他把智利 2021 年写入宪法的神经权利、美国多个州的神经数据法以及联合国教科文组织 2025 年的标准视为积极信号。"
+            }
+          }
+        ]
+      },
+      "structure": {
+        "title": {
+          "en": "How the essay is built",
+          "zh": "全文结构"
+        },
+        "intro": {
+          "en": "An executive summary, four parts with 25 numbered sections, and four appendices. Each part opens with a question.",
+          "zh": "全文包括一篇执行摘要、四个部分（共 25 个编号小节）和四个附录。每个部分都以一个问题开篇。"
+        },
+        "parts": [
+          {
+            "num": "I",
+            "name": {
+              "en": "The Signal",
+              "zh": "信号"
+            },
+            "question": {
+              "en": "Can the brain be read?",
+              "zh": "大脑能被读取吗？"
+            },
+            "url": "https://phaselock.satpugnet.com/part-1",
+            "text": {
+              "en": "What BCI is and what it can already do, why the body’s own channels (eyes, ears, hands, voice) are a bottleneck for AI, why non-invasive devices are the fastest path to scale, and why now.",
+              "zh": "什么是脑机接口、它现在已能做到什么；为什么人体自身的通道（眼、耳、手、声音）对 AI 而言是瓶颈；为什么非侵入式设备是规模化最快的路径；以及为什么是现在。"
+            },
+            "sections": [
+              {
+                "en": "01 What Is BCI?",
+                "zh": "01 什么是脑机接口？"
+              },
+              {
+                "en": "02 The Art of the Possible",
+                "zh": "02 可能性的艺术"
+              },
+              {
+                "en": "03 The Peripheral Nervous System Bar",
+                "zh": "03 周围神经系统这道门槛"
+              },
+              {
+                "en": "04 The Fastest Path to Scale",
+                "zh": "04 规模化的最快路径"
+              },
+              {
+                "en": "05 Why Now?",
+                "zh": "05 为什么是现在？"
+              }
+            ]
+          },
+          {
+            "num": "II",
+            "name": {
+              "en": "The Scaling",
+              "zh": "扩展"
+            },
+            "question": {
+              "en": "Does the AI scaling playbook work on the brain?",
+              "zh": "AI 的扩展打法对大脑管用吗？"
+            },
+            "url": "https://phaselock.satpugnet.com/part-2",
+            "text": {
+              "en": "The brain as a noisy, unlabelled graph, like the internet, and Rich Sutton’s “bitter lesson” applied to it. A four-layer pyramid (hardware, data, algorithms, product), two ladders of progress (capability and calibration), consumer products as the wedge, and the section that gives the essay its name.",
+              "zh": "把大脑看作一张像互联网一样嘈杂、没有标注的图，并把 Rich Sutton 的「苦涩的教训」用在它身上。书中提出一个四层金字塔（硬件、数据、算法、产品）、两把衡量进展的梯子（能力与校准）、以消费产品为突破口，以及与全文同名的一节。"
+            },
+            "sections": [
+              {
+                "en": "06 The Brain’s Bitter Lesson",
+                "zh": "06 大脑的「苦涩教训」"
+              },
+              {
+                "en": "07 The Pyramid",
+                "zh": "07 金字塔"
+              },
+              {
+                "en": "08 Level One: Hardware Is Hard",
+                "zh": "08 第一层：硬件很难"
+              },
+              {
+                "en": "09 Level Two: The Data Scaling Argument",
+                "zh": "09 第二层：数据扩展论"
+              },
+              {
+                "en": "10 Level Three: Foundation Models for the Brain",
+                "zh": "10 第三层：大脑基础模型"
+              },
+              {
+                "en": "11 The Coordination Conundrum",
+                "zh": "11 协作难题"
+              },
+              {
+                "en": "12 The Two Ladders",
+                "zh": "12 两把梯子"
+              },
+              {
+                "en": "13 The Unknown Ceiling",
+                "zh": "13 未知的天花板"
+              },
+              {
+                "en": "14 The Consumer Wedge",
+                "zh": "14 消费级突破口"
+              },
+              {
+                "en": "15 Phase Lock",
+                "zh": "15 相位锁定"
+              }
+            ]
+          },
+          {
+            "num": "III",
+            "name": {
+              "en": "The Collision",
+              "zh": "碰撞"
+            },
+            "question": {
+              "en": "Why does BCI matter for AI?",
+              "zh": "脑机接口为什么对 AI 至关重要？"
+            },
+            "url": "https://phaselock.satpugnet.com/part-3",
+            "text": {
+              "en": "AI has melted the walls between fields, and BCI is now on a collision course with it: neural data as a new major training modality, BCI as the new interface to AI, and what that means for alignment.",
+              "zh": "AI 已经打破了各领域之间的壁垒，脑机接口正与它迎面相撞：神经数据成为一种重要的新训练模态，脑机接口成为与 AI 交互的新界面，以及这对 AI 对齐意味着什么。"
+            },
+            "sections": [
+              {
+                "en": "16 Converging Trajectories",
+                "zh": "16 交汇的轨迹"
+              },
+              {
+                "en": "17 The New Major Training Modality",
+                "zh": "17 新的主要训练模态"
+              },
+              {
+                "en": "18 The New Interface",
+                "zh": "18 新的界面"
+              },
+              {
+                "en": "19 Why This Matters for AI Alignment",
+                "zh": "19 这为何关乎 AI 对齐"
+              }
+            ]
+          },
+          {
+            "num": "IV",
+            "name": {
+              "en": "The Aftermath",
+              "zh": "余波"
+            },
+            "question": {
+              "en": "What are the implications for the future?",
+              "zh": "这对未来意味着什么？"
+            },
+            "url": "https://phaselock.satpugnet.com/part-4",
+            "text": {
+              "en": "Neurotechnology beyond reading the brain, the geopolitics of BCI, the risks of mind reading at scale (with neurorights and cognitive liberty), the 13 strongest objections to the thesis, the decade ahead and a conclusion.",
+              "zh": "超越「读脑」的更广泛神经技术、脑机接口的地缘政治、大规模读心的风险（包括神经权利与认知自由）、对本文论点最有力的 13 条反驳、未来十年的展望，以及结语。"
+            },
+            "sections": [
+              {
+                "en": "20 Beyond the Read",
+                "zh": "20 超越读取"
+              },
+              {
+                "en": "21 Geopolitical Games",
+                "zh": "21 地缘政治博弈"
+              },
+              {
+                "en": "22 Mind Reading at Scale: What Could Possibly Go Wrong",
+                "zh": "22 大规模读心：会出什么问题"
+              },
+              {
+                "en": "23 The Case Against the Case",
+                "zh": "23 反方的论证"
+              },
+              {
+                "en": "24 The Decade Ahead",
+                "zh": "24 未来十年"
+              },
+              {
+                "en": "25 Conclusion",
+                "zh": "25 结语"
+              }
+            ]
+          },
+          {
+            "num": "A–D",
+            "name": {
+              "en": "Appendix",
+              "zh": "附录"
+            },
+            "question": {
+              "en": "Predictions, acknowledgments, resources, and the modality map.",
+              "zh": "预测、致谢、资源与模态地图。"
+            },
+            "url": "https://phaselock.satpugnet.com/appendix",
+            "text": {
+              "en": "The essay’s main predictions with target years and confidence levels (to be updated as reality unfolds), the people who shaped it, further reading, and a map of brain-sensing modalities.",
+              "zh": "文中主要预测的汇总，附目标年份和置信度（作者会随现实进展更新）；对影响本文的朋友的致谢；延伸阅读；以及一张大脑感测模态地图。"
+            },
+            "sections": [
+              {
+                "en": "A Predictions to Revisit",
+                "zh": "A 待回看的预测"
+              },
+              {
+                "en": "B Friends and Thought Partners",
+                "zh": "B 朋友与思想伙伴"
+              },
+              {
+                "en": "C Further Resources",
+                "zh": "C 延伸资源"
+              },
+              {
+                "en": "D The Modality Map",
+                "zh": "D 模态地图"
+              }
+            ]
+          }
+        ]
+      },
+      "versions": {
+        "title": {
+          "en": "Version history",
+          "zh": "版本记录"
+        },
+        "entries": [
+          {
+            "date": "2026-10-23",
+            "label": "v1.3",
+            "text": {
+              "en": "Reader corrections (typos, captions, sources) and a PDF layout fix.",
+              "zh": "根据读者反馈修正错字、图注和来源，并修复 PDF 排版。"
+            }
+          },
+          {
+            "date": "2026-10-16",
+            "label": "v1.2",
+            "text": {
+              "en": "Section # marks made clickable.",
+              "zh": "小节编号改为可点击。"
+            }
+          },
+          {
+            "date": "2026-10-14",
+            "label": "v1.1",
+            "text": {
+              "en": "Appendix updates.",
+              "zh": "更新附录。"
+            }
+          },
+          {
+            "date": "2026-10-06",
+            "label": {
+              "en": "Launch",
+              "zh": "发布"
+            },
+            "text": {
+              "en": "Public launch on X and Substack: “The human brain is approaching its ChatGPT moment.”",
+              "zh": "在 X 和 Substack 上正式发布：「人类大脑正在迎来它的 ChatGPT 时刻。」"
+            }
+          },
+          {
+            "date": "2026-10-02",
+            "label": "v1.0",
+            "text": {
+              "en": "First published.",
+              "zh": "首次发布。"
+            }
+          }
+        ],
+        "source": {
+          "url": "https://phaselock.satpugnet.com/",
+          "label": {
+            "en": "Version history on the Phase Lock site",
+            "zh": "Phase Lock 网站上的版本记录"
+          }
+        }
+      },
+      "chain": {
+        "title": {
+          "en": "How it connects to K",
+          "zh": "与 K 的关联"
+        },
+        "steps": [
+          {
+            "date": {
+              "en": "2 Oct 2026",
+              "zh": "2026 年 10 月 2 日"
+            },
+            "who": "Saturnin Pugnet",
+            "what": {
+              "en": "Publishes Phase Lock; launches it on X on 6 Oct.",
+              "zh": "发表《Phase Lock》，10 月 6 日在 X 上正式发布。"
+            },
+            "url": "https://x.com/satpugnet/status/2107485695795220596"
+          },
+          {
+            "date": {
+              "en": "6 Oct 2026",
+              "zh": "2026 年 10 月 6 日"
+            },
+            "who": "Trent McConaghy",
+            "what": {
+              "en": "Quotes the launch post in a thread defining “neuroAI = AI scaling laws x BCI” and calls Sat’s piece essential reading. (McConaghy is also thanked in the essay’s acknowledgments.)",
+              "zh": "转引发布帖并发长帖，把 neuroAI 定义为「AI 规模定律 × 脑机接口」，称这篇文章是必读之作。（McConaghy 也出现在宣言的致谢名单中。）"
+            },
+            "url": "https://x.com/trentmc0/status/2107494584813011295"
+          },
+          {
+            "date": {
+              "en": "7 Oct 2026",
+              "zh": "2026 年 10 月 7 日"
+            },
+            "who": "K Allado-McDowell",
+            "what": {
+              "en": "Quotes McConaghy’s thread with one line: “BCI x AI = neural media”.",
+              "zh": "转引 McConaghy 的长帖，只写了一句：「BCI x AI = neural media」（脑机接口 × AI = 神经媒体）。"
+            },
+            "url": "https://x.com/kalladomcdowell/status/2107760105198690608"
+          }
+        ],
+        "note": {
+          "en": "So the link is indirect: K endorses the BCI × AI idea, not the manifesto by name, and Phase Lock itself does not cite K or use the term neural media.",
+          "zh": "所以这层关联是间接的：K 认同的是「脑机接口 × AI」这个想法，并没有点名评价这篇宣言；《Phase Lock》本身也没有引用 K，没有使用「神经媒体」一词。"
+        }
+      }
     }
-  }
+  },
+  "pages": [
+    {
+      "key": "home",
+      "file": "index.html",
+      "label": {
+        "en": "Neural Media",
+        "zh": "神经媒体总览"
+      }
+    },
+    {
+      "key": "who-else",
+      "file": "who-else.html",
+      "label": {
+        "en": "Who else",
+        "zh": "其他研究者"
+      }
+    },
+    {
+      "key": "bci",
+      "file": "bci.html",
+      "label": {
+        "en": "BCI × Neural Media",
+        "zh": "脑机接口与神经媒体"
+      }
+    }
+  ]
 }

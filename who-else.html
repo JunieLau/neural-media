@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who else works on neural media · 其他研究者与机构 | Neural Media</title>
+<meta name="description" content="A bilingual (English / Simplified Chinese) tracker of everything on Neural Media, the concept by K Allado-McDowell.">
+<!-- Optional web fonts; the page falls back to system fonts offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap">
+<style>:root{
+  --bg:#0a0b0f; --bg2:#101219; --panel:#13161f; --line:#232736; --line2:#2e3346;
+  --text:#ecedf2; --muted:#9aa1b4; --dim:#6d7488;
+  --accent:#c8ff4d; --accent-ink:#11140a; --violet:#a58bff;
+  --serif:"Fraunces","Noto Serif SC","Source Han Serif SC","Songti SC",Georgia,"Times New Roman",serif;
+  --sans:"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:
+  radial-gradient(900px 500px at 85% -5%,rgba(165,139,255,.16),transparent 60%),
+  radial-gradient(700px 400px at -10% 10%,rgba(200,255,77,.07),transparent 60%),var(--bg);
+  color:var(--text);font:16px/1.65 var(--sans)}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--accent);color:var(--accent-ink);padding:6px 10px;z-index:99}
+
+/* language visibility */
+body.lang-en .t.zh, body.lang-zh .t.en{display:none!important}
+.t{display:block}
+nav .t, .brand .t, .chip .t, .tag .t, .lang .t, .inline .t{display:inline}
+body.lang-both nav .t.zh{display:none}
+body.lang-zh nav .t.zh{display:inline}
+body.lang-both .t.en + .t.zh{margin-top:.35em}
+body.lang-both p.t.zh, body.lang-both .sum .t.zh{color:var(--muted)}
+.t.zh{font-family:var(--sans);letter-spacing:.01em}
+body.lang-both .tag .t.zh::before, body.lang-both .chip .t.zh::before{content:" · "}
+
+/* top bar */
+.topbar{position:sticky;top:0;z-index:20;background:rgba(10,11,15,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:20px;height:60px}
+.brand{font:600 14px/1 var(--sans);letter-spacing:.2em;text-decoration:none;white-space:nowrap}
+.brand span{color:var(--accent);letter-spacing:.1em;margin-left:6px}
+.nav{display:flex;gap:18px;margin-left:auto;font-size:14px;color:var(--muted)}
+.nav a{text-decoration:none}.nav a:hover{color:var(--text)}
+.lang{display:flex;border:1px solid var(--line2);border-radius:999px;padding:3px;gap:2px}
+.lang button{background:none;border:0;color:var(--muted);font:500 13px/1 var(--sans);padding:7px 11px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+
+/* hero */
+.hero{padding:88px 24px 56px}
+.kicker{font:600 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font:400 clamp(52px,10vw,124px)/.95 var(--serif);letter-spacing:-.03em;margin:22px 0 10px}
+.hero h1 .zh{font-family:var(--serif);font-weight:600;letter-spacing:.04em;color:var(--violet);font-size:.55em;margin-top:.15em}
+.hero .by{color:var(--muted);margin:0 0 30px;font-size:15px}
+.intro{display:grid;gap:28px;grid-template-columns:1fr;max-width:980px}
+body.lang-both .intro{grid-template-columns:1fr 1fr}
+.intro p{margin:0;font-size:19px;line-height:1.6;color:var(--text)!important}
+.intro p.zh{font-size:18px;line-height:1.85}
+.stamp{margin-top:34px;display:inline-flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);border:1px solid var(--line2);border-radius:999px;padding:7px 14px}
+.stamp i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.stamp .t{display:inline}
+body.lang-both .stamp .t.zh::before{content:" / "}
+
+/* blocks */
+.block{padding:64px 24px;border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.sec-head .num{font:500 13px/1 var(--sans);color:var(--accent);letter-spacing:.15em}
+.sec-head h2{margin:0;font:400 clamp(30px,4vw,44px)/1.1 var(--serif);letter-spacing:-.01em}
+.sec-head h2 .t.zh{font-size:.62em;color:var(--violet);margin-top:.2em;font-family:var(--serif)}
+.lead p{margin:0 0 6px;max-width:760px;font-size:17px}
+
+/* eras */
+.eras{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.era{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;position:relative;overflow:hidden}
+.era .span{font:600 13px/1 var(--sans);color:var(--dim);letter-spacing:.06em}
+.era h3{font:400 26px/1.1 var(--serif);margin:10px 0 14px}
+.era h3 .t.zh{font-size:17px;color:var(--muted);font-family:var(--sans);margin-top:4px}
+.era dl{margin:0 0 14px;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:13px}
+.era dt{color:var(--dim);text-transform:uppercase;letter-spacing:.08em;font-size:11px;padding-top:2px}
+.era dd{margin:0}
+.era dd .t{display:inline}body.lang-both .era dd .t.zh::before{content:" / ";color:var(--dim)}
+.era .id{font-size:14px;margin:0;border-top:1px dashed var(--line2);padding-top:12px}
+.era.now{border-color:var(--accent);background:linear-gradient(180deg,rgba(200,255,77,.08),var(--panel) 60%)}
+.era.now .span{color:var(--accent)}
+.era.now::after{content:"NOW · 当下";position:absolute;top:16px;right:16px;font:600 10px/1 var(--sans);letter-spacing:.14em;color:var(--accent-ink);background:var(--accent);padding:5px 7px;border-radius:999px}
+.timeline-bar{display:grid;grid-template-columns:repeat(4,1fr);margin-top:14px;height:6px;border-radius:6px;overflow:hidden;gap:3px}
+.timeline-bar span{background:var(--line2)}.timeline-bar span.now{background:linear-gradient(90deg,var(--accent) 50%,var(--line2) 50%)}
+.notes{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.notes li{border-left:2px solid var(--violet);padding:2px 0 2px 14px;font-size:15px}
+
+/* feed */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.chip{background:transparent;border:1px solid var(--line2);color:var(--muted);border-radius:999px;padding:7px 13px;font:500 13px/1 var(--sans);cursor:pointer}
+.chip b{font-weight:600;color:var(--dim);margin-left:6px}
+.chip[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.chip[aria-pressed="true"] b{color:var(--bg)}
+.feed-note{color:var(--muted);font-size:14px;margin:14px 0 26px;max-width:860px}
+.feed{list-style:none;margin:0;padding:0;position:relative}
+.feed::before{content:"";position:absolute;left:131px;top:6px;bottom:6px;width:1px;background:var(--line2)}
+.item{display:grid;grid-template-columns:120px 1fr;gap:0 32px;padding:0 0 30px;position:relative}
+.item::before{content:"";position:absolute;left:127px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:2px solid var(--violet)}
+.item.fresh::before{border-color:var(--accent);background:var(--accent)}
+.when{font:500 13px/1.4 var(--sans);color:var(--muted);text-align:right;padding-top:3px}
+.when .t.zh{font-size:12px;color:var(--dim)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;display:grid;gap:10px;grid-template-columns:1fr}
+.card.has-thumb{grid-template-columns:1fr 200px;gap:10px 20px}
+.card:hover{border-color:var(--line2)}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font:600 11px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;border-radius:6px;padding:5px 7px;background:#1c2030;color:var(--muted)}
+.tag.video{color:#ff8f8f}.tag.post{color:#7fd3ff}.tag.essay{color:var(--accent)}.tag.interview{color:#ffc46b}
+.tag.podcast{color:#e59bff}.tag.talk{color:#8fffd0}.tag.exhibition{color:#ffa3c8}.tag.book{color:#c9b8ff}
+.tag.new{background:var(--accent);color:var(--accent-ink)}
+.card h3{margin:0;font:600 19px/1.35 var(--sans)}
+.card h3 a{text-decoration:none}.card h3 a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+.card h3 .t.zh{font-weight:500;font-size:17px;color:#d4d6df}
+.sum p{margin:0;font-size:15px}
+.links{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px}
+.links a{color:var(--accent);text-decoration:none}.links a:hover{text-decoration:underline}
+.links .src{color:var(--dim)}
+.links .t{display:inline}body.lang-both .links .t.zh::before{content:" / "}
+.thumb{grid-row:1 / span 4;grid-column:2;border-radius:10px;overflow:hidden;border:1px solid var(--line2);align-self:start;position:relative}
+.thumb img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.thumb::after{content:"▶";position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:22px;text-shadow:0 2px 10px #000}
+.empty{color:var(--muted)}
+
+/* video */
+.video-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:start}
+.player{display:block;position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line2);text-decoration:none}
+.player img{width:100%;aspect-ratio:16/9;object-fit:cover;filter:saturate(.9)}
+.player .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;background:var(--accent);display:grid;place-items:center;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.player .play::before{content:"";border-left:22px solid var(--accent-ink);border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:6px}
+.player .cap{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:13px;color:#ddd}
+.player .cap .t{display:inline}body.lang-both .player .cap .t.zh::before{content:" · "}
+.video-info h3{font:400 26px/1.2 var(--serif);margin:0 0 8px}
+.video-info h3 .t.zh{font-size:18px;color:var(--violet)}
+.video-info .meta{color:var(--muted);font-size:14px;margin:0 0 18px}
+.video-info .meta .t{display:block}
+.take{list-style:none;padding:0;margin:0 0 18px;counter-reset:k}
+.take li{counter-increment:k;position:relative;padding:0 0 14px 38px;font-size:15px}
+.take li::before{content:counter(k,decimal-leading-zero);position:absolute;left:0;top:1px;font:600 12px/1.6 var(--sans);color:var(--accent)}
+
+/* reading */
+.reading{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.read{display:flex;flex-direction:column;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-decoration:none;transition:border-color .2s,transform .2s}
+.read:hover{border-color:var(--accent);transform:translateY(-2px)}
+.read .yr{font:600 12px/1 var(--sans);color:var(--accent);letter-spacing:.1em}
+.read h3{margin:0;font:400 20px/1.25 var(--serif)}
+.read h3 .t.zh{font-size:15px;font-family:var(--sans);color:var(--muted)}
+.read .src{margin-top:auto;font-size:12px;color:var(--dim)}
+.read .src .t{display:inline}body.lang-both .read .src .t.zh::before{content:" / "}
+
+.foot{padding:40px 24px 60px;border-top:1px solid var(--line);color:var(--dim);font-size:13px}
+.foot p{margin:0 0 6px}
+
+@media (max-width:960px){
+  .eras{grid-template-columns:1fr 1fr}.timeline-bar{display:none}
+  .notes{grid-template-columns:1fr}
+  .video-grid{grid-template-columns:1fr}
+  .reading{grid-template-columns:1fr 1fr}
+  .lang{margin-left:auto}
+}
+@media (max-width:640px){
+  .wrap{padding:0 18px}
+  .hero{padding:56px 18px 40px}
+  body.lang-both .intro{grid-template-columns:1fr}
+  .intro p{font-size:17px}.intro p.zh{font-size:16px}
+  .block{padding:48px 18px}
+  .eras{grid-template-columns:1fr}
+  .reading{grid-template-columns:1fr}
+  .brand span{display:none}
+  .lang button{padding:7px 9px;font-size:12px}
+  .feed::before{left:5px}
+  .item{grid-template-columns:1fr;padding-left:24px;gap:6px}
+  .item::before{left:1px;top:5px}
+  .when{text-align:left;display:flex;gap:8px;flex-wrap:wrap}
+  .when .t{display:inline}
+  body.lang-both .when .t.zh::before{content:"· "}
+  .card.has-thumb{grid-template-columns:1fr}
+  .thumb{grid-row:auto;grid-column:auto;order:-1}
+}
+
+body.lang-both .by .inline .t.zh::before{content:" / "}
+@media (max-width:640px){.stamp{border-radius:12px;align-items:flex-start}.stamp .t{display:block}body.lang-both .stamp .t.zh::before{content:none}}
+
+/* landscape: who else works on neural media */
+.land-lead p{max-width:900px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 44px}
+.mark{display:inline-flex;align-items:center;font:600 10.5px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:5px 9px;border:1px solid var(--line2);color:var(--muted);white-space:nowrap}
+.mark .t{display:inline}body.lang-both .mark .t.zh::before{content:" · "}
+.mark.term{color:var(--accent);border-color:rgba(200,255,77,.45)}
+.mark.citesK{color:var(--violet);border-color:rgba(165,139,255,.5)}
+.mark.adjacent{color:#ffc46b;border-color:rgba(255,196,107,.4)}
+.mark.different{color:var(--dim);border-style:dashed}
+.land-group{margin:0 0 56px}
+.land-head{display:flex;align-items:baseline;gap:18px;border-bottom:1px solid var(--line2);padding-bottom:14px;margin-bottom:6px}
+.land-head .roman{font:400 44px/1 var(--serif);color:var(--violet);opacity:.8;min-width:56px}
+.land-head h3{margin:0;font:400 30px/1.15 var(--serif);letter-spacing:-.01em}
+.land-head h3 .t{display:inline}.land-head h3 .t.zh{font:500 18px/1 var(--sans);color:var(--muted)}
+body.lang-both .land-head h3 .t.zh::before{content:"  ";white-space:pre}
+.who-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:48px}
+.who{padding:22px 0;border-bottom:1px solid var(--line);display:grid;gap:8px;align-content:start}
+.who h4{margin:0;font:400 22px/1.25 var(--serif)}
+.who h4 a{text-decoration:none}.who h4 a:hover{color:var(--accent)}
+.who h4 .t.zh{font:500 15px/1.5 var(--sans);color:var(--muted)}
+.who h4 .arr{font:400 14px/1 var(--sans);color:var(--accent);margin-left:8px;vertical-align:3px}
+body.lang-both .who h4 .t.en + .t.zh{margin-top:.2em}
+body.lang-zh .who h4 .t.zh{font:400 20px/1.35 var(--serif);color:var(--text)}
+.who-marks{display:flex;flex-wrap:wrap;gap:6px}
+.who-line p{margin:0;font-size:14.5px;line-height:1.6}
+.land-note{margin-top:18px;color:var(--dim);font-size:13.5px;border-left:2px solid var(--line2);padding-left:14px}
+.land-note p{margin:0}
+.g-meanings .who-list{grid-template-columns:repeat(4,1fr);column-gap:14px}
+.g-meanings .who{border:1px dashed var(--line2);border-radius:var(--radius);padding:18px;margin-top:14px;background:rgba(19,22,31,.5)}
+.g-meanings .who h4{font-size:18px}
+.tag.course{color:#9fe3ff}
+@media (max-width:960px){.who-list{grid-template-columns:1fr}.g-meanings .who-list{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.g-meanings .who-list{grid-template-columns:1fr}.land-head .roman{font-size:34px;min-width:40px}.land-head h3{font-size:24px}.land-head h3 .t{display:block}body.lang-both .land-head h3 .t.zh::before{content:none}}
+.who h4 .one{display:block}
+body.lang-both .who h4 .t.zh .arr{display:none}
+.who h4 .arr{white-space:nowrap}
+
+/* BCI x neural media */
+.tag.performance{color:#ffb38a}
+.bci-strap{display:flex;align-items:center;gap:16px;margin:-6px 0 26px;font:600 11px/1 var(--sans);letter-spacing:.24em;color:var(--dim)}
+.bci-strap .s-brain{color:var(--violet)}.bci-strap .s-net{color:var(--accent)}
+.bci-strap .s-wave{flex:1;max-width:420px;height:18px;background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='18' viewBox='0 0 60 18'%3E%3Cpath d='M0 9 Q7.5 0 15 9 T30 9 T45 9 T60 9' fill='none' stroke='%23a58bff' stroke-width='1.2'/%3E%3C/svg%3E") repeat-x left center;
+  -webkit-mask:linear-gradient(90deg,#000 10%,rgba(0,0,0,.25));mask:linear-gradient(90deg,#000 10%,rgba(0,0,0,.25))}
+.bci-lead p{max-width:900px}
+.mark.b-k{color:var(--violet);border-color:rgba(165,139,255,.55)}
+.mark.b-theory{color:var(--accent);border-color:rgba(200,255,77,.45)}
+.mark.b-research{color:#8fffd0;border-color:rgba(143,255,208,.4)}
+.mark.b-industry{color:#ffc46b;border-color:rgba(255,196,107,.4)}
+.mark.b-law{color:#ff9fb0;border-color:rgba(255,159,176,.4)}
+.primer{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.pcard{position:relative;background:linear-gradient(180deg,rgba(165,139,255,.07),var(--panel) 55%);border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px 18px;display:flex;flex-direction:column;gap:10px;overflow:hidden}
+.pcard .pnum{position:absolute;right:16px;top:8px;font:italic 400 46px/1 var(--serif);color:var(--violet);opacity:.22}
+.pcard h4{margin:0;font:400 22px/1.2 var(--serif);padding-right:36px}
+.pcard h4 .t.zh{font:500 15px/1.5 var(--sans);color:var(--muted)}
+body.lang-zh .pcard h4 .t.zh{font:400 20px/1.35 var(--serif);color:var(--text)}
+.ptext p{margin:0;font-size:14.5px;line-height:1.6}
+.pcard .links{margin-top:auto}
+.ideas .idea{padding:22px 0;border-bottom:1px solid var(--line);display:grid;gap:8px;align-content:start}
+.idea h4{margin:0;font:400 22px/1.25 var(--serif)}
+.idea h4 a{text-decoration:none}.idea h4 a:hover{color:var(--accent)}
+.idea h4 .t.zh{font:500 15px/1.5 var(--sans);color:var(--muted)}
+body.lang-zh .idea h4 .t.zh{font:400 20px/1.35 var(--serif);color:var(--text)}
+.idea-src{font:500 12px/1.5 var(--sans);letter-spacing:.04em;color:var(--dim)}
+.idea-src .t{display:inline}body.lang-both .idea-src .t.zh::before{content:" / "}
+.bnews{list-style:none;margin:10px 0 0;padding:0;position:relative}
+.bnews::before{content:"";position:absolute;left:131px;top:0;bottom:0;width:1px;background:linear-gradient(var(--violet),var(--line2) 30%,var(--line2) 80%,transparent)}
+.nyear{display:grid;grid-template-columns:120px 1fr;gap:0 32px;margin:26px 0 8px}
+.nyear span{grid-column:1;text-align:right;font:400 30px/1 var(--serif);color:var(--violet);opacity:.85}
+.nyear:first-child{margin-top:8px}
+.nitem{display:grid;grid-template-columns:120px 1fr;gap:0 32px;padding:12px 0;position:relative}
+.nitem::before{content:"";position:absolute;left:128px;top:19px;width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px rgba(200,255,77,.6)}
+.ndate{font:500 13px/1.4 var(--sans);color:var(--muted);text-align:right;padding-top:2px}
+.ndate .t.zh{font-size:12px;color:var(--dim)}
+.nbody{display:grid;gap:6px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.nbody h4{margin:0;font:600 17px/1.35 var(--sans)}
+.nbody h4 a{text-decoration:none}.nbody h4 a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+.nbody h4 .t.zh{font-weight:500;font-size:15.5px;color:#d4d6df}
+@media (max-width:960px){.primer{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){
+  .primer{grid-template-columns:1fr}
+  .bnews::before{left:5px}
+  .nyear,.nitem{grid-template-columns:1fr;padding-left:24px;gap:6px}
+  .nyear span{text-align:left;font-size:24px}
+  .nitem::before{left:2px;top:17px}
+  .ndate{text-align:left;display:flex;gap:8px;flex-wrap:wrap}.ndate .t{display:inline}
+  body.lang-both .ndate .t.zh::before{content:"· "}
+  .bci-strap .s-wave{max-width:none}
+}
+body.lang-zh .land-head h3 .t.zh{font:400 28px/1.2 var(--serif);color:var(--text);letter-spacing:.02em}
+
+/* multi-page navigation */
+.nav{gap:6px}
+.nav a{position:relative;padding:8px 12px;border-radius:999px;white-space:nowrap;transition:color .2s,background .2s}
+.nav a[aria-current="page"]{color:var(--text);background:rgba(255,255,255,.06)}
+.nav a[aria-current="page"]::after{content:"";position:absolute;left:14px;right:14px;bottom:-11px;height:2px;border-radius:2px;background:var(--accent);box-shadow:0 0 10px rgba(200,255,77,.6)}
+.subnav{border-bottom:1px solid var(--line);background:rgba(10,11,15,.4)}
+.subnav-in{display:flex;align-items:center;gap:22px;height:44px;font-size:13px;color:var(--muted);overflow-x:auto;scrollbar-width:none}
+.subnav-in::-webkit-scrollbar{display:none}
+.subnav a{text-decoration:none;white-space:nowrap}.subnav a:hover{color:var(--accent)}
+.subnav .t{display:inline}body.lang-both .subnav a .t.zh,body.lang-both .subnav .sublabel .t.zh{display:none}
+.sublabel{font:600 10.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.block.page-first{border-top:0;padding-top:72px}
+.links a.internal{color:var(--violet)}
+@media (max-width:960px){
+  html{scroll-padding-top:112px}
+  .bar{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:0;gap:10px 16px}
+  .nav{order:3;width:100%;margin:0 -6px;overflow-x:auto;scrollbar-width:none;padding-bottom:8px}
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{padding:7px 12px;font-size:13.5px}
+  .nav a[aria-current="page"]::after{bottom:-3px}
+}
+
+/* Phase Lock feature chapter */
+.feature{position:relative;margin:40px 0 72px;padding:56px 56px 48px;border:1px solid var(--line2);border-radius:22px;overflow:hidden;
+  background:radial-gradient(700px 360px at 100% 0%,rgba(165,139,255,.18),transparent 65%),radial-gradient(500px 300px at 0% 100%,rgba(200,255,77,.06),transparent 60%),linear-gradient(180deg,#12141d,#0d0f15)}
+.feature::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--violet),var(--accent))}
+.f-top{max-width:880px}
+.f-kicker{font:600 12px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--accent)}
+.f-kicker .t{display:inline}body.lang-both .f-kicker .t.zh::before{content:" · "}
+.f-title{margin:18px 0 8px;font:400 clamp(56px,9vw,112px)/.92 var(--serif);letter-spacing:-.035em;
+  background:linear-gradient(100deg,#fff 30%,#cfc3ff 70%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.f-sub p{margin:0;font:400 22px/1.35 var(--serif)}
+.f-sub p.t.zh{font:500 17px/1.6 var(--sans);color:var(--muted)}
+body.lang-zh .f-sub p.t.zh{font:400 22px/1.45 var(--serif);color:var(--text)}
+.f-byline{margin:14px 0 0;font-size:13.5px;color:var(--muted)}
+.f-byline .t{display:block}
+.f-def{margin:30px 0 0;padding:18px 0 18px 22px;border-left:2px solid var(--violet)}
+.f-def .fw{font:italic 400 15px/1 var(--serif);color:var(--violet);letter-spacing:.02em;margin-bottom:10px}
+.f-def p{margin:0;font:400 20px/1.45 var(--serif)}
+.f-def p.t.zh{font:400 17px/1.7 var(--serif);color:var(--muted)}
+body.lang-zh .f-def p.t.zh{font-size:20px;color:var(--text)}
+.f-def figcaption{margin-top:10px;font-size:12.5px;color:var(--dim)}
+.f-cta{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 0}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font:500 14px/1 var(--sans);color:var(--text);background:rgba(255,255,255,.02);transition:border-color .2s,transform .2s}
+.btn:hover{border-color:var(--accent);transform:translateY(-1px)}
+.btn .t{display:inline}body.lang-both .btn .t.zh::before{content:" · "}body.lang-both .btn .t.zh{color:var(--muted)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+body.lang-both .btn.primary .t.zh{color:var(--accent-ink);opacity:.75}
+.f-note{margin-top:24px;padding:14px 16px;border:1px dashed var(--line2);border-radius:12px;font-size:13.5px;color:var(--muted);max-width:880px}
+.f-note p{margin:0}
+.f-h{margin:0 0 16px;font:600 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.f-h .t{display:inline}body.lang-both .f-h .t.zh::before{content:" · "}
+.f-row{display:grid;gap:40px;margin-top:56px;padding-top:40px;border-top:1px solid var(--line)}
+.f-row-a{grid-template-columns:minmax(0,.8fr) minmax(0,2.2fr)}
+.f-row-b{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}
+.f-author>p{margin:0 0 6px;font-size:14.5px;line-height:1.65}
+.f-author .links{margin-top:12px}
+.fpoints{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:26px 34px}
+.fpoint{position:relative;padding-left:40px}
+.fpn{position:absolute;left:0;top:2px;font:400 22px/1 var(--serif);color:var(--violet)}
+.fpoint h5{margin:0 0 6px;font:400 21px/1.25 var(--serif)}
+.fpoint h5 .t.zh{font:500 14.5px/1.5 var(--sans);color:var(--muted)}
+body.lang-zh .fpoint h5 .t.zh{font:400 19px/1.35 var(--serif);color:var(--text)}
+.fq{margin:10px 0 0;padding:0 0 0 12px;border-left:2px solid var(--accent)}
+.fq p{margin:0;font:italic 400 15px/1.5 var(--serif);color:#e6e1ff}
+.fq p.t.zh{font:400 14px/1.6 var(--sans);color:var(--muted)}
+.f-struct{margin-top:56px;padding-top:40px;border-top:1px solid var(--line)}
+.f-struct-intro p{margin:0 0 6px;max-width:760px;font-size:15px}
+.fparts{list-style:none;margin:20px 0 0;padding:0}
+.fpart{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:32px;padding:24px 0;border-bottom:1px solid var(--line)}
+.fpart:last-child{border-bottom:0}
+.fpart-head a{display:flex;align-items:baseline;gap:14px;text-decoration:none}
+.fpart-head a:hover .fname{color:var(--accent)}
+.fr{font:400 40px/1 var(--serif);color:var(--violet);min-width:64px}
+.fname .t{display:block}.fname .t.en{font:400 26px/1.15 var(--serif)}
+.fname .t.zh{font:500 14px/1.5 var(--sans);color:var(--muted)}
+body.lang-zh .fname .t.zh{font:400 24px/1.2 var(--serif);color:var(--text)}
+.fquest{margin:10px 0 0 78px;font:italic 400 15px/1.45 var(--serif);color:#cfc3ff}
+.fquest .t.zh{font:400 13.5px/1.6 var(--sans);font-style:normal;color:var(--muted)}
+.fsecs{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:13px;color:var(--muted)}
+.fsecs li{padding:4px 0;border-top:1px dashed var(--line)}
+.fsecs .t.zh{font-size:12.5px;color:var(--dim)}
+body.lang-both .fsecs .t.en + .t.zh{margin-top:0}
+.vlist{list-style:none;margin:0;padding:0 0 0 16px;border-left:1px solid var(--line2)}
+.vlist li{position:relative;padding:0 0 16px 6px}
+.vlist li::before{content:"";position:absolute;left:-21px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:2px solid var(--violet)}
+.vlist li:first-child::before{background:var(--accent);border-color:var(--accent)}
+.vl{font:600 12px/1 var(--sans);letter-spacing:.08em;color:var(--accent);margin-right:10px}
+.vl .t,.vd .t{display:inline}body.lang-both .vl .t.zh,body.lang-both .vd .t.zh{display:none}
+.vd{font-size:12.5px;color:var(--muted)}
+.vt p{margin:4px 0 0;font-size:14px}
+.clist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:stretch}
+.cstep{background:rgba(19,22,31,.7);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:6px}
+.cdate{font:600 11px/1.3 var(--sans);letter-spacing:.06em;color:var(--dim)}
+.cdate .t{display:inline}body.lang-both .cdate .t.zh{display:none}
+.cstep h5{margin:0;font:400 18px/1.25 var(--serif)}
+.cstep h5 a{text-decoration:none}.cstep h5 a:hover{color:var(--accent)}
+.cstep .who-line p{font-size:13.5px}
+.carrow{align-self:center;color:var(--accent);font-size:20px}
+.f-chain .land-note{margin-top:18px}
+@media (max-width:960px){
+  .feature{padding:40px 28px 36px}
+  .f-row-a,.f-row-b{grid-template-columns:1fr}
+  .fpoints{grid-template-columns:1fr}
+  .fpart{grid-template-columns:1fr;gap:12px}
+  .clist{grid-template-columns:1fr}
+  .carrow{justify-self:center;transform:rotate(90deg)}
+}
+@media (max-width:640px){
+  .feature{margin:28px -6px 56px;padding:32px 18px 28px;border-radius:16px}
+  .f-sub p{font-size:19px}
+  .f-def p{font-size:17px}
+  .fsecs{grid-template-columns:1fr}
+  .fquest{margin-left:0}
+  .fr{font-size:32px;min-width:52px}
+  .btn{padding:10px 14px;font-size:13px}
+  .block.page-first{padding-top:44px}
+}
+</style>
+</head>
+<body class="lang-both page-who-else">
+<a class="skip" href="#top">Skip to content · 跳到正文</a>
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" data-internal>NEURAL MEDIA <span>神经媒体</span></a>
+    <nav class="nav" aria-label="Pages · 页面"><a href="index.html" data-internal><span class="t en">Neural Media</span><span class="t zh">神经媒体总览</span></a><a href="#top" data-internal aria-current="page"><span class="t en">Who else</span><span class="t zh">其他研究者</span></a><a href="bci.html" data-internal><span class="t en">BCI × Neural Media</span><span class="t zh">脑机接口与神经媒体</span></a></nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="en" type="button">EN</button>
+      <button data-lang="zh" type="button">中文</button>
+      <button data-lang="both" type="button" aria-pressed="true">EN + 中文</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap block page-first" id="landscape"></section>
+</main>
+<footer class="wrap foot" id="foot"></footer>
+<noscript><p class="wrap">This page needs JavaScript to render. 本页面需要启用 JavaScript。</p></noscript>
+<script>window.__NM_DATA__ = {"meta": {"last_updated": "2026-10-25", "launched": "2026-10-21", "timezone": "UTC+8", "note": {"en": "No new standalone Neural Media book or essay from K has appeared in 2026 so far. This year's activity is posts, interviews, talks, an exhibition, a book release and papers by other writers that cite K's neural media essays. Items tagged “Wider context” are either K's recent activity that isn't about neural media itself, or related work by others that doesn't directly engage K's framework. Dates are shown in China time (UTC+8), so US-dated posts can appear one day later.", "zh": "截至目前，K 在 2026 年尚未发表新的「神经媒体」专著或独立文章。今年的动态主要是社交媒体帖子、访谈、演讲、展览、一本新书的发行，以及其他作者引用 K 神经媒体文章的论文。标为「相关背景」的条目，或是并非专门讨论神经媒体的 K 的近期动态，或是未直接讨论 K 理论框架的其他人的相关工作。所有日期均按北京时间（UTC+8）显示，因此美国时间发布的帖子可能会显示为晚一天。"}}, "types": {"video": {"en": "Video", "zh": "视频"}, "post": {"en": "Post", "zh": "帖子"}, "essay": {"en": "Essay/Paper", "zh": "文章/论文"}, "interview": {"en": "Interview", "zh": "访谈"}, "podcast": {"en": "Podcast", "zh": "播客"}, "talk": {"en": "Talk", "zh": "演讲"}, "exhibition": {"en": "Exhibition", "zh": "展览"}, "book": {"en": "Book", "zh": "图书"}, "context": {"en": "Wider context", "zh": "相关背景"}, "course": {"en": "Course", "zh": "课程"}, "performance": {"en": "Performance", "zh": "演出"}}, "landscape": {"title": {"en": "Who else works on neural media", "zh": "其他研究者与机构"}, "lead": {"en": "No one besides K has published a full theory of neural media. The term is now used by critics, curators, designers and schools, mostly building on K's framework; one research group coined it separately in 2021, and several scholars work on the same questions under other names. Labels show whether each source explicitly uses the term “neural media”, cites K, or is adjacent work.", "zh": "除 K 之外，目前还没有人发表过完整的神经媒体理论。如今这个词已被评论家、策展人、设计师和院校使用，大多以 K 的框架为基础；有一个研究团队在 2021 年独立提出了这个词，另有几位学者用其他名称研究相同的问题。标签说明每条来源是明确使用「神经媒体」一词、引用 K，还是属于相关领域的研究。"}, "markers": {"term": {"en": "uses the term", "zh": "使用该术语"}, "citesK": {"en": "cites K", "zh": "引用 K"}, "adjacent": {"en": "adjacent", "zh": "相关领域"}, "different": {"en": "different meaning", "zh": "不同含义"}}, "groups": [{"key": "people", "title": {"en": "Scholars, critics & artists", "zh": "学者、评论家与艺术家"}, "entries": [{"name": {"en": "Caroline Busta & Lil Internet (New Models)", "zh": "Caroline Busta 与 Lil Internet（New Models）"}, "marks": ["term", "citesK"], "line": {"en": "Extend the framework in talks: Vienna Digital Cultures 2025 and MUTEK Montréal 2026. Busta named K's essay a best of 2024 in Artforum.", "zh": "在演讲中延伸这一框架：2025 年维也纳数字文化节和 2026 年蒙特利尔 MUTEK。Busta 曾在 Artforum 把 K 的文章评为 2024 年最佳之一。"}, "url": "https://forum.mutek.org/en/shows/2026/vibe-ocracy-in-the-psyber-age"}, {"name": {"en": "Julia Kaganskiy", "zh": "Julia Kaganskiy"}, "marks": ["term"], "line": {"en": "Chapter “Dreaming a New Reality in the Age of Neural Media” in Shimmer (MIT Press, 2026). Unconfirmed whether it cites K.", "zh": "在《Shimmer》（MIT 出版社，2026）中撰写《在神经媒体时代梦想新的现实》一章；尚未确认是否引用 K。"}, "url": "https://doi.org/10.7551/mitpress/15922.003.0006"}, {"name": {"en": "Suk Kyoung Choi & Steve DiPaola (Simon Fraser University)", "zh": "Suk Kyoung Choi 与 Steve DiPaola（西蒙菲莎大学）"}, "marks": ["term"], "line": {"en": "Coined “neural media” separately in 2021, as a phenomenology of making art with neural networks in latent space.", "zh": "2021 年独立提出「神经媒体」，指在潜在空间中借助神经网络进行艺术创作的现象学。"}, "url": "https://library.imaging.org/jpi/articles/4/2/jpi0139"}, {"name": {"en": "Milia Xin Bi (FACT Liverpool)", "zh": "Milia Xin Bi（利物浦 FACT）"}, "marks": ["citesK"], "line": {"en": "Curator of “Can Meeple Escape the Neurophoria?” (2026); names K's “designing neural media” as a main inspiration.", "zh": "「Can Meeple Escape the Neurophoria?」（2026）的策展人，称 K 的「设计神经媒体」是主要灵感来源。"}, "url": "https://www.fact.co.uk/news/2026/03/interview-with-curator-in-residence-milia-xin-bi"}, {"name": {"en": "Daniel Felstead (London College of Fashion)", "zh": "Daniel Felstead（伦敦时装学院）"}, "marks": ["term"], "line": {"en": "Organiser of the BUFF summit on fashion, neural media and bodies; makes films on AI, biotech and neural media.", "zh": "BUFF 时尚、神经媒体与身体峰会的组织者，创作关于 AI、生物科技与神经媒体的短片。"}, "url": "https://www.trienaldelisboa.com/programme/events/humanentities-en"}, {"name": {"en": "Sami P. Itävuori; Nick Palmer; Tony D. Sampson et al.; Roberto Alonso Trillo et al.", "zh": "Sami P. Itävuori；Nick Palmer；Tony D. Sampson 等；Roberto Alonso Trillo 等"}, "marks": ["term", "citesK"], "line": {"en": "Academic papers (2025–2026) in APRJA, ZEP, Media Theory and Organised Sound that cite K's neural media essays (see the timeline).", "zh": "在《APRJA》《ZEP》《Media Theory》《Organised Sound》上发表的学术论文（2025–2026），引用了 K 的神经媒体文章（详见时间线）。"}, "url": "https://doi.org/10.7146/aprja.v14i1.160275"}, {"name": {"en": "Alex Quicho", "zh": "Alex Quicho"}, "marks": ["citesK"], "line": {"en": "“Girl Intelligence” (Aksioma, 2025) draws on K's neural media essays.", "zh": "《Girl Intelligence》（Aksioma，2025）借鉴了 K 的神经媒体文章。"}, "url": "https://aksioma.org/pdf/aksioma_PostScriptUM_52_ENG_quicho.pdf"}, {"name": {"en": "Most Dismal Swamp (Dane Sutherland)", "zh": "Most Dismal Swamp（Dane Sutherland）"}, "marks": ["term"], "line": {"en": "Artist project working with “adversarial digital, platform, and neural media”; shown at Goldsmiths (2025) and in Rijeka (2026).", "zh": "以「对抗性的数字、平台与神经媒体」为素材的艺术项目，曾在金史密斯学院（2025）和里耶卡（2026）展示。"}, "url": "https://drugo-more.hr/en/mine-yours-ours-2026/"}, {"name": {"en": "Ryan Kelln (Human Feedback Foundation)", "zh": "Ryan Kelln（Human Feedback Foundation）"}, "marks": ["term"], "line": {"en": "Curated “Entangled Dimensions: Art in the Age of Neural Media”, Toronto, 2024.", "zh": "策划「纠缠的维度：神经媒体时代的艺术」，多伦多，2024。"}, "url": "https://www.ocadu.ca/events-and-exhibitions/entangled-dimensions-art-age-neural-media"}, {"name": {"en": "Natalie Marie", "zh": "Natalie Marie"}, "marks": ["term"], "line": {"en": "Essay “Neural Media” (2024) on neural networks and latent space as a creative medium, from a crypto investor's view.", "zh": "文章《Neural Media》（2024），从加密货币投资人的视角，讨论把神经网络和潜在空间当作创作媒介。"}, "url": "https://nataliemarie.substack.com/p/neural-media"}, {"name": {"en": "Antonio Somaini (Sorbonne Nouvelle)", "zh": "Antonio Somaini（巴黎第三大学）"}, "marks": ["adjacent"], "line": {"en": "“Latent Spaces: AI, Art, and the Archive” (October, MIT Press), a critical theory of latent space; curator of “The World Through AI”.", "zh": "《Latent Spaces: AI, Art, and the Archive》（《October》，MIT 出版社），提出关于潜在空间的批判理论；「The World Through AI」展览策展人。"}, "url": "https://direct.mit.edu/octo/article/doi/10.1162/OCTO.a.545/137249/Latent-Spaces-AI-Art-and-the-Archive"}]}, {"key": "institutions", "title": {"en": "Institutions & programs", "zh": "机构与项目"}, "entries": [{"name": {"en": "Long Now Foundation", "zh": "Long Now 基金会"}, "marks": ["term"], "line": {"en": "Hosted K's talk and essay; runs a “Neural Media” topic on Long Now Ideas.", "zh": "举办了 K 的演讲并发表其文章，在 Long Now Ideas 上开设「神经媒体」专题。"}, "url": "https://longnow.org/ideas/about/neural-media/"}, {"name": {"en": "Opening Hours Studio (Oslo)", "zh": "Opening Hours Studio（奥斯陆）"}, "marks": ["term", "citesK"], "line": {"en": "Grant-funded research on a theoretical framework for neural media, built on K's ideas.", "zh": "获资助研究神经媒体的理论框架，以 K 的思想为基础。"}, "url": "https://openinghours.studio/research"}, {"name": {"en": "CalArts (MTIID program)", "zh": "加州艺术学院（MTIID 项目）"}, "marks": ["term"], "line": {"en": "Graduate course MTEC 521 “Neural Media: Art, Sound, Politics of AI”.", "zh": "研究生课程 MTEC 521《神经媒体：艺术、声音与 AI 政治》。"}, "url": "https://catalog.calarts.edu/courses/a0dwI2r0gUfzEMBfrXG4"}, {"name": {"en": "FACT Liverpool", "zh": "利物浦 FACT"}, "marks": ["citesK"], "line": {"en": "“Can Meeple Escape the Neurophoria?” (2026), inspired by K's neural media essays.", "zh": "「Can Meeple Escape the Neurophoria?」（2026），灵感来自 K 的神经媒体文章。"}, "url": "https://www.fact.co.uk/news/2026/03/interview-with-curator-in-residence-milia-xin-bi"}, {"name": {"en": "London College of Fashion (UAL)", "zh": "伦敦时装学院（UAL）"}, "marks": ["term"], "line": {"en": "BUFF: A Summit on Fashion, Neural Media & Our Bodies (Jan 2025).", "zh": "BUFF：时尚、神经媒体与身体峰会（2025 年 1 月）。"}, "url": "https://www.youtube.com/watch?v=f3g9CT5Scjk"}, {"name": {"en": "Gropius Bau / Berliner Festspiele", "zh": "柏林格罗皮乌斯博物馆 / 柏林艺术节"}, "marks": ["term", "citesK"], "line": {"en": "Commissioned K's “Designing Neural Media” essays during K's 2023–24 writer residency.", "zh": "在 K 2023–24 年驻留写作期间委约了《设计神经媒体》系列文章。"}, "url": "https://www.berlinerfestspiele.de/en/gropius-bau/programm/journal/2023/k-allado-mcdowell-designing-neural-media"}, {"name": {"en": "Vienna Digital Cultures (Kunsthalle Wien) · MUTEK Montréal", "zh": "维也纳数字文化节（维也纳美术馆）· 蒙特利尔 MUTEK"}, "marks": ["term"], "line": {"en": "Festivals that hosted the New Models neural media talks (2025, 2026).", "zh": "举办 New Models 神经媒体演讲的艺术节（2025、2026）。"}, "url": "https://autotelic-foundation.org/archive/festivals/vienna-digital-cultures-2025/"}, {"name": {"en": "MIT Press · Frist Art Museum", "zh": "MIT 出版社 · 弗里斯特艺术博物馆"}, "marks": ["term"], "line": {"en": "Shimmer book and exhibition (2026–27), including Kaganskiy's neural media chapter.", "zh": "《Shimmer》图书与展览（2026–27），收录 Kaganskiy 的神经媒体章节。"}, "url": "https://fristartmuseum.org/exhibition/shimmer-dreaming-the-posthuman/"}, {"name": {"en": "Re:humanism (Rome) · Drugo More (Rijeka)", "zh": "Re:humanism（罗马）· Drugo More（里耶卡）"}, "marks": ["adjacent"], "line": {"en": "“The World Is Sleepwalking” (2026), on AI media as a waking dream.", "zh": "「The World Is Sleepwalking」（2026），把 AI 媒介视为一场清醒的梦。"}, "url": "https://drugo-more.hr/en/mine-yours-ours-2026/"}], "note": {"en": "Searched but found no evidence of a neural media program at Serpentine Arts Technologies, Gray Area, Antikythera/Berggruen, ZKM, transmediale or Ars Electronica; Gray Area and Ars Electronica have hosted K.", "zh": "已检索但未发现 Serpentine 艺术科技部、Gray Area、Antikythera/Berggruen、ZKM、transmediale 或 Ars Electronica 设有神经媒体专项；Gray Area 与 Ars Electronica 曾邀请过 K。"}}, {"key": "meanings", "title": {"en": "Same words, different meanings", "zh": "同名但含义不同"}, "entries": [{"name": {"en": "Media-bias detection (NLP)", "zh": "媒体偏见检测（自然语言处理）"}, "marks": ["different"], "line": {"en": "“Neural media bias detection”: neural networks that detect bias in news (Timo Spinde et al., 2021).", "zh": "「神经网络媒体偏见检测」：用神经网络识别新闻偏见（Timo Spinde 等，2021）。"}, "url": "https://doi.org/10.18653/v1/2021.findings-emnlp.101"}, {"name": {"en": "Neuroscience: neural fields", "zh": "神经科学：神经场"}, "marks": ["different"], "line": {"en": "Brain tissue modelled as an excitable “neural medium” (Amari-type neural field equations), plus physics-style “neural media” models.", "zh": "把大脑组织建模为可兴奋的「神经介质」（Amari 型神经场方程），以及物理风格的「神经介质」模型。"}, "url": "https://doi.org/10.21203/rs.3.rs-9850943/v1"}, {"name": {"en": "Computer science: neural rendering & codecs", "zh": "计算机科学：神经渲染与神经编解码"}, "marks": ["different"], "line": {"en": "NeRF, learned compression and the JPEG AI standard: neural networks used to encode or render media files.", "zh": "NeRF、学习型压缩和 JPEG AI 标准：用神经网络编码或渲染媒体文件。"}, "url": "https://arxiv.org/html/2503.16288v1"}, {"name": {"en": "Dai Pan 戴潘: neuro-mediality (神经媒介性)", "zh": "戴潘：神经媒介性"}, "marks": ["different"], "line": {"en": "Philosophy of mind (Philosophical Analysis, 2025): how brain processes fuse with media practices in extended cognition. Not about AI media eras.", "zh": "心灵哲学（《哲学分析》，2025）：在延展认知中，大脑神经过程如何与媒介过程融合。与 AI 媒介时代无关。"}, "url": "https://ip.sass.org.cn/2025/1015/c24a583326/page.htm"}]}]}, "pages": [{"key": "home", "file": "index.html", "label": {"en": "Neural Media", "zh": "神经媒体总览"}}, {"key": "who-else", "file": "who-else.html", "label": {"en": "Who else", "zh": "其他研究者"}}, {"key": "bci", "file": "bci.html", "label": {"en": "BCI × Neural Media", "zh": "脑机接口与神经媒体"}}]};</script>
+<script>(function () {
+  "use strict";
+  var esc = function (s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  };
+  // Bilingual helper: renders an en span and a zh span; CSS decides what is visible.
+  function bi(o, tag) {
+    tag = tag || "span";
+    if (!o) return "";
+    return '<' + tag + ' class="t en" lang="en">' + esc(o.en) + '</' + tag + '>' +
+           '<' + tag + ' class="t zh" lang="zh-Hans">' + esc(o.zh) + '</' + tag + '>';
+  }
+  function ext(url, inner, cls) {
+    return '<a ' + (cls ? 'class="' + cls + '" ' : "") + 'href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + inner + "</a>";
+  }
+  // Internal link to another page of this site (keeps the language choice).
+  function intl(href, inner, cls) {
+    return '<a ' + (cls ? 'class="' + cls + '" ' : "") + 'data-internal href="' + esc(href) + '">' + inner + "</a>";
+  }
+  function feature(F) {
+    var A = F.argument, S = F.structure, V = F.versions, C = F.chain;
+    var cta = F.cta.map(function (c) { return ext(c.url, bi(c.label) + ' <span aria-hidden="true">↗</span>', "btn" + (c.primary ? " primary" : "")); }).join("");
+    var pts = A.points.map(function (p, pi) {
+      return '<li class="fpoint"><span class="fpn">' + (pi + 1 < 10 ? "0" : "") + (pi + 1) + '</span><h5>' + bi(p.term) + '</h5>' +
+        '<div class="who-line">' + bi(p.text, "p") + '</div>' + (p.quote ? '<blockquote class="fq">' + bi(p.quote, "p") + '</blockquote>' : "") + '</li>';
+    }).join("");
+    var parts = S.parts.map(function (pt) {
+      return '<li class="fpart">' +
+        '<div class="fpart-head">' + ext(pt.url, '<span class="fr">' + esc(pt.num) + '</span><span class="fname">' + bi(pt.name) + '</span>') +
+          '<div class="fquest">' + bi(pt.question) + '</div></div>' +
+        '<div class="fpart-body"><div class="who-line">' + bi(pt.text, "p") + '</div>' +
+          '<ol class="fsecs">' + pt.sections.map(function (s) { return '<li>' + bi(s) + '</li>'; }).join("") + '</ol></div></li>';
+    }).join("");
+    var vers = V.entries.map(function (v) {
+      var st = fmtStamp(v.date), lab = typeof v.label === "string" ? { en: v.label, zh: v.label } : v.label;
+      return '<li><span class="vl">' + bi(lab) + '</span><span class="vd">' + bi(st) + '</span><div class="vt">' + bi(v.text, "p") + '</div></li>';
+    }).join("");
+    var chain = C.steps.map(function (s, si) {
+      return '<li class="cstep"><span class="cdate">' + bi(s.date) + '</span><h5>' + ext(s.url, esc(s.who) + ' ↗') + '</h5>' +
+        '<div class="who-line">' + bi(s.what, "p") + '</div></li>' + (si < C.steps.length - 1 ? '<li class="carrow" aria-hidden="true">→</li>' : "");
+    }).join("");
+    return '<article class="feature" id="' + esc(F.id) + '">' +
+      '<div class="f-top"><div class="f-kicker">' + bi(F.kicker) + '</div>' +
+        '<h3 class="f-title">' + esc(F.title) + '</h3>' +
+        '<div class="f-sub">' + bi(F.subtitle, "p") + '</div>' +
+        '<div class="f-byline">' + bi(F.byline) + '</div>' +
+        '<figure class="f-def"><div class="fw">' + esc(F.definition.word) + '</div>' + bi(F.definition.quote, "p") +
+          '<figcaption>' + bi(F.definition.note) + '</figcaption></figure>' +
+        '<div class="f-cta">' + cta + '</div>' +
+        '<div class="f-note">' + bi(F.note, "p") + '</div></div>' +
+      '<div class="f-row f-row-a"><section class="f-author"><h4 class="f-h">' + bi(F.author.title) + '</h4>' + bi(F.author.text, "p") +
+          '<div class="links">' + F.author.links.map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("") + '</div></section>' +
+        '<section class="f-arg"><h4 class="f-h">' + bi(A.title) + '</h4><ol class="fpoints">' + pts + '</ol></section></div>' +
+      '<section class="f-struct"><h4 class="f-h">' + bi(S.title) + '</h4><div class="f-struct-intro">' + bi(S.intro, "p") + '</div><ol class="fparts">' + parts + '</ol></section>' +
+      '<div class="f-row f-row-b"><section class="f-vers"><h4 class="f-h">' + bi(V.title) + '</h4><ol class="vlist">' + vers + '</ol>' +
+          '<div class="links">' + ext(V.source.url, bi(V.source.label) + " ↗") + '</div></section>' +
+        '<section class="f-chain"><h4 class="f-h">' + bi(C.title) + '</h4><ol class="clist">' + chain + '</ol>' +
+          '<div class="land-note">' + bi(C.note, "p") + '</div></section></div>' +
+      '</article>';
+  }
+  function fmtStamp(iso) {
+    var m = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    var p = iso.split("-");
+    return { en: (+p[2]) + " " + m[+p[1] - 1] + " " + p[0], zh: p[0] + " 年 " + (+p[1]) + " 月 " + (+p[2]) + " 日" };
+  }
+
+  function render(D) {
+    var st = fmtStamp(D.meta.last_updated);
+    var stamp = '<div class="stamp"><i></i><span class="t en">Last updated: ' + esc(st.en) + ' (' + esc(D.meta.timezone) + ')</span>' +
+                '<span class="t zh">最后更新：' + esc(st.zh) + '（' + esc(D.meta.timezone) + '）</span></div>';
+
+    if (D.items && document.getElementById("hero")) {
+    var items = D.items.slice().sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+    var byId = {}; items.forEach(function (i) { byId[i.id] = i; });
+    // Hero
+    var h = D.hero;
+    document.getElementById("hero").innerHTML =
+      '<div class="kicker">' + bi(h.kicker) + '</div>' +
+      '<h1><span class="t en">' + esc(h.title.en) + '</span><span class="t zh">' + esc(h.title.zh) + '</span></h1>' +
+      '<p class="by">K Allado-McDowell · <span class="inline">' + bi({ en: "concept & framework", zh: "概念与理论框架" }) + '</span></p>' +
+      '<div class="intro">' + bi(h.intro, "p") + '</div>' + stamp;
+
+    // Concept
+    var c = D.concept;
+    var eras = c.eras.map(function (e) {
+      return '<article class="era' + (e.key === "neural" ? " now" : "") + '">' +
+        '<div class="span">' + esc(e.span) + '</div>' +
+        '<h3>' + bi(e.name) + '</h3>' +
+        '<dl><dt>Space 空间</dt><dd>' + bi(e.space) + '</dd><dt>Content 内容</dt><dd>' + bi(e.content) + '</dd><dt>Identity 身份</dt><dd>' + bi(e.identity_type) + '</dd></dl>' +
+        '<div class="id">' + bi(e.identity, "p") + '</div></article>';
+    }).join("");
+    document.getElementById("concept").innerHTML =
+      '<div class="sec-head"><span class="num">01</span><h2>' + bi({ en: "What is Neural Media", zh: "什么是神经媒体" }) + '</h2></div>' +
+      '<div class="lead">' + bi(c.lead, "p") + '</div>' +
+      '<div class="eras">' + eras + '</div>' +
+      '<div class="timeline-bar" aria-hidden="true"><span></span><span></span><span></span><span class="now"></span></div>' +
+      '<ul class="notes">' + c.notes.map(function (n) { return '<li>' + bi(n, "span") + '</li>'; }).join("") + '</ul>';
+
+    // Timeline with type filters
+    var counts = {}; items.forEach(function (i) { i.types.forEach(function (t) { counts[t] = (counts[t] || 0) + 1; }); });
+    var chips = '<button class="chip" type="button" data-f="all" aria-pressed="true">' + bi({ en: "All", zh: "全部" }) + '<b>' + items.length + '</b></button>' +
+      Object.keys(D.types).filter(function (k) { return counts[k]; }).map(function (k) {
+        return '<button class="chip" type="button" data-f="' + k + '" aria-pressed="false">' + bi(D.types[k]) + '<b>' + counts[k] + '</b></button>';
+      }).join("");
+    var feed = items.map(function (i) {
+      var tags = i.types.map(function (t) { return '<span class="tag ' + esc(t) + '">' + bi(D.types[t]) + '</span>'; }).join("") +
+        (i.added && i.added === D.meta.last_updated && i.added > (D.meta.launched || "") ? '<span class="tag new">NEW</span>' : "");
+      var links = ext(i.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) +
+        (i.internal ? intl(i.internal.href, bi(i.internal.label) + " →", "internal") : "") +
+        (i.links || []).map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("") +
+        '<span class="src">' + bi(i.source) + '</span>';
+      var thumb = i.thumbnail ? ext(i.url, '<img alt="" src="' + esc(i.thumbnail) + '">', "thumb") : "";
+      return '<li class="item' + ((Date.parse(D.meta.last_updated) - Date.parse(i.date)) / 864e5 <= 30 ? " fresh" : "") + '" data-types="' + esc(i.types.join(" ")) + '">' +
+        '<div class="when"><time datetime="' + esc(i.date) + '">' + bi(i.date_display) + '</time></div>' +
+        '<article class="card' + (thumb ? " has-thumb" : "") + '">' +
+          '<div class="tags">' + tags + '</div>' +
+          '<h3>' + ext(i.url, bi(i.title)) + '</h3>' +
+          '<div class="sum">' + bi(i.summary, "p") + '</div>' +
+          '<div class="links">' + links + '</div>' + thumb +
+        '</article></li>';
+    }).join("");
+    var up = document.getElementById("updates");
+    up.innerHTML =
+      '<div class="sec-head"><span class="num">02</span><h2>' + bi({ en: "Latest updates", zh: "最新动态" }) + '</h2></div>' +
+      stamp + '<div style="height:22px"></div>' +
+      '<div class="filters" role="group" aria-label="Filter by type">' + chips + '</div>' +
+      '<div class="feed-note">' + bi(D.meta.note, "p") + '</div>' +
+      '<ol class="feed">' + feed + '</ol>';
+    up.querySelector(".filters").addEventListener("click", function (ev) {
+      var b = ev.target.closest(".chip"); if (!b) return;
+      var f = b.getAttribute("data-f");
+      up.querySelectorAll(".chip").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      up.querySelectorAll(".item").forEach(function (li) {
+        li.hidden = !(f === "all" || (" " + li.getAttribute("data-types") + " ").indexOf(" " + f + " ") > -1);
+      });
+    });
+
+    // Featured video
+    var v = D.featured;
+    document.getElementById("video").innerHTML =
+      '<div class="sec-head"><span class="num">03</span><h2>' + bi({ en: "Featured talk", zh: "精选演讲" }) + '</h2></div>' +
+      '<div class="video-grid">' +
+        ext(v.url, '<img alt="On Neural Media, Long Now talk thumbnail" src="' + esc(v.thumbnail) + '"><span class="play" aria-hidden="true"></span>' +
+          '<span class="cap">' + bi({ en: "Watch on YouTube", zh: "在 YouTube 观看" }) + '</span>', "player") +
+        '<div class="video-info"><h3>' + bi(v.title) + '</h3><div class="meta">' + bi(v.meta) + '</div>' +
+          '<ol class="take">' + v.takeaways.map(function (t) { return '<li>' + bi(t) + '</li>'; }).join("") + '</ol>' +
+          '<div class="links">' + v.more.map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("") + '</div>' +
+        '</div></div>';
+
+    // Reading list
+    document.getElementById("reading").innerHTML =
+      '<div class="sec-head"><span class="num">04</span><h2>' + bi({ en: "Key essays & sources", zh: "核心文章与资料" }) + '</h2></div>' +
+      '<div class="reading">' + D.reading.map(function (id) {
+        var i = byId[id]; if (!i) return "";
+        return ext(i.url, '<span class="yr">' + esc(i.date.slice(0, 4)) + ' · ' + esc(D.types[i.types[0]].en.toUpperCase()) + '</span>' +
+          '<h3>' + bi(i.title) + '</h3>' + bi(i.summary, "p") + '<span class="src">' + bi(i.source) + '</span>', "read");
+      }).join("") + '</div>';
+
+    }
+
+    // Landscape: who else works on neural media
+    var L = D.landscape;
+    if (L && document.getElementById("landscape")) {
+      var mk = function (m) { return '<span class="mark ' + esc(m) + '">' + bi(L.markers[m]) + '</span>'; };
+      var arr = ' <span class="arr" aria-hidden="true">↗</span>';
+      var nameHtml = function (n) {
+        if (n.en === n.zh) return '<span class="one">' + esc(n.en) + arr + '</span>';
+        return '<span class="t en" lang="en">' + esc(n.en) + arr + '</span><span class="t zh" lang="zh-Hans">' + esc(n.zh) + arr + '</span>';
+      };
+      var legend = Object.keys(L.markers).map(mk).join("");
+      var groups = L.groups.map(function (g, gi) {
+        var rows = g.entries.map(function (en) {
+          return '<li class="who">' +
+            '<div class="who-marks">' + en.marks.map(mk).join("") + '</div>' +
+            '<h4>' + ext(en.url, nameHtml(en.name)) + '</h4>' +
+            '<div class="who-line">' + bi(en.line, "p") + '</div></li>';
+        }).join("");
+        return '<div class="land-group g-' + esc(g.key) + '">' +
+          '<div class="land-head"><span class="roman">' + ["I", "II", "III"][gi] + '</span><h3>' + bi(g.title) + '</h3></div>' +
+          '<ul class="who-list">' + rows + '</ul>' +
+          (g.note ? '<div class="land-note">' + bi(g.note, "p") + '</div>' : "") + '</div>';
+      }).join("");
+      document.getElementById("landscape").innerHTML =
+        '<div class="sec-head"><span class="num">05</span><h2>' + bi(L.title) + '</h2></div>' +
+        '<div class="lead land-lead">' + bi(L.lead, "p") + '</div>' +
+        '<div class="legend">' + legend + '</div>' + groups;
+    }
+
+    // BCI x Neural Media
+    var B = D.bci;
+    if (B && document.getElementById("bci")) {
+      var bm = function (m) { return '<span class="mark b-' + esc(m) + '">' + bi(B.markers[m]) + '</span>'; };
+      var more = function (ls) { return (ls || []).map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join(""); };
+      var roman = ["i", "ii", "iii", "iv", "v", "vi"];
+      var primer = B.primer.cards.map(function (c, ci) {
+        return '<article class="pcard"><span class="pnum">' + roman[ci] + '</span>' +
+          '<h4>' + bi(c.term) + '</h4><div class="ptext">' + bi(c.text, "p") + '</div>' +
+          (c.url ? '<div class="links">' + ext(c.url, bi({ en: "Source ↗", zh: "来源 ↗" })) + '</div>' : "") + '</article>';
+      }).join("");
+      var theory = B.theory.entries.map(function (e) {
+        return '<li class="idea">' +
+          '<div class="who-marks">' + e.marks.map(bm).join("") + '</div>' +
+          '<h4>' + ext(e.url, bi(e.name)) + '</h4>' +
+          '<div class="idea-src">' + bi(e.source) + '</div>' +
+          '<div class="who-line">' + bi(e.line, "p") + '</div>' +
+          '<div class="links">' + ext(e.url, bi({ en: "Read ↗", zh: "阅读 ↗" })) + more(e.links) +
+          (e.internal ? intl(e.internal.href, bi(e.internal.label) + " ↑", "internal") : "") + '</div></li>';
+      }).join("");
+      var news = B.news.entries.slice().sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+      var lastY = "";
+      var newsHtml = news.map(function (n) {
+        var y = n.date.slice(0, 4), yr = "";
+        if (y !== lastY) { yr = '<li class="nyear" aria-hidden="true"><span>' + y + '</span></li>'; lastY = y; }
+        return yr + '<li class="nitem">' +
+          '<div class="ndate"><time datetime="' + esc(n.date) + '">' + bi(n.date_display) + '</time></div>' +
+          '<div class="nbody"><div class="who-marks">' + n.marks.map(bm).join("") + '</div>' +
+          '<h4>' + ext(n.url, bi(n.title)) + '</h4>' + '<div class="who-line">' + bi(n.line, "p") + '</div></div></li>';
+      }).join("");
+      document.getElementById("bci").innerHTML =
+        '<div class="sec-head"><span class="num">06</span><h2>' + bi(B.title) + '</h2></div>' +
+        '<div class="bci-strap" aria-hidden="true"><span class="s-brain">BRAIN · 大脑</span><span class="s-wave"></span><span class="s-net">NET · 网络</span></div>' +
+        '<div class="lead bci-lead">' + bi(B.lead, "p") + '</div>' +
+        (B.feature ? feature(B.feature) : "") +
+        '<div class="legend">' + Object.keys(B.markers).map(bm).join("") + '</div>' +
+        '<div class="land-group"><div class="land-head"><span class="roman">I</span><h3>' + bi(B.primer.title) + '</h3></div>' +
+          '<div class="primer">' + primer + '</div></div>' +
+        '<div class="land-group"><div class="land-head"><span class="roman">II</span><h3>' + bi(B.theory.title) + '</h3></div>' +
+          '<ul class="who-list ideas">' + theory + '</ul>' +
+          (B.note ? '<div class="land-note">' + bi(B.note, "p") + '</div>' : "") + '</div>' +
+        '<div class="land-group"><div class="land-head"><span class="roman">III</span><h3>' + bi(B.news.title) + '</h3></div>' +
+          '<ol class="bnews">' + newsHtml + '</ol></div>';
+    }
+
+    document.getElementById("foot").innerHTML =
+      bi({ en: "An independent bilingual tracker of public sources on Neural Media, a concept by K Allado-McDowell. Every item links to its original source. Dates are China time (UTC+8).",
+           zh: "这是一个独立的双语追踪站，收录有关 K Allado-McDowell「神经媒体」概念的公开资料。每一条目都附有原始来源链接。日期均为北京时间（UTC+8）。" }, "p");
+  }
+
+  // Language toggle
+  function setLang(l) {
+    document.body.className = "lang-" + l;
+    document.documentElement.lang = l === "zh" ? "zh-Hans" : "en";
+    document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === l)); });
+    try { localStorage.setItem("nm-lang", l); } catch (e) {}
+    // carry the language choice across pages (also works when localStorage is unavailable)
+    document.querySelectorAll("a[data-internal]").forEach(function (a) {
+      var h = a.getAttribute("href"), hash = "", k = h.indexOf("#");
+      if (k > -1) { hash = h.slice(k); h = h.slice(0, k); }
+      if (!h) return;
+      h = h.replace(/[?&]lang=(en|zh|both)/, "");
+      a.setAttribute("href", h + "?lang=" + l + hash);
+    });
+  }
+  document.querySelector(".lang").addEventListener("click", function (ev) {
+    var b = ev.target.closest("button"); if (b) setLang(b.getAttribute("data-lang"));
+  });
+  if (window.__NM_DATA__) render(window.__NM_DATA__);
+  var saved = null; try { saved = localStorage.getItem("nm-lang"); } catch (e) {}
+  var q = (location.search.match(/[?&]lang=(en|zh|both)/) || [])[1];
+  setLang(q || saved || "both");
+
+  if (location.hash) { var tgt = document.getElementById(location.hash.slice(1)); if (tgt) setTimeout(function () { tgt.scrollIntoView(); }, 0); }
+})();
+</script>
+</body>
+</html>
