@@ -673,6 +673,48 @@
       }
     },
     {
+      "id": "usti-facing-art-jankspace-2026",
+      "date": "2026-10-07",
+      "who": "felstead",
+      "fmt": "talk",
+      "basis": "description",
+      "access": "free",
+      "url": "https://duul.cz/en/events/prednaska-daniela-felsteada-festival-gti",
+      "title": {
+        "en": "Facing Art and Design #1: lecture on Jankspace: Residues of The Stack (House of Arts Ústí)",
+        "zh": "Facing Art and Design #1：讲座《Jankspace: Residues of The Stack》（乌斯季艺术之家）"
+      },
+      "summary": {
+        "en": "On 7 Oct 2026 at 16:30, Dr Daniel Felstead (LCF / UAL) gave an English public lecture at the House of Arts Ústí nad Labem (Dům umění), opening both the Gaming the Infrastructure mini-festival (7–9 Oct) inside the exhibition INFRASTRUCTURES: Making Space for the Desires of Others, and FUD UJEP’s Facing Art and Design guest series. The talk centred on a critical look at big-tech myths where they meet the body and culture, via the collaborative project with Jenn Leung Jankspace: Residues of The Stack — a third-person exploration game in surreal showrooms and the gothic underworld of “The Stack,” with the player as Julia Fox’s digital twin collecting fashion artefacts and unspooling Welcome to Jankspace, Babes film snippets. Programme copy: fashion glamour, chaotic media theory and grotesque tech horror against tech’s glittering promise and its ‘creaking, wretched reality.’ Basis: House of Arts and FUD UJEP event pages (description only).",
+        "zh": "2026 年 10 月 7 日 16:30，Daniel Felstead 博士（伦敦时装学院 / UAL）在乌斯季艺术之家（Dům umění）用英语做公开讲座，同时作为展览「INFRASTRUCTURES: Making Space for the Desires of Others」框架下迷你节 Gaming the Infrastructure（10 月 7–9 日）的开场讲，以及杨·埃万盖利斯塔·普尔基涅大学艺术与设计学院（FUD UJEP）嘉宾系列 Facing Art and Design 的第 1 场。讲座聚焦大型科技公司神话与身体、当代文化的交汇，核心是他与 Jenn Leung 合作的《Jankspace: Residues of The Stack》：第三人称探索游戏，场景是超现实展厅迷宫与巨型结构「The Stack」的哥特地下层；玩家扮演 Julia Fox 的数字分身，收集时尚物件，并通过影片《Welcome to Jankspace, Babes》片段拼出故事。活动文案写到：用时尚魅力、杂乱的媒介理论与怪诞科技恐怖，对照科技的闪亮承诺与「吱嘎作响、糟透了的现实」。依据：艺术之家与 FUD UJEP 活动页（仅活动说明）。"
+      },
+      "people": "Daniel Felstead (lecture); project with Jenn Leung",
+      "nm": {
+        "en": "Centres the Stack / jankspace critique of platform megastructures and tech ideology — same future-media frame as their Neural Media–adjacent work.",
+        "zh": "核心是 Stack / jankspace 对平台巨型结构与科技意识形态的批判，与两人贴近神经媒体的未来媒介框架一致。"
+      },
+      "links": [
+        {
+          "url": "https://fud.ujep.cz/en/news/facing-art-and-design-1-daniel-felstead-october-7/",
+          "label": {
+            "en": "FUD UJEP announcement",
+            "zh": "FUD UJEP 公告"
+          }
+        },
+        {
+          "url": "https://duul.cz/en/exhibitions/gaming-the-infrastructure-herni-a-umelecky-minifestival-7-9-rijna-2026",
+          "label": {
+            "en": "Gaming the Infrastructure festival",
+            "zh": "Gaming the Infrastructure 迷你节"
+          }
+        }
+      ],
+      "date_display": {
+        "en": "7 Oct 2026",
+        "zh": "2026 年 10 月 7 日"
+      }
+    },
+    {
       "id": "schirn-world-through-ai",
       "date": "2026-06-11",
       "who": "joint",
