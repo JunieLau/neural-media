@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-25",
+    "last_updated": "2026-10-31",
     "launched": "2026-10-21",
     "timezone": "UTC+8",
     "note": {
@@ -3175,6 +3175,25 @@
         "zh": "新闻：脑机接口与 AI 的交汇（2024–2026）"
       },
       "entries": [
+        {
+          "date": "2026-10-28",
+          "date_display": {
+            "en": "28 Oct 2026",
+            "zh": "2026 年 10 月 28 日"
+          },
+          "marks": [
+            "industry"
+          ],
+          "title": {
+            "en": "Neuralink VOICE: ALS participant hits 75 words/min",
+            "zh": "Neuralink VOICE：一名 ALS 受试者达到每分钟 75 词"
+          },
+          "line": {
+            "en": "At the 2026 NEALS meeting (presented by Dr Nader Pouratian), Neuralink said one ALS participant in its VOICE speech-BCI study reached 75 words per minute with a 5.8% word-error rate on a 125k-word vocabulary in week one—company-reported, not peer-reviewed.",
+            "zh": "在 2026 年 NEALS 年会上（由 Nader Pouratian 医生报告），Neuralink 称其 VOICE 言语脑机接口试验中一名 ALS 受试者在植入后第一周达到每分钟 75 词、在 12.5 万词表上词错误率 5.8%——来自公司披露，尚未同行评审。"
+          },
+          "url": "https://insidebci.com/news/2026-10-29-neuralink-voice-speech-75-words-per-minute-word-error-rate-als/"
+        },
         {
           "date": "2026-10-02",
           "date_display": {
