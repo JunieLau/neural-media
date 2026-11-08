@@ -73,9 +73,10 @@
   function latestSection(opts) {
     // opts: { id, items:[{date,date_display,title,url,summary,href,meta,fresh}], stamp, note, empty }
     var items = opts.items || [];
+    var heading = opts.heading || { en: "Latest updates", zh: "最新动态" };
     if (!items.length && opts.empty) {
       return '<div class="land-group latest-block" id="' + esc(opts.id) + '">' +
-        '<div class="sec-head latest-head"><span class="num">★</span><h2>' + bi({ en: "Latest updates", zh: "最新动态" }) + '</h2></div>' +
+        '<div class="sec-head latest-head"><span class="num">★</span><h2>' + bi(heading) + '</h2></div>' +
         (opts.stamp || "") + '<div class="feed-note">' + bi(opts.empty, "p") + '</div></div>';
     }
     if (!items.length) return "";
@@ -84,19 +85,20 @@
       var title = it.href
         ? intl(it.href, bi(it.title), "internal latest-title")
         : ext(it.url, bi(it.title));
+      var cross = it.href && it.href.indexOf(".html") !== -1;
+      var jump = it.href ? intl(it.href, bi(cross ? { en: "Open on this site →", zh: "在本站打开 →" } : { en: "On this page ↓", zh: "本页详情 ↓" }), "internal") : "";
       return '<li class="latest-item' + (it.fresh ? " fresh" : "") + '">' +
         '<div class="ndate"><time datetime="' + esc(it.date) + '">' + bi(dd) + '</time></div>' +
         '<div class="nbody">' +
           (it.meta ? '<div class="who-marks">' + it.meta + '</div>' : "") +
           '<h4>' + title + '</h4>' +
           (it.summary ? '<div class="who-line nm-sum">' + bi(it.summary, "p") + '</div>' : "") +
-          '<div class="links">' +
-            (it.href ? intl(it.href, bi({ en: "On this page ↓", zh: "本页详情 ↓" }), "internal") : "") +
+          '<div class="links">' + jump +
             (it.url ? ext(it.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) : "") +
           '</div></div></li>';
     }).join("");
     return '<div class="land-group latest-block" id="' + esc(opts.id) + '">' +
-      '<div class="sec-head latest-head"><span class="num">★</span><h2>' + bi({ en: "Latest updates", zh: "最新动态" }) + '</h2></div>' +
+      '<div class="sec-head latest-head"><span class="num">★</span><h2>' + bi(heading) + '</h2></div>' +
       (opts.stamp || "") +
       (opts.note ? '<div class="feed-note">' + bi(opts.note, "p") + '</div>' : "") +
       '<ol class="bnews latest-list">' + rows + '</ol></div>';
@@ -228,10 +230,32 @@
           '<div class="links">' + links + '</div>' + moreVids + thumb +
         '</article></li>';
     }).join("");
+    var xrHome = "";
+    if (D.xr_latest && D.xr_latest.length) {
+      var xrLabs = D.xr_tags || {};
+      xrHome = latestSection({
+        id: "home-xr",
+        heading: { en: "XR", zh: "扩展现实" },
+        note: {
+          en: "Extended reality has its own page, refreshed about every 10 days. Tags there name a device or a capability. They are not three equal kinds of media.",
+          zh: "扩展现实单独成页，大约每 10 天更新一次。那边的标签标的是设备或能力，不是三种并列的媒介。"
+        },
+        items: D.xr_latest.map(function (e) {
+          var meta = (e.tags || []).map(function (t) {
+            return '<span class="ntag xr-' + esc(t) + '">' + bi(xrLabs[t] || { en: t, zh: t }) + '</span>';
+          }).join("");
+          return {
+            date: e.date, date_display: e.date_display, title: e.title, url: e.url, summary: e.summary,
+            href: e.href, meta: meta,
+            fresh: (Date.parse(D.meta.last_updated) - Date.parse(e.date)) / 864e5 <= 30
+          };
+        })
+      });
+    }
     var up = document.getElementById("updates");
     up.innerHTML =
       '<div class="sec-head"><span class="num">02</span><h2>' + bi({ en: "Latest updates", zh: "最新动态" }) + '</h2></div>' +
-      stamp + '<div style="height:22px"></div>' +
+      stamp + xrHome + '<div style="height:22px"></div>' +
       '<div class="filters" role="group" aria-label="Filter by type">' + chips + '</div>' +
       '<div class="feed-note">' + bi(D.meta.note, "p") + '</div>' +
       '<ol class="feed">' + feed + '</ol>';
@@ -521,6 +545,130 @@
           var t = document.getElementById(a.getAttribute("href").slice(1));
           if (t && t.hidden) applyF("all");
         });
+      });
+    }
+
+    if (D.xr && document.getElementById("xr")) {
+      var X = D.xr;
+      var xtag = function (t) {
+        return '<span class="ntag xr-' + esc(t) + '">' + bi((X.categories && X.categories[t]) || { en: t, zh: t }) + '</span>';
+      };
+      var xstill = function (e) {
+        if (!e.cover) return "";
+        var alt = e.cover_alt ? (e.cover_alt.en + " / " + e.cover_alt.zh) : "";
+        return '<figure class="xr-still"><img loading="lazy" decoding="async" alt="' + esc(alt) + '" src="' + esc(e.cover) + '">' +
+          (e.cover_credit ? '<figcaption class="xr-credit">' + bi(e.cover_credit) + '</figcaption>' : "") + '</figure>';
+      };
+      var xlinks = function (e, extra) {
+        return '<div class="links">' + ext(e.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) +
+          (e.youtube ? ext(e.youtube, bi({ en: "YouTube ↗", zh: "YouTube ↗" })) : "") +
+          (e.links || []).map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("") +
+          (e.internal || []).map(function (l) { return intl(l.href, bi(l.label) + " →", "internal"); }).join("") +
+          (extra || "") + '</div>';
+      };
+      var xcard = function (e, opt) {
+        opt = opt || {};
+        var dd = e.date_display || fmtStamp(e.date);
+        var playLabel = { en: "Play", zh: "播放" };
+        var vid = e.youtube ? yt(e.youtube, playLabel, { cls: opt.player ? "player" : "", fallback: e.yt_poster || "" }) : "";
+        var media = xstill(e) + vid;
+        return '<article class="xr-card' + (media ? " has-media" : "") + '" id="' + esc(opt.anchor || ("e-" + e.id)) + '" data-tags="' + esc((e.tags || []).join(" ")) + '">' +
+          '<div class="xr-card-main">' +
+            '<div class="ndate"><time datetime="' + esc(e.date) + '">' + bi(dd) + '</time></div>' +
+            '<div class="who-marks">' + (e.tags || []).map(xtag).join("") + '</div>' +
+            '<h4>' + ext(e.url, bi(e.title)) + '</h4>' +
+            (e.source ? '<div class="idea-src">' + bi(e.source) + '</div>' : "") +
+            '<div class="who-line nm-sum">' + bi(e.summary, "p") + '</div>' +
+            (e.nm ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "Neural-media angle", zh: "与神经媒体相关的一面" }) + '</span>' + bi(e.nm, "p") + '</div>' : "") +
+            xlinks(e, opt.extraLinks || "") +
+          '</div>' +
+          (media ? '<div class="xr-card-media">' + media + '</div>' : "") +
+        '</article>';
+      };
+      var byX = {};
+      X.entries.forEach(function (e) { byX[e.id] = e; });
+      var asOfX = D.meta && D.meta.last_updated;
+      var latestEntries = pickLatest(X.entries, asOfX, 30, 6, 8);
+      var latestHtml = latestEntries.map(function (e) {
+        return xcard(e, {
+          anchor: "lx-" + e.id,
+          extraLinks: intl("#e-" + e.id, bi({ en: "In the log ↓", zh: "日志中的条目 ↓" }), "internal")
+        });
+      }).join("");
+      var T = X.taxonomy, Map = T.map, Col = T.columns;
+      var family = (Map.family || []).map(function (item) { return '<div>' + bi(item) + '</div>'; }).join("");
+      var products = (Map.products || []).map(function (item) { return '<div>' + bi(item) + '</div>'; }).join("");
+      var tableRows = (T.rows || []).map(function (row) {
+        return '<tr><th scope="row">' + bi(row.term) + '</th><td>' + bi(row.means, "p") + '</td><td>' + bi(row.not, "p") + '</td></tr>';
+      }).join("");
+      var srcs = (T.sources || []).map(function (s) { return ext(s.url, bi(s.label) + " ↗"); }).join("");
+      var feat = byX[X.featured];
+      var featHtml = "";
+      if (feat) {
+        featHtml = '<div class="land-group" id="xr-feature"><div class="land-head"><span class="roman">★</span><h3>' +
+          bi({ en: "Glasses-form VR", zh: "眼镜形态的 VR" }) + '</h3></div>' +
+          '<p class="xr-kicker">' + bi({
+            en: "The virtual environment is the primary space. The computer sits in a puck. This is not the AI-glasses product line, and it is not a choice between AI glasses and VR.",
+            zh: "虚拟环境是主要空间，计算机在计算盒里。这不是 AI 眼镜那条产品线，也不是「AI 眼镜还是 VR」的二选一。"
+          }) + '</p>' +
+          xcard(feat, { anchor: "xr-feature-card", player: true, extraLinks: intl("#e-" + feat.id, bi({ en: "Log entry ↓", zh: "日志条目 ↓" }), "internal") }) +
+          '</div>';
+      }
+      var chips = '<button class="chip" type="button" data-f="all" aria-pressed="true">' + bi({ en: "All", zh: "全部" }) + '<b>' + X.entries.length + '</b></button>' +
+        Object.keys(X.categories).filter(function (k) {
+          return X.entries.some(function (e) { return (e.tags || []).indexOf(k) !== -1; });
+        }).map(function (k) {
+          var n = X.entries.filter(function (e) { return (e.tags || []).indexOf(k) !== -1; }).length;
+          return '<button class="chip" type="button" data-f="' + esc(k) + '" aria-pressed="false">' + bi(X.categories[k]) + '<b>' + n + '</b></button>';
+        }).join("");
+      var log = X.entries.map(function (e) { return xcard(e, { player: !!e.youtube }); }).join("");
+      var B = X.beside;
+      var besideLinks = (B.links || []).map(function (l) {
+        var inner = bi(l.label) + (l.url ? " ↗" : " →");
+        return l.url ? ext(l.url, inner) : intl(l.href, inner, "internal");
+      }).join("");
+      var host = document.getElementById("xr");
+      host.innerHTML =
+        '<div class="sec-head"><span class="num">09</span><h2>' + bi(X.title) + '</h2></div>' +
+        '<div class="lead">' + bi(X.lead, "p") + '</div>' + stamp +
+        '<div class="land-group latest-block" id="xr-latest">' +
+          '<div class="sec-head latest-head"><span class="num">★</span><h2>' + bi({ en: "Latest updates", zh: "最新动态" }) + '</h2></div>' +
+          '<div class="feed-note">' + bi(X.note, "p") + '</div>' +
+          '<div class="xr-list">' + latestHtml + '</div></div>' +
+        '<div class="land-group" id="xr-taxonomy"><div class="land-head"><span class="roman">I</span><h3>' + bi(T.title) + '</h3></div>' +
+          '<div class="lead">' + bi(T.lead, "p") + '</div>' +
+          '<div class="xr-map"><div class="xr-umbrella">' + bi(Map.umbrella) + '</div>' +
+            '<div class="xr-map-label">' + bi(Map.family_label) + '</div><div class="xr-family">' + family + '</div>' +
+            '<p class="xr-kicker">' + bi(Map.aside) + '</p>' +
+            '<div class="xr-map-label">' + bi(Map.products_label) + '</div><div class="xr-products">' + products + '</div></div>' +
+          '<div class="xr-table-wrap"><table class="xr-table"><thead><tr><th>' + bi(Col.term) + '</th><th>' + bi(Col.means) + '</th><th>' + bi(Col.not) + '</th></tr></thead><tbody>' +
+            tableRows + '</tbody></table></div>' +
+          '<div class="links">' + srcs + '</div></div>' +
+        featHtml +
+        '<div class="land-group" id="xr-log"><div class="land-head"><span class="roman">II</span><h3>' + bi({ en: "Full log, newest first", zh: "全部动态（从新到旧）" }) + '</h3></div>' +
+          '<div class="filters xr-filters" role="group" aria-label="Filter by tag">' + chips + '</div>' +
+          '<div class="xr-shown" aria-live="polite"></div>' +
+          '<div class="xr-list">' + log + '</div></div>' +
+        '<div class="land-group" id="xr-beside"><div class="land-head"><span class="roman">III</span><h3>' + bi(B.title) + '</h3></div>' +
+          '<div class="who-line">' + bi(B.text, "p") + '</div>' +
+          '<div class="links">' + besideLinks + '</div></div>';
+      var shown = host.querySelector(".xr-shown");
+      var applyX = function (f) {
+        var n = 0;
+        host.querySelectorAll("#xr-log .xr-card").forEach(function (el) {
+          var ok = f === "all" || (" " + el.getAttribute("data-tags") + " ").indexOf(" " + f + " ") !== -1;
+          el.hidden = !ok;
+          if (ok) n++;
+        });
+        shown.innerHTML = f === "all" ? "" : bi({ en: "Showing " + n + " of " + X.entries.length, zh: "显示 " + n + " / " + X.entries.length + " 条" });
+        host.querySelectorAll(".xr-filters .chip").forEach(function (b) {
+          b.setAttribute("aria-pressed", String(b.getAttribute("data-f") === f));
+        });
+      };
+      host.querySelector(".xr-filters").addEventListener("click", function (ev) {
+        var b = ev.target.closest(".chip");
+        if (!b) return;
+        applyX(b.getAttribute("data-f"));
       });
     }
 

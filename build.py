@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Build the self-contained site: data/neural-media.json + data/new-models.json + data/felstead-leung.json + src/* -> five pages
+"""Build the self-contained site: data/neural-media.json + data/new-models.json + data/felstead-leung.json + data/xr.json + src/* -> six pages
 
 Pages: index.html (identical copy: Neural-Media.html) = hero, concept, timeline, video, reading;
        who-else.html = landscape (who else works on neural media);
        bci.html = BCI x Neural Media, with the Phase Lock feature chapter;
        new-models.html = New Models / Lil Internet / Caroline Busta: overview, ideas, K link, full archive;
-       felstead-leung.html = Daniel Felstead & Jenn Leung: overview, ideas, K link, full archive.
+       felstead-leung.html = Daniel Felstead & Jenn Leung: overview, ideas, K link, full archive;
+       xr.html = XR (extended reality): taxonomy, latest VR / AR / MR / AI-glasses items.
 
 Usage:  python3 build.py            (stdlib only)
         python3 build.py --today    (also set meta.last_updated to today's date, UTC+8)
@@ -19,6 +20,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 DATA = HERE / "data" / "neural-media.json"
 NMDATA = HERE / "data" / "new-models.json"
 FLDATA = HERE / "data" / "felstead-leung.json"
+XRDATA = HERE / "data" / "xr.json"
 TZ = datetime.timezone(datetime.timedelta(hours=8))
 REQUIRED = ("id", "date", "types", "date_display", "title", "summary", "url", "source")
 
@@ -227,6 +229,115 @@ def validate_nm(N, name="new-models"):
         sys.exit("Data errors:\n  " + "\n  ".join(errs))
 
 
+def validate_xr(X):
+    """Checks for data/xr.json. Tags are device/capability labels, not three peer media."""
+    errs = []
+    def bil(o, w):
+        if not (isinstance(o, dict) and str(o.get("en", "")).strip() and str(o.get("zh", "")).strip()):
+            errs.append(f"xr {w}: needs both en and zh")
+    def https(u, w):
+        if not str(u or "").startswith("https://"):
+            errs.append(f"xr {w}: url must be https")
+    cats = X.get("categories") or {}
+    if not cats:
+        errs.append("xr: categories missing")
+    for k, v in cats.items():
+        bil(v, f"category {k}")
+    for k in ("title", "lead", "note"):
+        bil(X.get(k), k)
+    T = X.get("taxonomy") or {}
+    bil(T.get("title"), "taxonomy.title")
+    bil(T.get("lead"), "taxonomy.lead")
+    M = T.get("map") or {}
+    for k in ("umbrella", "family_label", "aside", "products_label"):
+        bil(M.get(k), f"taxonomy.map.{k}")
+    if len(M.get("family") or []) < 3:
+        errs.append("xr taxonomy.map.family needs VR, AR, and MR")
+    for n, item in enumerate(M.get("family") or []):
+        bil(item, f"taxonomy.map.family {n}")
+    if len(M.get("products") or []) < 3:
+        errs.append("xr taxonomy.map.products needs camera, display, and spatial AR")
+    for n, item in enumerate(M.get("products") or []):
+        bil(item, f"taxonomy.map.products {n}")
+    cols = T.get("columns") or {}
+    for k in ("term", "means", "not"):
+        bil(cols.get(k), f"taxonomy.columns.{k}")
+    if len(T.get("rows") or []) < 5:
+        errs.append("xr taxonomy.rows needs XR, VR, AR, MR, and AI glasses")
+    for n, row in enumerate(T.get("rows") or []):
+        for k in ("term", "means", "not"):
+            bil(row.get(k), f"taxonomy.row {n} {k}")
+    if not T.get("sources"):
+        errs.append("xr taxonomy.sources is empty")
+    for n, s in enumerate(T.get("sources") or []):
+        https(s.get("url"), f"taxonomy.source {n}")
+        bil(s.get("label"), f"taxonomy.source {n}")
+    B = X.get("beside") or {}
+    bil(B.get("title"), "beside.title")
+    bil(B.get("text"), "beside.text")
+    for n, l in enumerate(B.get("links") or []):
+        bil(l.get("label"), f"beside link {n}")
+        if l.get("url"):
+            https(l.get("url"), f"beside link {n}")
+        elif not str(l.get("href") or "").endswith(".html") and "#" not in str(l.get("href") or ""):
+            errs.append(f"xr beside link {n}: needs an https url or an internal href")
+    ids, prev = set(), None
+    for n, e in enumerate(X.get("entries") or []):
+        w = f"entry {e.get('id', n)}"
+        for k in ("id", "date", "title", "summary", "url", "source", "tags"):
+            if k not in e:
+                errs.append(f"xr {w}: missing '{k}'")
+        bil(e.get("title"), f"{w} title")
+        bil(e.get("summary"), f"{w} summary")
+        bil(e.get("source"), f"{w} source")
+        if "date_display" in e:
+            bil(e["date_display"], f"{w} date_display")
+        if e.get("nm") is not None:
+            bil(e["nm"], f"{w} nm")
+        https(e.get("url"), w)
+        tags = e.get("tags") or []
+        if not tags:
+            errs.append(f"xr {w}: needs at least one tag")
+        for t in tags:
+            if t not in cats:
+                errs.append(f"xr {w}: unknown tag '{t}'")
+        if e.get("id") in ids:
+            errs.append(f"xr duplicate id {e.get('id')}")
+        ids.add(e.get("id"))
+        try:
+            datetime.date.fromisoformat(e.get("date", ""))
+        except Exception:
+            errs.append(f"xr {w}: date must be YYYY-MM-DD")
+        if prev and e.get("date", "") > prev:
+            errs.append(f"xr {w}: entries must be ordered newest to oldest ({e.get('date')} after {prev})")
+        prev = e.get("date", prev)
+        zl = len(e.get("summary", {}).get("zh", ""))
+        if zl < 40:
+            errs.append(f"xr {w}: Chinese summary too short ({zl} chars)")
+        for key in ("cover", "yt_poster"):
+            if e.get(key):
+                rel = str(e[key])
+                if not rel.startswith("assets/xr/"):
+                    errs.append(f"xr {w}: {key} must be under assets/xr/")
+                elif not (HERE / rel).is_file():
+                    errs.append(f"xr {w}: {key} file missing ({rel})")
+        if e.get("cover"):
+            bil(e.get("cover_alt"), f"{w} cover_alt")
+            bil(e.get("cover_credit"), f"{w} cover_credit")
+        if e.get("youtube"):
+            https(e.get("youtube"), f"{w} youtube")
+        for l in e.get("links") or []:
+            https(l.get("url"), f"{w} link")
+            bil(l.get("label"), f"{w} link label")
+        for l in e.get("internal") or []:
+            bil(l.get("label"), f"{w} internal label")
+    feat = X.get("featured")
+    if feat not in ids:
+        errs.append(f"xr featured '{feat}' is not an entry id")
+    if errs:
+        sys.exit("Data errors:\n  " + "\n  ".join(errs))
+
+
 def nm_years(N):
     return sorted({e["date"][:4] for e in N.get("entries", [])}, reverse=True)
 
@@ -243,7 +354,7 @@ PAGES = {  # key -> (output files, sections in <main>, data keys kept, title)
     "home": (["Neural-Media.html", "index.html"],
              '  <section class="hero wrap" id="hero"></section>\n' + "".join(
                  f'  <section class="wrap block" id="{s}"></section>\n' for s in ("concept", "updates", "video", "reading")),
-             ("meta", "types", "hero", "concept", "featured", "items", "reading"),
+             ("meta", "types", "hero", "concept", "featured", "items", "reading", "xr_latest", "xr_tags"),
              "Neural Media · 神经媒体 | K Allado-McDowell tracker"),
     "who-else": (["who-else.html"], '  <section class="wrap block page-first" id="landscape"></section>\n',
                  ("meta", "types", "landscape"),
@@ -257,6 +368,9 @@ PAGES = {  # key -> (output files, sections in <main>, data keys kept, title)
     "felstead-leung": (["felstead-leung.html"], '  <section class="wrap block page-first" id="felsteadleung"></section>\n',
                        ("meta", "types", "felsteadleung"),
                        "Daniel Felstead & Jenn Leung · Felstead 与 Leung | Neural Media"),
+    "xr": (["xr.html"], '  <section class="wrap block page-first" id="xr"></section>\n',
+           ("meta", "types", "xr"),
+           "XR · 扩展现实 | Neural Media"),
 }
 
 
@@ -274,8 +388,9 @@ def validate_pages(d):
         if f and f not in files:
             errs.append(f"{where}: internal link to unknown page '{href}'")
         anchor = href.split("#")[1] if "#" in href else ""
-        known = ({a for v in SUBNAV.values() for a, _, _ in v} | {"landscape", "bci", "top", "newmodels", "felsteadleung"}
+        known = ({a for v in SUBNAV.values() for a, _, _ in v} | {"landscape", "bci", "top", "newmodels", "felsteadleung", "xr"}
                  | {"e-" + e["id"] for k in ("newmodels", "felsteadleung") for e in d.get(k, {}).get("entries", [])}
+                 | {"e-" + e["id"] for e in d.get("xr", {}).get("entries", [])}
                  | {"janky-" + f["entry"] for f in d.get("felsteadleung", {}).get("series", {}).get("films", [])}
                  | {"i-" + it["id"] for it in d["items"]})
         if anchor and anchor not in known:
@@ -302,6 +417,12 @@ def validate_pages(d):
             for r in d.get(k, {}).get("relation", {}).get(part, []):
                 if "internal" in r:
                     chk(r["internal"], f"{k} relation")
+    for e in d.get("xr", {}).get("entries", []):
+        for l in e.get("internal") or []:
+            chk(l.get("href", ""), f"xr entry {e.get('id')}")
+    for l in d.get("xr", {}).get("beside", {}).get("links") or []:
+        if l.get("href"):
+            chk(l.get("href"), "xr beside")
     F = d.get("bci", {}).get("feature")
     if F:
         def bil(o, w):
@@ -372,9 +493,11 @@ def main():
         DATA.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     d["newmodels"] = json.loads(NMDATA.read_text(encoding="utf-8"))
     d["felsteadleung"] = json.loads(FLDATA.read_text(encoding="utf-8"))
+    d["xr"] = json.loads(XRDATA.read_text(encoding="utf-8"))
     validate(d)
     validate_nm(d["newmodels"])
     validate_nm(d["felsteadleung"], "felstead-leung")
+    validate_xr(d["xr"])
     # Slim "latest" feed for who-else (no thumbnails): recent context / cross-linked items.
     def _slim_latest(items, last_updated, days=30, min_n=6, max_n=8):
         import datetime as _dt
@@ -383,7 +506,7 @@ def main():
         def score(it):
             types = it.get("types") or []
             href = (it.get("internal") or {}).get("href") or ""
-            return ("context" in types) or any(k in href for k in ("who-else", "felstead", "new-models", "bci"))
+            return ("context" in types) or any(k in href for k in ("who-else", "felstead", "new-models", "bci", "xr"))
         pool = [i for i in items if score(i)] or list(items)
         pool = sorted(pool, key=lambda i: i["date"], reverse=True)
         recent = [i for i in pool if i["date"] >= cut]
@@ -405,6 +528,25 @@ def main():
                                  ("fl-janky", "I'm So Janky", "影像随笔"),
                                  ("fl-archive", "Archive", "全部作品")]
                                 + [(f"y{y}", y, y) for y in nm_years(d["felsteadleung"])])
+    SUBNAV["xr"] = [("xr-latest", "Latest", "最新"), ("xr-taxonomy", "Taxonomy", "概念"),
+                    ("xr-feature", "VR Glasses", "VR 眼镜"), ("xr-log", "Log", "动态"),
+                    ("xr-beside", "Neural media", "与神经媒体")]
+    # Slim XR feed for the home page (no images): newest entries, so the sixth page surfaces there.
+    def _pick_latest(entries, asof_iso, days=30, min_n=6, max_n=8):
+        asof = datetime.date.fromisoformat(asof_iso)
+        cut = (asof - datetime.timedelta(days=days)).isoformat()
+        recent = [e for e in entries if e["date"] >= cut]
+        chosen = recent if len(recent) >= min_n else entries[:max(min_n, len(recent))]
+        return chosen[:max_n]
+    d["xr_tags"] = d["xr"]["categories"]
+    d["xr_latest"] = []
+    for e in _pick_latest(d["xr"]["entries"], d["meta"]["last_updated"]):
+        d["xr_latest"].append({
+            "id": e["id"], "date": e["date"], "date_display": e.get("date_display"),
+            "title": e["title"], "summary": e["summary"], "url": e["url"],
+            "tags": e.get("tags") or [],
+            "href": "xr.html#e-" + e["id"],
+        })
     validate_pages(d)
     keys = [g["key"] for g in d.get("landscape", {}).get("groups", [])]
     for a, _, _ in SUBNAV["who-else"]:
@@ -429,6 +571,11 @@ def main():
         for f in FL["series"].get("films", []):
             if f.get("cover"):
                 f["cover"] = data_uri(f["cover"])
+    # XR stills and YouTube poster fallbacks. Paths were checked in validate_xr.
+    for e in d["xr"].get("entries", []):
+        for key in ("cover", "yt_poster"):
+            if e.get(key):
+                e[key] = data_uri(e[key])
     tpl = (HERE / "src" / "template.html").read_text(encoding="utf-8")
     css = (HERE / "src" / "styles.css").read_text(encoding="utf-8")
     js = (HERE / "src" / "app.js").read_text(encoding="utf-8")
@@ -472,6 +619,12 @@ def main():
     print(f"  by year: {dict(sorted(cnt(lambda e: e['date'][:4]).items(), reverse=True))}")
     print(f"  by format: {cnt(lambda e: e['fmt'])}")
     print(f"  by basis: {cnt(lambda e: e['basis'])}")
+    XR = d["xr"]["entries"]
+    tag_counts = {}
+    for e in XR:
+        for t in e.get("tags") or []:
+            tag_counts[t] = tag_counts.get(t, 0) + 1
+    print(f"xr: {len(XR)} entries; featured {d['xr'].get('featured')}; tags {tag_counts}")
 
 
 if __name__ == "__main__":

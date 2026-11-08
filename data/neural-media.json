@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-31",
+    "last_updated": "2026-11-09",
     "launched": "2026-10-21",
     "timezone": "UTC+8",
     "note": {
@@ -4032,6 +4032,14 @@
       "label": {
         "en": "Felstead & Leung",
         "zh": "Felstead 与 Leung"
+      }
+    },
+    {
+      "key": "xr",
+      "file": "xr.html",
+      "label": {
+        "en": "XR",
+        "zh": "扩展现实"
       }
     }
   ]
