@@ -573,6 +573,74 @@
  },
  "entries": [
   {
+   "id": "nmtv-arcangel-stavanger",
+   "date": "2026-11-10",
+   "fmt": "tv",
+   "basis": "transcript",
+   "access": "free",
+   "url": "https://newmodels.substack.com/p/nmtv-cory-arcangel-lets-play-stavanger",
+   "title": {
+    "en": "NMTV | Cory Arcangel: Let’s Play Stavanger (2026)",
+    "zh": "NMTV｜Cory Arcangel：「Let’s Play Stavanger」（2026）"
+   },
+   "summary": {
+    "en": "A free video episode recorded on 22 June 2026 in Stockholm, made for the catalogue of “FAMILY OFFICE,” Arcangel’s 2015–2025 survey at Stavanger Kunstmuseum (14 Nov 2026 – 27 Mar 2027). Carly, Lil Internet and Arcangel cover his decade in Stavanger, an old sardine town hit by ‘a trillion dollars’ of oil money, and his Arcangel Surfware shop, ‘a streetwear brand for surfing the web.’ They also go back to the 1990s–2000s New York scene and We Live in Public. On the internet’s eras, Arcangel says virality used to happen inside your own network, which then took on a collective persona. The 2014–15 move to algorithmic feeds ended that. Creative work is now ‘machine pleasing’: musicians make choices for what the algorithm likes. He calls posting to YouTube ‘the most powerless thing on earth’ and worries that LLMs are ‘middlemanning thought.’ Basis: public video, audio and auto-transcript.",
+    "zh": "免费视频节目，2026 年 6 月 22 日在斯德哥尔摩录制，是为 Arcangel 在斯塔万格美术馆的十年回顾展「FAMILY OFFICE」（2015–2025；展期 2026 年 11 月 14 日至 2027 年 3 月 27 日）画册做的对谈。Busta、Lil Internet 和 Arcangel 先聊他在挪威斯塔万格的十年：一个沙丁鱼罐头小镇被「上万亿美元」石油资本砸成城市。再聊他开的 Arcangel Surfware 店（「给网上冲浪准备的街头潮牌」），以及 1990–2000 年代纽约的圈子和《We Live in Public》。关于互联网的分期，Arcangel 说，过去走红发生在你自己的社交网络里，网络本身会形成一种集体人格；2014–15 年算法信息流出现后，这种状态结束了。现在的创作是「取悦机器」：给音乐人做创意，讨论的是算法喜欢什么。他说往 YouTube 上传东西是「世界上最无力的事」，并担心大语言模型正在「给思想当中间商」。依据：公开视频、音频与自动文字稿。"
+   },
+   "people": "Cory Arcangel; hosts",
+   "mins": 73,
+   "nm": {
+    "en": "Arcangel traces the shift from network virality to algorithmic feeds and ‘machine pleasing’, and worries that LLMs now ‘middleman’ thought. That is the network-to-neural transition New Models and K both describe.",
+    "zh": "Arcangel 梳理了从「在自己网络里走红」到算法信息流、「取悦机器」的转变，并担心大语言模型如今在「给思想当中间商」。这正是 New Models 和 K 都在描述的从网络媒体到神经媒体的过渡。"
+   },
+   "links": [
+    {
+     "url": "https://www.youtube.com/watch?v=7e5IVqaz-YE",
+     "label": {
+      "en": "Video (YouTube)",
+      "zh": "视频（YouTube）"
+     }
+    },
+    {
+     "url": "https://www.stavangerkunstmuseum.no/en/events/cory-arcangel",
+     "label": {
+      "en": "FAMILY OFFICE at Stavanger Kunstmuseum",
+      "zh": "斯塔万格美术馆「FAMILY OFFICE」展览页"
+     }
+    }
+   ],
+   "date_display": {
+    "en": "10 Nov 2026",
+    "zh": "2026 年 11 月 10 日"
+   }
+  },
+  {
+   "id": "short-200-questions-fall-2026",
+   "date": "2026-11-03",
+   "fmt": "short",
+   "basis": "preview",
+   "access": "paid",
+   "url": "https://newmodels.substack.com/p/nm-200-questions-lil-internet-fall",
+   "title": {
+    "en": "NM 200 QUESTIONS | Lil Internet (Fall 2026)",
+    "zh": "NM 200 个问题｜Lil Internet（2026 年秋）"
+   },
+   "summary": {
+    "en": "An 11-minute solo episode in which Lil Internet reads 200 questions about the future, ‘including the kind you don’t ask in public.’ The free post shows the first 24. They open with ‘What if AI is the beginning of the end?’ and move on to whether the digital economy, or fiat severed from the world, broke capitalism and economics. Could AI enable a currency that measures ‘multi-valenced value’ and penalises rentierism? Is American capitalism optimising for addiction, with fentanyl as its model product and the predictable addict its ideal consumer? Could AI make all behaviour predictable, and what would that feel like? Is convenience a vice, and is a country that sells addiction a narcostate? The rest is paywalled.",
+    "zh": "11 分钟的单人节目：Lil Internet 一口气念完 200 个关于未来的问题，「包括那些不方便在公开场合问的」。免费页面只公开前 24 个。开头是「如果 AI 是终结的开始呢？」接着问：是数字经济（或者脱离实物锚定的法币）弄坏了资本主义和经济学吗？AI 能不能促成一种衡量「多重价值」、惩罚寄生与食利的货币？美国资本主义是否在为成瘾而优化？芬太尼是它理想的产品，可预测的成瘾者是它理想的消费者吗？AI 会不会让一切行为都可以预测？那会是什么感觉？便利是不是一种恶习？一个靠贩卖成瘾运转的国家能不能叫「毒品国家」？其余内容需付费收听。"
+   },
+   "people": "Lil Internet",
+   "mins": 11,
+   "nm": {
+    "en": "Several questions are about AI as a predictive medium: ‘Could AI make all behavior predictable?’ and what it would feel like to learn that everything you do, think and say is predictable.",
+    "zh": "其中几个问题直指 AI 作为「预测型媒介」：「AI 会不会让一切行为都可以预测？」以及发现自己做的、想的、说的一切都可被预测时会有什么感觉。"
+   },
+   "date_display": {
+    "en": "3 Nov 2026",
+    "zh": "2026 年 11 月 3 日"
+   }
+  },
+  {
    "id": "nm-update-venetia-histria",
    "date": "2026-10-21",
    "fmt": "update",

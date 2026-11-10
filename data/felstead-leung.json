@@ -621,6 +621,28 @@
   },
   "entries": [
     {
+      "id": "felstead-fashioning-worlds-china-2026",
+      "date": "2026-11-05",
+      "who": "felstead",
+      "fmt": "talk",
+      "basis": "description",
+      "access": "free",
+      "url": "https://www.instagram.com/felstead.daniel/",
+      "title": {
+        "en": "“Fashioning Worlds: Fashion Media in the Age of the Platform”: lecture tour in Hong Kong, Beijing and Jilin",
+        "zh": "「Fashioning Worlds：平台时代的时尚媒体」：香港、北京、吉林巡回讲座"
+      },
+      "summary": {
+        "en": "On Instagram (2 Nov 2026), Felstead announced a week of lectures ‘on worlds, worlding and fashion in the age of the platform’: The Hong Kong Polytechnic University (5 Nov), Beijing Institute of Fashion Technology (6 Nov) and Jilin University of Art (9 Nov). An earlier post shared his diagram of ‘the fashion media ecosystem’ made for the series, and slides tag Virgil Abloh, Telfar, Shumon Basar, New Models and others. It carries on from his earlier PolyU talk on fashion as a world-building technology and the ‘worlding’ thread in jankspace. Basis: the artist’s own posts. We found no university event page or recording.",
+        "zh": "Felstead 在 Instagram（2026 年 11 月 2 日）宣布，这周要在香港和中国内地做一系列关于「世界、造世界（worlding）与平台时代时尚」的讲座：香港理工大学（11 月 5 日）、北京服装学院（11 月 6 日）、吉林艺术学院（11 月 9 日）。更早的一条帖子发了他为这个系列画的「时尚媒体生态」图。讲座幻灯片里标注了 Virgil Abloh、Telfar、Shumon Basar、New Models 等人。这延续了他此前在香港理工把时尚当作「造世界技术」来讲的思路，也接着 jankspace 里的「造世界」线索。依据：艺术家本人的帖子；未找到学校活动页或录像。"
+      },
+      "people": "Daniel Felstead; organised by Tata Gao",
+      "date_display": {
+        "en": "5–9 Nov 2026",
+        "zh": "2026 年 11 月 5–9 日"
+      }
+    },
+    {
       "id": "zagreb-cute-but-psycho-2026",
       "date": "2026-10-31",
       "who": "joint",
@@ -670,6 +692,46 @@
       "date_display": {
         "en": "31 Oct 2026",
         "zh": "2026 年 10 月 31 日"
+      }
+    },
+    {
+      "id": "gross-collapse-teaser-2026",
+      "date": "2026-10-27",
+      "who": "felstead",
+      "fmt": "film",
+      "basis": "description",
+      "access": "free",
+      "url": "https://www.instagram.com/felstead.daniel/",
+      "title": {
+        "en": "First stills and scenes from the forthcoming film “The Gross Collapse”",
+        "zh": "新片《The Gross Collapse》首批剧照与片段"
+      },
+      "summary": {
+        "en": "Between 27 and 30 Oct 2026, Felstead posted a photoshoot, stills, quotes and two short scenes from his forthcoming film ‘The Gross Collapse.’ The captions credit Jenn Leung with 3D artists 1nbornred and qianyu, Marie Lueder, Hana Lee and others, the same circle as the I'm So Janky films. They say it is ‘coming soon to a streaming platform near you.’ No synopsis, platform or date has been published. We list it as new work in progress; we have no plot or themes to report.",
+        "zh": "2026 年 10 月 27 日至 30 日，Felstead 陆续发布了新片《The Gross Collapse》的造型照、剧照、台词摘录和两段短片段。署名包括 Jenn Leung、3D 艺术家 1nbornred 与 qianyu、Marie Lueder、Hana Lee 等，和《I'm So Janky》系列是同一班合作者。帖子写着「即将登陆你附近的流媒体平台」。目前没有公布剧情简介、平台或上线日期。这里只把它记为进行中的新作，没有剧情或主题可以报告。"
+      },
+      "people": "Daniel Felstead; with Jenn Leung, 1nbornred, qianyu, Marie Lueder, Hana Lee and others",
+      "links": [
+        {
+          "url": "https://www.instagram.com/jennnital/",
+          "label": {
+            "en": "Jenn Leung on Instagram",
+            "zh": "Jenn Leung 的 Instagram"
+          }
+        }
+      ],
+      "internal": [
+        {
+          "href": "#fl-janky",
+          "label": {
+            "en": "I'm So Janky feature",
+            "zh": "《I'm So Janky》专题"
+          }
+        }
+      ],
+      "date_display": {
+        "en": "27–30 Oct 2026",
+        "zh": "2026 年 10 月 27–30 日"
       }
     },
     {

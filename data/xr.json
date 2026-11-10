@@ -158,6 +158,77 @@
   "featured": "meta-vr-glasses",
   "entries": [
     {
+      "id": "quest-3d-movies",
+      "date": "2026-11-10",
+      "date_display": {
+        "en": "10 Nov 2026",
+        "zh": "2026 年 11 月 10 日"
+      },
+      "title": {
+        "en": "3D movies to rent or buy start appearing in the Quest TV app",
+        "zh": "Quest 的 TV 应用开始上架可租可买的 3D 电影"
+      },
+      "summary": {
+        "en": "UploadVR reports that some Quest 3 and 3S owners now see a ‘3D Movies to rent or buy’ row in the TV app, mostly Disney-owned titles. They can be bought through the Meta Horizon Store without Disney+. At Connect 2026 Meta promised ‘hundreds’ of films for US Quest owners in late 2026 and ‘thousands’ internationally by the time Meta VR Glasses launch in 2027. A page found in the app suggests 3D films may join the Horizon+ subscription, which may be renamed Meta VR+. The Disney+ app is due a spatial redesign with 3D and immersive environments this month. Meta’s games director Chris Pruett says more mainstream adults will ‘enter VR through media consumption first.’",
+        "zh": "UploadVR 报道，部分 Quest 3 / 3S 用户的 TV 应用里出现了「3D 电影租借或购买」一栏，片单以迪士尼旗下作品为主，可以直接在 Meta Horizon 商店购买，不需要 Disney+ 订阅。Meta 在 Connect 2026 上承诺：2026 年底向美国 Quest 用户提供「数百部」电影，到 2027 年 Meta VR Glasses 上市时扩展到国际市场「数千部」。应用里发现的一个页面显示，3D 电影可能并入 Horizon+ 订阅，订阅服务可能改名 Meta VR+。Disney+ 应用本月也将改成空间界面，支持 3D 内容和沉浸式环境。Meta 游戏总监 Chris Pruett 认为，会有更多主流成年用户「先通过看片进入 VR」。"
+      },
+      "url": "https://www.uploadvr.com/meta-begins-listing-3d-movies-on-quest-could-become-a-horizon-benefit/",
+      "source": {
+        "en": "UploadVR",
+        "zh": "UploadVR"
+      },
+      "tags": [
+        "vr",
+        "platform"
+      ],
+      "cover": "assets/xr/quest-3d-movies.jpg",
+      "cover_alt": {
+        "en": "The Quest TV app floating in a canyon environment, with rows for 3D movies to rent or buy, immersive 180° concerts and immersive 360° videos.",
+        "zh": "悬浮在峡谷环境中的 Quest TV 应用界面：一排「3D 电影租借或购买」，下面是 180° 沉浸式演唱会和 360° 沉浸式视频。"
+      },
+      "cover_credit": {
+        "en": "Image: UploadVR.",
+        "zh": "图片：UploadVR。"
+      }
+    },
+    {
+      "id": "fabula-rasa-llm-npcs",
+      "date": "2026-11-08",
+      "date_display": {
+        "en": "8 Nov 2026",
+        "zh": "2026 年 11 月 8 日"
+      },
+      "title": {
+        "en": "Fabula Rasa: an improv VR story told through LLM-driven characters, on Quest 3 December",
+        "zh": "《Fabula Rasa》：由大语言模型驱动角色的即兴 VR 故事，12 月 3 日登陆 Quest"
+      },
+      "summary": {
+        "en": "Arvore Immersive’s medieval comedy puts you in a cage hanging over a monster pit in a town square. You get free by talking nine townspeople into helping you, in real-time spoken conversation with NPCs driven by large language models, not pre-written dialogue trees. The team consulted improv comedians to shape the models. Your crimes and the townsfolk’s replies change with every playthrough, and costumes prompt different reactions. It won the XR Experience Audience Award at SXSW Film & TV and Best of Tech at Miami Filmgate Interactive. UploadVR updated the date from 12 Nov to 3 Dec.",
+        "zh": "Arvore Immersive 的中世纪喜剧：你被关在镇中心的笼子里，下面是怪物坑。要脱身，就得说服九个镇民帮你。对话是实时口语交流，角色由大语言模型驱动，不是预先写好的分支对白。团队请即兴喜剧演员参与调教模型。你犯了什么罪、镇民怎么回应，每一轮都不一样；不同服装也会引出不同反应。作品获得 SXSW 电影与电视节 XR 体验观众奖，以及迈阿密 Filmgate Interactive「最佳技术奖」。UploadVR 已把上线日期从 11 月 12 日更正为 12 月 3 日。"
+      },
+      "url": "https://www.uploadvr.com/fabula-rasa-is-an-interactive-improv-driven-experience-coming-to-quest-in-november/",
+      "source": {
+        "en": "UploadVR",
+        "zh": "UploadVR"
+      },
+      "tags": [
+        "vr"
+      ],
+      "cover": "assets/xr/fabula-rasa.jpg",
+      "cover_alt": {
+        "en": "Key art: cartoon medieval townsfolk seen through the bars of a cage, around the Fabula Rasa logo.",
+        "zh": "主视觉：透过笼子栏杆看到一群卡通风格的中世纪镇民，中间是《Fabula Rasa》标志。"
+      },
+      "cover_credit": {
+        "en": "Image: Arvore Immersive, via UploadVR.",
+        "zh": "图片：Arvore Immersive，经 UploadVR。"
+      },
+      "nm": {
+        "en": "The story is generated in conversation: each character is a language model playing a role, so the narrative is produced live rather than authored in advance.",
+        "zh": "故事在对话中生成：每个角色都是在扮演角色的语言模型，叙事是现场生成的，而不是事先写好的。"
+      }
+    },
+    {
       "id": "gentlemonster-intelligent-eyewear",
       "date": "2026-11-08",
       "date_display": { "en": "8 Nov 2026", "zh": "2026 年 11 月 8 日" },
@@ -203,6 +274,101 @@
         {
           "href": "#e-warby-intelligent-eyewear",
           "label": { "en": "Warby Parker’s frames, same partnership", "zh": "同一合作里的 Warby Parker 镜框" }
+        }
+      ]
+    },
+    {
+      "id": "gentlemonster-glazer-phoenix",
+      "date": "2026-11-06",
+      "date_display": {
+        "en": "6 Nov 2026",
+        "zh": "2026 年 11 月 6 日"
+      },
+      "title": {
+        "en": "Jonathan Glazer directs Joaquin Phoenix in Gentle Monster’s Intelligent Eyewear film",
+        "zh": "Jonathan Glazer 执导、Joaquin Phoenix 主演 Gentle Monster 智能眼镜短片"
+      },
+      "summary": {
+        "en": "Gentle Monster posted a 36-second teaser on X: Joaquin Phoenix stars in a short film directed by Jonathan Glazer, ‘a cinematic journey between reality and dream,’ with the full film due mid-November and the collection in December. LBB describes the premise: a lone salesman checks into an unfamiliar hotel, staff turn into otherworldly figures, and he comes to understand and talk with them through the glasses. Road to VR adds Samsung’s spec: a Snapdragon AR1 Gen 1 chip, one 12 MP camera with an indicator LED, mics, open-ear speakers and up to nine hours per charge. These are camera-and-audio Android XR glasses with Gemini. Pre-orders open 12 Nov, with a New York preview on 13–23 Nov.",
+        "zh": "Gentle Monster 在 X 上发布了 36 秒预告：Joaquin Phoenix 主演、Jonathan Glazer 执导的短片，「一段游走在现实与梦之间的电影旅程」。完整短片 11 月中旬上线，眼镜系列 12 月发售。据 LBB 介绍，故事是一名独行推销员入住陌生酒店，员工渐渐变成异界的存在，他靠这副眼镜理解它们、与它们交谈。Road to VR 补充了三星给出的规格：骁龙 AR1 Gen 1 芯片，一颗带指示灯的 1200 万像素摄像头，麦克风和开放式扬声器，单次续航最长 9 小时。这是带 Gemini 的 Android XR 相机加音频眼镜。11 月 12 日开放预购，11 月 13 日至 23 日在纽约公开展示。"
+      },
+      "url": "https://x.com/_GentleMonster_/status/2118709780717973903",
+      "source": {
+        "en": "Gentle Monster on X",
+        "zh": "Gentle Monster（X）"
+      },
+      "tags": [
+        "ai-glasses-camera"
+      ],
+      "cover": "assets/xr/gm-glazer-teaser.jpg",
+      "cover_alt": {
+        "en": "Film still: a man in a white shirt, seen from behind, leans out of a doorway into a dim hotel corridor lit with red lines.",
+        "zh": "短片剧照：一名穿白衬衫的男子背对镜头，从门口探身进入一条昏暗、亮着红色灯带的酒店走廊。"
+      },
+      "cover_credit": {
+        "en": "Image: Gentle Monster teaser, on X.",
+        "zh": "图片：Gentle Monster 预告片（X）。"
+      },
+      "links": [
+        {
+          "url": "https://lbbonline.com/news/Gentle-Monster-intelligent-eyewear-jonathan-glazer-joaquin-phoenix-news",
+          "label": {
+            "en": "LBB on the film",
+            "zh": "LBB 对短片的报道"
+          }
+        },
+        {
+          "url": "https://roadtovr.com/gentle-monster-android-xr-joaquin-phoenix-trailer/",
+          "label": {
+            "en": "Road to VR",
+            "zh": "Road to VR 报道"
+          }
+        }
+      ],
+      "nm": {
+        "en": "In the film, the glasses act as a translator between planes of reality: a model that listens and interprets for the wearer.",
+        "zh": "短片里，眼镜是不同现实之间的「翻译器」：一个替佩戴者聆听和解读的模型。"
+      }
+    },
+    {
+      "id": "project-hail-mary-mr",
+      "date": "2026-11-05",
+      "date_display": {
+        "en": "5 Nov 2026",
+        "zh": "2026 年 11 月 5 日"
+      },
+      "title": {
+        "en": "Project Hail Mary: Journey Among the Stars, a mixed-reality chapter of the film’s world, out 12 Nov",
+        "zh": "《挽救计划：星际之旅》：电影世界的混合现实新篇章，11 月 12 日上线"
+      },
+      "summary": {
+        "en": "London studio Maze Theory, with Amazon MGM Studios, announced a 12 Nov launch on PICO, Android XR and Meta Quest 3/3S, with a launch video featuring Ryan Gosling. You play Ryland Grace in an untold chapter of the mission, with James Ortiz again as the alien Rocky. The ship’s systems are failing and you must diagnose and fix them. The experience blends your own room with the Hail Mary. The press release places it in the cinematic world shaped by Phil Lord and Christopher Miller. Pre-order buyers get three digital sculptures to display in mixed reality. UploadVR calls it a mixed reality experience.",
+        "zh": "伦敦工作室 Maze Theory 与亚马逊米高梅工作室宣布：11 月 12 日在 PICO、Android XR 和 Meta Quest 3/3S 上线，并发布了有 Ryan Gosling 出镜的上线视频。你扮演 Ryland Grace，经历任务中一段未曾讲述的篇章，James Ortiz 再次为外星人 Rocky 配音表演。飞船系统接连故障，你要诊断并修复。体验把你所在的房间和「挽救号」飞船叠在一起。新闻稿说它属于 Phil Lord 与 Christopher Miller 塑造的电影世界。预购用户可获得三件能在混合现实中摆放的数字雕塑。UploadVR 称其为混合现实体验。"
+      },
+      "url": "https://app.pressengine.net/newsdesk/futurefriendsgames/stories/project-hail-mary-journey-among-the-stars-launches-next-week-on-pico-quest-3-android-xr",
+      "source": {
+        "en": "Maze Theory press release (PressEngine)",
+        "zh": "Maze Theory 新闻稿（PressEngine）"
+      },
+      "tags": [
+        "mr"
+      ],
+      "cover": "assets/xr/hail-mary-mr.jpg",
+      "cover_alt": {
+        "en": "Key art: the rock-like alien Rocky inside a glass enclosure, with an astronaut floating above and the Project Hail Mary title on the left.",
+        "zh": "主视觉：岩石质感的外星人 Rocky 在玻璃舱中，上方漂浮着一名宇航员，左侧是《Project Hail Mary》标题。"
+      },
+      "cover_credit": {
+        "en": "Image: Maze Theory / Amazon MGM Studios, via UploadVR.",
+        "zh": "图片：Maze Theory／亚马逊米高梅工作室，经 UploadVR。"
+      },
+      "links": [
+        {
+          "url": "https://www.uploadvr.com/project-hail-mary-journey-among-the-stars-gets-a-release-date/",
+          "label": {
+            "en": "UploadVR",
+            "zh": "UploadVR 报道"
+          }
         }
       ]
     },
@@ -256,6 +422,39 @@
         {
           "href": "#e-gentlemonster-intelligent-eyewear",
           "label": { "en": "Gentle Monster’s frames", "zh": "Gentle Monster 的镜框" }
+        }
+      ]
+    },
+    {
+      "id": "uk-smart-glasses-debate",
+      "date": "2026-11-04",
+      "date_display": {
+        "en": "4 Nov 2026 (Westminster Hall, London)",
+        "zh": "2026 年 11 月 4 日（伦敦威斯敏斯特厅）"
+      },
+      "title": {
+        "en": "UK minister: limits on where smart glasses are worn and who can buy them are being explored",
+        "zh": "英国内政部官员：正在研究限制智能眼镜的使用场所和购买人群"
+      },
+      "summary": {
+        "en": "In a Westminster Hall debate on violence against women and girls and smart glasses, opened by MP Anna Sabine after a petition, Home Office minister Satvir Kaur said the government is ‘already looking into options to restrict smart glasses in certain settings and restricting the sale to certain users,’ and that the work is ‘happening at pace.’ She noted that courts and tribunals already ban them, that NHS England and the Department for Education are reviewing wearables, and that use on the parliamentary estate is under consideration. She called for safety by design from manufacturers and pointed to existing laws. Smart glasses help visually impaired people, she said, but covert camera recording is the harm. No measure or timetable has been set.",
+        "zh": "在一场关于「针对女性与女童的暴力：智能眼镜」的威斯敏斯特厅辩论中（因请愿推动，由议员 Anna Sabine 发起），内政部政务次官 Satvir Kaur 说，政府「已在研究限制智能眼镜在某些场所使用、限制向某些人群销售的方案」，并且工作「正在加速进行」。她指出法院和审裁处已经禁止佩戴；英格兰 NHS 和教育部正在评估可穿戴设备；议会大楼内的使用也在考虑之中。她要求厂商做到「安全内建于设计」，并列举了现有法律。她承认智能眼镜对视障人士帮助很大，但偷偷用摄像头录像造成了伤害。目前没有定下具体措施或时间表。"
+      },
+      "url": "https://parallelparliament.co.uk/debate/2026-11-04/commons/westminster-hall/violence-against-women-and-girls-smart-glasses/ministerial-extracts",
+      "source": {
+        "en": "Parallel Parliament (Hansard ministerial extracts)",
+        "zh": "Parallel Parliament（议会议事录部长发言摘录）"
+      },
+      "tags": [
+        "ai-glasses-camera"
+      ],
+      "links": [
+        {
+          "url": "https://www.immersivewire.com/p/uk-government-exploring-limits-on-smart-glasses",
+          "label": {
+            "en": "The Immersive Wire",
+            "zh": "The Immersive Wire 简报"
+          }
         }
       ]
     },

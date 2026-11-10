@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-09",
+    "last_updated": "2026-11-10",
     "launched": "2026-10-21",
     "timezone": "UTC+8",
     "note": {
@@ -2461,6 +2461,41 @@
           }
         }
       ]
+    },
+    {
+      "id": "2026-11-13-wku-pcal",
+      "date": "2026-11-13",
+      "types": [
+        "talk",
+        "context"
+      ],
+      "added": "2026-11-10",
+      "date_display": {
+        "en": "13 Nov 2026 (12 Nov, 6:30 PM in Kentucky)",
+        "zh": "2026 年 11 月 13 日（肯塔基当地 11 月 12 日晚 6:30）"
+      },
+      "title": {
+        "en": "PCAL CES Presents: K Allado-McDowell, Western Kentucky University",
+        "zh": "西肯塔基大学 PCAL CES 系列讲座：K Allado-McDowell"
+      },
+      "summary": {
+        "en": "Western Kentucky University’s Potter College of Arts & Letters (PCAL) calendar lists K for a one-hour public event in its CES series on Thursday 12 Nov 2026, 6:30–7:30 PM, in the Jody Richards Hall Auditorium, Bowling Green (08:30–09:30 on 13 Nov, China time). The listing carries no talk title or abstract. It only gives K’s standard bio: books co-written with GPT-3, founding Google’s Artists + Machine Intelligence programme in 2015, the neuro-opera Song of the Ambassadors and the 2025 Swiss Institute show The Known Lost. Wider context: the listing doesn’t say whether the talk is about neural media.",
+        "zh": "西肯塔基大学 Potter 文理学院（PCAL）活动日历显示，K 将于 2026 年 11 月 12 日（周四）晚 6:30–7:30 在鲍灵格林 Jody Richards Hall 礼堂参加 CES 系列的一场一小时公开活动（北京时间 11 月 13 日 8:30–9:30）。页面没有讲题和摘要，只附了 K 的常规简介：与 GPT-3 合写多本书，2015 年在 Google 创办「艺术家＋机器智能」（AMI）项目，创作神经歌剧《Song of the Ambassadors》，以及 2025 年在纽约 Swiss Institute 的个展《The Known Lost》。（相关背景：活动页没有说明这场讲座是否讨论神经媒体。）"
+      },
+      "url": "https://www.wku.edu/cebs/calendar/index.php?eventid=86019&view=event",
+      "source": {
+        "en": "Western Kentucky University calendar",
+        "zh": "西肯塔基大学活动日历"
+      },
+      "links": [
+        {
+          "url": "https://www.wku.edu/pcal/calendar/index.php?date=2026-11-12",
+          "label": {
+            "en": "PCAL calendar, 12 Nov",
+            "zh": "PCAL 日历（11 月 12 日）"
+          }
+        }
+      ]
     }
   ],
   "reading": [
@@ -3175,6 +3210,82 @@
         "zh": "新闻：脑机接口与 AI 的交汇（2024–2026）"
       },
       "entries": [
+        {
+          "date": "2026-11-09",
+          "date_display": {
+            "en": "9 Nov 2026",
+            "zh": "2026 年 11 月 9 日"
+          },
+          "marks": [
+            "research"
+          ],
+          "title": {
+            "en": "Gradient gel electrodes keep a non-invasive BCI cap reading for a full day",
+            "zh": "梯度凝胶电极让非侵入式脑机接口脑电帽稳定工作一整天"
+          },
+          "line": {
+            "en": "SCMP reports that Chinese researchers built ‘gradient’ electrodes, neither uniformly soft nor rigid, and fitted them to a commercial EEG cap. The cap ran for 14 hours at rest, gave eight hours of stable recording while the wearer went about daily activities, and kept visual ‘mind-typing’ accuracy above 94%. The point is wearability: non-invasive BCIs that stay usable outside the lab, a precondition for everyday neural interfaces.",
+            "zh": "据《南华早报》报道，中国研究团队做出一种「梯度」电极，既不是全软也不是全硬，装进商用脑电（EEG）帽后，静息状态下连续工作 14 小时；佩戴者日常活动时也能稳定记录 8 小时；视觉「意念打字」准确率保持在 94% 以上。重点是可穿戴性：非侵入式脑机接口要走出实验室、进入日常，这是前提。"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3373477/chinas-comfortable-brain-reading-device-achieves-94-mind-typing-accuracy-day-long-use"
+        },
+        {
+          "date": "2026-11-07",
+          "date_display": {
+            "en": "7 Nov 2026",
+            "zh": "2026 年 11 月 7 日"
+          },
+          "marks": [
+            "research"
+          ],
+          "title": {
+            "en": "Nature Communications: the insula tells a BCI when it got you wrong",
+            "zh": "《自然·通讯》：脑岛会告诉脑机接口「你理解错了」"
+          },
+          "line": {
+            "en": "Weger, Herff and colleagues (Maastricht University) used intracranial EEG in epilepsy patients to run a motor BCI. When the interface failed to follow the user’s intention, high-frequency activity appeared in the anterior insula and spread to prefrontal cortex. Frontoinsular sites mainly encoded the error, which makes them a target for real-time self-correction. The interface reads cognitive signals about its own mistakes, not only motor commands.",
+            "zh": "马斯特里赫特大学 Weger、Herff 等人用癫痫患者的颅内脑电（iEEG）运行运动型脑机接口。当界面没有跟上使用者的意图时，前脑岛出现高频活动，并传到前额叶。额叶–脑岛位点主要编码「出错」信号，可用于实时自我纠错。也就是说，接口读取的不只是运动指令，还有大脑对「机器出错」的认知反应。"
+          },
+          "url": "https://www.nature.com/articles/s41467-026-78804-2"
+        },
+        {
+          "date": "2026-10-31",
+          "date_display": {
+            "en": "31 Oct 2026 (30 Oct, San Francisco)",
+            "zh": "2026 年 10 月 31 日（旧金山时间 10 月 30 日）"
+          },
+          "marks": [
+            "industry"
+          ],
+          "title": {
+            "en": "TBC launches mischief 1, a video model tuned by living neurons",
+            "zh": "TBC 发布 mischief 1：由活体神经元调校的视频生成模型"
+          },
+          "line": {
+            "en": "The Biological Computing Co. grows neurons in its San Francisco lab, measures how they process information and turns the findings into software. Its first product, mischief 1, is an image-to-video model built on open-weight Wan 2.2. TBC says it matches the base model’s quality at 5× the speed for half a cent per second, on fal and OpenRouter. The neurons stay in the lab; the model runs on ordinary GPUs. Biological computing feeding straight into generative media is a case of neural media in K’s wider sense.",
+            "zh": "The Biological Computing Co.（TBC）在旧金山实验室培养活体神经元，测量它们处理信息的方式，再把发现写成软件。首个产品 mischief 1 是基于开源权重 Wan 2.2 的图生视频模型。公司称画质与原模型相当，速度快 5 倍，每秒视频只要半美分，已在 fal 和 OpenRouter 上线。神经元留在实验室里，模型跑在普通 GPU 上。生物计算直接进入生成式媒体，正是 K 广义「神经媒体」（含生物计算基质）的一个例子。"
+          },
+          "url": "https://www.tbc.co/press-releases/neuron-derived-ai-video-model"
+        },
+        {
+          "date": "2026-10-30",
+          "date_display": {
+            "en": "30 Oct 2026 (29 Oct, US)",
+            "zh": "2026 年 10 月 30 日（美国时间 10 月 29 日）"
+          },
+          "marks": [
+            "industry"
+          ],
+          "title": {
+            "en": "Neuralink’s 72-hour VOICE hackathon: “Hey Neuralink” starts a Grok agent",
+            "zh": "Neuralink 72 小时 VOICE 黑客松：想一句「Hey Neuralink」就能启动 Grok 智能体"
+          },
+          "line": {
+            "en": "Neuralink engineers spent 72 hours at the home of a VOICE speech-BCI participant. They built neural voice-activity detection, so decoding starts and stops on its own, plus live neural visualisations, iOS keyboard dictation, a faster editing flow, lock-screen start and BCI speech injected into phone calls. They also prototyped a computer-use agent: thinking “Hey Neuralink” plus a task launches a Grok agent that does it. Company blog, not peer-reviewed.",
+            "zh": "Neuralink 工程师在一位 VOICE 言语脑机接口受试者家里待了 72 小时。他们做出了神经语音活动检测（解码自动开始和停止）、实时神经信号可视化、iOS 键盘口述、更快的纠错流程、锁屏直接开讲，以及把脑机接口生成的语音直接送进电话通话。他们还做了一个电脑操作智能体原型：在心里说「Hey Neuralink」再加一个任务，就能启动 Grok 智能体自动完成。来源为公司博客，未经同行评审。"
+          },
+          "url": "https://neuralink.com/updates/72-hour-voice-hackathon/"
+        },
         {
           "date": "2026-10-28",
           "date_display": {
