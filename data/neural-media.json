@@ -253,6 +253,11 @@
         "en": "K joins curator and Gray Area director Barry Threw at CalArts’ Bijou Theater (4:30–6 PM) for a CCAT Speaker Series conversation on how emerging technology enables creativity and the institutional infrastructures that support artistic experimentation, followed by a Q&A moderated by Robin Xie (MFA Film Directing). Wider context: this is K’s recent activity, not specifically about neural media.",
         "zh": "K 与策展人、旧金山 Gray Area 艺术总监 Barry Threw 一同出席加州艺术学院 Bijou 剧场的 CCAT 演讲系列（下午 4:30–6:00），对谈新兴技术如何赋能创作，以及支撑艺术实验的制度基础；随后由电影导演 MFA 学生 Robin Xie 主持问答。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
       },
+      "key_points": [
+        { "en": "K joins curator Threw at the Bijou Theater for a CCAT talk.", "zh": "K与策展人Threw在Bijou剧场做CCAT对谈。" },
+        { "en": "They discuss emerging technology, creativity, and infrastructures for experimentation.", "zh": "对谈涉及新兴技术、创作，以及支撑实验的制度基础。" },
+        { "en": "Robin Xie moderates the Q&A. This is not specifically about neural media.", "zh": "Robin Xie主持问答。这并非专门讨论神经媒体。" }
+      ],
       "url": "https://calarts.edu/calarts-events/chanel-center-artists-and-technology-ccat-speaker-series-barry-threw-k-allado",
       "source": {
         "en": "CalArts",
@@ -278,6 +283,10 @@
         "en": "K describes explorations of neuralese as approaching neural media “as a high dimensional outside beyond human language, as maps of the virtual translated for us, not (yet) directly perceptible.”",
         "zh": "K 写道，对 neuralese 的探索是把神经媒体当作「人类语言之外的高维外部，当作为我们翻译过来的虚拟地图，（尚）不能被直接感知」来理解。"
       },
+      "key_points": [
+        { "en": "K treats neuralese as neural media lying outside human language.", "zh": "K把neuralese视为人类语言之外的神经媒体。" },
+        { "en": "It is virtual maps translated for us, not yet directly perceptible.", "zh": "它是为我们翻译的虚拟地图，尚不能被直接感知。" }
+      ],
       "url": "https://x.com/kalladomcdowell/status/2107825781351268839",
       "source": {
         "en": "X (@kalladomcdowell)",
@@ -303,6 +312,10 @@
         "en": "“The language of the embedded subject is made of memetic pointers because neural media are made of network media (like tv was once made of theater).”",
         "zh": "「嵌入式主体的语言由模因指针构成，因为神经媒体由网络媒体构成（就像电视曾经由戏剧构成）。」"
       },
+      "key_points": [
+        { "en": "The embedded subject's language is made of memetic pointers.", "zh": "嵌入式主体的语言由模因指针构成。" },
+        { "en": "Neural media are made of network media, as television once was of theater.", "zh": "神经媒体由网络媒体构成，正如电视曾由戏剧构成。" }
+      ],
       "url": "https://x.com/kalladomcdowell/status/2107761349204000894",
       "source": {
         "en": "X (@kalladomcdowell)",
@@ -328,6 +341,11 @@
         "en": "K’s whole post reads “BCI x AI = neural media”. It quotes a thread by Trent McConaghy that defines neuroAI as “AI scaling laws x BCI” (decoding thought-to-text and thought-to-image with lots of data) and recommends Saturnin Pugnet’s manifesto Phase Lock. The clearest statement so far that K counts AI-decoded brain–computer interfaces as neural media. See the BCI × Neural Media page.",
         "zh": "K 的帖子全文就是「BCI x AI = neural media」（脑机接口 × AI = 神经媒体）。它转引了 Trent McConaghy 的一条长帖：McConaghy 把 neuroAI 定义为「AI 规模定律 × 脑机接口」，即依靠海量数据把思维解码成文字和图像，并推荐了 Saturnin Pugnet 的宣言《Phase Lock》。这是 K 迄今最明确的表态：由 AI 解码的脑机接口属于神经媒体。详见「脑机接口与神经媒体」页面。"
       },
+      "key_points": [
+        { "en": "K's post states that BCI times AI equals neural media.", "zh": "K的帖子写道：脑机接口乘以AI等于神经媒体。" },
+        { "en": "The quoted thread defines neuroAI as AI scaling laws times BCI.", "zh": "所引帖子把neuroAI定义为AI规模定律乘以脑机接口。" },
+        { "en": "This is K's clearest statement that AI-decoded BCIs count as neural media.", "zh": "这是K最明确的表态：AI解码的脑机接口属于神经媒体。" }
+      ],
       "url": "https://x.com/kalladomcdowell/status/2107760105198690608",
       "source": {
         "en": "X (@kalladomcdowell)",
@@ -376,6 +394,10 @@
         "en": "K frames “neuralese”, the internal language of AI agents, as the language of neural media. This opens the run of neuralese posts.",
         "zh": "K 把「neuralese」（神经语，即 AI 智能体的内部语言）定义为神经媒体的语言，由此开启了一系列关于 neuralese 的帖子。"
       },
+      "key_points": [
+        { "en": "K frames neuralese, AI agents' internal language, as neural media's language.", "zh": "K把AI智能体内部语言neuralese视为神经媒体的语言。" },
+        { "en": "This post opens a series of posts about neuralese.", "zh": "此帖开启了一系列关于neuralese的帖子。" }
+      ],
       "url": "https://x.com/kalladomcdowell/status/2107195635674066984",
       "source": {
         "en": "X (@kalladomcdowell)",
@@ -402,6 +424,11 @@
         "en": "A roughly 40,000-word manifesto by Saturnin Pugnet (a founding member of World, formerly Worldcoin, and founder of the AI-safety nonprofit Factor Omega). It argues that AI is outpacing our ability to steer it through keyboards and screens (“the bandwidth problem”) and that brain–computer interfaces offer “alignment-by-integration”: the brain as a blueprint for aligned intelligence, neural data as a training signal for AI, and a wider channel between mind and machine. Its bet is that AI-style scaling (hardware, data, models) will work for brain decoding, led by consumer non-invasive devices; it also covers neurorights and cognitive liberty. Four parts and appendices. Version history on the site: v1.0 first published 2 Oct 2026, v1.1 14 Oct, v1.2 16 Oct, v1.3 23 Oct. Pugnet announced it on X and Substack on 6 Oct. Wider context: it never mentions K or the term neural media, but K’s 7 Oct post “BCI x AI = neural media” quotes Trent McConaghy’s thread recommending it.",
         "zh": "Saturnin Pugnet 撰写的长篇宣言，约 4 万词。作者是 World（原 Worldcoin）的创始成员，也是 AI 安全非营利组织 Factor Omega 的创始人。文章认为，AI 的发展速度已经超出人类用键盘和屏幕去引导它的能力（作者称之为「带宽问题」），而脑机接口提供了一条「融合式对齐」的路径：大脑是对齐智能的蓝本，神经数据是训练 AI 的信号，脑机接口还能拓宽大脑与机器之间的通道。作者押注 AI 那套「更好的硬件、更多的数据、更大的模型」的扩展规律同样适用于大脑解码，而消费级非侵入式设备会是最快的路线；文中也讨论了神经权利和认知自由。全文分四部分，另有附录。网站上的版本记录：2026 年 10 月 2 日首发 v1.0，10 月 14 日 v1.1，10 月 16 日 v1.2，10 月 23 日 v1.3。作者于 10 月 6 日在 X 和 Substack 上正式发布。（相关背景：文中没有提到 K，也没有使用「神经媒体」一词；但 K 在 10 月 7 日发帖「BCI x AI = neural media」，转引的正是 Trent McConaghy 推荐这篇宣言的帖子。）"
       },
+      "key_points": [
+        { "en": "Pugnet's manifesto says AI outpaces steering through keyboards and screens.", "zh": "Pugnet的宣言认为，AI已超出键盘和屏幕的引导能力。" },
+        { "en": "Alignment-by-integration treats the brain as a blueprint and neural data as a signal.", "zh": "融合式对齐把大脑当蓝本，把神经数据当训练信号。" },
+        { "en": "It bets non-invasive consumer devices will lead scaling of brain decoding.", "zh": "它押注消费级非侵入设备引领大脑解码的扩展。" }
+      ],
       "url": "https://phaselock.satpugnet.com/",
       "source": {
         "en": "phaselock.satpugnet.com",
@@ -465,6 +492,11 @@
         "en": "The LAS Art Foundation reader, co-edited by K Allado-McDowell, Julia Kaganskiy, Bettina Kames and Corinne Mynatt with more than 60 contributions, is listed by University of Chicago Press for October 2026. LAS and DISTANZ first launched it in April 2024. Wider context: this is K's recent activity, not specifically about neural media.",
         "zh": "这本由 LAS 艺术基金会推出的读本由 K Allado-McDowell、Julia Kaganskiy、Bettina Kames 和 Corinne Mynatt 合编，收录 60 多篇文章。芝加哥大学出版社将其列为 2026 年 10 月出版。该书最初由 LAS 与 DISTANZ 于 2024 年 4 月推出。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
       },
+      "key_points": [
+        { "en": "K co-edited an LAS Art Foundation reader with more than sixty contributions.", "zh": "K合编了LAS艺术基金会读本，收录六十多篇。" },
+        { "en": "University of Chicago Press lists it for October 2026.", "zh": "芝加哥大学出版社将其列为2026年10月出版。" },
+        { "en": "LAS and DISTANZ launched it in April 2024. It is not about neural media.", "zh": "2024年4月LAS与DISTANZ推出，并非专论神经媒体。" }
+      ],
       "url": "https://press.uchicago.edu/ucp/books/book/distributed/I/bo283349115.html",
       "source": {
         "en": "University of Chicago Press",
@@ -490,6 +522,10 @@
         "en": "Roberto Alonso Trillo, Peter A. C. Nelson and Kratika Jain cite K's New Models conversation “On Neural Media” (2024) and use its idea of interpellative media structures in a study of audiovisual performance.",
         "zh": "Roberto Alonso Trillo、Peter A. C. Nelson 与 Kratika Jain 在这项视听表演研究中引用了 K 在 New Models 的对谈《论神经媒体》（2024），并借用了其中「询唤式媒介结构」的概念。"
       },
+      "key_points": [
+        { "en": "Trillo, Nelson and Jain cite K's 2024 conversation.", "zh": "Trillo、Nelson与Jain引用K的2024年对谈。" },
+        { "en": "Their audiovisual performance study uses interpellative media structures.", "zh": "这项视听表演研究借用了询唤式媒介结构。" }
+      ],
       "url": "https://doi.org/10.1017/S1355771826101617",
       "source": {
         "en": "Organised Sound (Cambridge University Press), academic paper",
@@ -517,6 +553,11 @@
         "en": "K joined Sougwen Chung and Jazia Hammoudi on a panel led by Right Click Save editor Alex Estorick at the Creative Intelligence Summit. The festival ran 11–13 Sep 2026 and was curated with PACT. Fellowship Trust announced the panel on X. Wider context: this is K's recent activity, not specifically about neural media.",
         "zh": "K 与 Sougwen Chung、Jazia Hammoudi 一同参加了「创意智能」（Creative Intelligence）峰会上的圆桌讨论，由 Right Click Save 编辑 Alex Estorick 主持。该艺术节于 2026 年 9 月 11 日至 13 日举办，与 PACT 合作策划。Fellowship Trust 在 X 上发布了这场圆桌的消息。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
       },
+      "key_points": [
+        { "en": "K joined Chung and Hammoudi on a Creative Intelligence Summit panel.", "zh": "K与Chung、Hammoudi参加创意智能峰会圆桌。" },
+        { "en": "Right Click Save editor Estorick led the panel.", "zh": "Right Click Save编辑Estorick主持圆桌。" },
+        { "en": "It ran 11–13 September 2026 with PACT and is not about neural media.", "zh": "2026年9月11至13日与PACT合办，并非专论神经媒体。" }
+      ],
       "url": "https://x.com/fellowshiptrust/status/2098305593106895215",
       "source": {
         "en": "X (@fellowshiptrust)",
@@ -543,6 +584,11 @@
         "en": "Talks by K Allado-McDowell and Marjolijn Dijkman about their work in Metabolising Time. K took a closer look at The Known Lost, a proposal for a large-scale monument to all extinct species. Wider context: this is K's recent activity, not specifically about neural media.",
         "zh": "K Allado-McDowell 与 Marjolijn Dijkman 围绕各自在「代谢时间」（Metabolising Time）展中的作品进行演讲。K 详细介绍了《The Known Lost》，这是一座纪念所有已灭绝物种的大型纪念碑提案。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
       },
+      "key_points": [
+        { "en": "K and Marjolijn Dijkman spoke about their work in Metabolising Time.", "zh": "K与Dijkman围绕各自在「代谢时间」展中的作品演讲。" },
+        { "en": "K presented The Known Lost, a proposal honoring all extinct species.", "zh": "K介绍《The Known Lost》，纪念所有灭绝物种的提案。" },
+        { "en": "This is K's recent activity, not specifically about neural media.", "zh": "这是K的近期动态，并非专门讨论神经媒体。" }
+      ],
       "url": "https://marjolijndijkman.com/news/playing-the-long-game-art-extinction-and-ai",
       "source": {
         "en": "Marjolijn Dijkman",
@@ -569,6 +615,11 @@
         "en": "Interview with PACT members Liam Young, Ayoung Kim, K Allado-McDowell and Keri Elmsly. K describes The Known Lost, an opera and monument whose libretto is 187,000 Latin names of extinct species. Wider context: this is K's recent activity, not specifically about neural media.",
         "zh": "对 PACT 成员 Liam Young、Ayoung Kim、K Allado-McDowell 和 Keri Elmsly 的专访。K 介绍了《The Known Lost》：这是一部歌剧兼纪念碑，唱词由 18.7 万个已灭绝物种的拉丁学名组成。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
       },
+      "key_points": [
+        { "en": "The interview features PACT members Young, Kim, K and Elmsly.", "zh": "专访PACT成员Young、Kim、K与Elmsly。" },
+        { "en": "K describes The Known Lost, an opera and monument to extinct species.", "zh": "K介绍《The Known Lost》，一部歌剧兼纪念碑。" },
+        { "en": "Its libretto is 187,000 Latin names of extinct species.", "zh": "唱词由18.7万个已灭绝物种的拉丁学名组成。" }
+      ],
       "url": "https://www.rightclicksave.com/article/in-search-of-creative-intelligence",
       "source": {
         "en": "Right Click Save",
@@ -594,6 +645,11 @@
         "en": "Interview by Sara Benaglia. K says the Neural Media essays dig into AI as a media form, calls media literacy a political skill, and says neural media extend to brain-computer interfaces and biological computing. Also covers “co-thinking” with machines.",
         "zh": "Sara Benaglia 的专访。K 表示，「神经媒体」系列文章是把 AI 当作一种媒介形式来深入剖析；K 称媒介素养是一种政治能力，并指出神经媒体还延伸到脑机接口与生物计算。访谈也谈到了与机器「共同思考」（co-thinking）。"
       },
+      "key_points": [
+        { "en": "In Sara Benaglia's interview, K treats AI as a media form.", "zh": "在Sara Benaglia的专访中，K把AI当作媒介形式。" },
+        { "en": "K calls media literacy a political skill.", "zh": "K称媒介素养是一种政治能力。" },
+        { "en": "K says neural media extend to brain-computer interfaces and biological computing.", "zh": "K指出神经媒体延伸到脑机接口与生物计算。" }
+      ],
       "url": "https://www.ilgiornaledellarte.com/Articolo/Oltre-il-mito-dellalgoritmo-intervista-con-KAllado-McDowell",
       "source": {
         "en": "Il Giornale dell'Arte",
@@ -621,6 +677,11 @@
         "en": "Long Now posted on X that copies of its Pace Layers journal are still available, with essays by Blaise Agüera y Arcas, K Allado-McDowell, Benjamin Bratton and Sara Imari Walker. Wider context: this is K's recent activity, not specifically about neural media.",
         "zh": "Long Now 在 X 上发帖称其年刊《Pace Layers》仍有余册，收录了 Blaise Agüera y Arcas、K Allado-McDowell、Benjamin Bratton 和 Sara Imari Walker 等人的文章。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
       },
+      "key_points": [
+        { "en": "Long Now posted that copies of its Pace Layers journal are still available.", "zh": "Long Now发帖称年刊《Pace Layers》仍有余册。" },
+        { "en": "It includes essays by K, Bratton, Walker and others.", "zh": "其中有K、Bratton和Walker等人的文章。" },
+        { "en": "This is K's recent activity, not specifically about neural media.", "zh": "这是K的近期动态，并非专门讨论神经媒体。" }
+      ],
       "url": "https://x.com/longnow/status/2080717282112885005",
       "source": {
         "en": "X (@longnow)",
@@ -656,6 +717,11 @@
         "en": "K Allado-McDowell is among the artists in this group exhibition on non-linear time: cyclical, embodied, ancestral, geological and more-than-human. Curated by Rawad Baaklini, Marijn Bril, Alexander Burenkov and Angelique Spaninks. Wider context: this is K's recent activity, not specifically about neural media.",
         "zh": "K Allado-McDowell 是这场群展的参展艺术家之一。展览探讨非线性的时间，包括循环的、具身的、祖先的、地质的和超越人类的时间。策展人为 Rawad Baaklini、Marijn Bril、Alexander Burenkov 和 Angelique Spaninks。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
       },
+      "key_points": [
+        { "en": "K is among the artists in a group show on non-linear time.", "zh": "K是这场探讨非线性时间的群展参展艺术家。" },
+        { "en": "The show covers cyclical, embodied, ancestral, geological and more-than-human time.", "zh": "展览涵盖循环、具身、祖先、地质与超越人类的时间。" },
+        { "en": "This is K's recent activity, not specifically about neural media.", "zh": "这是K的近期动态，并非专门讨论神经媒体。" }
+      ],
       "url": "https://mu.nl/expo/metabolising-time",
       "source": {
         "en": "MU Hybrid Art House",
@@ -681,6 +747,11 @@
         "en": "“‘Slop’ aka the low-effort, high-volume AI-generated content, asks an urgent question: what happens when human expression can be reproduced at scale?” Long Now posted this on X and LinkedIn, pointing to K's essay.",
         "zh": "「所谓 slop，就是低投入、大批量的 AI 生成内容，它提出了一个紧迫的问题：当人类的表达可以被大规模复制时，会发生什么？」Long Now 在 X 和 LinkedIn 上发布了这段话，并附上 K 的文章链接。"
       },
+      "key_points": [
+        { "en": "Long Now posted about slop: low-effort, high-volume AI-generated content.", "zh": "Long Now讨论slop：低投入、大批量的AI生成内容。" },
+        { "en": "It asks what happens when human expression can be reproduced at scale.", "zh": "它追问：人类表达可被大规模复制时会发生什么？" },
+        { "en": "The post appeared on X and LinkedIn and links to K's essay.", "zh": "帖子发在X和LinkedIn上，并链接到K的文章。" }
+      ],
       "url": "https://x.com/longnow/status/2070208066843451620",
       "source": {
         "en": "Long Now (LinkedIn; also posted on X)",
@@ -715,6 +786,11 @@
         "en": "Replying to a reader who questioned the term under Long Now's slop post, K wrote that “neural media's accelerated feedback loops affect our psyches much more powerfully than previous forms, which is why the distinction matters”. In a follow-up the next day K added that these differences “warrant a new framing”.",
         "zh": "有读者在 Long Now 关于 AI 垃圾内容的帖子下质疑这个术语。K 回复说，神经媒体加速的反馈回路对我们心理的影响远比以往的媒介形式强烈，所以这个区分很重要。次日 K 又补充说，这些差异值得用一个新的框架来理解。"
       },
+      "key_points": [
+        { "en": "A reader under Long Now's slop post questioned the term.", "zh": "有读者在Long Now的slop帖下质疑这个术语。" },
+        { "en": "K said accelerated feedback loops affect psyches more, so the distinction matters.", "zh": "K说加速的反馈回路对心理影响更强，因此区分重要。" },
+        { "en": "The next day K added that these differences warrant a new framing.", "zh": "次日K补充说，这些差异值得用新框架来理解。" }
+      ],
       "url": "https://x.com/kalladomcdowell/status/2070214410795450688",
       "source": {
         "en": "X (@kalladomcdowell)",
@@ -749,6 +825,10 @@
         "en": "Tony D. Sampson, Jernej Markelj and Diana Lengua cite K's “Designing Neural Media” (2023) and include a section titled “Neural media, augmented perception and the frontier of stimulation”.",
         "zh": "Tony D. Sampson、Jernej Markelj 与 Diana Lengua 引用了 K 的《设计神经媒体》（2023），文中有一节题为「神经媒体、增强感知与刺激的前沿」。"
       },
+      "key_points": [
+        { "en": "Sampson and coauthors cite K's 2023 essay Designing Neural Media.", "zh": "Sampson等人引用K的2023年《设计神经媒体》。" },
+        { "en": "A section is titled Neural media, augmented perception and the frontier of stimulation.", "zh": "文中一节题为「神经媒体、增强感知与刺激的前沿」。" }
+      ],
       "url": "https://doi.org/10.70064/mt.v10i1.1364",
       "source": {
         "en": "Media Theory 10(1), academic paper",
@@ -784,6 +864,11 @@
         "en": "K gave the keynote at the Moody Center for the Arts' half-day symposium on AI, creativity and ethics. Wider context: this is K's recent activity, not specifically about neural media.",
         "zh": "K 在莱斯大学 Moody 艺术中心举办的半日研讨会上发表主旨演讲，主题涉及 AI、创造力与伦理。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
       },
+      "key_points": [
+        { "en": "K gave the keynote at Rice's Moody Center for the Arts.", "zh": "K在莱斯大学Moody艺术中心发表主旨演讲。" },
+        { "en": "The half-day symposium covered AI, creativity and ethics.", "zh": "这场半日研讨会主题涉及AI、创造力与伦理。" },
+        { "en": "This is K's recent activity, not specifically about neural media.", "zh": "这是K的近期动态，并非专门讨论神经媒体。" }
+      ],
       "url": "https://moody.rice.edu/events/imaging-after-photography-symposium",
       "source": {
         "en": "Rice University (Moody Center)",
@@ -809,6 +894,11 @@
         "en": "Long Now resurfaced K's talk: neural media is media that doesn't simply broadcast or connect, but appears to think, reason and create. The post links the talk video.",
         "zh": "Long Now 重新推荐了 K 的演讲：神经媒体不只是广播或连接，它看起来还能思考、推理和创造。帖子附有演讲视频链接。"
       },
+      "key_points": [
+        { "en": "Long Now resurfaced K's talk on neural media.", "zh": "Long Now重新推荐了K关于神经媒体的演讲。" },
+        { "en": "Neural media appears to think, reason and create, not only broadcast or connect.", "zh": "神经媒体不只广播或连接，看起来还能思考、推理和创造。" },
+        { "en": "The post links the talk video.", "zh": "帖子附有演讲视频链接。" }
+      ],
       "url": "https://x.com/longnow/status/1998516032617722131",
       "source": {
         "en": "X (@longnow)",
@@ -835,6 +925,11 @@
         "en": "The full 2024 conversation (about 75 min), now free on YouTube. K explains how neural media grew out of network media and what it means for identity. The description links “Designing Neural Media” and “Am I Slop?”.",
         "zh": "2024 年的完整对谈（约 75 分钟），现已在 YouTube 免费观看。K 讲述神经媒体如何从网络媒体中发展出来，以及它对身份意味着什么。视频简介附有《设计神经媒体》和《我是 AI 垃圾内容吗？》的链接。"
       },
+      "key_points": [
+        { "en": "The full 2024 conversation, about 75 minutes, is now free on YouTube.", "zh": "约75分钟的2024年完整对谈现已在YouTube免费开放。" },
+        { "en": "K explains how neural media grew from network media and what that means for identity.", "zh": "K讲述神经媒体如何从网络媒体发展，及其对身份的意义。" },
+        { "en": "The description links Designing Neural Media and Am I Slop?", "zh": "简介链接了《设计神经媒体》和《我是AI垃圾内容吗？》。" }
+      ],
       "url": "https://www.youtube.com/watch?v=CJ3MovgSN9s",
       "source": {
         "en": "New Models (YouTube)",
@@ -868,6 +963,11 @@
         "en": "Sami P. Itävuori studies how Tate collection images feed the LAION-5B dataset behind Stable Diffusion. The paper calls generative AI a “neural media” technology, speaks of “the museum collection in an era of neural media”, and cites K's “Am I Slop?”.",
         "zh": "Sami P. Itävuori 研究泰特美术馆的藏品图像如何进入 Stable Diffusion 所用的 LAION-5B 数据集。论文把生成式 AI 称为「神经媒体」技术，讨论「神经媒体时代的博物馆藏品」，并引用了 K 的《我是 AI 垃圾内容吗？》。"
       },
+      "key_points": [
+        { "en": "He studies how Tate collection images enter the LAION-5B dataset.", "zh": "他研究泰特藏品图像如何进入LAION-5B数据集。" },
+        { "en": "That dataset is behind Stable Diffusion.", "zh": "该数据集用于Stable Diffusion。" },
+        { "en": "The paper calls generative AI neural media and cites Am I Slop?", "zh": "论文称生成式AI为神经媒体并引《我是AI垃圾内容吗？》。" }
+      ],
       "url": "https://doi.org/10.7146/aprja.v14i1.160275",
       "source": {
         "en": "APRJA 14(1), academic paper",
@@ -893,6 +993,10 @@
         "en": "Brian Droitcour reviews K's exhibition The Known Lost and reads it through K's idea of neural media.",
         "zh": "Brian Droitcour 评论 K 的展览「The Known Lost」，并从 K 的神经媒体概念出发解读这件作品。"
       },
+      "key_points": [
+        { "en": "Droitcour reviews K's exhibition The Known Lost.", "zh": "Droitcour评论K的展览《The Known Lost》。" },
+        { "en": "The review reads the show through K's idea of neural media.", "zh": "评论从K的神经媒体概念出发解读这件作品。" }
+      ],
       "url": "https://www.lerandom.art/editorial/cognitive-technologies",
       "source": {
         "en": "Le Random (exhibition review)",
@@ -918,6 +1022,10 @@
         "en": "Nick Palmer cites K's “Am I Slop?” and discusses neural media, embedded identity and AI slop in relation to education.",
         "zh": "Nick Palmer 引用 K 的《我是 AI 垃圾内容吗？》，从教育角度讨论神经媒体、嵌入式身份与 AI 垃圾内容。"
       },
+      "key_points": [
+        { "en": "Nick Palmer cites K's essay Am I Slop?", "zh": "Nick Palmer引用了K的《我是AI垃圾内容吗？》。" },
+        { "en": "He discusses neural media, embedded identity and AI slop in education.", "zh": "他从教育角度讨论神经媒体、嵌入式身份与AI垃圾内容。" }
+      ],
       "url": "https://doi.org/10.20377/zep-30",
       "source": {
         "en": "ZEP 48(2), 2025, academic paper",
@@ -953,6 +1061,11 @@
         "en": "K's first solo exhibition: a participatory opera and proposed monument where visitors read or sing the names of known extinct species. Wider context: this is K's recent activity, not specifically about neural media.",
         "zh": "K 的首次个展：一部参与式歌剧兼纪念碑提案，观众可以朗读或吟唱已知灭绝物种的名字。（相关背景：这是 K 的近期动态，并非专门讨论神经媒体。）"
       },
+      "key_points": [
+        { "en": "K's first solo exhibition is a participatory opera and proposed monument.", "zh": "K的首次个展是一部参与式歌剧兼纪念碑提案。" },
+        { "en": "Visitors read or sing the names of known extinct species.", "zh": "观众可以朗读或吟唱已知灭绝物种的名字。" },
+        { "en": "This is K's recent activity, not specifically about neural media.", "zh": "这是K的近期动态，并非专门讨论神经媒体。" }
+      ],
       "url": "https://swissinstitute.net/exhibitions/k-allado-mcdowell-the-known-lost",
       "source": {
         "en": "Swiss Institute",
@@ -978,6 +1091,11 @@
         "en": "Two short excerpts (about 1.5 min each) from K's Long Now talk on neural media: how neural networks embed information, and the history of immersive media design.",
         "zh": "K 在 Long Now 神经媒体演讲中的两段短片（各约 1.5 分钟）：一段讲神经网络如何嵌入信息，另一段讲 20 世纪沉浸式媒体设计的历史。"
       },
+      "key_points": [
+        { "en": "Two short excerpts, about 1.5 minutes each, come from K's Long Now talk.", "zh": "这是K在Long Now演讲中的两段短片，各约1.5分钟。" },
+        { "en": "One clip explains how neural networks embed information.", "zh": "一段讲神经网络如何嵌入信息。" },
+        { "en": "The other covers the history of twentieth-century immersive media design.", "zh": "另一段讲20世纪沉浸式媒体设计的历史。" }
+      ],
       "url": "https://www.youtube.com/watch?v=KWQi1J_BiDc",
       "source": {
         "en": "The Long Now Foundation (YouTube)",
@@ -1014,6 +1132,11 @@
         "en": "The edited 54:25 recording of K's talk, recorded 25 Feb 2025 at the Cowell Theatre in San Francisco. It is the Featured talk on this page.",
         "zh": "K 演讲的剪辑版录像，时长 54 分 25 秒，2025 年 2 月 25 日录制于旧金山 Cowell 剧场。即本页「精选演讲」中的视频。"
       },
+      "key_points": [
+        { "en": "This is the edited recording of K's talk, lasting 54 minutes and 25 seconds.", "zh": "这是K演讲的剪辑版录像，时长54分25秒。" },
+        { "en": "It was recorded on 25 February 2025 at San Francisco's Cowell Theatre.", "zh": "2025年2月25日录制于旧金山Cowell剧场。" },
+        { "en": "It is the featured talk on this page.", "zh": "它是本页的精选演讲视频。" }
+      ],
       "url": "https://www.youtube.com/watch?v=Eu3ygZh8pY8",
       "thumbnail": "assets/longnow-thumb.jpg",
       "source": {
@@ -1049,6 +1172,11 @@
         "en": "Audio version of the talk (about 57 min), published on SoundCloud and also on Apple Podcasts (10 Apr 2025).",
         "zh": "演讲的音频版（约 57 分钟），发布于 SoundCloud，并于 2025 年 4 月 10 日上线 Apple 播客。"
       },
+      "key_points": [
+        { "en": "An audio version of the talk runs about 57 minutes.", "zh": "演讲的音频版大约57分钟。" },
+        { "en": "It was published on SoundCloud.", "zh": "它发布于SoundCloud。" },
+        { "en": "It also appeared on Apple Podcasts on 10 April 2025.", "zh": "2025年4月10日也上线了Apple播客。" }
+      ],
       "url": "https://soundcloud.com/longnow/neural-media",
       "source": {
         "en": "The Long Now Foundation (SoundCloud / Apple Podcasts)",
@@ -1090,6 +1218,10 @@
         "en": "When Nick Cammarata asked what we should call AI instead, K replied simply: “Neural media”.",
         "zh": "Nick Cammarata 问我们该用什么词来代替「AI」，K 只回答了一句：「神经媒体」。"
       },
+      "key_points": [
+        { "en": "Nick Cammarata asked what we should call AI instead.", "zh": "Nick Cammarata问该用什么词代替AI。" },
+        { "en": "K answered simply: Neural media.", "zh": "K只回答：「神经媒体」。" }
+      ],
       "url": "https://x.com/kalladomcdowell/status/1897825713421779337",
       "source": {
         "en": "X (@kalladomcdowell)",
@@ -1115,6 +1247,10 @@
         "en": "The 2024 episode, previously for subscribers only, released free on SoundCloud. K sets out the taxonomy of media and the idea of embedded identity.",
         "zh": "原本只对订阅者开放的 2024 年节目在 SoundCloud 免费发布。K 在节目中阐述媒介的分类和「嵌入式身份」的概念。"
       },
+      "key_points": [
+        { "en": "The 2024 episode, once subscribers-only, is now free on SoundCloud.", "zh": "2024年节目曾仅限订阅，现已在SoundCloud免费。" },
+        { "en": "K sets out a taxonomy of media and the idea of embedded identity.", "zh": "K阐述了媒介分类和嵌入式身份的概念。" }
+      ],
       "url": "https://soundcloud.com/newmodels/nm76-k-allado-mcdowell-unlocked",
       "source": {
         "en": "New Models (SoundCloud)",
@@ -1148,6 +1284,11 @@
         "en": "The full event livestream from the Cowell Theatre (about 1 h 24 min), including the Long Now introduction and the audience Q&A on neural media, ecology, authorship and extinction.",
         "zh": "Cowell 剧场活动的完整直播录像（约 1 小时 24 分钟），包括 Long Now 的开场介绍，以及围绕神经媒体、生态、作者身份与物种灭绝的观众问答。"
       },
+      "key_points": [
+        { "en": "The full Cowell Theatre livestream runs about one hour and 24 minutes.", "zh": "Cowell剧场完整直播约1小时24分钟。" },
+        { "en": "It includes the Long Now introduction and an audience Q&A.", "zh": "录像包括Long Now开场介绍和观众问答。" },
+        { "en": "The Q&A covers neural media, ecology, authorship and extinction.", "zh": "问答涉及神经媒体、生态、作者身份与物种灭绝。" }
+      ],
       "url": "https://www.youtube.com/watch?v=AsCGRjl3zac",
       "thumbnail": "assets/livestream-thumb.jpg",
       "source": {
@@ -1174,6 +1315,10 @@
         "en": "K shared the livestream link a few hours after the talk (held the evening of 25 Feb in San Francisco).",
         "zh": "演讲（旧金山时间 2 月 25 日晚）结束几小时后，K 分享了直播录像的链接。"
       },
+      "key_points": [
+        { "en": "K shared the livestream link a few hours after the talk.", "zh": "演讲结束几小时后，K分享了直播链接。" },
+        { "en": "The talk was held on the evening of 25 February in San Francisco.", "zh": "演讲于2月25日晚在旧金山举行。" }
+      ],
       "url": "https://x.com/kalladomcdowell/status/1894658070900609219",
       "source": {
         "en": "X (@kalladomcdowell)",
@@ -1199,6 +1344,11 @@
         "en": "K's thread introducing the essay “Am I Slop? Am I Agentic? Am I Earth?”, linking the essay and the talk page and noting the upcoming Long Now talk on 25 Feb. Long Now also quoted the thread.",
         "zh": "K 用一组推文介绍《我是 AI 垃圾内容吗？我是智能体吗？我是地球吗？》，附上文章和演讲页面链接，并预告 2 月 25 日的 Long Now 演讲。Long Now 也引用转发了这组推文。"
       },
+      "key_points": [
+        { "en": "K introduces the essay Am I Slop? Am I Agentic? Am I Earth?", "zh": "K介绍《我是AI垃圾内容吗？我是智能体吗？我是地球吗？》。" },
+        { "en": "The thread notes the Long Now talk on 25 February.", "zh": "这组推文预告了2月25日的Long Now演讲。" },
+        { "en": "Long Now also quoted the thread.", "zh": "Long Now也引用转发了这组推文。" }
+      ],
       "url": "https://x.com/kalladomcdowell/status/1892606535131373857",
       "source": {
         "en": "X (@kalladomcdowell)",
@@ -1254,6 +1404,11 @@
         "en": "Long Now Ideas essay: broadcast, immersive, network and neural media each produce a different identity. Neural media are about 15 years into a 30-year maturation and still malleable.",
         "zh": "发表于 Long Now Ideas 的文章：广播、沉浸、网络和神经媒体各自塑造出不同的身份。神经媒体在 30 年的成熟周期中已走过约 15 年，仍然可塑。"
       },
+      "key_points": [
+        { "en": "This Long Now Ideas essay says each media type produces a different identity.", "zh": "这篇Long Now Ideas文章说，每种媒介塑造不同身份。" },
+        { "en": "The types are broadcast, immersive, network and neural media.", "zh": "这些类型是广播、沉浸、网络和神经媒体。" },
+        { "en": "Neural media are about 15 years into a 30-year maturation and still malleable.", "zh": "神经媒体在30年成熟期中已约15年，仍然可塑。" }
+      ],
       "url": "https://longnow.org/ideas/identity-neural-media-ai/",
       "source": {
         "en": "Long Now Ideas",
@@ -1288,6 +1443,11 @@
         "en": "K announced the Long Now talk on neural media, AI slop, AI agents and geospatial AI models. Long Now posted its own announcement shortly before.",
         "zh": "K 预告了在 Long Now 的演讲，主题包括神经媒体、AI 垃圾内容、AI 智能体和地理空间 AI 模型。Long Now 稍早也发布了活动预告。"
       },
+      "key_points": [
+        { "en": "K announced an upcoming talk at Long Now.", "zh": "K预告了在Long Now的演讲。" },
+        { "en": "Topics include neural media, AI slop, AI agents and geospatial AI models.", "zh": "主题有神经媒体、AI垃圾内容、智能体和地理空间AI模型。" },
+        { "en": "Long Now posted its own announcement shortly before.", "zh": "Long Now稍早也发布了活动预告。" }
+      ],
       "url": "https://x.com/kalladomcdowell/status/1891937549226041692",
       "source": {
         "en": "X (@kalladomcdowell)",
@@ -1323,6 +1483,11 @@
         "en": "Recording of K's talk (about 54 min) at a two-day London College of Fashion summit on neural media and its impact on fashion and the body. Date shown is the YouTube upload.",
         "zh": "K 的演讲录像（约 54 分钟），来自伦敦时装学院为期两天的峰会，主题是神经媒体及其对时尚和身体的影响。所示日期为 YouTube 上传日期。"
       },
+      "key_points": [
+        { "en": "K's recorded talk of about 54 minutes is from a London fashion summit.", "zh": "K约54分钟的演讲录像来自伦敦时装学院峰会。" },
+        { "en": "The two-day summit examines neural media's impact on fashion and the body.", "zh": "为期两天的峰会探讨神经媒体对时尚和身体的影响。" },
+        { "en": "The date shown is the YouTube upload date.", "zh": "所示日期是YouTube的上传日期。" }
+      ],
       "url": "https://www.youtube.com/watch?v=f3g9CT5Scjk",
       "source": {
         "en": "MA Fashion Media & Communication, London College of Fashion (YouTube)",
@@ -1356,6 +1521,10 @@
         "en": "An essay on “the Girl” as a technological figure that uses K's “self-as-model” and “model-as-self” distinction from “Designing Neural Media” and cites the essay.",
         "zh": "这篇文章把「少女」视为一种技术形象，借用了 K 在《设计神经媒体》中提出的「自我即模型」与「模型即自我」之分，并引用了该文。"
       },
+      "key_points": [
+        { "en": "An essay treats the Girl as a technological figure.", "zh": "这篇文章把「少女」视为一种技术形象。" },
+        { "en": "It borrows K's self-as-model and model-as-self split from Designing Neural Media.", "zh": "它借用《设计神经媒体》中「自我即模型」与「模型即自我」。" }
+      ],
       "url": "https://aksioma.org/pdf/aksioma_PostScriptUM_52_ENG_quicho.pdf",
       "source": {
         "en": "Aksioma – Institute for Contemporary Art, Ljubljana",
@@ -1381,6 +1550,10 @@
         "en": "Michael Garfield interviews K, with a chapter on neural, network, immersive and broadcast media.",
         "zh": "Michael Garfield 对 K 的访谈，其中有一章专门讨论神经、网络、沉浸和广播媒体。"
       },
+      "key_points": [
+        { "en": "Michael Garfield interviews K.", "zh": "Michael Garfield访谈了K。" },
+        { "en": "One chapter discusses neural, network, immersive and broadcast media.", "zh": "其中一章讨论神经、网络、沉浸和广播媒体。" }
+      ],
       "url": "https://www.humansontheloop.com/p/h-06",
       "source": {
         "en": "Humans On The Loop",
@@ -1415,6 +1588,10 @@
         "en": "Caroline Busta chose K's three-part neural media series for the Gropius Bau Journal, noting that the third essay (then forthcoming) would cover the bell curve, “midness” and AI slop.",
         "zh": "Caroline Busta 选择了 K 为 Gropius Bau Journal 撰写的三篇神经媒体系列文章，并提到当时即将发表的第三篇将讨论钟形曲线、「平庸」和 AI 垃圾内容。"
       },
+      "key_points": [
+        { "en": "Busta chose K's three neural media essays written for Gropius Bau.", "zh": "Busta选择K为Gropius Bau所写的三篇神经媒体文。" },
+        { "en": "The then-forthcoming third essay would cover the bell curve, midness and AI slop.", "zh": "即将发表的第三篇将谈钟形曲线、平庸和AI垃圾。" }
+      ],
       "url": "https://www.artforum.com/lists/the-critics-critics-2024/",
       "source": {
         "en": "Artforum",
@@ -1441,6 +1618,11 @@
         "en": "A 39-minute recorded lecture from FWB FEST 2024 setting out the typology of broadcast, immersive, network and neural media, and how AI may change identity. Date shown is the YouTube upload.",
         "zh": "FWB FEST 2024 的演讲录像（39 分钟），阐述广播、沉浸、网络与神经媒体的分类，以及 AI 可能如何改变身份。所示日期为 YouTube 上传日期。"
       },
+      "key_points": [
+        { "en": "A 39-minute lecture from FWB FEST 2024 sets out a media typology.", "zh": "FWB FEST 2024的39分钟演讲阐述媒介分类。" },
+        { "en": "It covers broadcast, immersive, network and neural media, plus AI and identity.", "zh": "内容包括广播、沉浸、网络、神经媒体，以及AI与身份。" },
+        { "en": "The date shown is the YouTube upload date.", "zh": "所示日期为YouTube上传日期。" }
+      ],
       "url": "https://www.youtube.com/watch?v=WJWFI48Plj4",
       "thumbnail": "assets/fwb-thumb.jpg",
       "source": {
@@ -1467,6 +1649,11 @@
         "en": "Busta's essay on how endless online content shifts meaning from reading to sensing asks why “this age of neural media” would not change how we experience time. New Models lists K Allado-McDowell among the essay's sources and released an audio reading.",
         "zh": "Busta 在文中讨论无穷无尽的网络内容如何让意义从「阅读」转向「感受」，并发问：「这个神经媒体的时代」为何不会改变我们体验时间的方式？New Models 将 K Allado-McDowell 列为该文的参考来源之一，并发布了朗读音频。"
       },
+      "key_points": [
+        { "en": "Busta's essay says endless online content shifts meaning from reading to sensing.", "zh": "Busta讨论无限网络内容如何让意义从阅读转向感受。" },
+        { "en": "It asks why an age of neural media would not change how we experience time.", "zh": "文中发问：神经媒体时代为何不改变我们体验时间的方式？" },
+        { "en": "New Models lists K among its sources and released an audio reading.", "zh": "New Models将K列为来源之一，并发布了朗读音频。" }
+      ],
       "url": "https://newmodels.substack.com/p/nm-reads-hallucinating-sense-in-the",
       "source": {
         "en": "Document Journal SS24 / New Models (audio reading)",
@@ -1509,6 +1696,11 @@
         "en": "K outlines the four-part media typology (each type's period, space, content and identity), discusses interpellation, and argues that identity should be understood as an embedding within the medium.",
         "zh": "K 介绍了四种媒介类型（各自的时期、空间、内容与身份），讨论了「询唤」（interpellation）概念，并提出应把身份理解为媒介内部的一个「嵌入」。"
       },
+      "key_points": [
+        { "en": "K outlines four media types, each with period, space, content and identity.", "zh": "K介绍四种媒介类型，各有时期、空间、内容与身份。" },
+        { "en": "K discusses the concept of interpellation.", "zh": "K讨论了询唤这一概念。" },
+        { "en": "K argues identity should be understood as an embedding within the medium.", "zh": "K提出应把身份理解为媒介内部的嵌入。" }
+      ],
       "url": "https://hanartforum.org/archive/k-allado-mcdowell-designing-neural-media/",
       "source": {
         "en": "Hanart Forum",
@@ -1558,6 +1750,11 @@
         "en": "Gropius Bau Journal essay laying out the taxonomy of media types (broadcast, immersive, network, neural) by space, content and identity. Neural media produce “a high-dimensional space with hallucinated content for embedded identities.”",
         "zh": "发表于柏林格罗皮乌斯展览馆 Journal 的文章，从空间、内容与身份三个维度梳理广播、沉浸、网络、神经四种媒介类型。文中写道，神经媒体构成了「一个为嵌入式身份提供幻觉内容的高维空间」。"
       },
+      "key_points": [
+        { "en": "A Gropius Bau Journal essay sorts broadcast, immersive, network and neural media.", "zh": "格罗皮乌斯展览馆Journal的文章梳理四种媒介类型。" },
+        { "en": "The types are compared by space, content and identity.", "zh": "比较维度是空间、内容与身份。" },
+        { "en": "Neural media are a high-dimensional space of hallucinated content for embedded identities.", "zh": "神经媒体是为嵌入式身份提供幻觉内容的高维空间。" }
+      ],
       "url": "https://www.berlinerfestspiele.de/en/gropius-bau/programm/journal/2024/kalladomcdowellneural",
       "source": {
         "en": "Gropius Bau Journal",
@@ -1599,6 +1796,10 @@
         "en": "K's pinned post announcing the second Gropius Bau neural media essay.",
         "zh": "K 的置顶推文，宣布为 Gropius Bau 撰写的第二篇神经媒体文章发表。"
       },
+      "key_points": [
+        { "en": "K's pinned post announces the second neural media essay.", "zh": "K的置顶推文宣布第二篇神经媒体文章发表。" },
+        { "en": "The essay was written for Gropius Bau.", "zh": "这篇文章是为Gropius Bau撰写的。" }
+      ],
       "url": "https://x.com/kalladomcdowell/status/1785076018031546590",
       "source": {
         "en": "X (@kalladomcdowell)",
@@ -1624,6 +1825,11 @@
         "en": "Recorded in Berlin after K's Gropius Bau talk. K extends Fred Turner into four media eras (broadcast, immersive, network, neural), each shaping a different subject. Neural media emerged around 2010 with algorithmic timelines: high-dimensional space, hallucinated content, identity as embedding. K uses 'neural' rather than 'AI' to leave room for Neuralink, neuroscience and pharmacology, argues neural media actively sense us, and proposes communities train their own models against 'semiotic enclosure'. Subscribers only at first; free from March 2025.",
         "zh": "录于柏林，K 刚在 Gropius Bau 做完讲座。K 在 Fred Turner 的基础上把媒介分成广播、沉浸、网络、神经四个时代，每种媒介都会塑造一种不同的主体。神经媒体约在 2010 年随算法时间线出现：空间是高维的，内容是「幻觉」，身份是 embedding。K 说用「神经」而不只说「AI」，是为了容纳 Neuralink、神经科学和药理学；神经媒体「一直在主动感知我们」；出路是让社群训练自己的模型，避免集体性被少数公司「符号圈地」。最初只对订阅者开放，2025 年 3 月起免费。"
       },
+      "key_points": [
+        { "en": "K extends Fred Turner into four eras, each shaping a subject.", "zh": "K延伸Fred Turner，分出四个时代，各自塑造主体。" },
+        { "en": "Neural media emerged around 2010: high-dimensional, hallucinated, embedded identity.", "zh": "神经媒体约2010出现：高维、幻觉内容、身份即嵌入。" },
+        { "en": "K proposes communities train their own models against semiotic enclosure.", "zh": "K提议社群训练自己的模型，以避免符号圈地。" }
+      ],
       "url": "https://newmodels.substack.com/p/nm-76-k-allado-mcdowell-on-neural",
       "source": {
         "en": "New Models",
@@ -1656,6 +1862,11 @@
         "en": "K's live lecture at Gropius Bau, Berlin, on how AI mirrors and shapes humanity, part of Ether's Bloom, the Gropius Bau programme on artificial intelligence.",
         "zh": "K 在柏林 Gropius Bau 的现场讲座，探讨 AI 如何映照并塑造人类，属于 Gropius Bau 的人工智能项目「Ether's Bloom」。"
       },
+      "key_points": [
+        { "en": "K gave a live lecture at Gropius Bau in Berlin.", "zh": "K在柏林Gropius Bau做了现场讲座。" },
+        { "en": "The lecture explores how AI mirrors and shapes humanity.", "zh": "讲座探讨AI如何映照并塑造人类。" },
+        { "en": "It belongs to the artificial intelligence programme Ether's Bloom.", "zh": "讲座属于人工智能项目「Ether's Bloom」。" }
+      ],
       "url": "https://www.berlinerfestspiele.de/gropius-bau/programm/2023/ausstellungen/kuenstliche-intelligenz/veranstaltungen/designing-neural-media",
       "source": {
         "en": "Gropius Bau / Berliner Festspiele (event page)",
@@ -1697,6 +1908,11 @@
         "en": "K and Robert Maharajh, hosted by Eliane Eid, talk about K's journal essays and the high-dimensional spaces of neural networks. A transcript is linked from the page.",
         "zh": "K 与 Robert Maharajh 对谈，由 Eliane Eid 主持，讨论 K 的系列文章和神经网络的高维空间。页面上附有文字稿。"
       },
+      "key_points": [
+        { "en": "K talks with Maharajh, and Eliane Eid hosts.", "zh": "K与Maharajh对谈，主持人是Eliane Eid。" },
+        { "en": "They discuss K's journal essays and neural networks' high-dimensional spaces.", "zh": "他们讨论K的系列文章和神经网络的高维空间。" },
+        { "en": "The page links a transcript.", "zh": "页面上附有文字稿。" }
+      ],
       "url": "https://www.berlinerfestspiele.de/en/gropius-bau/programm/2023/ausstellungen/kuenstliche-intelligenz/beyond-and-within-ai-talks",
       "source": {
         "en": "Gropius Bau / Berliner Festspiele (podcast)",
@@ -1723,6 +1939,11 @@
         "en": "A livestreamed talk (about 76 min) for a colloquium programmed with Línea ACT and streamed by the transmedia lab CK:\\WEB, citing K's essay “Designing Neural Media”.",
         "zh": "为一场与 Línea ACT 合作的学术研讨会所做的直播讲座（约 76 分钟），由跨媒体实验室 CK:\\WEB 直播，引用了 K 的文章《设计神经媒体》。"
       },
+      "key_points": [
+        { "en": "A livestreamed talk of about 76 minutes cites Designing Neural Media.", "zh": "这场约76分钟的直播讲座引用了《设计神经媒体》。" },
+        { "en": "It was for a colloquium programmed with Línea ACT.", "zh": "讲座属于与Línea ACT合作的学术研讨会。" },
+        { "en": "The transmedia lab CK:\\WEB streamed it.", "zh": "跨媒体实验室CK:\\WEB进行了直播。" }
+      ],
       "url": "https://www.youtube.com/watch?v=viruRByI0rM",
       "source": {
         "en": "CK:\\WEB – Estación Experimental Transmedia (YouTube)",
@@ -1749,6 +1970,10 @@
         "en": "Interview with K as Gropius Bau writer in residence, including a discussion of the “Designing Neural Media” essay.",
         "zh": "对 Gropius Bau 驻留作家 K 的访谈，其中谈到了《设计神经媒体》一文。"
       },
+      "key_points": [
+        { "en": "This is an interview with K as Gropius Bau writer in residence.", "zh": "这是对Gropius Bau驻留作家K的访谈。" },
+        { "en": "The interview discusses the essay Designing Neural Media.", "zh": "访谈谈到了《设计神经媒体》一文。" }
+      ],
       "url": "https://www.berlinartlink.com/2023/10/31/interview-k-allado-mcdowell-gropius-bau-writer-in-residence/",
       "source": {
         "en": "Berlin Art Link",
@@ -1774,6 +1999,11 @@
         "en": "“What are the subjective and social effects of widespread AI? How will it change how we see ourselves?” K announced the new Gropius Bau essay in English and German.",
         "zh": "「AI 普及会带来哪些主观和社会影响？它会怎样改变我们看待自己的方式？」K 宣布为 Gropius Bau 撰写的新文章发表，提供英文和德文版本。"
       },
+      "key_points": [
+        { "en": "K asks how widespread AI affects us subjectively and socially.", "zh": "K问：AI普及会带来哪些主观和社会影响？" },
+        { "en": "K also asks how AI will change how we see ourselves.", "zh": "K还问AI会怎样改变我们看待自己的方式。" },
+        { "en": "K announced the new Gropius Bau essay in English and German.", "zh": "K宣布Gropius Bau新文章发表，有英文和德文。" }
+      ],
       "url": "https://x.com/kalladomcdowell/status/1707451755964072273",
       "source": {
         "en": "X (@kalladomcdowell)",
@@ -1808,6 +2038,11 @@
         "en": "First essay in K's three-part series as Gropius Bau Writer in Residence, and where the term was first set out: how neural networks work and how their design shapes subjectivity.",
         "zh": "K 担任格罗皮乌斯展览馆驻馆作家期间三篇系列文章中的第一篇，也是这一术语最早被系统提出的地方。文章讲解神经网络如何运作，以及其设计如何塑造主体性。"
       },
+      "key_points": [
+        { "en": "This is the first essay in K's three-part Gropius Bau residency series.", "zh": "这是K任格罗皮乌斯展览馆驻馆作家的系列首篇。" },
+        { "en": "It is where the term was first set out in a systematic way.", "zh": "这里最早系统提出了这一术语。" },
+        { "en": "The essay explains how neural networks work and how design shapes subjectivity.", "zh": "文章讲解神经网络如何运作，及其设计如何塑造主体性。" }
+      ],
       "url": "https://www.berlinerfestspiele.de/en/gropius-bau/programm/journal/2023/k-allado-mcdowell-designing-neural-media",
       "source": {
         "en": "Gropius Bau Journal",
@@ -1849,6 +2084,10 @@
         "en": "A short HOLO note on the new essay, quoting: “When we interact with neural media, we interact with an entire network at once.”",
         "zh": "HOLO 对这篇新文章的简短介绍，引用了文中的一句话：「当我们与神经媒体互动时，我们是在同时与整个网络互动。」"
       },
+      "key_points": [
+        { "en": "HOLO published a short note on the new essay.", "zh": "HOLO发表了对这篇新文章的简短介绍。" },
+        { "en": "It quotes that interacting with neural media means facing an entire network at once.", "zh": "文中引述：与神经媒体互动就是同时与整个网络互动。" }
+      ],
       "url": "https://www.holo.mg/stream/gropius-bau-berlin-k-allado-mcdowell-neural-media/",
       "source": {
         "en": "HOLO",
@@ -1876,6 +2115,11 @@
         "en": "A chapter in Shimmer: Artists Dream a Posthuman World (MIT Press), the catalogue of the Frist Art Museum exhibition Shimmer: Dreaming the Posthuman (Nashville, 25 Sep 2026 – 3 Jan 2027; touring to Doha and Penn State in 2027). The museum quotes it on how dreams can “remake our world model”. Kaganskiy co-edited Interspecies Future with K. Wider context: the chapter uses the term “neural media” in its title, but because it is paywalled it is unconfirmed whether it cites K.",
         "zh": "这是 MIT 出版社《Shimmer: Artists Dream a Posthuman World》中的一章。该书是弗里斯特艺术博物馆（Frist Art Museum）展览「Shimmer: Dreaming the Posthuman」的图录（纳什维尔，2026 年 9 月 25 日至 2027 年 1 月 3 日，2027 年巡展至多哈和宾州州立大学）。博物馆引用了文中关于梦能够「重塑我们的世界模型」的段落。Kaganskiy 曾与 K 共同编辑《Interspecies Future》。（相关背景：本章标题使用了「神经媒体」一词，但因需付费阅读，尚未确认文中是否引用 K。）"
       },
+      "key_points": [
+        { "en": "This chapter is in the MIT Press book Shimmer, catalogue of a Frist exhibition.", "zh": "本章见于MIT出版社《Shimmer》，即弗里斯特展览图录。" },
+        { "en": "The museum quotes the claim that dreams can remake our world model.", "zh": "博物馆引用了梦能够重塑我们世界模型的段落。" },
+        { "en": "The title says neural media, but a paywall leaves any citation of K unconfirmed.", "zh": "标题有「神经媒体」，但付费墙下尚未确认是否引用K。" }
+      ],
       "url": "https://doi.org/10.7551/mitpress/15922.003.0006",
       "source": {
         "en": "MIT Press (book chapter)",
@@ -1918,6 +2162,11 @@
         "en": "The New Models co-founders spoke at Kunsthalle Wien Karlsplatz during Vienna Digital Cultures 2025 (5–18 May, theme “model collapse”). Busta asked how media organised by neural rather than linear or network patterns reshapes what it means to be human, using TikTok, Balenciaga and Shein as examples, then discussed with Lil Internet how algorithmic media flows create new forms of subjectivity. Busta also says she has read K's media taxonomy “maybe 30 times” and builds the talk on it.",
         "zh": "两位 New Models 联合创始人在 2025 年维也纳数字文化节（5 月 5 日至 18 日，主题为「模型崩溃」）期间于维也纳美术馆卡尔广场馆演讲。Busta 探讨当媒介不再按线性或网络模式、而是按神经模式组织时，人的概念会如何改变，并以 TikTok、Balenciaga 和 Shein 为例；随后与 Lil Internet 讨论算法驱动的媒介流如何催生新的主体形式和文化结构。Busta 还在演讲中说，K 的媒介分类「我大概读了 30 遍」，整场演讲都建立在这套框架上。"
       },
+      "key_points": [
+        { "en": "New Models co-founders spoke in Vienna on the theme of model collapse.", "zh": "New Models联合创始人在维也纳演讲，主题是模型崩溃。" },
+        { "en": "Busta asks how media organized neurally, not linearly or as networks, changes being human.", "zh": "Busta问：按神经而非线性或网络组织的媒介如何改变人。" },
+        { "en": "Busta says she read K's media taxonomy about 30 times and builds the talk on it.", "zh": "Busta说K的媒介分类她读了约30遍，演讲建立于此。" }
+      ],
       "url": "https://www.museumsfernsehen.de/caroline-busta-lil-internet-on-neural-media-and-the-re-organisation-of-culture-kunsthalle-wien-karlsplatz-vienna-digital-cultures-2025/",
       "source": {
         "en": "museumsfernsehen / Vienna Digital Cultures",
@@ -1959,6 +2208,11 @@
         "en": "Caroline Busta and Lil Internet consider frameworks for the present and future of media, “from ‘psyop realism’ to ‘post-discursivity’ to ‘neural media’”, arguing that vibes are measurable to the machine learning that now dominates media.",
         "zh": "Caroline Busta 与 Lil Internet 探讨理解当下与未来媒介的几种框架，「从“心理战现实主义”到“后话语性”，再到“神经媒体”」，并指出「氛围」对如今主导媒介的机器学习而言是可测量、可读取的。"
       },
+      "key_points": [
+        { "en": "Busta and Lil Internet discuss frameworks for media now and ahead.", "zh": "Busta与Lil Internet讨论当下和未来的媒介框架。" },
+        { "en": "Their frames run from psyop realism and post-discursivity to neural media.", "zh": "框架从心理战现实主义、后话语性到神经媒体。" },
+        { "en": "They say vibes are measurable and readable to the machine learning that dominates media.", "zh": "他们说氛围对主导媒介的机器学习可测量、可读取。" }
+      ],
       "url": "https://forum.mutek.org/en/shows/2026/vibe-ocracy-in-the-psyber-age",
       "source": {
         "en": "MUTEK Forum",
@@ -1992,6 +2246,11 @@
         "en": "An interactive show with Vytas Jankauskas, Jan Zuiderveld and Joseph Wilk about living as “embedded nodes” inside intelligent systems that project versions of ourselves back to us. In the interview the curator names K Allado-McDowell’s concept of designing neural media, together with N. Katherine Hayles, as a major inspiration.",
         "zh": "这是一个互动展览，参展艺术家为 Vytas Jankauskas、Jan Zuiderveld 和 Joseph Wilk，探讨我们作为「嵌入式节点」生活在智能系统中，系统又通过预测、标注和优化把各种版本的我们投射回来。策展人在访谈中表示，K Allado-McDowell 的「设计神经媒体」概念与 N. Katherine Hayles 的理论是她的主要灵感来源。"
       },
+      "key_points": [
+        { "en": "Jankauskas and two other artists made this interactive show.", "zh": "Jankauskas等三位艺术家做了这个互动展。" },
+        { "en": "It shows us as embedded nodes inside systems that project versions of us back.", "zh": "我们作为嵌入式节点生活在把我们投射回来的系统中。" },
+        { "en": "The curator names K's designing neural media and Hayles as major inspirations.", "zh": "策展人说K的设计神经媒体与Hayles的理论是主要灵感。" }
+      ],
       "url": "https://www.fact.co.uk/news/2026/03/interview-with-curator-in-residence-milia-xin-bi",
       "source": {
         "en": "FACT Liverpool",
@@ -2017,6 +2276,11 @@
         "en": "The Oslo design studio has a Grafill research grant to build “a theoretical framework for neural media: a cognitive, generative medium”, explicitly building on K’s ideas. Its talks include “Neural Media Starter Pack” at Klingenberg Cinema (21 May 2026) and “Storytelling in Neural Media” for Norway’s National Museum and Snøhetta (25 May 2024).",
         "zh": "这家奥斯陆设计工作室获得 Grafill 研究资助，正在建立「神经媒体（一种具有认知能力的生成式媒介）的理论框架」，明确以 K 的思想为基础。其讲座包括在 Klingenberg 影院举办的《神经媒体入门包》（2026 年 5 月 21 日），以及应挪威国家艺术、建筑与设计博物馆和 Snøhetta 之邀所做的《神经媒体中的叙事》（2024 年 5 月 25 日）。"
       },
+      "key_points": [
+        { "en": "An Oslo studio has a Grafill grant to frame neural media theoretically.", "zh": "这家奥斯陆工作室获Grafill资助，建立神经媒体理论框架。" },
+        { "en": "It defines neural media as a cognitive, generative medium, building on K's ideas.", "zh": "框架把神经媒体定义为认知性生成媒介，并依据K的思想。" },
+        { "en": "Talks include Neural Media Starter Pack and Storytelling in Neural Media.", "zh": "讲座包括《神经媒体入门包》和《神经媒体中的叙事》。" }
+      ],
       "url": "https://openinghours.studio/research",
       "source": {
         "en": "Opening Hours Studio",
@@ -2043,6 +2307,11 @@
         "en": "Long Now now files AI essays under a “Neural Media” topic. Besides K’s “Am I Slop?” it includes Patrick Dowd’s “The Inheritance of Dreams” (24 Jun 2025) and “The Fifth Era of Science: Artificial Scientific Intelligence” (Apr 2026). Wider context: most tagged essays are about AI in general and do not discuss K’s framework.",
         "zh": "Long Now 现在把与 AI 相关的文章归入「神经媒体」专题。除了 K 的《Am I Slop?》，还收录了 Patrick Dowd 的《The Inheritance of Dreams》（2025 年 6 月 24 日）和《The Fifth Era of Science: Artificial Scientific Intelligence》（2026 年 4 月）等文章。（相关背景：这些文章大多泛谈 AI，并未讨论 K 的理论框架。）"
       },
+      "key_points": [
+        { "en": "Long Now files AI essays under a Neural Media topic.", "zh": "Long Now把AI文章归入「神经媒体」专题。" },
+        { "en": "Besides K's essay, it includes two essays by Patrick Dowd.", "zh": "除了K的文章，还收录Patrick Dowd的两篇。" },
+        { "en": "Most tagged essays discuss AI in general, not K's framework.", "zh": "这些文章大多泛谈AI，并未讨论K的理论框架。" }
+      ],
       "url": "https://longnow.org/ideas/about/neural-media/",
       "source": {
         "en": "Long Now Ideas",
@@ -2069,6 +2338,11 @@
         "en": "A 1.5-credit course in the Music Technology: Interaction, Intelligence, and Design (MTIID) MFA, developed by lecturer Kai-Luen Liang. Students make work with generative AI image, video, sound and gameplay while examining automation, labour, authorship and bias. Wider context: the course uses the name but its description does not cite K.",
         "zh": "这是音乐科技：交互、智能与设计（MTIID）艺术硕士项目中的一门 1.5 学分课程，由讲师Kai-Luen Liang开发。学生用生成式 AI 创作图像、视频、声音和游戏，同时探讨自动化、劳动、作者身份与偏见问题。（相关背景：课程使用了这一名称，但课程介绍并未引用 K。）"
       },
+      "key_points": [
+        { "en": "Lecturer Liang developed this 1.5-credit music-technology MFA course.", "zh": "讲师Liang开发了这门1.5学分的音乐科技硕士课。" },
+        { "en": "Students use generative AI and examine automation, labour, authorship and bias.", "zh": "学生用生成式AI创作并探讨自动化、劳动、作者身份与偏见。" },
+        { "en": "The course uses this name, but its description does not cite K.", "zh": "课程用了这一名称，但介绍并未引用K。" }
+      ],
       "url": "https://catalog.calarts.edu/courses/a0dwI2r0gUfzEMBfrXG4",
       "source": {
         "en": "CalArts course catalog",
@@ -2104,6 +2378,11 @@
         "en": "Curated by Ryan Kelln (Human Feedback Foundation) with Future Makers and Toronto Metropolitan University: AI-driven, EEG/brainwave-powered and other digital works, centred on Artificial Nature’s (Haru Ji & Graham Wakefield) immersive installation We Are Entanglement. Wider context: it uses the term but does not cite K.",
         "zh": "由 Ryan Kelln（Human Feedback Foundation）策划，合作方为 Future Makers 与多伦多都会大学。展出 AI 驱动、脑电波驱动等数字作品，核心作品是 Artificial Nature（Haru Ji 与 Graham Wakefield）的沉浸式装置《We Are Entanglement》。（相关背景：展览使用了这一术语，但并未引用 K。）"
       },
+      "key_points": [
+        { "en": "Ryan Kelln curated AI-driven and brainwave-powered digital works.", "zh": "Ryan Kelln策划了AI驱动与脑电波驱动的数字作品。" },
+        { "en": "The centrepiece is the immersive installation We Are Entanglement.", "zh": "核心是沉浸式装置《We Are Entanglement》。" },
+        { "en": "The show uses the term neural media but does not cite K.", "zh": "展览使用了这一术语，但并未引用K。" }
+      ],
       "url": "https://www.ocadu.ca/events-and-exhibitions/entangled-dimensions-art-age-neural-media",
       "source": {
         "en": "OCAD University events",
@@ -2139,6 +2418,11 @@
         "en": "In “Artistic Style Meets Artificial Intelligence” (Journal of Perceptual Imaging, 2021, with Hannu Töyrylä) they propose a post-phenomenology of “neural media”, meaning artistic practice with deep neural networks that unsettles intention and authorship. They continued the idea in 2023 papers on generative AI as an “other” and on journeys through latent space. Wider context: a separate, earlier use of the term about artists’ process, not K’s media-eras framework.",
         "zh": "他们在《Artistic Style Meets Artificial Intelligence》（《Journal of Perceptual Imaging》，2021 年，与 Hannu Töyrylä 合著）中提出「神经媒体」的后现象学：指借助深度神经网络进行的艺术实践，这种实践会动摇创作意图与作者身份。2023 年他们又发表论文，延续讨论把生成式 AI 视为「他者」以及在潜在空间中的创作旅程。（相关背景：这是更早、独立的术语用法，关注艺术家的创作过程，而非 K 的媒介时代框架。）"
       },
+      "key_points": [
+        { "en": "In a 2021 paper with Töyrylä, they propose a post-phenomenology of neural media.", "zh": "2021年论文里他们与Töyrylä提出神经媒体后现象学。" },
+        { "en": "It means deep-network art practice that unsettles intention and authorship.", "zh": "神经媒体指用深度神经网络创作，会动摇意图与作者身份。" },
+        { "en": "This earlier use concerns artists' process, not K's media-eras framework.", "zh": "这是更早的独立用法，关注创作过程而非K的媒介时代。" }
+      ],
       "url": "https://doi.org/10.2352/J.Percept.Imaging.2021.4.2.020501",
       "source": {
         "en": "Journal of Perceptual Imaging (IS&T)",
@@ -2182,6 +2466,11 @@
         "en": "Dane Sutherland’s project describes itself as “Multi-User Shared Hallucinations dredged from the slumgullion swamp of adversarial digital, platform, and neural media”; its work The Bastard Fields “dredges our emerging neural mediascapes”. It was shown in Daniela Cotimbo’s exhibition (Re:humanism, Mine, Yours, Ours festival, 23 Apr – 14 May 2026), and Sutherland gave a Goldsmiths Visual Cultures lecture on 16 Oct 2025. Wider context: it uses the term but does not cite K.",
         "zh": "Dane Sutherland 的这个艺术项目自称是从「对抗性的数字媒体、平台媒体与神经媒体的泥沼中打捞出的多用户共享幻觉」，作品《The Bastard Fields》则「打捞我们正在形成的神经媒介景观」。作品入选 Daniela Cotimbo 策划的展览（Re:humanism，Mine, Yours, Ours 艺术节，2026 年 4 月 23 日至 5 月 14 日）；Sutherland 还于 2025 年 10 月 16 日在金史密斯学院视觉文化系演讲。（相关背景：使用了这一术语，但并未引用 K。）"
       },
+      "key_points": [
+        { "en": "The project calls itself hallucinations dredged from digital, platform and neural media.", "zh": "项目自称是从数字、平台与神经媒体中打捞的幻觉。" },
+        { "en": "Bastard Fields dredges our emerging neural mediascapes.", "zh": "《Bastard Fields》打捞正在形成的神经媒介景观。" },
+        { "en": "It uses the term neural media but does not cite K.", "zh": "项目使用了该术语，但并未引用K。" }
+      ],
       "url": "https://drugo-more.hr/en/mine-yours-ours-2026/",
       "source": {
         "en": "Drugo More (Rijeka)",
@@ -2217,6 +2506,11 @@
         "en": "Edward Chang’s team at UCSF used machine-learning decoders on electrocorticography (ECoG) arrays over the motor cortex of people with paralysis. Two participants could speak and gesture (a wave, a thumbs-up) at the same time through a virtual avatar. Decoders worked better when trained on combined speech-and-gesture data, not on each separately. Wider context: BCI × AI research, not about K; see the BCI × Neural Media page.",
         "zh": "加州大学旧金山分校 Edward Chang 团队在瘫痪患者运动皮层表面放置皮层电极阵列（ECoG），用机器学习解码器读取信号。两名参与者能通过虚拟化身同时「说话」和做手势（挥手、竖大拇指）。研究发现，用「说话加手势」的混合数据训练的解码器，比分别训练的效果更好。（相关背景：属于脑机接口 × AI 研究，与 K 无直接关系，详见「脑机接口与神经媒体」页面。）"
       },
+      "key_points": [
+        { "en": "Chang's UCSF team used machine learning to decode paralyzed people's motor cortex.", "zh": "UCSF的Chang团队用机器学习解码瘫痪者运动皮层。" },
+        { "en": "Two participants could speak and gesture at once through a virtual avatar.", "zh": "两名参与者能通过虚拟化身同时说话和做手势。" },
+        { "en": "Combined speech-and-gesture training beat training each one separately.", "zh": "说话加手势的混合训练，比分开训练效果更好。" }
+      ],
       "url": "https://www.nature.com/articles/s41593-026-02446-2",
       "source": {
         "en": "Nature Neuroscience · NIH",
@@ -2252,6 +2546,11 @@
         "en": "Peer-reviewed version of a February 2025 preprint. 35 healthy volunteers typed memorised sentences while EEG or MEG recorded their brains; a deep network plus a language model decoded the text. With MEG the average character error rate was 29% (18% for the best participants), versus 65% with EEG. No surgery, but not yet real time. Wider context: BCI × AI research, not about K.",
         "zh": "这是 2025 年 2 月预印本的同行评审正式版。35 名健康志愿者在打出背诵的句子时，用脑电（EEG）或脑磁（MEG）记录大脑活动，再由深度神经网络加语言模型解码出文字。使用脑磁图时平均字符错误率为 29%（表现最好的参与者为 18%），脑电图则为 65%。无需手术，但尚不能实时解码。（相关背景：属于脑机接口 × AI 研究，与 K 无直接关系。）"
       },
+      "key_points": [
+        { "en": "Thirty-five healthy volunteers typed memorised sentences during EEG or MEG.", "zh": "35名健康志愿者打字时，用脑电或脑磁记录大脑。" },
+        { "en": "A deep network and language model decoded the text, with no surgery and not in real time.", "zh": "深度网络加语言模型解码文字，无需手术，但非实时。" },
+        { "en": "Average character error was 29 percent with MEG, 18 at best, and 65 with EEG.", "zh": "脑磁字符错误率29%（最佳18%），脑电为65%。" }
+      ],
       "url": "https://www.nature.com/articles/s41593-026-02303-2",
       "source": {
         "en": "Nature Neuroscience (Meta AI)",
@@ -2286,6 +2585,11 @@
         "en": "Merge Labs, a BCI research lab co-founded by Sam Altman (in a personal capacity), Alex Blania, Sandro Herbig and researchers Mikhail Shapiro, Tyson Aflalo and Sumner Norman, says it will connect with neurons “using molecules instead of electrodes” and ultrasound rather than brain implants. OpenAI wrote the largest check and will collaborate on scientific foundation models; its post says BCIs “will create a natural, human-centered way for anyone to seamlessly interact with AI.” Wider context: not about K.",
         "zh": "Merge Labs 是一家脑机接口研究机构，联合创始人包括以个人身份参与的 Sam Altman、Alex Blania、Sandro Herbig，以及研究者 Mikhail Shapiro、Tyson Aflalo 和 Sumner Norman。公司表示将「用分子而非电极」与神经元连接，并用超声波等方式传递信息，避免在脑组织中植入设备。OpenAI 是最大的单笔投资方，并将合作开发科学基础模型；OpenAI 的博文写道，脑机接口将为任何人提供「自然、以人为本的方式，与 AI 无缝互动」。（相关背景：与 K 无直接关系。）"
       },
+      "key_points": [
+        { "en": "Sam Altman co-founded the BCI lab Merge Labs in a personal capacity.", "zh": "Altman以个人身份联合创立脑机实验室Merge Labs。" },
+        { "en": "It aims to link neurons with molecules and ultrasound, not electrodes or implants.", "zh": "它想用分子而非电极连接神经元，并用超声波代替植入。" },
+        { "en": "OpenAI is the largest investor and will collaborate on scientific foundation models.", "zh": "OpenAI是最大投资方，并将合作开发科学基础模型。" }
+      ],
       "url": "https://techcrunch.com/2026/01/15/openai-invests-in-sam-altmans-brain-computer-interface-startup-merge-labs/",
       "source": {
         "en": "TechCrunch · OpenAI",
@@ -2321,6 +2625,11 @@
         "en": "Tomoyasu Horikawa (NTT Communication Science Laboratories) decoded semantic features from fMRI while people watched or recalled short videos, then used a language model to evolve sentences that match them, producing coherent descriptions of what people saw or remembered. Wider context: AI language models reading the brain; not about K.",
         "zh": "日本 NTT 通信科学基础研究所的堀川友慈在受试者观看或回忆短视频时，用功能性磁共振成像（fMRI）解码大脑中的语义特征，再借助语言模型逐步生成与之匹配的句子，得到对所见或所忆内容的连贯描述。（相关背景：AI 语言模型「读取」大脑的研究，与 K 无直接关系。）"
       },
+      "key_points": [
+        { "en": "Horikawa at NTT decoded semantic features from fMRI.", "zh": "堀川友慈在NTT用fMRI解码大脑中的语义特征。" },
+        { "en": "People were watching or recalling short videos during the scans.", "zh": "受试者当时正在观看或回忆短视频。" },
+        { "en": "A language model evolved matching sentences about what people saw or remembered.", "zh": "语言模型逐步生成匹配句子，描述所见或所忆。" }
+      ],
       "url": "https://www.nature.com/articles/d41586-025-03624-1",
       "source": {
         "en": "Nature (news) · Science Advances",
@@ -2363,6 +2672,11 @@
         "en": "Erin Kunz and colleagues showed that implanted arrays in four people with paralysis pick up imagined, unspoken sentences, decoded in real time from a vocabulary of up to 125,000 words, with error rates of roughly 26–54%. They also tested a mental “password” that stops the device decoding private inner speech unless the user unlocks it. Wider context: not about K, but it raises the mental-privacy questions on the BCI × Neural Media page.",
         "zh": "Erin Kunz 等研究者发现，四名瘫痪患者脑中植入的电极阵列能捕捉到想象中、未说出口的句子，并在最多 12.5 万词的词汇范围内实时解码，错误率约为 26% 至 54%。团队还测试了一种「意念密码」：用户不解锁，设备就不会解码其私密的内心语言。（相关背景：与 K 无直接关系，但涉及「脑机接口与神经媒体」页面讨论的精神隐私问题。）"
       },
+      "key_points": [
+        { "en": "Kunz's team decoded imagined unspoken sentences from four people with paralysis.", "zh": "Kunz团队解码了四名瘫痪者想象中未说出的句子。" },
+        { "en": "Decoding ran in real time over up to 125,000 words, with errors about 26 to 54 percent.", "zh": "解码实时进行，词汇最多12.5万，错误率约26%至54%。" },
+        { "en": "A mental password can stop the device from decoding private inner speech.", "zh": "意念密码不解锁，设备就不会解码私密内心语言。" }
+      ],
       "url": "https://doi.org/10.1016/j.cell.2025.06.015",
       "source": {
         "en": "Cell · Stanford",
@@ -2397,6 +2711,11 @@
         "en": "At NVIDIA GTC, the stent-electrode BCI company described a brain foundation model “using generative pre-training techniques that learn directly from neural data” (CEO Tom Oxley), trained on de-identified data from its users. Wider context: a literal neural network trained on biological neural signals; not about K.",
         "zh": "在英伟达 GTC 大会上，这家以血管支架电极为技术路线的脑机接口公司介绍了一个大脑基础模型：CEO Tom Oxley 称它「采用生成式预训练技术，直接从神经数据中学习」，训练数据是用户经过去标识化处理的神经数据。（相关背景：这是名副其实用生物神经信号训练的人工神经网络，与 K 无直接关系。）"
       },
+      "key_points": [
+        { "en": "At NVIDIA GTC, this stent-electrode BCI company described a brain foundation model.", "zh": "在英伟达GTC上，这家支架电极脑机公司介绍了大脑基础模型。" },
+        { "en": "CEO Tom Oxley said it learns directly from neural data by generative pre-training.", "zh": "CEO Tom Oxley称其用生成式预训练直接从神经数据学习。" },
+        { "en": "Training used de-identified neural data from the company's users.", "zh": "训练数据是用户经过去标识化处理的神经数据。" }
+      ],
       "url": "https://www.massdevice.com/synchron-cognitive-ai-model-bci-nvidia/",
       "source": {
         "en": "MassDevice",
@@ -2422,6 +2741,11 @@
         "en": "People using Synchron’s Stentrode, which is placed through a blood vessel, can pick AI-suggested replies with brain signals instead of spelling each word. Patient Mark, who has ALS, told CNBC it saves him time and energy; Synchron said it shares no brain data with OpenAI. An early case of a large language model sitting directly in a BCI loop. Wider context: not about K.",
         "zh": "Synchron 的 Stentrode 电极经血管植入。使用者可以用脑信号直接选择 AI 生成的回复建议，而不必逐字拼写。患有渐冻症（ALS）的患者 Mark 告诉 CNBC，这为他节省了时间和体力；Synchron 表示不会与 OpenAI 共享任何大脑数据。这是大语言模型直接进入脑机接口回路的早期案例。（相关背景：与 K 无直接关系。）"
       },
+      "key_points": [
+        { "en": "The vessel-placed Stentrode lets users pick AI replies with brain signals.", "zh": "Stentrode经血管植入，用户用脑信号选择AI回复。" },
+        { "en": "Patient Mark, who has ALS, told CNBC this saves him time and energy.", "zh": "渐冻症患者Mark告诉CNBC，这节省了他的时间和体力。" },
+        { "en": "Synchron said it shares no brain data with OpenAI.", "zh": "Synchron表示不会与OpenAI共享任何大脑数据。" }
+      ],
       "url": "https://www.cnbc.com/2024/07/16/neuralink-rival-synchron-is-using-openai-models-to-power-chat-feature.html",
       "source": {
         "en": "CNBC",
@@ -2447,6 +2771,11 @@
         "en": "Work-in-progress preview at Alice Tully Hall. Libretto written by K with GPT-3, music by Derrick Skye. An EEG cap worn by Lincoln Center’s Shanta Thake fed her brainwaves into Refik Anadol’s AI-generated projections, while UCSD scientists recorded audience brainwaves and heart rate. At the start of the 2025 Long Now talk on neural media, K recalls an opera that was also a neuroscience study, “using brain waves to control AI-generated visuals”; the description matches this project.",
         "zh": "在爱丽丝·塔利音乐厅进行的创作中预演。剧本由 K 与 GPT-3 合写，音乐由 Derrick Skye 创作。林肯中心首席艺术官 Shanta Thake 佩戴脑电帽，她的脑电波实时输入 Refik Anadol 的 AI 生成影像；加州大学圣地亚哥分校的科学家同时记录观众的脑电波和心率。K 在 2025 年 Long Now 神经媒体演讲的开头，回忆起一部同时也是神经科学实验、「用脑电波控制 AI 生成影像」的歌剧，描述与这个项目一致。"
       },
+      "key_points": [
+        { "en": "At an Alice Tully Hall preview, K and GPT-3 wrote the libretto; Skye wrote the music.", "zh": "在爱丽丝·塔利厅预演，K与GPT-3合写剧本，Skye作曲。" },
+        { "en": "Thake's brainwaves fed Anadol's AI-generated projections in real time.", "zh": "Thake的脑电波实时输入Anadol的AI生成影像。" },
+        { "en": "UCSD scientists recorded the audience's brainwaves and heart rate.", "zh": "加州大学圣地亚哥分校的科学家记录了观众脑电波和心率。" }
+      ],
       "url": "https://www.kalladomcdowell.com/songoftheambassadors",
       "source": {
         "en": "kalladomcdowell.com · BOMB",
@@ -2482,6 +2811,11 @@
         "en": "Western Kentucky University’s Potter College of Arts & Letters (PCAL) calendar lists K for a one-hour public event in its CES series on Thursday 12 Nov 2026, 6:30–7:30 PM, in the Jody Richards Hall Auditorium, Bowling Green (08:30–09:30 on 13 Nov, China time). The listing carries no talk title or abstract. It only gives K’s standard bio: books co-written with GPT-3, founding Google’s Artists + Machine Intelligence programme in 2015, the neuro-opera Song of the Ambassadors and the 2025 Swiss Institute show The Known Lost. Wider context: the listing doesn’t say whether the talk is about neural media.",
         "zh": "西肯塔基大学 Potter 文理学院（PCAL）活动日历显示，K 将于 2026 年 11 月 12 日（周四）晚 6:30–7:30 在鲍灵格林 Jody Richards Hall 礼堂参加 CES 系列的一场一小时公开活动（北京时间 11 月 13 日 8:30–9:30）。页面没有讲题和摘要，只附了 K 的常规简介：与 GPT-3 合写多本书，2015 年在 Google 创办「艺术家＋机器智能」（AMI）项目，创作神经歌剧《Song of the Ambassadors》，以及 2025 年在纽约 Swiss Institute 的个展《The Known Lost》。（相关背景：活动页没有说明这场讲座是否讨论神经媒体。）"
       },
+      "key_points": [
+        { "en": "Western Kentucky University lists K for a one-hour public CES event.", "zh": "西肯塔基大学日历列出K的一场一小时CES公开活动。" },
+        { "en": "It is scheduled for 12 November 2026 in Bowling Green.", "zh": "活动订于2026年11月12日在鲍灵格林举行。" },
+        { "en": "It has no title or abstract and does not say if the talk is about neural media.", "zh": "没有讲题和摘要，也未说明是否讨论神经媒体。" }
+      ],
       "url": "https://www.wku.edu/cebs/calendar/index.php?eventid=86019&view=event",
       "source": {
         "en": "Western Kentucky University calendar",
@@ -2552,6 +2886,11 @@
               "en": "Extend the framework in talks: Vienna Digital Cultures 2025 and MUTEK Montréal 2026. Busta named K's essay a best of 2024 in Artforum.",
               "zh": "在演讲中延伸这一框架：2025 年维也纳数字文化节和 2026 年蒙特利尔 MUTEK。Busta 曾在 Artforum 把 K 的文章评为 2024 年最佳之一。"
             },
+            "key_points": [
+              { "en": "They extend the framework in a 2025 Vienna Digital Cultures talk.", "zh": "他们在2025年维也纳数字文化节演讲中延伸这一框架。" },
+              { "en": "They also extend the framework in a 2026 MUTEK Montréal talk.", "zh": "他们也在2026年蒙特利尔MUTEK演讲中延伸这一框架。" },
+              { "en": "Busta named K's essay a best of 2024 in Artforum.", "zh": "Busta在Artforum将K的文章评为2024最佳之一。" }
+            ],
             "url": "https://forum.mutek.org/en/shows/2026/vibe-ocracy-in-the-psyber-age"
           },
           {
@@ -2566,6 +2905,11 @@
               "en": "Chapter “Dreaming a New Reality in the Age of Neural Media” in Shimmer (MIT Press, 2026). Unconfirmed whether it cites K.",
               "zh": "在《Shimmer》（MIT 出版社，2026）中撰写《在神经媒体时代梦想新的现实》一章；尚未确认是否引用 K。"
             },
+            "key_points": [
+              { "en": "The chapter is titled Dreaming a New Reality in the Age of Neural Media.", "zh": "章节题为《在神经媒体时代梦想新的现实》。" },
+              { "en": "It appears in Shimmer, from MIT Press, in 2026.", "zh": "该章收入2026年MIT出版社的《Shimmer》。" },
+              { "en": "Whether this chapter cites K is still unconfirmed.", "zh": "尚未确认这一章是否引用了K。" }
+            ],
             "url": "https://doi.org/10.7551/mitpress/15922.003.0006"
           },
           {
@@ -2580,6 +2924,10 @@
               "en": "Coined “neural media” separately in 2021, as a phenomenology of making art with neural networks in latent space.",
               "zh": "2021 年独立提出「神经媒体」，指在潜在空间中借助神经网络进行艺术创作的现象学。"
             },
+            "key_points": [
+              { "en": "They coined the term neural media separately in 2021.", "zh": "他们于2021年独立提出「神经媒体」。" },
+              { "en": "It names a phenomenology of making art with neural networks in latent space.", "zh": "它指在潜在空间中用神经网络进行艺术创作的现象学。" }
+            ],
             "url": "https://library.imaging.org/jpi/articles/4/2/jpi0139"
           },
           {
@@ -2594,6 +2942,11 @@
               "en": "Curator of “Can Meeple Escape the Neurophoria?” (2026); names K's “designing neural media” as a main inspiration.",
               "zh": "「Can Meeple Escape the Neurophoria?」（2026）的策展人，称 K 的「设计神经媒体」是主要灵感来源。"
             },
+            "key_points": [
+              { "en": "Can Meeple Escape the Neurophoria?", "zh": "Can Meeple Escape the Neurophoria?" },
+              { "en": "Milia Xin Bi is the curator of that 2026 exhibition.", "zh": "Milia Xin Bi是这场2026年展览的策展人。" },
+              { "en": "Xin Bi calls K's designing neural media a main inspiration.", "zh": "Xin Bi称K的「设计神经媒体」为主要灵感来源。" }
+            ],
             "url": "https://www.fact.co.uk/news/2026/03/interview-with-curator-in-residence-milia-xin-bi"
           },
           {
@@ -2608,6 +2961,11 @@
               "en": "Organisers of the BUFF summit on fashion, neural media and bodies; make the DIS film series “I'm So Janky” on the metaverse, AI and Neuralink. Leung also builds game-engine interfaces for living neurons.",
               "zh": "BUFF「时尚、神经媒体与身体」峰会的组织者；合作 DIS 影片系列「I'm So Janky」，谈元宇宙、AI 和 Neuralink。Leung 也为活体神经元开发游戏引擎接口。"
             },
+            "key_points": [
+              { "en": "They organise the BUFF summit on fashion, neural media and bodies.", "zh": "他们组织时尚、神经媒体与身体主题的BUFF峰会。" },
+              { "en": "The DIS film I'm So Janky discusses the metaverse, AI and Neuralink.", "zh": "DIS片I'm So Janky谈元宇宙AI与Neuralink" },
+              { "en": "Leung also builds game-engine interfaces for living neurons.", "zh": "Leung也为活体神经元开发游戏引擎接口。" }
+            ],
             "url": "https://www.trienaldelisboa.com/programme/events/humanentities-en",
             "internal": {
               "href": "felstead-leung.html",
@@ -2630,6 +2988,11 @@
               "en": "Academic papers (2025–2026) in APRJA, ZEP, Media Theory and Organised Sound that cite K's neural media essays (see the timeline).",
               "zh": "在《APRJA》《ZEP》《Media Theory》《Organised Sound》上发表的学术论文（2025–2026），引用了 K 的神经媒体文章（详见时间线）。"
             },
+            "key_points": [
+              { "en": "Their 2025 to 2026 papers cite K's neural media essays.", "zh": "他们2025至2026年的论文引用K的神经媒体文章。" },
+              { "en": "Publication venues include APRJA, ZEP and Media Theory.", "zh": "发表刊物包括APRJA、ZEP和Media Theory。" },
+              { "en": "Organised Sound is another journal that published the papers.", "zh": "《Organised Sound》也刊登了这些论文。" }
+            ],
             "url": "https://doi.org/10.7146/aprja.v14i1.160275"
           },
           {
@@ -2644,6 +3007,11 @@
               "en": "“Girl Intelligence” (Aksioma, 2025) draws on K's neural media essays.",
               "zh": "《Girl Intelligence》（Aksioma，2025）借鉴了 K 的神经媒体文章。"
             },
+            "key_points": [
+              { "en": "The work is titled Girl Intelligence.", "zh": "该作品题为《Girl Intelligence》。" },
+              { "en": "Aksioma published it in 2025.", "zh": "Aksioma于2025年出版了该作。" },
+              { "en": "It draws on K's neural media essays.", "zh": "它借鉴了K的神经媒体文章。" }
+            ],
             "url": "https://aksioma.org/pdf/aksioma_PostScriptUM_52_ENG_quicho.pdf"
           },
           {
@@ -2658,6 +3026,11 @@
               "en": "Artist project working with “adversarial digital, platform, and neural media”; shown at Goldsmiths (2025) and in Rijeka (2026).",
               "zh": "以「对抗性的数字、平台与神经媒体」为素材的艺术项目，曾在金史密斯学院（2025）和里耶卡（2026）展示。"
             },
+            "key_points": [
+              { "en": "The project works with adversarial digital, platform and neural media.", "zh": "该项目以对抗性的数字、平台与神经媒体为素材。" },
+              { "en": "It was shown at Goldsmiths in 2025.", "zh": "它于2025年在金史密斯学院展出。" },
+              { "en": "It was also shown in Rijeka in 2026.", "zh": "它也于2026年在里耶卡展出。" }
+            ],
             "url": "https://drugo-more.hr/en/mine-yours-ours-2026/"
           },
           {
@@ -2672,6 +3045,10 @@
               "en": "Curated “Entangled Dimensions: Art in the Age of Neural Media”, Toronto, 2024.",
               "zh": "策划「纠缠的维度：神经媒体时代的艺术」，多伦多，2024。"
             },
+            "key_points": [
+              { "en": "Kelln curated Entangled Dimensions: Art in the Age of Neural Media.", "zh": "Kelln策划了「纠缠的维度：神经媒体时代的艺术」。" },
+              { "en": "The exhibition was held in Toronto in 2024.", "zh": "该展览于2024年在多伦多举行。" }
+            ],
             "url": "https://www.ocadu.ca/events-and-exhibitions/entangled-dimensions-art-age-neural-media"
           },
           {
@@ -2686,6 +3063,11 @@
               "en": "Essay “Neural Media” (2024) on neural networks and latent space as a creative medium, from a crypto investor's view.",
               "zh": "文章《Neural Media》（2024），从加密货币投资人的视角，讨论把神经网络和潜在空间当作创作媒介。"
             },
+            "key_points": [
+              { "en": "The 2024 essay is titled Neural Media.", "zh": "2024年文章题为《Neural Media》。" },
+              { "en": "It treats neural networks and latent space as a creative medium.", "zh": "文章把神经网络和潜在空间当作创作媒介。" },
+              { "en": "The essay is written from a crypto investor's point of view.", "zh": "文章从加密货币投资人的视角写成。" }
+            ],
             "url": "https://nataliemarie.substack.com/p/neural-media"
           },
           {
@@ -2700,6 +3082,11 @@
               "en": "“Latent Spaces: AI, Art, and the Archive” (October, MIT Press), a critical theory of latent space; curator of “The World Through AI”.",
               "zh": "《Latent Spaces: AI, Art, and the Archive》（《October》，MIT 出版社），提出关于潜在空间的批判理论；「The World Through AI」展览策展人。"
             },
+            "key_points": [
+              { "en": "Latent Spaces: AI, Art, and the Archive offers a critical theory of latent space.", "zh": "《潜在空间：AI、艺术与档案》提出潜在空间的批判理论。" },
+              { "en": "The essay appeared in October, published by MIT Press.", "zh": "该文发表于《October》，由MIT出版社出版。" },
+              { "en": "The author is also curator of The World Through AI.", "zh": "作者亦是「The World Through AI」的策展人。" }
+            ],
             "url": "https://direct.mit.edu/octo/article/doi/10.1162/OCTO.a.545/137249/Latent-Spaces-AI-Art-and-the-Archive"
           }
         ]
@@ -2723,6 +3110,10 @@
               "en": "Hosted K's talk and essay; runs a “Neural Media” topic on Long Now Ideas.",
               "zh": "举办了 K 的演讲并发表其文章，在 Long Now Ideas 上开设「神经媒体」专题。"
             },
+            "key_points": [
+              { "en": "Long Now hosted K's talk and published K's essay.", "zh": "Long Now举办了K的演讲并发表了K的文章。" },
+              { "en": "It runs a Neural Media topic on Long Now Ideas.", "zh": "它在Long Now Ideas上开设「神经媒体」专题。" }
+            ],
             "url": "https://longnow.org/ideas/about/neural-media/"
           },
           {
@@ -2738,6 +3129,10 @@
               "en": "Grant-funded research on a theoretical framework for neural media, built on K's ideas.",
               "zh": "获资助研究神经媒体的理论框架，以 K 的思想为基础。"
             },
+            "key_points": [
+              { "en": "The studio does grant-funded research on a neural media framework.", "zh": "该工作室获资助研究神经媒体的理论框架。" },
+              { "en": "That framework is built on K's ideas.", "zh": "这一框架以K的思想为基础。" }
+            ],
             "url": "https://openinghours.studio/research"
           },
           {
@@ -2752,6 +3147,10 @@
               "en": "Graduate course MTEC 521 “Neural Media: Art, Sound, Politics of AI”.",
               "zh": "研究生课程 MTEC 521《神经媒体：艺术、声音与 AI 政治》。"
             },
+            "key_points": [
+              { "en": "CalArts offers the graduate course MTEC 521.", "zh": "CalArts开设研究生课程MTEC 521。" },
+              { "en": "The course is called Neural Media: Art, Sound, Politics of AI.", "zh": "课程名为《神经媒体：艺术、声音与AI政治》。" }
+            ],
             "url": "https://catalog.calarts.edu/courses/a0dwI2r0gUfzEMBfrXG4"
           },
           {
@@ -2766,6 +3165,10 @@
               "en": "“Can Meeple Escape the Neurophoria?” (2026), inspired by K's neural media essays.",
               "zh": "「Can Meeple Escape the Neurophoria?」（2026），灵感来自 K 的神经媒体文章。"
             },
+            "key_points": [
+              { "en": "Can Meeple Escape the Neurophoria?", "zh": "Can Meeple Escape the Neurophoria?" },
+              { "en": "The 2026 exhibition is inspired by K's neural media essays.", "zh": "这场2026年展览的灵感来自K的神经媒体文章。" }
+            ],
             "url": "https://www.fact.co.uk/news/2026/03/interview-with-curator-in-residence-milia-xin-bi"
           },
           {
@@ -2780,6 +3183,10 @@
               "en": "BUFF: A Summit on Fashion, Neural Media & Our Bodies (Jan 2025).",
               "zh": "BUFF：时尚、神经媒体与身体峰会（2025 年 1 月）。"
             },
+            "key_points": [
+              { "en": "It held BUFF, a summit on fashion, neural media and bodies.", "zh": "它举办了关于时尚、神经媒体与身体的峰会BUFF。" },
+              { "en": "The summit took place in January 2025.", "zh": "该峰会于2025年1月举行。" }
+            ],
             "url": "https://www.youtube.com/watch?v=f3g9CT5Scjk",
             "internal": {
               "href": "felstead-leung.html#e-buff-summit",
@@ -2802,6 +3209,10 @@
               "en": "Commissioned K's “Designing Neural Media” essays during K's 2023–24 writer residency.",
               "zh": "在 K 2023–24 年驻留写作期间委约了《设计神经媒体》系列文章。"
             },
+            "key_points": [
+              { "en": "They commissioned K's Designing Neural Media essays.", "zh": "他们委约了K的《设计神经媒体》系列文章。" },
+              { "en": "The commission came during K's 2023-24 writer residency.", "zh": "这次委约发生在K的2023-24年驻留写作期间。" }
+            ],
             "url": "https://www.berlinerfestspiele.de/en/gropius-bau/programm/journal/2023/k-allado-mcdowell-designing-neural-media"
           },
           {
@@ -2816,6 +3227,10 @@
               "en": "Festivals that hosted the New Models neural media talks (2025, 2026).",
               "zh": "举办 New Models 神经媒体演讲的艺术节（2025、2026）。"
             },
+            "key_points": [
+              { "en": "These festivals hosted the New Models neural media talks.", "zh": "这些艺术节举办了New Models的神经媒体演讲。" },
+              { "en": "The talks were held in 2025 and in 2026.", "zh": "这些演讲举办于2025年与2026年。" }
+            ],
             "url": "https://autotelic-foundation.org/archive/festivals/vienna-digital-cultures-2025/"
           },
           {
@@ -2830,6 +3245,10 @@
               "en": "Shimmer book and exhibition (2026–27), including Kaganskiy's neural media chapter.",
               "zh": "《Shimmer》图书与展览（2026–27），收录 Kaganskiy 的神经媒体章节。"
             },
+            "key_points": [
+              { "en": "They present the Shimmer book and exhibition in 2026-27.", "zh": "他们于2026-27年推出《Shimmer》图书与展览。" },
+              { "en": "The project includes Kaganskiy's chapter on neural media.", "zh": "项目收录了Kaganskiy关于神经媒体的章节。" }
+            ],
             "url": "https://fristartmuseum.org/exhibition/shimmer-dreaming-the-posthuman/"
           },
           {
@@ -2844,6 +3263,10 @@
               "en": "“The World Is Sleepwalking” (2026), on AI media as a waking dream.",
               "zh": "「The World Is Sleepwalking」（2026），把 AI 媒介视为一场清醒的梦。"
             },
+            "key_points": [
+              { "en": "Their 2026 title is The World Is Sleepwalking.", "zh": "他们2026年的题目是「世界在梦游」。" },
+              { "en": "It treats AI media as a waking dream.", "zh": "它把AI媒介视为一场清醒的梦。" }
+            ],
             "url": "https://drugo-more.hr/en/mine-yours-ours-2026/"
           }
         ],
@@ -2871,6 +3294,10 @@
               "en": "“Neural media bias detection”: neural networks that detect bias in news (Timo Spinde et al., 2021).",
               "zh": "「神经网络媒体偏见检测」：用神经网络识别新闻偏见（Timo Spinde 等，2021）。"
             },
+            "key_points": [
+              { "en": "Neural media bias detection uses neural networks to find bias in news.", "zh": "「神经网络媒体偏见检测」用神经网络识别新闻偏见。" },
+              { "en": "Timo Spinde and colleagues published the work in 2021.", "zh": "Timo Spinde等人于2021年发表了这项研究。" }
+            ],
             "url": "https://doi.org/10.18653/v1/2021.findings-emnlp.101"
           },
           {
@@ -2885,6 +3312,11 @@
               "en": "Brain tissue modelled as an excitable “neural medium” (Amari-type neural field equations), plus physics-style “neural media” models.",
               "zh": "把大脑组织建模为可兴奋的「神经介质」（Amari 型神经场方程），以及物理风格的「神经介质」模型。"
             },
+            "key_points": [
+              { "en": "Brain tissue is modelled as an excitable neural medium.", "zh": "大脑组织被建模为可兴奋的「神经介质」。" },
+              { "en": "The modelling uses Amari-type neural field equations.", "zh": "建模采用的是Amari型神经场方程。" },
+              { "en": "Physics-style neural media models are also included.", "zh": "其中也包括物理风格的「神经介质」模型。" }
+            ],
             "url": "https://doi.org/10.21203/rs.3.rs-9850943/v1"
           },
           {
@@ -2899,6 +3331,10 @@
               "en": "NeRF, learned compression and the JPEG AI standard: neural networks used to encode or render media files.",
               "zh": "NeRF、学习型压缩和 JPEG AI 标准：用神经网络编码或渲染媒体文件。"
             },
+            "key_points": [
+              { "en": "Examples include NeRF, learned compression and the JPEG AI standard.", "zh": "例子包括NeRF、学习型压缩以及JPEG AI标准。" },
+              { "en": "In these systems neural networks encode or render media files.", "zh": "这些系统用神经网络编码或渲染媒体文件。" }
+            ],
             "url": "https://arxiv.org/html/2503.16288v1"
           },
           {
@@ -2913,6 +3349,11 @@
               "en": "Philosophy of mind (Philosophical Analysis, 2025): how brain processes fuse with media practices in extended cognition. Not about AI media eras.",
               "zh": "心灵哲学（《哲学分析》，2025）：在延展认知中，大脑神经过程如何与媒介过程融合。与 AI 媒介时代无关。"
             },
+            "key_points": [
+              { "en": "This philosophy of mind paper appeared in Philosophical Analysis in 2025.", "zh": "这篇心灵哲学论文见于2025年《哲学分析》。" },
+              { "en": "It explores how brain processes fuse with media in extended cognition.", "zh": "它探讨延展认知中大脑神经过程如何与媒介过程融合。" },
+              { "en": "The argument is not about eras of AI media.", "zh": "这一论证与AI媒介时代无关。" }
+            ],
             "url": "https://ip.sass.org.cn/2025/1015/c24a583326/page.htm"
           }
         ]
@@ -3028,6 +3469,11 @@
             "en": "K defines neural media as all media built on networks of neurons, biological or mathematical. Long Now’s summary of the talk puts it plainly: our brains are neural media, “the first of their kind, but not the last”. In the talk K lists EEG brain–computer interfaces beside the Oura Ring as biometric tools that make “a mathematical image of you” for machine learning.",
             "zh": "K 把神经媒体定义为一切建立在神经元网络之上的媒介，无论是生物的还是数学的。Long Now 对这场演讲的介绍说得很直白：我们的大脑就是神经媒体，「第一种，但不是最后一种」。K 在演讲中把脑电脑机接口和 Oura 智能戒指并列，称它们都是生物识别工具，会为机器学习生成「一个关于你的数学图像」。"
           },
+          "key_points": [
+            { "en": "K defines neural media as all media built on networks of biological or mathematical neurons.", "zh": "K把神经媒体定义为建立在生物或数学神经元网络上的媒介。" },
+            { "en": "Long Now says our brains are neural media, the first kind but not the last.", "zh": "Long Now称大脑是神经媒体，是第一种但不是最后一种。" },
+            { "en": "EEG interfaces and the Oura Ring make a mathematical image of you for machine learning.", "zh": "脑电接口和Oura戒指会为机器学习生成关于你的数学图像。" }
+          ],
           "url": "https://longnow.org/talks/02025-allado-mcdowell/"
         },
         {
@@ -3046,6 +3492,11 @@
             "en": "K’s opera was also a neuroscience study: an EEG cap fed a performer’s brainwaves into AI-generated projections, while scientists recorded the audience. K recalls this kind of work at the start of the Long Now talk. K’s question at the time: “could you actually compose with states of consciousness?”",
             "zh": "K 的这部歌剧同时也是一项神经科学实验：脑电帽把一位表演者的脑电波输入 AI 生成的影像，科学家同时记录观众的数据。K 在 Long Now 演讲开头回忆的正是这类创作。K 当时的提问是：「能不能直接用意识状态来作曲？」"
           },
+          "key_points": [
+            { "en": "K's opera was a neuroscience study: an EEG cap fed the performer's brainwaves into AI images.", "zh": "K的歌剧兼为神经科学实验：脑电帽把表演者脑波输入AI影像。" },
+            { "en": "Scientists also recorded data from the audience.", "zh": "科学家同时记录了观众的数据。" },
+            { "en": "K asked whether one could compose directly with states of consciousness.", "zh": "K问能不能直接用意识状态来作曲。" }
+          ],
           "url": "https://www.digitalstorytellinglab.io/projects/song-of-the-ambassadors"
         },
         {
@@ -3065,6 +3516,11 @@
             "en": "K traces how McCulloch, Pitts and Turing treated the brain as a computer in order to build brain-like computers. K names two responses: seeing models as selves, or seeing selves as models (citing Adam Safron’s world-modelling theory of consciousness, which draws on the free-energy principle and active inference). K proposes instead that selves and models are both relational structures in a wider ecology of meaning.",
             "zh": "K 回溯了麦卡洛克、皮茨和图灵如何把大脑当作计算机，进而造出类脑计算机。K 指出人们的两种反应：把模型看作自我，或把自我看作模型（文中引用了 Adam Safron 的「整合世界建模」意识理论，该理论借鉴了自由能原理和主动推理）。K 则主张：自我和模型都是更大的意义生态中的关系结构。"
           },
+          "key_points": [
+            { "en": "K traces McCulloch, Pitts and Turing treating the brain as a computer to build brain-like computers.", "zh": "K回溯麦卡洛克、皮茨和图灵把大脑当计算机以便造出类脑计算机。" },
+            { "en": "Responses see models as selves or selves as models, citing Safron's theory.", "zh": "反应把模型看作自我，或把自我看作模型，引用Safron理论。" },
+            { "en": "K says selves and models are relational structures in a wider ecology of meaning.", "zh": "K主张自我与模型都是更大意义生态中的关系结构。" }
+          ],
           "url": "https://www.berlinerfestspiele.de/en/gropius-bau/programm/journal/2023/k-allado-mcdowell-designing-neural-media"
         },
         {
@@ -3083,6 +3539,11 @@
             "en": "K’s whole comment on Trent McConaghy’s thread “neuroAI = AI scaling laws x BCI”, which itself recommends Saturnin Pugnet’s Phase Lock.",
             "zh": "这是 K 对 Trent McConaghy 长帖「neuroAI = AI 规模定律 × 脑机接口」的全部评论，而那条长帖推荐的正是 Saturnin Pugnet 的《Phase Lock》。"
           },
+          "key_points": [
+            { "en": "This is K's entire comment on McConaghy's neuroAI thread.", "zh": "这是K对McConaghy的neuroAI长帖的全部评论。" },
+            { "en": "The thread states that neuroAI equals AI scaling laws times BCI.", "zh": "该帖称neuroAI等于AI规模定律乘以BCI。" },
+            { "en": "The thread recommends Saturnin Pugnet's Phase Lock.", "zh": "该帖推荐Saturnin Pugnet的Phase Lock。" }
+          ],
           "url": "https://x.com/kalladomcdowell/status/2107760105198690608"
         },
         {
@@ -3101,6 +3562,11 @@
             "en": "Keyboards and screens are too narrow a channel to steer advanced AI (“the bandwidth problem”). BCI could couple human intent to AI directly, as a blueprint, a training signal and a wider pipe. The bet is that AI’s scaling laws carry over to brain decoding. It does not cite K.",
             "zh": "键盘和屏幕这条通道太窄，不足以引导越来越强大的 AI（作者称之为「带宽问题」）。脑机接口可以把人的意图直接接入 AI，同时充当蓝本、训练信号和更宽的通道。作者押注 AI 的扩展规律同样适用于大脑解码。文中没有引用 K。"
           },
+          "key_points": [
+            { "en": "Keyboards and screens are too narrow to steer advanced AI, the bandwidth problem.", "zh": "键盘和屏幕太窄，不足以引导强大AI，此即带宽问题。" },
+            { "en": "BCI could couple intent to AI as a blueprint, a training signal and a wider pipe.", "zh": "脑机接口可把意图接入AI，充当蓝本、训练信号和更宽管道。" },
+            { "en": "The author bets AI scaling laws also cover brain decoding, and does not cite K.", "zh": "作者押注AI扩展规律也适用于大脑解码，且未引用K。" }
+          ],
           "url": "https://phaselock.satpugnet.com/",
           "internal": {
             "href": "#phase-lock",
@@ -3126,6 +3592,11 @@
             "en": "Two 2023 studies used fMRI with generative AI: Stable Diffusion to reconstruct images people saw, and a GPT-based decoder to recover the gist of stories people heard or imagined. Artificial neural nets reading biological ones, the two meanings of “neural” meeting.",
             "zh": "2023 年的两项研究把功能性磁共振成像与生成式 AI 结合起来：一项用 Stable Diffusion 重建受试者看到的图像，另一项用基于 GPT 的解码器还原受试者听到或想象的故事大意。人工神经网络开始读取生物神经网络，「神经」的两层含义在这里交汇。"
           },
+          "key_points": [
+            { "en": "Two 2023 studies combined fMRI with generative AI.", "zh": "2023年有两项研究把功能性磁共振与生成式AI结合。" },
+            { "en": "Stable Diffusion reconstructed images that subjects had seen.", "zh": "Stable Diffusion重建了受试者看到的图像。" },
+            { "en": "A GPT-based decoder recovered the gist of stories heard or imagined.", "zh": "基于GPT的解码器还原了听到或想象的故事大意。" }
+          ],
           "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Takagi_High-Resolution_Image_Reconstruction_With_Latent_Diffusion_Models_From_Human_Brain_CVPR_2023_paper.html",
           "links": [
             {
@@ -3154,6 +3625,11 @@
             "en": "“Four ethical priorities for neurotechnologies and AI”: privacy and consent, agency and identity, augmentation, and bias. The paper behind the neurorights movement and Chile’s 2021 constitutional amendment.",
             "zh": "《神经技术与 AI 的四项伦理优先事项》：隐私与知情同意、能动性与身份认同、能力增强，以及偏见。这篇文章是神经权利运动的起点，也推动了智利 2021 年的修宪。"
           },
+          "key_points": [
+            { "en": "The paper sets four ethical priorities for neurotechnologies and AI.", "zh": "该文提出神经技术与AI的四项伦理优先事项。" },
+            { "en": "They are privacy and consent, agency and identity, augmentation, and bias.", "zh": "四项为隐私与知情同意、能动性与身份、增强和偏见。" },
+            { "en": "The paper is behind the neurorights movement and Chile's 2021 amendment.", "zh": "它是神经权利运动的起点，并推动了智利2021年修宪。" }
+          ],
           "url": "https://www.nature.com/articles/551159a",
           "links": [
             {
@@ -3182,6 +3658,11 @@
             "en": "Argues for a right to mental privacy, freedom of thought and self-determination as neurotech becomes the “universal controller” for our devices. Farahany later co-chaired the expert group that drafted UNESCO’s 2025 neurotechnology standard.",
             "zh": "随着神经技术成为我们操控各种设备的「通用控制器」，作者主张确立精神隐私、思想自由和自我决定的权利。Farahany 后来担任联合国教科文组织专家组联合主席，主持起草了 2025 年的神经技术伦理标准。"
           },
+          "key_points": [
+            { "en": "It argues for mental privacy, freedom of thought and self-determination.", "zh": "作者主张精神隐私、思想自由和自我决定权。" },
+            { "en": "Neurotechnology is becoming the universal controller for our devices.", "zh": "神经技术正成为我们操控各种设备的通用控制器。" },
+            { "en": "Farahany co-chaired drafting of UNESCO's 2025 neurotechnology standard.", "zh": "Farahany共同主持起草UNESCO2025神经技术标准" }
+          ],
           "url": "https://us.macmillan.com/books/9781250272959/thebattleforyourbrain"
         },
         {
@@ -3200,6 +3681,11 @@
             "en": "The classic argument that a tool reliably coupled to a person, such as a notebook, can count as part of their mind. BCIs and AI models make the question of where a mind ends far less hypothetical.",
             "zh": "这是一个经典论证：一件与人稳定耦合的工具，比如笔记本，可以算作心智的一部分。脑机接口和 AI 模型让「心智的边界在哪里」不再只是思想实验。"
           },
+          "key_points": [
+            { "en": "A tool reliably coupled to a person can count as part of that person's mind.", "zh": "与人稳定耦合的工具可以算作此人心智的一部分。" },
+            { "en": "A notebook is the classic example of such a tool.", "zh": "笔记本就是这类工具的经典例子。" },
+            { "en": "BCIs and AI models make where a mind ends far less hypothetical.", "zh": "脑机接口与AI模型使心智边界不再只是思想实验。" }
+          ],
           "url": "https://doi.org/10.1093/analys/58.1.7"
         }
       ]
@@ -3227,6 +3713,11 @@
             "en": "SCMP reports that Chinese researchers built ‘gradient’ electrodes, neither uniformly soft nor rigid, and fitted them to a commercial EEG cap. The cap ran for 14 hours at rest, gave eight hours of stable recording while the wearer went about daily activities, and kept visual ‘mind-typing’ accuracy above 94%. The point is wearability: non-invasive BCIs that stay usable outside the lab, a precondition for everyday neural interfaces.",
             "zh": "据《南华早报》报道，中国研究团队做出一种「梯度」电极，既不是全软也不是全硬，装进商用脑电（EEG）帽后，静息状态下连续工作 14 小时；佩戴者日常活动时也能稳定记录 8 小时；视觉「意念打字」准确率保持在 94% 以上。重点是可穿戴性：非侵入式脑机接口要走出实验室、进入日常，这是前提。"
           },
+          "key_points": [
+            { "en": "SCMP says Chinese researchers made gradient electrodes, neither fully soft nor rigid.", "zh": "南华早报称中国研究者做出既非全软也非全硬的梯度电极。" },
+            { "en": "On a commercial EEG cap they recorded 14 hours at rest and 8 stable daily hours.", "zh": "装入商用脑电帽后，静息记录14小时，日常稳定记录8小时。" },
+            { "en": "Visual mind-typing stayed above 94%, with the point being use outside the lab.", "zh": "视觉意念打字保持在94%以上，重点是能在实验室外使用。" }
+          ],
           "url": "https://www.scmp.com/news/china/science/article/3373477/chinas-comfortable-brain-reading-device-achieves-94-mind-typing-accuracy-day-long-use"
         },
         {
@@ -3246,6 +3737,11 @@
             "en": "Weger, Herff and colleagues (Maastricht University) used intracranial EEG in epilepsy patients to run a motor BCI. When the interface failed to follow the user’s intention, high-frequency activity appeared in the anterior insula and spread to prefrontal cortex. Frontoinsular sites mainly encoded the error, which makes them a target for real-time self-correction. The interface reads cognitive signals about its own mistakes, not only motor commands.",
             "zh": "马斯特里赫特大学 Weger、Herff 等人用癫痫患者的颅内脑电（iEEG）运行运动型脑机接口。当界面没有跟上使用者的意图时，前脑岛出现高频活动，并传到前额叶。额叶–脑岛位点主要编码「出错」信号，可用于实时自我纠错。也就是说，接口读取的不只是运动指令，还有大脑对「机器出错」的认知反应。"
           },
+          "key_points": [
+            { "en": "Weger and Herff used epilepsy patients' intracranial EEG to run a motor BCI.", "zh": "Weger与Herff用癫痫患者颅内脑电运行运动脑机接口。" },
+            { "en": "When intention was missed, high-frequency anterior insula activity reached prefrontal cortex.", "zh": "当没跟上意图时，前脑岛的高频活动传到了前额叶。" },
+            { "en": "It reads error signals, not only motor commands, enabling real-time self-correction.", "zh": "接口不止读取运动指令，还读取出错信号，可实时自我纠错。" }
+          ],
           "url": "https://www.nature.com/articles/s41467-026-78804-2"
         },
         {
@@ -3265,6 +3761,11 @@
             "en": "The Biological Computing Co. grows neurons in its San Francisco lab, measures how they process information and turns the findings into software. Its first product, mischief 1, is an image-to-video model built on open-weight Wan 2.2. TBC says it matches the base model’s quality at 5× the speed for half a cent per second, on fal and OpenRouter. The neurons stay in the lab; the model runs on ordinary GPUs. Biological computing feeding straight into generative media is a case of neural media in K’s wider sense.",
             "zh": "The Biological Computing Co.（TBC）在旧金山实验室培养活体神经元，测量它们处理信息的方式，再把发现写成软件。首个产品 mischief 1 是基于开源权重 Wan 2.2 的图生视频模型。公司称画质与原模型相当，速度快 5 倍，每秒视频只要半美分，已在 fal 和 OpenRouter 上线。神经元留在实验室里，模型跑在普通 GPU 上。生物计算直接进入生成式媒体，正是 K 广义「神经媒体」（含生物计算基质）的一个例子。"
           },
+          "key_points": [
+            { "en": "TBC grows and measures San Francisco neurons, then runs the model on ordinary GPUs.", "zh": "TBC在旧金山培养并测量神经元，模型则跑在普通GPU上。" },
+            { "en": "mischief 1 is an image-to-video model built on open-weight Wan 2.2.", "zh": "mischief 1是基于开源权重Wan 2.2的图生视频模型。" },
+            { "en": "It matches the base quality at five times the speed for half a cent a second.", "zh": "其画质与原模型相当，速度达5倍，每秒成本半美分。" }
+          ],
           "url": "https://www.tbc.co/press-releases/neuron-derived-ai-video-model"
         },
         {
@@ -3284,6 +3785,11 @@
             "en": "Neuralink engineers spent 72 hours at the home of a VOICE speech-BCI participant. They built neural voice-activity detection, so decoding starts and stops on its own, plus live neural visualisations, iOS keyboard dictation, a faster editing flow, lock-screen start and BCI speech injected into phone calls. They also prototyped a computer-use agent: thinking “Hey Neuralink” plus a task launches a Grok agent that does it. Company blog, not peer-reviewed.",
             "zh": "Neuralink 工程师在一位 VOICE 言语脑机接口受试者家里待了 72 小时。他们做出了神经语音活动检测（解码自动开始和停止）、实时神经信号可视化、iOS 键盘口述、更快的纠错流程、锁屏直接开讲，以及把脑机接口生成的语音直接送进电话通话。他们还做了一个电脑操作智能体原型：在心里说「Hey Neuralink」再加一个任务，就能启动 Grok 智能体自动完成。来源为公司博客，未经同行评审。"
           },
+          "key_points": [
+            { "en": "They spent 72 hours at a VOICE participant's home; the company blog is not peer-reviewed.", "zh": "他们在VOICE受试者家待了72小时，公司博客未经同行评审。" },
+            { "en": "They added auto decoding, visuals, dictation, faster correction, lock-screen speech and calls.", "zh": "他们加入自动解码、可视化、口述、更快纠错、锁屏讲话和通话。" },
+            { "en": "Thinking Hey Neuralink plus a task launches a Grok computer-use agent.", "zh": "心里说Hey Neuralink加任务即启动Grok操作智能体" }
+          ],
           "url": "https://neuralink.com/updates/72-hour-voice-hackathon/"
         },
         {
@@ -3303,6 +3809,11 @@
             "en": "At the 2026 NEALS meeting (presented by Dr Nader Pouratian), Neuralink said one ALS participant in its VOICE speech-BCI study reached 75 words per minute with a 5.8% word-error rate on a 125k-word vocabulary in week one—company-reported, not peer-reviewed.",
             "zh": "在 2026 年 NEALS 年会上（由 Nader Pouratian 医生报告），Neuralink 称其 VOICE 言语脑机接口试验中一名 ALS 受试者在植入后第一周达到每分钟 75 词、在 12.5 万词表上词错误率 5.8%——来自公司披露，尚未同行评审。"
           },
+          "key_points": [
+            { "en": "Pouratian reported this result at the 2026 NEALS meeting.", "zh": "Pouratian在2026年NEALS年会上报告此结果。" },
+            { "en": "One ALS participant reached 75 words per minute in the first week after implant.", "zh": "一名ALS受试者在植入后第一周达到每分钟75个词。" },
+            { "en": "Word error was 5.8% on a 125k-word list; company-reported and not peer-reviewed.", "zh": "12.5万词表上词错误率5.8%，属公司披露且未经同行评审。" }
+          ],
           "url": "https://insidebci.com/news/2026-10-29-neuralink-voice-speech-75-words-per-minute-word-error-rate-als/"
         },
         {
@@ -3322,6 +3833,11 @@
             "en": "Manifesto on BCI and AI alignment; public launch on X on 6 Oct; K responds “BCI x AI = neural media” on 7 Oct; latest revision v1.3 on 23 Oct.",
             "zh": "关于脑机接口与 AI 对齐的宣言；10 月 6 日在 X 上正式发布；K 于 10 月 7 日回应「BCI x AI = neural media」；最新修订版 v1.3 发布于 10 月 23 日。"
           },
+          "key_points": [
+            { "en": "Phase Lock is a manifesto on BCI and AI alignment.", "zh": "《Phase Lock》是一份关于脑机接口与AI对齐的宣言。" },
+            { "en": "It was launched publicly on X on 6 October.", "zh": "它于10月6日在X上正式发布。" },
+            { "en": "On 7 Oct K's line was BCI x AI = neural media; v1.3 is dated 23 Oct.", "zh": "10月7日K称BCI x AI为神经媒体，v1.3于10月23日" }
+          ],
           "url": "https://phaselock.satpugnet.com/"
         },
         {
@@ -3341,6 +3857,11 @@
             "en": "ECoG implants and machine-learning decoders let people with paralysis talk and gesture at once through a full-body avatar (Nature Neuroscience).",
             "zh": "皮层电极与机器学习解码器让瘫痪患者通过全身虚拟化身同时说话和做手势（《自然·神经科学》）。"
           },
+          "key_points": [
+            { "en": "ECoG implants and machine-learning decoders drive a full-body avatar.", "zh": "皮层电极与机器学习解码器驱动全身虚拟化身。" },
+            { "en": "People with paralysis can talk and gesture at the same time.", "zh": "瘫痪患者可以同时说话并且做手势。" },
+            { "en": "The study was published in Nature Neuroscience.", "zh": "该研究发表于《自然·神经科学》。" }
+          ],
           "url": "https://www.nature.com/articles/s41593-026-02446-2"
         },
         {
@@ -3360,6 +3881,11 @@
             "en": "Meta AI decodes typed sentences from MEG with a 29% average character error rate, no surgery (Nature Neuroscience).",
             "zh": "Meta AI 从脑磁图信号中解码打字内容，平均字符错误率 29%，无需手术（《自然·神经科学》）。"
           },
+          "key_points": [
+            { "en": "Meta AI decodes typed sentences from MEG, and no surgery is required.", "zh": "Meta AI从脑磁图解码打出的句子，且不需要手术。" },
+            { "en": "The average character error rate is 29%.", "zh": "平均字符错误率是29%。" },
+            { "en": "The paper appeared in Nature Neuroscience.", "zh": "论文发表在《自然·神经科学》。" }
+          ],
           "url": "https://www.nature.com/articles/s41593-026-02303-2"
         },
         {
@@ -3379,6 +3905,10 @@
             "en": "Non-invasive, ultrasound- and molecule-based BCI; OpenAI to collaborate on scientific foundation models.",
             "zh": "主攻基于超声波和分子的非侵入式脑机接口；OpenAI 将合作开发科学基础模型。"
           },
+          "key_points": [
+            { "en": "Merge Labs is developing a non-invasive BCI based on ultrasound and molecules.", "zh": "Merge Labs在研发基于超声波和分子的非侵入式脑机接口。" },
+            { "en": "OpenAI will collaborate with it on scientific foundation models.", "zh": "OpenAI将与其合作开发科学基础模型。" }
+          ],
           "url": "https://techcrunch.com/2026/01/15/openai-invests-in-sam-altmans-brain-computer-interface-startup-merge-labs/"
         },
         {
@@ -3398,6 +3928,11 @@
             "en": "Recommendation on the Ethics of Neurotechnology; mental privacy, consent and limits on workplace monitoring; in force 12 Nov.",
             "zh": "《神经技术伦理建议书》，涵盖精神隐私、知情同意和对职场监控的限制；11 月 12 日生效。"
           },
+          "key_points": [
+            { "en": "UNESCO adopted the Recommendation on the Ethics of Neurotechnology.", "zh": "UNESCO通过了《神经技术伦理建议书》。" },
+            { "en": "It covers mental privacy, consent and limits on workplace monitoring.", "zh": "它涵盖精神隐私、知情同意和对职场监控的限制。" },
+            { "en": "The recommendation comes into force on 12 November.", "zh": "该建议书于11月12日生效。" }
+          ],
           "url": "https://www.unesco.org/en/articles/ethics-neurotechnology-unesco-adopts-first-global-standard-cutting-edge-technology"
         },
         {
@@ -3417,6 +3952,10 @@
             "en": "NTT’s Tomoyasu Horikawa uses a language model to describe what people saw or recalled (Science Advances).",
             "zh": "NTT 的堀川友慈用语言模型描述受试者看到或回忆起的画面（《科学进展》）。"
           },
+          "key_points": [
+            { "en": "NTT's Tomoyasu Horikawa uses a language model to describe what subjects saw or recalled.", "zh": "NTT的堀川友慈用语言模型描述受试者看到或回忆的画面。" },
+            { "en": "The research was published in Science Advances.", "zh": "这项研究发表于《科学进展》。" }
+          ],
           "url": "https://www.nature.com/articles/d41586-025-03624-1"
         },
         {
@@ -3436,6 +3975,11 @@
             "en": "Stanford study in four people with paralysis; raises new mental-privacy questions (Cell).",
             "zh": "斯坦福大学针对四名瘫痪患者的研究，引出新的精神隐私问题（《细胞》）。"
           },
+          "key_points": [
+            { "en": "The Stanford study included four people with paralysis.", "zh": "斯坦福大学的这项研究针对四名瘫痪患者。" },
+            { "en": "The study raises new questions about mental privacy.", "zh": "该研究引出了新的精神隐私问题。" },
+            { "en": "It was published in Cell.", "zh": "论文发表在《细胞》上。" }
+          ],
           "url": "https://doi.org/10.1016/j.cell.2025.06.015"
         },
         {
@@ -3455,6 +3999,11 @@
             "en": "Connexus implanted, recorded and removed intact in under 20 minutes during epilepsy surgery at University of Michigan Health (procedure on 14 May).",
             "zh": "在密歇根大学医疗中心的一台癫痫手术中，Connexus 被植入、完成记录并完整取出，全程不到 20 分钟（手术于 5 月 14 日进行）。"
           },
+          "key_points": [
+            { "en": "Connexus was implanted, recorded and removed intact in under 20 minutes.", "zh": "Connexus被植入、记录并完整取出，用时不到20分钟。" },
+            { "en": "This was done during epilepsy surgery at University of Michigan Health.", "zh": "此事发生在密歇根大学医疗中心的癫痫手术中。" },
+            { "en": "The procedure was performed on 14 May.", "zh": "该手术于5月14日进行。" }
+          ],
           "url": "https://paradromics.com/news/paradromics-completes-first-in-human-recording-with-the-connexus-brain-computer-interface/"
         },
         {
@@ -3474,6 +4023,11 @@
             "en": "Layer 7 cortical interface, 1,024 electrodes, cleared for up to 30 days. “Neural decoding algorithms, like all AI-driven products, rely on vast amounts of data.”",
             "zh": "Layer 7 皮层接口有 1,024 个电极，获准植入最长 30 天。公司联合创始人称：「神经解码算法和所有 AI 产品一样，依赖海量数据。」"
           },
+          "key_points": [
+            { "en": "The Layer 7 cortical interface has 1,024 electrodes.", "zh": "Layer 7皮层接口有1,024个电极。" },
+            { "en": "It was cleared for up to 30 days of implantation.", "zh": "它获准植入的时间最长为30天。" },
+            { "en": "Neural decoding algorithms, like all AI products, rely on vast amounts of data.", "zh": "神经解码算法和所有AI产品一样依赖海量数据。" }
+          ],
           "url": "https://www.precisionneuro.io/articles/company-news/precision-neuroscience-receives-fda-clearance-for-high-resolution-cortical-electrode-array"
         },
         {
@@ -3493,6 +4047,10 @@
             "en": "With NVIDIA: generative pre-training directly on de-identified neural data.",
             "zh": "与英伟达合作：直接在去标识化的神经数据上进行生成式预训练。"
           },
+          "key_points": [
+            { "en": "The project is a collaboration with NVIDIA.", "zh": "该项目是与英伟达合作开展的。" },
+            { "en": "It uses generative pre-training directly on de-identified neural data.", "zh": "它直接在去标识化的神经数据上做生成式预训练。" }
+          ],
           "url": "https://www.massdevice.com/synchron-cognitive-ai-model-bci-nvidia/"
         },
         {
@@ -3512,6 +4070,10 @@
             "en": "SB 1223 signed: neural data becomes “sensitive personal information” under the state privacy law, from 1 Jan 2025.",
             "zh": "州长签署 SB 1223 法案：自 2025 年 1 月 1 日起，神经数据被纳入州隐私法中的「敏感个人信息」。"
           },
+          "key_points": [
+            { "en": "The governor signed bill SB 1223.", "zh": "州长签署了SB 1223法案。" },
+            { "en": "From 1 January 2025, neural data is sensitive personal information under state privacy law.", "zh": "自2025年1月1日起，神经数据在州隐私法中属敏感个人信息。" }
+          ],
           "url": "https://www.gov.ca.gov/2024/09/28/governor-newsom-issues-legislative-update-9-28-24/"
         },
         {
@@ -3531,6 +4093,11 @@
             "en": "UC Davis speech implant for Casey Harrell reached 97.5% accuracy over months of daily use (NEJM).",
             "zh": "加州大学戴维斯分校为 Casey Harrell 植入的语音脑机接口，在数月的日常使用中准确率达到 97.5%（《新英格兰医学杂志》）。"
           },
+          "key_points": [
+            { "en": "UC Davis implanted a speech BCI in Casey Harrell.", "zh": "UC Davis为Casey Harrell植入了语音脑机接口。" },
+            { "en": "It reached 97.5% accuracy across months of daily use.", "zh": "在数月的日常使用中，准确率达到97.5%。" },
+            { "en": "The report was published in the New England Journal of Medicine.", "zh": "该报告发表于《新英格兰医学杂志》。" }
+          ],
           "url": "https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08"
         },
         {
@@ -3550,6 +4117,10 @@
             "en": "A large language model suggests replies that implant users select with brain signals.",
             "zh": "大语言模型生成回复建议，植入者用脑信号选择。"
           },
+          "key_points": [
+            { "en": "A large language model suggests replies for people with implants.", "zh": "大语言模型为植入者提供回复建议。" },
+            { "en": "The users choose a reply using their brain signals.", "zh": "使用者用自己的脑信号来选择回复。" }
+          ],
           "url": "https://www.cnbc.com/2024/07/16/neuralink-rival-synchron-is-using-openai-models-to-power-chat-feature.html"
         },
         {
@@ -3569,6 +4140,10 @@
             "en": "HB24-1058 adds neural data to “sensitive data” in the Colorado Privacy Act; effective 7 Aug 2024.",
             "zh": "HB24-1058 法案把神经数据纳入《科罗拉多隐私法》中的「敏感数据」，2024 年 8 月 7 日生效。"
           },
+          "key_points": [
+            { "en": "HB24-1058 adds neural data to sensitive data in the Colorado Privacy Act.", "zh": "HB24-1058把神经数据纳入科罗拉多隐私法的敏感数据。" },
+            { "en": "This change took effect on 7 August 2024.", "zh": "这一改动于2024年8月7日生效。" }
+          ],
           "url": "https://leg.colorado.gov/bills/hb24-1058"
         },
         {
@@ -3588,6 +4163,10 @@
             "en": "Elon Musk announces the first patient; he is later identified as Noland Arbaugh.",
             "zh": "马斯克宣布首位患者接受植入，该患者后来公开身份为 Noland Arbaugh。"
           },
+          "key_points": [
+            { "en": "Elon Musk announced that the first patient had received the implant.", "zh": "马斯克宣布首位患者已经接受了植入。" },
+            { "en": "The patient was later publicly identified as Noland Arbaugh.", "zh": "该患者后来公开身份为Noland Arbaugh。" }
+          ],
           "url": "https://www.npr.org/2024/01/30/1227850900/elon-musk-neuralink-implant-clinical-trial"
         },
         {
@@ -3607,6 +4186,10 @@
             "en": "Chile’s Supreme Court orders Emotiv to delete a user’s brain data, applying the 2021 constitutional amendment (Law 21.383) that protects brain activity.",
             "zh": "智利最高法院依据 2021 年保护大脑活动的修宪条款（第 21.383 号法律），责令 Emotiv 公司删除一名用户的大脑数据。"
           },
+          "key_points": [
+            { "en": "Chile's Supreme Court ordered Emotiv to delete one user's brain data.", "zh": "智利最高法院责令Emotiv删除一名用户的大脑数据。" },
+            { "en": "The order applied the 2021 amendment, Law 21.383, which protects brain activity.", "zh": "裁定适用2021年保护大脑活动的第21.383号法律。" }
+          ],
           "url": "https://derechocienciaytecnologia.uc.cl/sentencia/girardi-emotiv-inc-rol-105065-2023-corte-suprema/"
         }
       ]

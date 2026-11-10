@@ -599,3 +599,39 @@ body.lang-both .yt-row .yt-cap .t{-webkit-line-clamp:1}
   .xr-card.has-media{grid-template-columns:1fr}
   .xr-card-media{order:-1}
 }
+
+/* Collapsed entry cards. The full summary stays in the page; it is closed until Read more. */
+.fold{min-width:0}
+.fold>summary{display:flex;align-items:flex-start;gap:10px;width:100%;margin:0;padding:0;cursor:pointer;list-style:none;color:inherit;font:inherit;text-align:left;background:none;border:0}
+.fold>summary::-webkit-details-marker{display:none}
+.fold>summary::marker{content:""}
+.fold>summary:focus{outline:none}
+.fold>summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:8px}
+.fold-chev{flex:none;width:7px;height:7px;margin-top:.55em;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:rotate(-45deg);transition:transform .18s ease}
+.fold[open]>summary .fold-chev{transform:rotate(45deg);border-color:var(--accent)}
+.fold-face{flex:1;min-width:0;display:grid;gap:8px}
+.fold-face h3,.fold-face h4{margin:0}
+.fold-more{justify-self:start;display:inline-flex;align-items:center;margin-top:2px;padding:4px 10px;border:1px solid rgba(200,255,77,.35);border-radius:999px;color:var(--accent);font:600 12px/1.2 var(--sans);letter-spacing:.01em}
+.fold-more .t{display:inline}
+body.lang-both .fold-more .t.zh::before{content:" / "}
+.fold .is-open{display:none}
+.fold[open] summary .is-open{display:inline}
+.fold[open] summary .is-closed{display:none}
+.fold:not([open])>.fold-body{display:none}
+.fold[open]>.fold-body{display:grid;gap:10px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.kps{list-style:none;margin:0;padding:0;display:grid;gap:5px;width:100%}
+.kps li{position:relative;padding-left:14px;font-size:14px;line-height:1.45}
+.kps li::before{content:"";position:absolute;left:0;top:.55em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+body.lang-both .kps .t.zh{color:var(--muted);font-size:13.5px}
+.fold-face .ndate{text-align:left}
+.fold-card.has-media{display:grid;grid-template-columns:minmax(0,1fr) minmax(148px,240px);gap:8px 18px;align-items:start}
+.fold-card.has-media>.fold{grid-column:1;grid-row:1;min-width:0}
+.fold-card.has-media>.fold-media{grid-column:2;grid-row:1;min-width:0}
+.fold-media .thumb{grid-row:auto;grid-column:auto}
+.fold-media .film-cover.in-archive{max-width:none;margin:0}
+.read:hover{transform:none}
+@media (max-width:800px){
+  .fold-card.has-media{grid-template-columns:1fr}
+  .fold-card.has-media>.fold-media{grid-column:1;grid-row:1}
+  .fold-card.has-media>.fold{grid-column:1;grid-row:2}
+}

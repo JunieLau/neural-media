@@ -11,6 +11,10 @@ Pages: index.html (identical copy: Neural-Media.html) = hero, concept, timeline,
 Usage:  python3 build.py            (stdlib only)
         python3 build.py --today    (also set meta.last_updated to today's date, UTC+8)
 
+Each page's Latest list is only that page's own entries. The home page is the
+Neural Media timeline and does not embed the XR, BCI, New Models, or Felstead
+& Leung logs. Every entry needs key_points: 2 or 3 short bilingual lines.
+
 Each page inlines its CSS, JS and the part of the JSON data it needs (thumbnails
 as base64), so every page opens directly from disk with no server and no network.
 """
@@ -23,6 +27,25 @@ FLDATA = HERE / "data" / "felstead-leung.json"
 XRDATA = HERE / "data" / "xr.json"
 TZ = datetime.timezone(datetime.timedelta(hours=8))
 REQUIRED = ("id", "date", "types", "date_display", "title", "summary", "url", "source")
+
+
+def check_points(errs, points, where):
+    """2–3 short bilingual lines, taken from the entry's own summary."""
+    if not isinstance(points, list) or not (2 <= len(points) <= 3):
+        errs.append(f"{where}: key_points must list 2 or 3 {{en, zh}} lines")
+        return
+    for i, k in enumerate(points):
+        en = str((k or {}).get("en") or "").strip() if isinstance(k, dict) else ""
+        zh = str((k or {}).get("zh") or "").strip() if isinstance(k, dict) else ""
+        if not en or not zh:
+            errs.append(f"{where}: key_points[{i}] needs both en and zh")
+            continue
+        words = len(en.split())
+        zhlen = len(zh.replace(" ", ""))
+        if words > 22:
+            errs.append(f"{where}: key_points[{i}] en has {words} words; keep it to about 20")
+        if zhlen > 36:
+            errs.append(f"{where}: key_points[{i}] zh has {zhlen} characters; keep it to about 30")
 
 
 def data_uri(rel):
@@ -41,6 +64,7 @@ def validate(d):
             v = it.get(k, {})
             if not (isinstance(v, dict) and v.get("en") and v.get("zh")):
                 errs.append(f"item {it.get('id')}: '{k}' needs both en and zh")
+        check_points(errs, it.get("key_points"), f"item {it.get('id')}")
         for t in it.get("types", []):
             if t not in d["types"]:
                 errs.append(f"item {it.get('id')}: unknown type '{t}'")
@@ -70,6 +94,7 @@ def validate(d):
                 for k in ("name", "line"):
                     if not (e.get(k, {}).get("en") and e.get(k, {}).get("zh")):
                         errs.append(f"landscape entry {nm}: '{k}' needs both en and zh")
+                check_points(errs, e.get("key_points"), f"landscape entry {nm}")
                 if not str(e.get("url", "")).startswith("https://"):
                     errs.append(f"landscape entry {nm}: url must be https")
                 for m in e.get("marks", []):
@@ -104,6 +129,7 @@ def validate(d):
             nm = (e.get("name") or {}).get("en")
             for k in ("name", "source", "line"):
                 bil(e.get(k), f"theory '{nm}' {k}")
+            check_points(errs, e.get("key_points"), f"theory '{nm}'")
             https(e.get("url"), f"theory '{nm}'"); marks(e.get("marks"), f"theory '{nm}'")
             for l in e.get("links", []):
                 https(l.get("url"), f"theory '{nm}' link"); bil(l.get("label"), f"theory '{nm}' link label")
@@ -111,6 +137,7 @@ def validate(d):
             nm = (e.get("title") or {}).get("en")
             for k in ("date_display", "title", "line"):
                 bil(e.get(k), f"news '{nm}' {k}")
+            check_points(errs, e.get("key_points"), f"news '{nm}'")
             try:
                 datetime.date.fromisoformat(e.get("date", ""))
             except Exception:
@@ -168,6 +195,7 @@ def validate_nm(N, name="new-models"):
             if k not in e:
                 errs.append(f"{name} {w}: missing '{k}'")
         bil(e.get("title"), f"{w} title"); bil(e.get("summary"), f"{w} summary")
+        check_points(errs, e.get("key_points"), f"{name} {w}")
         if "date_display" in e:
             bil(e["date_display"], f"{w} date_display")
         if e.get("nm") is not None:
@@ -215,6 +243,7 @@ def validate_nm(N, name="new-models"):
             if f.get("entry") not in ids:
                 errs.append(f"{name} {w}: entry '{f.get('entry')}' not in archive")
             bil(f.get("title"), f"{w} title"); bil(f.get("summary"), f"{w} summary")
+            check_points(errs, f.get("key_points"), f"{name} {w}")
             bil(f.get("ep"), f"{w} ep"); bil(f.get("credits"), f"{w} credits")
             bil(f.get("watch"), f"{w} watch"); https(f.get("url"), w)
             if f.get("nm") is not None: bil(f["nm"], f"{w} nm")
@@ -289,6 +318,7 @@ def validate_xr(X):
                 errs.append(f"xr {w}: missing '{k}'")
         bil(e.get("title"), f"{w} title")
         bil(e.get("summary"), f"{w} summary")
+        check_points(errs, e.get("key_points"), f"xr {w}")
         bil(e.get("source"), f"{w} source")
         if "date_display" in e:
             bil(e["date_display"], f"{w} date_display")
@@ -354,7 +384,7 @@ PAGES = {  # key -> (output files, sections in <main>, data keys kept, title)
     "home": (["Neural-Media.html", "index.html"],
              '  <section class="hero wrap" id="hero"></section>\n' + "".join(
                  f'  <section class="wrap block" id="{s}"></section>\n' for s in ("concept", "updates", "video", "reading")),
-             ("meta", "types", "hero", "concept", "featured", "items", "reading", "xr_latest", "xr_tags"),
+             ("meta", "types", "hero", "concept", "featured", "items", "reading"),
              "Neural Media · 神经媒体 | K Allado-McDowell tracker"),
     "who-else": (["who-else.html"], '  <section class="wrap block page-first" id="landscape"></section>\n',
                  ("meta", "types", "landscape"),
@@ -515,7 +545,7 @@ def main():
         for i in chosen[:max_n]:
             out.append({
                 "id": i["id"], "date": i["date"], "date_display": i["date_display"],
-                "title": i["title"], "summary": i["summary"], "url": i["url"],
+                "title": i["title"], "summary": i["summary"], "key_points": i.get("key_points") or [], "url": i["url"],
                 "types": i.get("types", []),
                 "internal": i.get("internal"),
             })
@@ -531,22 +561,12 @@ def main():
     SUBNAV["xr"] = [("xr-latest", "Latest", "最新"), ("xr-taxonomy", "Taxonomy", "概念"),
                     ("xr-feature", "VR Glasses", "VR 眼镜"), ("xr-log", "Log", "动态"),
                     ("xr-beside", "Neural media", "与神经媒体")]
-    # Slim XR feed for the home page (no images): newest entries, so the sixth page surfaces there.
-    def _pick_latest(entries, asof_iso, days=30, min_n=6, max_n=8):
-        asof = datetime.date.fromisoformat(asof_iso)
-        cut = (asof - datetime.timedelta(days=days)).isoformat()
-        recent = [e for e in entries if e["date"] >= cut]
-        chosen = recent if len(recent) >= min_n else entries[:max(min_n, len(recent))]
-        return chosen[:max_n]
-    d["xr_tags"] = d["xr"]["categories"]
-    d["xr_latest"] = []
-    for e in _pick_latest(d["xr"]["entries"], d["meta"]["last_updated"]):
-        d["xr_latest"].append({
-            "id": e["id"], "date": e["date"], "date_display": e.get("date_display"),
-            "title": e["title"], "summary": e["summary"], "url": e["url"],
-            "tags": e.get("tags") or [],
-            "href": "xr.html#e-" + e["id"],
-        })
+    # Each page's Latest list is only that page's own entries. Home gets the
+    # Neural Media timeline (items) and must not embed the XR, BCI, New Models,
+    # or Felstead & Leung logs.
+    for foreign in ("xr", "xr_latest", "xr_tags", "newmodels", "felsteadleung", "bci", "landscape"):
+        if foreign in PAGES["home"][2]:
+            sys.exit(f"Data errors:\n  home page must not include {foreign}")
     validate_pages(d)
     keys = [g["key"] for g in d.get("landscape", {}).get("groups", [])]
     for a, _, _ in SUBNAV["who-else"]:
@@ -579,6 +599,8 @@ def main():
     tpl = (HERE / "src" / "template.html").read_text(encoding="utf-8")
     css = (HERE / "src" / "styles.css").read_text(encoding="utf-8")
     js = (HERE / "src" / "app.js").read_text(encoding="utf-8")
+    if "xr_latest" in js or "xr_tags" in js:
+        sys.exit("Data errors:\n  renderer must not embed another page's latest feed on the home page")
     report = []
     for key, (files, main_html, keep, title) in PAGES.items():
         sub = {k: d[k] for k in keep if k in d}

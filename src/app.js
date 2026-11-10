@@ -70,6 +70,47 @@
     var list = recent.length >= minN ? recent : sorted.slice(0, Math.max(minN, recent.length));
     return list.slice(0, maxN);
   }
+  function biTitle(o) {
+    if (!o) return "";
+    if (o.en === o.zh) return '<span class="one">' + esc(o.en) + "</span>";
+    return bi(o);
+  }
+  function kpList(points) {
+    if (!points || !points.length) return "";
+    return '<ul class="kps">' + points.map(function (k) { return "<li>" + bi(k) + "</li>"; }).join("") + "</ul>";
+  }
+  function fold(face, body) {
+    return '<details class="fold"><summary><span class="fold-chev" aria-hidden="true"></span><span class="fold-face">' +
+      face + '<span class="fold-more"><span class="is-closed">' + bi({ en: "Read more", zh: "展开全文" }) +
+      '</span><span class="is-open">' + bi({ en: "Show less", zh: "收起" }) + "</span></span></span></summary>" +
+      '<div class="fold-body">' + body + "</div></details>";
+  }
+  var FOLD_ENTRY = ".item, .nitem, .who, .idea, .xr-card, .janky-film, .read, .latest-item";
+  function foldHashId(hash) {
+    var id = String(hash || "");
+    var i = id.lastIndexOf("#");
+    if (i >= 0) id = id.slice(i + 1);
+    try { id = decodeURIComponent(id); } catch (e) {}
+    return id;
+  }
+  function openFoldEl(el) {
+    if (!el || !el.matches) return;
+    var host = el.matches("details.fold") ? el : (el.matches(FOLD_ENTRY) ? el : (el.closest ? el.closest(FOLD_ENTRY) : null));
+    if (!host) {
+      var up = el.closest && el.closest("details.fold");
+      if (up) up.open = true;
+      return;
+    }
+    if (host.matches("details.fold")) { host.open = true; return; }
+    var d = host.querySelector && host.querySelector("details.fold");
+    if (d) d.open = true;
+  }
+  function openFoldHash(hash) {
+    var id = foldHashId(hash);
+    if (!id) return;
+    openFoldEl(document.getElementById(id));
+  }
+
   function latestSection(opts) {
     // opts: { id, items:[{date,date_display,title,url,summary,href,meta,fresh}], stamp, note, empty }
     var items = opts.items || [];
@@ -82,20 +123,17 @@
     if (!items.length) return "";
     var rows = items.map(function (it) {
       var dd = it.date_display || fmtStamp(it.date);
-      var title = it.href
-        ? intl(it.href, bi(it.title), "internal latest-title")
-        : ext(it.url, bi(it.title));
       var cross = it.href && it.href.indexOf(".html") !== -1;
       var jump = it.href ? intl(it.href, bi(cross ? { en: "Open on this site →", zh: "在本站打开 →" } : { en: "On this page ↓", zh: "本页详情 ↓" }), "internal") : "";
+      var face = (it.meta ? '<div class="who-marks">' + it.meta + "</div>" : "") +
+        "<h4>" + bi(it.title) + "</h4>" + kpList(it.key_points);
+      var body = (it.summary ? '<div class="who-line nm-sum">' + bi(it.summary, "p") + "</div>" : "") +
+        '<div class="links">' + jump +
+          (it.url ? ext(it.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) : "") +
+        "</div>";
       return '<li class="latest-item' + (it.fresh ? " fresh" : "") + '">' +
-        '<div class="ndate"><time datetime="' + esc(it.date) + '">' + bi(dd) + '</time></div>' +
-        '<div class="nbody">' +
-          (it.meta ? '<div class="who-marks">' + it.meta + '</div>' : "") +
-          '<h4>' + title + '</h4>' +
-          (it.summary ? '<div class="who-line nm-sum">' + bi(it.summary, "p") + '</div>' : "") +
-          '<div class="links">' + jump +
-            (it.url ? ext(it.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) : "") +
-          '</div></div></li>';
+        '<div class="ndate"><time datetime="' + esc(it.date) + '">' + bi(dd) + "</time></div>" +
+        '<div class="nbody">' + fold(face, body) + "</div></li>";
     }).join("");
     return '<div class="land-group latest-block" id="' + esc(opts.id) + '">' +
       '<div class="sec-head latest-head"><span class="num">★</span><h2>' + bi(heading) + '</h2></div>' +
@@ -223,39 +261,17 @@
       var moreVids = vids.length > 1 ? ytRow(vids.slice(1), "in-card") : "";
       return '<li class="item' + ((Date.parse(D.meta.last_updated) - Date.parse(i.date)) / 864e5 <= 30 ? " fresh" : "") + '" id="i-' + esc(i.id) + '" data-types="' + esc(i.types.join(" ")) + '">' +
         '<div class="when"><time datetime="' + esc(i.date) + '">' + bi(i.date_display) + '</time></div>' +
-        '<article class="card' + (thumb ? " has-thumb" : "") + '">' +
-          '<div class="tags">' + tags + '</div>' +
-          '<h3>' + ext(i.url, bi(i.title)) + '</h3>' +
-          '<div class="sum">' + bi(i.summary, "p") + '</div>' +
-          '<div class="links">' + links + '</div>' + moreVids + thumb +
-        '</article></li>';
+        '<article class="card fold-card' + (thumb ? " has-media" : "") + '">' +
+          fold('<div class="tags">' + tags + "</div><h3>" + bi(i.title) + "</h3>" + kpList(i.key_points),
+            '<div class="sum">' + bi(i.summary, "p") + '</div><div class="links">' + links + "</div>" + moreVids) +
+          (thumb ? '<div class="fold-media">' + thumb + "</div>" : "") +
+        "</article></li>";
     }).join("");
-    var xrHome = "";
-    if (D.xr_latest && D.xr_latest.length) {
-      var xrLabs = D.xr_tags || {};
-      xrHome = latestSection({
-        id: "home-xr",
-        heading: { en: "XR", zh: "扩展现实" },
-        note: {
-          en: "Extended reality has its own page, refreshed about every 10 days. Tags there name a device or a capability. They are not three equal kinds of media.",
-          zh: "扩展现实单独成页，大约每 10 天更新一次。那边的标签标的是设备或能力，不是三种并列的媒介。"
-        },
-        items: D.xr_latest.map(function (e) {
-          var meta = (e.tags || []).map(function (t) {
-            return '<span class="ntag xr-' + esc(t) + '">' + bi(xrLabs[t] || { en: t, zh: t }) + '</span>';
-          }).join("");
-          return {
-            date: e.date, date_display: e.date_display, title: e.title, url: e.url, summary: e.summary,
-            href: e.href, meta: meta,
-            fresh: (Date.parse(D.meta.last_updated) - Date.parse(e.date)) / 864e5 <= 30
-          };
-        })
-      });
-    }
+    // Home Latest lists only Neural Media timeline items.
     var up = document.getElementById("updates");
     up.innerHTML =
       '<div class="sec-head"><span class="num">02</span><h2>' + bi({ en: "Latest updates", zh: "最新动态" }) + '</h2></div>' +
-      stamp + xrHome + '<div style="height:22px"></div>' +
+      stamp +
       '<div class="filters" role="group" aria-label="Filter by type">' + chips + '</div>' +
       '<div class="feed-note">' + bi(D.meta.note, "p") + '</div>' +
       '<ol class="feed">' + feed + '</ol>';
@@ -286,8 +302,10 @@
       '<div class="sec-head"><span class="num">04</span><h2>' + bi({ en: "Key essays & sources", zh: "核心文章与资料" }) + '</h2></div>' +
       '<div class="reading">' + D.reading.map(function (id) {
         var i = byId[id]; if (!i) return "";
-        return ext(i.url, '<span class="yr">' + esc(i.date.slice(0, 4)) + ' · ' + esc(D.types[i.types[0]].en.toUpperCase()) + '</span>' +
-          '<h3>' + bi(i.title) + '</h3>' + bi(i.summary, "p") + '<span class="src">' + bi(i.source) + '</span>', "read");
+        return '<article class="read">' + fold(
+          '<span class="yr">' + esc(i.date.slice(0, 4)) + " · " + esc(D.types[i.types[0]].en.toUpperCase()) + "</span><h3>" + bi(i.title) + "</h3>" + kpList(i.key_points),
+          bi(i.summary, "p") + '<div class="links">' + ext(i.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) + '</div><span class="src">' + bi(i.source) + "</span>"
+        ) + "</article>";
       }).join("") + '</div>';
 
     }
@@ -304,12 +322,11 @@
       var legend = Object.keys(L.markers).map(mk).join("");
       var groups = L.groups.map(function (g, gi) {
         var rows = g.entries.map(function (en) {
-          return '<li class="who">' +
-            '<div class="who-marks">' + en.marks.map(mk).join("") + '</div>' +
-            '<h4>' + ext(en.url, nameHtml(en.name)) + '</h4>' +
-            '<div class="who-line">' + bi(en.line, "p") + '</div>' +
-            (en.internal ? '<div class="links">' + intl(en.internal.href, bi(en.internal.label) + " →", "internal") + '</div>' : "") +
-            ytRow(ytList(en.url, en.name, en.links), "in-who") + '</li>';
+          var face = '<div class="who-marks">' + en.marks.map(mk).join("") + "</div><h4>" + biTitle(en.name) + "</h4>" + kpList(en.key_points);
+          var body = '<div class="who-line">' + bi(en.line, "p") + '</div><div class="links">' +
+            ext(en.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) +
+            (en.internal ? intl(en.internal.href, bi(en.internal.label) + " →", "internal") : "") + "</div>";
+          return '<li class="who">' + fold(face, body) + ytRow(ytList(en.url, en.name, en.links), "in-who") + "</li>";
         }).join("");
         return '<div class="land-group g-' + esc(g.key) + '" id="g-' + esc(g.key) + '">' +
           '<div class="land-head"><span class="roman">' + ["I", "II", "III"][gi] + '</span><h3>' + bi(g.title) + '</h3></div>' +
@@ -322,7 +339,7 @@
         var fresh = (Date.parse(asOf) - Date.parse(i.date)) / 864e5 <= 30;
         var meta = (i.types || []).map(function (t) { return '<span class="tag ' + esc(t) + '">' + bi((D.types && D.types[t]) || { en: t, zh: t }) + '</span>'; }).join("");
         var href = (i.internal && i.internal.href) ? i.internal.href : (i.id ? "index.html#i-" + i.id : null);
-        return { date: i.date, date_display: i.date_display, title: i.title, url: i.url, summary: i.summary, meta: meta, fresh: fresh, href: href };
+        return { date: i.date, date_display: i.date_display, title: i.title, url: i.url, summary: i.summary, key_points: i.key_points, meta: meta, fresh: fresh, href: href };
       });
       document.getElementById("landscape").innerHTML =
         '<div class="sec-head"><span class="num">05</span><h2>' + bi(L.title) + '</h2></div>' +
@@ -343,13 +360,11 @@
           (c.url ? '<div class="links">' + ext(c.url, bi({ en: "Source ↗", zh: "来源 ↗" })) + '</div>' : "") + '</article>';
       }).join("");
       var theory = B.theory.entries.map(function (e) {
-        return '<li class="idea">' +
-          '<div class="who-marks">' + e.marks.map(bm).join("") + '</div>' +
-          '<h4>' + ext(e.url, bi(e.name)) + '</h4>' +
-          '<div class="idea-src">' + bi(e.source) + '</div>' +
-          '<div class="who-line">' + bi(e.line, "p") + '</div>' +
+        var face = '<div class="who-marks">' + e.marks.map(bm).join("") + "</div><h4>" + biTitle(e.name) + "</h4>" + kpList(e.key_points);
+        var body = '<div class="idea-src">' + bi(e.source) + '</div><div class="who-line">' + bi(e.line, "p") + "</div>" +
           '<div class="links">' + ext(e.url, bi({ en: "Read ↗", zh: "阅读 ↗" })) + more(e.links) +
-          (e.internal ? intl(e.internal.href, bi(e.internal.label) + " ↑", "internal") : "") + '</div></li>';
+          (e.internal ? intl(e.internal.href, bi(e.internal.label) + " ↑", "internal") : "") + "</div>";
+        return '<li class="idea">' + fold(face, body) + ytRow(ytList(e.url, e.name, e.links)) + "</li>";
       }).join("");
       var news = B.news.entries.slice().sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
       var lastY = "";
@@ -357,13 +372,15 @@
         var y = n.date.slice(0, 4), yr = "";
         if (y !== lastY) { yr = '<li class="nyear" aria-hidden="true"><span>' + y + '</span></li>'; lastY = y; }
         return yr + '<li class="nitem">' +
-          '<div class="ndate"><time datetime="' + esc(n.date) + '">' + bi(n.date_display) + '</time></div>' +
-          '<div class="nbody"><div class="who-marks">' + n.marks.map(bm).join("") + '</div>' +
-          '<h4>' + ext(n.url, bi(n.title)) + '</h4>' + '<div class="who-line">' + bi(n.line, "p") + '</div></div></li>';
+          '<div class="ndate"><time datetime="' + esc(n.date) + '">' + bi(n.date_display) + "</time></div>" +
+          '<div class="nbody">' + fold(
+            '<div class="who-marks">' + n.marks.map(bm).join("") + "</div><h4>" + bi(n.title) + "</h4>" + kpList(n.key_points),
+            '<div class="who-line">' + bi(n.line, "p") + '</div><div class="links">' + ext(n.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) + "</div>"
+          ) + "</div></li>";
       }).join("");
       var asOfB = D.meta && D.meta.last_updated;
       var bciLatest = pickLatest(news, asOfB, 30, 6, 8).map(function (n) {
-        return { date: n.date, date_display: n.date_display, title: n.title, url: n.url, summary: n.line,
+        return { date: n.date, date_display: n.date_display, title: n.title, url: n.url, summary: n.line, key_points: n.key_points,
           meta: n.marks.map(bm).join(""), fresh: (Date.parse(asOfB) - Date.parse(n.date)) / 864e5 <= 30,
           href: "#news" };
       });
@@ -440,20 +457,24 @@
         var featBadge = e.featured ? '<a class="nm-feat-badge" href="' + esc(e.featured) + '" data-internal="">' + bi({ en: "See featured series ↑", zh: "见精选系列 ↑" }) + '</a>' : "";
         var meta = (W && e.who ? nmTag("w-" + esc(e.who), W[e.who]) : "") + nmTag("f-" + esc(e.fmt), N.formats[e.fmt]) + nmTag("a-" + esc(e.access), N.access[e.access]) + nmTag("b-" + esc(e.basis), N.basis[e.basis]) +
           (e.mins ? '<span class="ntag mins">' + esc(e.mins) + ' min</span>' : "") + (e.nm ? badge : "") + featBadge;
+        var vids = ytList(e.url, e.title, e.links);
         var coverBlock = e.cover ? filmCover(e.url, e.cover, e.fmt === "film" ? { en: "Watch ↗", zh: "观看 ↗" } : null, "in-archive") : "";
-        return yr + '<li class="nitem nm-entry' + (e.nm ? " flag" : "") + (e.cover ? " has-cover" : "") + '" id="e-' + esc(e.id) + '" data-year="' + y + '" data-fmt="' + esc(e.fmt) + '" data-who="' + esc(e.who || "") + '" data-nm="' + (e.nm ? "1" : "0") + '">' +
-          '<div class="ndate"><time datetime="' + esc(e.date) + '">' + bi(dd) + '</time></div>' +
-          '<div class="nbody"><div class="who-marks">' + meta + '</div>' +
-          '<h4>' + ext(e.url, bi(e.title)) + '</h4>' +
-          (e.people ? '<div class="nm-people">' + (/; hosts$/.test(e.people) ? bi({ en: e.people.replace(/; hosts$/, " · with the hosts"), zh: e.people.replace(/; hosts$/, " · 与主持人") }) : esc(e.people)) + '</div>' : "") +
-          coverBlock +
-          '<div class="who-line nm-sum">' + bi(e.summary, "p") + '</div>' +
-          (e.nm ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "On neural / future media", zh: "关于神经媒体 / 未来新媒体" }) + '</span>' + bi(e.nm, "p") + '</div>' : "") +
-          ytRow(ytList(e.url, e.title, e.links)) +
+        var side = coverBlock || (vids.length ? yt(vids[0].url, null, { cls: "thumb" }) : "");
+        var rest = ytRow((coverBlock ? vids : vids.slice(1)).map(function (v) { return { url: v.url, label: v.label, force: 1 }; }));
+        var people = e.people ? '<div class="nm-people">' + (/; hosts$/.test(e.people) ? bi({ en: e.people.replace(/; hosts$/, " · with the hosts"), zh: e.people.replace(/; hosts$/, " · 与主持人") }) : esc(e.people)) + "</div>" : "";
+        var face = '<div class="who-marks">' + meta + "</div><h4>" + bi(e.title) + "</h4>" + kpList(e.key_points);
+        var body = people +
+          '<div class="who-line nm-sum">' + bi(e.summary, "p") + "</div>" +
+          (e.nm ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "On neural / future media", zh: "关于神经媒体 / 未来新媒体" }) + "</span>" + bi(e.nm, "p") + "</div>" : "") +
+          rest +
           '<div class="links">' + ext(e.url, bi({ en: "Open source ↗", zh: "查看原文 ↗" })) +
             (e.links || []).map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("") +
-            (e.internal || []).map(function (l) { return intl(l.href, bi(l.label) + " →", "internal"); }).join("") + '</div>' +
-          '</div></li>';
+            (e.internal || []).map(function (l) { return intl(l.href, bi(l.label) + " →", "internal"); }).join("") + "</div>";
+        return yr + '<li class="nitem nm-entry' + (e.nm ? " flag" : "") + (e.cover ? " has-cover" : "") + '" id="e-' + esc(e.id) + '" data-year="' + y + '" data-fmt="' + esc(e.fmt) + '" data-who="' + esc(e.who || "") + '" data-nm="' + (e.nm ? "1" : "0") + '">' +
+          '<div class="ndate"><time datetime="' + esc(e.date) + '">' + bi(dd) + "</time></div>" +
+          '<div class="nbody fold-card' + (side ? " has-media" : "") + '">' + fold(face, body) +
+          (side ? '<div class="fold-media">' + side + "</div>" : "") +
+          "</div></li>";
       }).join("");
       var R = N.relation;
       var S = N.series || null;
@@ -462,20 +483,19 @@
         var films = (S.films || []).map(function (f, fi) {
           var watch = f.watch || { en: "Watch ↗", zh: "观看 ↗" };
           var ytMir = f.youtube ? yt(f.youtube, { en: "YouTube mirror", zh: "YouTube 镜像" }, { cls: "in-series" }) : "";
+          var face = '<div class="janky-ep">' + bi(f.ep) + (f.mins ? '<span class="ntag mins">' + esc(f.mins) + " min</span>" : "") +
+            (f.nm ? badge : "") + "</div><h4>" + bi(f.title) + "</h4>" + kpList(f.key_points);
+          var body = (f.credits ? '<div class="janky-credits">' + bi(f.credits) + "</div>" : "") +
+            '<div class="who-line">' + bi(f.summary, "p") + "</div>" +
+            (f.nm ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "On neural / future media", zh: "关于神经媒体 / 未来新媒体" }) + "</span>" + bi(f.nm, "p") + "</div>" : "") +
+            ytMir +
+            '<div class="links">' + ext(f.url, bi(watch)) +
+              (f.alt_url ? ext(f.alt_url, bi({ en: "Series page on DIS ↗", zh: "DIS 系列页 ↗" })) : "") +
+              intl("#e-" + f.entry, bi({ en: "Archive entry ↓", zh: "档案条目 ↓" }), "internal") +
+            "</div>";
           return '<article class="janky-film" id="janky-' + esc(f.entry) + '">' +
             filmCover(f.url, f.cover, watch, "hero") +
-            '<div class="janky-body">' +
-              '<div class="janky-ep">' + bi(f.ep) + (f.mins ? '<span class="ntag mins">' + esc(f.mins) + ' min</span>' : "") +
-                (f.nm ? badge : "") + '</div>' +
-              '<h4>' + ext(f.url, bi(f.title)) + '</h4>' +
-              (f.credits ? '<div class="janky-credits">' + bi(f.credits) + '</div>' : "") +
-              '<div class="who-line">' + bi(f.summary, "p") + '</div>' +
-              (f.nm ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "On neural / future media", zh: "关于神经媒体 / 未来新媒体" }) + '</span>' + bi(f.nm, "p") + '</div>' : "") +
-              ytMir +
-              '<div class="links">' + ext(f.url, bi(watch)) +
-                (f.alt_url ? ext(f.alt_url, bi({ en: "Series page on DIS ↗", zh: "DIS 系列页 ↗" })) : "") +
-                intl("#e-" + f.entry, bi({ en: "Archive entry ↓", zh: "档案条目 ↓" }), "internal") +
-              '</div></div></article>';
+            '<div class="janky-body">' + fold(face, body) + "</div></article>";
         }).join("");
         seriesHtml =
           '<div class="land-group janky-series" id="' + P + '-janky"><div class="land-head"><span class="roman">IV</span><h3>' + bi(S.title) + '</h3></div>' +
@@ -492,7 +512,7 @@
         var dd = e.date_display || fmtStamp(e.date);
         var meta = (W && e.who ? nmTag("w-" + esc(e.who), W[e.who]) : "") + nmTag("f-" + esc(e.fmt), N.formats[e.fmt]) +
           (e.mins ? '<span class="ntag mins">' + esc(e.mins) + ' min</span>' : "") + (e.nm ? badge : "");
-        return { date: e.date, date_display: dd, title: e.title, url: e.url, summary: e.summary, meta: meta,
+        return { date: e.date, date_display: dd, title: e.title, url: e.url, summary: e.summary, key_points: e.key_points, meta: meta,
           href: "#e-" + e.id, fresh: (Date.parse(asOfA) - Date.parse(e.date)) / 864e5 <= 30 };
       });
       var host = document.getElementById(hostId);
@@ -571,19 +591,19 @@
         var dd = e.date_display || fmtStamp(e.date);
         var playLabel = { en: "Play", zh: "播放" };
         var vid = e.youtube ? yt(e.youtube, playLabel, { cls: opt.player ? "player" : "", fallback: e.yt_poster || "" }) : "";
-        var media = xstill(e) + vid;
+        var still = xstill(e);
+        var media = still + vid;
+        var face = '<div class="ndate"><time datetime="' + esc(e.date) + '">' + bi(dd) + "</time></div>" +
+          '<div class="who-marks">' + (e.tags || []).map(xtag).join("") + "</div>" +
+          "<h4>" + bi(e.title) + "</h4>" + kpList(e.key_points);
+        var body = (e.source ? '<div class="idea-src">' + bi(e.source) + "</div>" : "") +
+          '<div class="who-line nm-sum">' + bi(e.summary, "p") + "</div>" +
+          (e.nm ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "Neural-media angle", zh: "与神经媒体相关的一面" }) + "</span>" + bi(e.nm, "p") + "</div>" : "") +
+          xlinks(e, opt.extraLinks || "");
         return '<article class="xr-card' + (media ? " has-media" : "") + '" id="' + esc(opt.anchor || ("e-" + e.id)) + '" data-tags="' + esc((e.tags || []).join(" ")) + '">' +
-          '<div class="xr-card-main">' +
-            '<div class="ndate"><time datetime="' + esc(e.date) + '">' + bi(dd) + '</time></div>' +
-            '<div class="who-marks">' + (e.tags || []).map(xtag).join("") + '</div>' +
-            '<h4>' + ext(e.url, bi(e.title)) + '</h4>' +
-            (e.source ? '<div class="idea-src">' + bi(e.source) + '</div>' : "") +
-            '<div class="who-line nm-sum">' + bi(e.summary, "p") + '</div>' +
-            (e.nm ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "Neural-media angle", zh: "与神经媒体相关的一面" }) + '</span>' + bi(e.nm, "p") + '</div>' : "") +
-            xlinks(e, opt.extraLinks || "") +
-          '</div>' +
-          (media ? '<div class="xr-card-media">' + media + '</div>' : "") +
-        '</article>';
+          '<div class="xr-card-main">' + fold(face, body) + "</div>" +
+          (media ? '<div class="xr-card-media">' + media + "</div>" : "") +
+        "</article>";
       };
       var byX = {};
       X.entries.forEach(function (e) { byX[e.id] = e; });
@@ -670,6 +690,13 @@
         if (!b) return;
         applyX(b.getAttribute("data-f"));
       });
+      host.addEventListener("click", function (ev) {
+        var a = ev.target.closest && ev.target.closest("a[href*='#e-']");
+        if (!a) return;
+        var id = (a.getAttribute("href") || "").split("#").pop();
+        var t = document.getElementById(id);
+        if (t && t.hidden) applyX("all");
+      });
     }
 
     document.getElementById("foot").innerHTML =
@@ -747,5 +774,53 @@
   navToCur(); window.addEventListener("load", navToCur);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(navToCur);
 
-  if (location.hash) { var tgt = document.getElementById(location.hash.slice(1)); if (tgt) setTimeout(function () { tgt.scrollIntoView(); spy(); }, 0); }
+  document.addEventListener("keydown", function (ev) {
+    if (ev.key !== "Enter" || ev.altKey || ev.ctrlKey || ev.metaKey || ev.shiftKey) return;
+    var s = ev.target && ev.target.closest && ev.target.closest(".fold > summary");
+    if (!s) return;
+    if (ev.target.closest("a, button, input, textarea, select")) return;
+    ev.preventDefault();
+    s.parentNode.open = !s.parentNode.open;
+  });
+  document.addEventListener("click", function (ev) {
+    var a = ev.target.closest && ev.target.closest("summary a");
+    if (!a) return;
+    ev.preventDefault();
+    ev.stopPropagation();
+    if (a.getAttribute("target") === "_blank") { window.open(a.href, "_blank", "noopener"); return; }
+    var href = a.getAttribute("href") || "";
+    var hashAt = href.lastIndexOf("#");
+    var before = hashAt >= 0 ? href.slice(0, hashAt) : href;
+    var hash = hashAt >= 0 ? href.slice(hashAt) : "";
+    var dest = before.split("?")[0].split("/").pop();
+    var cur = location.pathname.split("/").pop() || "index.html";
+    if (hash && (!dest || dest === cur)) {
+      openFoldHash(hash);
+      if (location.hash === hash) {
+        var t = document.getElementById(foldHashId(hash));
+        if (t) t.scrollIntoView();
+      } else location.hash = hash;
+      return;
+    }
+    location.href = a.href;
+  }, true);
+  document.addEventListener("click", function (ev) {
+    var a = ev.target.closest && ev.target.closest("a[href]");
+    if (!a || (a.closest && a.closest("summary"))) return;
+    var href = a.getAttribute("href") || "";
+    var hashAt = href.lastIndexOf("#");
+    if (hashAt < 0) return;
+    var before = href.slice(0, hashAt);
+    if (/^https?:/i.test(before)) return;
+    var dest = before.split("?")[0].split("/").pop();
+    var cur = location.pathname.split("/").pop() || "index.html";
+    if (dest && dest !== cur) return;
+    openFoldHash(href.slice(hashAt));
+  });
+  openFoldHash(location.hash);
+  if (location.hash) {
+    var tgt0 = document.getElementById(foldHashId(location.hash));
+    if (tgt0) setTimeout(function () { tgt0.scrollIntoView(); spy(); }, 0);
+  }
+  window.addEventListener("hashchange", function () { openFoldHash(location.hash); });
 })();
