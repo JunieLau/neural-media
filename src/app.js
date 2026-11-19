@@ -708,15 +708,6 @@
         var m = dt.getUTCMonth() + 1, day = dt.getUTCDate();
         return dt.getUTCFullYear() + "-" + (m < 10 ? "0" : "") + m + "-" + (day < 10 ? "0" : "") + day;
       };
-      var dateRange = function (start, end) {
-        if (!end || end === start) return fmtStamp(start);
-        var a = fmtStamp(start), b = fmtStamp(end);
-        var sa = start.split("-"), sb = end.split("-");
-        if (sa[0] === sb[0] && sa[1] === sb[1]) {
-          return { en: (+sa[2]) + "–" + b.en, zh: sa[0] + " 年 " + (+sa[1]) + " 月 " + (+sa[2]) + "–" + (+sb[2]) + " 日" };
-        }
-        return { en: a.en + " – " + b.en, zh: a.zh + " – " + b.zh };
-      };
       var rank = { ongoing: 0, "open-call": 1, upcoming: 2 };
       var sorted = (E.entries || []).slice().sort(function (a, b) {
         var d = (rank[a.status] == null ? 9 : rank[a.status]) - (rank[b.status] == null ? 9 : rank[b.status]);
@@ -727,36 +718,35 @@
       var evCard = function (e, opt) {
         opt = opt || {};
         var fmt = (E.formats && E.formats[e.format]) || { en: e.format_en, zh: e.format_zh };
-        var stLabel = (E.statuses && E.statuses[e.status]) || { en: e.status, zh: e.status };
         var media;
         if (e.image && e.image.file) {
           var alt = e.image.alt ? (e.image.alt.en + " / " + e.image.alt.zh) : "";
-          media = '<figure class="ev-still' + (e.image.kind === "photo" ? "" : " is-logo") + '"><img loading="lazy" decoding="async" alt="' + esc(alt) + '" src="' + esc(e.image.file) + '">' +
-            (e.image.credit ? '<figcaption class="ev-credit">' + bi(e.image.credit) + "</figcaption>" : "") + "</figure>";
+          media = '<figure class="ev-still' + (e.image.kind === "photo" ? "" : " is-logo") + '"><img loading="lazy" decoding="async" alt="' + esc(alt) + '" src="' + esc(e.image.file) + '"></figure>';
         } else {
-          media = '<div class="ev-typo"><div><span class="ev-year">' + esc((e.start || "").slice(0, 4)) + '</span><span class="ev-typo-note">' +
-            bi({ en: "No official still", zh: "未公布官方图片" }) + "</span></div></div>";
+          media = '<div class="ev-typo"><span class="ev-year">' + esc((e.start || "").slice(0, 4)) + "</span></div>";
         }
-        var when = '<div class="ev-when"><p>' + bi(dateRange(e.start, e.end)) +
-          '</p><p><span class="ev-k">UTC+8</span> ' + bi(e.display_times) + '</p><p><span class="ev-k">' +
-          bi({ en: "Timezone", zh: "时区" }) + "</span> " + bi(e.source_timezone) + "</p></div>";
-        var face = '<div class="ev-badges"><span class="ev-format">' + bi(fmt) + '</span><span class="ev-status">' + bi(stLabel) + "</span></div>" +
+        var face = '<div class="ev-badges"><span class="ev-format">' + bi(fmt) + "</span></div>" +
           "<h3>" + bi(e.title) + "</h3>" +
-          '<dl class="ev-facts"><div><dt>' + bi({ en: "Date", zh: "日期" }) + "</dt><dd>" + when + "</dd></div>" +
-          "<div><dt>" + bi({ en: "Place", zh: "地点" }) + "</dt><dd>" + bi(e.location) + "</dd></div>" +
-          "<div><dt>" + bi({ en: "Fee", zh: "费用" }) + "</dt><dd>" + bi(e.fee) + "</dd></div></dl>" +
-          kpList(e.key_points);
+          '<p class="ev-when">' + bi(e.face_when) + "</p>" +
+          '<p class="ev-meta">' + bi(e.face_place) + "</p>" +
+          '<p class="ev-fee">' + bi(e.face_fee) + "</p>" +
+          '<div class="ev-blurb">' + bi(e.blurb, "p") + "</div>";
         var links = e.links || [];
         var primary = null;
         links.forEach(function (l) { if (!primary && (l.role === "register" || l.role === "apply")) primary = l; });
         if (!primary) links.forEach(function (l) { if (!primary && l.role === "official") primary = l; });
         var buttons = primary ? ext(primary.url, bi(primary.label) + ' <span aria-hidden="true">↗</span>', "btn primary") : "";
         var more = links.filter(function (l) { return l !== primary; }).map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("");
-        var body = '<div class="ev-extra"><span class="ev-k">' + bi({ en: "Published time", zh: "公布的时间" }) + "</span>" + bi(e.times_published, "p") + "</div>" +
+        var credit = (e.image && e.image.credit) ? '<figcaption class="ev-credit">' + bi(e.image.credit) + "</figcaption>" : "";
+        var body = kpList(e.key_points) +
           '<div class="who-line nm-sum">' + bi(e.summary, "p") + "</div>" +
+          '<div class="ev-extra"><span class="ev-k">' + bi({ en: "Time", zh: "时间" }) + "</span>" + bi(e.times_published, "p") + bi(e.display_times, "p") + bi(e.source_timezone, "p") + "</div>" +
           (e.dates_note ? '<div class="ev-extra"><span class="ev-k">' + bi({ en: "Also noted", zh: "补充日期" }) + "</span>" + bi(e.dates_note, "p") + "</div>" : "") +
+          '<div class="ev-extra"><span class="ev-k">' + bi({ en: "Place", zh: "地点" }) + "</span>" + bi(e.location, "p") + "</div>" +
+          '<div class="ev-extra"><span class="ev-k">' + bi({ en: "Fee", zh: "费用" }) + "</span>" + bi(e.fee, "p") + "</div>" +
           (e.format_notes ? '<div class="ev-extra"><span class="ev-k">' + bi({ en: "Format", zh: "参与方式" }) + "</span>" + bi(e.format_notes, "p") + "</div>" : "") +
           (e.curator_notes ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "Curator note", zh: "策展附注" }) + "</span>" + bi(e.curator_notes, "p") + "</div>" : "") +
+          credit +
           '<div class="links">' + buttons + more + (opt.extra || "") + "</div>";
         return '<article class="ev-card" id="' + esc(opt.anchor || ("e-" + e.id)) + '" data-status="' + esc(e.status) + '" data-format="' + esc(e.format) + '">' +
           media + '<div class="ev-main">' + fold(face, body) + "</div></article>";

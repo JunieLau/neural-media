@@ -137,6 +137,22 @@
           "zh": "IDFA 官方影节网站（DocLab 照片，文件名 RC20251117-IDFA-Doclab-0044）。"
         },
         "source_url": "https://optimise2.assets-servd.host/idfa-cms/production/uploads/Photos/informationPage/RC20251117-IDFA-Doclab-0044.jpg?w=1200&h=900&auto=compress%2Cformat&fit=crop&dm=1780057849&s=c6c134ddbcb34958c65a8d47b64f5df5"
+      },
+      "face_when": {
+        "en": "13–21 Nov 11:30–20:30, 22 Nov to 18:00 CET · 18:30–04:30, 22nd to 01:00 Shanghai",
+        "zh": "11月13–21日 11:30–20:30、22日到 18:00 CET · 18:30–次日 04:30，22日到 01:00 上海"
+      },
+      "face_place": {
+        "en": "Amsterdam",
+        "zh": "阿姆斯特丹"
+      },
+      "face_fee": {
+        "en": "Exhibition free",
+        "zh": "主展免费"
+      },
+      "blurb": {
+        "en": "DocLab’s twentieth edition, Shared Realities, presents interactive art, VR, games and performances across Amsterdam through 22 November. The de Brakke Grond exhibition is free if you reserve.",
+        "zh": "DocLab 第二十届「共享现实」在阿姆斯特丹呈现互动艺术、VR、游戏与表演，持续至 11 月 22 日。de Brakke Grond 展览免费，但须预约。"
       }
     },
     {
@@ -263,6 +279,22 @@
           "zh": "NewImages Festival 官网（公开征集页主图）。"
         },
         "source_url": "https://images.prismic.io/newimages-website/Y5_CmdI6NcewUviT_DSC09391.JPG?auto=format,compress&w=2400"
+      },
+      "face_when": {
+        "en": "4 Sep–22 Dec 2026",
+        "zh": "9月4日–12月22日"
+      },
+      "face_place": {
+        "en": "Paris",
+        "zh": "巴黎"
+      },
+      "face_fee": {
+        "en": "from 50 EUR",
+        "zh": "50 欧元起"
+      },
+      "blurb": {
+        "en": "NewImages is open for 2027 submissions until 22 December 2026. The XR Development Market is for projects still in development, with four days of one-to-one meetings in Paris.",
+        "zh": "NewImages 正在征集 2027 年项目，截止 12 月 22 日。XR 开发市场面向仍在开发的作品，入选后在巴黎有四天一对一会谈。"
       }
     },
     {
@@ -360,6 +392,22 @@
           "zh": "Metaverse Standards Forum（官方活动横幅）。"
         },
         "source_url": "https://metaverse-standards.org/wp-content/uploads/Volumetric-Media-Town-Hall-26-Banner.webp"
+      },
+      "face_when": {
+        "en": "24 Nov 2026, 07:00–09:00 PST · 24日 23:00–25日 01:00 上海",
+        "zh": "11月24日 07:00–09:00 PST · 24日 23:00–25日 01:00 上海"
+      },
+      "face_place": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "face_fee": {
+        "en": "Not listed",
+        "zh": "未公布"
+      },
+      "blurb": {
+        "en": "An online town hall on volumetric media and 4DGS. Gracia AI’s Georgii Vysotskii talks about 4DGS streaming and WebXR rendering; it is a session here, not a separate Gracia event.",
+        "zh": "关于体积影像与 4DGS 的线上市政厅。Gracia AI 的 Georgii Vysotskii 谈 4DGS 流媒体与 WebXR 渲染；这是其中一场，不是 Gracia 的单独活动。"
       }
     },
     {
@@ -460,6 +508,22 @@
           "zh": "吉隆坡会议中心，用于 SIGGRAPH Asia 2026 官方观众 FAQ（该页图片署名：Kuala Lumpur Convention Centre）。"
         },
         "source_url": "https://asia.siggraph.org/2026/wp-content/uploads/2026/06/Kuala-Lumpur-Convention-Centre.jpg"
+      },
+      "face_when": {
+        "en": "1–4 Dec 2026 · Shanghai same dates",
+        "zh": "12月1–4日 · 上海同日"
+      },
+      "face_place": {
+        "en": "Kuala Lumpur",
+        "zh": "吉隆坡"
+      },
+      "face_fee": {
+        "en": "from $25",
+        "zh": "25 美元起"
+      },
+      "blurb": {
+        "en": "The 19th SIGGRAPH Asia, the first in Malaysia, with papers, Emerging Technologies, an XR track and Real-Time Live!. The 2026 edition is in person only.",
+        "zh": "第 19 届 SIGGRAPH Asia，首次在马来西亚举办，含论文、Emerging Technologies、XR 单元与 Real-Time Live!。2026 年只办现场。"
       }
     },
     {
@@ -560,6 +624,22 @@
           "zh": "UnitedXR Europe 官方售票页（活动图形 / 标志，不是会场照片）。"
         },
         "source_url": "https://assets.swoogo.com/uploads/medium/4837389-6798a2d180233.png"
+      },
+      "face_when": {
+        "en": "7–9 Dec, sessions from 09:00 CET · from 16:00 上海",
+        "zh": "12月7–9日 会议 09:00 起 CET · 16:00 起 上海"
+      },
+      "face_place": {
+        "en": "Brussels",
+        "zh": "布鲁塞尔"
+      },
+      "face_fee": {
+        "en": "Not listed",
+        "zh": "未公布"
+      },
+      "blurb": {
+        "en": "AWE and Stereopsia’s XR conference and expo in Brussels, with a showcase, a startup competition and the European XR Awards.",
+        "zh": "AWE 与 Stereopsia 在布鲁塞尔合办的 XR 会议和展览，含展示、创业比赛和欧洲 XR 大奖。"
       }
     },
     {
@@ -663,7 +743,23 @@
         "world-models",
         "ai-agent",
         "talk"
-      ]
+      ],
+      "face_when": {
+        "en": "11 Dec, 08:00–17:00 AEDT · 05:00–14:00 上海",
+        "zh": "12月11日 08:00–17:00 AEDT · 05:00–14:00 上海"
+      },
+      "face_place": {
+        "en": "Sydney",
+        "zh": "悉尼"
+      },
+      "face_fee": {
+        "en": "Not listed",
+        "zh": "未公布"
+      },
+      "blurb": {
+        "en": "A one-day NeurIPS workshop on world models that simulate, plan and act in the physical world, for robots, vehicles and other embodied agents.",
+        "zh": "NeurIPS 的一日研讨会，讨论能在物理世界里模拟、规划并行动的世界模型，面向机器人、车辆等具身智能。"
+      }
     },
     {
       "id": "sundance-2027-new-frontier",
@@ -772,6 +868,22 @@
           "zh": "圣丹斯学院官方场馆博客（2026 年 8 月 24 日），Dairy Arts Center 一文的主图（文件名显示为 Vivian Finck）。"
         },
         "source_url": "https://www.sundance.org/wp-content/uploads/2026/08/Copy-of-Copy-of-Vivian-Finck-69-scaled.jpg"
+      },
+      "face_when": {
+        "en": "21–31 Jan 2027",
+        "zh": "1月21–31日"
+      },
+      "face_place": {
+        "en": "Boulder",
+        "zh": "博尔德"
+      },
+      "face_fee": {
+        "en": "from $37",
+        "zh": "37 美元起"
+      },
+      "blurb": {
+        "en": "New Frontier returns at Sundance 2027 in Boulder, based at the Dairy Arts Center. Daily hours and the lineup are not published yet.",
+        "zh": "New Frontier 随 2027 圣丹斯在博尔德回归，主场地是 Dairy Arts Center。每日钟点与片单尚未公布。"
       }
     },
     {
@@ -863,6 +975,22 @@
           "zh": "ISE 2027 官网（「注册已开放」画面）。"
         },
         "source_url": "https://cdn.asp.events/CLIENT_Integrat_169E7B04_E6F3_39F6_8BE4DB27C54F731E/sites/ise-2027/media/2027/reg-is-open.jpg"
+      },
+      "face_when": {
+        "en": "2–4 Feb 10:00–18:00, 5 Feb to 16:00 CET · 17:00–01:00, 5th to 23:00 上海",
+        "zh": "2月2–4日 10:00–18:00、5日到 16:00 CET · 17:00–次日 01:00，5日到 23:00 上海"
+      },
+      "face_place": {
+        "en": "Barcelona",
+        "zh": "巴塞罗那"
+      },
+      "face_fee": {
+        "en": "275 EUR",
+        "zh": "275 欧元"
+      },
+      "blurb": {
+        "en": "A large audiovisual trade show at Fira Gran Via, themed When Worlds Unite. An attendee ticket also includes the Spark show floors.",
+        "zh": "Fira Gran Via 的大型视听展，主题是 When Worlds Unite。观众票同时包含 Spark 展区。"
       }
     },
     {
@@ -955,6 +1083,22 @@
           "zh": "Spark 官网（活动符号 / 标志）。首页没有摄影主图。这不是 2027 年展会的照片。"
         },
         "source_url": "https://cdn.asp.events/CLIENT_Integrat_169E7B04_E6F3_39F6_8BE4DB27C54F731E/sites/ise-spark-2027/media/branding/spark26-Symbol-color.png"
+      },
+      "face_when": {
+        "en": "3–4 Feb 2027",
+        "zh": "2月3–4日"
+      },
+      "face_place": {
+        "en": "Barcelona",
+        "zh": "巴塞罗那"
+      },
+      "face_fee": {
+        "en": "Not listed",
+        "zh": "未公布"
+      },
+      "blurb": {
+        "en": "A two-day creative event beside ISE, on immersive tools, XR and new audiences. It is planned as an in-person show.",
+        "zh": "与 ISE 同期的两日创意活动，关注沉浸工具、XR 和新观众。按现场展会来办。"
       }
     },
     {
@@ -1056,6 +1200,22 @@
           "zh": "CPH:DOX 官方 INTER:ACTIVE 页面。此图记录的是 2026 年展览，并非 2027 年的照片。"
         },
         "source_url": "https://cphdox.dk/wp-content/uploads/2026/02/8748-1200x630.jpeg"
+      },
+      "face_when": {
+        "en": "10–21 Mar 2027",
+        "zh": "3月10–21日"
+      },
+      "face_place": {
+        "en": "Copenhagen",
+        "zh": "哥本哈根"
+      },
+      "face_fee": {
+        "en": "Not listed",
+        "zh": "未公布"
+      },
+      "blurb": {
+        "en": "CPH:DOX returns in March 2027. Its INTER:ACTIVE exhibition, on creativity and technology, announces the programme in February.",
+        "zh": "CPH:DOX 于 2027 年 3 月举行。探讨创意与技术的 INTER:ACTIVE 展览将在 2 月公布节目。"
       }
     },
     {
@@ -1176,6 +1336,22 @@
           "zh": "SXSW 官网用于 2027 年的 Open Graph 图片。"
         },
         "source_url": "https://sxsw.com/wp-content/uploads/sites/2/2026/08/27_SXSW_og-image.png?quality=99"
+      },
+      "face_when": {
+        "en": "17–19 Mar 2027",
+        "zh": "3月17–19日"
+      },
+      "face_place": {
+        "en": "Austin",
+        "zh": "奥斯汀"
+      },
+      "face_fee": {
+        "en": "from $695",
+        "zh": "695 美元起"
+      },
+      "blurb": {
+        "en": "SXSW’s XR Experience shows storytelling-led VR, AR and MR at Fairmont Manchester during the Austin festival.",
+        "zh": "SXSW 的 XR Experience 在奥斯汀影展期间，于 Fairmont Manchester 展出强调叙事的 VR、AR 与 MR。"
       }
     },
     {
@@ -1283,6 +1459,22 @@
           "zh": "Laval Virtual 官方售票页。这是 2025 年派对照片，被用在 2027 年售票页上，并非 2027 年的照片。"
         },
         "source_url": "https://laval-virtual.com/wp-content/uploads/2025/09/2BS-LV-PARTY-2025-19.jpg"
+      },
+      "face_when": {
+        "en": "7 Apr 10:00–18:00, 8 Apr 9:00–18:30, 9 Apr 9:00–16:00 CEST · 16:00–02:00, 15:00–02:30, 15:00–22:00 上海",
+        "zh": "4月7日 10:00–18:00、8日 9:00–18:30、9日 9:00–16:00 CEST · 16:00–02:00、15:00–02:30、15:00–22:00 上海"
+      },
+      "face_place": {
+        "en": "Laval",
+        "zh": "拉瓦勒"
+      },
+      "face_fee": {
+        "en": "from 155 EUR",
+        "zh": "155 欧元起"
+      },
+      "blurb": {
+        "en": "The 29th Laval Virtual, billed as Europe’s biggest XR event, with an exhibition, talks and a doctoral consortium.",
+        "zh": "第 29 届 Laval Virtual，自称欧洲最大的 XR 活动，含展览、演讲和博士论坛。"
       }
     },
     {
@@ -1396,6 +1588,22 @@
           "zh": "NewImages Festival 官网（Open Graph 图片）。"
         },
         "source_url": "https://www.newimages.art/newimages_og.webp"
+      },
+      "face_when": {
+        "en": "21–25 Apr, 9:15–18:00 CEST (provisional) · 15:15–00:00 上海",
+        "zh": "4月21–25日 9:15–18:00 CEST（暂定）· 15:15–次日 00:00 上海"
+      },
+      "face_place": {
+        "en": "Paris",
+        "zh": "巴黎"
+      },
+      "face_fee": {
+        "en": "from 15 EUR",
+        "zh": "15 欧元起"
+      },
+      "blurb": {
+        "en": "NewImages returns to Paris for immersive and digital work, with Industry Days on 20–23 April. Public ticketing is still to be announced.",
+        "zh": "NewImages 回到巴黎，展出沉浸与数字作品，Industry Days 为 4 月 20–23 日。公众票务仍待公布。"
       }
     },
     {
@@ -1492,6 +1700,22 @@
           "zh": "FMX 官网（About 页页眉）。文件路径标注为 FMX 2026，并非 2027 年的照片。"
         },
         "source_url": "https://fmx.de/files/public/images/00_home/FMX%202026/FMX%20-%20auf%20Rot_1920x1080.jpg"
+      },
+      "face_when": {
+        "en": "27–30 Apr 2027",
+        "zh": "4月27–30日"
+      },
+      "face_place": {
+        "en": "Stuttgart",
+        "zh": "斯图加特"
+      },
+      "face_fee": {
+        "en": "Not listed",
+        "zh": "未公布"
+      },
+      "blurb": {
+        "en": "Europe’s animation, effects and digital-media conference: on site in Stuttgart 27–29 April, on campus the 30th, then on demand through May.",
+        "zh": "欧洲动画、特效与数字媒体会议：4 月 27–29 日在斯图加特现场，30 日为校园日，5 月可点播。"
       }
     },
     {
@@ -1579,7 +1803,23 @@
         "xr",
         "festival",
         "immersive"
-      ]
+      ],
+      "face_when": {
+        "en": "3–12 Jun 2027",
+        "zh": "6月3–12日"
+      },
+      "face_place": {
+        "en": "New York",
+        "zh": "纽约"
+      },
+      "face_fee": {
+        "en": "from $85",
+        "zh": "85 美元起"
+      },
+      "blurb": {
+        "en": "The 26th Tribeca Festival in New York includes immersive work. The 2027 immersive lineup and venues are not posted yet.",
+        "zh": "第 26 届翠贝卡电影节在纽约，介绍里包含沉浸作品。2027 年的沉浸片单和场地尚未公布。"
+      }
     },
     {
       "id": "awe-usa-2027",
@@ -1689,6 +1929,22 @@
           "zh": "AWE USA 2027 官网（页面图片）。"
         },
         "source_url": "https://res.cloudinary.com/dmy7buja6/image/upload/8NV26jcmifFNP2Lx8hrpESDD"
+      },
+      "face_when": {
+        "en": "14 Jun 09:00–17 Jun 16:30 PST · 14日 01:00–18日 08:30 上海",
+        "zh": "6月14日 09:00–17日 16:30 PST · 14日 01:00–18日 08:30 上海"
+      },
+      "face_place": {
+        "en": "Long Beach",
+        "zh": "长滩"
+      },
+      "face_fee": {
+        "en": "Not listed",
+        "zh": "未公布"
+      },
+      "blurb": {
+        "en": "An XR and AI conference in Long Beach, themed I, Spatial. One published session, on 16 June, is about an open metaverse browser.",
+        "zh": "长滩的 XR 与 AI 会议，主题是 I, Spatial。已公布的一场在 6 月 16 日，谈开放的元宇宙浏览器。"
       }
     },
     {
@@ -1768,7 +2024,23 @@
         "xr",
         "festival",
         "immersive"
-      ]
+      ],
+      "face_when": {
+        "en": "16–25 Jun 2027",
+        "zh": "6月16–25日"
+      },
+      "face_place": {
+        "en": "London",
+        "zh": "伦敦"
+      },
+      "face_fee": {
+        "en": "Not listed",
+        "zh": "未公布"
+      },
+      "blurb": {
+        "en": "The 35th Raindance in London includes a VRX programme for VR and new media, plus Immersive Awards. Hours and venues are not on the About page.",
+        "zh": "第 35 届 Raindance 在伦敦，含 VR 与新媒体的 VRX 单元，以及 Immersive Awards。钟点和场地尚未写在 About 页上。"
+      }
     },
     {
       "id": "siggraph-2027",
@@ -1860,6 +2132,22 @@
           "zh": "SIGGRAPH 2027 官网（About 页站点图片）。"
         },
         "source_url": "https://s2027.siggraph.org/wp-content/uploads/2026/09/s2027-site-image.png"
+      },
+      "face_when": {
+        "en": "8–12 Aug 2027",
+        "zh": "8月8–12日"
+      },
+      "face_place": {
+        "en": "Anaheim",
+        "zh": "阿纳海姆"
+      },
+      "face_fee": {
+        "en": "Not listed",
+        "zh": "未公布"
+      },
+      "blurb": {
+        "en": "SIGGRAPH’s North American conference in Anaheim, on immersive media, real-time work, AI and an exhibition. Fees and daily hours are not posted yet.",
+        "zh": "SIGGRAPH 北美大会在阿纳海姆，涵盖沉浸媒体、实时技术、人工智能和展览。票价与每日钟点尚未公布。"
       }
     }
   ]

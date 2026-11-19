@@ -406,12 +406,21 @@ def validate_events(E):
     for n, e in enumerate(E.get("entries") or []):
         w = f"entry {e.get('id', n)}"
         for k in ("id", "start", "end", "status", "format", "format_en", "format_zh",
-                  "format_notes", "title", "summary", "key_points", "location", "fee",
+                  "format_notes", "title", "summary", "blurb", "face_when", "face_place", "face_fee",
+                  "key_points", "location", "fee",
                   "official_url", "links", "times_published", "display_times", "source_timezone", "tags"):
             if k not in e:
                 errs.append(f"events {w}: missing '{k}'")
-        for k in ("title", "summary", "format_notes", "location", "fee", "times_published", "display_times", "source_timezone"):
+        for k in ("title", "summary", "blurb", "face_when", "face_place", "face_fee",
+                  "format_notes", "location", "fee", "times_published", "display_times", "source_timezone"):
             bil(e.get(k), f"{w} {k}")
+        blurb_en = str((e.get("blurb") or {}).get("en") or "")
+        blurb_words = len(blurb_en.split())
+        if blurb_words > 40:
+            errs.append(f"events {w}: blurb en has {blurb_words} words; keep it to one or two sentences")
+        blurb_zh = len(str((e.get("blurb") or {}).get("zh") or "").replace(" ", ""))
+        if blurb_zh > 100:
+            errs.append(f"events {w}: blurb zh has {blurb_zh} characters; keep it to one or two sentences")
         points = e.get("key_points")
         if not isinstance(points, list) or not (2 <= len(points) <= 3):
             errs.append(f"events {w}: key_points must list 2 or 3 {{en, zh}} lines")
