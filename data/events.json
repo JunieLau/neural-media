@@ -1,0 +1,1866 @@
+{
+  "title": {
+    "en": "Events",
+    "zh": "活动"
+  },
+  "kicker": {
+    "en": "Calendar",
+    "zh": "日程"
+  },
+  "checked": "2026-11-19",
+  "lead": {
+    "en": "Festivals, open calls, markets and talks around XR, immersive documentary, volumetric media, WebXR and world models. Dates, places, fees and formats come from official pages. Where a fee, a venue or a clock time was not published, the card says not listed.",
+    "zh": "与 XR、沉浸纪录片、体积影像、WebXR 和世界模型相关的影展、公开征集、市场与分享。日期、地点、费用和参与方式来自官方页面。费用、场地或钟点若未公布，卡片会写明未公布。"
+  },
+  "note": {
+    "en": "Latest is what is ongoing, open for submissions, or starting within about 30 days of the site’s last update. This page is part of the regular update, about every 10 days.",
+    "zh": "「最新」列出进行中、正在征集，或在网站最近更新后约 30 天内开始的活动。本页大约每 10 天更新一次。"
+  },
+  "formats": {
+    "online": {
+      "en": "online",
+      "zh": "线上"
+    },
+    "in-person": {
+      "en": "in-person",
+      "zh": "线下"
+    },
+    "hybrid": {
+      "en": "in-person, also joinable online (hybrid)",
+      "zh": "线下为主，也可线上参加"
+    }
+  },
+  "statuses": {
+    "ongoing": {
+      "en": "Ongoing",
+      "zh": "进行中"
+    },
+    "open-call": {
+      "en": "Open call",
+      "zh": "公开征集"
+    },
+    "upcoming": {
+      "en": "Upcoming",
+      "zh": "即将举行"
+    }
+  },
+  "entries": [
+    {
+      "id": "idfa-doclab-2026",
+      "start": "2026-11-12",
+      "end": "2026-11-22",
+      "status": "ongoing",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "Official programme describes physical venues and hours only. No live online attendance option is listed.",
+        "zh": "官方节目只列出实体场地与开放时间，未写可线上参加。"
+      },
+      "title": {
+        "en": "IDFA DocLab 2026: Shared Realities",
+        "zh": "IDFA DocLab 2026：共享现实"
+      },
+      "summary": {
+        "en": "IDFA, the International Documentary Film Festival Amsterdam, runs 12–22 November 2026. DocLab is its twentieth-edition new-media programme, themed Shared Realities, presenting interactive art, VR, games, installations and performances across Amsterdam. The free exhibition at de Brakke Grond is the central meeting point, with more than twenty works; some experiences have limited capacity.",
+        "zh": "阿姆斯特丹国际纪录片电影节（IDFA）于 2026 年 11 月 12–22 日举行。DocLab 是其第二十届新媒体单元，主题为「共享现实」，在阿姆斯特丹多地呈现互动艺术、VR、游戏、装置与表演。de Brakke Grond 的免费展览是核心集合点，展出二十余件作品；部分体验名额有限。"
+      },
+      "key_points": [
+        {
+          "en": "Ongoing through 22 November 2026 in Amsterdam.",
+          "zh": "持续至 2026 年 11 月 22 日，阿姆斯特丹。"
+        },
+        {
+          "en": "Main exhibition is free with mandatory online reservation; VR Gallery and several satellite venues are ticketed.",
+          "zh": "主展览免费但必须在线预约；VR Gallery 及部分卫星场地需购票。"
+        },
+        {
+          "en": "Interactive documentary, VR, games, installations and performances; not an online festival on the programme page.",
+          "zh": "互动纪录片、VR、游戏、装置与表演；节目页未提供线上参观方式。"
+        }
+      ],
+      "location": {
+        "en": "Multiple venues in Amsterdam, the Netherlands. Main site: Vlaams Cultuurhuis de Brakke Grond, Nes 45. Also ARTIS-Planetarium (Plantage Kerklaan 38-40 B), droog (Staalstraat 7B), Nationale Opera Studio Boekman (Amstel 3), Casa Rosso (Oudezijds Achterburgwal 106-108), ENTR VR Museum (Oosterdokskade 131b).",
+        "zh": "荷兰阿姆斯特丹多场地。主会场：Vlaams Cultuurhuis de Brakke Grond，Nes 45。另有 ARTIS 天文馆、droog、国家歌剧院 Studio Boekman、Casa Rosso、ENTR VR 博物馆等。"
+      },
+      "fee": {
+        "en": "The DocLab exhibition and Playrooms at de Brakke Grond are listed as free (gratis); online reservation is required for the exhibition (idfa.nl/tentoonstelling). The VR Gallery is a regular paid ticket (idfa.nl/VR; exact euro amount not listed on the programme page), with one free walk-in headset. ARTIS, opera, Casa Rosso and ENTR entries are regular tickets via the URLs given on the official programme page; euro prices are not listed on that page.",
+        "zh": "de Brakke Grond 的 DocLab 展览与 Playrooms 标明免费，展览须在 idfa.nl/tentoonstelling 预约。VR Gallery 为常规购票（idfa.nl/VR，节目页未写具体欧元价格），另有一个免费走入式名额。ARTIS、歌剧、Casa Rosso、ENTR 等为常规购票，具体票价未在该节目页列出。"
+      },
+      "official_url": "https://festival.idfa.nl/doclab/doclab-programma-2026/",
+      "links": [
+        {
+          "url": "https://festival.idfa.nl/doclab/doclab-programma-2026/",
+          "label": {
+            "en": "Official programme",
+            "zh": "官方节目"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://festival.idfa.nl/en/idfa-2026-2/",
+          "label": {
+            "en": "IDFA 2026",
+            "zh": "IDFA 2026"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Exhibition at de Brakke Grond: Fri 13–Sat 21 Nov 11:30–20:30; Sun 22 Nov 11:30–18:00 (local). Other venues have their own published hours.",
+        "zh": "de Brakke Grond 展览：11 月 13 日（周五）至 21 日（周六）当地 11:30–20:30；11 月 22 日（周日）当地 11:30–18:00。其他场地有各自公布的开放时间。"
+      },
+      "display_times": {
+        "en": "Main exhibition (de Brakke Grond): 13–21 Nov, 18:30–04:30 the next day (UTC+8); 22 Nov, 18:30–01:00 the next day (UTC+8). Other venues follow their own published local hours, converted the same way.",
+        "zh": "主展览（de Brakke Grond）：11月13–21日 18:30–次日 04:30（UTC+8）；11月22日 18:30–次日 01:00（UTC+8）。其他场次按各场地公布的当地时间换算。"
+      },
+      "source_timezone": {
+        "en": "Europe/Amsterdam (CET, UTC+1 in November)",
+        "zh": "Europe/Amsterdam（11 月为 CET，UTC+1）"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "immersive",
+        "interactive-film",
+        "ongoing"
+      ],
+      "image": {
+        "file": "assets/events/idfa-doclab-2026.jpg",
+        "kind": "photo",
+        "alt": {
+          "en": "DocLab photograph from the official IDFA festival site.",
+          "zh": "IDFA 官方影节网站上的 DocLab 照片。"
+        },
+        "credit": {
+          "en": "IDFA official festival website (DocLab photo, filename RC20251117-IDFA-Doclab-0044).",
+          "zh": "IDFA 官方影节网站（DocLab 照片，文件名 RC20251117-IDFA-Doclab-0044）。"
+        },
+        "source_url": "https://optimise2.assets-servd.host/idfa-cms/production/uploads/Photos/informationPage/RC20251117-IDFA-Doclab-0044.jpg?w=1200&h=900&auto=compress%2Cformat&fit=crop&dm=1780057849&s=c6c134ddbcb34958c65a8d47b64f5df5"
+      }
+    },
+    {
+      "id": "newimages-2027-open-calls-xr-development-market",
+      "start": "2026-09-04",
+      "end": "2026-12-22",
+      "status": "open-call",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "Applications are submitted online. The Market itself is part of in-person Industry Days in Paris. No live online attendance option for the meetings is listed. Accreditation passes later mention year-round online workshops as a membership perk, which is not the same as attending the Market remotely.",
+        "zh": "申请在线上提交。市场活动本身属于巴黎现场 Industry Days。官方未写可线上参加会谈。证件说明中的全年线上工作坊是会员福利，不等于远程参加市场。"
+      },
+      "title": {
+        "en": "NewImages Festival 2027 — Open Calls, including XR Development Market",
+        "zh": "NewImages Festival 2027 公开征集（含 XR 开发市场）"
+      },
+      "summary": {
+        "en": "NewImages, an independent French nonprofit, is accepting submissions for its 2027 Paris edition from 4 September to 22 December 2026. The XR Development Market is for immersive projects still in development: selected teams get four days of curated one-to-one meetings with producers, distributors, cultural institutions, exhibitors and funding bodies, plus eligibility for a 1,000 EUR Best Project Award and two complimentary festival accreditations. Parallel calls cover completed works (XR, Fulldome, Virtual Worlds competitions; Immersive Art Fair) and technology partners.",
+        "zh": "法国独立非营利机构 NewImages 正为 2027 年巴黎影展征集项目，时间是 2026 年 9 月 4 日至 12 月 22 日。XR 开发市场面向仍在开发中的沉浸项目：入选团队将获得为期四天、经撮合的一对一会谈，对象包括制片、发行、文化机构、展映方与资方，并有机会角逐 1,000 欧元最佳项目奖，另获两张影展证件。同期还有已完成作品竞赛（XR、Fulldome、Virtual Worlds）、Immersive Art Fair 以及 XR Partners。"
+      },
+      "key_points": [
+        {
+          "en": "Early Bird 10 December 2026; final deadline 22 December 2026.",
+          "zh": "早鸟截止 2026 年 12 月 10 日；最终截止 2026 年 12 月 22 日。"
+        },
+        {
+          "en": "XR Development Market is for projects in development, not only finished works; apply at newimages.art/application/industry-days.",
+          "zh": "XR 开发市场面向开发中的项目，不必等作品全部做完；申请入口：newimages.art/application/industry-days。"
+        },
+        {
+          "en": "Selected teams receive four days of 1-on-1 meetings during Industry Days, 20-23 April 2027.",
+          "zh": "入选团队在 2027 年 4 月 20-23 日 Industry Days 获得四天一对一会谈。"
+        }
+      ],
+      "location": {
+        "en": "Submission is online. If selected for the XR Development Market, meetings take place in person during Industry Days at the Centre des congrès de la Villette (level -1, inside Cité des sciences et de l'industrie), 30 avenue Corentin Cariou, 75019 Paris, France.",
+        "zh": "投递在线上完成。若入选 XR 开发市场，一对一会谈在巴黎 Industry Days 现场举行：Centre des congrès de la Villette（Cité des sciences et de l'industrie 内 -1 层），30 avenue Corentin Cariou, 75019 Paris。"
+      },
+      "fee": {
+        "en": "XR Development Market, Immersive Art Fair and XR Partners: 50 EUR Early Bird / 75 EUR Last Call (submission fees). XR Competition and Fulldome Competition: Early Bird 75 EUR, or 45 EUR Individual Talent; Last Call 100 EUR, or 60 EUR Individual Talent. Virtual Worlds Competition: free submissions. Industry Sessions: fee not listed on the calls page. These are submission fees, not festival accreditation prices.",
+        "zh": "XR 开发市场、沉浸艺术博览会、XR Partners：早鸟 50 欧元 / 截止轮 75 欧元（报名费）。XR 竞赛与 Fulldome 竞赛：早鸟 75 欧元（Individual Talent 45 欧元），截止轮 100 欧元（Individual Talent 60 欧元）。Virtual Worlds 竞赛免费提交。Industry Sessions 报名费在征集页未列出。以上是作品提交费，不是观展证件价格。"
+      },
+      "official_url": "https://www.newimages.art/calls-for-projects",
+      "links": [
+        {
+          "url": "https://www.newimages.art/calls-for-projects",
+          "label": {
+            "en": "Calls for projects",
+            "zh": "公开征集"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://www.newimages.art/application/industry-days",
+          "label": {
+            "en": "Apply: Industry Days / XR Development Market",
+            "zh": "申请：Industry Days / XR 开发市场"
+          },
+          "role": "apply"
+        },
+        {
+          "url": "https://www.newimages.art/application/competitions",
+          "label": {
+            "en": "Apply: competitions",
+            "zh": "申请：竞赛单元"
+          },
+          "role": "apply"
+        },
+        {
+          "url": "https://www.newimages.art/newimages-festival-2027",
+          "label": {
+            "en": "2027 festival",
+            "zh": "2027 影展"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://www.b2match.com/e/newimages2027",
+          "label": {
+            "en": "B2Match",
+            "zh": "B2Match"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Application deadlines are calendar dates; no clock time is published on the calls page for the 10 / 22 December cutoffs.",
+        "zh": "申请截止按日历日公布；征集页没有为 12 月 10 日 / 22 日写出钟点。"
+      },
+      "display_times": {
+        "en": "Deadlines are published as calendar dates, with no clock or timezone, so they are not converted to a UTC+8 clock time. Industry Days for selected projects are 20–23 Apr 2027 in Paris.",
+        "zh": "截止日期按日历日公布，未写具体钟点或时区，故不换算到 UTC+8 的钟点。入选后的 Industry Days 为 2027 年 4 月 20–23 日（巴黎）。"
+      },
+      "source_timezone": {
+        "en": "Not stated on the calls page (festival is in Paris).",
+        "zh": "征集页未写明时区（影展在巴黎）。"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "market",
+        "call-for-projects",
+        "immersive"
+      ],
+      "dates_note": {
+        "en": "Calls opened 4 September 2026. Early Bird deadline 10 December 2026; Last Call deadline 22 December 2026. Selected XR Development Market projects then attend Industry Days, 20–23 April 2027, in Paris.",
+        "zh": "征集于 2026 年 9 月 4 日开放。早鸟截止 2026 年 12 月 10 日；最终截止 2026 年 12 月 22 日。入选 XR 开发市场的项目随后参加 2027 年 4 月 20–23 日巴黎 Industry Days。"
+      },
+      "curator_notes": {
+        "en": "User note (not a sourced fee or rule): this market is aimed at projects still in development; selected teams get 1-on-1 meetings with co-producers, exhibitors and funders; you do not have to wait until the work is finished. This matches the official description.",
+        "zh": "策展附注（用户说明，非正式价目）：面向开发中的项目，入选后会安排与联合制片方、展映机构及资方的一对一会谈，不必等整部作品做完。这与官方表述一致。"
+      },
+      "image": {
+        "file": "assets/events/newimages-calls-hero.jpg",
+        "kind": "photo",
+        "alt": {
+          "en": "Hero image from the NewImages calls-for-projects page.",
+          "zh": "NewImages 公开征集页的主图。"
+        },
+        "credit": {
+          "en": "NewImages Festival official website (calls-for-projects hero).",
+          "zh": "NewImages Festival 官网（公开征集页主图）。"
+        },
+        "source_url": "https://images.prismic.io/newimages-website/Y5_CmdI6NcewUviT_DSC09391.JPG?auto=format,compress&w=2400"
+      }
+    },
+    {
+      "id": "msf-volumetric-media-town-hall-2026-11-24",
+      "start": "2026-11-24",
+      "end": "2026-11-24",
+      "status": "upcoming",
+      "format": "online",
+      "format_en": "online",
+      "format_zh": "线上",
+      "format_notes": {
+        "en": "Described as an on-line town hall / webinar. Register link is Zoom. Schema.org incorrectly flags OfflineEventAttendanceMode; the visible page says Virtual / Online.",
+        "zh": "页面写明是线上市政厅 / webinar，报名链接为 Zoom。网页结构化数据误标为线下出席，以页面正文的 Virtual / Online 为准。"
+      },
+      "title": {
+        "en": "Metaverse Standards Forum Volumetric Media Town Hall (includes Gracia AI on 4DGS + WebXR)",
+        "zh": "Metaverse Standards Forum 体积影像市政厅（含 Gracia AI：4DGS 与 WebXR）"
+      },
+      "summary": {
+        "en": "The Metaverse Standards Forum 3D Asset Working Group's third annual online town hall on the volumetric media industry, with a focus on dynamic 3D Gaussian splatting / 4DGS. Published talks include real-world 4DGS applications (Dymensium), packed Gaussian UV maps for 4D volumetric video (Chronospace), 4DGS streaming and WebXR rendering (Georgii Vysotskii, Gracia AI), open-source 4DGS capture (PlayCanvas / Snap), and a state-of-industry survey (MSF). This is the official 24 November 2026 Gracia AI WebXR talk; it is a session inside this town hall, not a separate Gracia-hosted event.",
+        "zh": "Metaverse Standards Forum 三维资产工作组的第三届年度线上市政厅，讨论体积影像行业现状，重点是动态 3D 高斯溅射 / 4DGS。已公布的分享包括 Dymensium 的 4DGS 应用、Chronospace 的 4D 体积视频压缩、Gracia AI 的 Georgii Vysotskii 谈 4DGS 流媒体与 WebXR 渲染、PlayCanvas / Snap 的开源 4DGS 采集，以及论坛的行业调查。这就是 2026 年 11 月 24 日 Gracia AI 关于浏览器 XR 的那场分享：它是本场市政厅中的一个环节，并非 Gracia 单独主办的活动。"
+      },
+      "key_points": [
+        {
+          "en": "Online, 24 November 2026, 07:00-09:00 Pacific Time; register on Zoom from the official page.",
+          "zh": "线上，2026 年 11 月 24 日太平洋时间 07:00-09:00；在官方页进入 Zoom 报名。"
+        },
+        {
+          "en": "Gracia AI session title as published: 4DGS streaming and WebXR rendering.",
+          "zh": "Gracia AI 环节的公布标题是「4DGS streaming and WebXR rendering」。"
+        },
+        {
+          "en": "The published agenda clock times are internally inconsistent (a 07:20 item appears after 07:55; Adjourned is listed at 08:00 while a survey is listed at 08:45, against a 7:00-9:00 window). Report the window as 7:00-9:00 PST and treat item times as printed, not corrected.",
+          "zh": "公布的议程钟点内部不一致（07:20 的条目排在 07:55 之后；结束写在 08:00，调查却写在 08:45，又与 7:00-9:00 的时段并列）。对外请以太平洋时间 7:00-9:00 为准，条目时间按原文记录，不要自行改时间。"
+        }
+      ],
+      "location": {
+        "en": "Online (Zoom). Event category: Virtual. The Beaverton, Oregon postal address on the page is the Forum's mailing address, not a physical venue for this webinar.",
+        "zh": "线上（Zoom）。页面分类为 Virtual。页脚的俄勒冈州 Beaverton 地址是论坛通讯地址，不是这场网络研讨会的现场会场。"
+      },
+      "fee": {
+        "en": "Not listed. Registration is via a Zoom meeting-registration link published on the official event page. No ticket price is shown on the event page or on the Zoom registration page.",
+        "zh": "未公布。需通过官方活动页上的 Zoom 报名链接登记。活动页与 Zoom 报名页均未显示票价。"
+      },
+      "official_url": "https://metaverse-standards.org/event/volumetric-media-town-hall-2/",
+      "links": [
+        {
+          "url": "https://metaverse-standards.org/event/volumetric-media-town-hall-2/",
+          "label": {
+            "en": "Official event",
+            "zh": "官方活动页"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://metaverse-standards-org.zoom.us/meeting/register/lRZIreJvSO6RvUEn6XK6oA",
+          "label": {
+            "en": "Register (Zoom)",
+            "zh": "报名（Zoom）"
+          },
+          "role": "register"
+        }
+      ],
+      "times_published": {
+        "en": "7:00-9:00 PST (schema.org startDate 2026-11-24T07:00:00-08:00, endDate 2026-11-24T09:00:00-08:00). Zoom invitation: Nov 24, 2026 07:00 AM Pacific Time (US and Canada).",
+        "zh": "太平洋时间 7:00–9:00（schema.org 开始 2026-11-24T07:00:00−08:00，结束 2026-11-24T09:00:00−08:00）。Zoom 邀请：2026 年 11 月 24 日上午 07:00 美国和加拿大太平洋时间。"
+      },
+      "display_times": {
+        "en": "23:00 on 24 Nov 2026 to 01:00 on 25 Nov 2026 (UTC+8 / Asia/Shanghai). This follows the published 7:00–9:00 PST window. Agenda item clocks on the page are inconsistent and are not corrected here.",
+        "zh": "2026年11月24日 23:00 至 11月25日 01:00（UTC+8 / 亚洲/上海）"
+      },
+      "source_timezone": {
+        "en": "America/Los_Angeles (PST, UTC-8 on 24 Nov 2026)",
+        "zh": "America/Los_Angeles（2026 年 11 月 24 日为 PST，UTC−8）"
+      },
+      "tags": [
+        "xr",
+        "volumetric",
+        "webxr",
+        "talk"
+      ],
+      "curator_notes": {
+        "en": "User note for Junie's interactive-film prototype: the most useful question to take to the Gracia AI / WebXR talk is whether the audience can change viewing angle on the same performance, rather than only watching a fixed camera.",
+        "zh": "策展附注（用户说明）：对互动电影原型而言，这场 Gracia AI / WebXR 分享最值得关注的问题是——观众能不能换角度看同一段表演，而不是只能看固定镜头。"
+      },
+      "image": {
+        "file": "assets/events/msf-volumetric-media-town-hall.webp",
+        "kind": "banner",
+        "alt": {
+          "en": "Official banner for the Metaverse Standards Forum Volumetric Media Town Hall.",
+          "zh": "Metaverse Standards Forum 体积影像市政厅的官方横幅。"
+        },
+        "credit": {
+          "en": "Metaverse Standards Forum (official event banner).",
+          "zh": "Metaverse Standards Forum（官方活动横幅）。"
+        },
+        "source_url": "https://metaverse-standards.org/wp-content/uploads/Volumetric-Media-Town-Hall-26-Banner.webp"
+      }
+    },
+    {
+      "id": "siggraph-asia-2026",
+      "start": "2026-12-01",
+      "end": "2026-12-04",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "Attendee FAQ Q3: this year's event will be held entirely in person, and we will not be having any virtual access/recordings.",
+        "zh": "观众 FAQ 明确：本届完全线下，没有线上通道或录像。"
+      },
+      "title": {
+        "en": "SIGGRAPH Asia 2026",
+        "zh": "SIGGRAPH Asia 2026（吉隆坡）"
+      },
+      "summary": {
+        "en": "The 19th ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia, and the first SIGGRAPH Asia in Malaysia. The programme includes technical papers, Emerging Technologies, an XR demo/talks track, Real-Time Live!, and other standard SIGGRAPH Asia programmes. A Volumetric Video Challenge (VVC) Workshop was listed among calls (submission already closed). Official FAQ: the 2026 event is entirely in person, with no virtual access or recordings.",
+        "zh": "第 19 届 ACM SIGGRAPH 亚洲计算机图形与交互技术大会暨展览，也是首次在马来西亚举办。节目包括技术论文、Emerging Technologies、XR 演示与讲座、Real-Time Live! 等。征集名单中曾列出 Volumetric Video Challenge（VVC）工作坊（提交已截止）。官方 FAQ 写明：2026 年完全线下举行，不提供线上参会或录像。"
+      },
+      "key_points": [
+        {
+          "en": "In person only in Kuala Lumpur, 1-4 December 2026 (exhibition 2-4 December).",
+          "zh": "仅限吉隆坡现场，2026 年 12 月 1-4 日（展览 2-4 日）。"
+        },
+        {
+          "en": "Includes an XR programme track; a volumetric-video workshop was among the (now closed) calls.",
+          "zh": "含 XR 单元；征集中曾有体积视频工作坊（现已截止投稿）。"
+        },
+        {
+          "en": "Regular-rate Exhibit and Experience Access is USD 25; full conference access is much higher.",
+          "zh": "Regular 档的展览体验票为 25 美元；完整会议票价高得多。"
+        }
+      ],
+      "location": {
+        "en": "Kuala Lumpur Convention Centre (KLCC), Kuala Lumpur City Centre, 50088 Kuala Lumpur, Malaysia.",
+        "zh": "马来西亚吉隆坡会议中心（KLCC），Kuala Lumpur City Centre。"
+      },
+      "fee": {
+        "en": "Prices in USD, expire 23:59 GMT+8 on the stated dates. Regular rate (29 Sep-30 Nov 2026), current window as of 19 Nov 2026: Full Access Supporter ACM member $1,125 / non-member $1,275; Full Access ACM member $1,075 / non-member $1,175 / ACM student member $575; Enhanced Access $650; Exhibit and Experience Access $25. Onsite (1-4 Dec): $1,325 / $1,475; $1,225 / $1,325 / $675; $700; $30 respectively. Early-bird rates ended 28 Sep 2026. Registrations are non-transferable and non-refundable. Group discounts 10-20% on Full/Enhanced Access (not student).",
+        "zh": "票价以美元计，在标明日期当天 23:59（GMT+8）截止对应档期。截至 2026 年 11 月 19 日适用 Regular：Full Access Supporter 会员 1,125 美元 / 非会员 1,275 美元；Full Access 会员 1,075 / 非会员 1,175 / 学生会员 575；Enhanced Access 650 美元；Exhibit & Experience 25 美元。现场票（12 月 1-4 日）分别为 1,325 / 1,475；1,225 / 1,325 / 675；700；30 美元。早鸟已于 9 月 28 日结束。报名不可转让、不可退款。"
+      },
+      "official_url": "https://asia.siggraph.org/2026/",
+      "links": [
+        {
+          "url": "https://asia.siggraph.org/2026/",
+          "label": {
+            "en": "Official site",
+            "zh": "官网"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://asia.siggraph.org/2026/plan-to-attend/registration-categories-fees/",
+          "label": {
+            "en": "Registration fees",
+            "zh": "注册费用"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://asia.siggraph.org/2026/plan-to-attend/attendee-faqs/",
+          "label": {
+            "en": "Attendee FAQ",
+            "zh": "观众常见问题"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Conference 1-4 December 2026; Exhibition 2-4 December 2026. Daily opening-hour clock times are not listed on the home or FAQ pages beyond those date ranges. Registration desk closes Friday 4 December 2026, 16:00 (GMT+8).",
+        "zh": "会议 2026 年 12 月 1–4 日；展览 12 月 2–4 日。除注册台于 12 月 4 日（周五）16:00（GMT+8）关闭外，首页与 FAQ 没有列出每日开闭馆钟点。"
+      },
+      "display_times": {
+        "en": "Conference 1–4 Dec 2026 and exhibition 2–4 Dec 2026 (Kuala Lumpur time is UTC+8, the same as Beijing). Daily hall hours are not listed on the home or FAQ pages, apart from registration closing at 16:00 on Friday 4 Dec (UTC+8).",
+        "zh": "2026年12月1-4日会议、12月2-4日展览（吉隆坡时间即 UTC+8，与北京时间相同）。具体每日开闭馆钟点除 4 日 16:00 截止注册外，首页与 FAQ 未再公布。"
+      },
+      "source_timezone": {
+        "en": "Asia/Kuala_Lumpur (UTC+8), same as Asia/Shanghai",
+        "zh": "Asia/Kuala_Lumpur（UTC+8），与北京时间相同"
+      },
+      "tags": [
+        "xr",
+        "volumetric",
+        "festival"
+      ],
+      "image": {
+        "file": "assets/events/siggraph-asia-2026-klcc.jpg",
+        "kind": "photo",
+        "alt": {
+          "en": "Kuala Lumpur Convention Centre, the SIGGRAPH Asia 2026 venue.",
+          "zh": "SIGGRAPH Asia 2026 会场吉隆坡会议中心。"
+        },
+        "credit": {
+          "en": "Kuala Lumpur Convention Centre, as used on the official SIGGRAPH Asia 2026 attendee FAQ (photo credit on that page: Kuala Lumpur Convention Centre).",
+          "zh": "吉隆坡会议中心，用于 SIGGRAPH Asia 2026 官方观众 FAQ（该页图片署名：Kuala Lumpur Convention Centre）。"
+        },
+        "source_url": "https://asia.siggraph.org/2026/wp-content/uploads/2026/06/Kuala-Lumpur-Convention-Centre.jpg"
+      }
+    },
+    {
+      "id": "unitedxr-europe-2026",
+      "start": "2026-12-07",
+      "end": "2026-12-09",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "The event is organised as an in-person conference and expo in Brussels. Paid passes include free year-round access to all UnitedXR sessions recordings after the fact. No live virtual pass is listed.",
+        "zh": "按布鲁塞尔现场会议与展览来办。付费通行证含会后全年录像，官方未列出可实时线上参加的票种。"
+      },
+      "title": {
+        "en": "UnitedXR Europe 2026",
+        "zh": "UnitedXR Europe 2026（布鲁塞尔）"
+      },
+      "summary": {
+        "en": "UnitedXR Europe is described as Europe's leading XR event, co-produced by AWE and Stereopsia. The 2026 edition is 7-9 December in Brussels, with a conference, expo, XR Showcase and Playground, startup competition, scientific conference, and European XR Awards. It is a professional in-person gathering; paid passes also include year-round access to session recordings (not listed as a live online ticket).",
+        "zh": "UnitedXR Europe 自称欧洲首要 XR 活动，由 AWE 与 Stereopsia 联合举办。2026 年 12 月 7-9 日在布鲁塞尔举行，包含会议、展览、XR Showcase 与 Playground、创业比赛、科学会议及欧洲 XR 大奖。这是专业人士的线下聚会；付费通行证另含全年场次录像，但并未写成可直播在线参会的票种。"
+      },
+      "key_points": [
+        {
+          "en": "7-9 December 2026, Tour and Taxis / Maison de la Poste, Brussels.",
+          "zh": "2026 年 12 月 7-9 日，布鲁塞尔 Tour & Taxis / Maison de la Poste。"
+        },
+        {
+          "en": "AWE and Stereopsia jointly producing the event.",
+          "zh": "由 AWE 与 Stereopsia 联合主办。"
+        },
+        {
+          "en": "Check the ticket shop before purchase: a price increase was scheduled around 19-20 November 2026.",
+          "zh": "购票前请再看售票页：票价原定在 2026 年 11 月 19-20 日前后上调。"
+        }
+      ],
+      "location": {
+        "en": "Maison de la Poste and Shed 1 (Tour and Taxis), Brussels, Belgium. Know-before-you-go: registration and Expo Hall access at Rue Picard 3; Main Stage and track rooms at Rue Picard 7, 1000 Brussels.",
+        "zh": "比利时布鲁塞尔 Maison de la Poste 与 Shed 1（Tour & Taxis）。官方出行须知：报名与展览入口在 Rue Picard 3；主舞台与分会场在 Rue Picard 7，1000 Brussels。"
+      },
+      "fee": {
+        "en": "Not listed. Rechecked on 19 November 2026: the ticket shop still advertised a sale it said would end at midnight CET that night, with prices rising on 20 November. The price after that change was not confirmed, so no figure is quoted.",
+        "zh": "未公布。2026 年 11 月 19 日复核时，售票页仍在宣传一场据其说明将于当晚 CET 午夜结束的促销，并写明票价于 11 月 20 日上调。上调后的价格未能确认，故不引用数字。"
+      },
+      "official_url": "https://unitedxr.eu/",
+      "links": [
+        {
+          "url": "https://unitedxr.eu/",
+          "label": {
+            "en": "Official site",
+            "zh": "官网"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://events.unitedxr.eu/2026/",
+          "label": {
+            "en": "Ticket shop",
+            "zh": "售票页"
+          },
+          "role": "register"
+        },
+        {
+          "url": "https://unitedxr.eu/know-before-you-go",
+          "label": {
+            "en": "Know before you go",
+            "zh": "出行须知"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Sessions: starts at 09:00 Monday 7 December through Wednesday 9 December (session end time not fully specified). Expo Hall: Mon 7 Dec 12:00-17:00; Tue 8 Dec 11:00-17:00; Wed 9 Dec 10:00-15:00. Early badge pick-up Sun 6 Dec 16:00-18:00, Shed 1. Times are local Brussels.",
+        "zh": "会议：12 月 7 日（周一）当地 09:00 起，至 12 月 9 日（周三）；散场钟点未完全写明。展览：12 月 7 日 12:00–17:00；12 月 8 日 11:00–17:00；12 月 9 日 10:00–15:00。提前取证：12 月 6 日（周日）16:00–18:00，Shed 1。以上为布鲁塞尔当地时间。"
+      },
+      "display_times": {
+        "en": "Sessions start at 16:00 on 7 Dec (UTC+8), which is 09:00 locally. Expo: 7 Dec 19:00–00:00 the next day; 8 Dec 18:00–00:00 the next day; 9 Dec 17:00–22:00 (all UTC+8). Early badge pick-up 6 Dec 23:00–01:00 the next day (UTC+8).",
+        "zh": "会议从 12 月 7 日 16:00（UTC+8）起（当地 09:00）。展览：7 日 19:00-次日 00:00；8 日 18:00-次日 00:00；9 日 17:00-22:00（均为 UTC+8）。6 日提前取证 23:00-次日 01:00（UTC+8）。"
+      },
+      "source_timezone": {
+        "en": "Europe/Brussels (CET, UTC+1 in December)",
+        "zh": "Europe/Brussels（12 月为 CET，UTC+1）"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "talk"
+      ],
+      "image": {
+        "file": "assets/events/unitedxr-europe-2026.png",
+        "kind": "logo",
+        "alt": {
+          "en": "UnitedXR Europe logo from the official ticket page, not a photograph of the 2026 venue.",
+          "zh": "UnitedXR Europe 官方售票页上的标志，不是 2026 年会场的照片。"
+        },
+        "credit": {
+          "en": "UnitedXR Europe official ticket page (event graphic / logo, not a photograph of the venue).",
+          "zh": "UnitedXR Europe 官方售票页（活动图形 / 标志，不是会场照片）。"
+        },
+        "source_url": "https://assets.swoogo.com/uploads/medium/4837389-6798a2d180233.png"
+      }
+    },
+    {
+      "id": "neurips-2026-world-models-physical-ai",
+      "start": "2026-12-11",
+      "end": "2026-12-11",
+      "status": "upcoming",
+      "format": "hybrid",
+      "format_en": "in-person, also joinable online (hybrid)",
+      "format_zh": "线下为主，也可线上参加",
+      "format_notes": {
+        "en": "In-person room is published in Sydney. NeurIPS official registration text: Virtual Only Pass includes live streams of workshops. Physical registration includes the virtual pass. Paris and Atlanta satellites have their own workshop days; do not assume this same workshop is staged there unless NeurIPS later says so.",
+        "zh": "现场房间公布在悉尼。NeurIPS 官方注册说明：Virtual Only Pass 含工作坊直播；实体注册包含虚拟通行。巴黎与亚特兰大卫星会有各自的工作坊日，除非官方另写，不要假定本场会在那里同步举办。"
+      },
+      "title": {
+        "en": "World Models in Physical AI — NeurIPS 2026 Workshop",
+        "zh": "物理 AI 中的世界模型 — NeurIPS 2026 研讨会"
+      },
+      "summary": {
+        "en": "A one-day NeurIPS 2026 workshop on learned models that simulate, plan and act in the physical world, bringing together generative modeling, reinforcement learning, robotics, computer vision, autonomous driving and simulation. The official site frames world models as a substrate for embodied agents. Co-located challenges are listed (results to be announced at the workshop). Paper schedule is pointed to the official NeurIPS page.",
+        "zh": "NeurIPS 2026 的一日研讨会，讨论用于在物理世界中模拟、规划与行动的学习模型，汇集生成建模、强化学习、机器人、计算机视觉、自动驾驶与仿真。官方把世界模型视为具身智能体的计算基底。同期列出多项挑战赛，结果将在会上公布。论文日程指向 NeurIPS 官方页面。"
+      },
+      "key_points": [
+        {
+          "en": "11 December 2026, 08:00-17:00 AEDT, ICC Sydney Room C4.1.",
+          "zh": "2026 年 12 月 11 日 08:00-17:00（澳大利亚东部夏令时），悉尼 ICC C4.1 房间。"
+        },
+        {
+          "en": "Can also be followed via the NeurIPS Virtual Only Pass (live workshop streams).",
+          "zh": "也可通过 NeurIPS Virtual Only Pass 收看工作坊直播。"
+        },
+        {
+          "en": "Focused on world models for robots, vehicles and other embodied agents, not a media-art festival.",
+          "zh": "聚焦机器人、车辆等具身智能的世界模型，不是媒体艺术节。"
+        }
+      ],
+      "location": {
+        "en": "In person: Room C4.1, ICC Sydney, Sydney, Australia (NeurIPS 2026 main meeting). NeurIPS also has satellite sites in Atlanta and Paris with workshops on other days; this workshop's published room is Sydney. A NeurIPS Virtual Only Pass includes live streams of workshops.",
+        "zh": "现场：澳大利亚悉尼 ICC，房间 C4.1（NeurIPS 2026 主会场）。NeurIPS 另有亚特兰大、巴黎卫星会场，其工作坊日程不同；本工作坊公布的房间在悉尼。NeurIPS 的 Virtual Only Pass 含工作坊直播。"
+      },
+      "fee": {
+        "en": "Attendance requires NeurIPS 2026 registration (workshop days are 11-12 December in Sydney). Official pages confirm a Virtual Only Pass (live streams of conference sessions, tutorials, expos and workshops, plus app interaction) and that any physical registration includes the virtual pass. Guest banquet/reception tickets are $100 USD. Early pricing ended 30-31 October 2026. Dollar amounts for student / academic / industrial and virtual passes were not visible in the static HTML of the pricing page (the table appears to load dynamically). Check neurips.cc/Conferences/2026/Pricing and the registration form for current figures.",
+        "zh": "需注册 NeurIPS 2026（悉尼工作坊日为 12 月 11-12 日）。官方确认提供 Virtual Only Pass（含会议、教程、Expo 与工作坊直播及应用内互动），且实体注册含虚拟通行。嘉宾宴会/招待会门票 100 美元。早鸟已于 2026 年 10 月 30-31 日结束。学生/学术/工业及虚拟票的具体美元金额在定价页静态 HTML 中不可见（表格似动态加载），请以 neurips.cc/Conferences/2026/Pricing 与注册表为准。"
+      },
+      "official_url": "https://www.worldmodels-physicalai.com/",
+      "links": [
+        {
+          "url": "https://www.worldmodels-physicalai.com/",
+          "label": {
+            "en": "Workshop site",
+            "zh": "研讨会页面"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://neurips.cc/Conferences/2026",
+          "label": {
+            "en": "NeurIPS 2026",
+            "zh": "NeurIPS 2026"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://neurips.cc/Conferences/2026/Dates",
+          "label": {
+            "en": "Conference dates",
+            "zh": "大会日期"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://neurips.cc/Conferences/2026/Pricing",
+          "label": {
+            "en": "Pricing",
+            "zh": "票价"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://neurips.cc/Register/view-registration",
+          "label": {
+            "en": "Registration",
+            "zh": "注册"
+          },
+          "role": "register"
+        }
+      ],
+      "times_published": {
+        "en": "Friday, 11 December 2026, 8:00 AM-5:00 PM AEDT. Room C4.1, ICC Sydney (workshop site).",
+        "zh": "2026 年 12 月 11 日（周五）上午 8:00–下午 5:00（澳大利亚东部夏令时）。研讨会网站写房间为悉尼 ICC C4.1。"
+      },
+      "display_times": {
+        "en": "05:00–14:00 on 11 Dec 2026 (UTC+8 / Asia/Shanghai).",
+        "zh": "2026年12月11日 05:00-14:00（UTC+8 / 亚洲/上海）"
+      },
+      "source_timezone": {
+        "en": "Australia/Sydney (AEDT, UTC+11 in December)",
+        "zh": "Australia/Sydney（12 月为 AEDT，UTC+11）"
+      },
+      "tags": [
+        "world-models",
+        "ai-agent",
+        "talk"
+      ]
+    },
+    {
+      "id": "sundance-2027-new-frontier",
+      "start": "2027-01-21",
+      "end": "2027-01-31",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "New Frontier is described as an in-person programme in Boulder. The wider festival offers a limited, U.S.-only online screening window for five competition sections including NEXT (and other sections that opt in), 28-31 January. Whether New Frontier works appear online is not listed. Label is therefore in-person, with that limited-film online window noted separately.",
+        "zh": "New Frontier 被写成博尔德的现场单元。整个影节在 1 月 28-31 日为部分竞赛单元（含 NEXT，以及其他自愿参加的单元）提供仅限美国的线上放映。New Frontier 作品是否上网未写明。故格式标为线下，并另行注明该有限影片线上窗口。"
+      },
+      "title": {
+        "en": "Sundance Film Festival 2027 — New Frontier",
+        "zh": "圣丹斯电影节 2027 — New Frontier"
+      },
+      "summary": {
+        "en": "The 2027 Sundance Film Festival debuts in Boulder, 21-31 January. After a two-year pause, New Frontier — the programme at the intersection of art, cinematic storytelling and emerging technologies — returns, with the Dairy Arts Center as its primary home. The official festival blog describes New Frontier as experimental and interdisciplinary; the 2027 lineup had not been posted as of this research. Some competition films (and NEXT, plus other sections that opt in) will have a limited U.S.-only online window late in the festival; New Frontier's inclusion in that online programme is not stated.",
+        "zh": "2027 年圣丹斯电影节于 1 月 21-31 日首次在博尔德举办。时隔两年，处于艺术、电影叙事与新兴技术交叉处的 New Frontier 单元回归，主场地为 Dairy Arts Center。官方博客将其描述为实验性、跨学科；截至本次调研，2027 年片单尚未公布。部分竞赛影片（以及 NEXT，及其他自愿参加的单元）在影节末期有仅限美国的线上窗口；官方并未写明 New Frontier 是否进入该线上节目。"
+      },
+      "key_points": [
+        {
+          "en": "New Frontier returns in Boulder, primarily at the Dairy Arts Center, 21-31 January 2027.",
+          "zh": "New Frontier 于 2027 年 1 月 21-31 日在博尔德回归，主场地为 Dairy Arts Center。"
+        },
+        {
+          "en": "Lineup expected in December 2026; New Frontier hours and ticket type not yet itemised.",
+          "zh": "片单预计 2026 年 12 月公布；New Frontier 的开放时间与专票尚未单列。"
+        },
+        {
+          "en": "Do not assume New Frontier is in the U.S. online festival window — that has not been announced.",
+          "zh": "不要假定 New Frontier 包含在美国线上展映窗口——官方尚未宣布。"
+        }
+      ],
+      "location": {
+        "en": "In person in Boulder, Colorado, USA. Official festival blog: the Dairy Arts Center is a screening venue and the primary home for the return of New Frontier. Street address was not captured on the pages opened for this research.",
+        "zh": "美国科罗拉多州博尔德现场。官方博客：Dairy Arts Center 是放映场地，也是 New Frontier 回归后的主场地。本次打开的页面未写门牌号。"
+      },
+      "fee": {
+        "en": "Festival tickets page: packages now on sale (some marked sold out), including $925 (10 in-person tickets, 21-31 Jan), $675 encore, $450 late-festival, $350 weekday-before-5pm, $275 youth/student (10 in-person + 5 online tickets). All-in prices inclusive of fees as published. Single film tickets $37, on sale starting 8 January 2027. A New Frontier-specific ticket price is not listed. Online streaming is only available within the United States and U.S. territories.",
+        "zh": "影节售票页：套票已开售（部分显示售罄），包括 925 美元（10 张现场票，1 月 21-31 日）、675 美元重映套票、450 美元后期套票、350 美元工作日下午 5 点前、275 美元青年/学生套票（10 张现场 + 5 张线上）。标价为含手续费。单片票 37 美元，2027 年 1 月 8 日起售。未单列 New Frontier 专票。线上放映仅限美国及美国领地。"
+      },
+      "official_url": "https://www.sundance.org/blogs/what-to-know-about-the-2027-sundance-film-festival/",
+      "links": [
+        {
+          "url": "https://www.sundance.org/blogs/what-to-know-about-the-2027-sundance-film-festival/",
+          "label": {
+            "en": "What to know",
+            "zh": "观展须知"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://www.sundance.org/blogs/inside-the-2027-sundance-film-festival-venues-creativity-thrives-at-the-dairy-arts-center/",
+          "label": {
+            "en": "Dairy Arts Center",
+            "zh": "Dairy Arts Center"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://festival.sundance.org/tickets/",
+          "label": {
+            "en": "Tickets",
+            "zh": "购票"
+          },
+          "role": "register"
+        },
+        {
+          "url": "https://www.sundance.org/blogs/2027-sundance-film-festival-to-take-place-january-21-31-in-boulder-colorado/",
+          "label": {
+            "en": "Festival dates",
+            "zh": "影节日期"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Festival in person 21-31 January 2027, Boulder, Colorado. World premieres 21-26 January. A limited at-home online screening window for some film sections: 28-31 January (press and industry from 27 January). New Frontier daily hours are not yet published. Lineup to be announced in December 2026.",
+        "zh": "影节现场为 2027 年 1 月 21–31 日，科罗拉多州博尔德。全球首映 1 月 21–26 日。部分影片单元有限的居家线上放映窗口为 1 月 28–31 日（媒体与业界从 1 月 27 日起）。New Frontier 每日开放钟点尚未公布。片单将于 2026 年 12 月公布。"
+      },
+      "display_times": {
+        "en": "The festival is in person 21–31 Jan 2027 (Denver Mountain Time, 15 hours behind Beijing). New Frontier daily hours are not yet published, so no UTC+8 clock is shown. A limited online window for some film sections is 28–31 Jan local (industry from 27 Jan).",
+        "zh": "影节现场 2027 年 1 月 21-31 日（丹佛山区标准时间，比北京时间晚 15 小时）。New Frontier 每日开放钟点尚未公布，故不列出 UTC+8 具体钟点。部分影片线上窗口为当地 1 月 28-31 日（业界 27 日起）。"
+      },
+      "source_timezone": {
+        "en": "America/Denver (MST, UTC-7 in January)",
+        "zh": "America/Denver（1 月为 MST，UTC−7）"
+      },
+      "tags": [
+        "xr",
+        "neural-media",
+        "festival",
+        "immersive"
+      ],
+      "image": {
+        "file": "assets/events/sundance-2027-dairy.jpg",
+        "kind": "photo",
+        "alt": {
+          "en": "Dairy Arts Center, named by Sundance as the primary home for New Frontier in 2027.",
+          "zh": "Dairy Arts Center，圣丹斯指认为 2027 年 New Frontier 的主场地。"
+        },
+        "credit": {
+          "en": "Sundance Institute official venue blog (24 Aug 2026), hero image on the Dairy Arts Center post (filename indicates Vivian Finck).",
+          "zh": "圣丹斯学院官方场馆博客（2026 年 8 月 24 日），Dairy Arts Center 一文的主图（文件名显示为 Vivian Finck）。"
+        },
+        "source_url": "https://www.sundance.org/wp-content/uploads/2026/08/Copy-of-Copy-of-Vivian-Finck-69-scaled.jpg"
+      }
+    },
+    {
+      "id": "ise-2027-barcelona",
+      "start": "2027-02-02",
+      "end": "2027-02-05",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "Registration and venue pages describe a physical trade show in Barcelona. No live online attendance option is listed.",
+        "zh": "注册与场馆页均按巴塞罗那现场展会来写，未列出可线上参加的方式。"
+      },
+      "title": {
+        "en": "Integrated Systems Europe (ISE) 2027",
+        "zh": "ISE 2027（巴塞罗那集成系统展）"
+      },
+      "summary": {
+        "en": "ISE is a large professional audiovisual and systems-integration trade show. The 2027 edition, themed When Worlds Unite, runs 2-5 February at Fira Gran Via, Barcelona, with Creative Industries among its interest areas. An Attendee Ticket covers four days on the show floor plus the Spark and EdTech Congress floors at Montjuic. This is a broad AV expo; the more creative/immersive counterpart is Spark (3-4 February).",
+        "zh": "ISE 是大型专业视听与系统集成贸易展。2027 年主题为 When Worlds Unite，2 月 2-5 日在巴塞罗那 Fira Gran Via 举行，兴趣领域包括创意产业。观众票覆盖四天展厅，并含 Montjuic 的 Spark 与 EdTech Congress 展区。这是宽口径的 AV 大展；更偏创意与沉浸内容的是同期的 Spark（2 月 3-4 日）。"
+      },
+      "key_points": [
+        {
+          "en": "2-5 February 2027, Fira Gran Via, Barcelona; hours 10:00-18:00 (Friday to 16:00).",
+          "zh": "2027 年 2 月 2-5 日，巴塞罗那 Fira Gran Via；10:00-18:00（周五至 16:00）。"
+        },
+        {
+          "en": "Attendee Ticket 275 EUR incl. VAT before show days; free with member or invitation code.",
+          "zh": "开幕前观众票含税 275 欧元；会员或邀请码免费。"
+        },
+        {
+          "en": "Attendee access includes Spark show floors; Spark Conference requires a higher content pass.",
+          "zh": "观众票含 Spark 展区；Spark 会议需更高级内容通行证。"
+        }
+      ],
+      "location": {
+        "en": "Fira de Barcelona Gran Via, Av. Joan Carles I, 64, 08908 L'Hospitalet de Llobregat, Barcelona, Spain. Attendee tickets also include Spark and EdTech Congress show floors at Fira Montjuic.",
+        "zh": "西班牙巴塞罗那 Fira de Barcelona Gran Via，Av. Joan Carles I, 64。观众票同时包含 Fira Montjuic 的 Spark 与 EdTech Congress 展区。"
+      },
+      "fee": {
+        "en": "Attendee Ticket 275 EUR incl. 10% VAT until 1 February 2027, rising to 300 EUR on show days (2-5 Feb). Attendee + Megatrends 399 EUR incl. VAT (fixed). All-Conference Pass 1,116.50 EUR incl. VAT (listed vs 1,595 EUR). VIP Pass 3,080 EUR incl. VAT. AVIXA/CEDIA members and holders of an exhibitor/partner invitation code: Attendee Ticket is free; Attendee + Megatrends is 149 EUR. The Attendee Ticket includes Spark show floors at Montjuic; the Spark Conference itself is in the All-Conference Pass.",
+        "zh": "观众票含 10% 增值税 275 欧元，至 2027 年 2 月 1 日；展览期间（2-5 日）升至 300 欧元。观众票 + Megatrends 399 欧元（含税，价格固定）。全会议通行证 1,116.50 欧元（对照价 1,595 欧元）。VIP 3,080 欧元。AVIXA/CEDIA 会员及持邀请码者：观众票免费，Megatrends 套票 149 欧元。观众票含 Montjuic 的 Spark 展区；Spark 会议本身含在全会议通行证中。"
+      },
+      "official_url": "https://www.iseurope.org/",
+      "links": [
+        {
+          "url": "https://www.iseurope.org/",
+          "label": {
+            "en": "Official site",
+            "zh": "官网"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://www.iseurope.org/welcome/registration",
+          "label": {
+            "en": "ISE registration",
+            "zh": "ISE 注册"
+          },
+          "role": "register"
+        }
+      ],
+      "times_published": {
+        "en": "Fully open: Tue 2-Thu 4 February 2027 10:00-18:00; Fri 5 February 10:00-16:00 (local). Early entry: Halls 1, 2, 3, 8.0 (Audio Demo Rooms) and the Upper Walkway open at 09:00 each day.",
+        "zh": "全面开放：2027 年 2 月 2–4 日（周二至周四）当地 10:00–18:00；2 月 5 日（周五）10:00–16:00。提前入场：1、2、3 号馆、8.0 馆（音频演示室）和上层步道每日 09:00 开放。"
+      },
+      "display_times": {
+        "en": "2–4 Feb: 17:00–01:00 the next day (UTC+8); 5 Feb: 17:00–23:00 (UTC+8). Halls that open early do so at 16:00 (UTC+8).",
+        "zh": "2-4 日 17:00-次日 01:00（UTC+8）；5 日 17:00-23:00（UTC+8）。部分厅提前开放为每日 16:00（UTC+8）。"
+      },
+      "source_timezone": {
+        "en": "Europe/Madrid (CET, UTC+1 in early February)",
+        "zh": "Europe/Madrid（2 月初为 CET，UTC+1）"
+      },
+      "tags": [
+        "xr",
+        "festival"
+      ],
+      "image": {
+        "file": "assets/events/ise-2027-reg.jpg",
+        "kind": "banner",
+        "alt": {
+          "en": "ISE 2027 registration-is-open artwork from the official site.",
+          "zh": "ISE 2027 官网「注册已开放」画面。"
+        },
+        "credit": {
+          "en": "ISE 2027 official website (registration-is-open artwork).",
+          "zh": "ISE 2027 官网（「注册已开放」画面）。"
+        },
+        "source_url": "https://cdn.asp.events/CLIENT_Integrat_169E7B04_E6F3_39F6_8BE4DB27C54F731E/sites/ise-2027/media/2027/reg-is-open.jpg"
+      }
+    },
+    {
+      "id": "spark-2027-barcelona",
+      "start": "2027-02-03",
+      "end": "2027-02-04",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "Official FAQ: Spark is primarily designed as an in-person experience in Barcelona. Any additional digital content or event coverage will be announced closer to the event. Do not label hybrid until that is announced.",
+        "zh": "官方 FAQ：主要为巴塞罗那现场体验；若有额外数字内容或报道将临近再公布。在此之前不要标成混合办。"
+      },
+      "title": {
+        "en": "Spark 2027",
+        "zh": "Spark 2027（巴塞罗那）"
+      },
+      "summary": {
+        "en": "Spark is a two-day creative-industries event alongside ISE, focused on content, tools and experiences rather than AV infrastructure alone. Official themes include creative convergence, new tools (AI, real-time, immersive and virtual technologies), new audiences, and the future of creative work. The site lists immersive showcases, XR and interactive experiences among what attendees can explore.",
+        "zh": "Spark 是与 ISE 同期的两日创意产业活动，重点是内容、工具与体验，而不是单纯的 AV 基建。官方主题包括创意融合、新工具（AI、实时、沉浸与虚拟技术）、新观众，以及创意工作的未来。网站把沉浸展示、XR 与互动体验列为参观内容。"
+      },
+      "key_points": [
+        {
+          "en": "3-4 February 2027, Fira Montjuic Hall 8, Barcelona.",
+          "zh": "2027 年 2 月 3-4 日，巴塞罗那 Fira Montjuic 8 号馆。"
+        },
+        {
+          "en": "Creative / immersive counterpart to ISE; show floors are already included on an ISE Attendee Ticket.",
+          "zh": "相对 ISE 更偏创意与沉浸；展区已包含在 ISE 观众票中。"
+        },
+        {
+          "en": "Official FAQ: primarily an in-person experience; any extra digital content will be announced closer to the event.",
+          "zh": "官方 FAQ：主要以现场体验为主；若有额外数字内容将临近活动时公布。"
+        }
+      ],
+      "location": {
+        "en": "Fira de Barcelona Montjuic, Hall 8, Barcelona, Spain.",
+        "zh": "西班牙巴塞罗那 Fira de Barcelona Montjuic，8 号馆。"
+      },
+      "fee": {
+        "en": "Spark's own site: it is a ticketed event; registration details and ticket options will be available closer to the event. ISE's registration page (same organiser family) already sells ISE tickets that include Spark show floors at Montjuic on the Attendee Ticket, and include the Spark Conference on the ISE All-Conference Pass (1,116.50 EUR incl. VAT as listed). A standalone Spark-only price is not listed on spark-expo.com.",
+        "zh": "Spark 自己的网站：这是付费活动，「报名详情与票种将临近活动时公布」。同一体系的 ISE 注册页已在售的观众票包含 Montjuic 的 Spark 展区，ISE 全会议通行证（标价含税 1,116.50 欧元）包含 Spark 会议。spark-expo.com 未列出单独的 Spark 票价。"
+      },
+      "official_url": "https://spark-expo.com/",
+      "links": [
+        {
+          "url": "https://spark-expo.com/",
+          "label": {
+            "en": "Official site",
+            "zh": "官网"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://www.iseurope.org/welcome/registration",
+          "label": {
+            "en": "ISE registration (includes Spark show floors)",
+            "zh": "ISE 注册（含 Spark 展区）"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Dates 3-4 February 2027 are published. An Opening Times heading on the official site had no clock times in the fetched content.",
+        "zh": "已公布日期为 2027 年 2 月 3–4 日。官网「开放时间」标题下，抓取到的内容没有钟点。"
+      },
+      "display_times": {
+        "en": "3–4 Feb 2027 in Barcelona. The official page does not publish daily opening times, so no UTC+8 clock is shown.",
+        "zh": "2027 年 2 月 3-4 日（巴塞罗那）。官方页未公布每日开闭馆钟点，故不换算到 UTC+8 的具体钟点。"
+      },
+      "source_timezone": {
+        "en": "Europe/Madrid (CET, UTC+1 in early February)",
+        "zh": "Europe/Madrid（2 月初为 CET，UTC+1）"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "immersive"
+      ],
+      "image": {
+        "file": "assets/events/spark-2027-symbol.png",
+        "kind": "logo",
+        "alt": {
+          "en": "Spark event symbol from the official site, not a photograph of the 2027 show.",
+          "zh": "Spark 官网的活动符号，不是 2027 年展会的照片。"
+        },
+        "credit": {
+          "en": "Spark official website (event symbol / logo). No photographic hero was on the homepage. This is not a photograph of the 2027 show.",
+          "zh": "Spark 官网（活动符号 / 标志）。首页没有摄影主图。这不是 2027 年展会的照片。"
+        },
+        "source_url": "https://cdn.asp.events/CLIENT_Integrat_169E7B04_E6F3_39F6_8BE4DB27C54F731E/sites/ise-spark-2027/media/branding/spark26-Symbol-color.png"
+      }
+    },
+    {
+      "id": "cphdox-2027-interactive",
+      "start": "2027-03-10",
+      "end": "2027-03-21",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "The festival and INTER:ACTIVE are described as Copenhagen-based exhibitions and industry meetings. No 2027 online attendance option is listed on the pages opened.",
+        "zh": "影节与 INTER:ACTIVE 均按哥本哈根现场展览与行业活动来写。已打开的 2027 页面未列出线上参加方式。"
+      },
+      "title": {
+        "en": "CPH:DOX 2027 — INTER:ACTIVE",
+        "zh": "CPH:DOX 2027 — INTER:ACTIVE"
+      },
+      "summary": {
+        "en": "CPH:DOX, the Copenhagen International Documentary Film Festival, runs 10-21 March 2027. INTER:ACTIVE is its annual exhibition at the intersection of creativity and technology, exploring how emerging technologies reshape art and society. The next INTER:ACTIVE programme will be announced in February 2027. Industry dates (CPH:INDUSTRY, CPH:FORUM) are already published.",
+        "zh": "哥本哈根国际纪录片电影节 CPH:DOX 将于 2027 年 3 月 10-21 日举行。INTER:ACTIVE 是其每年一度、讨论创意与技术交叉、新兴技术如何重塑艺术与社会的展览。下一届 INTER:ACTIVE 节目将于 2027 年 2 月公布。行业活动日期（CPH:INDUSTRY、CPH:FORUM）已经发布。"
+      },
+      "key_points": [
+        {
+          "en": "Festival 10-21 March 2027, Copenhagen; INTER:ACTIVE programme due February 2027.",
+          "zh": "电影节 2027 年 3 月 10-21 日在哥本哈根；INTER:ACTIVE 节目 2027 年 2 月公布。"
+        },
+        {
+          "en": "Do not reuse the 2026 Kunsthal Charlottenborg venue or HYPERVIGILANCE title as 2027 facts.",
+          "zh": "不要把 2026 年的 Kunsthal Charlottenborg 场地或 HYPERVIGILANCE 标题写成 2027 年的既定事实。"
+        },
+        {
+          "en": "Submissions for the 2027 festival are already closed.",
+          "zh": "2027 年影展征集已经关闭。"
+        }
+      ],
+      "location": {
+        "en": "Copenhagen, Denmark. The 2026 INTER:ACTIVE exhibition titled HYPERVIGILANCE was at Kunsthal Charlottenborg (11-22 March 2026). The 2027 exhibition venue has not been published on the pages opened.",
+        "zh": "丹麦哥本哈根。2026 年 INTER:ACTIVE 展览 HYPERVIGILANCE 在 Kunsthal Charlottenborg。2027 年展览场地在已打开的页面上尚未公布。"
+      },
+      "fee": {
+        "en": "2027 public ticket prices for INTER:ACTIVE are not listed. Film and project submissions for CPH:DOX 2027 are closed (final deadline was 3 November; preview links may be sent until 25 November). Professional accreditation is requested via a CPH:DOX profile; accreditation prices were not captured on the pages opened for this research.",
+        "zh": "2027 年 INTER:ACTIVE 公众票价未公布。CPH:DOX 2027 影片与项目征集已关闭（最终截止 11 月 3 日；预览链接可补至 11 月 25 日）。专业证件需通过 CPH:DOX 账户申请；本次打开的页面未抓到证件价格。"
+      },
+      "official_url": "https://cphdox.dk/about-us/",
+      "links": [
+        {
+          "url": "https://cphdox.dk/about-us/",
+          "label": {
+            "en": "About the festival",
+            "zh": "关于影节"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://cphdox.dk/interactive-exhibition/",
+          "label": {
+            "en": "INTER:ACTIVE",
+            "zh": "INTER:ACTIVE"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://cphdox.dk/submit/",
+          "label": {
+            "en": "Submissions",
+            "zh": "投稿"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Festival: 10-21 March 2027. CPH:INDUSTRY 14-18 March 2027; CPH:FORUM 16-18 March 2027. The INTER:ACTIVE 2027 exhibition programme will be announced in February 2027. Daily hours for 2027 are not yet published.",
+        "zh": "影节：2027 年 3 月 10–21 日。CPH:INDUSTRY 为 3 月 14–18 日；CPH:FORUM 为 3 月 16–18 日。INTER:ACTIVE 2027 展览节目将于 2027 年 2 月公布。2027 年每日开放钟点尚未公布。"
+      },
+      "display_times": {
+        "en": "Festival 10–21 Mar 2027 (Copenhagen). 2027 INTER:ACTIVE daily hours are not yet published, so no UTC+8 clock is shown. Industry events: 14–18 Mar; CPH:FORUM: 16–18 Mar.",
+        "zh": "电影节 2027 年 3 月 10-21 日（哥本哈根）。2027 年 INTER:ACTIVE 每日开放钟点尚未公布，故不换算具体 UTC+8 钟点。行业活动：3 月 14-18 日；CPH:FORUM：3 月 16-18 日。"
+      },
+      "source_timezone": {
+        "en": "Europe/Copenhagen (CET, UTC+1 in mid-March 2027, before the last-Sunday-of-March DST change)",
+        "zh": "Europe/Copenhagen（2027 年 3 月中旬、三月最后一个周日夏令时切换之前为 CET，UTC+1）"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "immersive",
+        "interactive-film"
+      ],
+      "image": {
+        "file": "assets/events/cphdox-interactive.jpeg",
+        "kind": "photo",
+        "alt": {
+          "en": "Official CPH:DOX still of the 2026 INTER:ACTIVE exhibition, not a 2027 photograph.",
+          "zh": "CPH:DOX 官方图片，记录 2026 年 INTER:ACTIVE 展览，并非 2027 年的照片。"
+        },
+        "credit": {
+          "en": "CPH:DOX official INTER:ACTIVE page. This still documents the 2026 exhibition, not a 2027 photograph.",
+          "zh": "CPH:DOX 官方 INTER:ACTIVE 页面。此图记录的是 2026 年展览，并非 2027 年的照片。"
+        },
+        "source_url": "https://cphdox.dk/wp-content/uploads/2026/02/8748-1200x630.jpeg"
+      }
+    },
+    {
+      "id": "sxsw-2027-xr-experience",
+      "start": "2027-03-17",
+      "end": "2027-03-19",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "SXSW pages describe an Austin in-person conference and festivals. No official live online attendance option for XR Experience was listed on the pages opened.",
+        "zh": "SXSW 页面按奥斯汀现场会议与节庆来写。已打开的页面未列出 XR Experience 的官方实时线上参加方式。"
+      },
+      "title": {
+        "en": "SXSW 2027 — XR Experience",
+        "zh": "SXSW 2027 — XR Experience"
+      },
+      "summary": {
+        "en": "SXSW's XR Experience presents virtual, augmented and mixed-reality projects that emphasise storytelling and art. Official pages describe Competition, Spotlight and Special Events sections. The 2027 exhibition is listed for 17-19 March at Fairmont Manchester, during SXSW in Austin (15-21 March). Project types named on the application page include VR/MR, AR, immersive performance, projection installations, immersive audio and AI-based installations.",
+        "zh": "SXSW 的 XR Experience 展出强调叙事与艺术的虚拟、增强与混合现实项目。官方页面包含竞赛、Spotlight 与特别活动。2027 年展览列为 3 月 17-19 日，地点 Fairmont Manchester，正值奥斯汀 SXSW（3 月 15-21 日）。申请页列出的类型包括 VR/MR、AR、沉浸表演、投影装置、沉浸音频以及基于 AI 的装置。"
+      },
+      "key_points": [
+        {
+          "en": "XR Experience 17-19 March 2027 at Fairmont Manchester, Austin; SXSW overall 15-21 March.",
+          "zh": "XR Experience 于 2027 年 3 月 17-19 日在奥斯汀 Fairmont Manchester；整个 SXSW 为 3 月 15-21 日。"
+        },
+        {
+          "en": "Badge prices start at $695 (Music) up to $1,595 (Platinum); XR access by badge type is not fully itemised on the pages opened.",
+          "zh": "徽章价格自 695 美元（Music）至 1,595 美元（Platinum）；各徽章是否含 XR，已打开页面未完全拆开说明。"
+        },
+        {
+          "en": "Creator submissions for 2027 are closed.",
+          "zh": "2027 年创作者征集已关闭。"
+        }
+      ],
+      "location": {
+        "en": "XR Experience: Fairmont Manchester, Austin, Texas, USA. Wider SXSW: Austin, TX.",
+        "zh": "XR Experience：美国德克萨斯州奥斯汀 Fairmont Manchester。整个 SXSW：奥斯汀。"
+      },
+      "fee": {
+        "en": "Homepage badge prices: Platinum $1,595 (all conferences and festivals); Innovation $1,095; Film and TV $925; Music $695. Whether XR Experience is included in a given badge, and whether a cheaper expo-only or public ticket exists, is not spelled out on the pages opened. The 2027 XR Experience application period is closed (late entry by coupon only); earlier deadlines were 25 Aug 2026 ($55), 15 Sep 2026 ($70), 1 Oct 2026 ($90), all 23:59 PT. Notifications by 9 February 2027.",
+        "zh": "官网首页徽章价格：Platinum 1,595 美元（全部会议与节庆）；Innovation 1,095 美元；Film & TV 925 美元；Music 695 美元。某一徽章是否包含 XR Experience、是否另有更便宜的展览或公众票，在已打开的页面上没有写清。2027 年 XR 作品征集已关闭（仅优惠码补交）；此前截止为 2026 年 8 月 25 日 55 美元、9 月 15 日 70 美元、10 月 1 日 90 美元（均为太平洋时间 23:59）。入选通知不晚于 2027 年 2 月 9 日。"
+      },
+      "official_url": "https://sxsw.com/exhibitions/sxsw-xr-experience/",
+      "links": [
+        {
+          "url": "https://sxsw.com/exhibitions/sxsw-xr-experience/",
+          "label": {
+            "en": "XR Experience",
+            "zh": "XR Experience"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://sxsw.com/",
+          "label": {
+            "en": "SXSW",
+            "zh": "SXSW"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://sxsw.com/exhibitions/",
+          "label": {
+            "en": "Exhibitions",
+            "zh": "展览"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://sxsw.com/film-tv-festival/",
+          "label": {
+            "en": "Film & TV festival",
+            "zh": "电影与电视节"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://cart.sxsw.com/products/filmapp-vr",
+          "label": {
+            "en": "XR application page",
+            "zh": "XR 申请页"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Dates only; daily opening clock times for XR Experience were not listed on the pages opened.",
+        "zh": "只有日期；已打开的页面没有列出 XR Experience 的每日开放钟点。"
+      },
+      "display_times": {
+        "en": "XR Experience: 17–19 Mar 2027. SXSW overall: 15–21 Mar (Austin). Daily hours are not published, so no UTC+8 clock is shown. The United States is on daylight time by mid-March, so local time is Central Daylight Time.",
+        "zh": "XR Experience：2027 年 3 月 17-19 日；整个 SXSW：3 月 15-21 日（奥斯汀）。每日开放钟点未公布，故不换算 UTC+8 具体钟点。美国已于 3 月中进入夏令时，当地为中部夏令时间。"
+      },
+      "source_timezone": {
+        "en": "America/Chicago (Austin is on CDT, UTC-5, in mid-March after US DST starts)",
+        "zh": "America/Chicago（美国夏令时于 3 月中旬开始后，奥斯汀为中部夏令时间 CDT，UTC−5）"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "immersive"
+      ],
+      "dates_note": {
+        "en": "XR Experience is listed as 17-19 March 2027 at Fairmont Manchester. The wider SXSW Conference and Festivals are 15-21 March 2027 in Austin. One exhibitions page also uses a March 15-19, 2027 heading above expo stats.",
+        "zh": "XR Experience 列为 2027 年 3 月 17–19 日，地点 Fairmont Manchester。整个 SXSW 会议与节庆为 2027 年 3 月 15–21 日，奥斯汀。另有一个展览页在展会数据上方使用了 2027 年 3 月 15–19 日的标题。"
+      },
+      "image": {
+        "file": "assets/events/sxsw-2027-og.jpg",
+        "kind": "banner",
+        "alt": {
+          "en": "SXSW 2027 image from the official site.",
+          "zh": "SXSW 官网的 2027 年图片。"
+        },
+        "credit": {
+          "en": "SXSW official website Open Graph image for 2027.",
+          "zh": "SXSW 官网用于 2027 年的 Open Graph 图片。"
+        },
+        "source_url": "https://sxsw.com/wp-content/uploads/sites/2/2026/08/27_SXSW_og-image.png?quality=99"
+      }
+    },
+    {
+      "id": "laval-virtual-2027",
+      "start": "2027-04-07",
+      "end": "2027-04-09",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "Visit and FAQ pages describe travelling to Espace Mayenne. No online or hybrid attendance option is listed.",
+        "zh": "参观与 FAQ 页面按前往 Espace Mayenne 来写，未列出线上或混合参加方式。"
+      },
+      "title": {
+        "en": "Laval Virtual 2027",
+        "zh": "Laval Virtual 2027"
+      },
+      "summary": {
+        "en": "Laval Virtual, held since 1999, bills itself as Europe's biggest XR event. The 29th edition is 7-9 April 2027 in Laval, France, with an exhibition (Mayenne Hall, Pegase Hall, LBVR Area) and conferences, tech talks and a doctoral consortium. The official pages describe an in-person visit to Espace Mayenne; no live online ticket is listed.",
+        "zh": "创办于 1999 年的 Laval Virtual 自称欧洲最大的 XR 活动。第 29 届于 2027 年 4 月 7-9 日在法国拉瓦勒举行，包含展览（Mayenne Hall、Pegase Hall、LBVR 区域）以及会议、技术分享与博士论坛。官方页面按前往 Espace Mayenne 的现场参观来写，未列出实时线上票。"
+      },
+      "key_points": [
+        {
+          "en": "7-9 April 2027, Espace Mayenne, Laval, France, with published daily hours.",
+          "zh": "2027 年 4 月 7-9 日，法国拉瓦勒 Espace Mayenne，每日开放时间已公布。"
+        },
+        {
+          "en": "Super Early Bird Full Pass 390 EUR until 31 January; then 520 EUR.",
+          "zh": "超级早鸟 Full Pass 至 1 月 31 日为 390 欧元，之后 520 欧元。"
+        },
+        {
+          "en": "In-person industry expo; no virtual pass listed.",
+          "zh": "现场行业展会；未列出线上通行证。"
+        }
+      ],
+      "location": {
+        "en": "Espace Mayenne, Laval, France.",
+        "zh": "法国拉瓦勒 Espace Mayenne。"
+      },
+      "fee": {
+        "en": "Super Early Bird until 31 January; Early Bird 1 February-15 March; regular 16 March-9 April. Full Pass: 390 / 520 / 520 EUR. Discovery Pass (exhibition): 155 / 210 / 210 EUR, with optional Sessions add-on listed in places as excl. VAT (e.g. +95 EUR i.e. 200 EUR excl. VAT in the Super Early Bird column). A reduced Discovery Pass exists for students (minimum third year of higher education) and jobseekers, with proof required. Passes cover all three days; no day pass. Passes cannot be refunded or exchanged. Whether the headline Full/Discovery prices include VAT is not clearly stated on the ticketing page (some add-ons are explicitly excl. VAT).",
+        "zh": "超级早鸟至 1 月 31 日；早鸟 2 月 1 日-3 月 15 日；正价 3 月 16 日-4 月 9 日。Full Pass：390 / 520 / 520 欧元。Discovery Pass（展览）：155 / 210 / 210 欧元，场次加购在部分位置标明不含增值税（例如超级早鸟栏 +95 欧元，即不含税 200 欧元）。学生（至少高等教育三年级）与求职者有优惠 Discovery Pass，入场须出示证明。通行证覆盖三天，无单日票，不可退换。主标价是否含增值税在售票页上写得不清楚（部分加购明确为不含税）。"
+      },
+      "official_url": "https://laval-virtual.com/en/",
+      "links": [
+        {
+          "url": "https://laval-virtual.com/en/",
+          "label": {
+            "en": "Official site",
+            "zh": "官网"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://laval-virtual.com/en/ticketing/",
+          "label": {
+            "en": "Tickets",
+            "zh": "购票"
+          },
+          "role": "register"
+        },
+        {
+          "url": "https://laval-virtual.com/en/prepare-your-visit/",
+          "label": {
+            "en": "Prepare your visit",
+            "zh": "参观须知"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://laval-virtual.com/en/faq/",
+          "label": {
+            "en": "FAQ",
+            "zh": "常见问题"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Wed 7 April 10:00-18:00; Thu 8 April 9:00-18:30; Fri 9 April 9:00-16:00 (local, as published on FAQ and prepare-your-visit pages).",
+        "zh": "4 月 7 日（周三）当地 10:00–18:00；4 月 8 日（周四）9:00–18:30；4 月 9 日（周五）9:00–16:00（FAQ 与参观须知页面所公布的当地时间）。"
+      },
+      "display_times": {
+        "en": "7 Apr 16:00–02:00 the next day; 8 Apr 15:00–02:30 the next day; 9 Apr 15:00–22:00 (all UTC+8).",
+        "zh": "4 月 7 日 16:00-次日 02:00；4 月 8 日 15:00-次日 02:30；4 月 9 日 15:00-22:00（均为 UTC+8）。"
+      },
+      "source_timezone": {
+        "en": "Europe/Paris (CEST, UTC+2 in April)",
+        "zh": "Europe/Paris（4 月为 CEST，UTC+2）"
+      },
+      "tags": [
+        "xr",
+        "festival"
+      ],
+      "image": {
+        "file": "assets/events/laval-virtual-2025-party.jpg",
+        "kind": "photo",
+        "alt": {
+          "en": "A 2025 Laval Virtual party photograph used on the 2027 ticketing page, not a 2027 photograph.",
+          "zh": "用在 2027 年售票页上的 2025 年 Laval Virtual 派对照片，并非 2027 年的照片。"
+        },
+        "credit": {
+          "en": "Laval Virtual official ticketing page. This is a 2025 party photograph reused on the 2027 tickets page, not a 2027 photograph.",
+          "zh": "Laval Virtual 官方售票页。这是 2025 年派对照片，被用在 2027 年售票页上，并非 2027 年的照片。"
+        },
+        "source_url": "https://laval-virtual.com/wp-content/uploads/2025/09/2BS-LV-PARTY-2025-19.jpg"
+      }
+    },
+    {
+      "id": "newimages-festival-2027",
+      "start": "2027-04-21",
+      "end": "2027-04-25",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "The festival and Industry Days are described as taking place in Paris. Pass perks include invitations to online workshops during the rest of the year — a membership benefit, not a live remote festival ticket.",
+        "zh": "影展与 Industry Days 按巴黎现场举行来写。证件福利含一年中的线上工作坊邀请，这是会员权益，不是可远程参加本届影展的门票。"
+      },
+      "title": {
+        "en": "NewImages Festival 2027",
+        "zh": "NewImages Festival 2027（巴黎）"
+      },
+      "summary": {
+        "en": "NewImages Festival returns to Paris 21-25 April 2027 for immersive art, digital creation and new storytelling, with Industry Days 20-23 April. The official 2027 page promises a selection of VR, AR, interactive, digital, dome, virtual-world and hybrid works, plus a professional platform covering development, co-production, exhibition and circulation. Open calls are already running (see the companion card).",
+        "zh": "NewImages Festival 将于 2027 年 4 月 21-25 日重返巴黎，关注沉浸艺术、数字创作与新的叙事方式，Industry Days 为 4 月 20-23 日。官方 2027 页面预告将展出 VR、AR、互动、数字、穹顶、虚拟世界与混合作品，并继续作为覆盖开发、联合制片、展览与流通的专业平台。公开征集已在进行（见另一张卡片）。"
+      },
+      "key_points": [
+        {
+          "en": "Festival 21-25 April 2027; Industry Days 20-23 April; Cite des sciences, Paris.",
+          "zh": "影展 2027 年 4 月 21-25 日；Industry Days 4 月 20-23 日；巴黎科学与工业城。"
+        },
+        {
+          "en": "Professional passes 15 / 120 / 350 EUR VAT exempt; registration not yet open. Public ticketing still announced soon.",
+          "zh": "专业证件 15 / 120 / 350 欧元（免税），报名尚未开放。公众票务仍写「稍后公布」。"
+        },
+        {
+          "en": "XR Development Market meetings take place here during Industry Days.",
+          "zh": "XR 开发市场的会谈在 Industry Days 于此举行。"
+        }
+      ],
+      "location": {
+        "en": "Cite des sciences et de l'industrie, 30 avenue Corentin Cariou, 75019 Paris, France. Official practical info: Panorama at ground-level Vestibule; XR Competition at Le Loft (level -2); Virtual Worlds, work in progress, school projects and FabLab at Carrefour Numerique (level -1); Dome Competition at the Planetarium (level +2); Industry Days and XR Development Market at Centre des congres de la Villette (level -1).",
+        "zh": "法国巴黎 Cite des sciences et de l'industrie，30 avenue Corentin Cariou, 75019。官方实用信息：Panorama 在一层 Vestibule；XR 竞赛在 Le Loft（-2 层）；Virtual Worlds、进行中项目、学校项目与 FabLab 在 Carrefour Numerique（-1 层）；Dome 竞赛在天文馆（+2 层）；Industry Days 与 XR 开发市场在 Centre des congres de la Villette（-1 层）。"
+      },
+      "fee": {
+        "en": "Professional accreditation prices are already listed, but Registration will open soon: Student Pass 15 EUR VAT exempt; NewImages Pass 120 EUR VAT exempt; Insider Pass 350 EUR VAT exempt; press accreditation by request to press@newimages.art. The 2027 festival page says public ticketing information will be announced soon — do not assume the 2026 public exhibition was free again until 2027 ticketing is published. Exhibition reservations are required, subject to availability. Insider Pass adds B2Match meeting tools and networking lunches; cheaper passes do not.",
+        "zh": "专业证件价格已列出，但「报名即将开放」：学生证件 15 欧元（免税）；NewImages Pass 120 欧元（免税）；Insider Pass 350 欧元（免税）；媒体证件向 press@newimages.art 申请。2027 影展页写明公众票务稍后公布——在正式公布前，不要假定会沿用 2026 年公众展览免费。展览须预约，名额有限。Insider Pass 另含 B2Match 约见与交流午餐，较低档证件不含。"
+      },
+      "official_url": "https://www.newimages.art/newimages-festival-2027",
+      "links": [
+        {
+          "url": "https://www.newimages.art/newimages-festival-2027",
+          "label": {
+            "en": "Festival 2027",
+            "zh": "2027 影展"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://www.newimages.art/info",
+          "label": {
+            "en": "Practical info",
+            "zh": "实用信息"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://www.newimages.art/registration",
+          "label": {
+            "en": "Accreditation",
+            "zh": "证件报名"
+          },
+          "role": "register"
+        },
+        {
+          "url": "https://www.newimages.art/calls-for-projects",
+          "label": {
+            "en": "Open calls",
+            "zh": "公开征集"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Practical-info page lists opening hours 9:15-18:00 at Cite des sciences et de l'industrie. It does not break these hours out day by day for 2027, and the 2027 festival page still says full programme and public ticketing details will be announced soon.",
+        "zh": "实用信息页列出科学与工业城的开放时间为 9:15–18:00。它没有按 2027 年的每一天拆开，而且 2027 影展页仍写完整节目与公众票务稍后公布。"
+      },
+      "display_times": {
+        "en": "If the practical-info hours of 9:15–18:00 local apply, that is 15:15–00:00 the next day (UTC+8). Industry Days are 20–23 Apr; the public festival is 21–25 Apr. The 2027 page still says the full programme and public ticketing will be announced, so treat this clock as provisional.",
+        "zh": "若按实用信息页的 9:15-18:00 当地时间：对应 UTC+8 为 15:15-次日 00:00。Industry Days 为 4 月 20-23 日，公众影展为 4 月 21-25 日。请注意 2027 专页仍称完整节目与公众票务稍后公布，上述钟点需以届时官方为准。"
+      },
+      "source_timezone": {
+        "en": "Europe/Paris (CEST, UTC+2 in April)",
+        "zh": "Europe/Paris（4 月为 CEST，UTC+2）"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "immersive",
+        "market"
+      ],
+      "dates_note": {
+        "en": "Public festival 21-25 April 2027. Industry Days 20-23 April 2027. Organisers recommend arriving 19 April.",
+        "zh": "公众影展 2027 年 4 月 21–25 日。Industry Days 为 4 月 20–23 日。主办方建议 4 月 19 日抵达。"
+      },
+      "image": {
+        "file": "assets/events/newimages-festival-og.webp",
+        "kind": "banner",
+        "alt": {
+          "en": "Open Graph image from the NewImages Festival site.",
+          "zh": "NewImages Festival 官网的 Open Graph 图片。"
+        },
+        "credit": {
+          "en": "NewImages Festival official site (Open Graph image).",
+          "zh": "NewImages Festival 官网（Open Graph 图片）。"
+        },
+        "source_url": "https://www.newimages.art/newimages_og.webp"
+      }
+    },
+    {
+      "id": "fmx-2027",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "status": "upcoming",
+      "format": "hybrid",
+      "format_en": "in-person, also joinable online (hybrid)",
+      "format_zh": "线下为主，也可线上参加",
+      "format_notes": {
+        "en": "About page lists the location as Stuttgart and online, and splits the edition into On Site, On Campus and On Demand (1-31 May). It does not spell out whether April 27-30 will also be livestreamed live, or only available on demand afterwards. Ticket types for the online portion are not yet listed.",
+        "zh": "About 页把地点写成斯图加特与线上，并拆成现场、校园日与点播（5 月 1-31 日）。并未写明 4 月 27-30 日是否同时直播，还是仅能会后点播。线上部分的票种也尚未列出。"
+      },
+      "title": {
+        "en": "FMX 2027",
+        "zh": "FMX 2027（斯图加特）"
+      },
+      "summary": {
+        "en": "FMX is Europe's major conference for animation, visual effects and digital media, organised with roots at Filmakademie Baden-Wurttemberg. The 31st edition is published as on site 27-29 April 2027 in Stuttgart, on campus 30 April, and on demand 1-31 May. The conference is in English and typically includes presentations, panels, workshops and an exhibition area covering film, real-time and immersive media.",
+        "zh": "FMX 是欧洲重要的动画、视觉特效与数字媒体会议，渊源来自巴登-符腾堡电影学院。第 31 届已公布为：2027 年 4 月 27-29 日在斯图加特现场，4 月 30 日校园日，5 月 1-31 日点播。会议语言为英语，通常包含演讲、论坛、工作坊和展览，涵盖电影、实时与沉浸媒体。"
+      },
+      "key_points": [
+        {
+          "en": "On site 27-29 April 2027, Stuttgart; on campus 30 April; on demand 1-31 May.",
+          "zh": "2027 年 4 月 27-29 日斯图加特现场；4 月 30 日校园日；5 月 1-31 日点播。"
+        },
+        {
+          "en": "Official location line already includes and Online.",
+          "zh": "官方地点一行已写「& Online」。"
+        },
+        {
+          "en": "2027 programme and ticket prices not yet posted (programme early 2027).",
+          "zh": "2027 年节目与票价尚未公布（节目「2027 年初」上线）。"
+        }
+      ],
+      "location": {
+        "en": "Haus der Wirtschaft, Stuttgart, Germany, and online (wording from the official About page: Haus der Wirtschaft, Stuttgart, Germany & Online).",
+        "zh": "德国斯图加特 Haus der Wirtschaft，以及线上（官方 About 页原文：Stuttgart, Germany & Online）。"
+      },
+      "fee": {
+        "en": "Not listed. 2027 ticket prices were not published on the official About or 2027 programme-info pages opened for this research.",
+        "zh": "未公布。本次打开的官方 About 与 2027 节目信息页没有 2027 年票价。"
+      },
+      "official_url": "https://fmx.de/en/about/about-fmx",
+      "links": [
+        {
+          "url": "https://fmx.de/en/about/about-fmx",
+          "label": {
+            "en": "About FMX",
+            "zh": "关于 FMX"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://fmx.de/en/program/fmx-2027-program-info",
+          "label": {
+            "en": "2027 programme info",
+            "zh": "2027 节目信息"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Date blocks only; daily clock hours for 2027 are not yet published. Programme information will go online in early 2027.",
+        "zh": "只有日期分段；2027 年的每日钟点尚未公布。节目信息将于 2027 年初上网。"
+      },
+      "display_times": {
+        "en": "On site 27–29 Apr 2027, on campus 30 Apr, and on demand 1–31 May (Germany). Daily 2027 hours are not yet published, so no UTC+8 opening time is shown.",
+        "zh": "现场 2027 年 4 月 27-29 日，校园日 4 月 30 日；点播 5 月 1-31 日（德国）。2027 年每日钟点尚未公布，故不换算 UTC+8 具体开闭馆时间。"
+      },
+      "source_timezone": {
+        "en": "Europe/Berlin (CEST, UTC+2 in late April / May)",
+        "zh": "Europe/Berlin（4 月下旬 / 5 月为 CEST，UTC+2）"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "talk"
+      ],
+      "dates_note": {
+        "en": "Official about page: On Site 27-29 April; On Campus 30 April; On Demand 1-31 May 2027.",
+        "zh": "官方 About 页：现场 4 月 27–29 日；校园日 4 月 30 日；点播 2027 年 5 月 1–31 日。"
+      },
+      "image": {
+        "file": "assets/events/fmx-header.jpg",
+        "kind": "banner",
+        "alt": {
+          "en": "FMX About-page header labelled FMX 2026, not a 2027 photograph.",
+          "zh": "FMX About 页页眉，路径标注为 FMX 2026，并非 2027 年的照片。"
+        },
+        "credit": {
+          "en": "FMX official website (header artwork on the About page). The file path is labelled FMX 2026; this is not a 2027 photograph.",
+          "zh": "FMX 官网（About 页页眉）。文件路径标注为 FMX 2026，并非 2027 年的照片。"
+        },
+        "source_url": "https://fmx.de/files/public/images/00_home/FMX%202026/FMX%20-%20auf%20Rot_1920x1080.jpg"
+      }
+    },
+    {
+      "id": "tribeca-festival-2027-immersive",
+      "start": "2027-06-03",
+      "end": "2027-06-12",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "Tickets and press materials describe a New York in-person festival. No official online attendance option for 2027 immersive events was listed on the pages opened.",
+        "zh": "售票与新闻稿按纽约现场电影节来写。已打开的页面未列出 2027 年沉浸活动的官方线上参加方式。"
+      },
+      "title": {
+        "en": "Tribeca Festival 2027 — Immersive Storytelling and Events",
+        "zh": "翠贝卡电影节 2027 — 沉浸叙事与活动"
+      },
+      "summary": {
+        "en": "The 26th Tribeca Festival, presented by OKX, is 3-12 June 2027 in New York City. The festival's official about text includes immersive work alongside film, TV, music, podcasts and games. A dedicated Immersive Storytelling and Events page describes VR, augmented worlds and immersive events, but it does not yet publish a 2027 immersive lineup or venues. The 30 September 2026 submissions announcement listed Features, Shorts, TV, Digital Creators, Games, Podcasts, Tribeca X and Works in Progress — it did not name a separate Immersive submission category. Games rules mention web, console, VR, AR and mobile.",
+        "zh": "第 26 届翠贝卡电影节由 OKX 呈现，2027 年 6 月 3-12 日在纽约举行。官方介绍把沉浸作品与电影、电视、音乐、播客、游戏并列。沉浸叙事与活动专页提到 VR、增强世界与沉浸活动，但尚未公布 2027 年片单或场地。2026 年 9 月 30 日的征集公告列出了长片、短片、电视、数字创作者、游戏、播客、Tribeca X 与进行中项目，并未单列 Immersive 投递类别。游戏规则提及网页、主机、VR、AR 与移动游戏。"
+      },
+      "key_points": [
+        {
+          "en": "Festival 3-12 June 2027, New York City.",
+          "zh": "电影节 2027 年 6 月 3-12 日，纽约。"
+        },
+        {
+          "en": "Immersive programme page exists, but 2027 venues, hours and lineup are not yet posted there.",
+          "zh": "已有沉浸单元页面，但 2027 年场地、时间与片单尚未在该页发布。"
+        },
+        {
+          "en": "Pass prices are published; an immersive-only ticket is not.",
+          "zh": "通行证价格已公布；没有单独的沉浸专票。"
+        }
+      ],
+      "location": {
+        "en": "New York City, USA. Specific 2027 immersive venues are not listed on the immersive page or the 30 September 2026 dates press release.",
+        "zh": "美国纽约。2027 年沉浸单元的具体场地在沉浸页与 2026 年 9 月 30 日档期新闻稿中未列出。"
+      },
+      "fee": {
+        "en": "Festival passes on the official tickets page: Hudson All-Access Pass $1,500 + $50 fee; Hudson Opening Weekend Pass $950 + $50 fee (3-7 June); ticket packages $260-$375 + $20 fee; Under 25 Pass $85 + $10 fee; membership $300-$550 + $15-$25 fee; Patron Pass $5,000+. An immersive-only ticket is not listed. 20% discounts at ticket outlets (not online) for filmmakers, students, seniors 62+ and downtown Manhattan residents, with ID.",
+        "zh": "官方售票页：Hudson 全通行 1,500 美元 + 50 美元手续费；Hudson 开幕周末 950 美元 + 50 美元（6 月 3-7 日）；套票 260-375 美元 + 20 美元；25 岁以下 85 美元 + 10 美元；会员 300-550 美元 + 15-25 美元；Patron 5,000 美元起。未列出沉浸单元专票。影片作者、学生、62 岁以上及曼哈顿下城居民在现场售票点（非网上）可享 20% 折扣，须出示证件。"
+      },
+      "official_url": "https://tribecafilm.com/festival/immersive",
+      "links": [
+        {
+          "url": "https://tribecafilm.com/festival/immersive",
+          "label": {
+            "en": "Immersive programme",
+            "zh": "沉浸单元"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://tribecafilm.com/press-center/press-releases/tribeca-festival-announces-2027-dates-and-calls-for-submissions",
+          "label": {
+            "en": "2027 dates and calls",
+            "zh": "2027 日期与征集"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://tribecafilm.com/festival/tickets",
+          "label": {
+            "en": "Tickets",
+            "zh": "购票"
+          },
+          "role": "register"
+        }
+      ],
+      "times_published": {
+        "en": "Festival dates 3-12 June 2027. Immersive programme hours and venues for 2027 are not listed on the immersive landing page (the page is a short description only).",
+        "zh": "影节日期为 2027 年 6 月 3–12 日。沉浸单元落地页没有列出 2027 年的开放钟点与场地（该页只有一段短介绍）。"
+      },
+      "display_times": {
+        "en": "Festival 3–12 Jun 2027 (New York). Immersive-programme hours and venues are not on the immersive landing page, so no UTC+8 clock is shown.",
+        "zh": "电影节 2027 年 6 月 3-12 日（纽约）。沉浸单元的每日钟点与场地尚未在沉浸落地页列出，故不换算 UTC+8 具体钟点。"
+      },
+      "source_timezone": {
+        "en": "America/New_York (EDT, UTC-4 in June)",
+        "zh": "America/New_York（6 月为 EDT，UTC−4）"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "immersive"
+      ]
+    },
+    {
+      "id": "awe-usa-2027",
+      "start": "2027-06-14",
+      "end": "2027-06-17",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "The official site and ticket listing describe a Long Beach in-person conference and expo. No virtual or hybrid pass was listed on the pages opened.",
+        "zh": "官网与售票列表按长滩现场会议与展览来写。已打开的页面未列出线上或混合通行证。"
+      },
+      "title": {
+        "en": "AWE USA 2027",
+        "zh": "AWE USA 2027（长滩）"
+      },
+      "summary": {
+        "en": "AWE USA, billed as a leading XR + AI conference and expo, is 14-17 June 2027 in Long Beach, themed I, Spatial — Humans Empowered by Spatial AI. The official agenda already includes a web-relevant session, From Web Browser to Metaverse Browser (16 June, 16:30-16:55, Room 101A), with Sean Mann (RP1) and Neil Trevett (Metaverse Standards Forum / Khronos) on the Open Metaverse Browser Initiative. Evan Spiegel is listed among featured speakers on the homepage.",
+        "zh": "AWE USA 自称领先的 XR + AI 会议与展览，2027 年 6 月 14-17 日在长滩举行，主题为 I, Spatial — Humans Empowered by Spatial AI。官方议程已有一场与网页相关的分享：From Web Browser to Metaverse Browser（6 月 16 日 16:30-16:55，101A 房间），由 Sean Mann（RP1）与 Neil Trevett（Metaverse Standards Forum / Khronos）介绍 Open Metaverse Browser Initiative。首页列出的主宾演讲者包括 Evan Spiegel。"
+      },
+      "key_points": [
+        {
+          "en": "14-17 June 2027, Long Beach Convention Center; tickets at events.awexr.com/usa-2027 (price not listed on pages opened).",
+          "zh": "2027 年 6 月 14-17 日，长滩会议中心；购票见 events.awexr.com/usa-2027（已打开页面未列价格）。"
+        },
+        {
+          "en": "Includes a 16 June session on an open, standards-based metaverse browser / spatial web.",
+          "zh": "6 月 16 日有一场关于开放、基于标准的「元宇宙浏览器」/ 空间网页的分享。"
+        },
+        {
+          "en": "Timezone on the ticket listing is labelled PST; treat conversions with care.",
+          "zh": "售票页时区标为 PST，换算时需小心。"
+        }
+      ],
+      "location": {
+        "en": "Long Beach Convention Center, Long Beach, California, USA. Co-located with Physical AI World 2027 at the same venue and dates (as listed on the official ticket portal).",
+        "zh": "美国加利福尼亚州长滩会议中心。售票门户显示与 Physical AI World 2027 同期同地。"
+      },
+      "fee": {
+        "en": "Not listed on the public pages successfully opened. Tickets are sold at https://events.awexr.com/usa-2027 (that shop URL returned 403 to the research fetch). The Salesforce ticket index lists AWE USA 2027 but does not display prices in the fetched HTML.",
+        "zh": "在成功打开的公开页面上未公布票价。购票地址为 https://events.awexr.com/usa-2027（本次抓取该店面返回 403）。Salesforce 票务索引列出了 AWE USA 2027，但抓取的 HTML 中没有价格。"
+      },
+      "official_url": "https://www.awexr.com/usa-2027/",
+      "links": [
+        {
+          "url": "https://www.awexr.com/usa-2027/",
+          "label": {
+            "en": "AWE USA 2027",
+            "zh": "AWE USA 2027"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://events.awexr.com/usa-2027",
+          "label": {
+            "en": "Tickets",
+            "zh": "购票"
+          },
+          "role": "register"
+        },
+        {
+          "url": "https://awe.my.salesforce-sites.com/Tickets",
+          "label": {
+            "en": "Ticket index",
+            "zh": "票务索引"
+          },
+          "role": "info"
+        },
+        {
+          "url": "https://www.awexr.com/usa-2027/agenda/2594-from-web-browser-to-metaverse-browser",
+          "label": {
+            "en": "Session: From Web Browser to Metaverse Browser",
+            "zh": "场次：From Web Browser to Metaverse Browser"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Official ticket listing: event start 14 June 2027 09:00 AM (PST); event end 17 June 2027 04:30 PM (PST). The site labels the timezone as PST even though mid-June in California is normally Pacific Daylight Time (UTC-7). Converted times below follow the published PST label and flag that uncertainty.",
+        "zh": "官方售票信息：2027 年 6 月 14 日上午 09:00 开始（标为 PST）；2027 年 6 月 17 日下午 04:30 结束（标为 PST）。页面在 6 月中旬仍标 PST，而加州此时通常是太平洋夏令时间（UTC−7）。下面的换算按页面所标的 PST，并标出这一不确定。"
+      },
+      "display_times": {
+        "en": "Converted from the PST (UTC−8) label on the ticket listing: the published window runs from 01:00 on 14 Jun to 08:30 on 18 Jun (UTC+8). That is the start and end of the whole event, not a daily timetable. If local time is actually PDT (UTC−7), shift one hour earlier (about 00:00 on 14 Jun to 07:30 on 18 Jun, UTC+8). Use the official agenda for the daily schedule.",
+        "zh": "若按售票页所标 PST（UTC-8）换算：6 月 14 日 01:00 至 6 月 18 日 08:30（UTC+8）为整段活动窗口的起止，而非每日时刻表。若当地实际为 PDT（UTC-7），起止应再提前一小时（约 6 月 14 日 00:00 至 6 月 18 日 07:30，UTC+8）。每日分时日程请以官方议程为准。"
+      },
+      "source_timezone": {
+        "en": "Published as PST on the official ticket listing. Typical local time in Long Beach in June is PDT (UTC-7); this was not relabelled by the organiser on the pages opened.",
+        "zh": "售票信息标为 PST。长滩 6 月的当地时间通常是 PDT（UTC−7）；已打开的页面没有改标。"
+      },
+      "tags": [
+        "xr",
+        "ai-agent",
+        "webxr",
+        "festival",
+        "talk"
+      ],
+      "image": {
+        "file": "assets/events/awe-usa-2027-og.jpg",
+        "kind": "photo",
+        "alt": {
+          "en": "Image from the AWE USA 2027 official site.",
+          "zh": "AWE USA 2027 官网图片。"
+        },
+        "credit": {
+          "en": "AWE USA 2027 official website (page image).",
+          "zh": "AWE USA 2027 官网（页面图片）。"
+        },
+        "source_url": "https://res.cloudinary.com/dmy7buja6/image/upload/8NV26jcmifFNP2Lx8hrpESDD"
+      }
+    },
+    {
+      "id": "raindance-2027-vrx-immersive",
+      "start": "2027-06-16",
+      "end": "2027-06-25",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "The About page describes a London festival with visitors coming into the city. No official online attendance option for 2027 VRX/Immersive was listed on the pages opened.",
+        "zh": "About 页按人们前来伦敦参加的影节来写。已打开的页面未列出 2027 年 VRX/Immersive 的官方线上参加方式。"
+      },
+      "title": {
+        "en": "Raindance Film Festival 2027 — VRX / Immersive",
+        "zh": "Raindance 电影节 2027 — VRX / Immersive"
+      },
+      "summary": {
+        "en": "The 35th Raindance Film Festival, the UK's largest independent film festival, runs from opening night 16 June to closing night 25 June 2027 in London. Official festival sections include a world programme of independent films, House of Raindance talks, and a Raindance VRX programme for virtual reality and new media. Awards listed include Raindance Immersive Awards. raindanceimmersive.com currently shows a list of project titles without 2027 dates or ticketing.",
+        "zh": "第 35 届 Raindance 电影节是英国最大的独立电影节，2027 年 6 月 16 日开幕、6 月 25 日闭幕，在伦敦举行。官方单元包括独立电影节目、House of Raindance 对谈，以及面向虚拟现实与新媒体的 Raindance VRX 节目。奖项名单中包括 Raindance Immersive Awards。raindanceimmersive.com 目前只列出项目名称，没有 2027 年日期或票务。"
+      },
+      "key_points": [
+        {
+          "en": "16-25 June 2027 in London (opening and closing nights as published).",
+          "zh": "2027 年 6 月 16-25 日在伦敦（开闭幕夜已公布）。"
+        },
+        {
+          "en": "Official sections include Raindance VRX (VR and new media) and Immersive Awards.",
+          "zh": "官方单元包括 Raindance VRX（VR 与新媒体）以及 Immersive Awards。"
+        },
+        {
+          "en": "2027 venues, hours and fees are not yet on the About page.",
+          "zh": "2027 年场地、时刻与费用尚未写在 About 页上。"
+        }
+      ],
+      "location": {
+        "en": "London, United Kingdom. The About page situates the festival in London's West End film district. The listed address 40 Craven Street, London WC2N 5NG is the Raindance head office, not a confirmed screening venue.",
+        "zh": "英国伦敦。About 页将影节放在伦敦西区电影区。所列 40 Craven Street, London WC2N 5NG 是 Raindance 总部地址，不是已确认的放映场地。"
+      },
+      "fee": {
+        "en": "Not listed on the official About page opened for this research. Public ticket or accreditation prices for 2027 were not published there.",
+        "zh": "未公布。本次打开的官方 About 页没有 2027 年公众票或证件价格。"
+      },
+      "official_url": "https://raindance.org/festival/about/",
+      "links": [
+        {
+          "url": "https://raindance.org/festival/about/",
+          "label": {
+            "en": "About the festival",
+            "zh": "关于影节"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://www.raindanceimmersive.com/",
+          "label": {
+            "en": "Raindance Immersive",
+            "zh": "Raindance Immersive"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Opening Night 16 June 2027; Closing Night 25 June 2027. Daily hours and immersive-venue times are not listed on the About page.",
+        "zh": "开幕夜 2027 年 6 月 16 日；闭幕夜 2027 年 6 月 25 日。About 页没有列出每日钟点或沉浸场地时间。"
+      },
+      "display_times": {
+        "en": "Opening night 16 Jun 2027 and closing night 25 Jun (London). Daily showtimes are not on the About page, so no UTC+8 clock is shown.",
+        "zh": "2027 年 6 月 16 日开幕、6 月 25 日闭幕（伦敦）。每日场次钟点未在 About 页公布，故不换算 UTC+8 具体钟点。"
+      },
+      "source_timezone": {
+        "en": "Europe/London (BST, UTC+1 in June)",
+        "zh": "Europe/London（6 月为 BST，UTC+1）"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "immersive"
+      ]
+    },
+    {
+      "id": "siggraph-2027",
+      "start": "2027-08-08",
+      "end": "2027-08-12",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "The About page invites people to Anaheim and does not advertise a virtual pass. Unlike SIGGRAPH Asia 2026, there is no explicit no-virtual-access FAQ yet — but no online option is listed either, so the label is in-person, not hybrid.",
+        "zh": "About 页邀请人们前往阿纳海姆，并未宣传线上通行证。与 SIGGRAPH Asia 2026 不同，目前也还没有「不提供线上」的 FAQ——但同样未列出线上选项，故标为线下，而不是混合办。"
+      },
+      "title": {
+        "en": "SIGGRAPH 2027",
+        "zh": "SIGGRAPH 2027（阿纳海姆）"
+      },
+      "summary": {
+        "en": "ACM SIGGRAPH's 2027 North American conference on computer graphics and interactive techniques will be held 8-12 August at the Anaheim Convention Center. The official description covers visual storytelling, digital art, robotics, digital twins, AI, immersive media and real-time technologies, plus an exhibition and industry sessions. Programme and registration details were still thin on the About page at the time of research.",
+        "zh": "ACM SIGGRAPH 2027 年北美计算机图形与交互技术大会将于 8 月 8-12 日在阿纳海姆会议中心举行。官方描述涵盖视觉叙事、数字艺术、机器人、数字孪生、人工智能、沉浸媒体与实时技术，并包括展览与产业场次。截至本次调研，About 页上的节目与注册细节仍然很少。"
+      },
+      "key_points": [
+        {
+          "en": "8-12 August 2027, Anaheim Convention Center, California.",
+          "zh": "2027 年 8 月 8-12 日，加州阿纳海姆会议中心。"
+        },
+        {
+          "en": "Immersive media and real-time technologies are named in the official overview.",
+          "zh": "官方概述点名了沉浸媒体与实时技术。"
+        },
+        {
+          "en": "Fees and daily hours not yet on the About page.",
+          "zh": "票价与每日开放时间尚未写在 About 页上。"
+        }
+      ],
+      "location": {
+        "en": "Anaheim Convention Center, 800 W. Katella Ave., Anaheim, California, USA (800 West Katella Avenue, Anaheim, CA 92802 as also printed on the About page).",
+        "zh": "美国加利福尼亚州阿纳海姆会议中心，800 W. Katella Ave., Anaheim, CA 92802。"
+      },
+      "fee": {
+        "en": "Not listed on the About page opened for this research. A Register page exists at s2027.siggraph.org/register/; prices were not captured here.",
+        "zh": "未公布。本次打开的 About 页没有票价。注册页为 s2027.siggraph.org/register/，此处未抓到价格。"
+      },
+      "official_url": "https://s2027.siggraph.org/about-the-conference/",
+      "links": [
+        {
+          "url": "https://s2027.siggraph.org/about-the-conference/",
+          "label": {
+            "en": "About the conference",
+            "zh": "关于大会"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://s2027.siggraph.org/register/",
+          "label": {
+            "en": "Register",
+            "zh": "注册"
+          },
+          "role": "register"
+        }
+      ],
+      "times_published": {
+        "en": "Sunday 8 August through Thursday 12 August 2027. Daily door-opening clock times are not listed on the About page.",
+        "zh": "2027 年 8 月 8 日（周日）至 8 月 12 日（周四）。About 页没有列出每日开门钟点。"
+      },
+      "display_times": {
+        "en": "8–12 Aug 2027 in Anaheim. Daily hours are not on the About page, so no UTC+8 clock is shown. Local time in August is usually Pacific Daylight Time.",
+        "zh": "2027 年 8 月 8-12 日（阿纳海姆）。About 页未公布每日开闭馆钟点，故不换算 UTC+8 具体钟点。当地 8 月通常为太平洋夏令时间。"
+      },
+      "source_timezone": {
+        "en": "America/Los_Angeles (PDT, UTC-7 in August — not labelled on the About page, inferred from the Anaheim venue)",
+        "zh": "America/Los_Angeles（8 月为 PDT，UTC−7。About 页没有标注时区，此时区是按阿纳海姆会场推断的）"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "volumetric"
+      ],
+      "image": {
+        "file": "assets/events/siggraph-2027-site.png",
+        "kind": "banner",
+        "alt": {
+          "en": "Site image from the SIGGRAPH 2027 About page.",
+          "zh": "SIGGRAPH 2027 About 页的站点图片。"
+        },
+        "credit": {
+          "en": "SIGGRAPH 2027 official website (site image on the About page).",
+          "zh": "SIGGRAPH 2027 官网（About 页站点图片）。"
+        },
+        "source_url": "https://s2027.siggraph.org/wp-content/uploads/2026/09/s2027-site-image.png"
+      }
+    }
+  ]
+}

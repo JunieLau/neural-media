@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
-"""Build the self-contained site: data/neural-media.json + data/new-models.json + data/felstead-leung.json + data/xr.json + src/* -> six pages
+"""Build the self-contained site: data/neural-media.json + data/new-models.json + data/felstead-leung.json + data/xr.json + data/events.json + src/* -> seven pages
 
 Pages: index.html (identical copy: Neural-Media.html) = hero, concept, timeline, video, reading;
        who-else.html = landscape (who else works on neural media);
        bci.html = BCI x Neural Media, with the Phase Lock feature chapter;
        new-models.html = New Models / Lil Internet / Caroline Busta: overview, ideas, K link, full archive;
        felstead-leung.html = Daniel Felstead & Jenn Leung: overview, ideas, K link, full archive;
-       xr.html = XR (extended reality): taxonomy, latest VR / AR / MR / AI-glasses items.
+       xr.html = XR (extended reality): taxonomy, latest VR / AR / MR / AI-glasses items;
+       events.html = festivals, open calls, markets and talks (XR, immersive, WebXR, world models).
 
 Usage:  python3 build.py            (stdlib only)
         python3 build.py --today    (also set meta.last_updated to today's date, UTC+8)
 
 Each page's Latest list is only that page's own entries. The home page is the
-Neural Media timeline and does not embed the XR, BCI, New Models, or Felstead
-& Leung logs. Every entry needs key_points: 2 or 3 short bilingual lines.
+Neural Media timeline and does not embed the XR, BCI, New Models, Felstead
+& Leung, or Events logs. Events stay on events.html. Every entry needs
+key_points: 2 or 3 bilingual lines.
 
 Each page inlines its CSS, JS and the part of the JSON data it needs (thumbnails
 as base64), so every page opens directly from disk with no server and no network.
@@ -25,6 +27,7 @@ DATA = HERE / "data" / "neural-media.json"
 NMDATA = HERE / "data" / "new-models.json"
 FLDATA = HERE / "data" / "felstead-leung.json"
 XRDATA = HERE / "data" / "xr.json"
+EVDATA = HERE / "data" / "events.json"
 TZ = datetime.timezone(datetime.timedelta(hours=8))
 REQUIRED = ("id", "date", "types", "date_display", "title", "summary", "url", "source")
 
@@ -368,6 +371,128 @@ def validate_xr(X):
         sys.exit("Data errors:\n  " + "\n  ".join(errs))
 
 
+def validate_events(E):
+    """Checks for data/events.json. Fees, venues and clocks that were not published stay 'not listed'."""
+    errs = []
+    def bil(o, w):
+        if not (isinstance(o, dict) and str(o.get("en", "")).strip() and str(o.get("zh", "")).strip()):
+            errs.append(f"events {w}: needs both en and zh")
+    def https(u, w):
+        if not str(u or "").startswith("https://"):
+            errs.append(f"events {w}: url must be https")
+    formats = E.get("formats") or {}
+    statuses = E.get("statuses") or {}
+    for key, zh in (("online", "线上"), ("in-person", "线下"), ("hybrid", "线下为主，也可线上参加")):
+        if key not in formats:
+            errs.append(f"events formats missing '{key}'")
+        else:
+            bil(formats[key], f"format {key}")
+            if formats[key].get("zh") != zh:
+                errs.append(f"events format {key} zh must be {zh}")
+    for key in ("ongoing", "open-call", "upcoming"):
+        if key not in statuses:
+            errs.append(f"events statuses missing '{key}'")
+        else:
+            bil(statuses[key], f"status {key}")
+    for k in ("title", "kicker", "lead", "note"):
+        bil(E.get(k), k)
+    try:
+        datetime.date.fromisoformat(E.get("checked", ""))
+    except Exception:
+        errs.append("events checked must be YYYY-MM-DD")
+    ids = set()
+    rank = {"ongoing": 0, "open-call": 1, "upcoming": 2}
+    prev = None
+    for n, e in enumerate(E.get("entries") or []):
+        w = f"entry {e.get('id', n)}"
+        for k in ("id", "start", "end", "status", "format", "format_en", "format_zh",
+                  "format_notes", "title", "summary", "key_points", "location", "fee",
+                  "official_url", "links", "times_published", "display_times", "source_timezone", "tags"):
+            if k not in e:
+                errs.append(f"events {w}: missing '{k}'")
+        for k in ("title", "summary", "format_notes", "location", "fee", "times_published", "display_times", "source_timezone"):
+            bil(e.get(k), f"{w} {k}")
+        points = e.get("key_points")
+        if not isinstance(points, list) or not (2 <= len(points) <= 3):
+            errs.append(f"events {w}: key_points must list 2 or 3 {{en, zh}} lines")
+        else:
+            for i, kp in enumerate(points):
+                bil(kp, f"{w} key_points[{i}]")
+        if e.get("format") not in formats:
+            errs.append(f"events {w}: unknown format '{e.get('format')}'")
+        elif formats.get(e["format"], {}).get("en") != e.get("format_en") or formats.get(e["format"], {}).get("zh") != e.get("format_zh"):
+            errs.append(f"events {w}: format_en/format_zh must match formats.{e.get('format')}")
+        if e.get("status") not in statuses:
+            errs.append(f"events {w}: unknown status '{e.get('status')}'")
+        https(e.get("official_url"), w)
+        if e.get("id") in ids:
+            errs.append(f"events duplicate id {e.get('id')}")
+        ids.add(e.get("id"))
+        for key in ("start", "end"):
+            try:
+                datetime.date.fromisoformat(e.get(key, ""))
+            except Exception:
+                errs.append(f"events {w}: {key} must be YYYY-MM-DD")
+        if e.get("start") and e.get("end") and e["end"] < e["start"]:
+            errs.append(f"events {w}: end is before start")
+        zl = len((e.get("summary") or {}).get("zh", ""))
+        if zl < 40:
+            errs.append(f"events {w}: Chinese summary too short ({zl} chars)")
+        tags = e.get("tags") or []
+        if not tags or not all(isinstance(t, str) and t.strip() for t in tags):
+            errs.append(f"events {w}: tags must be a non-empty list of strings")
+        roles = set()
+        for li, link in enumerate(e.get("links") or []):
+            https(link.get("url"), f"{w} link {li}")
+            bil(link.get("label"), f"{w} link {li} label")
+            if link.get("role") not in ("official", "register", "apply", "info"):
+                errs.append(f"events {w} link {li}: role must be official, register, apply, or info")
+            roles.add(link.get("role"))
+        if "official" not in roles:
+            errs.append(f"events {w}: needs an official link")
+        if e.get("dates_note") is not None:
+            bil(e["dates_note"], f"{w} dates_note")
+        if e.get("curator_notes") is not None:
+            bil(e["curator_notes"], f"{w} curator_notes")
+        img = e.get("image")
+        if img:
+            rel = str(img.get("file") or "")
+            if not rel.startswith("assets/events/"):
+                errs.append(f"events {w}: image must be under assets/events/")
+            elif not (HERE / rel).is_file():
+                errs.append(f"events {w}: image file missing ({rel})")
+            bil(img.get("alt"), f"{w} image alt")
+            bil(img.get("credit"), f"{w} image credit")
+            if img.get("kind") not in ("photo", "logo", "banner"):
+                errs.append(f"events {w}: image.kind must be photo, logo, or banner")
+            if img.get("source_url"):
+                https(img.get("source_url"), f"{w} image source")
+        order_key = (rank.get(e.get("status"), 9), e.get("start") or "", e.get("id") or "")
+        if prev and order_key < prev:
+            errs.append(f"events {w}: entries must be ongoing, then open-call, then upcoming by start date")
+        prev = order_key
+    for required in ("newimages-2027-open-calls-xr-development-market", "msf-volumetric-media-town-hall-2026-11-24"):
+        hit = next((e for e in E.get("entries") or [] if e.get("id") == required), None)
+        if not hit or not (hit.get("curator_notes") or {}).get("en"):
+            errs.append(f"events {required}: curator_notes must be shown on this card")
+    msf = next((e for e in E.get("entries") or [] if e.get("id") == "msf-volumetric-media-town-hall-2026-11-24"), None)
+    if msf:
+        fee_en = (msf.get("fee") or {}).get("en", "")
+        fee_zh = (msf.get("fee") or {}).get("zh", "")
+        if "not listed" not in fee_en.lower() or "未公布" not in fee_zh:
+            errs.append("events MSF fee must stay not listed / 未公布 until a price is published")
+        if "free" in fee_en.lower() or "免费" in fee_zh:
+            errs.append("events MSF fee must not be described as free")
+        shown = (msf.get("display_times") or {}).get("zh", "") + (msf.get("display_times") or {}).get("en", "")
+        if "23:00" not in shown or "01:00" not in shown:
+            errs.append("events MSF card must keep 23:00 on 24 Nov to 01:00 on 25 Nov (UTC+8)")
+        local = (msf.get("times_published") or {}).get("en", "")
+        if "7:00" not in local and "07:00" not in local:
+            errs.append("events MSF card must keep the published 7:00–9:00 PST window")
+    if errs:
+        sys.exit("Data errors:\n  " + "\n  ".join(errs))
+
+
 def nm_years(N):
     return sorted({e["date"][:4] for e in N.get("entries", [])}, reverse=True)
 
@@ -401,6 +526,9 @@ PAGES = {  # key -> (output files, sections in <main>, data keys kept, title)
     "xr": (["xr.html"], '  <section class="wrap block page-first" id="xr"></section>\n',
            ("meta", "types", "xr"),
            "XR · 扩展现实 | Neural Media"),
+    "events": (["events.html"], '  <section class="wrap block page-first" id="events"></section>\n',
+               ("meta", "events"),
+               "Events · 活动 | Neural Media"),
 }
 
 
@@ -418,9 +546,11 @@ def validate_pages(d):
         if f and f not in files:
             errs.append(f"{where}: internal link to unknown page '{href}'")
         anchor = href.split("#")[1] if "#" in href else ""
-        known = ({a for v in SUBNAV.values() for a, _, _ in v} | {"landscape", "bci", "top", "newmodels", "felsteadleung", "xr"}
+        known = ({a for v in SUBNAV.values() for a, _, _ in v} | {"landscape", "bci", "top", "newmodels", "felsteadleung", "xr", "events"}
                  | {"e-" + e["id"] for k in ("newmodels", "felsteadleung") for e in d.get(k, {}).get("entries", [])}
                  | {"e-" + e["id"] for e in d.get("xr", {}).get("entries", [])}
+                 | {"e-" + e["id"] for e in d.get("events", {}).get("entries", [])}
+                 | {"lx-" + e["id"] for e in d.get("events", {}).get("entries", [])}
                  | {"janky-" + f["entry"] for f in d.get("felsteadleung", {}).get("series", {}).get("films", [])}
                  | {"i-" + it["id"] for it in d["items"]})
         if anchor and anchor not in known:
@@ -524,10 +654,12 @@ def main():
     d["newmodels"] = json.loads(NMDATA.read_text(encoding="utf-8"))
     d["felsteadleung"] = json.loads(FLDATA.read_text(encoding="utf-8"))
     d["xr"] = json.loads(XRDATA.read_text(encoding="utf-8"))
+    d["events"] = json.loads(EVDATA.read_text(encoding="utf-8"))
     validate(d)
     validate_nm(d["newmodels"])
     validate_nm(d["felsteadleung"], "felstead-leung")
     validate_xr(d["xr"])
+    validate_events(d["events"])
     # Slim "latest" feed for who-else (no thumbnails): recent context / cross-linked items.
     def _slim_latest(items, last_updated, days=30, min_n=6, max_n=8):
         import datetime as _dt
@@ -561,12 +693,16 @@ def main():
     SUBNAV["xr"] = [("xr-latest", "Latest", "最新"), ("xr-taxonomy", "Taxonomy", "概念"),
                     ("xr-feature", "VR Glasses", "VR 眼镜"), ("xr-log", "Log", "动态"),
                     ("xr-beside", "Neural media", "与神经媒体")]
+    SUBNAV["events"] = [("ev-latest", "Latest", "最新"), ("ev-ongoing", "Ongoing", "进行中"),
+                        ("ev-calls", "Open calls", "公开征集"), ("ev-upcoming", "Upcoming", "即将举行")]
     # Each page's Latest list is only that page's own entries. Home gets the
     # Neural Media timeline (items) and must not embed the XR, BCI, New Models,
-    # or Felstead & Leung logs.
-    for foreign in ("xr", "xr_latest", "xr_tags", "newmodels", "felsteadleung", "bci", "landscape"):
+    # Felstead & Leung, or Events logs. The XR page does not receive events either.
+    for foreign in ("xr", "xr_latest", "xr_tags", "newmodels", "felsteadleung", "bci", "landscape", "events"):
         if foreign in PAGES["home"][2]:
             sys.exit(f"Data errors:\n  home page must not include {foreign}")
+    if "events" in PAGES["xr"][2]:
+        sys.exit("Data errors:\n  XR page must not include events")
     validate_pages(d)
     keys = [g["key"] for g in d.get("landscape", {}).get("groups", [])]
     for a, _, _ in SUBNAV["who-else"]:
@@ -596,6 +732,10 @@ def main():
         for key in ("cover", "yt_poster"):
             if e.get(key):
                 e[key] = data_uri(e[key])
+    for e in d["events"].get("entries", []):
+        img = e.get("image") or {}
+        if img.get("file"):
+            img["file"] = data_uri(img["file"])
     tpl = (HERE / "src" / "template.html").read_text(encoding="utf-8")
     css = (HERE / "src" / "styles.css").read_text(encoding="utf-8")
     js = (HERE / "src" / "app.js").read_text(encoding="utf-8")
@@ -647,6 +787,33 @@ def main():
         for t in e.get("tags") or []:
             tag_counts[t] = tag_counts.get(t, 0) + 1
     print(f"xr: {len(XR)} entries; featured {d['xr'].get('featured')}; tags {tag_counts}")
+    EV = d["events"]["entries"]
+    ev_status = {}
+    for e in EV:
+        ev_status[e["status"]] = ev_status.get(e["status"], 0) + 1
+    print(f"events: {len(EV)} entries; status {ev_status}; with image {sum(1 for e in EV if e.get('image'))}")
+    # Events stay on events.html. The nav link is on every page.
+    home_html = (HERE / "index.html").read_text(encoding="utf-8")
+    xr_html = (HERE / "xr.html").read_text(encoding="utf-8")
+    ev_html = (HERE / "events.html").read_text(encoding="utf-8")
+    for needle in ("idfa-doclab-2026", "msf-volumetric-media-town-hall"):
+        if needle in home_html:
+            sys.exit(f"Data errors:\n  home page embeds events ({needle})")
+        if needle in xr_html:
+            sys.exit(f"Data errors:\n  XR page embeds events ({needle})")
+    pages = ["index.html", "Neural-Media.html", "who-else.html", "bci.html", "new-models.html", "felstead-leung.html", "xr.html", "events.html"]
+    for name in pages:
+        text = (HERE / name).read_text(encoding="utf-8")
+        if name == "events.html":
+            if 'aria-current="page"' not in text or ">Events<" not in text or ">活动<" not in text:
+                sys.exit("Data errors:\n  events.html nav is missing Events / 活动")
+            if "ev-grid" not in text:
+                sys.exit("Data errors:\n  events page renderer is missing the card grid")
+        elif 'href="events.html"' not in text or ">Events<" not in text or ">活动<" not in text:
+            sys.exit(f"Data errors:\n  {name} nav is missing Events / 活动")
+    missing = [e["id"] for e in EV if e["id"] not in ev_html]
+    if missing:
+        sys.exit("Data errors:\n  events.html is missing cards: " + ", ".join(missing))
 
 
 if __name__ == "__main__":

@@ -4735,6 +4735,14 @@
         "en": "XR",
         "zh": "扩展现实"
       }
+    },
+    {
+      "key": "events",
+      "file": "events.html",
+      "label": {
+        "en": "Events",
+        "zh": "活动"
+      }
     }
   ]
 }

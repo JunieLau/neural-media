@@ -85,7 +85,7 @@
       '</span><span class="is-open">' + bi({ en: "Show less", zh: "收起" }) + "</span></span></span></summary>" +
       '<div class="fold-body">' + body + "</div></details>";
   }
-  var FOLD_ENTRY = ".item, .nitem, .who, .idea, .xr-card, .janky-film, .read, .latest-item";
+  var FOLD_ENTRY = ".item, .nitem, .who, .idea, .xr-card, .ev-card, .janky-film, .read, .latest-item";
   function foldHashId(hash) {
     var id = String(hash || "");
     var i = id.lastIndexOf("#");
@@ -699,6 +699,147 @@
       });
     }
 
+    if (D.events && document.getElementById("events")) {
+      var E = D.events;
+      var plusDays = function (iso, n) {
+        var p = iso.split("-");
+        var dt = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]));
+        dt.setUTCDate(dt.getUTCDate() + n);
+        var m = dt.getUTCMonth() + 1, day = dt.getUTCDate();
+        return dt.getUTCFullYear() + "-" + (m < 10 ? "0" : "") + m + "-" + (day < 10 ? "0" : "") + day;
+      };
+      var dateRange = function (start, end) {
+        if (!end || end === start) return fmtStamp(start);
+        var a = fmtStamp(start), b = fmtStamp(end);
+        var sa = start.split("-"), sb = end.split("-");
+        if (sa[0] === sb[0] && sa[1] === sb[1]) {
+          return { en: (+sa[2]) + "–" + b.en, zh: sa[0] + " 年 " + (+sa[1]) + " 月 " + (+sa[2]) + "–" + (+sb[2]) + " 日" };
+        }
+        return { en: a.en + " – " + b.en, zh: a.zh + " – " + b.zh };
+      };
+      var rank = { ongoing: 0, "open-call": 1, upcoming: 2 };
+      var sorted = (E.entries || []).slice().sort(function (a, b) {
+        var d = (rank[a.status] == null ? 9 : rank[a.status]) - (rank[b.status] == null ? 9 : rank[b.status]);
+        if (d) return d;
+        if (a.start !== b.start) return a.start < b.start ? -1 : 1;
+        return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+      });
+      var evCard = function (e, opt) {
+        opt = opt || {};
+        var fmt = (E.formats && E.formats[e.format]) || { en: e.format_en, zh: e.format_zh };
+        var stLabel = (E.statuses && E.statuses[e.status]) || { en: e.status, zh: e.status };
+        var media;
+        if (e.image && e.image.file) {
+          var alt = e.image.alt ? (e.image.alt.en + " / " + e.image.alt.zh) : "";
+          media = '<figure class="ev-still' + (e.image.kind === "photo" ? "" : " is-logo") + '"><img loading="lazy" decoding="async" alt="' + esc(alt) + '" src="' + esc(e.image.file) + '">' +
+            (e.image.credit ? '<figcaption class="ev-credit">' + bi(e.image.credit) + "</figcaption>" : "") + "</figure>";
+        } else {
+          media = '<div class="ev-typo"><div><span class="ev-year">' + esc((e.start || "").slice(0, 4)) + '</span><span class="ev-typo-note">' +
+            bi({ en: "No official still", zh: "未公布官方图片" }) + "</span></div></div>";
+        }
+        var when = '<div class="ev-when"><p>' + bi(dateRange(e.start, e.end)) +
+          '</p><p><span class="ev-k">UTC+8</span> ' + bi(e.display_times) + '</p><p><span class="ev-k">' +
+          bi({ en: "Timezone", zh: "时区" }) + "</span> " + bi(e.source_timezone) + "</p></div>";
+        var face = '<div class="ev-badges"><span class="ev-format">' + bi(fmt) + '</span><span class="ev-status">' + bi(stLabel) + "</span></div>" +
+          "<h3>" + bi(e.title) + "</h3>" +
+          '<dl class="ev-facts"><div><dt>' + bi({ en: "Date", zh: "日期" }) + "</dt><dd>" + when + "</dd></div>" +
+          "<div><dt>" + bi({ en: "Place", zh: "地点" }) + "</dt><dd>" + bi(e.location) + "</dd></div>" +
+          "<div><dt>" + bi({ en: "Fee", zh: "费用" }) + "</dt><dd>" + bi(e.fee) + "</dd></div></dl>" +
+          kpList(e.key_points);
+        var links = e.links || [];
+        var primary = null;
+        links.forEach(function (l) { if (!primary && (l.role === "register" || l.role === "apply")) primary = l; });
+        if (!primary) links.forEach(function (l) { if (!primary && l.role === "official") primary = l; });
+        var buttons = primary ? ext(primary.url, bi(primary.label) + ' <span aria-hidden="true">↗</span>', "btn primary") : "";
+        var more = links.filter(function (l) { return l !== primary; }).map(function (l) { return ext(l.url, bi(l.label) + " ↗"); }).join("");
+        var body = '<div class="ev-extra"><span class="ev-k">' + bi({ en: "Published time", zh: "公布的时间" }) + "</span>" + bi(e.times_published, "p") + "</div>" +
+          '<div class="who-line nm-sum">' + bi(e.summary, "p") + "</div>" +
+          (e.dates_note ? '<div class="ev-extra"><span class="ev-k">' + bi({ en: "Also noted", zh: "补充日期" }) + "</span>" + bi(e.dates_note, "p") + "</div>" : "") +
+          (e.format_notes ? '<div class="ev-extra"><span class="ev-k">' + bi({ en: "Format", zh: "参与方式" }) + "</span>" + bi(e.format_notes, "p") + "</div>" : "") +
+          (e.curator_notes ? '<div class="nm-note"><span class="nm-note-h">' + bi({ en: "Curator note", zh: "策展附注" }) + "</span>" + bi(e.curator_notes, "p") + "</div>" : "") +
+          '<div class="links">' + buttons + more + (opt.extra || "") + "</div>";
+        return '<article class="ev-card" id="' + esc(opt.anchor || ("e-" + e.id)) + '" data-status="' + esc(e.status) + '" data-format="' + esc(e.format) + '">' +
+          media + '<div class="ev-main">' + fold(face, body) + "</div></article>";
+      };
+      var asOf = (D.meta && D.meta.last_updated) || "";
+      var horizon = asOf ? plusDays(asOf, 30) : "";
+      var primarySet = sorted.filter(function (e) {
+        if (e.status === "ongoing" || e.status === "open-call") return true;
+        return horizon && e.start >= asOf && e.start <= horizon;
+      });
+      var latest = primarySet.slice();
+      if (latest.length < 6) {
+        sorted.forEach(function (e) {
+          if (latest.length >= 6) return;
+          if (latest.indexOf(e) < 0) latest.push(e);
+        });
+      }
+      var group = function (id, mark, title, list, opt) {
+        if (!list.length) return "";
+        var cards = list.map(function (e) { return evCard(e, opt ? opt(e) : {}); }).join("");
+        return '<div class="land-group ev-group" id="' + id + '"><div class="land-head"><span class="roman">' + mark + "</span><h3>" + bi(title) + '</h3></div><div class="ev-grid">' + cards + "</div></div>";
+      };
+      var chip = function (kind, value, label, pressed) {
+        return '<button class="chip" type="button" data-kind="' + kind + '" data-f="' + esc(value) + '" aria-pressed="' + (pressed ? "true" : "false") + '">' + bi(label) + "</button>";
+      };
+      var filters = '<div class="ev-filters">' +
+        '<div class="filters" role="group">' + '<span class="ev-flabel">' + bi({ en: "Format", zh: "形式" }) + "</span>" +
+          chip("format", "all", { en: "All", zh: "全部" }, true) +
+          ["online", "in-person", "hybrid"].map(function (k) { return chip("format", k, E.formats[k], false); }).join("") +
+        "</div>" +
+        '<div class="filters" role="group">' + '<span class="ev-flabel">' + bi({ en: "Status", zh: "状态" }) + "</span>" +
+          chip("status", "all", { en: "All", zh: "全部" }, true) +
+          ["ongoing", "open-call", "upcoming"].map(function (k) { return chip("status", k, E.statuses[k], false); }).join("") +
+        "</div></div>" +
+        '<div class="ev-shown" aria-live="polite"></div>';
+      var checked = "";
+      if (E.checked) {
+        var ck = fmtStamp(E.checked);
+        checked = '<p class="ev-checked">' + bi({ en: "Event facts checked " + ck.en + " (UTC+8).", zh: "活动资料核对于 " + ck.zh + "（UTC+8）。" }) + "</p>";
+      }
+      var host = document.getElementById("events");
+      host.innerHTML =
+        '<div class="ev-hero"><p class="kicker"><span class="num">10</span> · ' + bi(E.kicker) + "</p><h2>" + bi(E.title) + "</h2></div>" +
+        '<div class="lead">' + bi(E.lead, "p") + "</div>" + checked + stamp + filters +
+        '<div class="land-group ev-group latest-block" id="ev-latest"><div class="sec-head latest-head"><span class="num">★</span><h2>' +
+          bi({ en: "Latest updates", zh: "最新动态" }) + "</h2></div>" +
+          '<div class="feed-note">' + bi(E.note, "p") + '</div><div class="ev-grid">' +
+          latest.map(function (e) {
+            return evCard(e, { anchor: "lx-" + e.id, extra: intl("#e-" + e.id, bi({ en: "In the full list ↓", zh: "全表中的这一条 ↓" }), "internal") });
+          }).join("") + "</div></div>" +
+        group("ev-ongoing", "I", { en: "Ongoing", zh: "进行中" }, sorted.filter(function (e) { return e.status === "ongoing"; })) +
+        group("ev-calls", "II", { en: "Open calls", zh: "公开征集" }, sorted.filter(function (e) { return e.status === "open-call"; })) +
+        group("ev-upcoming", "III", { en: "Upcoming", zh: "即将举行" }, sorted.filter(function (e) { return e.status === "upcoming"; }));
+      var shown = host.querySelector(".ev-shown");
+      var state = { format: "all", status: "all" };
+      var applyEv = function () {
+        var n = 0;
+        host.querySelectorAll(".ev-card").forEach(function (el) {
+          var ok = (state.format === "all" || el.getAttribute("data-format") === state.format) &&
+            (state.status === "all" || el.getAttribute("data-status") === state.status);
+          el.hidden = !ok;
+          if (ok) n++;
+        });
+        host.querySelectorAll(".ev-group").forEach(function (g) {
+          g.hidden = !g.querySelector(".ev-card:not([hidden])");
+        });
+        shown.innerHTML = (state.format === "all" && state.status === "all") ? "" :
+          bi({ en: "Showing " + n + " cards.", zh: "显示 " + n + " 张卡片。" });
+        host.querySelectorAll(".ev-filters .chip").forEach(function (b) {
+          b.setAttribute("aria-pressed", String(b.getAttribute("data-f") === state[b.getAttribute("data-kind")]));
+        });
+        if (!n) {
+          shown.innerHTML = bi({ en: "No events match these filters.", zh: "没有符合这些筛选的活动。" });
+        }
+      };
+      host.querySelector(".ev-filters").addEventListener("click", function (ev) {
+        var b = ev.target.closest(".chip");
+        if (!b) return;
+        state[b.getAttribute("data-kind")] = b.getAttribute("data-f");
+        applyEv();
+      });
+    }
+
     document.getElementById("foot").innerHTML =
       bi({ en: "An independent bilingual tracker of public sources on Neural Media, a concept by K Allado-McDowell. Every item links to its original source. Dates are China time (UTC+8).",
            zh: "这是一个独立的双语追踪站，收录有关 K Allado-McDowell「神经媒体」概念的公开资料。每一条目都附有原始来源链接。日期均为北京时间（UTC+8）。" }, "p");
@@ -706,7 +847,8 @@
 
   // Language toggle
   function setLang(l) {
-    document.body.className = "lang-" + l;
+    var page = (document.body.className.match(/page-[\w-]+/) || [""])[0];
+    document.body.className = "lang-" + l + (page ? " " + page : "");
     document.documentElement.lang = l === "zh" ? "zh-Hans" : "en";
     document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === l)); });
     try { localStorage.setItem("nm-lang", l); } catch (e) {}
