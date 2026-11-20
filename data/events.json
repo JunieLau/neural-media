@@ -7,7 +7,7 @@
     "en": "Calendar",
     "zh": "日程"
   },
-  "checked": "2026-11-19",
+  "checked": "2026-11-20",
   "lead": {
     "en": "Festivals, open calls, markets and talks around XR, immersive documentary, volumetric media, WebXR and world models. Dates, places, fees and formats come from official pages. Where a fee, a venue or a clock time was not published, the card says not listed.",
     "zh": "与 XR、沉浸纪录片、体积影像、WebXR 和世界模型相关的影展、公开征集、市场与分享。日期、地点、费用和参与方式来自官方页面。费用、场地或钟点若未公布，卡片会写明未公布。"
@@ -156,6 +156,119 @@
       }
     },
     {
+      "id": "tidf29-immersive-all-around-cinema-open-call",
+      "start": "2026-07-20",
+      "end": "2027-01-08",
+      "status": "open-call",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "Submissions are online. Selected Immersive: All Around Cinema projects are shown in person at the 29th Thessaloniki International Documentary Festival, 4–14 March 2027. No online attendance option for the immersive competition is listed on the call page.",
+        "zh": "投稿在线上完成。入选「Immersive: All Around Cinema」的项目将于 2027 年 3 月 4–14 日在第 29 届塞萨洛尼基国际纪录片节现场展映。征集页未列出该沉浸竞赛的线上观展方式。"
+      },
+      "title": {
+        "en": "TiDF29 Immersive: All Around Cinema — open call",
+        "zh": "第 29 届塞萨洛尼基国际纪录片节 Immersive: All Around Cinema 公开征集"
+      },
+      "summary": {
+        "en": "The 29th Thessaloniki International Documentary Festival (4–14 March 2027) is accepting completed XR, AR and VR projects for its Immersive: All Around Cinema International Competition. The official call, dated 20 July 2026, says production must have been completed within 24 months preceding the festival opening date, and the project must not have been released or screened publicly in Greece, physically or online. The immersive/XR deadline is 8 January 2027; those submissions are free of charge. Other documentary competition sections have earlier paid deadlines (early bird 40 euros until 18 September 2026; then 60 euros until 30 November 2026) and do not apply to the immersive call. Apply through the festival’s open-calls page.",
+        "zh": "第 29 届塞萨洛尼基国际纪录片节（2027 年 3 月 4–14 日）正在为其「Immersive: All Around Cinema」国际竞赛征集已完成的 XR、AR 与 VR 项目。2026 年 7 月 20 日的官方征集要求：作品须在影展开幕前 24 个月内完成，且未在希腊以线下或线上方式公开放映。沉浸/XR 项目截止为 2027 年 1 月 8 日，此类投稿免费。其他纪录片竞赛单元的付费截止更早（早鸟至 2026 年 9 月 18 日 40 欧元，其后至 11 月 30 日 60 欧元），不适用于沉浸单元。请通过影节公开征集页提交。"
+      },
+      "key_points": [
+        {
+          "en": "Completed XR, AR and VR works can be submitted until 8 January 2027, free of charge.",
+          "zh": "已完成的 XR、AR、VR 作品可投至 2027 年 1 月 8 日，免费。"
+        },
+        {
+          "en": "Works must be finished within 24 months before the festival and not previously shown in Greece.",
+          "zh": "须在影展前 24 个月内完成，且未在希腊公开放映。"
+        },
+        {
+          "en": "Selected projects screen in person at TiDF, 4–14 March 2027, in Thessaloniki.",
+          "zh": "入选项目将于 2027 年 3 月 4–14 日在塞萨洛尼基现场展映。"
+        }
+      ],
+      "location": {
+        "en": "Submission is online. Screenings, if selected, take place in person at the 29th Thessaloniki International Documentary Festival, Thessaloniki, Greece (festival offices are listed at 10 Aristotelous Square). A 2027 immersive-venue address is not listed on the call page.",
+        "zh": "投稿在线上完成。若入选，展映在希腊 Thessaloniki 举行的第 29 届塞萨洛尼基国际纪录片节现场进行（官方办公地址为 Aristotelous Square 10 号）。征集页未写 2027 年沉浸单元场地的具体门牌。"
+      },
+      "fee": {
+        "en": "Immersive / XR project submissions are free of charge, as stated on the official call. (Other documentary competition sections charge 40 euros early bird until 18 September 2026, then 60 euros until 30 November 2026; those fees do not apply to the immersive deadline.)",
+        "zh": "官方征集写明：沉浸 / XR 项目投稿免费。（其他纪录片竞赛单元早鸟至 2026 年 9 月 18 日为 40 欧元，其后至 11 月 30 日为 60 欧元；这些费用不适用于沉浸单元的截止安排。）"
+      },
+      "official_url": "https://filmfestival.gr/en/newsroom/news/29tidfcallforentries/",
+      "links": [
+        {
+          "url": "https://filmfestival.gr/en/newsroom/news/29tidfcallforentries/",
+          "label": {
+            "en": "Call for entries",
+            "zh": "征集公告"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://filmfestival.gr/en/open-calls/",
+          "label": {
+            "en": "Submit",
+            "zh": "提交"
+          },
+          "role": "apply"
+        }
+      ],
+      "times_published": {
+        "en": "The call was published 20 July 2026. Immersive / XR deadline: 8 January 2027 (no clock time published). Festival: 4–14 March 2027. Daily programme hours are not listed on the call page.",
+        "zh": "征集于 2026 年 7 月 20 日公布。沉浸 / XR 截止：2027 年 1 月 8 日（未公布钟点）。影节：2027 年 3 月 4–14 日。征集页未列出每日节目钟点。"
+      },
+      "display_times": {
+        "en": "Immersive deadline 8 Jan 2027 (calendar date only; no clock or timezone published, so no UTC+8 clock is shown). Festival 4–14 Mar 2027, Thessaloniki.",
+        "zh": "沉浸单元截止 2027 年 1 月 8 日（仅日历日，未写钟点或时区，故不换算 UTC+8 钟点）。影节 2027 年 3 月 4–14 日，Thessaloniki。"
+      },
+      "source_timezone": {
+        "en": "Not stated on the call page (the festival is in Thessaloniki).",
+        "zh": "征集页未写明时区（影节在 Thessaloniki）。"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "call-for-projects",
+        "immersive"
+      ],
+      "dates_note": {
+        "en": "Immersive / XR submissions close 8 January 2027. Other documentary sections closed earlier (30 November 2026).",
+        "zh": "沉浸 / XR 投稿截止 2027 年 1 月 8 日。其他纪录片单元截止更早（2026 年 11 月 30 日）。"
+      },
+      "image": {
+        "file": "assets/events/tidf29-limani.jpg",
+        "kind": "photo",
+        "alt": {
+          "en": "Official still from the Thessaloniki Film Festival’s TiDF29 call-for-entries page.",
+          "zh": "塞萨洛尼基电影节第 29 届纪录片节征集页上的官方图片。"
+        },
+        "credit": {
+          "en": "Thessaloniki Film Festival official TiDF29 call-for-entries page.",
+          "zh": "塞萨洛尼基电影节第 29 届纪录片节征集公告页。"
+        },
+        "source_url": "https://filmfestival.gr/media/original_images/FESTIVAL_LIMANI_jFTHYJ7.jpg"
+      },
+      "face_when": {
+        "en": "20 Jul 2026–8 Jan 2027",
+        "zh": "2026年7月20日–2027年1月8日"
+      },
+      "face_place": {
+        "en": "Thessaloniki",
+        "zh": "塞萨洛尼基"
+      },
+      "face_fee": {
+        "en": "Free to submit",
+        "zh": "投稿免费"
+      },
+      "blurb": {
+        "en": "TiDF’s Immersive: All Around Cinema competition is open until 8 January 2027. Completed XR, AR and VR works can be submitted free of charge.",
+        "zh": "TiDF 的 Immersive: All Around Cinema 竞赛征集至 2027 年 1 月 8 日。已完成的 XR、AR、VR 作品可免费提交。"
+      }
+    },
+    {
       "id": "newimages-2027-open-calls-xr-development-market",
       "start": "2026-09-04",
       "end": "2026-12-22",
@@ -295,6 +408,128 @@
       "blurb": {
         "en": "NewImages is open for 2027 submissions until 22 December 2026. The XR Development Market is for projects still in development, with four days of one-to-one meetings in Paris.",
         "zh": "NewImages 正在征集 2027 年项目，截止 12 月 22 日。XR 开发市场面向仍在开发的作品，入选后在巴黎有四天一对一会谈。"
+      }
+    },
+    {
+      "id": "agora-xr-lab-2027",
+      "start": "2026-09-18",
+      "end": "2026-11-25",
+      "status": "open-call",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "Applications are submitted online. Selected teams must attend the lab in person in Thessaloniki, 6–11 March 2027. The official page also lists an online preparation workshop in mid-January 2027 and online meetings on 12 March; those do not replace the in-person lab. No virtual pass for the Thessaloniki week is listed.",
+        "zh": "申请在线上提交。入选团队须于 2027 年 3 月 6–11 日到 Thessaloniki 现场参加工作坊。官方还列有 2027 年 1 月中旬的线上预备工作坊，以及 3 月 12 日的线上会谈；这不能代替现场实验室。官方未提供 Thessaloniki 那一周的线上通行证。"
+      },
+      "title": {
+        "en": "AGORA XR Lab 2027 — open call (Thessaloniki International Documentary Festival)",
+        "zh": "AGORA XR Lab 2027 公开征集（塞萨洛尼基国际纪录片节）"
+      },
+      "summary": {
+        "en": "AGORA XR Lab is TiDF AGORA’s workshop for XR and new-media projects in development. The 2027 open call opened on 18 September 2026; the deadline has been extended to 25 November 2026. Up to five projects will be selected. The lead mentor is Vassiliki Khonsari, co-founder of iNK Stories. Teams should have at least two creative members; if selected, up to two people must attend the full process, including a mid-January online workshop, the in-person lab in Thessaloniki (arrival 6 March, workshop 7–10 March, presentation and meetings 10 March, departure 11 March 2027) and online meetings on 12 March. The lab offers five nights’ accommodation (one double room if two members attend) and can reimburse part of the travel expenses, with receipts required. Eligible countries are listed on the official page (Mediterranean, North African, Balkan and nearby states); projects from elsewhere may still apply if they co-produce with, or have story links to, those regions, and all submissions are reviewed. The official page does not state an application fee.",
+        "zh": "AGORA XR Lab 是塞萨洛尼基国际纪录片节（TiDF）AGORA 面向开发中的 XR 与新媒体项目的工作坊。2027 年征集于 2026 年 9 月 18 日开启，截止日期已延至 11 月 25 日，最多选出五个项目。首席导师是 iNK Stories 联合创始人 Vassiliki Khonsari。项目须至少有两名主创；入选后最多两人须全程参加：1 月中旬线上预备工作坊，3 月 6 日抵达 Thessaloniki、7–10 日工作坊、10 日展示与会谈、11 日离开，以及 3 月 12 日线上会谈。实验室提供五晚住宿（两人参加时可提供一间双人房），并可报销部分旅费（需发票）。官方列出地中海、北非、巴尔干及邻近国家的申请资格；其他地区若与这些区域联合制作，或故事与之相关，仍可申请，所有提交都会评审。官方页面未写明报名费。"
+      },
+      "key_points": [
+        {
+          "en": "Deadline extended to 25 November 2026; up to five XR and new-media projects in development will be selected.",
+          "zh": "截止日期已延至 2026 年 11 月 25 日；最多选出五个开发中的 XR 与新媒体项目。"
+        },
+        {
+          "en": "The in-person lab is in Thessaloniki, 6–11 March 2027, with an online workshop in mid-January.",
+          "zh": "现场工作坊于 2027 年 3 月 6–11 日在 Thessaloniki 举行，1 月中旬另有线上预备课。"
+        },
+        {
+          "en": "Selected teams get five nights’ accommodation and partial travel reimbursement; an application fee is not listed.",
+          "zh": "入选团队获五晚住宿和部分旅费报销；报名费官方未公布。"
+        }
+      ],
+      "location": {
+        "en": "Submission is online (Jotform). The lab itself is in person in Thessaloniki, Greece, during the 29th Thessaloniki International Documentary Festival. A street address for the 2027 workshop rooms is not listed on the AGORA XR Lab page.",
+        "zh": "申请在线上（Jotform）完成。实验室本身在希腊 Thessaloniki 现场举行，正值第 29 届塞萨洛尼基国际纪录片节。AGORA XR Lab 页面未写 2027 年工作坊场地的门牌地址。"
+      },
+      "fee": {
+        "en": "not listed. The official page does not state an application fee. If selected, the lab offers accommodation for five nights (one double room if two members attend) and can reimburse part of the travel expenses per project team; receipts are required.",
+        "zh": "未公布。官方页面未写明报名费。入选后，实验室提供五晚住宿（两人参加时可提供一间双人房），并可报销每个项目团队的部分旅费，需发票。"
+      },
+      "official_url": "https://filmfestival.gr/en/tidf/tidf-agora/agora-xr-lab/",
+      "links": [
+        {
+          "url": "https://filmfestival.gr/en/tidf/tidf-agora/agora-xr-lab/",
+          "label": {
+            "en": "AGORA XR Lab",
+            "zh": "AGORA XR Lab"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://form.jotform.com/filmfestivalgr/agora-xr-lab",
+          "label": {
+            "en": "Apply (Jotform)",
+            "zh": "申请（Jotform）"
+          },
+          "role": "apply"
+        },
+        {
+          "url": "https://filmfestival.gr/en/open-calls/",
+          "label": {
+            "en": "TiDF open calls",
+            "zh": "TiDF 公开征集"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Open call 18 September 2026; submissions deadline extended to 25 November 2026 (no clock time published). Notification early January 2027; online workshop mid-January 2027. Lab: arrival 6 March, workshop 7–10 March, presentation and meetings 10 March, departure 11 March 2027; online meetings 12 March. No daily clock times are published for the lab.",
+        "zh": "征集于 2026 年 9 月 18 日开放；提交截止延至 11 月 25 日（未公布钟点）。2027 年 1 月初通知结果；1 月中旬线上工作坊。实验室：3 月 6 日抵达，7–10 日工作坊，10 日展示与会谈，11 日离开；3 月 12 日线上会谈。实验室每日钟点未公布。"
+      },
+      "display_times": {
+        "en": "Deadline 25 Nov 2026 (calendar date only; no clock or timezone published, so no UTC+8 clock is shown). In-person lab 6–11 Mar 2027, Thessaloniki.",
+        "zh": "截止 2026 年 11 月 25 日（仅日历日，未写钟点或时区，故不换算 UTC+8 钟点）。现场实验室 2027 年 3 月 6–11 日，Thessaloniki。"
+      },
+      "source_timezone": {
+        "en": "Not stated on the call page (the lab is in Thessaloniki).",
+        "zh": "征集页未写明时区（实验室在 Thessaloniki）。"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "call-for-projects",
+        "immersive",
+        "lab"
+      ],
+      "dates_note": {
+        "en": "The deadline was extended to 25 November 2026. The in-person lab follows in Thessaloniki, 6–11 March 2027.",
+        "zh": "截止日期已延至 2026 年 11 月 25 日。现场实验室随后于 2027 年 3 月 6–11 日在 Thessaloniki 举行。"
+      },
+      "image": {
+        "file": "assets/events/agora-xr-lab-2027.jpg",
+        "kind": "photo",
+        "alt": {
+          "en": "Official still from the AGORA XR Lab page of the Thessaloniki Film Festival.",
+          "zh": "塞萨洛尼基电影节 AGORA XR Lab 页面上的官方图片。"
+        },
+        "credit": {
+          "en": "Thessaloniki Film Festival official AGORA XR Lab page.",
+          "zh": "塞萨洛尼基电影节 AGORA XR Lab 官方页面。"
+        },
+        "source_url": "https://filmfestival.gr/media/original_images/agora-xr-lab-intro.jpg"
+      },
+      "face_when": {
+        "en": "18 Sep–25 Nov 2026",
+        "zh": "9月18日–11月25日"
+      },
+      "face_place": {
+        "en": "Thessaloniki",
+        "zh": "塞萨洛尼基"
+      },
+      "face_fee": {
+        "en": "Not listed",
+        "zh": "未公布"
+      },
+      "blurb": {
+        "en": "TiDF’s AGORA XR Lab is open until 25 November 2026 for XR and new-media projects in development. Selected teams go to Thessaloniki, 6–11 March 2027.",
+        "zh": "TiDF 的 AGORA XR Lab 正在征集开发中的 XR 与新媒体项目，截止 11 月 25 日。入选团队将于 2027 年 3 月 6–11 日前往塞萨洛尼基。"
       }
     },
     {
@@ -1099,6 +1334,114 @@
       "blurb": {
         "en": "A two-day creative event beside ISE, on immersive tools, XR and new audiences. It is planned as an in-person show.",
         "zh": "与 ISE 同期的两日创意活动，关注沉浸工具、XR 和新观众。按现场展会来办。"
+      }
+    },
+    {
+      "id": "tidf-2027-immersive",
+      "start": "2027-03-04",
+      "end": "2027-03-14",
+      "status": "upcoming",
+      "format": "in-person",
+      "format_en": "in-person",
+      "format_zh": "线下",
+      "format_notes": {
+        "en": "The festival is described as an in-person event in Thessaloniki, 4–14 March 2027. The call page does not list an online attendance option for Immersive: All Around Cinema.",
+        "zh": "影节按 2027 年 3 月 4–14 日在 Thessaloniki 的现场活动来写。征集页未列出 Immersive: All Around Cinema 的线上观展方式。"
+      },
+      "title": {
+        "en": "Thessaloniki International Documentary Festival 2027 — Immersive: All Around Cinema",
+        "zh": "塞萨洛尼基国际纪录片节 2027 — Immersive: All Around Cinema"
+      },
+      "summary": {
+        "en": "The 29th Thessaloniki International Documentary Festival runs 4–14 March 2027 in Thessaloniki. Besides its documentary competitions, it presents Immersive: All Around Cinema, an international competition for XR, AR and VR projects that, in the festival’s words, “prove that this new medium can pave the way for novel cinematic experience and art.” The 2027 immersive programme had not been posted as of this research. A related AGORA XR Lab for projects in development also takes place during the festival, 6–11 March. Public ticket prices for 2027 were not listed on the pages opened.",
+        "zh": "第 29 届塞萨洛尼基国际纪录片节将于 2027 年 3 月 4–14 日在 Thessaloniki 举行。除纪录片竞赛外，还设 Immersive: All Around Cinema 国际竞赛，面向 XR、AR 与 VR 项目；官方说法是，这些作品要「证明这种新媒介能开辟新的电影体验与艺术」。截至本次调研，2027 年沉浸单元片目尚未公布。同期还有面向开发中项目的 AGORA XR Lab（3 月 6–11 日）。已打开的页面未列出 2027 年公众票价。"
+      },
+      "key_points": [
+        {
+          "en": "The festival runs 4–14 March 2027 in Thessaloniki, including an XR/AR/VR competition.",
+          "zh": "影节于 2027 年 3 月 4–14 日在塞萨洛尼基举行，含 XR/AR/VR 竞赛。"
+        },
+        {
+          "en": "The 2027 Immersive: All Around Cinema lineup had not been posted as of this research.",
+          "zh": "截至本次调研，2027 年 Immersive: All Around Cinema 片目尚未公布。"
+        },
+        {
+          "en": "Public ticket prices for 2027 are not listed on the official pages opened.",
+          "zh": "已打开的官方页面未列出 2027 年公众票价。"
+        }
+      ],
+      "location": {
+        "en": "Thessaloniki, Greece. Festival offices are listed at 10 Aristotelous Square, 546 23, Thessaloniki. The 2027 immersive-venue address is not listed on the call page.",
+        "zh": "希腊 Thessaloniki。影节办公地址列为 Aristotelous Square 10 号，546 23 Thessaloniki。征集页未写 2027 年沉浸单元场地的门牌。"
+      },
+      "fee": {
+        "en": "not listed. Public ticket prices for the 2027 festival were not published on the official pages opened for this research.",
+        "zh": "未公布。本次打开的官方页面未发布 2027 年影节公众票价。"
+      },
+      "official_url": "https://filmfestival.gr/en/newsroom/news/29tidfcallforentries/",
+      "links": [
+        {
+          "url": "https://filmfestival.gr/en/newsroom/news/29tidfcallforentries/",
+          "label": {
+            "en": "Festival / call page",
+            "zh": "影节／征集页"
+          },
+          "role": "official"
+        },
+        {
+          "url": "https://filmfestival.gr/en/tidf/tidf-agora/agora-xr-lab/",
+          "label": {
+            "en": "AGORA XR Lab",
+            "zh": "AGORA XR Lab"
+          },
+          "role": "info"
+        }
+      ],
+      "times_published": {
+        "en": "Festival 4–14 March 2027, Thessaloniki. Daily programme hours for 2027 are not listed on the call page.",
+        "zh": "影节 2027 年 3 月 4–14 日，Thessaloniki。征集页未列出 2027 年每日节目钟点。"
+      },
+      "display_times": {
+        "en": "4–14 Mar 2027 (Thessaloniki). Daily hours are not published, so no UTC+8 clock is shown.",
+        "zh": "2027 年 3 月 4–14 日（Thessaloniki）。每日钟点未公布，故不换算 UTC+8 钟点。"
+      },
+      "source_timezone": {
+        "en": "Europe/Athens (EET, UTC+2 in early March 2027, before the last-Sunday-of-March DST change)",
+        "zh": "Europe/Athens（2027 年 3 月上旬、三月最后一个周日夏令时切换之前为 EET，UTC+2）"
+      },
+      "tags": [
+        "xr",
+        "festival",
+        "immersive"
+      ],
+      "image": {
+        "file": "assets/events/tidf29-limani.jpg",
+        "kind": "photo",
+        "alt": {
+          "en": "Official still from the Thessaloniki Film Festival’s TiDF29 call-for-entries page.",
+          "zh": "塞萨洛尼基电影节第 29 届纪录片节征集页上的官方图片。"
+        },
+        "credit": {
+          "en": "Thessaloniki Film Festival official TiDF29 call-for-entries page.",
+          "zh": "塞萨洛尼基电影节第 29 届纪录片节征集公告页。"
+        },
+        "source_url": "https://filmfestival.gr/media/original_images/FESTIVAL_LIMANI_jFTHYJ7.jpg"
+      },
+      "face_when": {
+        "en": "4–14 Mar 2027",
+        "zh": "3月4–14日"
+      },
+      "face_place": {
+        "en": "Thessaloniki",
+        "zh": "塞萨洛尼基"
+      },
+      "face_fee": {
+        "en": "Not listed",
+        "zh": "未公布"
+      },
+      "blurb": {
+        "en": "TiDF returns 4–14 March 2027 in Thessaloniki, with an XR, AR and VR competition. The 2027 immersive lineup and ticket prices are not yet listed.",
+        "zh": "第 29 届塞萨洛尼基国际纪录片节于 2027 年 3 月 4–14 日举行，设 XR、AR、VR 竞赛。2027 年沉浸片目与票价尚未公布。"
       }
     },
     {
