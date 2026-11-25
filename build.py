@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the self-contained site: data/neural-media.json + data/new-models.json + data/felstead-leung.json + data/xr.json + data/events.json + src/* -> seven pages
+"""Build the self-contained site: data/neural-media.json + data/new-models.json + data/felstead-leung.json + data/xr.json + data/events.json + data/spatial-storytelling.json + src/* -> eight pages
 
 Pages: index.html (identical copy: Neural-Media.html) = hero, concept, timeline, video, reading;
        who-else.html = landscape (who else works on neural media);
@@ -7,7 +7,8 @@ Pages: index.html (identical copy: Neural-Media.html) = hero, concept, timeline,
        new-models.html = New Models / Lil Internet / Caroline Busta: overview, ideas, K link, full archive;
        felstead-leung.html = Daniel Felstead & Jenn Leung: overview, ideas, K link, full archive;
        xr.html = XR (extended reality): taxonomy, latest VR / AR / MR / AI-glasses items;
-       events.html = festivals, open calls, markets and talks (XR, immersive, WebXR, world models).
+       events.html = festivals, open calls, markets and talks (XR, immersive, WebXR, world models);
+       spatial-storytelling.html = company and project cards.
 
 Usage:  python3 build.py            (stdlib only)
         python3 build.py --today    (also set meta.last_updated to today's date, UTC+8)
@@ -28,6 +29,7 @@ NMDATA = HERE / "data" / "new-models.json"
 FLDATA = HERE / "data" / "felstead-leung.json"
 XRDATA = HERE / "data" / "xr.json"
 EVDATA = HERE / "data" / "events.json"
+SSDATA = HERE / "data" / "spatial-storytelling.json"
 TZ = datetime.timezone(datetime.timedelta(hours=8))
 REQUIRED = ("id", "date", "types", "date_display", "title", "summary", "url", "source")
 
@@ -538,6 +540,9 @@ PAGES = {  # key -> (output files, sections in <main>, data keys kept, title)
     "events": (["events.html"], '  <section class="wrap block page-first" id="events"></section>\n',
                ("meta", "events"),
                "Events · 活动 | Neural Media"),
+    "spatial-storytelling": (["spatial-storytelling.html"], '  <section class="wrap block page-first" id="spatial-storytelling"></section>\n',
+                             ("meta", "spatial"),
+                             "Spatial Storytelling · 空间叙事 | Neural Media"),
 }
 
 
@@ -655,6 +660,52 @@ def subnav_html(key):
             '<span class="sublabel"><span class="t en">On this page</span><span class="t zh">本页</span></span>' + links + '</div></nav>')
 
 
+def validate_spatial(data):
+    """The reference board keeps one credited image and direct links per company."""
+    import re
+    from urllib.parse import urlsplit
+    errors, seen = [], set()
+    def bilingual(entry, key, where):
+        obj = entry.get(key)
+        if not isinstance(obj, dict) or not all(isinstance(obj.get(lang), str) and obj[lang].strip() for lang in ("en", "zh")):
+            errors.append(f"{where}: {key} needs both languages")
+    try:
+        datetime.date.fromisoformat(data.get("checked", ""))
+    except (ValueError, TypeError):
+        errors.append("spatial: invalid checked date")
+    if not data.get("entries"):
+        errors.append("spatial: empty card board")
+    for entry in data.get("entries", []):
+        key = entry.get("id", "")
+        if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", key) or key in seen:
+            errors.append(f"spatial: invalid or duplicate id {key}")
+        seen.add(key)
+        if entry.get("category") not in ("studio", "venue", "tools", "historical"):
+            errors.append(f"spatial {key}: unknown category")
+        for field in ("title", "place", "focus", "blurb", "strength", "limit", "funding"):
+            bilingual(entry, field, key)
+        image = entry.get("image", {})
+        bilingual(image, "alt", key)
+        rel = image.get("file", "")
+        if rel != f"assets/spatial/{key}.webp" or not (HERE / rel).is_file() or not image.get("credit"):
+            errors.append(f"spatial {key}: missing local cover or credit")
+        if urlsplit(image.get("source", "")).scheme != "https":
+            errors.append(f"spatial {key}: missing image attribution link")
+        links = entry.get("links", [])
+        urls = set()
+        if len(links) < 2 or not any(link.get("role") == "work" for link in links):
+            errors.append(f"spatial {key}: at least two links and one work needed")
+        for link in links:
+            bilingual(link, "label", key)
+            url = link.get("url", "")
+            parts = urlsplit(url)
+            if parts.scheme != "https" or not parts.netloc or url in urls or link.get("role") not in ("work", "interview", "source", "funding"):
+                errors.append(f"spatial {key}: invalid or duplicate source {url}")
+            urls.add(url)
+    if errors:
+        sys.exit("Data errors:\n  " + "\n  ".join(errors))
+
+
 def main():
     d = json.loads(DATA.read_text(encoding="utf-8"))
     if "--today" in sys.argv:
@@ -664,11 +715,13 @@ def main():
     d["felsteadleung"] = json.loads(FLDATA.read_text(encoding="utf-8"))
     d["xr"] = json.loads(XRDATA.read_text(encoding="utf-8"))
     d["events"] = json.loads(EVDATA.read_text(encoding="utf-8"))
+    d["spatial"] = json.loads(SSDATA.read_text(encoding="utf-8"))
     validate(d)
     validate_nm(d["newmodels"])
     validate_nm(d["felsteadleung"], "felstead-leung")
     validate_xr(d["xr"])
     validate_events(d["events"])
+    validate_spatial(d["spatial"])
     # Slim "latest" feed for who-else (no thumbnails): recent context / cross-linked items.
     def _slim_latest(items, last_updated, days=30, min_n=6, max_n=8):
         import datetime as _dt
@@ -707,7 +760,7 @@ def main():
     # Each page's Latest list is only that page's own entries. Home gets the
     # Neural Media timeline (items) and must not embed the XR, BCI, New Models,
     # Felstead & Leung, or Events logs. The XR page does not receive events either.
-    for foreign in ("xr", "xr_latest", "xr_tags", "newmodels", "felsteadleung", "bci", "landscape", "events"):
+    for foreign in ("xr", "xr_latest", "xr_tags", "newmodels", "felsteadleung", "bci", "landscape", "events", "spatial"):
         if foreign in PAGES["home"][2]:
             sys.exit(f"Data errors:\n  home page must not include {foreign}")
     if "events" in PAGES["xr"][2]:
@@ -750,6 +803,10 @@ def main():
     js = (HERE / "src" / "app.js").read_text(encoding="utf-8")
     if "xr_latest" in js or "xr_tags" in js:
         sys.exit("Data errors:\n  renderer must not embed another page's latest feed on the home page")
+    spatial_css = (HERE / "src" / "spatial.css").read_text(encoding="utf-8")
+    spatial_js = (HERE / "src" / "spatial.js").read_text(encoding="utf-8")
+    for entry in d["spatial"]["entries"]:
+        entry["image"]["file"] = data_uri(entry["image"]["file"])
     report = []
     for key, (files, main_html, keep, title) in PAGES.items():
         sub = {k: d[k] for k in keep if k in d}
@@ -761,9 +818,9 @@ def main():
                    .replace("<!--__NAV__-->", nav_html(d, key))
                    .replace("<!--__SUBNAV__-->", subnav_html(key) if SUBNAV.get(key) else "")
                    .replace("<!--__MAIN__-->", main_html.rstrip("\n"))
-                   .replace("/*__CSS__*/", css)
+                   .replace("/*__CSS__*/", css + ("\n" + spatial_css if key == "spatial-storytelling" else ""))
                    .replace("/*__DATA__*/null", blob)
-                   .replace("/*__JS__*/", js))
+                   .replace("/*__JS__*/", js + ("\n" + spatial_js if key == "spatial-storytelling" else "")))
         for f in files:
             (HERE / f).write_text(html, encoding="utf-8")
         report.append(f"{' = '.join(files)} ({len(html)//1024} KB)")
@@ -810,9 +867,12 @@ def main():
             sys.exit(f"Data errors:\n  home page embeds events ({needle})")
         if needle in xr_html:
             sys.exit(f"Data errors:\n  XR page embeds events ({needle})")
-    pages = ["index.html", "Neural-Media.html", "who-else.html", "bci.html", "new-models.html", "felstead-leung.html", "xr.html", "events.html"]
+    pages = ["index.html", "Neural-Media.html", "who-else.html", "bci.html", "new-models.html", "felstead-leung.html", "xr.html", "events.html", "spatial-storytelling.html"]
     for name in pages:
         text = (HERE / name).read_text(encoding="utf-8")
+        nav = text.split('<nav class="nav"', 1)[1].split("</nav>", 1)[0]
+        if not nav.endswith('<span class="t zh">空间叙事</span></a>'):
+            sys.exit(f"Data errors:\n  {name} lacks the rightmost Spatial Storytelling link")
         if name == "events.html":
             if 'aria-current="page"' not in text or ">Events<" not in text or ">活动<" not in text:
                 sys.exit("Data errors:\n  events.html nav is missing Events / 活动")
