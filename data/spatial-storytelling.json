@@ -1,0 +1,900 @@
+{
+  "checked": "2026-11-25",
+  "entries": [
+    {
+      "id": "atlas-v",
+      "category": "studio",
+      "title": {
+        "en": "Atlas V",
+        "zh": "Atlas V"
+      },
+      "place": {
+        "en": "France",
+        "zh": "法国"
+      },
+      "focus": {
+        "en": "Film IP → interactive VR",
+        "zh": "电影 IP → 互动 VR"
+      },
+      "blurb": {
+        "en": "Turns beloved film characters into authored, interactive VR adventures.",
+        "zh": "把熟悉的电影角色变成可参与的 VR 故事。"
+      },
+      "strength": {
+        "en": "Production, technical development and distribution sit in the same group. Wallace & Gromit was made with Aardman and Meta.",
+        "zh": "集团把制作、技术和发行串在一起，与 Aardman、Meta 联合制作《超级无敌掌门狗》VR 冒险。"
+      },
+      "limit": {
+        "en": "Authored interaction, not evidence of an open-ended AI cast.",
+        "zh": "强项是导演设计的互动，不能等同于开放式 AI 角色。"
+      },
+      "funding": {
+        "en": "€5M round in January 2026, with HTC among the investors.",
+        "zh": "2026 年 1 月完成一轮 500 万欧元融资，HTC 参与。"
+      },
+      "image": {
+        "file": "assets/spatial/atlas-v.webp",
+        "alt": {
+          "en": "Wallace & Gromit: The Grand Getaway — project still",
+          "zh": "《超级无敌掌门狗》VR 项目剧照"
+        },
+        "credit": "Atlas V / Aardman / Meta",
+        "source": "https://atlasv.io/project/wallace-gromit-in-the-grand-getaway/"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Wallace & Gromit: The Grand Getaway",
+            "zh": "《超级无敌掌门狗》VR 项目"
+          },
+          "url": "https://atlasv.io/project/wallace-gromit-in-the-grand-getaway/"
+        },
+        {
+          "role": "work",
+          "label": {
+            "en": "Atlas V production portfolio",
+            "zh": "Atlas V 沉浸作品集"
+          },
+          "url": "https://atlasv.io/production/"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "Variety: €5 million financing",
+            "zh": "Variety：500 万欧元融资"
+          },
+          "url": "https://finance.yahoo.com/news/atlas-v-group-raises-6-150830652.html"
+        }
+      ]
+    },
+    {
+      "id": "arvore",
+      "category": "studio",
+      "title": {
+        "en": "ARVORE",
+        "zh": "ARVORE"
+      },
+      "place": {
+        "en": "Brazil",
+        "zh": "巴西"
+      },
+      "focus": {
+        "en": "Live character dialogue",
+        "zh": "角色实时回应"
+      },
+      "blurb": {
+        "en": "In Fabula Rasa, you talk to characters and they react in real time.",
+        "zh": "《Fabula Rasa》里，观众开口，角色会当场回应。"
+      },
+      "strength": {
+        "en": "A handcrafted VR world gives improvised conversations a role in the story. The Line offers a contrasting, directed approach.",
+        "zh": "在手工设计的 VR 世界里，把角色即兴回应放进叙事。《The Line》则展示了更强导演控制的做法。"
+      },
+      "limit": {
+        "en": "Live conversation does not establish a world that remembers previous visitors.",
+        "zh": "角色能即兴说话，不等于世界会记住此前来过的观众。"
+      },
+      "funding": {
+        "en": "Founder confirms venture funding; no reliable public amount verified.",
+        "zh": "创始人确认拿过风投；未核到可靠的公开金额。"
+      },
+      "image": {
+        "file": "assets/spatial/arvore.webp",
+        "alt": {
+          "en": "Fabula Rasa — VR world screenshot",
+          "zh": "《Fabula Rasa》场景截图"
+        },
+        "credit": "ARVORE",
+        "source": "https://arvore.io/games/fabula-rasa"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Fabula Rasa — official project",
+            "zh": "《Fabula Rasa》官方作品页"
+          },
+          "url": "https://arvore.io/games/fabula-rasa"
+        },
+        {
+          "role": "interview",
+          "label": {
+            "en": "Making Fabula Rasa",
+            "zh": "《Fabula Rasa》幕后"
+          },
+          "url": "https://www.youtube.com/watch?v=G9AcohKaVzA"
+        },
+        {
+          "role": "interview",
+          "label": {
+            "en": "GamesBeat founder interview",
+            "zh": "GamesBeat 创始人访谈"
+          },
+          "url": "https://gamesbeat.com/arvore-is-taking-aim-at-making-triple-a-games-in-brazil-founder-interview/"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "Co-founder on ARVORE's first venture round",
+            "zh": "联合创始人谈首轮融资"
+          },
+          "url": "https://www.graded.br/about/school-media/the-graded-gazette/news-piece-page/~board/all-school-news/post/alumni-spotlight-edouard-de-montmort-03-serial-entrepreneur"
+        }
+      ]
+    },
+    {
+      "id": "three-body",
+      "category": "studio",
+      "title": {
+        "en": "Three-Body Universe",
+        "zh": "三体宇宙／次元互动"
+      },
+      "place": {
+        "en": "China · Shanghai",
+        "zh": "中国 · 上海"
+      },
+      "focus": {
+        "en": "Choices and endings",
+        "zh": "分支与结局"
+      },
+      "blurb": {
+        "en": "Red Coast Echo makes audience choices part of a Chinese sci-fi world.",
+        "zh": "《三体：红岸回响》让观众在中国科幻世界里做选择。"
+      },
+      "strength": {
+        "en": "Three-Body Universe produced the VR film, made by its studio Dimension Interactive. Audience choices can lead to different endings.",
+        "zh": "三体宇宙出品，旗下次元互动制作。观众做出的关键选择可以走向不同结局。"
+      },
+      "limit": {
+        "en": "The branches are authored. This is not evidence of AI improvising the narrative.",
+        "zh": "分支来自事先设计，不等于 AI 即兴写剧情。"
+      },
+      "funding": {
+        "en": "No verified standalone round amount for Dimension Interactive.",
+        "zh": "未核到次元互动可单列的融资金额。"
+      },
+      "image": {
+        "file": "assets/spatial/three-body.webp",
+        "alt": {
+          "en": "Red Coast Echo — festival poster",
+          "zh": "《红岸回响》电影节海报"
+        },
+        "credit": "三体宇宙 / 北京国际电影节",
+        "source": "https://www.bjiff.com/ywzx/202604/t20260406_192199_ext.html"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Red Coast Echo — Beijing International Film Festival",
+            "zh": "北京国际电影节：《红岸回响》"
+          },
+          "url": "https://www.bjiff.com/ywzx/202604/t20260406_192199_ext.html"
+        },
+        {
+          "role": "work",
+          "label": {
+            "en": "Beijing News: the studio and the award",
+            "zh": "新京报：制作方与获奖"
+          },
+          "url": "https://m.bjnews.com.cn/detail/1776910287129893.html"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "China Film Administration project filing",
+            "zh": "国家电影局项目备案"
+          },
+          "url": "https://www.chinafilm.gov.cn/xxgk/gsxx/dybalx/202604/t20260430_988217.html"
+        }
+      ]
+    },
+    {
+      "id": "fable",
+      "category": "studio",
+      "title": {
+        "en": "Fable Studio",
+        "zh": "Fable Studio"
+      },
+      "place": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "focus": {
+        "en": "VR pioneer → generative TV",
+        "zh": "VR 先驱 → 生成剧集"
+      },
+      "blurb": {
+        "en": "Wolves in the Walls makes a viewer part of Lucy's story.",
+        "zh": "《墙里的狼》让观众真正成为 Lucy 故事的一部分。"
+      },
+      "strength": {
+        "en": "An Emmy-winning example of a character noticing the viewer and building a relationship with them.",
+        "zh": "拿过互动媒体 Emmy 的案例：角色注意到观众，并与观众建立关系。"
+      },
+      "limit": {
+        "en": "Its later Showrunner direction is generated episodic storytelling, not the same as a live VR world.",
+        "zh": "后来的 Showrunner 主攻生成式剧集，和实时 VR 空间世界不是一回事。"
+      },
+      "funding": {
+        "en": "Amazon Alexa Fund invested in 2025; amount undisclosed.",
+        "zh": "2025 年获 Amazon Alexa Fund 投资，金额未披露。"
+      },
+      "image": {
+        "file": "assets/spatial/fable.webp",
+        "alt": {
+          "en": "Wolves in the Walls — official VR artwork",
+          "zh": "《墙里的狼》官方 VR 视觉"
+        },
+        "credit": "Fable Studio",
+        "source": "https://www.youtube.com/watch?v=Qsp22z1I1m4"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Wolves in the Walls — official trailer and project",
+            "zh": "《墙里的狼》官方预告和项目页"
+          },
+          "url": "https://www.youtube.com/watch?v=Qsp22z1I1m4"
+        },
+        {
+          "role": "work",
+          "label": {
+            "en": "Tribeca: Wolves in the Walls",
+            "zh": "翠贝卡电影节：《墙里的狼》"
+          },
+          "url": "https://tribecafilm.com/festival/archive/wolves-in-the-walls-it-s-all-over-2019"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Television Academy: 2019 Emmy",
+            "zh": "美国电视学院：2019 Emmy 档案"
+          },
+          "url": "https://www.televisionacademy.com/bios/fable-studio"
+        },
+        {
+          "role": "interview",
+          "label": {
+            "en": "Edward Saatchi on Showrunner",
+            "zh": "Edward Saatchi 谈 Showrunner"
+          },
+          "url": "https://puck.news/ai/2025/7/inside-showrunner-the-amazon-backed-netlix-of-ai-app"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "Variety: Alexa Fund investment",
+            "zh": "Variety：Alexa Fund 投资"
+          },
+          "url": "https://tech.yahoo.com/ai/articles/amazon-invests-netflix-ai-start-160000843.html"
+        }
+      ]
+    },
+    {
+      "id": "sandbox",
+      "category": "venue",
+      "title": {
+        "en": "Sandbox VR",
+        "zh": "Sandbox VR"
+      },
+      "place": {
+        "en": "Hong Kong / United States",
+        "zh": "香港起家／美国"
+      },
+      "focus": {
+        "en": "Full-body VR at retail scale",
+        "zh": "多人全身追踪／门店规模化"
+      },
+      "blurb": {
+        "en": "Turns Squid Game and Deadwood into group experiences with ticket sales.",
+        "zh": "把《鱿鱼游戏》和《Deadwood》做成可售票的组队体验。"
+      },
+      "strength": {
+        "en": "Full-body tracking, repeatable venue formats and licensed alongside original stories. In October 2026 the company reported about 100 locations and US$300M in lifetime sales.",
+        "zh": "把全身追踪、标准化场馆、授权与原创内容串起来。公司 2026 年 10 月披露约 100 个地点、累计销售额达 3 亿美元。"
+      },
+      "limit": {
+        "en": "The sales figure is not profit or financing. Its strongest public evidence is group play, not intimate, open-ended narrative.",
+        "zh": "销售额不等于利润或融资。公开案例更能证明多人玩法，而非开放式作者叙事。"
+      },
+      "funding": {
+        "en": "US$116M subtotal: US$68M Series A and US$11M strategic funding in 2019; US$37M Series B in 2021. Not lifetime funding.",
+        "zh": "三笔公开金额小计 1.16 亿美元：2019 年 A 轮 6800 万、战略轮 1100 万；2021 年 B 轮 3700 万。不是完整累计。"
+      },
+      "image": {
+        "file": "assets/spatial/sandbox.webp",
+        "alt": {
+          "en": "Deadwood trilogy — official experience artwork",
+          "zh": "《Deadwood》三部曲官方宣传图"
+        },
+        "credit": "Sandbox VR",
+        "source": "https://sandboxvr.com/squidgame"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Squid Game Virtuals — official trailer",
+            "zh": "《鱿鱼游戏》VR 官方预告"
+          },
+          "url": "https://www.youtube.com/watch?v=1LLmBOhKb_s"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Company release: 100 locations and lifetime sales",
+            "zh": "公司公告：门店与累计销售额"
+          },
+          "url": "https://www.prnewswire.com/news-releases/sandbox-vr-expands-in-miami-area-with-second-location-at-the-falls-opening-october-30-302921236.html"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "TechCrunch: 2019 financing",
+            "zh": "TechCrunch：2019 年融资"
+          },
+          "url": "https://techcrunch.com/2019/10/22/sandbox-vr-raises-millions-more-in-celebrity-party-round/"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "TechCrunch: Series B",
+            "zh": "TechCrunch：B 轮"
+          },
+          "url": "https://techcrunch.com/2021/11/10/sandbox-vr-expands-to-new-locations-globally-with-37m-series-b-led-by-andreessen-horowitz/"
+        }
+      ]
+    },
+    {
+      "id": "excurio",
+      "category": "venue",
+      "title": {
+        "en": "Excurio / Emissive",
+        "zh": "Excurio／Emissive"
+      },
+      "place": {
+        "en": "France",
+        "zh": "法国"
+      },
+      "focus": {
+        "en": "Free-roaming cultural XR",
+        "zh": "大空间文化体验"
+      },
+      "blurb": {
+        "en": "Horizon of Khufu turns cultural history into a walkable story.",
+        "zh": "《消失的法老》把文化历史变成可以走进去的故事。"
+      },
+      "strength": {
+        "en": "The Immersive Expeditions format takes free-roaming groups through authored sequences and tours across venues.",
+        "zh": "Immersive Expeditions 把观众的自由行走放进导演编排的段落，可在多个场馆巡展。"
+      },
+      "limit": {
+        "en": "Requires space and venue operations; walking freely does not mean the story can branch freely.",
+        "zh": "需要场馆和现场运营；能自由走动，不等于剧情能自由分支。"
+      },
+      "funding": {
+        "en": "€2.9M first round in 2020 from Bpifrance, HTC and ArtNova; not a lifetime total.",
+        "zh": "2020 年首轮 290 万欧元，Bpifrance、HTC 与 ArtNova 参与；不是累计融资。"
+      },
+      "image": {
+        "file": "assets/spatial/excurio.webp",
+        "alt": {
+          "en": "Horizon of Khufu — trailer still",
+          "zh": "《消失的法老》预告画面"
+        },
+        "credit": "Excurio",
+        "source": "https://www.excurio.com/en/expeditions-immersives/"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Immersive Expeditions — works and trailers",
+            "zh": "Immersive Expeditions 作品及预告"
+          },
+          "url": "https://www.excurio.com/en/expeditions-immersives/"
+        },
+        {
+          "role": "interview",
+          "label": {
+            "en": "IDFA DocLab report: Fabien Barati on the format",
+            "zh": "IDFA DocLab 报告：Fabien Barati 谈大空间体验"
+          },
+          "url": "https://cdn2.assets-servd.host/idfa-cms/production/uploads/IDFADocLab_ImmersiveThinkTankReport_260421.pdf?dm=1776752082"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "Bpifrance: first round",
+            "zh": "Bpifrance：首轮融资"
+          },
+          "url": "https://presse.bpifrance.fr/emissive-lance-son-nouveau-format-dexpeditions-immersives-et-ouvre-a-cette-occasion-son-capital-a-bpifrance-htc-et-artnova/?lang=fra"
+        }
+      ]
+    },
+    {
+      "id": "yb",
+      "category": "venue",
+      "title": {
+        "en": "YB / YBVR",
+        "zh": "YB／YBVR"
+      },
+      "place": {
+        "en": "United States / Spain",
+        "zh": "美国／西班牙"
+      },
+      "focus": {
+        "en": "Immersive production and release",
+        "zh": "沉浸制作与发行"
+      },
+      "blurb": {
+        "en": "CultVRe adapts one act of The Nutcracker for Android XR.",
+        "zh": "CultVRe 把《胡桃夹子》其中一幕搬进 Android XR。"
+      },
+      "strength": {
+        "en": "YB collaborates with San Francisco Ballet, Google and XREAL. The published plan sets the full Act I release for December 4, 2026.",
+        "zh": "联手旧金山芭蕾舞团、Google 和 XREAL。官方计划于 2026 年 12 月 4 日发布完整第一幕。"
+      },
+      "limit": {
+        "en": "The case demonstrates immersive viewing and distribution, not AI characters or branching.",
+        "zh": "证明的是沉浸观看和分发，不是 AI 角色或剧情分支。"
+      },
+      "funding": {
+        "en": "US$1.5M pre-Series A in 2021; research grants are separate.",
+        "zh": "2021 年 Pre-A 轮 150 万美元；研发补助另计。"
+      },
+      "image": {
+        "file": "assets/spatial/yb.webp",
+        "alt": {
+          "en": "San Francisco Ballet dancers in The Nutcracker",
+          "zh": "旧金山芭蕾舞团《胡桃夹子》剧照"
+        },
+        "credit": "YB / CultVRe",
+        "source": "https://www.ybvr.com/cultvre"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "CultVRe: The Nutcracker",
+            "zh": "CultVRe：《胡桃夹子》"
+          },
+          "url": "https://www.ybvr.com/cultvre"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "San Francisco Ballet announcement",
+            "zh": "旧金山芭蕾舞团公告"
+          },
+          "url": "https://www.sfballet.org/press-releases/virtual-reality-experience-of-san-francisco-ballets-nutcracker-invites-viewers-to-step-into-the-story/"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "Telefónica: pre-Series A",
+            "zh": "Telefónica：Pre-A 融资"
+          },
+          "url": "https://www.telefonica.com/en/communication-room/press-room/ybvr-secures-1-5m-in-financing-from-verizon-ventures-tca-and-wayra-telefonica/"
+        }
+      ]
+    },
+    {
+      "id": "soreal",
+      "category": "venue",
+      "title": {
+        "en": "SoReal",
+        "zh": "当红齐天／SoReal"
+      },
+      "place": {
+        "en": "China · Beijing",
+        "zh": "中国 · 北京"
+      },
+      "focus": {
+        "en": "Venue-scale IP",
+        "zh": "场馆级 IP 体验"
+      },
+      "blurb": {
+        "en": "Combines XR production, equipment and venue operation.",
+        "zh": "把 XR 内容、设备和线下场馆放进同一个项目。"
+      },
+      "strength": {
+        "en": "Shougang and the Shanghai Disneytown Journey to the West venue illustrate large-scale delivery and operations.",
+        "zh": "首钢一高炉与上海迪士尼小镇西游体验，展示了大型项目的交付与运营能力。"
+      },
+      "limit": {
+        "en": "Venue operations are central; a small story prototype does not need this overhead.",
+        "zh": "场馆是模式核心；轻量叙事原型不必先背负这套运营成本。"
+      },
+      "funding": {
+        "en": "2023 Series C: several hundred million yuan per Lenovo Capital. New strategic financing reported in 2026; amount undisclosed.",
+        "zh": "据联想创投，2023 年 C 轮数亿元人民币；2026 年另有战略融资报道，金额未披露。"
+      },
+      "image": {
+        "file": "assets/spatial/soreal.webp",
+        "alt": {
+          "en": "SoReal project image from Lenovo Capital",
+          "zh": "联想创投发布的 SoReal 项目图"
+        },
+        "credit": "SoReal / Lenovo Capital",
+        "source": "https://capital.lenovo.com/news/detail/id/873/s/1.html"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "SoReal cases at Shougang and Disneytown",
+            "zh": "首钢与迪士尼小镇案例"
+          },
+          "url": "https://capital.lenovo.com/news/detail/id/873/s/1.html"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "2026 strategic financing coverage",
+            "zh": "2026 年战略融资报道"
+          },
+          "url": "https://news.pedaily.cn/20260427/128528.shtml"
+        }
+      ]
+    },
+    {
+      "id": "veer",
+      "category": "studio",
+      "title": {
+        "en": "VeeR",
+        "zh": "为快科技／VeeR"
+      },
+      "place": {
+        "en": "China · Beijing",
+        "zh": "中国 · 北京"
+      },
+      "focus": {
+        "en": "VR film and distribution",
+        "zh": "VR 影视制作与分发"
+      },
+      "blurb": {
+        "en": "Makes and distributes immersive films, online and in Zero Space venues.",
+        "zh": "制作、联合出品并发行 VR 影视，也经营「零号空间」。"
+      },
+      "strength": {
+        "en": "VeeR Studio works with external IP and combines VR production with a distribution channel.",
+        "zh": "自有工作室对接外部 IP，把 VR 制作和发行通道结合在一起。"
+      },
+      "limit": {
+        "en": "Distribution does not establish live AI characters or audience-driven branches.",
+        "zh": "有发行能力，不代表已经验证实时 AI 角色或开放式剧情。"
+      },
+      "funding": {
+        "en": "Shanghai Fengyuzhu's strategic investment is confirmed; amount not disclosed.",
+        "zh": "确认获风语筑战略投资，金额未披露。"
+      },
+      "image": {
+        "file": "assets/spatial/veer.webp",
+        "alt": {
+          "en": "VeeR company visual from Qiming Venture Partners",
+          "zh": "启明创投发布的 VeeR 相关视觉"
+        },
+        "credit": "VeeR / Qiming Venture Partners",
+        "source": "https://www.qimingvc.com/en/node/4441"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "VeeR immersive experiences",
+            "zh": "VeeR 沉浸影视平台"
+          },
+          "url": "https://veer.tv/"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Qiming on the studio and Zero Space",
+            "zh": "启明创投：工作室与零号空间"
+          },
+          "url": "https://www.qimingvc.com/en/node/4441"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "36Kr: financing history",
+            "zh": "36 氪：融资记录"
+          },
+          "url": "https://pitchhub.36kr.com/project/1744030529903497"
+        }
+      ]
+    },
+    {
+      "id": "inworld",
+      "category": "tools",
+      "title": {
+        "en": "Inworld AI",
+        "zh": "Inworld AI"
+      },
+      "place": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "focus": {
+        "en": "Voice and character infrastructure",
+        "zh": "语音与角色技术"
+      },
+      "blurb": {
+        "en": "A technology layer for characters that can talk back.",
+        "zh": "让角色能开口回应的底层技术。"
+      },
+      "strength": {
+        "en": "The investor's original character-engine case and today's voice products show two different pieces of the workflow.",
+        "zh": "早期的角色引擎和现在的语音产品，解决的是工作流中的不同环节。"
+      },
+      "limit": {
+        "en": "It does not design narrative rules, character arcs or shared world memory for you.",
+        "zh": "不替创作者设计叙事规则、人物弧线或观众共享的世界记忆。"
+      },
+      "funding": {
+        "en": "Company reports over US$125M raised cumulatively. A 2023 round of more than US$50M is included, not additional.",
+        "zh": "公司披露累计融资超 1.25 亿美元；已包含 2023 年的超 5000 万美元一轮。"
+      },
+      "image": {
+        "file": "assets/spatial/inworld.webp",
+        "alt": {
+          "en": "Inworld interactive voice product visual",
+          "zh": "Inworld 实时语音产品视觉"
+        },
+        "credit": "Inworld AI",
+        "source": "https://inworld.ai/resources/what-is-inworld-ai"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Realtime voice stack and examples",
+            "zh": "实时语音技术与应用"
+          },
+          "url": "https://inworld.ai/resources/what-is-inworld-ai"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Lightspeed: original Character Engine case",
+            "zh": "Lightspeed：早期角色引擎案例"
+          },
+          "url": "https://lsvp.com/stories/inworld-ai-npcs-character-engine/"
+        }
+      ]
+    },
+    {
+      "id": "world-labs",
+      "category": "tools",
+      "title": {
+        "en": "World Labs",
+        "zh": "World Labs"
+      },
+      "place": {
+        "en": "United States · AMD",
+        "zh": "美国 · 已并入 AMD"
+      },
+      "focus": {
+        "en": "Generating explorable space",
+        "zh": "生成可探索空间"
+      },
+      "blurb": {
+        "en": "Marble and Atlas build spatial settings; a setting is not yet a story.",
+        "zh": "Marble 与 Atlas 能做空间，但空间本身还不是故事。"
+      },
+      "strength": {
+        "en": "Useful for worldbuilding, camera exploration and reconstructing environments from images. AMD closed the acquisition in November 2026.",
+        "zh": "可用于世界观搭建、探索机位和从图像重建空间。AMD 于 2026 年 11 月完成收购。"
+      },
+      "limit": {
+        "en": "Character behaviour and plot still need authoring. Marble is scheduled to close on January 8, 2027.",
+        "zh": "角色和情节仍需创作。Marble 公告将于 2027 年 1 月 8 日停服。"
+      },
+      "funding": {
+        "en": "About US$1.23B across the 2024 reported US$230M and 2026 company-announced US$1B. AMD's announced US$8.2B acquisition price is not funding.",
+        "zh": "2024 年报道 2.3 亿美元，2026 年官宣 10 亿美元，合计约 12.3 亿美元；AMD 公告的约 82 亿美元收购价不是融资。"
+      },
+      "image": {
+        "file": "assets/spatial/world-labs.webp",
+        "alt": {
+          "en": "Frameboy: Atlas in real-time — official example",
+          "zh": "《Frameboy》Atlas 实时示例"
+        },
+        "credit": "World Labs",
+        "source": "https://worldlabs.ai/blog/atlas"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Atlas — interactive demos",
+            "zh": "Atlas 公开示例"
+          },
+          "url": "https://worldlabs.ai/blog/atlas"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Marble sunset notice",
+            "zh": "Marble 停服公告"
+          },
+          "url": "https://marble.worldlabs.ai/"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "World Labs: US$1 billion financing in 2026",
+            "zh": "World Labs：2026 年 10 亿美元融资"
+          },
+          "url": "https://worldlabs.ai/blog/funding-2026"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "TechCrunch: historical funding and the 2026 round",
+            "zh": "TechCrunch：早期融资与 2026 年融资"
+          },
+          "url": "https://techcrunch.com/2026/02/18/world-labs-lands-200m-from-autodesk-to-bring-world-models-into-3d-workflows/"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "AMD closing disclosure",
+            "zh": "AMD 交割文件"
+          },
+          "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-462340/0001193125-26-462340.pdf"
+        }
+      ]
+    },
+    {
+      "id": "odyssey",
+      "category": "tools",
+      "title": {
+        "en": "Odyssey",
+        "zh": "Odyssey"
+      },
+      "place": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "focus": {
+        "en": "Reactive world simulation",
+        "zh": "实时世界模拟"
+      },
+      "blurb": {
+        "en": "Builds simulations that change as you act inside them.",
+        "zh": "让数字环境随着人的输入实时变化。"
+      },
+      "strength": {
+        "en": "Good reference for testing an environment that responds to audience actions in real time.",
+        "zh": "适合研究观众的动作如何改变眼前发生的事。"
+      },
+      "limit": {
+        "en": "Not a finished narrative engine for dramatic beats, editorial control or persistent shared stories.",
+        "zh": "不是能直接交付故事节奏、导演控制或多人共享剧情的叙事系统。"
+      },
+      "funding": {
+        "en": "US$310M Series B in June 2026. US$1.45B was the valuation, not funding.",
+        "zh": "2026 年 6 月 B 轮 3.1 亿美元；14.5 亿美元是估值，不是募资。"
+      },
+      "image": {
+        "file": "assets/spatial/odyssey.webp",
+        "alt": {
+          "en": "Odyssey world simulation visual",
+          "zh": "Odyssey 世界模拟官方视觉"
+        },
+        "credit": "Odyssey",
+        "source": "https://odyssey.systems/our-series-b"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "World simulation demos",
+            "zh": "世界模拟案例"
+          },
+          "url": "https://odyssey.systems/"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "Odyssey: Series B announcement",
+            "zh": "Odyssey：B 轮公告"
+          },
+          "url": "https://odyssey.systems/our-series-b"
+        }
+      ]
+    },
+    {
+      "id": "felix-paul",
+      "category": "historical",
+      "title": {
+        "en": "Felix & Paul Studios",
+        "zh": "Felix & Paul Studios"
+      },
+      "place": {
+        "en": "Canada",
+        "zh": "加拿大"
+      },
+      "focus": {
+        "en": "Historical benchmark",
+        "zh": "历史案例"
+      },
+      "blurb": {
+        "en": "Space Explorers made the viewer feel physically present in orbit.",
+        "zh": "《Space Explorers》让观众感觉自己真的身处轨道。"
+      },
+      "strength": {
+        "en": "Cinematic depth, spatial sound and staging show how presence can carry a story even without branches.",
+        "zh": "用空间声音、景深和场面调度证明：没有剧情分支，也可以靠临场感讲故事。"
+      },
+      "limit": {
+        "en": "The original entity filed for bankruptcy in September 2026. Treat rights and commissioning status as unverified.",
+        "zh": "原公司 2026 年 9 月申报破产。作品权利与可合作主体需另行确认。"
+      },
+      "funding": {
+        "en": "US$6.8M Series A in 2016; not a current funding or operating claim.",
+        "zh": "2016 年 A 轮约 680 万美元，不代表当前融资或运营状态。"
+      },
+      "image": {
+        "file": "assets/spatial/felix-paul.webp",
+        "alt": {
+          "en": "Space Explorers — official project visual",
+          "zh": "《Space Explorers》官方项目视觉"
+        },
+        "credit": "Felix & Paul Studios",
+        "source": "https://www.felixandpaul.com/team"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Studio and project archive",
+            "zh": "工作室与作品档案"
+          },
+          "url": "https://www.felixandpaul.com/team"
+        },
+        {
+          "role": "funding",
+          "label": {
+            "en": "Los Angeles Times: 2016 Series A",
+            "zh": "洛杉矶时报：2016 年 A 轮"
+          },
+          "url": "https://www.latimes.com/entertainment/movies/la-et-mn-felix-paul-vr-movies-universal-comcast-20160615-snap-story.html"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Court order — original entity",
+            "zh": "原公司法院文件"
+          },
+          "url": "https://www.insolvencies.deloitte.ca/en-ca/Documents/Felix%20%26%20Paul%20Studios/500-11-067751-269_2026-10-29_JG.pdf"
+        }
+      ]
+    }
+  ]
+}
