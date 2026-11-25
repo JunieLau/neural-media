@@ -684,6 +684,9 @@ def validate_spatial(data):
             errors.append(f"spatial {key}: unknown category")
         for field in ("title", "place", "focus", "blurb", "advantage", "strength", "limit", "funding"):
             bilingual(entry, field, key)
+        ref = entry.get("referenceDate", {})
+        if ref.get("role") not in ("release", "showcase", "announcement", "documented", "checked") or not ref.get("case") or not re.fullmatch(r"\d{4}(?:-\d{2}){0,2}", ref.get("value", "")):
+            errors.append(f"spatial {key}: invalid or missing reference date")
         image = entry.get("image", {})
         bilingual(image, "alt", key)
         rel = image.get("file", "")
@@ -714,6 +717,13 @@ def validate_spatial(data):
             errors.append(f"spatial market: invalid or duplicate source {url}")
         if not re.fullmatch(r"\d{4}(?:-\d{2}){0,2}", item.get("date", "")):
             errors.append(f"spatial market: invalid date for {url}")
+        visual = item.get("visual", {})
+        bilingual(visual, "caption", "spatial market visual")
+        visual_ok = visual.get("entry") in seen if "entry" in visual else (
+            visual.get("file", "").startswith("assets/") and (HERE / visual.get("file", "")).is_file()
+            and visual.get("credit") and urlsplit(visual.get("source", "")).scheme == "https")
+        if not visual_ok:
+            errors.append(f"spatial market: missing image or attribution for {url}")
         market_urls.add(url)
     if errors:
         sys.exit("Data errors:\n  " + "\n  ".join(errors))

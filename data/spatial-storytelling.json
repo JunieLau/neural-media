@@ -70,6 +70,11 @@
       "advantage": {
         "en": "Brings film IP from production to release.",
         "zh": "把电影 IP 从互动改编做到发行。"
+      },
+      "referenceDate": {
+        "value": "2023",
+        "role": "release",
+        "case": "Wallace & Gromit: The Grand Getaway"
       }
     },
     {
@@ -149,6 +154,11 @@
       "advantage": {
         "en": "Lets characters answer players in their own words.",
         "zh": "让角色直接回应观众说的话。"
+      },
+      "referenceDate": {
+        "value": "2026",
+        "role": "showcase",
+        "case": "Fabula Rasa"
       }
     },
     {
@@ -220,6 +230,11 @@
       "advantage": {
         "en": "Turns familiar sci-fi scenes into walkable group experiences.",
         "zh": "让观众结伴走进熟悉的科幻场景。"
+      },
+      "referenceDate": {
+        "value": "2026",
+        "role": "showcase",
+        "case": "Red Coast Echo"
       }
     },
     {
@@ -302,11 +317,24 @@
             "zh": "Variety：Alexa Fund 投资"
           },
           "url": "https://tech.yahoo.com/ai/articles/amazon-invests-netflix-ai-start-160000843.html"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Reference date",
+            "zh": "日期出处"
+          },
+          "url": "https://www.televisionacademy.com/awards/nominees-winners/2019/outstanding-innovation-in-interactive-programming"
         }
       ],
       "advantage": {
         "en": "Builds a relationship through a character’s gaze and gestures.",
         "zh": "用角色的眼神和动作建立关系。"
+      },
+      "referenceDate": {
+        "value": "2019",
+        "role": "showcase",
+        "case": "Wolves in the Walls"
       }
     },
     {
@@ -381,11 +409,24 @@
             "zh": "TechCrunch：B 轮"
           },
           "url": "https://techcrunch.com/2021/11/10/sandbox-vr-expands-to-new-locations-globally-with-37m-series-b-led-by-andreessen-horowitz/"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Reference date",
+            "zh": "日期出处"
+          },
+          "url": "https://franchise.sandboxvr.com/sandbox-vr-and-netflix-join-forces-to-unleash-immersive-virtual-reality-rebel-moon-experience-in-london/"
         }
       ],
       "advantage": {
         "en": "Runs the same tracked group format across many venues.",
         "zh": "把多人全身追踪做成可跨门店运营的体验。"
+      },
+      "referenceDate": {
+        "value": "2023",
+        "role": "release",
+        "case": "Squid Game Virtuals"
       }
     },
     {
@@ -452,11 +493,24 @@
             "zh": "Bpifrance：首轮融资"
           },
           "url": "https://presse.bpifrance.fr/emissive-lance-son-nouveau-format-dexpeditions-immersives-et-ouvre-a-cette-occasion-son-capital-a-bpifrance-htc-et-artnova/?lang=fra"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Reference date",
+            "zh": "日期出处"
+          },
+          "url": "https://www.excurio.com/en/horizon-of-khufu/"
         }
       ],
       "advantage": {
         "en": "Makes historical spaces walkable at group scale.",
         "zh": "让多人走进历史现场，而不只在原地看。"
+      },
+      "referenceDate": {
+        "value": "2022",
+        "role": "release",
+        "case": "Horizon of Khufu"
       }
     },
     {
@@ -528,6 +582,11 @@
       "advantage": {
         "en": "Takes a performance audience onto and behind the stage.",
         "zh": "把观众带进演出现场，甚至带到舞台后方。"
+      },
+      "referenceDate": {
+        "value": "2026-11-10",
+        "role": "announcement",
+        "case": "Nutcracker: The Immersive Experience"
       }
     },
     {
@@ -591,6 +650,11 @@
       "advantage": {
         "en": "Pairs real venues and physical effects with digital scenes.",
         "zh": "把实体场馆、体感装置和虚拟场景结合。"
+      },
+      "referenceDate": {
+        "value": "2023",
+        "role": "documented",
+        "case": "SoReal immersive venue portfolio"
       }
     },
     {
@@ -662,6 +726,11 @@
       "advantage": {
         "en": "Connects curated immersive work with exhibition access.",
         "zh": "把沉浸作品的策展、发行和线下观看串起来。"
+      },
+      "referenceDate": {
+        "value": "2020",
+        "role": "documented",
+        "case": "VeeR / Zero Space"
       }
     },
     {
@@ -720,11 +789,24 @@
             "zh": "Lightspeed：早期角色引擎案例"
           },
           "url": "https://lsvp.com/stories/inworld-ai-npcs-character-engine/"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Reference date",
+            "zh": "日期出处"
+          },
+          "url": "https://inworld.ai/blog/new-ai-infrastructure-scaling-games-media-characters"
         }
       ],
       "advantage": {
         "en": "Supplies a dialogue layer for characters inside larger worlds.",
         "zh": "给已有世界加入可实时对话的角色能力。"
+      },
+      "referenceDate": {
+        "value": "2025",
+        "role": "announcement",
+        "case": "Character and game infrastructure"
       }
     },
     {
@@ -807,11 +889,24 @@
             "zh": "AMD 交割文件"
           },
           "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-462340/0001193125-26-462340.pdf"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Reference date",
+            "zh": "日期出处"
+          },
+          "url": "https://worldlabs.ai/blog/atlas-realtime"
         }
       ],
       "advantage": {
         "en": "Speeds up the creation of places that can be explored.",
         "zh": "更快搭出观众能进入和探索的三维空间。"
+      },
+      "referenceDate": {
+        "value": "2026-11-05",
+        "role": "announcement",
+        "case": "Frameboy: Atlas in Real-time"
       }
     },
     {
@@ -870,11 +965,24 @@
             "zh": "Odyssey：B 轮公告"
           },
           "url": "https://odyssey.systems/our-series-b"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Reference date",
+            "zh": "日期出处"
+          },
+          "url": "https://odyssey.systems/introducing-odyssey-2-max"
         }
       ],
       "advantage": {
         "en": "Makes generated scenes respond as the viewer moves.",
         "zh": "让生成画面随探索动作实时变化。"
+      },
+      "referenceDate": {
+        "value": "2026",
+        "role": "announcement",
+        "case": "Odyssey-2 Max"
       }
     },
     {
@@ -941,11 +1049,24 @@
             "zh": "原公司法院文件"
           },
           "url": "https://www.insolvencies.deloitte.ca/en-ca/Documents/Felix%20%26%20Paul%20Studios/500-11-067751-269_2026-10-29_JG.pdf"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Reference date",
+            "zh": "日期出处"
+          },
+          "url": "https://www.labiennale.org/en/cinema/2022/venice-immersive/space-explorers-iss-experience-spacewalkers"
         }
       ],
       "advantage": {
         "en": "Places the viewer beside real people in hard-to-access spaces.",
         "zh": "以立体实拍把观众放到罕见现场和真人身边。"
+      },
+      "referenceDate": {
+        "value": "2022",
+        "role": "showcase",
+        "case": "Space Explorers: Spacewalkers"
       }
     },
     {
@@ -1009,7 +1130,12 @@
           },
           "url": "https://www.labiennale.org/it/cinema/2024/venice-immersive/mormoverse-under-pillow"
         }
-      ]
+      ],
+      "referenceDate": {
+        "value": "2024",
+        "role": "showcase",
+        "case": "Mormoverse: Under the Pillow"
+      }
     },
     {
       "id": "figitlab",
@@ -1072,7 +1198,12 @@
           },
           "url": "https://figitlab.com/?portfolio=portfolio-title-1%2Forigen"
         }
-      ]
+      ],
+      "referenceDate": {
+        "value": "2023",
+        "role": "showcase",
+        "case": "Origen"
+      }
     },
     {
       "id": "flash-forward",
@@ -1135,7 +1266,12 @@
           },
           "url": "https://www.festival-cannes.com/en/press/press-releases/award-for-best-immersive-work-of-the-77th-festival-de-cannes/"
         }
-      ]
+      ],
+      "referenceDate": {
+        "value": "2024",
+        "role": "showcase",
+        "case": "Colored"
+      }
     },
     {
       "id": "maze-of-tales",
@@ -1198,7 +1334,12 @@
           },
           "url": "https://mazeoftales.com/#work"
         }
-      ]
+      ],
+      "referenceDate": {
+        "value": "2023",
+        "role": "documented",
+        "case": "A Leap in Time"
+      }
     },
     {
       "id": "ithra-biarritz",
@@ -1261,7 +1402,12 @@
           },
           "url": "https://studiobiarritz.nl/"
         }
-      ]
+      ],
+      "referenceDate": {
+        "value": "2025",
+        "role": "showcase",
+        "case": "Mirage"
+      }
     },
     {
       "id": "apple-immersive",
@@ -1332,7 +1478,12 @@
           },
           "url": "https://www.apple.com/newsroom/2024/10/apple-debuts-the-first-scripted-film-captured-in-apple-immersive-video/"
         }
-      ]
+      ],
+      "referenceDate": {
+        "value": "2024-10-10",
+        "role": "release",
+        "case": "Submerged"
+      }
     },
     {
       "id": "tender-claws",
@@ -1403,7 +1554,12 @@
           },
           "url": "https://www.youtube.com/watch?v=-K1wgowcVDc"
         }
-      ]
+      ],
+      "referenceDate": {
+        "value": "2020",
+        "role": "release",
+        "case": "The Under Presents: Tempest"
+      }
     },
     {
       "id": "phoria",
@@ -1473,8 +1629,21 @@
             "zh": "工作室／影展来源"
           },
           "url": "https://www.phoria.io/"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Reference date",
+            "zh": "日期出处"
+          },
+          "url": "https://silverbackfilms.tv/ecosphere-the-180-virtual-reality-natural-history-conservation-series-narrated-by-anna-friel-is-launched/"
         }
-      ]
+      ],
+      "referenceDate": {
+        "value": "2020",
+        "role": "release",
+        "case": "ecosphere"
+      }
     },
     {
       "id": "styly",
@@ -1545,7 +1714,12 @@
           },
           "url": "https://styly.inc/ja/news/styly-world-canvas/"
         }
-      ]
+      ],
+      "referenceDate": {
+        "value": "2026-01-30",
+        "role": "showcase",
+        "case": "Ghost in the Shell: Cyber Vision"
+      }
     }
   ],
   "market": [
@@ -1564,7 +1738,15 @@
         "en": "Evidence of paid demand for multiplayer outings at scale; the reported total is not annual revenue or profit.",
         "zh": "证明多人线下体验有付费需求；累计销售不是年度营收，更不是利润。"
       },
-      "url": "https://www.prnewswire.com/news-releases/sandbox-vr-expands-in-miami-area-with-second-location-at-the-falls-opening-october-30-302921236.html"
+      "url": "https://www.prnewswire.com/news-releases/sandbox-vr-expands-in-miami-area-with-second-location-at-the-falls-opening-october-30-302921236.html",
+      "visual": {
+        "caption": {
+          "en": "Sandbox VR group play",
+          "zh": "Sandbox VR 多人体验"
+        },
+        "kind": "case",
+        "entry": "sandbox"
+      }
     },
     {
       "date": "2026-10-21",
@@ -1581,7 +1763,17 @@
         "en": "A platform-cost signal, not the size or profitability of the storytelling market.",
         "zh": "说明平台投入和经营压力，不是空间叙事市场规模或盈利数据。"
       },
-      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/"
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/",
+      "visual": {
+        "caption": {
+          "en": "Meta Connect event visual, not a financial graphic",
+          "zh": "Meta Connect 活动主视觉，非财报图"
+        },
+        "kind": "context",
+        "file": "assets/xr/connect-2026-keynote.jpg",
+        "credit": "Meta",
+        "source": "https://www.meta.com/connect/"
+      }
     },
     {
       "date": "2026-09",
@@ -1598,7 +1790,15 @@
         "en": "Acclaimed commissions and awards do not guarantee an economically sustainable studio.",
         "zh": "作品获奖、拿到大项目，不等于工作室的经营可以持续。"
       },
-      "url": "https://www.insolvencies.deloitte.ca/en-ca/pages/Felix-and-Paul-Studios-Inc.aspx"
+      "url": "https://www.insolvencies.deloitte.ca/en-ca/pages/Felix-and-Paul-Studios-Inc.aspx",
+      "visual": {
+        "caption": {
+          "en": "Space Explorers project still",
+          "zh": "《Space Explorers》项目剧照"
+        },
+        "kind": "case",
+        "entry": "felix-paul"
+      }
     },
     {
       "date": "2026-07-15",
@@ -1615,7 +1815,15 @@
         "en": "The international creative field is already crowded; the selection size does not tell us ticket demand.",
         "zh": "全球创作端已有不少参与者；入选规模不能推算票房。"
       },
-      "url": "https://www.labiennale.org/en/news/venice-immersive-selection-and-competition-announced-0"
+      "url": "https://www.labiennale.org/en/news/venice-immersive-selection-and-competition-announced-0",
+      "visual": {
+        "caption": {
+          "en": "Origen · 2023 selection, not part of this year’s count",
+          "zh": "《Origen》为 2023 年入选案例，不计入当年数据"
+        },
+        "kind": "context",
+        "entry": "figitlab"
+      }
     },
     {
       "date": "2026",
@@ -1632,7 +1840,15 @@
         "en": "An empirical study distinguishes story, gameplay, free movement and embodied interaction. It doesn't estimate market size.",
         "zh": "研究归纳了叙事、游戏、自由移动和身体互动，适合做体验设计参考，不是市场测算。"
       },
-      "url": "https://doi.org/10.1016/j.jhtm.2026.101501"
+      "url": "https://doi.org/10.1016/j.jhtm.2026.101501",
+      "visual": {
+        "caption": {
+          "en": "Horizon of Khufu · illustrative free-roam case, not a figure from the paper",
+          "zh": "《胡夫地平线》为自由行走案例，非论文插图"
+        },
+        "kind": "context",
+        "entry": "excurio"
+      }
     },
     {
       "date": "2026-04-21",
@@ -1649,7 +1865,15 @@
         "en": "Looks at community-led distribution; finishing a work and getting it booked are different problems.",
         "zh": "讨论由社区推动的发行模式：做完一部作品，和让它进入场馆及社区，是两件事。"
       },
-      "url": "https://professionals.idfa.nl/stories/idfa-doclab-immersive-think-tank-report-2026/"
+      "url": "https://professionals.idfa.nl/stories/idfa-doclab-immersive-think-tank-report-2026/",
+      "visual": {
+        "caption": {
+          "en": "Wolves in the Walls · independent XR reference, not a report graphic",
+          "zh": "《Wolves in the Walls》为独立 XR 参考，非报告插图"
+        },
+        "kind": "context",
+        "entry": "fable"
+      }
     },
     {
       "date": "2026",
@@ -1666,7 +1890,15 @@
         "en": "Tests player-driven divergence without giving up authored story constraints. A prototyping precedent, not evidence of willingness to pay.",
         "zh": "展示玩家行为如何让叙事分岔，同时保留创作者设定的范围；是原型参考，不是付费证据。"
       },
-      "url": "https://doi.org/10.1145/3772318.3790572"
+      "url": "https://doi.org/10.1145/3772318.3790572",
+      "visual": {
+        "caption": {
+          "en": "Fabula Rasa · related AI character design, not the DiaryPlay prototype",
+          "zh": "《Fabula Rasa》为 AI 角色参考，并非 DiaryPlay 原型"
+        },
+        "kind": "context",
+        "entry": "arvore"
+      }
     },
     {
       "date": "2026-03-03",
@@ -1683,7 +1915,15 @@
         "en": "A cultural story can tour internationally; the venue statement does not disclose per-site profitability.",
         "zh": "文化题材可以跨城市巡展；公告没有披露单馆的营收成本或利润率。"
       },
-      "url": "https://www.blumenthalarts.org/news/detail/travel-back-to-ancient-egypt-with-horizon-of-khufu-coming-to-blume-studios"
+      "url": "https://www.blumenthalarts.org/news/detail/travel-back-to-ancient-egypt-with-horizon-of-khufu-coming-to-blume-studios",
+      "visual": {
+        "caption": {
+          "en": "Horizon of Khufu promotional still",
+          "zh": "《胡夫地平线》宣传剧照"
+        },
+        "kind": "case",
+        "entry": "excurio"
+      }
     },
     {
       "date": "2026-02-09",
@@ -1700,7 +1940,17 @@
         "en": "Screen IP is moving to physical experiences in China, too; the park is broader than pure XR.",
         "zh": "中国也在把影视 IP 转成线下体验，但整座乐园不能等同于纯 XR 市场。"
       },
-      "url": "https://www.prnewswire.com/news-releases/iqiyi-opens-first-tech-enabled-immersive-theme-park-bringing-chinese-ip-to-real-life-302683305.html"
+      "url": "https://www.prnewswire.com/news-releases/iqiyi-opens-first-tech-enabled-immersive-theme-park-bringing-chinese-ip-to-real-life-302683305.html",
+      "visual": {
+        "caption": {
+          "en": "Opening day at iQIYI LAND in Yangzhou",
+          "zh": "扬州爱奇艺乐园开幕现场"
+        },
+        "kind": "case",
+        "file": "assets/spatial/iqiyi-market.webp",
+        "credit": "iQIYI via PR Newswire",
+        "source": "https://www.prnewswire.com/news-releases/iqiyi-opens-first-tech-enabled-immersive-theme-park-bringing-chinese-ip-to-real-life-302683305.html"
+      }
     }
   ]
 }
