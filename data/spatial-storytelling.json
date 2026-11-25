@@ -66,7 +66,11 @@
           },
           "url": "https://finance.yahoo.com/news/atlas-v-group-raises-6-150830652.html"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Brings film IP from production to release.",
+        "zh": "把电影 IP 从互动改编做到发行。"
+      }
     },
     {
       "id": "arvore",
@@ -141,7 +145,11 @@
           },
           "url": "https://www.graded.br/about/school-media/the-graded-gazette/news-piece-page/~board/all-school-news/post/alumni-spotlight-edouard-de-montmort-03-serial-entrepreneur"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Lets characters answer players in their own words.",
+        "zh": "让角色直接回应观众说的话。"
+      }
     },
     {
       "id": "three-body",
@@ -208,7 +216,11 @@
           },
           "url": "https://www.chinafilm.gov.cn/xxgk/gsxx/dybalx/202604/t20260430_988217.html"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Turns familiar sci-fi scenes into walkable group experiences.",
+        "zh": "让观众结伴走进熟悉的科幻场景。"
+      }
     },
     {
       "id": "fable",
@@ -291,7 +303,11 @@
           },
           "url": "https://tech.yahoo.com/ai/articles/amazon-invests-netflix-ai-start-160000843.html"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Builds a relationship through a character’s gaze and gestures.",
+        "zh": "用角色的眼神和动作建立关系。"
+      }
     },
     {
       "id": "sandbox",
@@ -366,7 +382,11 @@
           },
           "url": "https://techcrunch.com/2021/11/10/sandbox-vr-expands-to-new-locations-globally-with-37m-series-b-led-by-andreessen-horowitz/"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Runs the same tracked group format across many venues.",
+        "zh": "把多人全身追踪做成可跨门店运营的体验。"
+      }
     },
     {
       "id": "excurio",
@@ -433,7 +453,11 @@
           },
           "url": "https://presse.bpifrance.fr/emissive-lance-son-nouveau-format-dexpeditions-immersives-et-ouvre-a-cette-occasion-son-capital-a-bpifrance-htc-et-artnova/?lang=fra"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Makes historical spaces walkable at group scale.",
+        "zh": "让多人走进历史现场，而不只在原地看。"
+      }
     },
     {
       "id": "yb",
@@ -500,7 +524,11 @@
           },
           "url": "https://www.telefonica.com/en/communication-room/press-room/ybvr-secures-1-5m-in-financing-from-verizon-ventures-tca-and-wayra-telefonica/"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Takes a performance audience onto and behind the stage.",
+        "zh": "把观众带进演出现场，甚至带到舞台后方。"
+      }
     },
     {
       "id": "soreal",
@@ -559,7 +587,11 @@
           },
           "url": "https://news.pedaily.cn/20260427/128528.shtml"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Pairs real venues and physical effects with digital scenes.",
+        "zh": "把实体场馆、体感装置和虚拟场景结合。"
+      }
     },
     {
       "id": "veer",
@@ -626,7 +658,11 @@
           },
           "url": "https://pitchhub.36kr.com/project/1744030529903497"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Connects curated immersive work with exhibition access.",
+        "zh": "把沉浸作品的策展、发行和线下观看串起来。"
+      }
     },
     {
       "id": "inworld",
@@ -685,7 +721,11 @@
           },
           "url": "https://lsvp.com/stories/inworld-ai-npcs-character-engine/"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Supplies a dialogue layer for characters inside larger worlds.",
+        "zh": "给已有世界加入可实时对话的角色能力。"
+      }
     },
     {
       "id": "world-labs",
@@ -768,7 +808,11 @@
           },
           "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-462340/0001193125-26-462340.pdf"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Speeds up the creation of places that can be explored.",
+        "zh": "更快搭出观众能进入和探索的三维空间。"
+      }
     },
     {
       "id": "odyssey",
@@ -827,7 +871,11 @@
           },
           "url": "https://odyssey.systems/our-series-b"
         }
-      ]
+      ],
+      "advantage": {
+        "en": "Makes generated scenes respond as the viewer moves.",
+        "zh": "让生成画面随探索动作实时变化。"
+      }
     },
     {
       "id": "felix-paul",
@@ -894,7 +942,765 @@
           },
           "url": "https://www.insolvencies.deloitte.ca/en-ca/Documents/Felix%20%26%20Paul%20Studios/500-11-067751-269_2026-10-29_JG.pdf"
         }
+      ],
+      "advantage": {
+        "en": "Places the viewer beside real people in hard-to-access spaces.",
+        "zh": "以立体实拍把观众放到罕见现场和真人身边。"
+      }
+    },
+    {
+      "id": "worldbuild",
+      "category": "studio",
+      "title": {
+        "en": "Worldbuild",
+        "zh": "Worldbuild"
+      },
+      "place": {
+        "en": "South Africa",
+        "zh": "南非"
+      },
+      "focus": {
+        "en": "Social VR and shifts of scale",
+        "zh": "社交 VR / 尺度变化"
+      },
+      "blurb": {
+        "en": "Mormoverse turns the space under a pillow into a shared world worth exploring.",
+        "zh": "《Mormoverse》把枕头底下变成观众可以结伴探索的世界。"
+      },
+      "advantage": {
+        "en": "Shared discovery through changes of scale.",
+        "zh": "让熟悉的物件变成可结伴探索的新地标。"
+      },
+      "strength": {
+        "en": "Familiar furniture becomes a landmark at a new scale. Multiple visitors can explore it together, making each discovery a social event.",
+        "zh": "把家具变成巨型地标，观众可以分享彼此找到的路径；空间本身在推动交流。"
+      },
+      "limit": {
+        "en": "A VRChat production with creative lead Film XR, not proof of independent multi-platform distribution.",
+        "zh": "项目与创意主导方 Film XR 合作，依赖 VRChat；未验证独立多平台发行。"
+      },
+      "funding": {
+        "en": "Company funding amount not verified.",
+        "zh": "未核实独立融资金额。"
+      },
+      "image": {
+        "file": "assets/spatial/worldbuild.webp",
+        "alt": {
+          "en": "Worldbuild project still",
+          "zh": "Worldbuild 项目剧照"
+        },
+        "credit": "Worldbuild / Film XR",
+        "source": "https://worldbuild.io/mormoverse-under-the-pillow"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Representative project",
+            "zh": "代表作品"
+          },
+          "url": "https://worldbuild.io/mormoverse-under-the-pillow"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Studio / festival source",
+            "zh": "工作室／影展来源"
+          },
+          "url": "https://www.labiennale.org/it/cinema/2024/venice-immersive/mormoverse-under-pillow"
+        }
       ]
+    },
+    {
+      "id": "figitlab",
+      "category": "studio",
+      "title": {
+        "en": "Figitlab / Viartualmente",
+        "zh": "Figitlab / Viartualmente"
+      },
+      "place": {
+        "en": "Colombia-led company; cross-border project",
+        "zh": "哥伦比亚公司；作品为跨国合制"
+      },
+      "focus": {
+        "en": "Oral history as navigable space",
+        "zh": "口述故事转为空间体验"
+      },
+      "blurb": {
+        "en": "Origen draws on Amazonian oral traditions in an immersive work credited as a cross-border co-production.",
+        "zh": "《Origen》是以亚马孙口述传统为起点的跨国沉浸作品。"
+      },
+      "advantage": {
+        "en": "Turns oral traditions into a place you can enter.",
+        "zh": "把口述传统转译成观众能进入的空间。"
+      },
+      "strength": {
+        "en": "Turns research and collaboration with Indigenous cultural practitioners into point of view, place and encounter.",
+        "zh": "把文化研究与原住民创作者的合作，落实为观众的视角、环境和遭遇。"
+      },
+      "limit": {
+        "en": "Venice lists the work under Brazil; Figitlab is a Colombian co-producer. Festival exhibition is not commercial rollout.",
+        "zh": "威尼斯把作品列在巴西；Figitlab 是哥伦比亚联合制作方。影展展映不等于商业铺开。"
+      },
+      "funding": {
+        "en": "Unity for Humanity was a project grant; no company round amount verified.",
+        "zh": "Unity for Humanity 为项目资助，未核实公司融资金额。"
+      },
+      "image": {
+        "file": "assets/spatial/figitlab.webp",
+        "alt": {
+          "en": "Figitlab / Viartualmente project still",
+          "zh": "Figitlab / Viartualmente 项目剧照"
+        },
+        "credit": "La Biennale di Venezia / Origen production",
+        "source": "https://www.labiennale.org/en/cinema/2023/venice-immersive/origen"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Representative project",
+            "zh": "代表作品"
+          },
+          "url": "https://www.labiennale.org/en/cinema/2023/venice-immersive/origen"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Studio / festival source",
+            "zh": "工作室／影展来源"
+          },
+          "url": "https://figitlab.com/?portfolio=portfolio-title-1%2Forigen"
+        }
+      ]
+    },
+    {
+      "id": "flash-forward",
+      "category": "studio",
+      "title": {
+        "en": "Flash Forward × Novaya",
+        "zh": "Flash Forward × Novaya"
+      },
+      "place": {
+        "en": "Taiwan / France",
+        "zh": "中国台湾／法国"
+      },
+      "focus": {
+        "en": "Walk-in AR historical drama",
+        "zh": "走入式 AR 历史叙事"
+      },
+      "blurb": {
+        "en": "Colored stages Claudette Colvin’s refusal to give up her seat on a segregated bus.",
+        "zh": "《Colored》重现克劳黛特·科尔文拒绝在实施种族隔离的公交车上让座的故事。"
+      },
+      "advantage": {
+        "en": "Life-size blocking makes the viewer a witness.",
+        "zh": "用真人尺度的调度，让观众站在故事现场。"
+      },
+      "strength": {
+        "en": "Life-size AR staging gives the viewer a physical position in the historical scene, turning proximity and blocking into narrative decisions.",
+        "zh": "真人尺度的 AR 让观众在历史现场有一个明确的位置，距离、站位和调度都成为叙事手段。"
+      },
+      "limit": {
+        "en": "A facilitated exhibition format; a Cannes award does not establish mass-market sales.",
+        "zh": "依赖现场布展和运营；戛纳获奖不代表已有大规模消费市场。"
+      },
+      "funding": {
+        "en": "No verified stand-alone company round for this collaboration.",
+        "zh": "未核实这项合作对应的独立公司融资。"
+      },
+      "image": {
+        "file": "assets/spatial/flash-forward.webp",
+        "alt": {
+          "en": "Flash Forward × Novaya project still",
+          "zh": "Flash Forward × Novaya 项目剧照"
+        },
+        "credit": "Institut français / Colored production",
+        "source": "https://ifdigital.institutfrancais.com/en/creation/colored"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Representative project",
+            "zh": "代表作品"
+          },
+          "url": "https://ifdigital.institutfrancais.com/en/creation/colored"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Studio / festival source",
+            "zh": "工作室／影展来源"
+          },
+          "url": "https://www.festival-cannes.com/en/press/press-releases/award-for-best-immersive-work-of-the-77th-festival-de-cannes/"
+        }
+      ]
+    },
+    {
+      "id": "maze-of-tales",
+      "category": "venue",
+      "title": {
+        "en": "Maze of Tales",
+        "zh": "Maze of Tales"
+      },
+      "place": {
+        "en": "Middle East / France",
+        "zh": "中东／法国"
+      },
+      "focus": {
+        "en": "Site-specific immersive performance",
+        "zh": "实地空间／沉浸演出"
+      },
+      "blurb": {
+        "en": "A Leap in Time uses the historic Saudi village of Zee Ain as the set.",
+        "zh": "《A Leap in Time》直接把沙特的历史村落 Zee Ain 变成演出现场。"
+      },
+      "advantage": {
+        "en": "Uses walking routes, architecture and live actors without headsets.",
+        "zh": "不用头显，用观众动线、建筑和真人表演讲故事。"
+      },
+      "strength": {
+        "en": "Audience routes and live performances let existing architecture do the work of a set and shape when a scene is revealed.",
+        "zh": "让现有建筑承担布景和叙事功能，观众沿路线移动，新的场景才被揭开。"
+      },
+      "limit": {
+        "en": "Site-specific design and live cast add operating costs and limit plug-and-play touring.",
+        "zh": "依赖地点和真人演员，有运营成本，不易原样复制巡展。"
+      },
+      "funding": {
+        "en": "Company finance not verified.",
+        "zh": "未核实公司公开融资金额。"
+      },
+      "image": {
+        "file": "assets/spatial/maze-of-tales.webp",
+        "alt": {
+          "en": "Maze of Tales project still",
+          "zh": "Maze of Tales 项目剧照"
+        },
+        "credit": "Maze of Tales",
+        "source": "https://mazeoftales.com/work?project=leap_in_time"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Representative project",
+            "zh": "代表作品"
+          },
+          "url": "https://mazeoftales.com/work?project=leap_in_time"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Studio / festival source",
+            "zh": "工作室／影展来源"
+          },
+          "url": "https://mazeoftales.com/#work"
+        }
+      ]
+    },
+    {
+      "id": "ithra-biarritz",
+      "category": "studio",
+      "title": {
+        "en": "Ithra × Studio Biarritz",
+        "zh": "Ithra × Studio Biarritz"
+      },
+      "place": {
+        "en": "Saudi Arabia / Netherlands",
+        "zh": "沙特／荷兰"
+      },
+      "focus": {
+        "en": "Multisensory point of view",
+        "zh": "多感官主观视角"
+      },
+      "blurb": {
+        "en": "Mirage uses spatial sound, gestures and a haptic vest to portray a girl’s inner world.",
+        "zh": "《Mirage》用空间声音、手势和触觉背心呈现一个女孩的内心。"
+      },
+      "advantage": {
+        "en": "Uses touch and sound to convey a change in point of view.",
+        "zh": "用触觉和声音表现主观视角的变化。"
+      },
+      "strength": {
+        "en": "Hand tracking, spatial audio and tactile feedback make changes in the character’s mental state part of the sensory design rather than an explanation in dialogue.",
+        "zh": "把角色心理变化做成手势、空间声音与触觉反馈，不只依靠对白解释。"
+      },
+      "limit": {
+        "en": "Cultural programme plus production partner, not a stand-alone company; equipment adds friction.",
+        "zh": "这是文化机构计划与制作公司的合作，不是一家独立公司；设备增加部署成本。"
+      },
+      "funding": {
+        "en": "Project backing and company financing are not interchangeable; no round cited.",
+        "zh": "项目支持不能算作公司融资，未引用独立融资轮次。"
+      },
+      "image": {
+        "file": "assets/spatial/ithra-biarritz.webp",
+        "alt": {
+          "en": "Ithra × Studio Biarritz project still",
+          "zh": "Ithra × Studio Biarritz 项目剧照"
+        },
+        "credit": "La Biennale di Venezia / Mirage production",
+        "source": "https://www.labiennale.org/en/cinema/2025/venice-immersive/mirage"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Representative project",
+            "zh": "代表作品"
+          },
+          "url": "https://www.labiennale.org/en/cinema/2025/venice-immersive/mirage"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Studio / festival source",
+            "zh": "工作室／影展来源"
+          },
+          "url": "https://studiobiarritz.nl/"
+        }
+      ]
+    },
+    {
+      "id": "apple-immersive",
+      "category": "screen",
+      "title": {
+        "en": "Apple Immersive Video",
+        "zh": "Apple Immersive Video"
+      },
+      "place": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "focus": {
+        "en": "180° scripted immersive cinema",
+        "zh": "180° 剧情沉浸电影"
+      },
+      "blurb": {
+        "en": "Edward Berger’s Submerged puts viewers inside a submarine during an attack.",
+        "zh": "Edward Berger 的《Submerged》让观众置身遭袭的潜艇。"
+      },
+      "advantage": {
+        "en": "Staging, gaze and spatial sound make the viewer feel present.",
+        "zh": "用表演走位、视线和空间音频，把观众放进戏里。"
+      },
+      "strength": {
+        "en": "The physical set and stereo immersive framing put action at different depths; lighting, actor movement and spatial audio cue where to look without traditional shot coverage doing all the work.",
+        "zh": "实体潜艇布景和立体画面把动作放在不同距离，灯光、演员走位和空间音频一起引导注意力。"
+      },
+      "limit": {
+        "en": "Authored, non-branching film. The original immersive viewing experience requires Apple Vision Pro.",
+        "zh": "是导演安排的线性成片，不是分支交互；完整沉浸版需 Apple Vision Pro。"
+      },
+      "funding": {
+        "en": "Apple format and commissioned production, not an independent venture round.",
+        "zh": "是苹果的内容格式与委托制作，不是独立公司的融资轮次。"
+      },
+      "image": {
+        "file": "assets/spatial/apple-immersive.webp",
+        "alt": {
+          "en": "Apple Immersive Video project still",
+          "zh": "Apple Immersive Video 项目剧照"
+        },
+        "credit": "Apple / Submerged",
+        "source": "https://www.apple.com/newsroom/2024/10/apple-debuts-the-first-scripted-film-captured-in-apple-immersive-video/"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Watch the Submerged trailer",
+            "zh": "观看《Submerged》预告"
+          },
+          "url": "https://www.youtube.com/watch?v=HjvzQeqoGRg"
+        },
+        {
+          "role": "work",
+          "label": {
+            "en": "The Making of Submerged",
+            "zh": "观看《Submerged》制作幕后"
+          },
+          "url": "https://www.youtube.com/watch?v=eYJcUtVIB_g"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Apple production notes",
+            "zh": "Apple 官方制作资料"
+          },
+          "url": "https://www.apple.com/newsroom/2024/10/apple-debuts-the-first-scripted-film-captured-in-apple-immersive-video/"
+        }
+      ]
+    },
+    {
+      "id": "tender-claws",
+      "category": "studio",
+      "title": {
+        "en": "Tender Claws",
+        "zh": "Tender Claws"
+      },
+      "place": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "focus": {
+        "en": "Live theatre inside multiplayer VR",
+        "zh": "VR 多人空间中的真人戏剧"
+      },
+      "blurb": {
+        "en": "The Under Presents and Tempest bring audiences into performances led by live actors.",
+        "zh": "《The Under Presents》和《Tempest》把观众带进由真人演员引导的 VR 演出。"
+      },
+      "advantage": {
+        "en": "Makes live improvisation part of the shared virtual world.",
+        "zh": "让演员即兴和观众回应都进入同一个虚拟世界。"
+      },
+      "strength": {
+        "en": "Live actors can adjust to audience reactions in real time; movement and shared presence distinguish each performance.",
+        "zh": "真人演员能现场回应观众；走位、即兴表演和同场观众让每次演出有差异。"
+      },
+      "limit": {
+        "en": "Staffed live runs do not scale the same way as prerecorded games; current showtimes not assumed.",
+        "zh": "真人演出不能像预录游戏一样扩张；不假定目前仍有场次。"
+      },
+      "funding": {
+        "en": "No verified public venture round.",
+        "zh": "未核实公开股权融资轮次。"
+      },
+      "image": {
+        "file": "assets/spatial/tender-claws.webp",
+        "alt": {
+          "en": "Tender Claws project still",
+          "zh": "Tender Claws 项目剧照"
+        },
+        "credit": "Tender Claws",
+        "source": "https://tenderclaws.com/theunderpresents"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Representative project",
+            "zh": "代表作品"
+          },
+          "url": "https://tenderclaws.com/theunderpresents"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Studio / festival source",
+            "zh": "工作室／影展来源"
+          },
+          "url": "https://www.meta.com/blog/blur-the-lines-of-fact-and-fiction-in-the-under-presents-tempest-showing-july-9-through-september/"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Additional project reference",
+            "zh": "项目补充资料"
+          },
+          "url": "https://www.youtube.com/watch?v=-K1wgowcVDc"
+        }
+      ]
+    },
+    {
+      "id": "phoria",
+      "category": "studio",
+      "title": {
+        "en": "PHORIA",
+        "zh": "PHORIA"
+      },
+      "place": {
+        "en": "Australia",
+        "zh": "澳大利亚"
+      },
+      "focus": {
+        "en": "Immersive documentary and digital twins",
+        "zh": "沉浸纪录／空间数字孪生"
+      },
+      "blurb": {
+        "en": "ecosphere takes viewers to habitats from Kenya’s savannahs to underwater reefs.",
+        "zh": "《ecosphere》让观众进入肯尼亚草原和海底珊瑚礁等自然环境。"
+      },
+      "advantage": {
+        "en": "Uses real locations and proximity to tell documentary stories.",
+        "zh": "用真实地点和镜头距离建立纪录片的在场感。"
+      },
+      "strength": {
+        "en": "Puts real environments at the centre of the experience; its digital twin and XR work offers distinct approaches to giving a location a point of view.",
+        "zh": "让真实环境成为体验中心；结合纪录片与数字孪生实践，提供不同的空间表达方法。"
+      },
+      "limit": {
+        "en": "ecosphere is immersive documentary, not a branching AI story.",
+        "zh": "《ecosphere》是沉浸纪录，不是生成式或分支叙事。"
+      },
+      "funding": {
+        "en": "No stand-alone studio-round amount verified for this entry.",
+        "zh": "本条未核实工作室独立融资额。"
+      },
+      "image": {
+        "file": "assets/spatial/phoria.webp",
+        "alt": {
+          "en": "PHORIA project still",
+          "zh": "PHORIA 项目剧照"
+        },
+        "credit": "PHORIA / ecosphere",
+        "source": "https://www.phoria.com.au/projects/ecosphere/"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Representative project",
+            "zh": "代表作品"
+          },
+          "url": "https://www.phoria.com.au/projects/ecosphere/"
+        },
+        {
+          "role": "work",
+          "label": {
+            "en": "ecosphere trailer",
+            "zh": "《ecosphere》预告"
+          },
+          "url": "https://www.youtube.com/watch?v=oyeJk9VKsIs"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Studio / festival source",
+            "zh": "工作室／影展来源"
+          },
+          "url": "https://www.phoria.io/"
+        }
+      ]
+    },
+    {
+      "id": "styly",
+      "category": "tools",
+      "title": {
+        "en": "STYLY",
+        "zh": "STYLY"
+      },
+      "place": {
+        "en": "Japan",
+        "zh": "日本"
+      },
+      "focus": {
+        "en": "Spatial layers anchored to real venues",
+        "zh": "给真实地点叠加叙事层"
+      },
+      "blurb": {
+        "en": "Ghost in the Shell: Cyber Vision put an AR layer into a physical exhibition with KDDI and XREAL.",
+        "zh": "与 KDDI、XREAL 合作，让《攻壳机动队》展的观众透过 AR 眼镜看见与展场叠加的内容。"
+      },
+      "advantage": {
+        "en": "Builds narrative overlays into a real venue’s route.",
+        "zh": "能把虚拟信息跟真实展览动线结合。"
+      },
+      "strength": {
+        "en": "Its authoring and delivery layer makes on-site AR stories possible without replacing the physical exhibit. A venue can make where you stand matter.",
+        "zh": "提供空间创作和分发工具，保留原来的展品，也能让观众的位置影响看到的内容。"
+      },
+      "limit": {
+        "en": "An enabling platform and production partner; specific venue calibration and hardware are still necessary.",
+        "zh": "它是技术平台及制作合作方；具体项目仍要做场地校准和设备部署。"
+      },
+      "funding": {
+        "en": "No funding figure cited for this project.",
+        "zh": "本项目未引用单独融资金额。"
+      },
+      "image": {
+        "file": "assets/spatial/styly.webp",
+        "alt": {
+          "en": "STYLY project still",
+          "zh": "STYLY 项目剧照"
+        },
+        "credit": "STYLY / KDDI / XREAL",
+        "source": "https://prtimes.jp/main/html/rd/p/000000290.000023281.html"
+      },
+      "links": [
+        {
+          "role": "work",
+          "label": {
+            "en": "Representative project",
+            "zh": "代表作品"
+          },
+          "url": "https://prtimes.jp/main/html/rd/p/000000290.000023281.html"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Studio / festival source",
+            "zh": "工作室／影展来源"
+          },
+          "url": "https://styly.inc/company/"
+        },
+        {
+          "role": "source",
+          "label": {
+            "en": "Additional project reference",
+            "zh": "项目补充资料"
+          },
+          "url": "https://styly.inc/ja/news/styly-world-canvas/"
+        }
+      ]
+    }
+  ],
+  "market": [
+    {
+      "date": "2026-10-27",
+      "kind": "trade",
+      "source": {
+        "en": "Sandbox VR / company release",
+        "zh": "Sandbox VR／公司公告"
+      },
+      "title": {
+        "en": "100 venues in 13 countries; $300M in lifetime sales",
+        "zh": "13 国、100 家场馆，累计销售额 3 亿美元"
+      },
+      "summary": {
+        "en": "Evidence of paid demand for multiplayer outings at scale; the reported total is not annual revenue or profit.",
+        "zh": "证明多人线下体验有付费需求；累计销售不是年度营收，更不是利润。"
+      },
+      "url": "https://www.prnewswire.com/news-releases/sandbox-vr-expands-in-miami-area-with-second-location-at-the-falls-opening-october-30-302921236.html"
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "trade",
+      "source": {
+        "en": "Meta / earnings release",
+        "zh": "Meta／财报"
+      },
+      "title": {
+        "en": "Reality Labs operating-loss outlook: $18–19B for 2026",
+        "zh": "Reality Labs 全年经营亏损预期 180–190 亿美元"
+      },
+      "summary": {
+        "en": "A platform-cost signal, not the size or profitability of the storytelling market.",
+        "zh": "说明平台投入和经营压力，不是空间叙事市场规模或盈利数据。"
+      },
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/"
+    },
+    {
+      "date": "2026-09",
+      "kind": "trade",
+      "source": {
+        "en": "Deloitte / trustee notice",
+        "zh": "德勤／受托人公告"
+      },
+      "title": {
+        "en": "Felix & Paul Studios entered Canadian bankruptcy proceedings",
+        "zh": "Felix & Paul Studios 进入加拿大破产程序"
+      },
+      "summary": {
+        "en": "Acclaimed commissions and awards do not guarantee an economically sustainable studio.",
+        "zh": "作品获奖、拿到大项目，不等于工作室的经营可以持续。"
+      },
+      "url": "https://www.insolvencies.deloitte.ca/en-ca/pages/Felix-and-Paul-Studios-Inc.aspx"
+    },
+    {
+      "date": "2026-07-15",
+      "kind": "report",
+      "source": {
+        "en": "La Biennale di Venezia",
+        "zh": "威尼斯双年展"
+      },
+      "title": {
+        "en": "Venice Immersive: 68 projects from 26 countries",
+        "zh": "威尼斯沉浸单元：26 国、68 个项目"
+      },
+      "summary": {
+        "en": "The international creative field is already crowded; the selection size does not tell us ticket demand.",
+        "zh": "全球创作端已有不少参与者；入选规模不能推算票房。"
+      },
+      "url": "https://www.labiennale.org/en/news/venice-immersive-selection-and-competition-announced-0"
+    },
+    {
+      "date": "2026",
+      "kind": "paper",
+      "source": {
+        "en": "Journal of Hospitality and Tourism Management",
+        "zh": "《Journal of Hospitality and Tourism Management》"
+      },
+      "title": {
+        "en": "Four affordances of free-roam VR",
+        "zh": "自由行走式 VR 的四种体验能力"
+      },
+      "summary": {
+        "en": "An empirical study distinguishes story, gameplay, free movement and embodied interaction. It doesn't estimate market size.",
+        "zh": "研究归纳了叙事、游戏、自由移动和身体互动，适合做体验设计参考，不是市场测算。"
+      },
+      "url": "https://doi.org/10.1016/j.jhtm.2026.101501"
+    },
+    {
+      "date": "2026-04-21",
+      "kind": "report",
+      "source": {
+        "en": "IDFA DocLab / think tank",
+        "zh": "IDFA DocLab／行业报告"
+      },
+      "title": {
+        "en": "How independent immersive work reaches audiences",
+        "zh": "独立沉浸作品怎样找到观众"
+      },
+      "summary": {
+        "en": "Looks at community-led distribution; finishing a work and getting it booked are different problems.",
+        "zh": "讨论由社区推动的发行模式：做完一部作品，和让它进入场馆及社区，是两件事。"
+      },
+      "url": "https://professionals.idfa.nl/stories/idfa-doclab-immersive-think-tank-report-2026/"
+    },
+    {
+      "date": "2026",
+      "kind": "paper",
+      "source": {
+        "en": "CHI / ACM",
+        "zh": "CHI／ACM 论文"
+      },
+      "title": {
+        "en": "DiaryPlay: AI characters inside author-set boundaries",
+        "zh": "DiaryPlay：让 AI 角色在作者设定的边界内变化"
+      },
+      "summary": {
+        "en": "Tests player-driven divergence without giving up authored story constraints. A prototyping precedent, not evidence of willingness to pay.",
+        "zh": "展示玩家行为如何让叙事分岔，同时保留创作者设定的范围；是原型参考，不是付费证据。"
+      },
+      "url": "https://doi.org/10.1145/3772318.3790572"
+    },
+    {
+      "date": "2026-03-03",
+      "kind": "trade",
+      "source": {
+        "en": "Blumenthal Arts / venue notice",
+        "zh": "Blumenthal Arts／场馆公告"
+      },
+      "title": {
+        "en": "A venue reports over 2.5M global visitors for Horizon of Khufu",
+        "zh": "场馆称《胡夫地平线》全球观众超过 250 万"
+      },
+      "summary": {
+        "en": "A cultural story can tour internationally; the venue statement does not disclose per-site profitability.",
+        "zh": "文化题材可以跨城市巡展；公告没有披露单馆的营收成本或利润率。"
+      },
+      "url": "https://www.blumenthalarts.org/news/detail/travel-back-to-ancient-egypt-with-horizon-of-khufu-coming-to-blume-studios"
+    },
+    {
+      "date": "2026-02-09",
+      "kind": "trade",
+      "source": {
+        "en": "iQIYI / company release",
+        "zh": "爱奇艺／公司公告"
+      },
+      "title": {
+        "en": "iQIYI LAND opens in Yangzhou",
+        "zh": "爱奇艺在扬州开出首座爱奇艺乐园"
+      },
+      "summary": {
+        "en": "Screen IP is moving to physical experiences in China, too; the park is broader than pure XR.",
+        "zh": "中国也在把影视 IP 转成线下体验，但整座乐园不能等同于纯 XR 市场。"
+      },
+      "url": "https://www.prnewswire.com/news-releases/iqiyi-opens-first-tech-enabled-immersive-theme-park-bringing-chinese-ip-to-real-life-302683305.html"
     }
   ]
 }

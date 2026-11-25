@@ -680,9 +680,9 @@ def validate_spatial(data):
         if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", key) or key in seen:
             errors.append(f"spatial: invalid or duplicate id {key}")
         seen.add(key)
-        if entry.get("category") not in ("studio", "venue", "tools", "historical"):
+        if entry.get("category") not in ("studio", "venue", "tools", "historical", "screen"):
             errors.append(f"spatial {key}: unknown category")
-        for field in ("title", "place", "focus", "blurb", "strength", "limit", "funding"):
+        for field in ("title", "place", "focus", "blurb", "advantage", "strength", "limit", "funding"):
             bilingual(entry, field, key)
         image = entry.get("image", {})
         bilingual(image, "alt", key)
@@ -702,6 +702,19 @@ def validate_spatial(data):
             if parts.scheme != "https" or not parts.netloc or url in urls or link.get("role") not in ("work", "interview", "source", "funding"):
                 errors.append(f"spatial {key}: invalid or duplicate source {url}")
             urls.add(url)
+    market = data.get("market", [])
+    if {item.get("kind") for item in market} != {"trade", "report", "paper"}:
+        errors.append("spatial: market panel needs industry news, reports and research")
+    market_urls = set()
+    for item in market:
+        for field in ("title", "source", "summary"):
+            bilingual(item, field, "spatial market")
+        url = item.get("url", "")
+        if urlsplit(url).scheme != "https" or not urlsplit(url).netloc or url in market_urls:
+            errors.append(f"spatial market: invalid or duplicate source {url}")
+        if not re.fullmatch(r"\d{4}(?:-\d{2}){0,2}", item.get("date", "")):
+            errors.append(f"spatial market: invalid date for {url}")
+        market_urls.add(url)
     if errors:
         sys.exit("Data errors:\n  " + "\n  ".join(errors))
 
